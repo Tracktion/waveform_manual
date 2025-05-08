@@ -1,7 +1,0 @@
-#!/bin/bash -e
-
-ROOT=$(cd "$(dirname "$0")"; pwd)
-echo ROOT: "$ROOT"
-cd "$ROOT"
-
-pandoc -V geometry:margin=1cm -V pagestyle:empty  Waveform\ User\ Guide.md -o "Waveform User Guide.pdf"

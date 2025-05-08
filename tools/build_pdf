@@ -1,0 +1,15 @@
+#!/bin/bash -e
+
+pwd
+INPUT_FILE="$1"
+OUTPUT_FILE="$2"
+
+echo INPUT_FILE: "$INPUT_FILE"
+echo OUTPUT_FILE: "$OUTPUT_FILE"
+
+if [ ! -f "$INPUT_FILE" ]; then
+    echo Input file must exist!
+    exit 1
+fi
+
+pandoc -V geometry:margin=1cm -V pagestyle:empty  "$INPUT_FILE" -o "$OUTPUT_FILE"
