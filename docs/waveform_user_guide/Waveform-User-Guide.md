@@ -9953,120 +9953,116 @@ to get you started:
 
 
 ```js
- 1 // Rename Clips From Track
- 2 var tracks = Waveform.getSelectedEditElements ('track');
- 3 
- 4 for (var i = 0; i &lt; tracks.length; ++i)
- 5 {
- 6    var track = tracks[i];
- 7    var trackName = Waveform.getName (track);
- 8    var clips = Waveform.getClipsFromTracks (track);
- 9 
-10    for (var c = 0; c &lt; clips.length; ++c)
-11    {
-12       var clipName = trackName + &quot; &quot; + (c + 1);
-13       Waveform.setName (clips[c], clipName);
-14    }
-15 }
+// Rename Clips From Track
+var tracks = Waveform.getSelectedEditElements ('track');
+
+for (var i = 0; i &lt; tracks.length; ++i)
+{
+   var track = tracks[i];
+   var trackName = Waveform.getName (track);
+   var clips = Waveform.getClipsFromTracks (track);
+
+   for (var c = 0; c &lt; clips.length; ++c)
+   {
+      var clipName = trackName + &quot; &quot; + (c + 1);
+      Waveform.setName (clips[c], clipName);
+   }
+}
 ```
 
 
 
 ```js
-1 // Reset Tracks Solo/Mute
-2 var tracks = Waveform.getEditElements ('track');
-3 Waveform.setSolo (tracks, false);
-4 Waveform.setSoloIsolate (tracks, false);
-5 Waveform.setMute (tracks, false);
+// Reset Tracks Solo/Mute
+var tracks = Waveform.getEditElements ('track');
+Waveform.setSolo (tracks, false);
+Waveform.setSoloIsolate (tracks, false);
+Waveform.setMute (tracks, false);
 ```
 
 
 ```js
-1 //Next Active Automation Parameter
-2 var track = Waveform.getTrackFromSelectedObject();
-3 Waveform.changeActiveAutomationParameter (track, 1);
+//Next Active Automation Parameter
+var track = Waveform.getTrackFromSelectedObject();
+Waveform.changeActiveAutomationParameter (track, 1);
 ```
 
 
 
 ```js
-1 // Insert Plugin with Preset
-2 var track = Waveform.getTrackFromSelectedObject();
-3 var plugin = Waveform.insertPlugin (track, &quot;Massive&quot;, 0, &quot;AudioUnit&quot;);
-4 var preset = Waveform.getPresetFromLibrary (&quot;Massive All Souls&quot;);
-5 Waveform.setPluginPreset (plugin, preset);
+// Insert Plugin with Preset
+var track = Waveform.getTrackFromSelectedObject();
+var plugin = Waveform.insertPlugin (track, &quot;Massive&quot;, 0, &quot;AudioUnit&quot;);
+var preset = Waveform.getPresetFromLibrary (&quot;Massive All Souls&quot;);
+Waveform.setPluginPreset (plugin, preset);
 ```
 
 
 ```js
-1 // Jump to tab 2
-2 var index = Waveform.getWindowTabIndex();
-3 var delta = 2 - index;
-4 Waveform.changeWindowTabIndex (delta);
+// Jump to tab 2
+var index = Waveform.getWindowTabIndex();
+var delta = 2 - index;
+Waveform.changeWindowTabIndex (delta);
 ```
 
 
 ```js
-1 // Rename Selected Tracks
-2 var tracks = Waveform.getSelectedEditElements ('track');
-3 Waveform.setName (tracks[0], 'Kick');
-4 Waveform.setName (tracks[1], 'Snare');
-5 Waveform.setName (tracks[2], 'Hats');
-6 // etc.
+// Rename Selected Tracks
+var tracks = Waveform.getSelectedEditElements ('track');
+Waveform.setName (tracks[0], 'Kick');
+Waveform.setName (tracks[1], 'Snare');
+Waveform.setName (tracks[2], 'Hats');
+// etc.
 ```
 
 
 ```js
-1 // Save Selected Plugins as Preset
-2 var plugins = Waveform.getSelectedEditElements ('plugin');
-3 Waveform.saveObjectsAsPreset (plugins);
+// Save Selected Plugins as Preset
+var plugins = Waveform.getSelectedEditElements ('plugin');
+Waveform.saveObjectsAsPreset (plugins);
 ```
 
 ## My Code Samples
 
 
 ```js
- 1 /* Park the In-Marker & Out-Markers
- 2 Parks the In-marker and Out-marker at Zero then Restores Cursor Position. I wrote th\
- 3 is macro to help a KVR forum member find a quick way to hide the In-marker and Out-m\
- 4 arker.
- 5  */
- 6 var SavePosition = Waveform.getPosition ('cursor');
- 7 Waveform.moveTransportToStart();
- 8 Waveform.moveTransportToStart();
- 9 Waveform.markIn();
-10 Waveform.markOut();
-11 Waveform.setPosition ('cursor', SavePosition);
+/* Park the In-Marker & Out-Markers
+Parks the In-marker and Out-marker at Zero then Restores Cursor Position. I wrote this macro to help a KVR forum member find a quick way to hide the In-marker and Out-marker.
+*/
+var SavePosition = Waveform.getPosition ('cursor');
+Waveform.moveTransportToStart();
+Waveform.moveTransportToStart();
+Waveform.markIn();
+Waveform.markOut();
+Waveform.setPosition ('cursor', SavePosition);
 ```
 
 
 ```js
- 1 /* Search Plugins
- 2 Opens the Browser to the Search tab, enables the Plugin searching while disabling se\
- 3 arching for Presets and Loops.
- 4 */
- 5 Waveform.showSidePanel ('search'); // Opens Browser to the Search tab
- 6 Waveform.enableSearchLibrary ('plugin', true);
- 7 Waveform.enableSearchLibrary ('preset', false);
- 8 Waveform.enableSearchLibrary ('loop', false);
- 9 Waveform.setSearchPanelText ('');  // loads blank text so you can start typing the s\
-10 earch term right away
+ /* Search Plugins
+ Opens the Browser to the Search tab, enables the Plugin searching while disabling searching for Presets and Loops.
+ */
+ Waveform.showSidePanel ('search'); // Opens Browser to the Search tab
+ Waveform.enableSearchLibrary ('plugin', true);
+ Waveform.enableSearchLibrary ('preset', false);
+ Waveform.enableSearchLibrary ('loop', false);
+ Waveform.setSearchPanelText ('');  // loads blank text so you can start typing the search term right away
 ```
 
 
 ```js
-1 // Rename selected clips to 'Drums'
-2 var clips = Waveform.getSelectedEditElements ('clip');
-3 for (var i = 0; i &lt; clips.length; ++i)
-4     Waveform.setName (clips[i], 'Drums');
+// Rename selected clips to 'Drums'
+var clips = Waveform.getSelectedEditElements ('clip');
+for (var i = 0; i &lt; clips.length; ++i)
+    Waveform.setName (clips[i], 'Drums');
 ```
 
 
 ```js
-1 // Rename selected tracks to 'Drums'
-2 var tracks = Waveform.getSelectedEditElements ('track');
-3 for (var i = 0; i &lt; tracks.length; ++i)
-4     Waveform.setName (tracks[i], 'Drums');
+// Rename selected tracks to 'Drums'
+var tracks = Waveform.getSelectedEditElements ('track');
+for (var i = 0; i &lt; tracks.length; ++i)
+    Waveform.setName (tracks[i], 'Drums');
 ```
 
 ## Moving On
