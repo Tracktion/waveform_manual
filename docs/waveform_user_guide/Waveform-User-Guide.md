@@ -697,10 +697,10 @@ Here is another example:
 - Next, position the cursor in the Arrangement where you want to place
     the copy and paste it, using Cmd + V / Ctrl + V.
 
-**Note:** Most Linux users will use the 'Meta' key in place of Alt. On a
+> 📝 **Note:** Most Linux users will use the 'Meta' key in place of Alt. On a
 typical PC keyboard, Meta is usually the Windows key.
 
-**Note:** In some parts of the world Mac keyboards use Alt rather than
+> 📝 **Note:** In some parts of the world Mac keyboards use Alt rather than
 *option*. This shouldn't offer much confusion but I did want to
 acknowledge this.
 
@@ -792,7 +792,7 @@ Waveform supports the following communication protocols:
 *Audio Device Page*
 
 
-**Warning:** To configure Waveform for recording, you must use the
+> ⚠️ **Warning:** To configure Waveform for recording, you must use the
 Auto-Detect feature along with a hardware loopback. If you don't, then
 your overdubbed tracks will not be in alignment with existing tracks.
 While this is not difficult, it is essential to do this manual step
@@ -851,10 +851,10 @@ are definite differences, and best choices:
     choice when using Windows XP with your internal sound.
 Tip: Stay away from the DirectSound device type.
 
-**Note:** Windows versions earlier than Win 10 are end of life and officially no more supported. While you might
+> 📝 **Note:** Windows versions earlier than Win 10 are end of life and officially no more supported. While you might
 be able to run Waveform on older Windows 64-bit systems, the Waveform development and support team run their Win tests on versions 10 and 11.
     
-**Note:** Starting with release 1703, Windows 10 supports USB Audio
+> 📝 **Note:** Starting with release 1703, Windows 10 supports USB Audio
 Class 2 devices natively. For simple 2 x 2 interfaces or built-in audio
 this is a workable alternative to using ASIO. For the full feature set
 for most audio interfaces it is still recommended that you install and use
@@ -872,7 +872,7 @@ manufacturer's drivers and use ASIO if possible.
 *OS X - Audio Device Output and Input Properties*
 
 
-**Note:** With macOS, USB audio interfaces that follow USB Audio Class 1
+> 📝 **Note:** With macOS, USB audio interfaces that follow USB Audio Class 1
 (1998) or USB Audio Class 2 (2009) will function without installing any
 additional driver. In the product specs for such devices they are often
 listed as "class compliant."
@@ -883,7 +883,7 @@ listed as "class compliant."
 output and the input. In this example, we are using a "USB iTwo" which
 is a simple 2 in / 2 out interface.
 
-**Note:** On OS X, you can select the input device and output device
+> 📝 **Note:** On OS X, you can select the input device and output device
 separately.
 
 ![](images/04----02.png)
@@ -1062,7 +1062,7 @@ samples (5.8 ms) on Windows, and 1024 on Linux (21.3 ms).
 On modern computers, you can usually run with the buffer size set to
 256 or even lower.
 
-**Note:** The choice of available buffer size options varies. It depends
+> 📝 **Note:** The choice of available buffer size options varies. It depends
 on what what audio interface, connection type, and driver technology you
 have access to.
 
@@ -1090,7 +1090,7 @@ simple, this should work fine on most modern systems. If you feel there
 is too much delay when playing virtual instruments, try a lower buffer
 value. If the audio starts to break up, try higher settings.
 
-**Note:** When using Melodyne Essential for editing audio, you will need
+> 📝 **Note:** When using Melodyne Essential for editing audio, you will need
 to increase the buffer size to at least 1024 samples, in order to
 prevent getting a warning message and to have clean playback.
 
@@ -1100,7 +1100,7 @@ If you use Waveform for any overdubbing, **this is possibly the most
 important lesson in this book. Waveform requires you to run
 Auto-Detect** using a loopback connection on your audio interface.
 
-**Warning:** This test sets up up a deliberate feedback loop. Switch
+> ⚠️ **Warning:** This test sets up up a deliberate feedback loop. Switch
 your speakers off during this test.You will be connecting an output to
 an input using a patch cord, so be careful.
 
@@ -1149,7 +1149,7 @@ time you make a change to the *Sample rate* or *Audio buffer size.* If
 you don't, your recordings will be several milliseconds out of alignment
 with existing tracks.
 
-**Note:** Instead of a loopback cable, you could connect a microphone to
+> 📝 **Note:** Instead of a loopback cable, you could connect a microphone to
 the input and point it at one of your speakers to run Auto-Detect. This
 will work just fine however make sure that Live Input Monitoring is off
 AND that direct input monitoring on your audio interface is also off. If
@@ -1159,7 +1159,7 @@ speakers if not your ears!
 > 💡 **Tip:** You can keep a note of the *Time Adjust* values at different
 settings an enter it manually for the settings you commonly use.
 
-**Warning:** To configure Waveform for recording, you must use the
+> ⚠️ **Warning:** To configure Waveform for recording, you must use the
 Auto-Detect feature along with a hardware loopback. If you don't then
 your overdubbed tracks will not be in alignment with existing tracks.
 While this is not difficult, it is essential to do this manual step
@@ -1318,7 +1318,7 @@ is "SummerSong100 Edit 1."
 
 *All Items List*
 
-**Note:** Creating a project creates a folder, that in turn contains
+> 📝 **Note:** Creating a project creates a folder, that in turn contains
 sub-folders that contain the project media, a Project file (`.Waveform`)
 and an Edit file (`songname.tractionedit`). The folder, Project, and
 Edit all use the name you provided in the New Project dialog box.
@@ -1420,7 +1420,7 @@ There are numerous ways to position the cursor, including:
 -   Use the left and right arrow keys to move the cursor backward and
     forward
 
-**Note:** If you don't want the cursor to be positioned when clicking on
+> 📝 **Note:** If you don't want the cursor to be positioned when clicking on
 the background or the body of clips, de-select the option "Clicking the
 background locates the cursor" in Settings > General > Editing
 
@@ -1435,7 +1435,7 @@ transport.* With this set, when you click in the timeline, the cursor
 jumps to that position. If you drag in the timeline, the cursor follows
 as well.
 
-**Note:** In this mode, to drag zoom, you need to hold down Opt / Alt.
+> 📝 **Note:** In this mode, to drag zoom, you need to hold down Opt / Alt.
 Since you can still zoom in and out with the mouse wheel or the up and
 down arrow keys, this mode is a great way to get around in Waveform.
 
@@ -1482,7 +1482,7 @@ To change the tempo of your Edit:
 3.  Alternatively, open the tempo track and drag the tempo curve line up
     and down.
 
-**Note:** Setting the tempo this way changes the tempo only for the
+> 📝 **Note:** Setting the tempo this way changes the tempo only for the
 segment of the tempo curve that is under the current cursor position.
 
 **Video Clip:** To learn how to use the tempo track to map tempo changes
@@ -1507,7 +1507,7 @@ change at cursor* (Opt + T / Alt + T). Here are the steps:
 4.  To see the results of the tempo change, open the tempo track to see
     the step up or down on the Tempo Curve
 
-**Note:** The Tempo Curve can also be adjusted with more detail in the
+> 📝 **Note:** The Tempo Curve can also be adjusted with more detail in the
 Tempo track in much the same way as automation. Click to add points
 (nodes) to the curve and drag them to shape your tempo changes along
 with an adjustable *Curvature*.
@@ -1673,7 +1673,7 @@ producing your song. This chapter is important, as you will learn the
 terminology for the Waveform interface and objects used throughout the
 rest of this book.
 
-**Note:** The keyboard shortcuts used in the chapter are based on the
+> 📝 **Note:** The keyboard shortcuts used in the chapter are based on the
 alternative key mappings under *Settings > Keyboard Shortcuts > Reset
 to Defaults > Use alternative Waveform key-mappings.* We've already
 mentioned this several times and this might not be the last! If you want
@@ -2417,7 +2417,7 @@ Tagging Tracks
 
 *Tagging Tracks*
 
-**Note:** Tags are case sensitive, so "GTR" is a different tag than
+> 📝 **Note:** Tags are case sensitive, so "GTR" is a different tag than
 "gtr."
 
 Filtering by Tags
@@ -2531,7 +2531,7 @@ Indexing Your Loop Library
     Scan for Loops*. You will see options on that page to enter paths to
     your loops.
 
-**Note:** If you don't want to use Waveform to search your loop library,
+> 📝 **Note:** If you don't want to use Waveform to search your loop library,
 then you don't need to have it scan and index your files. You can simply
 create bookmarks to your loop library folders on the Files tab.
 
@@ -2677,7 +2677,7 @@ Timecode Markers (TC Markers)
 
 *Timecode Marker on the Timeline (with Marker track closed)*
 
-**Note:** In Waveform, the term 'marked region' means the range of an
+> 📝 **Note:** In Waveform, the term 'marked region' means the range of an
 edit that occurs between the In-marker and the Out-marker.
 
 Wave File Markers
@@ -2746,7 +2746,7 @@ section over and over until you stop playback.
 
 *Enabling Loop Playback*
 
-**Note:** When *Loop* is enabled, playback will only play within the
+> 📝 **Note:** When *Loop* is enabled, playback will only play within the
 marked region. If the cursor is located earlier than the In-marker or
 after the Out-marker when you press *Play*, it will jump to the
 In-marker and play from there.
@@ -2804,7 +2804,7 @@ shows Timecode Markers and the bottom lane shows Bars & Beats Markers.
 
 *Marker Track Properties Setup for Split Mode*
 
-**Note:** F10 is my assignment for the keyboard action *Toggle the
+> 📝 **Note:** F10 is my assignment for the keyboard action *Toggle the
 marker view mode*. Pressing F10 cycles through the three marker track
 states - hidden, normal, and split mode.
 
@@ -2894,7 +2894,7 @@ Type
     changes in the song. Timecode markers are fixed to a specific time
     offset into the Edit and are not affected by tempo changes.
 
-**Note:** Timecode markers are also called "absolute markers", "TC
+> 📝 **Note:** Timecode markers are also called "absolute markers", "TC
 markers", or "absolute timecode markers" within Waveform. All those
 terms refer to the same thing. For this book, I usually call them
 Timecode markers.
@@ -3186,7 +3186,7 @@ of the music.
 
 *Clip Properties *Start**
 
-**Note:** Snap-to-grid is an alignment of the beginning of a clip to a
+> 📝 **Note:** Snap-to-grid is an alignment of the beginning of a clip to a
 grid line. Notice that snapping also applies to editing functions like
 trimming.
 
@@ -3244,7 +3244,7 @@ Arrow.*
 You can use nudging when moving large selections of clips over, to add a
 song section or make room for an intro.
 
-**Note:** Nudging works the same whether snapping is on or off. The
+> 📝 **Note:** Nudging works the same whether snapping is on or off. The
 nudge move is by the grid increment.
 
 ## Nudging Notes
@@ -3331,7 +3331,7 @@ Properties
 
 *Audio Clip Properties*
 
-**Note:** If you accidentally move or edit an Audio clip, you can always
+> 📝 **Note:** If you accidentally move or edit an Audio clip, you can always
 press *Undo* (Cmd + Z / Ctrl + Z) at the top of the Menu section.
 
 ## Moving Clips
@@ -3345,7 +3345,7 @@ If *Snap* is on, the beginning of the clip will snap by grid increments.
 
 *Move Audio Clips by Dragging from the Header*
 
-**Note:** As we discussed previously, the grid resolution depends on the
+> 📝 **Note:** As we discussed previously, the grid resolution depends on the
 zoom level.
 
 You can also drag Audio clips from track to track. With snap enabled,
@@ -3525,7 +3525,7 @@ Properties, just like any other fade.
 
 *Fade-in/Fade-out Shape Buttons*
 
-**Note:** Keep in mind that the fade shape buttons only operate on the
+> 📝 **Note:** Keep in mind that the fade shape buttons only operate on the
 selected clip. You will need to select the clip on the appropriate side
 of the crossfade for the fade shape buttons to work.
 
@@ -3542,7 +3542,7 @@ call this "auto-crossfade."
 
 *Settings Tab, General page, Drag Crossfade Default*
 
-**Note:** In Waveform, *Drag-X Fade* is actually a property of each
+> 📝 **Note:** In Waveform, *Drag-X Fade* is actually a property of each
 Audio clip. When you change *Default Drag X-Fade* it will only take
 effect for new clips you create or add to the Edit.
 
@@ -3938,7 +3938,7 @@ Add to Library
 - If you create an Audio clip loop and might want to reuse it in other
     projects, click *Add to Library* then give it a name and tags.
 
-**Note:** When you use *Add to Library*, the loop file will be saved to
+> 📝 **Note:** When you use *Add to Library*, the loop file will be saved to
 the *User Loops Path* folder as designated on the Loop Database page of
 the Settings tab.
 
@@ -3965,7 +3965,7 @@ default keyboard mapping. In short, go to the Settings tab and select
 the Keyboard Shortcuts page. Then near the bottom of the page click
 *Reset to Defaults*, and choose *Use alternative Waveform key-mappings*.
 
-**Note:** The alternative Waveform key-mapping is used for all examples
+> 📝 **Note:** The alternative Waveform key-mapping is used for all examples
 in this book.
 
 ## Keyboard Shortcuts Page
@@ -4014,7 +4014,7 @@ Now, both R and the keypad asterisk (*) are assigned to the Record
 action. Back in the Edit test this by turning \*Record* on and off using
 either R or asterisk (\*).
 
-**Note:** Keyboard mappings are global. Any changes you make will be
+> 📝 **Note:** Keyboard mappings are global. Any changes you make will be
 active for all your Edits.
 
 ## Changing a Keyboard Shortcut
@@ -4122,7 +4122,7 @@ the timing of your overdubs. Re-run *Auto-Detect* test anytime you
 change your interface hardware or buffer setting. The [Auto-Detect
 procedure] is explained in detail in Chapter 4.
 
-**Warning:** To configure Waveform for recording you must use the
+> ⚠️ **Warning:** To configure Waveform for recording you must use the
 Auto-Detect feature along with a hardware loopback. If you don't then
 your overdubbed tracks will not be in sync with existing tracks. While
 this is not difficult, it is essential to do this manual step anytime
@@ -4298,7 +4298,7 @@ meters" mode. This superimposes a very large meter onto each track.
 
 *Big Meters Mode*
 
-**Note:** The big meters obscure your view of clips on the tracks, so
+> 📝 **Note:** The big meters obscure your view of clips on the tracks, so
 you will want to toggle it off (F12) when not recording.
 
 ## Dragging the Input Object Track to Track
@@ -4314,7 +4314,7 @@ from track one to track two. The set up is done instantly.
 
 *Dragging and Input to other Track*
 
-**Note:** Dragging the input track to track is a really useful function
+> 📝 **Note:** Dragging the input track to track is a really useful function
 in Waveform. Once you start using this feature you will miss it when you
 record with any other DAW!
 
@@ -4334,7 +4334,7 @@ Here is a review of all the steps needed to test your recording setup:
     input.
 2.  Make sure *Loop* is turned off in the Master section.
 
-**Note:** Waveform supports loop recording but we'll get into that in a
+> 📝 **Note:** Waveform supports loop recording but we'll get into that in a
 later chapter.
 
 1.  Make sure the cursor is rewound to beginning by clicking
@@ -4345,7 +4345,7 @@ later chapter.
     input using your instrument or your voice depending on the kind of
     input selected.
 
-**Note:** As you record, you'll see the meters and you'll also see the
+> 📝 **Note:** As you record, you'll see the meters and you'll also see the
 waveform start to draw on the Audio clip.
 
 1.  Press Spacebar to stop recording.
@@ -4389,7 +4389,7 @@ Click Volume
     slider*. There are also *Low volume* (-14dB) , *Medium volume*
     (-4.4dB), and *Full volume* (0dB) presets available.
 
-**Note:** Curiously, *Full volume* is not actually full. The Volume
+> 📝 **Note:** Curiously, *Full volume* is not actually full. The Volume
 slider goes to +3db. That's three more than *Full volume* if you are
 keeping score.
 
@@ -4507,7 +4507,7 @@ To really hear the effect of latency, try turning the buffer size up to
 1024 or even more. Then as you play you'll hear a noticeable delay
 between when you sing, speak or play a note and when you hear it.
 
-**Note:** Latency delay is more of a problem for singers than it is for
+> 📝 **Note:** Latency delay is more of a problem for singers than it is for
 somebody playing guitar or another instrument. The sound of your voice
 is coupled through your skull right into your ear with zero latency.
 When combined with your voice slightly delayed through the interface and
@@ -4739,7 +4739,7 @@ and drag the right trim arrow until it does.
 > 💡 **Tip:** If recording doesn't go as planned, delete the Audio clip and
 try again. We went over several ways to do this in Chapter 15.
 
-**Note:** If you hear some kind of weird phasing as you play your
+> 📝 **Note:** If you hear some kind of weird phasing as you play your
 instrument, then it probably means you have *Live Input Monitoring*
 enabled while also monitoring through your audio interface. Disable
 *Live Input Monitoring*.
@@ -4894,7 +4894,7 @@ takes. We covered Audio clip editing in [Audio Clips and Editing Audio](audio-cl
 this chapter we will show you a few practical examples of how to use
 them.
 
-**Note:** Sometimes it is easier to make timing edits if you move the
+> 📝 **Note:** Sometimes it is easier to make timing edits if you move the
 part you're working on near the drum part. That way you can see the
 timing of your notes compared to the timing of the essential rhythmic
 elements of the song.
@@ -5033,7 +5033,7 @@ you want to the note to start.
 
 *The Completed Edit*
 
-**Note:** If you have automatic crossfade turned on then as you move one
+> 📝 **Note:** If you have automatic crossfade turned on then as you move one
 clip to overlap another, a crossfade will be created automatically. See
 [Audio Clips and Editing Audio](audio-clips-and-editing-audio) for more about crossfades.
 
@@ -5077,7 +5077,7 @@ lengthen an ending note.
     you stretch it the more chance you have to degrade the audio
     quality, but you might be surprised at how well this really works.
 
-**Note:** Besides just simply cleaning up the takes, you can do detailed
+> 📝 **Note:** Besides just simply cleaning up the takes, you can do detailed
 editing on Audio clips to completely change the timing or even the
 arrangement. While writing songs, you can use these tools to compose
 bass lines that tightly lock in with the drums. You can do this by
@@ -5300,7 +5300,7 @@ options under the spanner icon.
 
 *Elastique Options*
 
-**Note:** If the *Stretch* property is set to "Melodyne" or "No
+> 📝 **Note:** If the *Stretch* property is set to "Melodyne" or "No
 Time-Stretching," Waveform still uses the Elastique Pro algorithm for
 Warp Time.
 
@@ -5355,7 +5355,7 @@ after take, until you hit *Stop*.
 
 *Set the In-marker & Out-marker*
 
-**Note:** The *Click* count-in works for loop recording. If you want a
+> 📝 **Note:** The *Click* count-in works for loop recording. If you want a
 running start for each take, set *Click Track > Pre-record count-in
 length* to one or two bars.
 
@@ -5440,7 +5440,7 @@ Before you start comping, it is a good to create a copy of the Edit.
 This is so you can return to the raw takes, in the event you later wish
 to do the composite a different way.
 
-**Note:** We are assuming that you have already recorded using the
+> 📝 **Note:** We are assuming that you have already recorded using the
 technique in the previous chapter. If not, go back to [Loop Recording](loop-recording) and get some takes recorded!
 
 1.  When you finish loop recording, make sure to save the Edit with
@@ -5512,7 +5512,7 @@ reposition the cursor.
 
 *Trim the Edges of a Selection*
 
-**Note:** While comping sometimes you'll use a little bit from every
+> 📝 **Note:** While comping sometimes you'll use a little bit from every
 take. Other times you'll predominantly use one take and just fix a
 couple of bad phrases.
 
@@ -5831,7 +5831,7 @@ could affect the performance of the computer. If you set the buffer size
 too low, especially if you have a lot of other plugins and other virtual
 instruments going, the playback might halt or it might not sound clean.
 
-**Note:** It's always a balancing act between setting the buffer size as
+> 📝 **Note:** It's always a balancing act between setting the buffer size as
 low as possible to get the latency down while keeping it high enough to
 have clean, solid playback. When mixing, you can increase latency to
 approximately 1024, mostly because that is required for Melodyne ARA.
@@ -5883,7 +5883,7 @@ corner.
 When you are finished with tuning, click the red X in the upper left
 corner of the tuner to hide its user interface.
 
-**Note:** In earlier versions of Waveform, *Live Input Monitoring* was
+> 📝 **Note:** In earlier versions of Waveform, *Live Input Monitoring* was
 called "End to end monitoring." It has been renamed to reduce confusion
 about this feature.
 
@@ -6018,7 +6018,7 @@ are using the Waveform FM Synth.
 1.  Play some notes on your keyboard and at this point you should hear
     synth notes.
 
-**Note:** There is no difference between a MIDI track and an audio track
+> 📝 **Note:** There is no difference between a MIDI track and an audio track
 in Waveform. To configure a MIDI track, just set a MIDI input and insert
 a virtual instrument plugin as a sound generating source. Then, as you
 record your performance, you'll create a MIDI clip instead of an audio
@@ -6070,7 +6070,7 @@ click a key on the virtual keyboard.
 
 *Lock the Input Properties While Playing the Virtual*
 
-**Note:** When you are finished using the virtual keyboard, unlock
+> 📝 **Note:** When you are finished using the virtual keyboard, unlock
 Properties by clicking on the lock icon again. It will stay stuck on the
 virtual keyboard until you do that.
 
@@ -6186,7 +6186,7 @@ graphic located along the left.
 
 *Track Expanded to the MIDI Editor*
 
-**Note:** The PRV in Waveform allows you to see the timing of notes as
+> 📝 **Note:** The PRV in Waveform allows you to see the timing of notes as
 they relate to the timeline, and the pitch of notes as they relate to a
 piano keyboard. The graphic length of a note represents how long that
 note is held in musical time.
@@ -6232,7 +6232,7 @@ the clip is still visible, you can trim the edges of it and expose the
 original data. Of course, *Undo* will get you back to where you started
 from if things don't go well.
 
-**Note:** You can envision replace mode as being similar to tape
+> 📝 **Note:** You can envision replace mode as being similar to tape
 recording. As you record something new onto tape, you are erasing the
 section you are recording over.
 
@@ -6272,7 +6272,7 @@ Notes get stretched out and tend to sound mechanical. In general, input
 quantize is more useful for drum programming than playing something like
 a piano part.
 
-**Note:** Input quantizing does not happen in real time. You hear the
+> 📝 **Note:** Input quantizing does not happen in real time. You hear the
 result during playback.
 
 There are other ways (Apply Groove) to quantize after the fact. We'll be
@@ -6408,7 +6408,7 @@ proceed.
 
 *Flattening the MIDI Composite*
 
-**Note:** When you select *Flatten current comp* Waveform asks if you
+> 📝 **Note:** When you select *Flatten current comp* Waveform asks if you
 want to delete the unused takes. If you want to flatten the takes to a
 single MIDI clip, you need to accept this. Note that you can use *Undo*
 following this action.
@@ -6452,7 +6452,7 @@ clip header.
 
 *Trim MIDI Clips by Dragging a Trim Handle*
 
-**Note:** One difference between Audio clips and MIDI clips is that the
+> 📝 **Note:** One difference between Audio clips and MIDI clips is that the
 MIDI clips don't have fade handles.
 
 ## Moving MIDI Clips
@@ -6514,7 +6514,7 @@ Properties. The various actions give you more control over splitting.
 
 *Split Actions Button in Properties*
 
-**Note:** As you split MIDI clips, any notes that are sustained across
+> 📝 **Note:** As you split MIDI clips, any notes that are sustained across
 the split area are separated into two notes.
 
 You can even split a mixture of Audio clips and MIDI clips across
@@ -6536,7 +6536,7 @@ view (PRV).
 Another way to see the MIDI note editor is to double-click on the MIDI
 clip header to toggle track height.
 
-**Note:** Clip header double-click behavior is dependent on a global
+> 📝 **Note:** Clip header double-click behavior is dependent on a global
 setting. Go to the Settings tab, General behavior page and find the
 *Track Resizing* property. You can choose a number of options, based on
 how you would like that resizing to occur when you double-click. This
@@ -6613,7 +6613,7 @@ appear for the full length of the note. By default you will be editing
 Volume (controller 7). Select the pencil tool and draw in the desired
 automation curve by click-dragging over the editing area.
 
-**Note:** You need to select the pencil tool to draw in the per-note
+> 📝 **Note:** You need to select the pencil tool to draw in the per-note
 automation.
 
 The curve will appear as steps based on the current snap resolution. The
@@ -6629,7 +6629,7 @@ You can select any other control by clicking the *Type* button on the
 MIDI editor toolbar. This type of editing gives you detailed control
 over performance details and articulations.
 
-**Note:** Not all virtual instruments respond to this type of data.
+> 📝 **Note:** Not all virtual instruments respond to this type of data.
 
 ## Nudging Notes
 
@@ -6913,7 +6913,7 @@ You'll will notice right away that quantizing perfectly tightens up up
 the performance. It will snap the notes to the nearest increment of the
 division that you selected.
 
-**Note:** If you're playing was so far off that it actually snaps it to
+> 📝 **Note:** If you're playing was so far off that it actually snaps it to
 the wrong note, then you might need to do some MIDI editing to clean
 that up!
 
@@ -6977,7 +6977,7 @@ swing. To apply a nice groovy swing, try *Swing 1/2 60%*.
 
 *Groove Presets for Swing*
 
-**Note:** In 4/4 music, eighth note timing is counted 1 & 2 & 3 & 4 &.
+> 📝 **Note:** In 4/4 music, eighth note timing is counted 1 & 2 & 3 & 4 &.
 In swing timing, the "&" beats are delayed. The swing presets in
 Waveform let you pick how much delay as a percentage from subtle (10%)
 to dramatic (90%).
@@ -7191,7 +7191,7 @@ sequence of pattern sections. Each pattern section is assigned to a
 variation. You can assign the same variation to more than one pattern
 section if you so desire.
 
-**Note:** Variations can exist in a Step clip that are not assigned to
+> 📝 **Note:** Variations can exist in a Step clip that are not assigned to
 any pattern section.
 
 ## Inserting a Step Clip Into the Edit
@@ -7307,7 +7307,7 @@ Clear All Variations
 - *Clear All Variations* clears all the notes from all variations for
     this Step clip.
 
-**Warning:** *Clear All Variations* clears all variations whether you
+> ⚠️ **Warning:** *Clear All Variations* clears all variations whether you
 can see them or not. Fortunately, you can click *Undo* (Cmd + Z / Ctrl +
 Z) if you change your mind right after zeroing out all your variations!
 
@@ -7325,7 +7325,7 @@ Render Clip
 - Use any of the *Render Clip* options to convert a Step clip to an
     Audio clip.
 
-**Note** In the *Render* dialogue box, make sure you have *Pass Through
+> 📝 **Note:** In the *Render* dialogue box, make sure you have *Pass Through
 Plugins* selected. If you don't, the resulting audio clip will be
 silent.
 
@@ -7382,7 +7382,7 @@ All of the actions also appear in Actions and Properties.
 
 *Step Clip Footer Shows Variation & Pattern Section Options*
 
-**Note:** The pattern section and variation numbers are shown in the
+> 📝 **Note:** The pattern section and variation numbers are shown in the
 title line of Properties when a footer is selected. For example,
 "Section 1 (Pattern 8)."
 
@@ -7449,7 +7449,7 @@ New Blank Variation
 **Video Clip:** [Step Clips *Randomize Each
 Step*](https://w-edstrom.wistia.com/medias/ztgsqpw2y5)
 
-**Note:** You can also randomize a row of notes. We'll get to that
+> 📝 **Note:** You can also randomize a row of notes. We'll get to that
 shortly.
 
 Apply Common Groove
@@ -7540,7 +7540,7 @@ Groove
     groove is set at the row level. When you apply common groove it sets
     all rows to the same groove template.
 
-**Note:** Typically groove is used to apply swing. Chose "Basic 8th
+> 📝 **Note:** Typically groove is used to apply swing. Chose "Basic 8th
 Swing" or "Basic 16th Swing" to get started.
 
 **Video Clip:** [Step Clip
@@ -7593,7 +7593,7 @@ Set Destination
     played by Drum Sampler. Then, you can set up a hand clap being
     played by some other virtual instrument.
 
-**Note:** For this feature to function, Waveform automatically wraps the
+> 📝 **Note:** For this feature to function, Waveform automatically wraps the
 virtual instruments in a plugin rack. For the most part, Waveform
 handles the details automatically when you apply *Set Destination*.
 
@@ -7642,7 +7642,7 @@ Here is how to use it:
 
 *Adjusting a Velocity Bar in the V/G Editor*
 
-**Note:** The V/G setting is a percentage of the velocity value set in
+> 📝 **Note:** The V/G setting is a percentage of the velocity value set in
 Actions or Properties for the row. By default it starts at 100%. If you
 want the notes to hit harder, then increase the row *Velocity* and
 adjust the V/G percentage to taste.
@@ -7764,7 +7764,7 @@ Synths](https://w-edstrom.wistia.com/medias/vncjr2ilh9)
 In this chapter, we will show you how to apply effects plugins using the
 In-line mixer or the separate mixer window.
 
-**Note:** Scanning plugins and setting up a favorites plugin list are
+> 📝 **Note:** Scanning plugins and setting up a favorites plugin list are
 done on the Settings tab, Plugins page. Check the reference section
 [Reference: Settings > Plugins](reference-settings--plugins) to learn more about that.
 
@@ -7849,7 +7849,7 @@ Right-click to Insert
     pulls up the plugin selector menu and you may pick any plugin to
     add. It will be added to the left of plugin you started from.
 
-**Note:** If you don't see some of your plugins, review the previous
+> 📝 **Note:** If you don't see some of your plugins, review the previous
 chapter that details how to scan your system for all available plugins.
 
 Plugin Properties
@@ -7944,7 +7944,7 @@ Properties. Each plugin has its own UI window.
 To open the UI for a third-party plugin, double-click the plugin in the
 Mixer.
 
-**Note:** You can change to a single-click to open plugin windows the
+> 📝 **Note:** You can change to a single-click to open plugin windows the
 Settings Tab, Plugins page. The parameter is *Opening Plugin Windows.*
 
 
@@ -8323,7 +8323,7 @@ fast attack time. In this mode it really clamps down on transients.
 
 *Compressor/Limiter Configured as a Limiter*
 
-**Note:** The built-in *Compressor/Limiter* lacks metering, but you can
+> 📝 **Note:** The built-in *Compressor/Limiter* lacks metering, but you can
 insert a *Level Meter* before and after the compressor and look at the
 difference between the two meters get an idea of gain reduction.
 
@@ -8350,7 +8350,7 @@ reset back to the original pitch, select *Pitch* and type in zero.
 > 💡 **Tip:** You nay find it's usually a lot easier to control the *Pitch*
 value by typing in the digits than it is to use the slider.
 
-**Note:** If you insert *Pitch Shifter* ahead of a MIDI instrument, it
+> 📝 **Note:** If you insert *Pitch Shifter* ahead of a MIDI instrument, it
 works on the MIDI data stream to transpose notes up or down by the value
 you set in the *Pitch* parameter.
 
@@ -8535,7 +8535,7 @@ amount sent to the bus track proportionally. Even if you lower the
 volume all the way down, you won't hear a ghosting of the effects bus
 from that track playing in your mix.
 
-**Note:** On a conventional mixing console, this position is called
+> 📝 **Note:** On a conventional mixing console, this position is called
 "post fader." Hardware consoles will have a special switch or maybe even
 a special knob that allows you to send post fader. In Waveform you do
 this in a very direct way: rearrange the order of the fader so that it
@@ -8681,7 +8681,7 @@ operating on that one clip.
 
 *Plugins Using Clip Effects*
 
-**Note:** Clip effects work with Audio clips, but not MIDI clips or Step
+> 📝 **Note:** Clip effects work with Audio clips, but not MIDI clips or Step
 clips.
 
 The rest of the operation is pretty much the same as using plugins in
@@ -8841,7 +8841,7 @@ Soloing/Muting a Folder Track
 
 *Folder Track Solo*
 
-**Note:** When you solo a Folder Track, the tracks contained in it are
+> 📝 **Note:** When you solo a Folder Track, the tracks contained in it are
 soloed with a blinking *Solo* button. This indicates that the track is
 being soloed by the Folder Track and not directly. If you click the
 blinking *Solo* it will change to the standard solo state with a steady
@@ -8871,7 +8871,7 @@ within the Folder Track. It's a very convenient way to add high-level
 mixing to your groups of instruments, without going through the
 complexity of adding numerous additional bus.
 
-**Note:** You can't insert plugins on Folder Tracks, since no audio
+> 📝 **Note:** You can't insert plugins on Folder Tracks, since no audio
 actually passes through the track. To do so you would need to create a
 Submix Track, which we'll cover in the next chapter. \# Creating a
 Folder Track with Existing Tracks
@@ -9453,7 +9453,7 @@ remapping options > Remap plugin automation* from the Menu section.
 
 *Make Remap the Default*
 
-**Note:** Remap Plugin Automation is not set as the default or turned on
+> 📝 **Note:** Remap Plugin Automation is not set as the default or turned on
 by default, to maintain compatibility with older projects. This setting
 and the new default option were new for T6.
 
@@ -9479,7 +9479,7 @@ changes you make to the parameter.
 
 *Automation from Write Mode*
 
-**Note:** You don't need to be in Record mode to record automation
+> 📝 **Note:** You don't need to be in Record mode to record automation
 changes. All you need is to have automation write turned on during
 playback.
 
@@ -9978,7 +9978,7 @@ syntax. It even provides color coding for the elements of the script.
 
 *Javascript Macro Example*
 
-**Note:** Waveform actions are exposed as methods using 'dot' notation.
+> 📝 **Note:** Waveform actions are exposed as methods using 'dot' notation.
 By that, we mean that they start with the word Waveform, then a dot,
 then the method. Following the method you can provide one or more
 parameter in parenthesis.
@@ -10240,7 +10240,7 @@ Use Low-Detail Interface
 - Enable *Use Low-Detail Interface* to eliminated gradient effects on
     clips and other interface objects.
 
-**Note:** Apart from these two options, the color scheme can't be
+> 📝 **Note:** Apart from these two options, the color scheme can't be
 changed. The color editor feature has been retired. The good news is
 that you won't waste time tweaking the colors so you can spend more time
 recording!
@@ -10339,7 +10339,7 @@ how to set it up:
 
 *The Completed Toggle Controls Panel Size Macro*
 
-**Note:** In the alternative key-mapping used in this book, *F11* is
+> 📝 **Note:** In the alternative key-mapping used in this book, *F11* is
 assigned to *Show/Hide Controls Panel*. You may find that toggling
 between the Toolbar and the Controls Panel is a much better use of *F11*
 and wish to change this on all your Tracktion installations.
@@ -10574,7 +10574,7 @@ format.
 
 *Share Preview Option*
 
-**Note:** Don't drag, move, or erase the preview file. You need to leave
+> 📝 **Note:** Don't drag, move, or erase the preview file. You need to leave
 it in this location for the preview to work on the Project page. If you
 want to use it somewhere else, copy it first.
 
@@ -10615,7 +10615,7 @@ Give it a try and notice the animation of the new UI as the panels slide
 in and out. There is nothing to configure. The auto show feature is
 available anytime you have a panel hidden.
 
-**Note:** The auto show feature also works for the new compact Toolbar.
+> 📝 **Note:** The auto show feature also works for the new compact Toolbar.
 
 > 💡 **Tip:** To turn off the auto show panels action, deselect
 *Automatically hide and show panels* in the Settings tab, General
@@ -11042,7 +11042,7 @@ images along with the name.
 
 *Right-click to Open the Visual Plugin Selector*
 
-**Note:** If all you see are a lot of question marks, then read on; we
+> 📝 **Note:** If all you see are a lot of question marks, then read on; we
 will explain how to scan your plugins to capture thumbnails in a bit.
 
 
@@ -11508,7 +11508,7 @@ Layers:
 1.  Click the gear icon at the right to open the plugin UI. When you
     tweak parameters, a few second later the change is rendered in.
 
-**Note:** Because of the way rendering works, it is a bit hard to
+> 📝 **Note:** Because of the way rendering works, it is a bit hard to
 audition changes to plugin parameters. You may find plugin Clip Layers
 are best for applying known presets. If you want to do a lot of real
 time tweaking, then you will probably be better off to use a Clip effect
@@ -11571,7 +11571,7 @@ stereo:
 
 *Mono Options*
 
-**Note:** Most of the time you will probably select *Average of all
+> 📝 **Note:** Most of the time you will probably select *Average of all
 Channels*. This mixes the left and right channels to to create a mono
 version.
 
@@ -12423,7 +12423,7 @@ Choose and edit and it will it back to the current project with the name
 use the "Restore Project" button and it will create a new Project and
 associated Edits from the backup file.
 
-**Note:**\* Only your Project file and Edits are backed up - not the
+> 📝 **Note:**\* Only your Project file and Edits are backed up - not the
 audio files. If you delete source audio files, this feature won't help
 you.
 
@@ -12533,7 +12533,7 @@ selector. Also, you can validate plugins files from this page.
 - Very quick way to open the folder on your system that contains the
     file for a selected plugin.
 
-**Note:** If you have "Automatically check for newly added plugins"
+> 📝 **Note:** If you have "Automatically check for newly added plugins"
 enabled on this page, then Waveform will prompt to scan when it detects
 that new plugins have been installed. With that set you rarely need to
 manually scan for each type of plugin separately.
