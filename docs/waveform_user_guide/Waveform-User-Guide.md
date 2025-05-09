@@ -9130,7 +9130,7 @@ The keys to automation are the A icon and the 'plus' icon that reside at
 the far right of each track.
 
 
-![](images/35----01.png)
+![](images/automation_0_1.png)
 
 *The A and Plus Automation Icons*
 
@@ -9139,7 +9139,7 @@ You'll instantly see the Automation Track appear below your original
 track. The Automation Track will have minus, A, and plus icons.
 
 
-![](images/35----02.png)
+![](images/automation_0_2.png)
 
 *Track with One Automation Track*
 
@@ -9186,7 +9186,7 @@ change the *Name* or choose from several actions. Those make more sense
 once you have some automation points on the curve.
 
 
-![](images/35----05.png)
+![Automation curve properties](images/automation_2_1.png)
 
 *Automation Curve Properties*
 
@@ -9310,7 +9310,7 @@ dynamically during playback, as long as you have *Automation Read*
 enabled on the Transport.
 
 
-![](images/35----13.png)
+![Automation read enabled](images/automation_1_3.png)
 
 *Automation Read Enabled*
 
@@ -9375,9 +9375,6 @@ Simplify
 use this if you want to simply just simplify a section that was recorded
 from hardware, leaving the rest of the curve unchanged.
 
-
-
-
 Delete Points from Curve
 - This set of options allows you to completely reset the automation
     curve. If you delete all points from the curve, you've basically
@@ -9385,7 +9382,7 @@ Delete Points from Curve
     automation value being set very low, so you might need to drag the
     curve line back to a good starting position.
 
-You can also *Delete points within the marked region* which means you'll
+  You can also *Delete points within the marked region* which means you'll
 delete all the points between the In-marker and the Out-marker. You can
 do the same thing and "close the gap," means to take out the time within
 the marked region.
@@ -9398,15 +9395,16 @@ Copy the Marked Region to the Clipboard
     pastes the automation. This makes it fast to create repeating
     patterns of automation.
 
-This is also useful if you've created a very specific effect using
+  This is also useful if you've created a very specific effect using
 automation and want to reproduce that effect in a later part of the
 song.
 
-*Paste from Clipboard* has two options. Most of the time I would use
+*Paste from Clipboard* has two options.
+- Most of the time I would use
 *Paste curves at cursor position*. You can alternatively do that with
 Cmd + V / Ctrl + V.
 
-Alternatively, choose *Paste curves to fit between the in/out markers*.
+  Alternatively, choose *Paste curves to fit between the in/out markers*.
 That allows targeting the destination only within the merged region.
 Normally you paste at the cursor position.
 
@@ -9466,7 +9464,7 @@ playback. All you need to do is setup your automation track and enable
 *Automation Write* mode.
 
 
-![](images/35----19.png)
+![Automation write enabled](images/automation_1_4.png)
 
 **Automation Write* Enabled*
 
@@ -9491,6 +9489,40 @@ get good results with the *Medium* option.
 ![](images/35----21.png)
 
 *Automation with Medium Simplification*
+
+### Automation Modes
+
+Each track has several different automation modes it can be in. These can be set from the A button and the "Automation Mode" menu. The A button on the track will change colour based on the current mode.
+
+![Automation mode menu](images/automation_1_5.png)
+
+- **Read:**
+
+  ![Automation read mode](images/automation_1_6.png)
+  
+  In read mode automation is only read. The global automation read mode must also be enabled. If this is not, the A button will be greyed out to indicate automation won't be read.
+
+- **Touch:**
+
+  ![Automation touch mode](images/automation_1_7.png)
+
+  In touch mode, automation is written whilst the parameter is actively being used. This usually means whilst the mouse is down on a control or an external controller is being touched.
+
+- **Latch:**
+
+  ![Automation latch mode](images/automation_1_8.png)
+
+  In latch mode, automation is written from the time a parameter is first changed. If the mouse is then lifted, whatever the last value written was will overwrite any points on the curve until playback is stopped.
+
+- **Write:**
+
+  ![Automation write mode](images/automation_1_9.png)
+
+  In write mode, automation is continously written. This can be dangerous as as soon as you start play back, whatever value the parameters have will overwrite the existing automation. You should prefer touch or latch modes.
+
+For modes that enable writing (touch/latch/write), global automation write must also be enabled. If it is not, the A buttons will be greyed out to indicate automation won't be written.
+
+> 💡 **Tip:** When a track has a parameter that is being written, the track's A button and the global automation write button will flash to indicate this.
 
 ## Automation Lock
 
