@@ -9520,7 +9520,7 @@ Each track has several different automation modes it can be in. These can be set
 
   In write mode, automation is continously written. This can be dangerous as as soon as you start play back, whatever value the parameters have will overwrite the existing automation. You should prefer touch or latch modes.
 
-For modes that enable writing (touch/latch/write), global automation write must also be enabled. If it is not, the A buttons will be greyed out to indicate automation won't be written.
+> 📝 **Note:** For modes that enable writing (touch/latch/write), global automation write must also be enabled. If it is not, the A buttons will be greyed out to indicate automation won't be written.
 
 > 💡 **Tip:** When a track has a parameter that is being written, the track's A button and the global automation write button will flash to indicate this.
 
@@ -11680,7 +11680,7 @@ these before a virtual instrument to have any effect.
     virtual instruments. For example play bass on the left side of your
     controller and piano on the right
 
-[Video Explaining the MIDI Filter](https://youtu.be/RsxbP4Gys3U)
+> 🎥 [Video Explaining the MIDI Filter](https://youtu.be/RsxbP4Gys3U)
 
 **MIDI Monitor**
 - Shows the stream of MIDI data to debug your setup or better
@@ -11702,7 +11702,7 @@ these before a virtual instrument to have any effect.
 
 ## Playback
 
-[Video explaining clip launcher playback](https://youtu.be/19Wd7HAWzlA)
+> 🎥 [Video explaining clip launcher playback](https://youtu.be/19Wd7HAWzlA)
 
 New in Waveform 13 (Pro and Launcher expansion) is the clip launcher.
 This allows triggering clips to play and stop rather than having their
@@ -11806,7 +11806,7 @@ repeats through a whole song.
 
 ## Recording
 
-[Video explaining recording to the clip launcher](https://youtu.be/sQ3Epfh1zFY)
+> 🎥 [Video explaining recording to the clip launcher](https://youtu.be/sQ3Epfh1zFY)
 
 
 ![](images/clip_launcher_recording.jpeg)
@@ -11834,7 +11834,7 @@ scenes.
 
 ## Performance Recording
 
-[Video explaining capturing a clip launcher performance to the arranger](https://youtu.be/IVMlTjLriuY)
+> 🎥 [Video explaining capturing a clip launcher performance to the arranger](https://youtu.be/IVMlTjLriuY)
 
 
 ![](images/clip_launcher_performance_recording.jpeg)
@@ -11865,7 +11865,7 @@ rendered out.
 
 ## Sequencing (Follow Actions)
 
-[Video explaining clip launcher sequencing and follow actions](https://youtu.be/JYDDkxRHXtM)
+> 🎥 [Video explaining clip launcher sequencing and follow actions](https://youtu.be/JYDDkxRHXtM)
 
 In the above section we've seen how to manually trigger slots and scenes
 but it's also possible to automate this with Follow Actions. These
@@ -11962,7 +11962,7 @@ without worrying about the randomness.
 
 ## External Controllers
 
-[Video explaining using the clip launcher with external controllers](https://youtu.be/hW3aw1sACdc)
+> 🎥 [Video explaining using the clip launcher with external controllers](https://youtu.be/hW3aw1sACdc)
 
 External controllers can be used to control the launching of clips in
 much the same way the arranger section.
