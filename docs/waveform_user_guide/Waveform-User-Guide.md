@@ -11748,6 +11748,7 @@ The clip launcher supports all types of clips so you can play back MIDI,
 step and Edit clips as well as audio. Just make sure you add instruments
 to the relevant tracks for MIDI and Step Clips.
 
+
 ## Scenes
 
 A row of slots across multiple tracks is called a scene. You can trigger
@@ -11796,6 +11797,40 @@ overridden so a clip has its own launch quantisation.
 
 *Clip Properties*
 
+### Legato and Nudge
+
+- **Legato:**
+
+  If a legator is enabled for a slot, playing that slot will take over the previous playing clip's position. This can be useful if you have several variations of the same clip and want to seamlessly switch between them.
+
+- **Nudge:**
+  
+  Moves a clip's playhead forwards/backwards by the global quantisation amount.
+
+  ![Legato and Nudge](images/clip_launcher_4_2_1.png)
+
+### Launch Modes
+
+- **Trigger:**
+
+  Default mode. Launches a clip on the mouse/controller down press, lifting is ignored.
+
+- **Gate:**
+
+  Launches a clip on the mouse/controller down press, stopping it again when lifting. Often used for sound effects or single-shot samples.
+
+- **Toggle:**
+
+  Launches a clip on the mouse/controller down press, and the next down press stops it. Lifting is ignored.
+
+- **Repeat:**
+
+  Holding down the mouse/controller repeatedly launches the clip at the global quantisation period.
+
+  ![Launch modes](images/clip_launcher_4_2_2.png)
+
+
+### Slot Properties
 
 Slots have a "has stop/rec button" property. Disabling this means that
 when a scene is launched, if a track is already playing a clip but
@@ -11831,6 +11866,14 @@ song.
 Recording to a new scene in a track will stop the previous one so you
 can use this to create multiple takes or versions across different
 scenes.
+
+### Record Length
+
+If you select an empty slot, you can enable the "Limit record length" property to set the length of recorded material. Then, when recording to that slot, recording will automatically stop after the elapsed duration. This allows you to quickly record loops in to an arrangement.
+
+![](images/clip_launcher_5_2_1.png)
+
+*Record Length Property*
 
 ## Performance Recording
 
