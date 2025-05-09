@@ -356,6 +356,7 @@
   - [Activating Automation on a Track](#activating-automation-on-a-track)
   - [Choosing What to Automate](#choosing-what-to-automate)
   - [Adding Points to the Automation Curve](#adding-points-to-the-automation-curve)
+  - [Editing Automation](#editing-automation)
   - [Automating Fade-ins and Fade-outs](#automating-fade-ins-and-fade-outs)
   - [Converting a Clip Fade-in or Fade-out to Automation](#converting-a-clip-fade-in-or-fade-out-to-automation)
   - [Reading Automation](#reading-automation)
@@ -539,7 +540,7 @@ Release Log:
 ## Tracktion Waveform User Guide - A Work In Process
 
 The purpose of this user guide is to document and explain the DAW named
-Waveform. At the time of this writing Waveform is on version 13.
+Waveform. At the time of this writing Waveform is on version 13.4.4
 
 Waveform is available in Free, EOM, and Pro editions. The core operation
 of Waveform is the same for all but I will attempt to highlight the
@@ -9217,7 +9218,7 @@ the *Value* parameter slider. You will also find a slider for
 
 ![](images/35----08.png)
 
-*Value* and *Curvature* Properties*
+*Value* and *Curvature* Properties
 
 Drawing an Automation Step
 - Insert two points that define the position of the step. Hold down
@@ -9232,6 +9233,21 @@ Drawing an Automation Step
 
 *Hold Cmd / Ctrl to Draw a Step*
 
+## Editing Automation
+
+If you select a range in a track showing automation, the automation edit handles will appear. You can drag the centre handles to shift or scale all the existing points, of the handles in the corners to shift or scale the points anchored from one of the ends. This allows you to quickly adjust many points or add musical effects like ramps.
+
+![Automation edit handles](images/automation_3_1.png)
+
+With a range selected you can also right click and choose the "Insert automation shape" option to create a shape withing the range. Once the shape is chosen, you can choose the number of repotitions, either a specific number to fit inside the range or the shape repeating at a musical period.
+
+![Automation insert shape](images/automation_3_2.png)
+
+You can combine shape inserting with the scale/offset handles to quickly create interesting and rhythmical patterns.
+
+![Automation insert shape](images/automation_3_3.png)
+
+
 ## Automating Fade-ins and Fade-outs
 
 To program a fade shape with automation, add a point where you'd like
@@ -9242,7 +9258,7 @@ quicker fade or up to the right for a more gradual fade. Dragging the
 Curvature point to adjust the shape of the fade ramp. Of course, you
 always have the option to adjust that parameters directly in Properties.
 
-As we discussed in a Chapter 33, if you program an automation curve for
+As we discussed in a earlier, if you program an automation curve for
 a track folder, you can apply a fade across all the tracks together.
 
 ## Converting a Clip Fade-in or Fade-out to Automation
