@@ -364,6 +364,7 @@
   - [Remap on Tempo Change](#remap-on-tempo-change)
   - [Writing Automation on the Fly](#writing-automation-on-the-fly)
   - [Automation Lock](#automation-lock)
+  - [Clip Automation](#clip-automation)
   - [Moving On](#moving-on-29)
 - [Mixing Down](#mixing-down)
   - [Master Section Processing](#master-section-processing)
@@ -9470,6 +9471,72 @@ automation will not follow it to the new position.
 With *Auto Lock* engaged, automation will follow as you drag the clip to
 a different place in time. It's a great feature, assuming that's what
 you want to do.
+
+## Clip Automation
+
+You can also add automation curves to specific clips. These can control parameters from clip, track or master plugins within the clip's scope (i.e. not a parameter from a plugin on a different track to the clip).
+
+These curves are slightly different to track automation curves in that they are always played back relative to the clip (i.e. they move with the clip) and there are actually three separate curves to control the parameter: absoulte, relative and scale.
+
+Using a combination of these curves and different timing settings you can quickly create complex and rhythmic patterns. We'll go through the settings next.
+
+### The Clip Automation Editor
+
+The clip automation editor can be found from the MIDI/clip editor. You can make this visible from the "eye" button or by double clicking the clip. If you don't see the clip automation properties above the "background audio clip" property, increase the height of the panel.
+
+![](images/clip_automation_1_1.png)
+
+With the clip selected, you should see its contents in relation to the Edit's timeline. (Clip launcher clips are always relative to time 0). Ensure the "eye" button here is enabled to show the automation editor. The clip's content will dim.
+Next, select the plugin and parameter you want to automate from the box next to the "eye" button. If there is no automation on the curve already, you'll see a dashed line indicating the parameter's current value.
+
+![](images/clip_automation_1_2.png)
+
+If the "Absolute" curve is selected and the "Unlinked" button disabled, the value of the parameter can be set by adding points to the curve. If the clip is looped, you'll see the looped region under the time bar along with the start/end points of the clip on the timeline.
+if you make a simple curve like a ramp you'll see the automation line ramp down and stay low but in the looped region, the shaded area shows the value of the automation once the clip loops.
+
+![](images/clip_automation_1_3.png)
+
+The playhead here shows the position of the automation being read rather than the overall timeline which can be useful when determining what automation points coresspond to what time.
+
+#### Linked/Unlinked Mode
+In "linked" mode ("Unlinked" button disabled), the start/length and loop start/length properties of the curve are tied to the clip. You can see these indicated under the time bar but can't edit them. The properties to the right of the curve editor are also greyed out.
+
+In "Unlinked" mode, these properties are separate from the clip. Enabling "Unlinked" mode allows you to edit the start/length with the timecode properties or by dragging the start/end flags below the timeline.
+
+The "Loop" setting is also separate from the clip's loop setting and can be turned on/off. If enabled the loop start/end properties are editable and the loop in/out flags can be dragged in the timeline. There is no "end" flag in looped mode as automation will continue until the clip ends.
+
+The "Unlinked" mode and corresponding properties are separate for each automation curve type.
+
+#### Curve Types (Absolute/Relative/Scale)
+As mentioned, there are three types of curve that can be programmed.
+- Absolute: Controls the base value of the parameter, overriding any track automation that might be present
+- Relative: Modifies the base value of the parameter by shifting it up or down 50%
+- Scale: Modifies the base value of the parameter by scaling 0-100%
+
+Having these three curves, each with different timing information means you can create complex patterns using very few points.
+
+E.g.
+- A single absolute point creating a straight curve
+![](images/clip_automation_2_1.png)
+- A short relative loop creating a repeating ramp
+![](images/clip_automation_2_2.png)
+- A longer scale ramp controlling the peak of each relative loop
+![](images/clip_automation_2_3.png)
+
+The result is the 1 beat repeating ramp you can see in the filled section of the editor.
+
+#### Curve Editing
+
+Clip automation curves can be edited in the same way as track automation curves.
+Selecting a range shows the curve edit handles in the corners which can be dragged to shift or skew the points in the range.
+
+![Curve edit handles](images/clip_automation_3_1.png)
+
+Right clicking the curve shows the popup menu where points can be deleted, copied or pasted. The options available will depend on if a range is selected or not.
+
+Finally, you can use the "Insert automation shape" option to create pre-defined shapes such as sin/saw/square repeating a number of iterations or at a musical interval.
+
+![Curve editor popup menu](images/clip_automation_3_2.png)
 
 ## Moving On
 
