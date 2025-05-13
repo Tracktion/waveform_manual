@@ -9565,6 +9565,8 @@ if you make a simple curve like a ramp you'll see the automation line ramp down 
 
 The playhead here shows the position of the automation being read rather than the overall timeline which can be useful when determining what automation points coresspond to what time.
 
+To remove all automation curves from this clip for the parameter being shown, click the trash can button to the right of the parameter selector button.
+
 #### Linked/Unlinked Mode
 In "linked" mode ("Unlinked" button disabled), the start/length and loop start/length properties of the curve are tied to the clip. You can see these indicated under the time bar but can't edit them. The properties to the right of the curve editor are also greyed out.
 
