@@ -543,7 +543,7 @@ Release Log:
 ## Tracktion Waveform User Guide - A Work In Process
 
 The purpose of this user guide is to document and explain the DAW named
-Waveform. At the time of this writing Waveform is on version 13.4.4
+Waveform. Check the release log above or the version of the DAW this is guide is up to date with.
 
 Waveform is available in Free, EOM, and Pro editions. The core operation
 of Waveform is the same for all but I will attempt to highlight the
