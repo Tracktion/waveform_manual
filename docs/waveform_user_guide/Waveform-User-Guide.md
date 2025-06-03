@@ -525,12 +525,15 @@
 
 Release Log:
 
-*28/3/2024*
+*28/3/2024*: 13.5.2
+- Added [automation modes](#automation-modes)
+- Added [clip automation](#clip-automation)
+- Updated clip launcher for [clip/slot properties](#clipslot-properties)
 
--   Added clip launcher chapter
+*28/3/2024*: 13.0.0
+-   Added [clip launcher](#clip-launcher) chapter
 
 *1/2/2021*
-
 -   Updated images first several chapters
 -   Added Settings>Appearance reference chapter
 -   Added Settings>General reference chapter
