@@ -1,0 +1,6 @@
+# MkDocs toolchain for the Waveform user manual.
+# literate-nav is pinned to 0.6.2: 0.6.3 introduced a dependency on
+# "properdocs", which injects ad banners into builds. Do not upgrade
+# without checking that dependency has been removed.
+mkdocs-material
+mkdocs-literate-nav==0.6.2

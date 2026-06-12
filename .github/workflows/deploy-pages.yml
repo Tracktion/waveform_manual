@@ -1,0 +1,33 @@
+name: Deploy manual to GitHub Pages
+
+on:
+  push:
+    # Drop w14 from this list once it has been merged into main.
+    branches: [main, w14]
+  workflow_dispatch:
+
+permissions:
+  contents: write  # gh-deploy pushes the built site to the gh-pages branch
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - run: pip install -r requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - run: mkdocs gh-deploy --force
