@@ -1,0 +1,15 @@
+/* Custom theme colours — edit these to change the site's appearance.
+   primary = header, sidebar highlights; accent = links, hover states. */
+
+:root {
+    --md-primary-fg-color:        #202229;
+    --md-primary-fg-color--light: #78909c;
+    --md-primary-fg-color--dark:  #37474f;
+    --md-accent-fg-color:         #483B83;
+}
+
+/* Dark mode overrides (slate scheme) */
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color:        #202229;
+    --md-accent-fg-color:         #17C4A9;
+}
