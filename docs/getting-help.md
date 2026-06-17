@@ -17,10 +17,13 @@ Roll-over messages appear in the upper right for items under the
 pointer. These messages give you a description of the object under the
 mouse pointer.
 
-## Quick Start Guide
+## Quick Start
 
-Starting with T7, Waveform includes a Quick Start PDF file. Access this
-brief printable guide from the Help menu.
+If you are new to Waveform, the [Quick Start](quick-start.md) chapter at the
+front of this manual is the fastest way to get set up and making music. It
+walks you from install through your first recording and export, linking to
+the fuller chapters as you go. You can also open this manual at any time from
+*Help > User guide PDF*.
 
 ## Keyboard Shortcut List
 

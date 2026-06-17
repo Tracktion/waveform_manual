@@ -3,6 +3,7 @@
 - [Front Matter](front-matter.md)
 - [About This Book](about-this-book.md)
 - [Introduction](introduction.md)
+- [Quick Start](quick-start.md)
 - [What's New](whats-new.md)
 - [Installing the Demo Projects](installing-the-demo-projects.md)
 - [Audio Device Setup](audio-device-setup.md)
