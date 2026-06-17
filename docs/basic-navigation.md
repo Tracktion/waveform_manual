@@ -54,7 +54,7 @@ you will see it referred to throughout this guide.
 
 Pop-up help is helpful for the first few minutes, but you may not wish
 to use it after you are more familiar with the program. If you are using
-the alternative Waveform key-mappings, you can see available pop-up help
+the default Waveform key-mappings, you can see available pop-up help
 by pointing at an item on screen and pressing F1.
 
 

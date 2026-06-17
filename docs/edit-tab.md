@@ -7,11 +7,11 @@ terminology for the Waveform interface and objects used throughout the
 rest of this book.
 
 > 📝 **Note:** The keyboard shortcuts used in the chapter are based on the
-alternative key mappings under *Settings > Keyboard Shortcuts > Reset
-to Defaults > Use alternative Waveform key-mappings.* We've already
+default key mappings under *Settings > Keyboard Shortcuts > Reset
+to Defaults > Restore default Waveform key mappings.* We've already
 mentioned this several times and this might not be the last! If you want
 to follow along with the keyboard shortcuts used in this book, make sure
-to load the alternative key-mappings.
+to load the default key-mappings.
 
 ## The Parts of a Waveform Edit
 
