@@ -49,6 +49,10 @@ The toolbar on the right side of the faceplate contains these buttons, from top 
 
 ## The Grid System
 
+![](images/Faceplate%203.png)
+
+*A faceplate in a plugin rack, with the faceplate grid shown below the rack.*
+
 Faceplates use a grid layout. Every control snaps to grid cells and can span multiple cells. The grid maximum size is 64 by 64, which gives you plenty of room for complex layouts.
 
 To resize the grid, use the width and height sliders in the edit toolbar. If you need finer control over placement, right-click the faceplate background and select **Double grid resolution**. This doubles both the width and height of the grid and scales all existing controls to match, giving you twice the positioning precision without changing how anything looks.

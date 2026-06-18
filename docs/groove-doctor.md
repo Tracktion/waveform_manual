@@ -10,7 +10,7 @@ to the click without re-recording it.
 > 📝 **Note:** The Groove Doctor is part of **Waveform Pro** only. It isn't
 available in the Free or OEM editions.
 
-![](images/PLACEHOLDER_groovedoctor_1.png)
+![](images/Groove%20Dr%201.png)
 *The Groove Doctor window*
 
 This is an audio tool, not a MIDI one. To quantise MIDI notes, see the
@@ -104,7 +104,7 @@ each beat and snaps the pieces to the grid. Here's the full pass:
 > destructive, so snapshotting first is cheap insurance. See the Track
 > Snapshots chapter for how to restore one.
 
-![](images/PLACEHOLDER_groovedoctor_2.png)
+![](images/Groove%20Dr%202.png)
 *Working through the Quantise/groove stages*
 
 ## Stage Reference

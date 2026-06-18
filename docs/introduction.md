@@ -70,7 +70,7 @@ Groove3.com has some older but useful content on Tracktion. Look for
 videos there on plugin-racks, MasterMix, and videos on the Tracktion
 DAW.
 
-Groove 3 - [Groove3.com](Groove3.com)
+Groove 3 - [Groove3.com](https://www.groove3.com)
 
 ## Setting Tracktion Keyboard Shortcuts
 

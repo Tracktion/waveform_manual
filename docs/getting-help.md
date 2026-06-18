@@ -64,7 +64,7 @@ book.
 ## Tracktion Forums
 
 The long term official [forum for Waveform
-Software](http://goo.gl/YaygV6) is hosted at [KVR](kvraudio.com). This
+Software](http://goo.gl/YaygV6) is hosted at [KVR](https://www.kvraudio.com). This
 the most active Waveform forum that exists. Here you can interact with
 the other users, TSC staff, and developers.
 

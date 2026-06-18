@@ -33,6 +33,10 @@ At the top of the panel is a breadcrumb that shows the path to your current sele
 
 This is handy when you've drilled down into a parameter and want to get back to the actions for the parent track or clip without re-selecting it in the arrangement.
 
+![](images/Actions%20Panel%202.png)
+
+*The Actions panel showing the actions for a selected track.*
+
 ## Favourites and Display Modes
 
 Not every action is something you use every day, so the panel lets you curate what it shows. Three small icon buttons at the top of the panel switch between display modes:

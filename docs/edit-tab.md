@@ -291,6 +291,10 @@ to manage the link to the underlying Edit.
 
 ## The Mixer
 
+![](images/Mixer.png)
+
+*The Mixer, with a channel strip for every track.*
+
 Waveform's default Mixer view is one of it's unique, defining features.
 For each track, signal flows from left to right - Input to Track, Track
 to Mixer, Mixer to Master. The Mixer is where you arrange plugins to
