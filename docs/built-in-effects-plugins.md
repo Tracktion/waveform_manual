@@ -161,9 +161,17 @@ right for *Frequency*, and around the node to set its *Q* (width).
 or a shelf. It's perfect for a quick surgical cut or a gentle tone tweak
 without the clutter of a full EQ.
 
+![](images/Audio%20FX/1-Band%20EQ.png)
+
+*The 1-Band Equaliser*
+
 *3-Band Equaliser* gives you a low shelf, a sweepable mid bell, and a
 high shelf — the classic three-band tone stack. Set the *Frequency* and
 *Gain* of each band by dragging its node.
+
+![](images/Audio%20FX/3-Band%20EQ.png)
+
+*The 3-Band Equaliser*
 
 *8-Band Equaliser* is the full parametric EQ. It has eight bands — a low
 shelf, six peaking bands, and a high shelf — each with its own
@@ -171,6 +179,10 @@ shelf, six peaking bands, and a high shelf — each with its own
 individually. It also offers a *Stereo* or *Mid/Side* mode: in *Mid/Side*
 mode you equalise the centre (mono) and the sides (stereo) of the signal
 independently, which is handy for mastering and stereo-width work.
+
+![](images/Audio%20FX/8-Band%20EQ.png)
+
+*The 8-Band Equaliser*
 
 > 📝 **Note:** The older *4-Band Equalizer* from earlier versions now lives
 in the *Legacy* folder. See the *Legacy Plugins* chapter if you need it to
@@ -189,6 +201,18 @@ all.
   plate, a long-time favourite on vocals and snares.
 - *Non-linear Reverb* is a gated/non-linear effect whose tail cuts off
   abruptly rather than fading away — the big drum sound of the '80s.
+
+![](images/Audio%20FX/Natural%20Reverb.png)
+
+*The Natural Reverb*
+
+![](images/Audio%20FX/Plate%20Reverb.png)
+
+*The Plate Reverb*
+
+![](images/Audio%20FX/Non-linear%20Reverb.png)
+
+*The Non-linear Reverb*
 
 The controls are:
 
@@ -220,6 +244,10 @@ independent left and right channels. Each side has its own delay time,
 feedback, cross-feedback, pan, and trim, so you can build everything from
 a simple slapback to wide bouncing stereo echoes.
 
+![](images/Audio%20FX/Delay.png)
+
+*The Delay*
+
 For each channel (*L* and *R*):
 
 - *Delay* — the delay time in milliseconds, or, with *Sync* on, locked to
@@ -247,6 +275,10 @@ The *Chorus* plugin gives you that classic shimmering, doubling effect —
 great on guitars, pads, electric pianos, bass, and vocals. It works by
 modulating a short delay so the pitch drifts gently up and down.
 
+![](images/Audio%20FX/Chorus.png)
+
+*The Chorus*
+
 - *Mode* — *Normal*, *Wide*, or *Wider*, setting how far the effect spreads
   across the stereo field.
 - *Delay* — the base delay time the modulation works around.
@@ -266,6 +298,10 @@ A phaser gives you that instantly recognisable swirling, sweeping motion —
 popular on guitars, synths, and electric pianos, or any track that needs
 some movement. It works by sweeping a set of notches up and down through
 the frequency spectrum.
+
+![](images/Audio%20FX/Phaser.png)
+
+*The Phaser*
 
 - *Stages* — the number of filter stages (4 to 12); more stages give a
   richer, more pronounced sweep.
@@ -293,6 +329,10 @@ doing one job well.
 **Compressor** evens out the level of a signal by turning down anything
 that rises above a threshold.
 
+![](images/Audio%20FX/Compressor.png)
+
+*The Compressor*
+
 - *Threshold* — the level above which compression starts.
 - *Ratio* — how hard the signal is turned down once it crosses the
   threshold.
@@ -310,6 +350,10 @@ that rises above a threshold.
 *below* the threshold, silencing quiet passages, bleed, or hiss between
 notes.
 
+![](images/Audio%20FX/Gate.png)
+
+*The Gate*
+
 - *Threshold* — the level below which the gate closes.
 - *Attack* — how fast the gate opens when the signal returns.
 - *Hold* — how long it stays open after the signal drops.
@@ -318,6 +362,10 @@ notes.
 **Limiter** is a brick-wall limiter that stops the signal from ever
 exceeding a set ceiling — ideal on the master bus to catch peaks and
 maximise loudness.
+
+![](images/Audio%20FX/Limiter.png)
+
+*The Limiter*
 
 - *Gain* — drives the signal into the limiter; more gain means more
   limiting and a louder result.
@@ -331,6 +379,10 @@ versions is now in the *Legacy* folder.
 
 *Distortion* adds harmonic grit and saturation, from gentle warmth to
 full-on fuzz.
+
+![](images/Audio%20FX/Distortion.png)
+
+*The Distortion*
 
 - *Type* — the flavour of distortion: *Light*, *Medium*, *Hard*, *Clip*,
   *Tube*, or *Fuzz*.
@@ -349,7 +401,7 @@ the signal in real time. For audio tracks, this uses the *Elastique Pro*
 algorithm, or whichever algorithm you select in the *Type* parameter.
 
 
-![](images/30----20.png)
+![](images/Audio%20FX/Pitch%20Shifter.png)
 
 *The Waveform Pitch Shifter Plugin*
 
@@ -380,6 +432,10 @@ completely, the way a DJ drops the bass out of a track. Two crossover
 controls, *Freq 1* and *Freq 2*, set the frequencies where the bands
 divide.
 
+![](images/Audio%20FX/DJ%20EQ.png)
+
+*The DJ EQ*
+
 *DJ Filter* is the classic single-knob DJ filter. The *Freq* control sits
 at *Off* in the centre: turn it left and a low-pass filter sweeps the
 highs away; turn it right and a high-pass filter sweeps the lows away. *Q*
@@ -401,11 +457,19 @@ mixer.
 adjustable response *Curve*, so you can ride or program smooth level
 changes.
 
+![](images/Audio%20FX/Fader.png)
+
+*The Fader*
+
 *Crossfader* blends between two stereo sources, *A* and *B*. It takes two
 stereo inputs and produces one stereo output; the *Position* control fades
 from full A on the left, through the centre, to full B on the right.
 *Curve* shapes the blend — from a smooth equal-power fade to a sharp cut —
 and *Centre Gain* sets the level at the midpoint.
+
+![](images/Audio%20FX/Crossfader.png)
+
+*The Crossfader*
 
 ## Text Plugin
 
@@ -439,6 +503,10 @@ room — and stamps that character onto whatever passes through it. It pairs
 naturally with an amp-simulation plugin: run your DI guitar into the amp sim,
 then into *Guitar IR* to model the cabinet and miking.
 
+![](images/Audio%20FX/Guitar%20IR.png)
+
+*The Guitar IR*
+
 Load a WAV file using the IR field, then shape the result with the controls:
 
 - *Gain* — output level, from −12 dB to +6 dB.
@@ -452,6 +520,10 @@ Load a WAV file using the IR field, then shape the result with the controls:
 - *Trim Silence* — removes leading silence from the IR. Off by default.
 
 ### Dual Guitar IR
+
+![](images/Audio%20FX/Dual%20Guitar%20IR.png)
+
+*The Dual Guitar IR*
 
 *Dual Guitar IR* works the same way but hosts **two** impulse responses (A and
 B) at once, so you can blend two cabinets or mic positions for a wider, more

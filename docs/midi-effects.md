@@ -16,7 +16,7 @@ track's plugin chain before the instrument (it can't be added to a
 clip).
 <!-- code: waveform/common/Source/licensing/Features.cpp:185-196; ArpPlugin.cpp:225 -->
 
-![](images/PLACEHOLDER_midi-arpeggiator_1.png)
+![](images/MIDI%20Utilities/MIDI%20Arpeggiator.png)
 
 *The MIDI Arpeggiator*
 
@@ -84,7 +84,7 @@ a track's plugin chain before the instrument (it can't be added to a
 clip).
 <!-- code: waveform/common/Source/licensing/Features.cpp:185-196; ChordCompanionPadsUI.h:407 -->
 
-![](images/PLACEHOLDER_chord-companion_1.png)
+![](images/MIDI%20Utilities/MIDI%20Chord%20Companion.png)
 
 *The MIDI Chord Companion*
 
@@ -133,7 +133,7 @@ track's plugin chain before the instrument (it can't be added to a
 clip).
 <!-- code: waveform/common/Source/plugins/internal/TracktionPluginFormat.h:45 -->
 
-![](images/PLACEHOLDER_chord-player_1.png)
+![](images/MIDI%20Utilities/MIDI%20Chord%20Player.png)
 
 *The MIDI Chord Player*
 
@@ -168,6 +168,10 @@ track.
 MIDI modifier is a transposer for MIDI data. Use the controls to
 shift the pitch of MIDI notes up or down by fixed intervals.
 
+![](images/MIDI%20Utilities/MIDI%20Modifier.png)
+
+*The MIDI Modifier*
+
 ### MIDI Note Repeater (Pro edition)
 
 The Note Repeater fires a rhythmic pattern while notes are held —
@@ -179,7 +183,7 @@ and later, and goes on a track's plugin chain before the instrument
 (it can't be added to a clip).
 <!-- code: waveform/common/Source/licensing/Features.cpp:185-196; NoteRepeatPlugin.cpp:108 -->
 
-![](images/PLACEHOLDER_note-repeater_1.png)
+![](images/MIDI%20Utilities/MIDI%20Note%20Repeater.png)
 
 *The MIDI Note Repeater*
 
