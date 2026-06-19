@@ -190,7 +190,7 @@ the *Use computer keyboard for MIDI input* setting is on — see
 Reference: Settings > MIDI Devices).
 <!-- code: StandardShortcuts.h:635; EditTab.cpp:1279 -->
 
-![](images/PLACEHOLDER_midi-typing_1.png)
+![](images/midi-typing_1@2x.png)
 
 *The MIDI Typing window*
 
@@ -221,7 +221,7 @@ named set from a preset, **Edit** opens the dialog to modify the
 selected set, and **Delete** removes one.
 <!-- code: waveform/common/Source/ui/settings/MidiOutputDevicePropertyPanel.h:108-147 -->
 
-![](images/PLACEHOLDER_program-manager_1.png)
+![](images/program-manager_1@2x.png)
 
 *The MIDI program names dialog*
 

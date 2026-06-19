@@ -13,7 +13,7 @@ Layouts only ever touch the *appearance* of the window. They never change your a
 plugins, or any other project data.
 
 
-![](images/PLACEHOLDER_layouts_1.png)
+![](images/layouts_1@2x.png)
 
 *The Layout menu*
 

@@ -185,7 +185,7 @@ Live preset preview lets you play a synth preset through your MIDI controller be
 
 Alongside the Search browser, the sidebar has a separate **Files** tab. Where the Search browser organises your library by category and tags, the Files panel is a plain filesystem browser -- a folder tree you navigate just like your operating system's file manager. It is the quickest way to pull in audio that is not part of your tagged library.
 
-![](images/PLACEHOLDER_files_panel.png)
+![](images/files_panel@2x.png)
 *The Files panel browsing a folder of audio files*
 
 ### Choosing What to Browse
@@ -207,6 +207,24 @@ Use the up-arrow button to move up to the parent folder.
 The Files panel lists audio files -- plus SoundFont `.sf2` and `.sfz` files -- and shares the same preview strip at the bottom as the Search browser, so you can audition a file before using it. Drag a file onto a track to place it, double-click to insert it at the cursor, and hold **Shift** while dragging to spread several files across consecutive tracks, exactly as in the Search browser.
 
 > 📝 **Note:** The Files panel browses your filesystem directly, so it shows files whether or not they have been tagged or added to your library. Dragging a new file in from here does not add it to your loop library -- use the Search browser for tagged, searchable content.
+
+## The Groups Panel
+
+The **Groups** panel is the sidebar's home for [Edit Mix Groups](edit-mix-groups.md) -- the feature that links several audio tracks so that an action on one (a fader move, a mute, and so on) is mirrored on the rest. It gives you a single place to see every group in the edit, create new ones, and switch them on and off.
+
+![](images/browser_groups@2x.png)
+*The Groups panel, listing the edit's mix groups*
+
+> 📝 **Note:** The Groups panel only appears in **Waveform Pro**, since Edit Mix Groups are a Pro feature.
+
+The panel lists every group in the edit. Each row shows the group's name drawn in that group's colour, and a small `*` appears next to any group that contains a track you currently have selected, so you can tell at a glance which groups your selection belongs to.
+
+- **Create New Group** -- the button at the bottom of the panel makes a new group from the audio tracks you currently have selected (and selects the new group so you can name it and set its options straight away). See [Creating and Managing Groups](edit-mix-groups.md#creating-and-managing-groups) for the other ways to build a group.
+- **Disable** -- each row has its own Disable button that bypasses just that group, leaving the others untouched. This is handy for nudging a single track without breaking it out of the group permanently.
+- **Open a group's properties** -- double-click a row to open that group's property page, where you choose exactly which operations the group links (volume, mute, pan, solo, and so on). The full list is described in [What Gets Linked](edit-mix-groups.md#what-gets-linked).
+- **Select and delete** -- single-click selects a group (Cmd/Ctrl-click to select several); press **Delete** to remove the selected group(s). Deleting a group never deletes its tracks.
+
+> 💡 **Tip:** A track can belong to more than one group at once -- the coloured circle in the track header shows a slice for each group it is in. See [The Track Header Group Icon](edit-mix-groups.md#the-track-header-group-icon) for details.
 
 ## ⚡ Things to Watch Out For
 

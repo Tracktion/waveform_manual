@@ -17,7 +17,7 @@ enabled); everything else is left switched off until you turn it on.
 <!-- code: EditMixGroupPropertyPanel.h:133-144; EditMixGroups.cpp:44-54 -->
 
 
-![](images/PLACEHOLDER_mixgroups_1.png)
+![](images/mixgroups_1@2x.png)
 
 *Two audio tracks linked by an Edit Mix Group*
 
