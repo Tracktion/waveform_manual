@@ -2,7 +2,7 @@
 
 The Browser is your central hub for finding and auditioning content -- plugins, presets, samples, clips, tracks, and more. It lives in the sidebar panel on the right side of the edit view, under the **Search** tab.
 
-![](images/Browser.png)
+![](images/Browser@2x.png)
 *The Browser panel showing Packs content with folders expanded. The sidebar on the left lets you filter by category, and the results area on the right displays matching items in a tree view.*
 
 ## Opening the Browser

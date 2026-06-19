@@ -107,7 +107,7 @@ overridden so a clip has its own launch quantisation.
   
   Moves a clip's playhead forwards/backwards by the global quantisation amount.
 
-  ![Legato and Nudge](images/clip_launcher_4_2_1.png)
+  ![Legato and Nudge](images/clip_launcher_4_2_1@2x.png)
 
 ### Launch Modes
 
@@ -127,7 +127,7 @@ overridden so a clip has its own launch quantisation.
 
   Holding down the mouse/controller repeatedly launches the clip at the global quantisation period.
 
-  ![Launch modes](images/clip_launcher_4_2_2.png)
+  ![Launch modes](images/clip_launcher_4_2_2@2x.png)
 
 
 ### Slot properties
@@ -171,7 +171,7 @@ scenes.
 
 If you select an empty slot, you can enable the "Limit record length" property to set the length of recorded material. Then, when recording to that slot, recording will automatically stop after the elapsed duration. This allows you to quickly record loops in to an arrangement.
 
-![](images/clip_launcher_5_2_1.png)
+![](images/clip_launcher_5_2_1@2x.png)
 
 *Record Length Property*
 

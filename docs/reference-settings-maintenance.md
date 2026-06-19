@@ -2,7 +2,7 @@
 
 The Maintenance page is where you decide how much you want to help Tracktion improve Waveform, and where you grab the files you'll need if you ever have to report a problem. It's also the quickest place to check exactly which version of Waveform you're running.
 
-![](images/settings_maintenance.png)
+![](images/settings_maintenance@2x.png)
 *Settings > Maintenance*
 
 To get here, open the **Settings** tab and choose **Maintenance** from the list on the left.

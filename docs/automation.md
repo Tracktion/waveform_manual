@@ -24,7 +24,7 @@ The keys to automation are the A icon and the 'plus' icon that reside at
 the far right of each track.
 
 
-![](images/automation_0_1.png)
+![](images/automation_0_1@2x.png)
 
 *The A and Plus Automation Icons*
 
@@ -33,7 +33,7 @@ You'll instantly see the Automation Track appear below your original
 track. The Automation Track will have minus, A, and plus icons.
 
 
-![](images/automation_0_2.png)
+![](images/automation_0_2@2x.png)
 
 *Track with One Automation Track*
 
@@ -45,11 +45,11 @@ Track below this one.
 
 When showing automation on an *audio* track (i.e. not an *automation* track), you will see a "pin" icon next to the "A" button. When this pin is disabled, the displayed curve on this track will change when a plugin parameter changes. This can make it much quicker to show the relevent curve as you can just unpin the current curve, move the parameter in the plugin's UI and the curve will change. If you want to keep this curve visible you can either pin it or click the "A" button and choose to move it to a dedicated automation track.
 
-![Automation curve pin unpinned](images/automation_1_1.png)
+![Automation curve pin unpinned](images/automation_1_1@2x.png)
 
 *Unpinned*
 
-![Automation curve pin pinned](images/automation_1_2.png)
+![Automation curve pin pinned](images/automation_1_2@2x.png)
 
 *Pinned*
 
@@ -80,7 +80,7 @@ change the *Name* or choose from several actions. Those make more sense
 once you have some automation points on the curve.
 
 
-![Automation curve properties](images/automation_2_1.png)
+![Automation curve properties](images/automation_2_1@2x.png)
 
 *Automation Curve properties*
 
@@ -143,15 +143,15 @@ Drawing an Automation Step
 
 If you select a range in a track showing automation, the automation edit handles will appear. You can drag the centre handles to shift or scale all the existing points, of the handles in the corners to shift or scale the points anchored from one of the ends. This allows you to quickly adjust many points or add musical effects like ramps.
 
-![Automation edit handles](images/automation_3_1.png)
+![Automation edit handles](images/automation_3_1@2x.png)
 
 With a range selected you can also right click and choose the "Insert automation shape" option to create a shape withing the range. Once the shape is chosen, you can choose the number of repotitions, either a specific number to fit inside the range or the shape repeating at a musical period.
 
-![Automation insert shape](images/automation_3_2.png)
+![Automation insert shape](images/automation_3_2@2x.png)
 
 You can combine shape inserting with the scale/offset handles to quickly create interesting and rhythmical patterns.
 
-![Automation insert shape](images/automation_3_3.png)
+![Automation insert shape](images/automation_3_3@2x.png)
 
 
 ## Automating Fade-ins and Fade-outs
@@ -204,7 +204,7 @@ dynamically during playback, as long as you have *Automation Read*
 enabled on the Transport.
 
 
-![Automation read enabled](images/automation_1_3.png)
+![Automation read enabled](images/automation_1_3@2x.png)
 
 *Automation Read Enabled*
 
@@ -219,7 +219,7 @@ curve to selected it and look at properties. Here is a rundown of the
 controls:
 
 
-![Automation curve properties](images/automation_2_1.png)
+![Automation curve properties](images/automation_2_1@2x.png)
 
 *Automation Curve properties*
 
@@ -232,7 +232,7 @@ Curve
 Curve Enabled
 - Allows you to disable the curve. A disabled curve has no effect on the parameter and can be used to quickly test what affect the automation is having. A disabled curve will show greyed out in the track. If you write automation it touch or latch modes, this will re-enabled the curve.
 
-  ![Disabled automation](images/automation_2_2.png)
+  ![Disabled automation](images/automation_2_2@2x.png)
 
 Displace Curve
 - *Displace Curve* allows you to drag left or right which offsets the
@@ -358,7 +358,7 @@ playback. All you need to do is setup your automation track and enable
 *Automation Write* mode.
 
 
-![Automation write enabled](images/automation_1_4.png)
+![Automation write enabled](images/automation_1_4@2x.png)
 
 **Automation Write* Enabled*
 
@@ -388,29 +388,29 @@ get good results with the *Medium* option.
 
 Each track has several different automation modes it can be in. These can be set from the A button and the "Automation Mode" menu. The A button on the track will change colour based on the current mode.
 
-![Automation mode menu](images/automation_1_5.png)
+![Automation mode menu](images/automation_1_5@2x.png)
 
 - **Read:**
 
-  ![Automation read mode](images/automation_1_6.png)
+  ![Automation read mode](images/automation_1_6@2x.png)
   
   In read mode automation is only read. The global automation read mode must also be enabled. If this is not, the A button will be greyed out to indicate automation won't be read.
 
 - **Touch:**
 
-  ![Automation touch mode](images/automation_1_7.png)
+  ![Automation touch mode](images/automation_1_7@2x.png)
 
   In touch mode, automation is written whilst the parameter is actively being used. This usually means whilst the mouse is down on a control or an external controller is being touched.
 
 - **Latch:**
 
-  ![Automation latch mode](images/automation_1_8.png)
+  ![Automation latch mode](images/automation_1_8@2x.png)
 
   In latch mode, automation is written from the time a parameter is first changed. If the mouse is then lifted, whatever the last value written was will overwrite any points on the curve until playback is stopped.
 
 - **Write:**
 
-  ![Automation write mode](images/automation_1_9.png)
+  ![Automation write mode](images/automation_1_9@2x.png)
 
   In write mode, automation is continously written. This can be dangerous as as soon as you start play back, whatever value the parameters have will overwrite the existing automation. You should prefer touch or latch modes.
 
@@ -445,17 +445,17 @@ Using a combination of these curves and different timing settings you can quickl
 
 The clip automation editor can be found from the MIDI/clip editor. You can make this visible from the "eye" button or by double clicking the clip. If you don't see the clip automation properties above the "background audio clip" property, increase the height of the panel.
 
-![](images/clip_automation_1_1.png)
+![](images/clip_automation_1_1@2x.png)
 
 With the clip selected, you should see its contents in relation to the Edit's timeline. (Clip launcher clips are always relative to time 0). Ensure the "eye" button here is enabled to show the automation editor. The clip's content will dim.
 Next, select the plugin and parameter you want to automate from the box next to the "eye" button. If there is no automation on the curve already, you'll see a dashed line indicating the parameter's current value.
 
-![](images/clip_automation_1_2.png)
+![](images/clip_automation_1_2@2x.png)
 
 If the "Absolute" curve is selected and the "Unlinked" button disabled, the value of the parameter can be set by adding points to the curve. If the clip is looped, you'll see the looped region under the time bar along with the start/end points of the clip on the timeline.
 if you make a simple curve like a ramp you'll see the automation line ramp down and stay low but in the looped region, the shaded area shows the value of the automation once the clip loops.
 
-![](images/clip_automation_1_3.png)
+![](images/clip_automation_1_3@2x.png)
 
 The playhead here shows the position of the automation being read rather than the overall timeline which can be useful when determining what automation points coresspond to what time.
 
@@ -480,11 +480,11 @@ Having these three curves, each with different timing information means you can 
 
 E.g.
 - A single absolute point creating a straight curve
-![](images/clip_automation_2_1.png)
+![](images/clip_automation_2_1@2x.png)
 - A short relative loop creating a repeating ramp
-![](images/clip_automation_2_2.png)
+![](images/clip_automation_2_2@2x.png)
 - A longer scale ramp controlling the peak of each relative loop
-![](images/clip_automation_2_3.png)
+![](images/clip_automation_2_3@2x.png)
 
 The result is the 1 beat repeating ramp you can see in the filled section of the editor.
 
@@ -493,13 +493,13 @@ The result is the 1 beat repeating ramp you can see in the filled section of the
 Clip automation curves can be edited in the same way as track automation curves.
 Selecting a range shows the curve edit handles in the corners which can be dragged to shift or skew the points in the range.
 
-![Curve edit handles](images/clip_automation_3_1.png)
+![Curve edit handles](images/clip_automation_3_1@2x.png)
 
 Right clicking the curve shows the popup menu where points can be deleted, copied or pasted. The options available will depend on if a range is selected or not.
 
 Finally, you can use the "Insert automation shape" option to create pre-defined shapes such as sin/saw/square repeating a number of iterations or at a musical interval.
 
-![Curve editor popup menu](images/clip_automation_3_2.png)
+![Curve editor popup menu](images/clip_automation_3_2@2x.png)
 
 ## Automation Patterns
 

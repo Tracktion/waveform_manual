@@ -22,7 +22,7 @@ Here is the setup:
     doesn't have a guitar input then use a suitable preamp.
 
 
-![](images/21----02.jpg)
+![](images/21----02@2x.jpg)
 
 *Connect Your Guitar to your Interface*
 
@@ -55,7 +55,7 @@ Here is the setup:
     to the mixer section.
 
 
-![](images/21----06.png)
+![](images/21----06@2x.png)
 
 *Drag the Amp Sim Plugin to the Mixer*
 
@@ -87,7 +87,7 @@ At this point, recording works the same as before.
     sound.
 
 
-![](images/21----09.png)
+![](images/21----09@2x.png)
 
 *Recording with the Amp Sim*
 

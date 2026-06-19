@@ -10,7 +10,7 @@ With Waveform open, you can see the Projects tab and the Settings tab.
 Click on the tab name or icon to switch to that tab.
 
 
-![](images/05----02.png)
+![](images/05----02@2x.png)
 
 *Projects Tab & Settings Tab*
 
@@ -21,12 +21,12 @@ on Windows and Linux). The available menus change depending on whether
 you are on the Projects tab or an Edit tab.
 
 
-![](images/05----04.png)
+![](images/05----04@2x.png)
 
 *Menus in the Projects Tab*
 
 
-![](images/05----03.png)
+![](images/05----03@2x.png)
 
 *Menus in the Edit Tab*
 
@@ -48,7 +48,7 @@ you will see it referred to throughout this guide.
 ## Pop-up Help
 
 
-![](images/05----05.png)
+![](images/05----05@2x.png)
 
 *Example of a Pop-up Help Message*
 
@@ -58,7 +58,7 @@ the default Waveform key-mappings, you can see available pop-up help
 by pointing at an item on screen and pressing F1.
 
 
-![](images/05----06.png)
+![](images/05----06@2x.png)
 
 *Disabling Pop-up Help*
 
@@ -73,7 +73,7 @@ objects. The messages appear automatically as you roll over items on the
 screen.
 
 
-![](images/05----07.png)
+![](images/05----07@2x.png)
 
 *Example of Rollover Help*
 
@@ -86,7 +86,7 @@ The very first step to produce a song in Waveform is to create a
 project. To do so:
 
 
-![](images/05----08.png)
+![](images/05----08@2x.png)
 
 *The *New Project* button on the Projects tab*
 
@@ -97,7 +97,7 @@ project. To do so:
 5.  Click *Create Project*
 
 
-![](images/05----09.png)
+![](images/05----09@2x.png)
 
 *The New Project Dialog Box*
 
@@ -111,7 +111,7 @@ word "edit"; that file is called an Edit. In our example, the Edit name
 is "SummerSong100 Edit 1."
 
 
-![](images/05----10.png)
+![](images/05----10@2x.png)
 
 *All Items List*
 
@@ -162,7 +162,7 @@ Start and Stop Playback
     the Spacebar to toggle between start and stop.
 
 
-![](images/05----01.png)
+![](images/05----01@2x.png)
 
 *Return to Start on Stop*
 
@@ -186,7 +186,7 @@ keyboard shortcuts. These are also available from the Zoom menu by
 right-clicking the Timeline.
 
 
-![](images/05----01b.png)
+![](images/05----01b@2x.png)
 
 *Zoom Actions on Timeline Context Menu*
 
@@ -222,7 +222,7 @@ the background or the body of clips, de-select the option "Clicking the
 background locates the cursor" in Settings > General > Editing
 
 
-![](images/05----13.png)
+![](images/05----13@2x.png)
 
 *Drag to Position Cursor Setting*
 
@@ -243,7 +243,7 @@ screen. You can hide or show the Tempo track using the *Eye* panel
 selector at the upper right F9.
 
 
-![](images/05----14.png)
+![](images/05----14@2x.png)
 
 *Show or Hide the Tempo Track with the *Eye* Panel Selector F9*
 
@@ -252,7 +252,7 @@ called the "Tempo Curve." For a fixed tempo tune it will appear as a
 line set to a beats-per-minute (BPM) value.
 
 
-![](images/05----15.png)
+![](images/05----15@2x.png)
 
 *Fixed BPM Tempo Curve*
 
@@ -261,14 +261,14 @@ in tempo, or even gradual tempo changes represented as curves (thus the
 name Tempo Curve). In other software this is often called a "tempo map."
 
 
-![](images/05----16.png)
+![](images/05----16@2x.png)
 
 *Varying BPM Tempo Curve*
 
 To change the tempo of your Edit:
 
 
-![](images/05----17.png)
+![](images/05----17@2x.png)
 
 *Changing Tempo: *A*, Click BPM Readout. *B*, Adjust BPM property.*
 
@@ -292,7 +292,7 @@ To change the tempo at a specific bar, use the action *Insert tempo
 change at cursor* (Opt + T / Alt + T). Here are the steps:
 
 
-![](images/05----18.png)
+![](images/05----18@2x.png)
 
 *Right-click Timeline: *Insert tempo change at cursor**
 
@@ -334,7 +334,7 @@ Removing all Tempo Changes
 ## Offsetting and Scaling the Tempo Curve
 
 
-![](images/05----19.png)
+![](images/05----19@2x.png)
 
 *Displace Curve and Scale Curve Controls*
 

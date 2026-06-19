@@ -13,3 +13,20 @@
     --md-primary-fg-color:        #202229;
     --md-accent-fg-color:         #17C4A9;
 }
+
+/* Stop tall/vertical screenshots from dominating the page.
+   Caps image height while preserving aspect ratio. Override an
+   individual image with attr_list, e.g. ![](x.png){ width="320" }. */
+.md-typeset img {
+    display: block;
+    /* max-height: 70vh; */
+    width: auto;
+}
+
+/* @2x captures are sized to half their pixels by javascripts/retina.js.
+   Let their explicit width govern so the aspect ratio is preserved. */
+.md-typeset img[src*="@2x"],
+.md-typeset img[src*="%402x"] {
+    max-height: none;
+    height: auto;
+}

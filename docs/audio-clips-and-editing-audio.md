@@ -384,7 +384,7 @@ do this, it is easy if you follow these steps:
     clips, and move up any selected clips* (Cmd + J / Ctrl + J).
 
 
-![](images/12----23.png)
+![](images/12----23@2x.png)
 
 *Delete a Section Removing the Space*
 
@@ -431,7 +431,7 @@ Windows only**. Installed ARA plugins also appear in the **ARA** column of
     plugin editor** in the properties — to open the plugin's editor.
 
 
-![](images/12----26.png)
+![](images/12----26@2x.png)
 
 *The Melodyne UI*
 
@@ -564,7 +564,7 @@ To test the link, we have reversed the audio on the first clip. Since
 this changes the underlying file, the second clip is also reversed.
 
 
-![](images/38----37.png)
+![](images/38----37@2x.png)
 
 *Reversed Linked Audio Clips*
 

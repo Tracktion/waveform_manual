@@ -215,7 +215,7 @@ accidentally change them.
     composite.
 
 
-![](images/20----14.png)
+![](images/20----14@2x.png)
 
 *Rendering a Comp to a New Track*
 

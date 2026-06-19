@@ -2,7 +2,7 @@
 
 4OSC is Waveform's built-in four-oscillator subtractive synthesizer. It gives you everything you need to build sounds from scratch -- four oscillators with unison, a multi-mode filter, amplitude and filter envelopes, two modulation envelopes, two LFOs, and a chain of built-in effects. If you need a quick synth sound without reaching for a third-party plugin, this is where to start.
 
-![](images/Instruments/4OSC.png)
+![](images/Instruments/4OSC@2x.png)
 *The 4OSC synthesizer showing oscillators 1 and 2, the low-pass filter, amp envelope, and global settings.*
 
 ## Oscillators

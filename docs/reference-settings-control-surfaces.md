@@ -2,7 +2,7 @@
 
 The Control Surfaces page is where you enable and configure external hardware controllers — the boxes full of motorised faders, knobs, buttons, and transport controls that let you drive Waveform with your hands instead of the mouse. You can use one of the many built-in presets for popular hardware, or roll your own custom surface over MIDI or OSC.
 
-![](images/settings_control_surfaces.png)
+![](images/settings_control_surfaces@2x.png)
 *Settings > Control Surfaces*
 
 ## The Device List

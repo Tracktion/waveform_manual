@@ -59,7 +59,7 @@ The gear button opens an **Options** menu with a few more settings that apply to
 
 ## The LFO Modifier
 
-![](images/Modifiers/LFO.png)
+![](images/Modifiers/LFO@2x.png)
 *The LFO Modifier editor, showing a sine wave, the wave and sync menus, and the parameter assignment list on the right*
 
 The **LFO** (low-frequency oscillator) repeats a chosen waveform to give smooth, regular movement. It is the go-to modifier for tremolo, auto-pan, and rhythmic filter wobbles.
@@ -76,7 +76,7 @@ Alongside Wave, the LFO offers the shared Rate, Rate Type, Sync, and Bipolar con
 
 ## The Envelope Follower Modifier
 
-![](images/Modifiers/EnvelopeFollower.png)
+![](images/Modifiers/EnvelopeFollower@2x.png)
 *The Envelope Follower Modifier, tracing the amplitude of the track's audio*
 
 The **Envelope Follower** watches the loudness of the audio on its track and turns that into modulation. As the signal gets louder the output rises; as it fades the output falls. This is how you build side-chain-style effects — for example, ducking a reverb's wet level whenever a vocal is present, or opening a filter in time with a drum hit.
@@ -99,7 +99,7 @@ The **Envelope Follower** watches the loudness of the audio on its track and tur
 
 ## The Random Modifier
 
-![](images/Modifiers/Random.png)
+![](images/Modifiers/Random@2x.png)
 *The Random Modifier producing a smoothed stream of random values*
 
 The **Random** modifier generates ever-changing random values. It is great for adding subtle human-style drift to a parameter, or for chaotic, unpredictable movement when pushed harder.
@@ -116,7 +116,7 @@ The Random modifier also offers the shared Rate, Rate Type, Sync, Depth, and Bip
 
 ## The Step Modifier
 
-![](images/Modifiers/Step.png)
+![](images/Modifiers/Step@2x.png)
 *The Step Modifier with a drawn sequence of step values*
 
 The **Step** modifier is a step sequencer for a parameter. You draw a row of bars, and the modifier scrubs through them at a tempo-synced rate — like a classic analog sequencer lane. It is ideal for rhythmic, repeating patterns.
@@ -134,7 +134,7 @@ The Step modifier also uses the shared Rate, Rate Type, and Sync controls to set
 
 ## The Breakpoint Modifier
 
-![](images/Modifiers/Breakpoint.png)
+![](images/Modifiers/Breakpoint@2x.png)
 *The Breakpoint Modifier with a custom drawn shape across one bar*
 
 The **Breakpoint** modifier lets you draw your own modulation shape from a handful of points. Think of it as a custom LFO waveform: you place the points, bend the segments between them, and the modifier plays that shape back on a loop. Good for bespoke envelopes and one-off rhythmic curves.
@@ -147,7 +147,7 @@ The Breakpoint modifier also offers the shared Rate, Rate Type, Sync, Depth, and
 
 ## The MIDI Tracker Modifier
 
-![](images/Modifiers/MIDITracker.png)
+![](images/Modifiers/MIDITracker@2x.png)
 *The MIDI Tracker Modifier mapping MIDI pitch onto a modulation output*
 
 The **MIDI Tracker** turns incoming MIDI performance data into modulation. Instead of mapping a knob, you map the notes you play — so the pitch or velocity of what you perform can drive any parameter. For example, higher notes could open a filter, or harder hits could add more distortion.

@@ -2,7 +2,7 @@
 
 Plugin Racks let you group multiple plugins inside a single container and wire them up however you like. If you have ever wanted to run effects in parallel, create a shared reverb bus, set up side-chain processing, or build a multi-channel effects unit, racks are how you do it.
 
-![](images/Racks.png)
+![](images/Racks@2x.png)
 *The Rack Editor showing a 4OSC synth routed through multiple effects in parallel, with a Step Modifier controlling parameters. The detail panel at the bottom shows the modifier's settings and its parameter assignments.*
 
 

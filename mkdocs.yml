@@ -5,6 +5,8 @@ site_dir: site
 
 theme:
   name: material
+  logo: images/icon.svg
+  favicon: images/icon.svg
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -23,6 +25,9 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/retina.js
 
 plugins:
   - search

@@ -24,7 +24,7 @@ Here is a breakdown of the key concepts you need to work with Step
 clips:
 
 
-![](images/27----01.png)
+![](images/27----01@2x.png)
 
 *Parts of a Step Clip*
 
@@ -100,7 +100,7 @@ Insert Using the Clip Object
     track and then choose *Insert Step Clip* from the menu.
 
 
-![](images/27----03.png)
+![](images/27----03@2x.png)
 
 *Insert by Dragging the Clip Object*
 
@@ -114,7 +114,7 @@ Insert from the Track Header
     right-click on the track header and select "Insert Step Clip".
 
 
-![](images/27----04.png)
+![](images/27----04@2x.png)
 
 *Right-click Track Header*
 
@@ -123,7 +123,7 @@ Insert from Track Actions
     "Insert New Clip > Insert New Step Clip."
 
 
-![](images/27----05.png)
+![](images/27----05@2x.png)
 
 *Insert from Track Actions*
 
@@ -134,7 +134,7 @@ Inserting a Step Clip Preset
     "Step clip".
 
 
-![](images/27----06.png)
+![](images/27----06@2x.png)
 
 *Use a Step Clip Preset from the Browser*
 
@@ -153,7 +153,7 @@ preset drum kit. Next, insert a blank Step clip. The row names will
 match the pad names of the preset!
 
 
-![](images/27----07.png)
+![](images/27----07@2x.png)
 
 *Default Step Clip*
 
@@ -166,7 +166,7 @@ Here are the basic steps to programming a drum beat using a Step clip:
     individual note cells.
 
 
-![](images/27----08.png)
+![](images/27----08@2x.png)
 
 *Programming a Step Clip*
 
@@ -188,7 +188,7 @@ Actions. The following things are the most important when working with
 Step clips:
 
 
-![](images/27----09.png)
+![](images/27----09@2x.png)
 
 *Click the Header for Step Clip Actions*
 
@@ -253,7 +253,7 @@ Step Clip Header Context Menu
     available from the context menu.
 
 
-![](images/27----09b.png)
+![](images/27----09b@2x.png)
 
 *Step-click Context Menu (Right-click)*
 
@@ -265,7 +265,7 @@ footer. Click the footer to see the most important actions in a popup
 context menu.
 
 
-![](images/27----11.png)
+![](images/27----11@2x.png)
 
 *Section Footer Context Menu*
 
@@ -275,7 +275,7 @@ the footer if the clip's already selected) to pop up the context menu.
 All of the actions also appear in the Actions panel.
 
 
-![](images/27----10.png)
+![](images/27----10@2x.png)
 
 *Step Clip Footer Shows Variation & Pattern Section Options*
 
@@ -286,7 +286,7 @@ title line of the Actions panel when a footer is selected. For example,
 ## Variation Options
 
 
-![](images/27----12.png)
+![](images/27----12@2x.png)
 
 *Variation Options in Actions*
 
@@ -315,7 +315,7 @@ Select a Common Setup
     Length* and *Number of Steps* to create one or two bar variations.
 
 
-![](images/27----29.png)
+![](images/27----29@2x.png)
 
 **Select a Common Setup* in Actions*
 
@@ -402,7 +402,7 @@ different virtual instruments using the "Set Destination" option. We'll
 be covering that shortly.
 
 
-![](images/27----17.png)
+![](images/27----17@2x.png)
 
 *Step Clip Row properties*
 

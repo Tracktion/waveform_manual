@@ -2,7 +2,7 @@
 
 The **Downloads** page is where Waveform keeps you up to date. It signs in to your Tracktion account, checks for newer versions of Waveform and any add-ons you own, and lists extra content you can install. Anything that's actually downloaded and installed happens through a separate helper app called the Tracktion Download Manager, which you launch from the top of this page.
 
-![](images/settings_downloads.png)
+![](images/settings_downloads@2x.png)
 *Settings > Downloads*
 
 You'll find this page under the **Downloads** entry in the Settings sidebar.

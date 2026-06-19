@@ -20,7 +20,7 @@ Arrangement, the Mixer, and the transport bar. The Browser also hosts
 the Actions panel.
 
 
-![](images/08----03.png)
+![](images/08----03@2x.png)
 
 *Parts of the Edit Tab: A, Browser. B, Arrangement. C, transport bar*
 
@@ -92,7 +92,7 @@ The Arrangement is made up of the Timeline, Track Headers & Inputs,
 Tracks, and the Mixer.
 
 
-![](images/08----05.png)
+![](images/08----05@2x.png)
 
 *Parts of the Arrangement: A, The Timeline. B, Track Headers & Inputs. C, Tracks. D, The Mixer*
 Timeline. B, Track Headers & Inputs. C, Tracks. D, The
@@ -291,7 +291,7 @@ to manage the link to the underlying Edit.
 
 ## The Mixer
 
-![](images/Mixer.png)
+![](images/Mixer@2x.png)
 
 *The Mixer, with a channel strip for every track.*
 

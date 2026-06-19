@@ -253,7 +253,7 @@ which combines all of those functions in to one package expressly
 designed for use on a full mix.
 
 
-![](images/29----13.png)
+![](images/29----13@2x.png)
 
 *Master Mix inserted on the master*
 

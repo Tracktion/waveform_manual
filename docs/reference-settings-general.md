@@ -2,7 +2,7 @@
 
 The **General** page is where you shape how Waveform behaves day to day — your name, what happens at launch, editing defaults, metering, MIDI, mixing defaults, mouse behaviour, plugin windows, saving, and track inputs. It's a long page, and it's worth getting familiar with it: most of these settings define how new clips, tracks and projects start out, so a few minutes here saves you a lot of repetitive tweaking later.
 
-![](images/settings_general.png)
+![](images/settings_general@2x.png)
 *Settings > General*
 
 Changes take effect immediately. Many of these are *defaults* — they affect things you create from now on, not items already in your Edit.

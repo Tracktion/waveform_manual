@@ -32,7 +32,7 @@ editor.
 ## The Warp Time Editor
 
 
-![](images/18----02.png)
+![](images/18----02@2x.png)
 
 *Warp Time Editor in the Detail editor*
 
@@ -82,12 +82,12 @@ Warp points. If you add a Warp point and move it, the audio will be
 stretched between the beginning and ending of the wave.
 
 
-![](images/18----10.png)
+![](images/18----10@2x.png)
 
 *Before Warping*
 
 
-![](images/18----05.png)
+![](images/18----05@2x.png)
 
 *Dragging a Warp Point to the Left*
 

@@ -2,7 +2,7 @@
 
 The Actions panel gives you a single place to see and run the things you can do to whatever you currently have selected. Select a track, a clip, a plugin, or a parameter, and the panel updates to show the actions that apply to it. It's a fast way to reach commands without hunting through menus, and it's where you go to mark your favourite actions so they show up in the Quick Actions menu.
 
-![](images/Actions%20Panel%201.png)
+![](images/Actions%20Panel%201@2x.png)
 *The Actions panel showing actions for the current selection*
 
 ## How the Panel Works
@@ -33,7 +33,7 @@ At the top of the panel is a breadcrumb that shows the path to your current sele
 
 This is handy when you've drilled down into a parameter and want to get back to the actions for the parent track or clip without re-selecting it in the arrangement.
 
-![](images/Actions%20Panel%202.png)
+![](images/Actions%20Panel%202@2x.png)
 
 *The Actions panel showing the actions for a selected track.*
 
@@ -83,7 +83,7 @@ Shift-click the breadcrumb to see all actions for that item, ignoring the menu's
 
 Quick Actions is a separate feature from the action menu above. Instead of showing the actions for whatever you've selected, it gives you rows of buttons that *you* assign to specific commands — your own custom shortcut bars that stay put regardless of selection.
 
-![](images/Quick%20Actions%201.png)
+![](images/Quick%20Actions%201@2x.png)
 *Rows of assignable Quick Actions buttons*
 
 ### Assigning Quick Actions
@@ -100,7 +100,7 @@ The Quick Actions bar can sit directly above the transport bar, always in view. 
 
 For a larger workspace, open the **Quick Actions window** — a floating window that combines a mixer with a much taller Quick Actions bar (up to thirty rows). Click the **Quick Actions** button (the shortcut-style icon) in the transport bar to toggle it, or right-click that button and choose **Open Quick actions window**.
 
-![](images/Quick%20Actions%202.png)
+![](images/Quick%20Actions%202@2x.png)
 *The Quick Actions window, with the mixer above and Quick Actions below*
 
 Down the left edge of the window are three toggles that control what it shows: a **mixer** toggle, a **Quick Actions** toggle, and a **touch mode** toggle that enlarges the buttons for touchscreens. Turn off the mixer to use the window purely as a big board of action buttons, or turn off Quick Actions to use it as a standalone mixer.

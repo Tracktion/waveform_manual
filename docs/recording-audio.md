@@ -60,7 +60,7 @@ real-time input meter, and the record arm "R" button. Also, a full set
 of input properties appears in the Actions panel.
 
 
-![](images/15----04.png)
+![](images/15----04@2x.png)
 
 *Input Controls & properties*
 
@@ -121,7 +121,7 @@ This feature is something uniquely Waveform. You can set up more than
 one input on a single track, up to four inputs assigned to a track.
 
 
-![](images/15----08.png)
+![](images/15----08@2x.png)
 
 *Assign up to Four Inputs to One Track!*
 
@@ -178,7 +178,7 @@ Click on an input to select it. Notice the large meter in the Actions
 panel. This gives you a good reference for setting up the input level.
 
 
-![](images/15----10.png)
+![](images/15----10@2x.png)
 
 *Large input meter in the Actions panel*
 
@@ -191,7 +191,7 @@ for all the tracks at once, press F12. Waveform will go into "big
 meters" mode. This superimposes a very large meter onto each track.
 
 
-![](images/15----11.png)
+![](images/15----11@2x.png)
 
 *Big Meters Mode*
 
@@ -357,7 +357,7 @@ interface to balance the live input sound with the sound being played
 back by Waveform.
 
 
-![](images/15----22.jpg)
+![](images/15----22@2x.jpg)
 
 *Audio Interface Mix Knob*
 
