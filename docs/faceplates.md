@@ -2,7 +2,7 @@
 
 Faceplates let you build custom control panels for your plugins and racks. Instead of using the default parameter list, you can design a visual layout with knobs, sliders, buttons, meters, and labels -- arranged exactly the way you want.
 
-![](images/Faceplate%201.png)
+![](images/Faceplate%201@2x.png)
 *A Chorus plugin with a custom faceplate showing rotary knobs, buttons, parameter names, value readouts, and level meters.*
 
 ## What Is a Faceplate?
@@ -24,7 +24,7 @@ To create your first faceplate:
 
 That's all it takes. Lock the padlock again when you're done, and your faceplate is ready to use.
 
-![](images/Faceplate%202.png)
+![](images/Faceplate%202@2x.png)
 *Edit mode active: controls are highlighted in red with visible borders, and the grid dots are shown for placement guidance.*
 
 ## The Edit Toolbar
@@ -49,7 +49,7 @@ The toolbar on the right side of the faceplate contains these buttons, from top 
 
 ## The Grid System
 
-![](images/Faceplate%203.png)
+![](images/Faceplate%203@2x.png)
 
 *A faceplate in a plugin rack, with the faceplate grid shown below the rack.*
 

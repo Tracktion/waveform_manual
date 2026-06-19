@@ -2,7 +2,7 @@
 
 The Chords page lets you decide which chord types Waveform offers you when you're working with chords, and lets you build your own. Whatever you set here applies across the chord track, the pattern generator, and the MIDI editor.
 
-![](images/settings_chords.png)
+![](images/settings_chords@2x.png)
 *Settings > Chords*
 
 ## Default Chords

@@ -2,7 +2,7 @@
 
 The **Advanced** page collects technical options that you can usually leave at their defaults. If you want to optimise performance, chase down a problem, or tailor Waveform to a specific workflow, this is where you do it. Most people never need to touch anything here.
 
-![](images/settings_advanced.png)
+![](images/settings_advanced@2x.png)
 *Settings > Advanced*
 
 The page is divided into sections. Some controls only appear on certain platforms or when a particular feature is available in your edition, so your page may not show every item described below.

@@ -38,7 +38,7 @@ start recording by hitting the asterisk (\*) key on the keypad. To do
 so:
 
 
-![](images/14----02.png)
+![](images/14----02@2x.png)
 
 *Setting a Keyboard Shortcut*
 
@@ -107,7 +107,7 @@ on the Settings tab and click *Load Key-Mappings*. Find your exported
 key-mapping file then click *Open*. All your key-mappings are restored.
 
 
-![](images/14----06.png)
+![](images/14----06@2x.png)
 
 **Load Key-Mappings* Button*
 
@@ -120,7 +120,7 @@ key-mappings into your browser. From there you can search it or print it
 using normal web browser features.
 
 
-![](images/14----07.png)
+![](images/14----07@2x.png)
 
 **View as HTML* Button*
 

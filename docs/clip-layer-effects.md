@@ -12,7 +12,7 @@ normalizing. However, those are just a few example of Clip Layer effects
 capabilities.
 
 
-![](images/41----01.png)
+![](images/41----01@2x.png)
 
 *Example Clip Layers*
 
@@ -37,7 +37,7 @@ controls appears to the right. The following diagram illustrates the
 available options.
 
 
-![](images/41----04.png)
+![](images/41----04@2x.png)
 
 *Clip Layer Controls Diagram*
 
@@ -223,7 +223,7 @@ editing software.
 To use it, first add Normalize layer.
 
 
-![](images/41----13.png)
+![](images/41----13@2x.png)
 
 *Normalise Layer*
 

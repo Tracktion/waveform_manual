@@ -116,7 +116,7 @@ remotely controls the level of all the included tracks proportionally.
 This gives you level control for the everything in the folder.
 
 
-![](images/33----07.png)
+![](images/33----07@2x.png)
 
 *Folder Track VCA*
 

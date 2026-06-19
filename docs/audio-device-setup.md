@@ -10,7 +10,7 @@ Waveform supports the following communication protocols:
 - macOS:   Core Audio
 - Linux:   JACK (recommended), and ALSA or PulsAudio/ALSA
 
-![](images/04----00.png)
+![](images/04----00@2x.png)
 
 *Audio Device Page*
 
@@ -206,7 +206,7 @@ With the audio device type set, you can choose any audio interface
 connected to your computer or the internal sound. Select your device if
 it's not already shown for the *Device:* property.
 
-![](images/04----04.png)
+![](images/04----04@2x.png)
 
 *ASIO Device Setup on Windows*
 
@@ -247,7 +247,7 @@ a complete stereo image. Here is one way to do that:
     it.
 3.  Click *Play* (spacebar) and you should hear music!
 
-![](images/04----06.png)
+![](images/04----06@2x.png)
 
 *Successful Play Back*
 
@@ -354,7 +354,7 @@ Here are the steps:
     output to the input. It will calculate the delay between output and
     input.
 
-![](images/04----13.png)
+![](images/04----13@2x.png)
 
 *Recording Synch Test Dialog Box*
 
@@ -362,7 +362,7 @@ Here are the steps:
 1.  Click *Apply* and Waveform will copy the delay value to the Time
     Adjust property.
 
-![](images/04----14.png)
+![](images/04----14@2x.png)
 
 *Applying the Auto-Detect Result to *Time Adjust**
 

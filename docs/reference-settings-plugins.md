@@ -2,7 +2,7 @@
 
 The **Plugins** page is where you scan for third-party plugins, decide which ones are available to your edits, build a list of favourites, generate thumbnail images for the visual plugin selector, and validate plugin files. Open it from the **Settings** tab and pick **Plugins** in the sidebar.
 
-![](images/settings_plugins.png)
+![](images/settings_plugins@2x.png)
 *Settings > Plugins*
 
 > 💡 **Tip:** You can drag plugin files straight from your computer onto the plugin list to add them, without running a full scan.

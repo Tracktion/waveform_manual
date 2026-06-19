@@ -2,7 +2,7 @@
 
 The Licensing page is where you unlock Waveform, register the expansions and content packs you own, and see at a glance what's active on this computer. Open it from the Settings tab and pick **Licensing** in the list on the left.
 
-![](images/settings_licensing.png)
+![](images/settings_licensing@2x.png)
 *Settings > Licensing*
 
 Think of this page as your license dashboard. Everything Waveform knows it can run — the main app plus any expansions — is listed here with its current status. If something you bought isn't showing as unlocked, this is the place to fix it.

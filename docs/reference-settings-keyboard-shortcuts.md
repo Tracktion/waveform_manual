@@ -4,7 +4,7 @@ This page is where you view and customise every keyboard shortcut in Waveform. E
 
 If you just want to learn the shortcuts that ship with Waveform, head to the **Keyboard Shortcuts** tutorial chapter. This reference page covers the editor panel itself: how to find a command, assign or remove keys, switch between preset key sets, and save your own setup.
 
-![](images/settings_keyboard_shortcuts.png)
+![](images/settings_keyboard_shortcuts@2x.png)
 *Settings > Keyboard Shortcuts*
 
 ## The Command List

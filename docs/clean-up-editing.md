@@ -234,7 +234,7 @@ can quickly render all the clips back to a singled clip. To do so:
     last one.
 
 
-![](images/17----20.png)
+![](images/17----20@2x.png)
 
 *Selected Clips before Rendering*
 
@@ -248,7 +248,7 @@ can quickly render all the clips back to a singled clip. To do so:
 **Render Clips > Merge the selected clips**
 
 
-![](images/17----22.png)
+![](images/17----22@2x.png)
 
 *Audio Clip After Rendering*
 

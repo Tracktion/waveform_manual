@@ -2,7 +2,7 @@
 
 This page is where you choose your audio interface, set the sample rate and buffer size, and decide which physical inputs and outputs Waveform should use. It's also where you name your hardware and calibrate recording sync so recorded takes line up correctly.
 
-![](images/settings_audio_devices.png)
+![](images/settings_audio_devices@2x.png)
 *Settings > Audio Devices*
 
 The page has three parts: a stack of settings at the top, lists of input and output channel groups below, and a tall **Channels** panel on the right that shows extra options for whichever input row you've selected.

@@ -2,7 +2,7 @@
 
 The Appearance page is where you set the language and overall look of Waveform, then fine-tune how tracks, clips, and notes are drawn to match your preferences. Everything here is cosmetic, so feel free to experiment — nothing on this page affects your audio.
 
-![](images/settings_appearance.png)
+![](images/settings_appearance@2x.png)
 *Settings > Appearance*
 
 This video is a walkthrough of all the features in this chapter.

@@ -161,7 +161,7 @@ right for *Frequency*, and around the node to set its *Q* (width).
 or a shelf. It's perfect for a quick surgical cut or a gentle tone tweak
 without the clutter of a full EQ.
 
-![](images/Audio%20FX/1-Band%20EQ.png)
+![](images/Audio%20FX/1-Band%20EQ@2x.png)
 
 *The 1-Band Equaliser*
 
@@ -169,7 +169,7 @@ without the clutter of a full EQ.
 high shelf — the classic three-band tone stack. Set the *Frequency* and
 *Gain* of each band by dragging its node.
 
-![](images/Audio%20FX/3-Band%20EQ.png)
+![](images/Audio%20FX/3-Band%20EQ@2x.png)
 
 *The 3-Band Equaliser*
 
@@ -180,7 +180,7 @@ individually. It also offers a *Stereo* or *Mid/Side* mode: in *Mid/Side*
 mode you equalise the centre (mono) and the sides (stereo) of the signal
 independently, which is handy for mastering and stereo-width work.
 
-![](images/Audio%20FX/8-Band%20EQ.png)
+![](images/Audio%20FX/8-Band%20EQ@2x.png)
 
 *The 8-Band Equaliser*
 
@@ -202,15 +202,15 @@ all.
 - *Non-linear Reverb* is a gated/non-linear effect whose tail cuts off
   abruptly rather than fading away — the big drum sound of the '80s.
 
-![](images/Audio%20FX/Natural%20Reverb.png)
+![](images/Audio%20FX/Natural%20Reverb@2x.png)
 
 *The Natural Reverb*
 
-![](images/Audio%20FX/Plate%20Reverb.png)
+![](images/Audio%20FX/Plate%20Reverb@2x.png)
 
 *The Plate Reverb*
 
-![](images/Audio%20FX/Non-linear%20Reverb.png)
+![](images/Audio%20FX/Non-linear%20Reverb@2x.png)
 
 *The Non-linear Reverb*
 
@@ -244,7 +244,7 @@ independent left and right channels. Each side has its own delay time,
 feedback, cross-feedback, pan, and trim, so you can build everything from
 a simple slapback to wide bouncing stereo echoes.
 
-![](images/Audio%20FX/Delay.png)
+![](images/Audio%20FX/Delay@2x.png)
 
 *The Delay*
 
@@ -275,7 +275,7 @@ The *Chorus* plugin gives you that classic shimmering, doubling effect —
 great on guitars, pads, electric pianos, bass, and vocals. It works by
 modulating a short delay so the pitch drifts gently up and down.
 
-![](images/Audio%20FX/Chorus.png)
+![](images/Audio%20FX/Chorus@2x.png)
 
 *The Chorus*
 
@@ -299,7 +299,7 @@ popular on guitars, synths, and electric pianos, or any track that needs
 some movement. It works by sweeping a set of notches up and down through
 the frequency spectrum.
 
-![](images/Audio%20FX/Phaser.png)
+![](images/Audio%20FX/Phaser@2x.png)
 
 *The Phaser*
 
@@ -329,7 +329,7 @@ doing one job well.
 **Compressor** evens out the level of a signal by turning down anything
 that rises above a threshold.
 
-![](images/Audio%20FX/Compressor.png)
+![](images/Audio%20FX/Compressor@2x.png)
 
 *The Compressor*
 
@@ -350,7 +350,7 @@ that rises above a threshold.
 *below* the threshold, silencing quiet passages, bleed, or hiss between
 notes.
 
-![](images/Audio%20FX/Gate.png)
+![](images/Audio%20FX/Gate@2x.png)
 
 *The Gate*
 
@@ -363,7 +363,7 @@ notes.
 exceeding a set ceiling — ideal on the master bus to catch peaks and
 maximise loudness.
 
-![](images/Audio%20FX/Limiter.png)
+![](images/Audio%20FX/Limiter@2x.png)
 
 *The Limiter*
 
@@ -380,7 +380,7 @@ versions is now in the *Legacy* folder.
 *Distortion* adds harmonic grit and saturation, from gentle warmth to
 full-on fuzz.
 
-![](images/Audio%20FX/Distortion.png)
+![](images/Audio%20FX/Distortion@2x.png)
 
 *The Distortion*
 
@@ -401,7 +401,7 @@ the signal in real time. For audio tracks, this uses the *Elastique Pro*
 algorithm, or whichever algorithm you select in the *Type* parameter.
 
 
-![](images/Audio%20FX/Pitch%20Shifter.png)
+![](images/Audio%20FX/Pitch%20Shifter@2x.png)
 
 *The Waveform Pitch Shifter Plugin*
 
@@ -432,7 +432,7 @@ completely, the way a DJ drops the bass out of a track. Two crossover
 controls, *Freq 1* and *Freq 2*, set the frequencies where the bands
 divide.
 
-![](images/Audio%20FX/DJ%20EQ.png)
+![](images/Audio%20FX/DJ%20EQ@2x.png)
 
 *The DJ EQ*
 
@@ -457,7 +457,7 @@ mixer.
 adjustable response *Curve*, so you can ride or program smooth level
 changes.
 
-![](images/Audio%20FX/Fader.png)
+![](images/Audio%20FX/Fader@2x.png)
 
 *The Fader*
 
@@ -467,7 +467,7 @@ from full A on the left, through the centre, to full B on the right.
 *Curve* shapes the blend — from a smooth equal-power fade to a sharp cut —
 and *Centre Gain* sets the level at the midpoint.
 
-![](images/Audio%20FX/Crossfader.png)
+![](images/Audio%20FX/Crossfader@2x.png)
 
 *The Crossfader*
 
@@ -503,7 +503,7 @@ room — and stamps that character onto whatever passes through it. It pairs
 naturally with an amp-simulation plugin: run your DI guitar into the amp sim,
 then into *Guitar IR* to model the cabinet and miking.
 
-![](images/Audio%20FX/Guitar%20IR.png)
+![](images/Audio%20FX/Guitar%20IR@2x.png)
 
 *The Guitar IR*
 
@@ -521,7 +521,7 @@ Load a WAV file using the IR field, then shape the result with the controls:
 
 ### Dual Guitar IR
 
-![](images/Audio%20FX/Dual%20Guitar%20IR.png)
+![](images/Audio%20FX/Dual%20Guitar%20IR@2x.png)
 
 *The Dual Guitar IR*
 

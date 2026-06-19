@@ -4,7 +4,7 @@ This is where you tell Waveform about every piece of MIDI gear you want to play,
 
 The page is split into three areas. On the left you enable and configure your input and output devices. On the right, a properties pane shows detailed settings for whichever device you've clicked on. Across the top sit a few global options that affect how Waveform discovers MIDI hardware.
 
-![](images/settings_midi_devices.png)
+![](images/settings_midi_devices@2x.png)
 *Settings > MIDI Devices*
 
 To open this page, go to the **Settings** tab and choose **MIDI Devices** from the list on the left.

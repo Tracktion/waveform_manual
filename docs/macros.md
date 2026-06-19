@@ -126,7 +126,7 @@ then the method. Following the method you can provide one or more
 parameter in parenthesis.
 
 
-![](images/37----05.png)
+![](images/37----05@2x.png)
 
 *Macro Actions 'dot' Notation Syntax*
 

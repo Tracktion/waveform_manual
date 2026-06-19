@@ -2,7 +2,7 @@
 
 Waveform's built-in Wavetable synthesizer is a two-oscillator wavetable instrument with deep modulation, flexible filtering, and a full effects chain. It ships with a library of factory wavetables and presets, supports user wavetable import, and includes MPE support out of the box.
 
-![](images/Instruments/Wavetable.png)
+![](images/Instruments/Wavetable@2x.png)
 *The Wavetable synthesizer interface showing both oscillators, filters, LFOs, envelopes, macros, and the global settings.*
 
 ## Oscillators

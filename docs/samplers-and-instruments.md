@@ -20,7 +20,7 @@ The **legacy Sampler** (the original simple sampler) is a separate, older plugin
 
 ## Pad-Based Samplers: Drum Sampler and Micro Drum Sampler
 
-![](images/Instruments/Drum%20Sampler.png)
+![](images/Instruments/Drum%20Sampler@2x.png)
 *The Drum Sampler showing the 4×4 pad grid with bank selector and per-pad controls.*
 
 The **Drum Sampler** and **Micro Drum Sampler** are built around a 4×4 pad grid. They work like a hardware drum machine: each pad holds a sample, and you trigger pads via MIDI notes or by clicking them.
@@ -35,7 +35,7 @@ Each pad has a **Solo** and **Mute** button for quick auditioning.
 
 ### Micro Drum Sampler vs Drum Sampler
 
-![](images/Instruments/Micro%20Drum%20Sampler.png)
+![](images/Instruments/Micro%20Drum%20Sampler@2x.png)
 *The Micro Drum Sampler, a cut-down one-shot version of the Drum Sampler.*
 
 The **Micro Drum Sampler** is a cut-down version and is available in all editions of Waveform. It supports one-shot playback only — the sample plays through to the end whenever the pad is triggered, regardless of how long you hold the note.
@@ -56,7 +56,7 @@ The **Note Repeat** feature is available on the Drum Sampler. When enabled, hold
 
 ## Keyboard Samplers: Multi Sampler, Micro Sampler, and Rompler
 
-![](images/Instruments/Multi%20Sampler.png)
+![](images/Instruments/Multi%20Sampler@2x.png)
 *The Multi Sampler zone grid showing multiple layers mapped to note and velocity ranges.*
 
 The keyboard-style samplers let you map samples across the note and velocity range of your keyboard. Each sample assignment is called a **layer**, and each layer covers a note range and a velocity range.
@@ -164,14 +164,14 @@ Available effects per layer:
 
 ### Micro Sampler vs Multi Sampler
 
-![](images/Instruments/Micro%20Sampler.png)
+![](images/Instruments/Micro%20Sampler@2x.png)
 *The Micro Sampler, a single-layer keyboard sampler.*
 
 The **Micro Sampler** is a simpler keyboard sampler available in all editions. It supports a single layer (not a full zone grid) and doesn't have the per-layer LFOs, FX buses, or multi-format import. It's a good choice if you just need to load one sample and play it across the keyboard without the overhead of the full Multi Sampler.
 
 ### Rompler
 
-![](images/Instruments/Rompler.png)
+![](images/Instruments/Rompler@2x.png)
 *The Rompler, a preset-based keyboard instrument.*
 
 The **Rompler** is a preset-based instrument: it plays back factory sample banks without letting you edit the zone grid directly. Think of it as a read-only Multi Sampler, designed for quickly loading and playing pre-built instruments. It has the same keyboard layout view as the other samplers, but you can't drag new samples onto it — just pick a preset and play.
@@ -180,7 +180,7 @@ The **Rompler** is a preset-based instrument: it plays back factory sample banks
 
 ## Subtractive Synthesizer
 
-![](images/Instruments/Subtractive.png)
+![](images/Instruments/Subtractive@2x.png)
 *The Subtractive synthesizer showing oscillators, filters, and the arpeggiator.*
 
 **Subtractive** is Waveform's built-in multi-oscillator synthesizer. It's a traditional subtractive/hybrid design: oscillators generate a raw waveform, filters shape the tone, and envelopes and LFOs add movement. It's a Pro-only instrument (or available with the MIDI Producer or Synth Pack expansions).
@@ -229,7 +229,7 @@ Subtractive ships with a library of factory presets. Use the preset browser at t
 
 ### Bass Osc
 
-![](images/Instruments/Bass%20Osc.png)
+![](images/Instruments/Bass%20Osc@2x.png)
 *The Bass Osc, a compact single-oscillator bass synthesizer.*
 
 **Bass Osc** is a small single-oscillator synth built for bass sounds. A single **Wave** control morphs the oscillator shape, while **Tune** and **Detune** set its pitch. The signal passes through one resonant filter with **Cutoff**, **Res**, and **Drive** controls, and decay-based amp and filter envelopes (each with a velocity amount) shape the sound over time. A **Glide** control gives smooth pitch slides between notes for classic bass lines, and it ships with a set of factory presets.

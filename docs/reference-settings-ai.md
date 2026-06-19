@@ -2,7 +2,7 @@
 
 The AI page is where you switch on the AI Assistant, tell Waveform which AI provider to use, paste in the API key that lets the assistant talk to that provider, and reach the files the assistant uses to remember things and extend itself. If you never plan to use the assistant, you can leave this whole page alone. If you do, this is the one place you need to set up before it will work.
 
-![](images/settings_ai.png)
+![](images/settings_ai@2x.png)
 *Settings > AI*
 
 To get here, open the **Settings** tab and choose **AI** from the list on the left.

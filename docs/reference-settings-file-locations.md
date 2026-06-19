@@ -4,7 +4,7 @@ The **File Locations** page is where you tell Waveform where to keep its working
 
 You'll find this page under **Settings**, in the list of pages down the left-hand side.
 
-![](images/settings_file_locations.png)
+![](images/settings_file_locations@2x.png)
 *Settings > File Locations*
 
 The page is split into sections — General, Presets, Loop Database, Plugins, and (if your install supports them) Feature Extensions. Each path field shows the current location, and most have a small folder button at the right end that opens a file chooser so you can pick a new one.
