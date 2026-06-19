@@ -8,11 +8,21 @@
     --md-accent-fg-color:         #483B83;
 }
 
+[data-md-color-scheme="default"] {
+    --md-typeset-a-color:         #5F49B7;   /* light-mode links */
+}
+
 /* Dark mode overrides (slate scheme) */
 [data-md-color-scheme="slate"] {
     --md-primary-fg-color:        #202229;
-    --md-accent-fg-color:         #17C4A9;
+    --md-accent-fg-color:         #0DB79B;
+    --md-typeset-a-color:         #17C4A9;
 }
+
+.md-typeset a:hover {
+    color: var(--md-accent-fg-color);    /* recolour on hover */
+}
+
 
 /* Stop tall/vertical screenshots from dominating the page.
    Caps image height while preserving aspect ratio. Override an

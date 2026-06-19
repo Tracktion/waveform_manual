@@ -5,7 +5,7 @@ In-line mixer or the separate mixer window.
 
 > 📝 **Note:** Scanning plugins and setting up a favorites plugin list are
 done on the Settings tab, Plugins page. Check the reference section
-[Reference: Settings > Plugins](reference-settings-plugins.md) to learn more about that.
+[Reference: Settings > Plugins](reference-settings.md#plugins) to learn more about that.
 
 ## The In-line Mixer
 

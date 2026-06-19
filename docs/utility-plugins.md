@@ -75,7 +75,7 @@ The behaviour of the Freeze Point is influenced by two settings on the
 - **Freeze point** — controls where the Freeze Point is inserted when a track
   is frozen: *Before plugins*, *Pre-fader*, or *Post-fader*.
 
-See [Reference: Settings — General](reference-settings-general.md) for the full
+See [Reference: Settings — General](reference-settings.md#general) for the full
 description of those options.
 
 ---
