@@ -47,19 +47,16 @@ print it out.
 
 ## Tracktion Videos
 
-The [Waveform videos page](http://www.tracktion.com/support/videos) has
-a nice selection of training videos. A series of Tracktion T7 Update
-Explained is available from [Groove 3, Inc](http://goo.gl/GKbdlM) along
-with other Waveform videos. Groove 3 is a deep resource for all things
-music production.
+The official [Tracktion YouTube channel](https://www.youtube.com/@TracktionSoftware)
+is the best place for video tutorials, feature walkthroughs, and update
+overviews - new videos are added regularly as Waveform evolves. Browse the
+[playlists](https://www.youtube.com/@TracktionSoftware/playlists) to find
+videos grouped by topic.
 
-Also checkout [this YouTube channel](http://goo.gl/hywdxh) for various
-free videos demonstrating Waveform features.
-
-The user's manual you are reading "Guide to Waveform" includes links to
-videos many of which are only available here. Check out \[Appendix
-A\]{appendix-a} for a complete list of videos lined from within this
-book.
+The [Waveform videos page](http://www.tracktion.com/support/videos) also has
+a selection of training videos, and a *Tracktion T7 Update Explained* series
+is available from [Groove 3, Inc](http://goo.gl/GKbdlM) - a deep resource for
+all things music production.
 
 ## Tracktion Forums
 

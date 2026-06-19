@@ -404,7 +404,7 @@ Reset Output Devices
 ## Advanced Audio Device Settings
 
 There are additional options for Low Latency Mode and audio performance
-on the Advance page of the Settings tab. Refer to [Reference: Settings > Advanced](#reference-settings--advanced).
+on the Advance page of the Settings tab. Refer to [Reference: Settings > Advanced](reference-settings.md#advanced).
 
 ## First Run Setup
 

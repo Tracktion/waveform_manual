@@ -63,8 +63,9 @@ in this document so we recommend that you subscribe to both channels:
 
 My YouTube Channel - [Inventive Creation](http://goo.gl/YnaOMd)
 
-Tracktion YouTube Channel - [Tracktion
-Software](https://www.youtube.com/user/TracktionSoftware)
+Tracktion YouTube Channel - [@TracktionSoftware](https://www.youtube.com/@TracktionSoftware)
+(browse the [playlists](https://www.youtube.com/@TracktionSoftware/playlists)
+for videos grouped by topic)
 
 Groove3.com has some older but useful content on Tracktion. Look for
 videos there on plugin-racks, MasterMix, and videos on the Tracktion

@@ -133,5 +133,5 @@ it:
 
 The chord types offered throughout Waveform — including the Chord
 Track — can be customized in [Settings >
-Chords](reference-settings-chords.md), where you can disable chords
+Chords](reference-settings.md#chords), where you can disable chords
 you never use and define your own.

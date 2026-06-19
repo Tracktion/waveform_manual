@@ -25,7 +25,7 @@ available in Free, OEM, and Pro editions.
    pulls down and applies any licenses you own.
 
 → For status badges, expansions, and per-computer licensing, see
-[Reference: Settings > Licensing](reference-settings-licensing.md).
+[Reference: Settings > Licensing](reference-settings.md#licensing).
 
 ## 2. First-Run Setup
 
@@ -57,7 +57,7 @@ clicks or dropouts.
 
 → Full walk-through, including the Auto-Detect loopback procedure, is in
 [Audio Device Setup](audio-device-setup.md) and
-[Reference: Settings > Audio Devices](reference-settings-audio-devices.md).
+[Reference: Settings > Audio Devices](reference-settings.md#audio-devices).
 
 ## 4. Connect MIDI (Optional)
 
