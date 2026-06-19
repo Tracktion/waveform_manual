@@ -13,7 +13,7 @@ versions until you are happy.
 > snapshot changes which clips sit on the track; it leaves the channel strip and plugins untouched.
 
 
-![](images/PLACEHOLDER_snapshots_1.png)
+![](images/snapshots_1@2x.png)
 
 *The Track snapshots menu*
 

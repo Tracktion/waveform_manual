@@ -12,7 +12,7 @@ time-signature, and pitch events in that range, all in lock-step across every tr
 Track itself makes no sound and cannot host plugins; it is purely a structural tool.
 
 
-![](images/PLACEHOLDER_arranger_1.png)
+![](images/arranger_1@2x.png)
 
 *The Arranger Track showing Intro, Verse, Chorus, and Bridge sections*
 

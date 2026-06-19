@@ -10,7 +10,7 @@ clips can automatically pitch-shift to match it.
 The Chord Track is available in Waveform Pro.
 <!-- code: waveform/common/Source/licensing/Features.cpp:226 -->
 
-![](images/PLACEHOLDER_chord-track_1.png)
+![](images/chord-track_1@2x.png)
 
 *The Chord Track with two Chord clips*
 
@@ -81,7 +81,7 @@ The **Progression** section of the Actions panel is where you define
 the chords in the clip. A progression can hold up to 64 chords.
 <!-- code: modules/tracktion_engine/.../tracktion_Musicality.h:282 -->
 
-![](images/PLACEHOLDER_chord-track_2.png)
+![](images/chord-track_2@2x.png)
 
 *The Progression builder and Suggestion panel*
 

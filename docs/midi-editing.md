@@ -436,7 +436,7 @@ Open it with the command **Show or hide the MIDI Event List window**, or
 from the View menu's **Show MIDI Event List** item.
 <!-- code: StandardShortcuts.h:636 -->
 
-![](images/PLACEHOLDER_event-list_1.png)
+![](images/event-list_1@2x.png)
 
 *The MIDI Event List window*
 
@@ -473,9 +473,15 @@ Open it from the Automation menu's **Create MIDI controller mappings…**
 item, or with the command **Show MIDI controller mappings window**.
 <!-- code: waveform/common/Source/ui/edit/ParameterControlMappingsEditor.h:16,35-45; StandardShortcuts.h:626 -->
 
-![](images/PLACEHOLDER_controller-mappings_1.png)
+![](images/controller-mappings_1@2x.png)
 
 *The MIDI Controller Mappings window*
+
+When you first open it the window looks empty -- that is normal. There is
+always one blank row waiting at the bottom of the list, and that row is how
+you add a mapping. Click either half of it to begin (see below); as soon as
+you fill a row in, a fresh blank row appears beneath it, ready for the next
+mapping. So the "empty" window already contains everything you need to start.
 
 Each row has two halves:
 
@@ -488,6 +494,11 @@ Each row has two halves:
   parameters** shortcut. The same menu saves, loads, and deletes
   presets.
 <!-- code: ParameterControlMappingsEditor.h:116-132; tracktion_ParameterControlMappings.cpp:375-533 -->
+
+> 💡 **Tip:** To set up a controller quickly, click the right half of the
+blank row, open a plugin's submenu, and choose **Add all parameters** -- a
+row is created for every parameter of that plugin in one step. Then just
+MIDI-learn the hardware controllers you want for each.
 
 Press **Delete** with a row selected to remove that mapping. There's
 always a blank row at the bottom ready for the next binding. Mappings

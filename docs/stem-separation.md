@@ -11,7 +11,7 @@ separation model. It runs **entirely on your own machine** as a bundled
 background process — nothing is uploaded and no internet connection is
 needed once the model is installed. <!-- code: AboutBox.h:213; AudioSeparation.cpp:171-211 -->
 
-![](images/PLACEHOLDER_stemseparation_1.png)
+![](images/stemseparation_1@2x.png)
 *The Separate to Stems dialog*
 
 ## What You Need
@@ -74,7 +74,7 @@ stems stay lined up with the original. The stem WAVs are written into the
 project's rendered-media folder.
 <!-- code: AudioSeparation.cpp:264-309 -->
 
-![](images/PLACEHOLDER_stemseparation_2.png)
+![](images/stemseparation_2@2x.png)
 *Stem tracks inserted beneath the original clip*
 
 The **original clip and track are left untouched** — the stems are added

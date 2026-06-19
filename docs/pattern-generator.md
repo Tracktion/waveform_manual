@@ -11,7 +11,7 @@ This is available in all editions. The one exception is the *Follow
 Chord Track* key option, which needs Waveform Pro.
 <!-- code: waveform/common/Source/ui/propertypanels/MidiClipPropertyPanel.h:2819-2828,2864-2883 -->
 
-![](images/PLACEHOLDER_pattern-generator_1.png)
+![](images/pattern-generator_1@2x.png)
 
 *The Pattern Generator tab in a MIDI clip's properties*
 
