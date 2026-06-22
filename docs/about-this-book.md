@@ -9,12 +9,12 @@ Release Log:
 - Added [Plugin Racks](racks.md), [Faceplates](faceplates.md), [Effects Bus Tracks](effects-bus-tracks.md), [Clip Effects](clip-effects.md), [Folder Tracks](folder-tracks.md), and [Submix Tracks](submix-tracks.md) chapters
 
 *28/3/2024*: 13.5.2
-- Added [automation modes](#automation-modes)
-- Added [clip automation](#clip-automation)
-- Updated clip launcher for [clip/slot properties](#clipslot-properties)
+- Added [automation modes](automation.md#automation-modes)
+- Added [clip automation](automation.md#clip-automation)
+- Updated clip launcher for [clip/slot properties](clip-launcher.md#clipslot-properties)
 
 *28/3/2024*: 13.0.0
--   Added [clip launcher](#clip-launcher) chapter
+-   Added [clip launcher](clip-launcher.md) chapter
 
 *1/2/2021*
 -   Updated images first several chapters

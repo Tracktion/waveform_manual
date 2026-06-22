@@ -65,6 +65,8 @@ whatever you select appear in an improved **Actions panel** at the side
   [MIDI Effects](midi-effects.md).
 - **Visual Plugin Selector** -- pick plugins from a visual browser. See
   [Visual Plugin Selector](visual-plugin-selector.md).
+- **Plugin side panel** -- host a single plugin live on the main output
+  from a side-panel tab. See [The Plugin Side Panel](plugin-side-panel.md).
 
 ## Automation and control
 

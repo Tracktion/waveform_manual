@@ -80,6 +80,12 @@ Assistant
     panel where you can make natural-language requests. It appears once
     you enable it on the Settings tab under AI.
 
+Plugin
+- (Waveform 14) The Plugin tab hosts a single plugin running live on the
+    Edit's main output -- handy for a tuner, analyser, or other tool you
+    want always on hand. Enable it on the Settings tab under Plugins. See
+    [The Plugin Side Panel](plugin-side-panel.md).
+
 For much more about the Browser check out [The Browser](browser.md).
 
 > 💡 **Tip:** Resize the Browser by dragging the right edge left or right.

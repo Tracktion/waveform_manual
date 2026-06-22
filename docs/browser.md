@@ -208,6 +208,41 @@ The Files panel lists audio files -- plus SoundFont `.sf2` and `.sfz` files -- a
 
 > 📝 **Note:** The Files panel browses your filesystem directly, so it shows files whether or not they have been tagged or added to your library. Dragging a new file in from here does not add it to your loop library -- use the Search browser for tagged, searchable content.
 
+## The Tracks Panel
+
+The **Tracks** panel is a compact track list that lets you tag your tracks and then show only the ones you are working on. On a large arrangement -- dozens of tracks across drums, vocals, synths and busses -- it is an easy way to focus the timeline on, say, just the "Drums" tracks without manually hiding everything else. The panel is available in every edition.
+
+![](images/tracks_panel_1@2x.png)
+*The Tracks panel, showing the track tree, the tags bar, and the Show Only Tagged Tracks button at the bottom*
+
+### Opening the Panel
+
+Look for the **Tracks** tab at the top of the sidebar and click it. <!-- code: waveform/common/Source/ui/edit/sidebar/SidePanel.cpp:67 / TracksPanel.h:26 --> The panel lists every track in the edit as a tree, with folder tracks expandable. Each row shows the track's colour, icon and name, plus a **Hide** button and a **Disable** button on the right; clicking these mirrors the show/hide and enable/disable state in the track header. <!-- code: TracksPanel.h:386-387 --> Selecting a row here selects the track in the edit, and vice versa.
+
+### Tagging Tracks
+
+Tags live on the tracks themselves, so you assign them from the track properties rather than from this panel:
+
+1. Select one or more tracks (Cmd/Ctrl-click to multi-select).
+2. Open the track properties and find the **Tags** field. <!-- code: TrackPropertyPanelBase.h:598,893 -->
+3. Type one or more tags, separated by commas (for example `Drums, Verse`). The same tags are applied to every selected track.
+
+Only audio, folder and automation tracks can be tagged. <!-- code: TrackManager.cpp:224 -->
+
+### Filtering by Tag
+
+The tags bar in the middle of the panel lists every tag currently in use across your tracks. Click a tag to toggle it on; click more than one to combine them. With at least one tag enabled, turn on **Show Only Tagged Tracks** (the button at the bottom of the panel) and the timeline collapses to show only tracks carrying an enabled tag -- their tagged parent folders and tagged child tracks stay visible too, so folder structure is preserved. <!-- code: TracksPanel.h:37,91 / TrackManager.cpp:109-127 --> Turn the button off to bring every track back; the tag selection is remembered.
+
+### Control Reference
+
+- **Track tree** -- lists all tracks; selection is synced with the edit. Each row has a **Hide** and a **Disable** button. <!-- code: TracksPanel.h:386-387 -->
+- **Tags bar** -- the in-use tags; click to enable/disable a tag for filtering.
+- **Show Only Tagged Tracks** -- toggle; when on, only tracks with an enabled tag (and their tagged folders/children) are shown in the arrangement. Default: off.
+
+> 💡 **Tip:** Tag tracks by role ("Drums", "Vox") and by section ("Verse", "Chorus"), then enable a couple at once to zero in on exactly what you need.
+
+> 📝 **Note:** If no tags are enabled, or you have not tagged any tracks, the Show Only Tagged Tracks button has no effect -- the filter only kicks in once at least one enabled tag exists. <!-- code: TrackManager.cpp:111 -->
+
 ## The Groups Panel
 
 The **Groups** panel is the sidebar's home for [Edit Mix Groups](edit-mix-groups.md) -- the feature that links several audio tracks so that an action on one (a fader move, a mute, and so on) is mirrored on the rest. It gives you a single place to see every group in the edit, create new ones, and switch them on and off.
