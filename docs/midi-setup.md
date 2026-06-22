@@ -242,6 +242,71 @@ Inside the dialog:
 Click **Done** to save. These patch lists are shared across all your
 edits.
 
+## Synchronisation
+
+If you run Waveform alongside external timecode-aware gear - a hardware
+recorder, a video deck, or another DAW - you can lock the two together so
+they play in step. The **Sync** menu collects the project-wide settings
+for this: a timecode offset, MIDI Timecode (MTC) input, and MIDI Machine
+Control (MMC). A typical scenario is chasing an external MTC master so
+Waveform follows when that device starts, stops, and locates.
+
+You'll find these under the Edit tab's main menu. Click the main menu
+button and choose **Sync**.
+<!-- code: waveform/common/Source/ui/mainwindow/EditTab.cpp:1750 -->
+
+There's no default keyboard shortcut for the Sync menu or its items -
+assign one via Settings > Keyboard Shortcuts if you use them often.
+
+![](images/sync_menu_1@2x.png)
+
+*The Sync menu on the Edit tab*
+
+### Setting a timecode offset
+
+1.  Open **Sync > Change timecode offset…**.
+2.  In the **Change MIDI timecode offset** dialog, type the offset using
+    the timecode field.
+    <!-- code: EditTab.cpp:1473-1490 -->
+3.  Click **OK**. Incoming and outgoing timecode is now shifted by that
+    amount, which is handy when your external source starts a few frames
+    away from where you want Waveform's transport to land.
+
+### Chasing external MTC
+
+1.  Enable the MIDI input that carries timecode (Settings > MIDI
+    Devices), as described earlier in this chapter.
+2.  Open **Sync > MIDI timecode input device** and pick that device. Set
+    it to **&lt;None&gt;** to stop chasing.
+    <!-- code: EditTab.cpp:1540 -->
+3.  If the master sends an hour value you don't want to follow, turn on
+    **Ignore hours from incoming timecode**.
+    <!-- code: EditTab.cpp:1494 -->
+
+### Menu reference
+
+- **Change timecode offset…** - opens the *Change MIDI timecode offset*
+  dialog. (Default: 0)
+- **Ignore hours from incoming timecode** - a toggle; when on, the hours
+  field of incoming MTC is ignored. (Default: off)
+- **MIDI timecode input device** - the MIDI input Waveform chases for
+  MTC, or *&lt;None&gt;*.
+- **Respond to MIDI machine control from device** - the MIDI input
+  whose MMC transport commands (play/stop/locate) Waveform obeys, or
+  *&lt;None&gt;*.
+- **Send MIDI machine control to device** - the MIDI output to which
+  Waveform sends MMC transport commands, or *&lt;None&gt;*.
+<!-- code: EditTab.cpp:1494-1543 -->
+
+> 📝 **Note:** The MTC input and MMC device lists only show inputs and
+> outputs you've already enabled. If a device is missing, enable it on
+> the Settings > MIDI Devices page first.
+
+> 💡 **Tip:** This menu is for making Waveform *follow* external timecode.
+> To make Waveform the *master* instead, turn on **Send MIDI Timecode**
+> on the MIDI output that's wired to your gear (see Reference: Settings >
+> MIDI Devices).
+
 ## Moving On
 
 In the next chapter, you'll learn how to record a MIDI performance onto

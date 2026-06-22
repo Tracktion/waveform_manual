@@ -37,6 +37,7 @@
 - [Step Clips](step-clips.md)
 - [The Chord Track](chord-track.md)
 - [Using Plugins](using-plugins.md)
+- [The Plugin Side Panel](plugin-side-panel.md)
 - [Built-in Effects Plugins](built-in-effects-plugins.md)
 - [Utility Plugins](utility-plugins.md)
 - [4OSC Synthesizer](4osc.md)
