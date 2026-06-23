@@ -66,15 +66,15 @@ under **Settings > MIDI Devices**.
 
 → See [MIDI Setup](midi-setup.md).
 
-## 5. Hear Something — Open a Demo
+## 5. Hear Something - Open a Demo
 
-The quickest way to confirm everything works is to play a demo song:
+The quickest way to confirm everything works is to open a template and play it:
 
-1. Go to the **Projects** tab.
-2. Click **Get Demo Songs** in the menu at the lower left and download a song.
-3. Double-click its Edit to open it, then press the **Spacebar** to play.
+1. Open the **Welcome** tab.
+2. Pick a song from the **Templates** list to open it as a new Edit.
+3. Press the **Spacebar** to play.
 
-→ See [Installing the Demo Projects](installing-the-demo-projects.md) and
+→ See [Demo Projects and Templates](installing-the-demo-projects.md) and
 [Basic Navigation](basic-navigation.md).
 
 ## 6. The Edit Window at a Glance

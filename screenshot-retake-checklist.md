@@ -252,12 +252,11 @@ These 452 screenshots still show the **old Waveform 11 interface** and need re-c
 - [ ] `07----02@2x.png` — HTML View of Keyboard Shortcuts Assignments
 - [ ] `07----01@2x.png` — Waveform Request Form
 
-## Installing the Demo Projects  ·  `installing-the-demo-projects.md`  (4)
+## Demo Projects and Templates  ·  `installing-the-demo-projects.md`  (3)
 
-- [ ] `03----23@2x.png` — Get Demo Songs Button
-- [ ] `03----24@2x.png` — Get Demo Songs Dialog Box
-- [ ] `03----25@2x.png` — Checking the Progress of Demo Downloads
-- [ ] `03----26@2x.png` — Demo Songs in a Folder
+- [ ] `templates-list@2x.png` — The Templates List in the Welcome Tab
+- [ ] `template-new-project@2x.png` — A New Project Created From a Template
+- [ ] `demo-songs-folder@2x.png` — Demo Songs Collected in a Project Folder
 
 ## Introduction  ·  `introduction.md`  (1)
 

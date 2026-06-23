@@ -1,7 +1,7 @@
-# Installing the Demo Projects
+# Demo Projects and Templates
 
-This chapter walks through the process of installing the Waveform demo
-songs. The demos are very useful because they give you something to
+This chapter shows you how to get started with ready-made content. Demo
+projects and templates are very useful because they give you something to
 experiment with, as you learn the basics of the application.
 
 ## Establish a Waveform Projects Folder
@@ -13,49 +13,48 @@ One method would be to create a Waveform folder, under the Documents
 folder on your system. So, decide on a location and create your Waveform
 folder using the Finder (macOS) or File Explorer (Windows).
 
-## Project Tab: Get Demo Songs
+## Starting From a Template
 
-The Menu at the lower left of the Project tab includes a button - *Get
-Demo Songs*. Click that for a quick way to download the demos.
+The quickest way to get something playable is to start from one of the
+built-in templates. These include demo songs as well as ready-to-use
+starting points for new projects.
 
-![](images/03----23.png)
+Open the **Welcome** tab and look at the **Templates** list. Each entry
+is a complete project you can open with a single click.
 
-*Get Demo Songs Button*
+![](images/templates-list@2x.png)
 
+*The Templates List in the Welcome Tab*
 
-![](images/03----24.png)
+Click a template to create a new project from it. Waveform copies the
+template into your Active Projects and opens the new Edit, leaving the
+original template untouched so you can reuse it as often as you like.
 
-*Get Demo Songs Dialog Box*
+> 💡 **Tip:** If you'd rather keep the template's track and plugin layout
+but start with an empty arrangement, enable **Remove clips when loading
+templates** before you click. This opens the project with its routing in
+place but no clips on the tracks.
 
+![](images/template-new-project@2x.png)
 
-Select the songs to download from the list, choose the destination
-folder then click *Download*. We suggest using your newly created
-Waveform project folder as the destination. You also have the option to
-show only new songs, meaning those you haven't yet downloaded.
+*A New Project Created From a Template*
 
-Demo song downloading will be handled in the background. You can use the
-Progress Meter in the upper right corner to see how the downloads are
-progressing.
+## Demo Songs in Your Projects
 
-![](images/03----25.png)
-
-*Checking the Progress of Demo Downloads*
-
-
-When the downloads are finished, the demo songs will appear at the
-bottom of your Active Projects.
+Any demo songs bundled with your installation are added to your projects
+automatically the first time you run Waveform - there's nothing to
+download. They appear in the **Projects** tab alongside your own work.
 
 > 💡 **Tip:** We like to reorganize the demos into a folder to keep them
-separate from my own projects.
+separate from our own projects.
 
-![](images/03----26.png)
+![](images/demo-songs-folder@2x.png)
 
-*Demo Songs in a Folder*
-
+*Demo Songs Collected in a Project Folder*
 
 ## Moving On
 
-With Waveform installed, and a few demo files ready to play with, it's
+With Waveform installed, and a few projects ready to play with, it's
 time to move on to configuring your audio interface.
 
 

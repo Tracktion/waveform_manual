@@ -5,7 +5,7 @@
 - [Introduction](introduction.md)
 - [Quick Start](quick-start.md)
 - [What's New](whats-new.md)
-- [Installing the Demo Projects](installing-the-demo-projects.md)
+- [Demo Projects and Templates](installing-the-demo-projects.md)
 - [Audio Device Setup](audio-device-setup.md)
 - [Basic Navigation](basic-navigation.md)
 - [Getting Help](getting-help.md)
