@@ -143,8 +143,8 @@ you can drop it anywhere in the signal chain and reorder it later by dragging.
 You now have the essentials. Waveform has much more to explore — here are some
 highlights, each covered in its own chapter:
 
-- [The AI Assistant](ai-assistant.md) — a Claude-powered assistant that can
-  carry out actions in your project.
+- [The AI Assistant](ai-assistant.md) — a cloud-powered AI assistant that
+  can carry out actions in your project.
 - [Clip Launcher](clip-launcher.md) — trigger clips and scenes live.
 - [Comping](comping.md) — build one perfect take from several passes.
 - [Warp Time](warp-time.md) — bend and stretch audio in time.

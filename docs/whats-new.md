@@ -19,12 +19,14 @@ format. Level meters scale to the channel count. (Waveform Pro.)
 
 ### AI assistant
 
-A Claude-powered assistant is built into Waveform, in a side panel. Ask
-it about Waveform or your project and it can carry out actions for you --
-creating tracks, adding and configuring plugins, setting up routing,
-assigning keyboard shortcuts, and more -- by driving Waveform through its
-scripting API. It is aware of what you have selected and your project
-info, and an *auto* mode picks the right model for each request.
+A cloud-powered AI assistant is built into Waveform, in a side panel.
+Ask it about Waveform or your project and it can carry out actions for
+you -- creating tracks, adding and configuring plugins, setting up
+routing, assigning keyboard shortcuts, and more -- by driving Waveform
+through its scripting API. It is aware of what you have selected and
+your project info, and an *auto* mode picks the right model for each
+request. It connects to an external AI provider (OpenAI or Anthropic)
+using your own API key, and is entirely optional.
 
 ### A streamlined interface
 
