@@ -2,8 +2,7 @@ name: Deploy manual to GitHub Pages
 
 on:
   push:
-    # Drop w14 from this list once it has been merged into main.
-    branches: [main, w14]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
