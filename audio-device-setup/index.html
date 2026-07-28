@@ -1,0 +1,2760 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/audio-device-setup/">
+      
+      
+        <link rel="prev" href="../installing-the-demo-projects/">
+      
+      
+        <link rel="next" href="../basic-navigation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Audio Device Setup - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#audio-device-setup" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Audio Device Setup
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audio-device-setup-in-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Device Setup in Windows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-device-setup-on-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Device Setup on macOS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-device-setup-on-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Device Setup on Linux
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-audio-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing the Audio Interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-the-sample-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting the Sample Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-for-audio-playback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing for Audio Playback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        About Latency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Latency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calibrating-input-latency-compensation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calibrating Input Latency Compensation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resetting-to-the-defaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resetting to the Defaults
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-audio-device-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Audio Device Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-run-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Run Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantizing MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Side Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audio-device-setup-in-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Device Setup in Windows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-device-setup-on-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Device Setup on macOS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-device-setup-on-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Device Setup on Linux
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-audio-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing the Audio Interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-the-sample-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting the Sample Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-for-audio-playback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing for Audio Playback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        About Latency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Latency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calibrating-input-latency-compensation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calibrating Input Latency Compensation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resetting-to-the-defaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resetting to the Defaults
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-audio-device-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Audio Device Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-run-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Run Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="audio-device-setup">Audio Device Setup<a class="headerlink" href="#audio-device-setup" title="Permanent link">&para;</a></h1>
+<p>To use Waveform, it is essential to configure it to work with your audio
+interface. It doesn't matter wether you want to use the internal audio
+unit built into your computer, or an external audio interface connected
+to it. Of importance is only to communicate with it in the right way. 
+Waveform supports the following communication protocols:</p>
+<ul>
+<li>Windows: ASIO (recommended), and Windows Sound</li>
+<li>macOS:   Core Audio</li>
+<li>Linux:   JACK (recommended), and ALSA or PulsAudio/ALSA</li>
+</ul>
+<p><img alt="" src="../images/04----00%402x.png" /></p>
+<p><em>Audio Device Page</em></p>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> To configure Waveform for recording, you must use the
+Auto-Detect feature along with a hardware loopback. If you don't, then
+your overdubbed tracks will not be in alignment with existing tracks.
+While this is not difficult, it is essential to do this manual step
+anytime you change the Audio Device Setup. The procedure to do this is
+covered in this chapter.</p>
+</blockquote>
+<p>This chapter covers the essential steps to get your audio interface
+configured as an audio device in Waveform.</p>
+<h2 id="audio-device-setup-in-windows">Audio Device Setup in Windows<a class="headerlink" href="#audio-device-setup-in-windows" title="Permanent link">&para;</a></h2>
+<p>If you haven't already, navigate to <em>Settings tab &gt; Audio Devices page.</em></p>
+<p>Audio Device Type:
+ Waveform gives Windows users four choices for audio device type.</p>
+<ul>
+<li>Windows Audio</li>
+<li>Windows Audio (Exclusive)</li>
+<li>DirectSound</li>
+<li>ASIO</li>
+</ul>
+<p><img alt="" src="../images/04----03.png" /></p>
+<p><em>Windows Audio Device Types</em></p>
+<p>Any of the above four options might work with your computer, but there
+are definite differences, and best choices:</p>
+<p><strong>ASIO</strong>
+- This is the best choice if you are using an external audio
+    interface. The first step is to install the manufacturer's driver.
+    Using ASIO will usually give you the best low latency performance
+    for recording and playback. Many modern audio interfaces include a
+    mixer app to control low latency mixing within the unit. When using
+    ASIO, you simply choose the device and it is set for both inputs and
+    outputs.</p>
+<p><strong>Windows Audio</strong>
+- Use this if you are running Windows 10 and are using the internal
+    sound on your machine. This solution is great for using a laptop
+    directly while traveling. This device type uses WASAPI (Windows
+    Audio Session API) which offers nicely optimized access from
+    applications software to audio I/O. Windows Audio will also function
+    with USB Audio Class 1 interfaces.</p>
+<p><strong>Windows Audio (Exclusive Mode)</strong>
+- This is the same as Windows Audio, but Waveform will not allow any
+    other application to use the audio interface while running. For the
+    lowest latency and most critical applications, choose this option
+    when using your internal sound.</p>
+<p><strong>DirectSound</strong>
+- This is technology is deprecated in Windows 10 and there is no good
+    reason to choose this option. Back in the day, this was the best
+    choice when using Windows XP with your internal sound.
+Tip: Stay away from the DirectSound device type.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Windows versions earlier than Win 10 are end of life and officially no more supported. While you might
+be able to run Waveform on older Windows 64-bit systems, the Waveform development and support team run their Win tests on versions 10 and 11.</p>
+<p>📝 <strong>Note:</strong> Starting with release 1703, Windows 10 supports USB Audio
+Class 2 devices natively. For simple 2 x 2 interfaces or built-in audio
+this is a workable alternative to using ASIO. For the full feature set
+for most audio interfaces it is still recommended that you install and use
+manufacturer's drivers and use ASIO if possible.</p>
+</blockquote>
+<h2 id="audio-device-setup-on-macos">Audio Device Setup on macOS<a class="headerlink" href="#audio-device-setup-on-macos" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Click on the Settings tab, then select the Audio Devices page.</li>
+<li>Select an output Device. Assuming you have the necessary drivers
+    installed and the device hooked up, it should appear as an option
+    for the <em>Output:</em> property.</li>
+</ol>
+<p><img alt="" src="../images/04----01.png" /></p>
+<p><em>OS X - Audio Device Output and Input Properties</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> With macOS, USB audio interfaces that follow USB Audio Class 1
+(1998) or USB Audio Class 2 (2009) will function without installing any
+additional driver. In the product specs for such devices they are often
+listed as "class compliant."</p>
+</blockquote>
+<ol>
+<li>Select an Input device</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Tip:</strong> We strongly suggest that you select the same device for the
+output and the input. In this example, we are using a "USB iTwo" which
+is a simple 2 in / 2 out interface.</p>
+<p>📝 <strong>Note:</strong> On OS X, you can select the input device and output device
+separately.</p>
+</blockquote>
+<p><img alt="" src="../images/04----02.png" /></p>
+<p><em>Audio Device </em><em>Test</em><em> Button on Mac</em></p>
+<p>Test Button
+- There is a convenient <em>Test</em> button next to the audio device
+    parameter. Click it to send a short test tone to the audio device's
+    output. If you hear the tone, you know your device has been
+    configured correctly.</p>
+<h2 id="audio-device-setup-on-linux">Audio Device Setup on Linux<a class="headerlink" href="#audio-device-setup-on-linux" title="Permanent link">&para;</a></h2>
+<p>Waveform can connect to the Linux audio system by JACK or ALSA.</p>
+<p>The usual requirement for low latency signal pathways and the extended
+routing options recommend to configure Waveform for JACK usage, though.</p>
+<p><strong>Settings tab &gt; Audio Devices page &gt; Audio Device Type = JACK</strong></p>
+<p>While the configuration of Waveform is obviously quite easy, the
+preparation of the Linux system itself and finding an audio device
+being compatible with Linux requires some attention.</p>
+<p>Concerning the audio interface: It is out of the scope for the Waveform development and support team to promise you anything about the Linux compatibility of your audio device. We do share some experience to give you an idea about the situation, though. Internal audio chips built into the motherboard of the computer, as in Laptops, are mostly supported by Linux. External audio devices connecting via USB, but only if said to be "USB" or "iOS" compliant, are usually also supported, at least in regard to accessing their basic input and output channels. If these USB devices would come with management software, then this is usually not supported in Linux and functionality only available through the management software stays hidden to Linux users. For internal cards, or audio interfaces connecting by other means (Firewire, for instance), generalized statements cannot be made at all. Independent of your audio device being integrated, or connected by USB, or whatever, we highly encourage you to contact your hardware vendor for clarification, or to consult the relevant Linux user communities about their experience with the hardware of interest. One of the possible addresses would be the following internet forum: https://linuxmusicians.com/viewforum.php?f=6</p>
+<p>Concerning the Linux setup:
+PipeWire is nowadays found to be the by default configured internal audio data (and video data) transportation mechanism in mayor Linux distributions.
+Hence, instructions are in the following given with regard to PipeWire. The Ubuntu LTS (24.04) distribution of Linux is taken as for a test run.</p>
+<p>Some background information: PipeWire was developed as a low latency capable replacement for the proven, but expandability and integration limited JACK, ALSA, PulseAudio and GStreamer protocols.
+It provides the necessary compatibility layers for staying interoperable with applications programmed to connect to those software interfaces. Regarding ALSA it is noteworthy to mention,
+that its user space features are intended to be replaced, while the ALSA parts providing the hardware drivers remain untouched.</p>
+<p>Out of the box, Ubuntu (or a flavor of it like Kubuntu) comes with the
+audio system being based on PipeWire, being provided by the preinstalled packages
+<em>pipewire</em> and <em>pipewire-pulse</em>.
+Basically, the following audio signal pathway is then usually in use:</p>
+<p><strong>App</strong> (Multimedia Player) <strong>--&gt; pipewire-pulse --&gt; basic management layer --&gt; pipewire --&gt; ALSA --&gt; audio device</strong></p>
+<p>The user just runs the app of interest. All the rest stays hidden to the
+user and is cared for by the Linux operating system.</p>
+<p>However, for running <strong>Waveform</strong> in Ubuntu, the compatibility
+layers for interfacing the <strong>JACK</strong> or <strong>ALSA</strong> protocols have to be added to
+the PipeWire environment, after they are not found to be preinstalled
+in Ubuntu. The required packages are:</p>
+<ul>
+<li><em>pipewire-jack</em></li>
+<li><em>pipewire-alsa</em></li>
+<li><em>wireplumber</em></li>
+</ul>
+<p>The <em>pipewire-jack</em> and <em>pipewire-alsa</em> packages are obviously providing the compatibility
+layers. WirePlumber replaces the basic, not being sufficient
+anymore management layer found initially in service in the basic
+PipeWire setup of Ubuntu, providing some under the hood
+required more sophisticated management capabilities.</p>
+<p>Up to here things are pretty much the same in all Linux derivatives which are somehow building on top of the Debian distribution, like SparkyLinux, Ubuntu, LinuxMint, etc. .
+However, the additional to the package installation necessary configuration steps may vary.</p>
+<p>The easiest way to get Ubuntu ready for advanced audio works and to connect to Waveform is to simply install the following package:</p>
+<ul>
+<li><em>ubuntustudio-pipewire-config</em></li>
+</ul>
+<p>This package in Ubuntu draws in all above mentioned packages and also puts all necessary configurations into place.
+Now restarting the Linux system eliminates having to hassle with any further configuration steps.
+In principal, after the reboot, you are ready to go, and the following signal pathways are now usable:</p>
+<p><strong>App</strong> (Multimedia Player) <strong>--&gt; pipewire-pulse --&gt; wireplumber --&gt; pipewire --&gt; ALSA --&gt; audio device</strong></p>
+<p><strong>App</strong> (Waveform) <strong>--&gt; pipewire-alsa --&gt; wireplumber --&gt; pipewire --&gt; ALSA --&gt; audio device</strong></p>
+<p><strong>App</strong> (Waveform) <strong>--&gt; pipewire-jack --&gt; wireplumber --&gt; pipewire --&gt; ALSA --&gt; audio device</strong></p>
+<p>They can be used in parallel, and each of them with its particular feature set.
+For instance, JACK interfacing applications can have signal routing in-between JACK capable apps, allowing to build up sophisticated audio app networks. As a graphical patch bay for a JACK based audio network, i.e. <em>qpwgraph</em> could help with the audio network administration.
+Or, to give another example, several applications interfacing to PulseAudio, and several interfacing to JACK, can be in use in parallel, also all of them streaming in parallel to the same audio interface. PipeWire will mix the streams with almost zero latency.
+Using the ALSA pathway for Waveform is the same possible as in the past. However, after setting up JACK for PipeWire is nowadays so easy and straight forward, contrary to the configuration hassles in the past, and as JACK allows for a lower latency signal pathway, configuring Waveform to use the JACK pathway is highly recommended.</p>
+<p>For convenience, the apps <strong>Ubuntu Studio Audio Configuration</strong> and <strong>Ubuntu Studio Installer</strong> could be installed from package:</p>
+<ul>
+<li><em>ubuntustudio-installer</em></li>
+</ul>
+<p>The app Ubuntu Studio Audio Configuration aids in the configuration of the principal audio system options. It is especially useful for easily changing the so called PipeWire Quantum, which cares to balance latency and system load depending on the parameter set of buffer size and sample rate. The default parameter set is "1024 48000". For changing it system wide and immediately, simply run the tool and enter the wished values.
+The app Ubuntu Studio Installer would allow to proceed much more specialized configurations. For instance, it allows by the tip of a finger to install a low latency kernel and to proceed with all related configurations automatically. This app could also install curated bundles of software to the system, not only targeting creatives working with audio (bundle <em>ubuntustudio-audio</em>) but also targeting the topics of video and photography. Offerings by the Ubuntu Studio Installer are for many users and modern computers not essential. Of mayor interest is the Ubuntu Studio Audio Configuration tool, though.</p>
+<h2 id="choosing-the-audio-interface">Choosing the Audio Interface<a class="headerlink" href="#choosing-the-audio-interface" title="Permanent link">&para;</a></h2>
+<p>With the audio device type set, you can choose any audio interface
+connected to your computer or the internal sound. Select your device if
+it's not already shown for the <em>Device:</em> property.</p>
+<p><img alt="" src="../images/04----04%402x.png" /></p>
+<p><em>ASIO Device Setup on Windows</em></p>
+<p>Control Panel
+- On some but not all audio interfaces, clicking the <em>Control Panel</em>
+    button will open the manufacturer's driver control panel to set the
+    buffer size. Many audio interfaces don't allow you to set the buffer
+    size or the sample rate through host software. If that is the case,
+    locate the control panel software on your system, and open it. Set
+    the <em>Sample Rate</em> and <em>Audio buffer</em> size there. In some cases, you
+    will need to restart Waveform for the change to take effect.</p>
+<h2 id="setting-the-sample-rate">Setting the Sample Rate<a class="headerlink" href="#setting-the-sample-rate" title="Permanent link">&para;</a></h2>
+<p>The default for the sample rate is 44100 Hz, which matches the sample
+rate for CDs. We suggest choosing this sample rate or 48000 Hz unless
+you have a specific reason to choose a different sample rate.</p>
+<p><img alt="" src="../images/04----10.png" /></p>
+<p><em>Setting the Sample Rate</em></p>
+<h2 id="testing-for-audio-playback">Testing for Audio Playback<a class="headerlink" href="#testing-for-audio-playback" title="Permanent link">&para;</a></h2>
+<p>It is a good idea to test playback to make sure you get sound as well as
+a complete stereo image. Here is one way to do that:</p>
+<p><img alt="" src="../images/04----05.png" /></p>
+<p><em>Loading the SubWays Demo</em></p>
+<ol>
+<li>Go back to the Projects tab and select one of the demo tunes -
+    Subways is a good choice.</li>
+<li>Locate the Edit on the right (SubWays T4) and double-click to open
+    it.</li>
+<li>Click <em>Play</em> (spacebar) and you should hear music!</li>
+</ol>
+<p><img alt="" src="../images/04----06%402x.png" /></p>
+<p><em>Successful Play Back</em></p>
+<h2 id="about-latency">About Latency<a class="headerlink" href="#about-latency" title="Permanent link">&para;</a></h2>
+<p>The process of mixing your tracks together, calculating digital effects,
+and triggering instrument samples takes time in any DAW. It is
+impossible for digital mixing to happen instantly. The amount of time
+your computer needs to compute, process, mix and playback from input to
+output is called 'latency.' Latency is the amount of time you allow the
+computer think and is normally measured in milliseconds - from just a
+few to several hundred milliseconds.</p>
+<p>During playback, latency is detected only as a delay between hitting
+play and hearing playback. This results in a barely detectible lag in
+the transport functions, and doesn't cause much trouble.</p>
+<p>Latency during overdubbing is more of an issue. If you are hearing
+playback of existing tracks a bit late, then what you are recording is
+not going to line up correctly because your timing reference is shifted,
+either late or early. Even a few milliseconds will effect feel. At 30 or
+60 milliseconds, the timing will be off. This can have an impact on the
+feel of the recording or even make the timing seem completely off.</p>
+<p>For these reasons, all DAWs include a "latency compensation" feature.
+Following recording, the audio tracks are essentially shifted to
+compensate for latency in the A/D process, mixing, and plugin DSP
+processing.</p>
+<h2 id="managing-latency">Managing Latency<a class="headerlink" href="#managing-latency" title="Permanent link">&para;</a></h2>
+<p><em>Audio buffer size</em> by default is 512 samples (11.6 ms) on macOS, 256
+samples (5.8 ms) on Windows, and 1024 on Linux (21.3 ms).
+On modern computers, you can usually run with the buffer size set to
+256 or even lower.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The choice of available buffer size options varies. It depends
+on what what audio interface, connection type, and driver technology you
+have access to.</p>
+</blockquote>
+<p>Let's consider a latency of 11 ms. In reality, 11 ms is a very short
+period of time. In the real world if you are playing a MIDI controller
+into a virtual instrument, there will be an 11 ms lag between when you
+play a note and when you hear the note. It's the same thing if you're
+working with a virtual guitar amp or amp simulator. When you play a note
+the guitar you hear the sound 11 ms later. Sound travels through air at
+the rate of approximately one foot (0.34 meters) per millisecond. So
+this latency is like playing with your guitar amp or keyboard monitor 11
+feet (3.4 meters) away. There is a delay but you might get by. At 6 ms
+delay, usually the delay is barely noticeable.</p>
+<p>With computer recording, we alway aim to strike a balance between
+noticeable latency and getting clean playback. Why not just lower it all
+the way down? Because, the computer needs time to 'think' and produce
+the sounds and process effects. If we get too aggressive with lowering
+the buffer, the computer starts to complain in the form of pops, clicks,
+dropouts, and the like. So during recording you might keep this lower,
+during editing and mixing you can increase it.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Try 256 samples when you get started. While your songs are
+simple, this should work fine on most modern systems. If you feel there
+is too much delay when playing virtual instruments, try a lower buffer
+value. If the audio starts to break up, try higher settings.</p>
+<p>📝 <strong>Note:</strong> When using Melodyne Essential for editing audio, you will need
+to increase the buffer size to at least 1024 samples, in order to
+prevent getting a warning message and to have clean playback.</p>
+</blockquote>
+<h2 id="calibrating-input-latency-compensation">Calibrating Input Latency Compensation<a class="headerlink" href="#calibrating-input-latency-compensation" title="Permanent link">&para;</a></h2>
+<p>If you use Waveform for any overdubbing, <strong>this is possibly the most
+important lesson in this book. Waveform requires you to run
+Auto-Detect</strong> using a loopback connection on your audio interface.</p>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> This test sets up up a deliberate feedback loop. Switch
+your speakers off during this test.You will be connecting an output to
+an input using a patch cord, so be careful.</p>
+</blockquote>
+<p>Here are the steps:</p>
+<ol>
+<li>Turn off your monitor speakers!</li>
+<li>Make sure any input monitoring knobs, buttons, or mixers or off or
+    turned down.</li>
+<li>Connect one output back to one of the inputs. To make it simple,
+    connect the left output to input one.</li>
+<li>Turn the gain up about half way on the input.</li>
+<li>In Waveform go to <em>Settings &gt; Audio Devices.</em></li>
+<li>In the Channels list click on one of the Inputs</li>
+</ol>
+<p><img alt="" src="../images/04----11.png" /></p>
+<p><em>Select an Input</em></p>
+<ol>
+<li>In the Actions panel click <em>Auto-Detect.</em></li>
+</ol>
+<p><img alt="" src="../images/04----12.png" /></p>
+<p><em>Auto-Detect &amp; Time Adjust Parameters</em></p>
+<ol>
+<li>Click <em>Run Test.</em> Waveform will send a short test signal from the
+    output to the input. It will calculate the delay between output and
+    input.</li>
+</ol>
+<p><img alt="" src="../images/04----13%402x.png" /></p>
+<p><em>Recording Synch Test Dialog Box</em></p>
+<ol>
+<li>Click <em>Apply</em> and Waveform will copy the delay value to the Time
+    Adjust property.</li>
+</ol>
+<p><img alt="" src="../images/04----14%402x.png" /></p>
+<p><em>Applying the Auto-Detect Result to </em>Time Adjust**</p>
+<p>For recordings to be aligned during overdubs, you must repeat this every
+time you make a change to the <em>Sample rate</em> or <em>Audio buffer size.</em> If
+you don't, your recordings will be several milliseconds out of alignment
+with existing tracks.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Instead of a loopback cable, you could connect a microphone to
+the input and point it at one of your speakers to run Auto-Detect. This
+will work just fine however make sure that Live Input Monitoring is off
+AND that direct input monitoring on your audio interface is also off. If
+you leave either on it will cause feedback potentially damaging your
+speakers if not your ears!</p>
+<p>💡 <strong>Tip:</strong> You can keep a note of the <em>Time Adjust</em> values at different
+settings an enter it manually for the settings you commonly use.</p>
+<p>⚠️ <strong>Warning:</strong> To configure Waveform for recording, you must use the
+Auto-Detect feature along with a hardware loopback. If you don't then
+your overdubbed tracks will not be in alignment with existing tracks.
+While this is not difficult, it is essential to do this manual step
+anytime you change the Audio Device Setup.</p>
+</blockquote>
+<h2 id="resetting-to-the-defaults">Resetting to the Defaults<a class="headerlink" href="#resetting-to-the-defaults" title="Permanent link">&para;</a></h2>
+<p>If at any point you want to reset these settings to the defaults, click
+either of these two options:</p>
+<p>Reset Input Devices
+- Resets <em>Input gain</em>, <em>Trigger level</em>, <em>Time adjust</em>, and recording
+    options.</p>
+<p>Reset Output Devices
+- Resets <em>Treat as stereo pair</em>, <em>Dithering Enabled</em>, <em>Left/Right
+    Reversed</em> and <em>Alias</em> parameters.</p>
+<h2 id="advanced-audio-device-settings">Advanced Audio Device Settings<a class="headerlink" href="#advanced-audio-device-settings" title="Permanent link">&para;</a></h2>
+<p>There are additional options for Low Latency Mode and audio performance
+on the Advance page of the Settings tab. Refer to <a href="../reference-settings/#advanced">Reference: Settings &gt; Advanced</a>.</p>
+<h2 id="first-run-setup">First Run Setup<a class="headerlink" href="#first-run-setup" title="Permanent link">&para;</a></h2>
+<p>When you run Waveform for the first time, you will see the <em>First Run
+Setup Progress</em> panel over on the left. As you click each item, it takes
+you directly to the page and feature on the Setup tab needed to complete
+the task. The tasks are designed to streamline setup and get new users
+configured and running quickly.</p>
+<p><img alt="" src="../images/38----52.png" /></p>
+<p><em>First Run Setup Progress Panel</em></p>
+<p>If you close the panel and wonder how to get it back, navigate to *Help</p>
+<blockquote>
+<p>Show First Run Setup*.</p>
+</blockquote>
+<p><img alt="" src="../images/38----53.png" /></p>
+<p><em>Turning First Run Setup On</em></p>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>Audio device setup is straightforward, apart from running the
+Auto-Detect loopback test. Follow the guidelines in this chapter and you
+will be ready to move on.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

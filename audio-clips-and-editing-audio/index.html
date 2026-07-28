@@ -1,0 +1,3086 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/audio-clips-and-editing-audio/">
+      
+      
+        <link rel="prev" href="../selecting-and-snapping/">
+      
+      
+        <link rel="next" href="../stem-separation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Audio Clips and Editing Audio - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#audio-clips-and-editing-audio" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Audio Clips and Editing Audio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parts-of-an-audio-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parts of an Audio Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-clip-handles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Clip Handles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitting-a-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Splitting a Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duplicating-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duplicating Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fade-infade-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fade-in/Fade-out
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pitch-fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pitch Fade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crossfades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crossfades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drag-crossfade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drag Crossfade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edge-fades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edge Fades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-and-paste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy and Paste
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clip-gain-mute-pan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clip Gain, Mute, &amp; Pan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reversing-audio-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reversing Audio Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merging-clips-to-one-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merging Clips to One Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-a-section-of-audio-removing-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting a Section of Audio Removing Space
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-with-ara" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing with ARA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editing with ARA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invoke-an-ara-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke an ARA plugin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reopen-the-editor-from-the-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reopen the editor from the clip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-an-audio-clip-to-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert an audio clip to MIDI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linked-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linked Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantizing MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Side Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parts-of-an-audio-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parts of an Audio Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-clip-handles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Clip Handles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitting-a-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Splitting a Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duplicating-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duplicating Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fade-infade-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fade-in/Fade-out
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pitch-fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pitch Fade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crossfades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crossfades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drag-crossfade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drag Crossfade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edge-fades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edge Fades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-and-paste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy and Paste
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clip-gain-mute-pan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clip Gain, Mute, &amp; Pan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reversing-audio-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reversing Audio Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merging-clips-to-one-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merging Clips to One Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-a-section-of-audio-removing-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting a Section of Audio Removing Space
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-with-ara" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing with ARA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editing with ARA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invoke-an-ara-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke an ARA plugin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reopen-the-editor-from-the-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reopen the editor from the clip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-an-audio-clip-to-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert an audio clip to MIDI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linked-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linked Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="audio-clips-and-editing-audio">Audio Clips and Editing Audio<a class="headerlink" href="#audio-clips-and-editing-audio" title="Permanent link">&para;</a></h1>
+<p>In this chapter, you are going to learn how to work with Audio clips.
+and how to work with the integrated editing handles that are part of
+each Audio clip.</p>
+<h2 id="parts-of-an-audio-clip">Parts of an Audio Clip<a class="headerlink" href="#parts-of-an-audio-clip" title="Permanent link">&para;</a></h2>
+<p>Notice that an Audio clip has several parts. It has a header that
+includes trim and slip handles. It has a body that contains the waveform
+thumbnail and fade handles.</p>
+<p><img alt="" src="../images/12----01.png" /></p>
+<p><em>Main Parts of and Audio Clip</em></p>
+<p>Header
+- Move Audio clips by dragging from the header. The header includes
+    the trim handles (hollow), slip handles (solid), and other tools.</p>
+<p><img alt="" src="../images/12----02.png" /></p>
+<p><em>Audio Clip Header</em></p>
+<p>Body
+- The Audio clip body features the waveform thumbnail, fade handles,
+    and the clip name.</p>
+<p><img alt="" src="../images/12----03.png" /></p>
+<p><em>Audio Clip Body</em></p>
+<p>Plugins
+- Audio clips can host plugins directly, so you might see one or more
+    plugins right on the clip body. Learn more about that in <a href="../clip-effects/">Clip Effects</a>.</p>
+<p><img alt="" src="../images/12----04.png" /></p>
+<p><em>Audio Clip Effects</em></p>
+<p>Properties
+- Like most other objects in Waveform, Audio clips have lots of
+    additional properties and controls in the Actions panel.</p>
+<p><img alt="" src="../images/12----05.png" /></p>
+<p><em>Audio Clip properties</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> If you accidentally move or edit an Audio clip, you can always
+press <em>Undo</em> (Cmd + Z / Ctrl + Z) at the top of the Menu section.</p>
+</blockquote>
+<h2 id="moving-clips">Moving Clips<a class="headerlink" href="#moving-clips" title="Permanent link">&para;</a></h2>
+<p>As you move the mouse pointer over the Audio clip header, it changes to
+a grabbing hand. Use that to drag the clip forward or backward in time.
+If <em>Snap</em> is on, the beginning of the clip will snap by grid increments.</p>
+<p><img alt="" src="../images/12----06.png" /></p>
+<p><em>Move Audio Clips by Dragging from the Header</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> As we discussed previously, the grid resolution depends on the
+zoom level.</p>
+</blockquote>
+<p>You can also drag Audio clips from track to track. With snap enabled,
+track-to-track drags will usually stay in sync. However, with snap
+turned off, it is easy move the clip slightly off time. To prevent that,
+hold down Shift as you drag track to track. The Shift key, constrains
+the timing of track to track drag moves.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Another way to move a clip track-to-track without changing the
+timing is to use nudge. Select the clip the hold down Shift and press Up
+Arrow or Down Arrow to nudge it to another track.</p>
+</blockquote>
+<h2 id="deleting-clips">Deleting Clips<a class="headerlink" href="#deleting-clips" title="Permanent link">&para;</a></h2>
+<p>The easiest way to delete a clip is to selected it and press Delete or
+Backspace. The cut (Cmd + X / Ctrl + X) keyboard action does the same
+thing. If you need yet another way to delete, locate and click the
+convenient <em>Delete</em> button in properties.</p>
+<p><img alt="" src="../images/12----07.png" /></p>
+<p><em>Audio Clip properties </em>Delete<em> button</em></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> As you work with clips sometimes you just want clear the
+selection. The fastest way is to just hit Esc.</p>
+</blockquote>
+<h2 id="audio-clip-handles">Audio Clip Handles<a class="headerlink" href="#audio-clip-handles" title="Permanent link">&para;</a></h2>
+<p>Each Audio clip header includes six handles that you use for trimming,
+slipping, stretching. These are represented as four arrows and two
+boxes.</p>
+<p>Trimming
+- Hollow left and right arrows on both of the upper corners of the
+    clip are trim handles. Grab a trim handle and drag left or right to
+    trim the start or end of the the clip. Notice that trimming this way
+    directly changes the <em>Start</em> and <em>End</em> values in properties. With
+    <em>Snap</em> turned on, trimming snaps to the grid. To trim freely, hold
+    down Cmd / Ctrl as you drag or turn <em>Snap</em> off.</p>
+<p><img alt="" src="../images/12----08.png" /></p>
+<p><em>Audio Clip Trim Handles</em></p>
+<p>Slip Editing
+- Slip editing means moving the waveform within the clip without
+    altering its <em>Start</em>, <em>Length</em>, or <em>End</em> values. Drag the solid box
+    shaped handle left or right to slip edit. You can override
+    snap-to-grid during slip editing by holding down Cmd / Ctrl.</p>
+<p><img alt="" src="../images/12----09.png" /></p>
+<p><em>Audio Clip Slip Handle</em></p>
+<p>Reframing
+- The hollow box shaped handle allows reframing the clip. Drag it left
+    or right and the clip moves but the waveform doesn't. It essentially
+    allows you to reframe the audio without affecting its timing.</p>
+<p>Slip Trimming
+- The solid left and right arrow handles are for slip trimming. Try
+    dragging the left solid arrow. Notice that it moves the clip <em>Start</em>
+    while keeping the <em>End</em> planted. Now try the right solid arrow.
+    Moving that one, moves the <em>End</em> while keeping the the <em>Start</em>
+    planted. Although this operation seems similar to trimming, the
+    difference is that the underlying waveform slips relative to the end
+    that is not moving.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> With <em>Snap</em> on, hold down Cmd / Ctrl as you drag to temporarily
+override snapping for most editing operations.</p>
+</blockquote>
+<p><strong>Video Clip:</strong> <a href="https://w-edstrom.wistia.com/medias/qr0fax85zn">Basic Audio
+Editing</a></p>
+<h2 id="splitting-a-clip">Splitting a Clip<a class="headerlink" href="#splitting-a-clip" title="Permanent link">&para;</a></h2>
+<p>Splitting Audio clips, is essential for audio editing. Here is the
+quickest way:</p>
+<ol>
+<li>Select the clip</li>
+<li>Position the cursor where you want to make the split</li>
+<li>Press slash (/)</li>
+</ol>
+<p><img alt="" src="../images/12----10.png" /></p>
+<p><em>Audio Clip, Right after Split</em></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> If you want to make numerous splits, you can keep holding down
+the left mouse button as you drag the cursor and press slash (/) - never
+lifting the mouse button.</p>
+</blockquote>
+<p>Audio clip properties also include <em>Split Clips</em> actions. Look to the
+far right in properties and find the <em>Split Clips</em> button. You will find
+options to slip at the cursor along with options to split at the
+in-marker or out-marker. Keep in mind that these actions will only
+affect selected clips.</p>
+<p><img alt="" src="../images/12----11.png" /></p>
+<p><em>Audio Clip properties, Split Clips actions</em></p>
+<h2 id="duplicating-clips">Duplicating Clips<a class="headerlink" href="#duplicating-clips" title="Permanent link">&para;</a></h2>
+<p>To duplicate one or more clips, select the clip and press D. That will
+copy the clip and paste it right after the original clip. Duplicate
+works like copy and paste, all in one action.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> If you want to use a different key for the duplicate action,
+you can change it in <em>Settings tab &gt; Keyboard Shortcuts &gt; Editing
+Functions: Duplicate</em>.</p>
+</blockquote>
+<h2 id="fade-infade-out">Fade-in/Fade-out<a class="headerlink" href="#fade-infade-out" title="Permanent link">&para;</a></h2>
+<p>In the upper corners of the Audio clip body, notice the fade handles.
+Each is shaped like a tiny box with a diagonally line through it. Grab a
+fade handle and pull it inward. This action draws a fade-in or fade-out.</p>
+<p><img alt="" src="../images/12----12.png" /></p>
+<p><em>Audio Clip Fades</em></p>
+<p><strong>Video Clip:</strong> <a href="http://vimeo.com/user356034/fades">Fade-in/Fade-out
+Demo</a></p>
+<p>By default, you will get a linear fade, but there are other fade types
+available in properties for the clip. For more control, directly edit
+the <em>Fade In</em> and <em>Fade Out</em> numerical values in properties.</p>
+<p><img alt="" src="../images/12----13.png" /></p>
+<p><em>Audio Clip, Fade properties</em></p>
+<h2 id="pitch-fade">Pitch Fade<a class="headerlink" href="#pitch-fade" title="Permanent link">&para;</a></h2>
+<p>Right click on the fade handle, and you can select between a volume fade
+and pitch fade. Pitch fade gives you a very cool tape stop effect or
+tape run-up effect. The fade graphic is shaded darker than for volume
+fades.</p>
+<p><img alt="" src="../images/12----14.png" /></p>
+<p><em>Right-click Fade Handle, Pitch Fade Speed Up</em></p>
+<p>Here is a video tutorial demonstrating pitch fade:</p>
+<p><a href="https://w-edstrom.wistia.com/medias/o2ff37pknl">Pitch Fade Video
+Tutorial</a></p>
+<h2 id="crossfades">Crossfades<a class="headerlink" href="#crossfades" title="Permanent link">&para;</a></h2>
+<p>A crossfade is fading out one Audio Clip while fading in another. Some
+controls in Waveform are labeled "X-Fade" when referring to crossfade.
+Here are the steps to create a crossfade:</p>
+<ol>
+<li>Drag a clip so that it it overlaps another one somewhat.</li>
+<li>Press X on the keyboard.</li>
+</ol>
+<p><img alt="" src="../images/12----15.png" /></p>
+<p><em>Crossfaded Audio Clips</em></p>
+<p>That's it: a crossfade. It's a fade-out that overlaps the fade-in of the
+next clip. You can adjust the fade shapes using the buttons in
+properties, just like any other fade.</p>
+<p><img alt="" src="../images/12----16.png" /></p>
+<p><em>Fade-in/Fade-out Shape Buttons</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Keep in mind that the fade shape buttons only operate on the
+selected clip. You will need to select the clip on the appropriate side
+of the crossfade for the fade shape buttons to work.</p>
+</blockquote>
+<h2 id="drag-crossfade">Drag Crossfade<a class="headerlink" href="#drag-crossfade" title="Permanent link">&para;</a></h2>
+<p>The Settings tab, General page has a setting labeled <em>Default
+Drag X-Fade</em>. It has two possible settings: <em>On by default</em> or <em>Off by
+default</em>. When set to <em>On by Default</em>, the simple act of dragging a clip
+so that it overlaps another clip will create a crossfade. Other DAWs
+call this "auto-crossfade."</p>
+<p><img alt="" src="../images/12----17.png" /></p>
+<p><em>Settings Tab, General page, Drag Crossfade Default</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> In Waveform, <em>Drag-X Fade</em> is actually a property of each
+Audio clip. When you change <em>Default Drag X-Fade</em> it will only take
+effect for new clips you create or add to the Edit.</p>
+</blockquote>
+<h2 id="edge-fades">Edge Fades<a class="headerlink" href="#edge-fades" title="Permanent link">&para;</a></h2>
+<p>When editing, sometimes you need to apply short fades to both edges of
+an Audio Clip to avoid popping. This is especially true if you split a
+clip in the middle of a note. The solution is add as short fade-in and
+fade-out to the clip. Waveform calls those "edge fades."</p>
+<p><img alt="" src="../images/12----18.png" /></p>
+<p><strong>Apply Edge Fade</strong></p>
+<p>The good news is that you can instantly add edge fades by clicking
+<em>Apply Edge Fade</em> in properties. This applies 7 ms fades to the start
+and end of all selected clips.</p>
+<h2 id="copy-and-paste">Copy and Paste<a class="headerlink" href="#copy-and-paste" title="Permanent link">&para;</a></h2>
+<p>Typical cut, copy, and paste commands also work with with Audio clips:</p>
+<ul>
+<li>Cut (Cmd + X / Ctrl + X)</li>
+<li>Copy (Cmd + C / Ctrl + C)</li>
+<li>Paste (Cmd + V / Ctrl + V)</li>
+</ul>
+<h2 id="clip-gain-mute-pan">Clip Gain, Mute, &amp; Pan<a class="headerlink" href="#clip-gain-mute-pan" title="Permanent link">&para;</a></h2>
+<p>Adjusting the gain of an Audio clip is great tool for mixing. Simply
+split out one phrase, or even one note and tweak the gain level.
+Waveform has not only clip gain but also clip mute and pan - all
+available in properties. When working with stereo Audio clips, <em>Pan</em>
+works as a balance control.</p>
+<p><img alt="" src="../images/12----19.png" /></p>
+<p><em>Audio Clip Gain, Mute, Pan, &amp; Active Channels</em></p>
+<p>Gain
+- Drag the slider left or right to adjust the Gain value.
+    Alternatively, click the slider and type in a value directly. The
+    gain change is reflected right away in the height of the waveform
+    thumbnail on the clip.</p>
+<p>Mute
+- Click the <em>Mute</em> icon to silence the clip. The waveform thumbnail
+    will dim to gray.</p>
+<p>Pan (Mono Clips)
+- Drag the <em>Pan</em> slider left or right to adjust the stereo placement
+    of the clip. You can also click and type in values directly. Full
+    left is -1.00, centered is 0, and full right is 1.00.</p>
+<p>Pan (Stereo Clips)
+- With stereo Audio clips, <em>Pan</em> acts as a balance control. What that
+    means is that as you slide it more right the left side gets quieter.
+    Slide it left and the right side gets quieter. At the extreme left
+    and right positions the opposite side is silent. The really cool
+    thing about this is that the waveform thumbnail updates dynamically
+    show to show the effect.</p>
+<p>Active Channels (Stereo Clips)
+- For stereo clips you can turn off either the left or right channels
+    using the <em>Active Channels</em> buttons in properties. When you click
+    <em>Left</em>, for example, it toggles the left side off. But it's not just
+    muting the left side, it switches the clip to a mono version of the
+    right side material. The great thing is that the waveform thumbnail
+    updates to show this instantly.</p>
+<h2 id="reversing-audio-clips">Reversing Audio Clips<a class="headerlink" href="#reversing-audio-clips" title="Permanent link">&para;</a></h2>
+<p>Another cool thing you can do is reverse a clip so the audio plays
+backwards. Simply click the <em>Reverse</em> button in properties. The waveform
+thumbnail reverses and the sound will be backwards on playback.</p>
+<p><img alt="" src="../images/12----20.png" /></p>
+<p><em>Reversing an Audio Clip</em></p>
+<h2 id="merging-clips-to-one-clip">Merging Clips to One Clip<a class="headerlink" href="#merging-clips-to-one-clip" title="Permanent link">&para;</a></h2>
+<p>Following editing, you may want to combine several clips back into to a
+single clip. To do so, select all the clips using shift select or lasso
+selection. Then choose <em>Render Clips &gt; Merge the selected clips</em> in
+properties.</p>
+<p><img alt="" src="../images/12----21.png" /></p>
+<p><strong>Render Clips &gt; Merge the selected clips</strong></p>
+<p>In a few moments, Waveform combines them into a single contiguous clip.
+There are many ways to merge, render, and export that we will touch on
+later.</p>
+<p><img alt="" src="../images/12----22.png" /></p>
+<p><em>Merge Clips, Before and After</em></p>
+<p>Here is video demo of merging clips:</p>
+<p><a href="https://w-edstrom.wistia.com/medias/5h6bn8h3vg">Merge Selected Clips Video
+Demo</a></p>
+<h2 id="deleting-a-section-of-audio-removing-space">Deleting a Section of Audio Removing Space<a class="headerlink" href="#deleting-a-section-of-audio-removing-space" title="Permanent link">&para;</a></h2>
+<p>You can easily delete a section of audio from one or more clips and
+remove the space between clips. While it's not entirely obvious how to
+do this, it is easy if you follow these steps:</p>
+<ol>
+<li>Set the in-marker and out-marker over the section you want to
+    delete.</li>
+<li>Select all the clips on all tracks (Cmd + A / Ctrl + A)</li>
+<li>In the properties, choose <em>Delete &gt; Delete marked region of selected
+    clips, and move up any selected clips</em> (Cmd + J / Ctrl + J).</li>
+</ol>
+<p><img alt="" src="../images/12----23%402x.png" /></p>
+<p><em>Delete a Section Removing the Space</em></p>
+<h2 id="editing-with-ara">Editing with ARA<a class="headerlink" href="#editing-with-ara" title="Permanent link">&para;</a></h2>
+<p>Waveform supports <strong>ARA</strong> (Audio Random Access) plugins for deep,
+non-destructive pitch and time editing directly on a clip. Unlike a
+conventional plugin, an ARA plugin has continuous access to the clip's
+audio, so its edits stay perfectly in sync with Waveform's transport and
+loop as you work.</p>
+<p>The most popular ARA plugin is <strong>Celemony Melodyne</strong>, and a <strong>Melodyne
+Essential license is bundled</strong> with Waveform — you will have received
+information on how to install it, along with your Waveform order. The
+workflow below uses Melodyne as the worked example, but <strong>any ARA plugin
+you install</strong> (for example VocAlign, SynthV, or SpectraLayers) appears the
+same way and is invoked by name.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> ARA is available in all editions of Waveform, on <strong>macOS and
+Windows only</strong>. Installed ARA plugins also appear in the <strong>ARA</strong> column of
+<em>Settings &gt; Plugins</em>.</p>
+</blockquote>
+<h3 id="invoke-an-ara-plugin">Invoke an ARA plugin<a class="headerlink" href="#invoke-an-ara-plugin" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select an Audio clip.</li>
+</ol>
+<p><img alt="" src="../images/12----24.png" /></p>
+<p><em>Change </em>Stretch<em> Property to </em>Melodyne**</p>
+<ol>
+<li>In the properties change the <em>Stretch</em> property to the name of the ARA
+    plugin you want to use. Installed ARA plugins are listed together under
+    an <strong>ARA</strong> heading in the dropdown; choose <em>Melodyne</em> here. The clip's
+    Stretch property now reads <strong>ARA: Melodyne</strong> and the plugin's name
+    appears at the center of the clip.</li>
+</ol>
+<p><img alt="" src="../images/12----25.png" /></p>
+<p><em>Audio Clip with Melodyne Invoked</em></p>
+<ol>
+<li>Click the plugin name at the center of the clip — or click <strong>Show ARA
+    plugin editor</strong> in the properties — to open the plugin's editor.</li>
+</ol>
+<p><img alt="" src="../images/12----26%402x.png" /></p>
+<p><em>The Melodyne UI</em></p>
+<ol>
+<li>Edit pitch and time by manipulating the note "blobs" in the plugin's
+    UI. Note that the transport and loop is synchronized between
+    Waveform and the ARA plugin as you edit.</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Tip:</strong> To learn all about Melodyne click <em>Help &gt; Manual</em> within the
+Melodyne UI. Skip the section on Loading, Transferring and Saving, as
+those operations are handled automatically by ARA.</p>
+<p>📝 <strong>Note:</strong> While a clip is in ARA mode, warp time, reverse, and
+Speech-to-Text are unavailable for that clip.</p>
+</blockquote>
+<p>Here is how to remove an ARA plugin from a clip:</p>
+<ol>
+<li>Select an Audio clip that is using an ARA plugin.</li>
+<li>In the properties change the <em>Stretch</em> property to <em>No Time-Stretching</em>
+    or a time-stretch algorithm such as <em>Elastique Pro</em>. The ARA plugin is
+    removed from the clip.</li>
+</ol>
+<h3 id="reopen-the-editor-from-the-clip">Reopen the editor from the clip<a class="headerlink" href="#reopen-the-editor-from-the-clip" title="Permanent link">&para;</a></h3>
+<p>While a clip is in ARA mode, the clip strip shows a small <strong>"<plugin>…"</strong>
+button (for example <em>Melodyne…</em>) — click it at any time to reopen the
+plugin's editor. The pitches the plugin has detected are also drawn as a
+<strong>note overlay</strong> on top of the clip's waveform, so any pitch and timing
+edits you make in the plugin are reflected directly on the Waveform clip.</p>
+<h3 id="convert-an-audio-clip-to-midi">Convert an audio clip to MIDI<a class="headerlink" href="#convert-an-audio-clip-to-midi" title="Permanent link">&para;</a></h3>
+<p>When a clip is in ARA mode, the properties show a <strong>Use ARA plugin to
+convert this audio clip to MIDI</strong> button. Clicking it uses the plugin's
+note analysis to create a <strong>new MIDI clip</strong> — with the same name, start,
+and length — and <strong>replaces the audio clip</strong> on that track. This is a quick
+way to turn a monophonic part, such as a vocal or bass line, into an
+editable MIDI performance.</p>
+<p><strong>Video Clip:</strong> Here is a video clip that explains <a href="https://youtu.be/N3T8G-qF4zQ">how to invoke
+Melodyne in Waveform</a>.</p>
+<h2 id="group-clips">Group Clips<a class="headerlink" href="#group-clips" title="Permanent link">&para;</a></h2>
+<p>With Group Clips, you can combine clips on a track into a single grouped
+clip without rendering. The advantage of this is that you can ungroup at
+any time for access to the individual clips.</p>
+<p>To create a Group Clip, select the clips you want to group on a track.
+It doesn't have to be a contiguous selection, but the clips do need to
+reside on the same track.</p>
+<p><img alt="Select the clips to group" src="../images/38----30.png" /></p>
+<p>Next, click <em>Create Group Clip</em> in the Actions panel.</p>
+<p><img alt="" src="../images/38----31.png" /></p>
+<p><em>Create a Group Clip from the Actions panel</em></p>
+<p>Notice that the resulting clip has a "Group" label and icon on the lower
+left which indicates the number of clips it contains. It also has a
+simplified header.</p>
+<p><img alt="" src="../images/38----32.png" /></p>
+<p><em>A Group Clip</em></p>
+<p>To ungroup the clip back to the original state, select it and click
+<em>Ungroup</em> in the Actions panel.</p>
+<p><img alt="" src="../images/38----33.png" /></p>
+<p><em>Ungroup from the Actions panel</em></p>
+<p>If you like, you can create a macro and assign <em>Group Clips</em> and
+<em>Ungroup</em> to keyboard shortcuts. In the Script Editor, locate the
+actions under <em>Basic Actions &gt; Editing &gt; Group selected clips</em> and
+<em>Basic Actions &gt; Editing &gt; Ungroup selected clips</em>.</p>
+<p>Here is the code:</p>
+<pre><code class="language-js">// Group Clips Macro
+Tracktion.groupSelectedClips();
+</code></pre>
+<pre><code class="language-js">// Ungroup Clips Macro
+Tracktion.ungroupSelectedClips();
+</code></pre>
+<p>Group Clips can be useful when working with beats created from sliced up
+audio. You can treat the Group Clip as a single clip, making move and
+duplicate operations straightforward. At any point you can ungroup it to
+modify the various parts.</p>
+<h2 id="linked-clips">Linked Clips<a class="headerlink" href="#linked-clips" title="Permanent link">&para;</a></h2>
+<p>You can also easily create linked copies of clips that reference the
+same underlying audio file or MIDI data. Changes to the original clip
+are then reflected in any of the linked copies. This works for Audio
+clips, MIDI clips and Step clips.</p>
+<p>To create a linked clip, drag the <em>Linked Clip</em> handle from the clip
+header. As you drag, you are dragging a copy referenced back to the
+source clip.</p>
+<p><img alt="" src="../images/38----35.png" /></p>
+<p><em>Linked Clip Handle</em></p>
+<p>In the following image, we have dragged over a linked copy of an audio
+file. Notice that the lower left of each clip shows a "link" icon
+indicating that this is a linked clip.</p>
+<p><img alt="" src="../images/38----36.png" /></p>
+<p><em>Linked Audio Clips</em></p>
+<p>To test the link, we have reversed the audio on the first clip. Since
+this changes the underlying file, the second clip is also reversed.</p>
+<p><img alt="" src="../images/38----37%402x.png" /></p>
+<p><em>Reversed Linked Audio Clips</em></p>
+<p>Non-destructive edits like splits and fades don't affect the linked
+copy. However, anything that affects the underlying file will. For other
+examples of this type of edit, select an audio clip then in the Actions
+panel open <em>View Source Info &gt; Edit Audio File &gt; Basic Editing
+Operations</em>.</p>
+<p><img alt="" src="../images/38----38.png" /></p>
+<p><em>Basic Audio Editing Operations</em></p>
+<p>From this dialog you can perform several kinds of edits to the
+underlying file. These operations will affect all linked copies as well
+as the original.</p>
+<p>Linked clips might be even more useful for MIDI clips. Any changes made
+to one of the linked clips are reflected in all the copies. This can be
+useful when creating a beat that is used in many places in a song. If
+you update one linked copy, they all get revised.</p>
+<p><img alt="" src="../images/38----39.png" /></p>
+<p><em>Linked MIDI Clips on Separate Tracks</em></p>
+<p>While you could do something similar with looped clips, looped clips are
+a series of continuous repeats on a single track. Linked clips appear as
+separate clips and can even be placed on separate tracks.</p>
+<p><img alt="" src="../images/38----40.png" /></p>
+<p><em>Linked Step Clips Green Handle</em></p>
+<p>Step clips can also be copied using the <em>Linked Clips</em> handle.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> It's a bit more difficult to identify linked Step Clips because
+they don't have clip names along with the link icon. You can identify
+linked Step Clips because the <em>Linked Clip</em> handle in the header turns
+green whenever there are linked copies present. This holds true for
+linked Audio clips and MIDI clips as well.</p>
+</blockquote>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>Those are the simple but powerful tools in for editing Audio clips in
+Waveform. We didn't even cover time stretching, Warp Time. But, these
+are the fundamentals. Let's move on to looping Audio clips in the next
+chapter.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

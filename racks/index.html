@@ -1,0 +1,2999 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/racks/">
+      
+      
+        <link rel="prev" href="../legacy-plugins/">
+      
+      
+        <link rel="next" href="../faceplates/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Plugin Racks - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plugin-racks" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Plugin Racks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantizing MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Side Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-racks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Are Racks?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-rack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a New Rack
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a New Rack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-scratch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Scratch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-a-preset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From a Preset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-wrapping-existing-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        By Wrapping Existing Plugins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-out-racks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Out Racks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-rack-editor-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Rack Editor Views
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Rack Editor Views">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rack-editor-the-graphical-node-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rack Editor -- The Graphical Node View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-editor-the-linear-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stack Editor -- The Linear View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceplate-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faceplate View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-plugin-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default Plugin View
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with Connections
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with Connections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connection Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#making-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Making Connections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#side-chain-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Side-Chain Routing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bulk-wiring-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bulk Wiring Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-input-and-output-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Input and Output Channels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-plugins-inside-a-rack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Plugins Inside a Rack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifiers-inside-racks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers Inside Racks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macro-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macro Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rack-instance-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rack Instance Controls
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rack Instance Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Routing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unwrapping-a-rack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unwrapping a Rack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-racks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Are Racks?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-rack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a New Rack
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a New Rack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-scratch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Scratch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-a-preset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From a Preset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-wrapping-existing-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        By Wrapping Existing Plugins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-out-racks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Out Racks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-rack-editor-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Rack Editor Views
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Rack Editor Views">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rack-editor-the-graphical-node-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rack Editor -- The Graphical Node View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-editor-the-linear-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stack Editor -- The Linear View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceplate-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faceplate View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-plugin-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default Plugin View
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with Connections
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with Connections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connection Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#making-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Making Connections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#side-chain-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Side-Chain Routing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bulk-wiring-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bulk Wiring Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-input-and-output-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Input and Output Channels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-plugins-inside-a-rack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Plugins Inside a Rack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifiers-inside-racks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers Inside Racks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macro-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macro Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rack-instance-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rack Instance Controls
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rack Instance Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Routing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unwrapping-a-rack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unwrapping a Rack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="plugin-racks">Plugin Racks<a class="headerlink" href="#plugin-racks" title="Permanent link">&para;</a></h1>
+<p>Plugin Racks let you group multiple plugins inside a single container and wire them up however you like. If you have ever wanted to run effects in parallel, create a shared reverb bus, set up side-chain processing, or build a multi-channel effects unit, racks are how you do it.</p>
+<p><img alt="" src="../images/Racks%402x.png" />
+<em>The Rack Editor showing a 4OSC synth routed through multiple effects in parallel, with a Step Modifier controlling parameters. The detail panel at the bottom shows the modifier's settings and its parameter assignments.</em></p>
+<h2 id="what-are-racks">What Are Racks?<a class="headerlink" href="#what-are-racks" title="Permanent link">&para;</a></h2>
+<p>Instead of being limited to a simple linear chain of effects on a track, a rack gives you a 2D canvas where you can connect plugins in series, in parallel, or in any combination. You can feed one plugin's output into two others, mix signals back together, route side-chains between tracks, and more.</p>
+<p>The key idea is the separation between the <strong>Rack Type</strong> and the <strong>Rack Instance</strong>.</p>
+<p>The <strong>Rack Type</strong> is the definition -- it holds the actual plugins and all the connections between them. Think of it as the blueprint.</p>
+<p>A <strong>Rack Instance</strong> is what you place on a track to use that rack. It is the bridge between your track's audio and the rack's processing. You can place multiple instances of the same rack on different tracks, and they all share the same plugin graph. Each instance just picks which of the rack's inputs and outputs it connects to, and can set its own levels and wet/dry mix independently.</p>
+<p>This is particularly useful for things like multi-channel processing, shared reverb buses, or any scenario where you want several tracks feeding into the same set of effects without duplicating plugins.</p>
+<h2 id="creating-a-new-rack">Creating a New Rack<a class="headerlink" href="#creating-a-new-rack" title="Permanent link">&para;</a></h2>
+<p>There are several ways to create a rack, depending on your starting point.</p>
+<h3 id="from-scratch">From Scratch<a class="headerlink" href="#from-scratch" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open the <strong>Plugin Browser</strong>.</li>
+<li>Find the <strong>Plugin Racks</strong> category.</li>
+<li>Drag <strong>Create New Empty Rack</strong> onto a track's plugin area.</li>
+</ol>
+<p>This creates a new empty Rack Type with a default stereo input pair (left and right), a MIDI input, and matching outputs. A Rack Instance is automatically placed on the track you dropped it onto.</p>
+<h3 id="from-a-preset">From a Preset<a class="headerlink" href="#from-a-preset" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open the <strong>Plugin Browser</strong>.</li>
+<li>Look under <strong>Plugin Racks &gt; New from preset</strong>.</li>
+<li>Drag the preset onto a track.</li>
+</ol>
+<p>This creates a new Rack Type pre-loaded with the preset's plugins and connections. Waveform ships with a few built-in rack presets, and any racks you have saved as presets will also appear here.</p>
+<h3 id="by-wrapping-existing-plugins">By Wrapping Existing Plugins<a class="headerlink" href="#by-wrapping-existing-plugins" title="Permanent link">&para;</a></h3>
+<p>If you already have plugins on a track that you would like to move inside a rack:</p>
+<ol>
+<li>Select one or more plugins on a track's plugin chain.</li>
+<li>Right-click and choose <strong>Wrap this plugin in a new rack plugin</strong> (or <strong>Wrap these plugins in a new rack plugin</strong> if you selected multiple).</li>
+</ol>
+<p>Waveform creates a new rack, moves the selected plugins inside it, and automatically wires everything up to match the original signal flow. I find this the most natural way to create racks -- start with a working chain, then wrap it when you need more flexibility.</p>
+<h3 id="multi-out-racks">Multi-Out Racks<a class="headerlink" href="#multi-out-racks" title="Permanent link">&para;</a></h3>
+<p>For plugins with more than two outputs (like multi-output drum samplers or orchestral instruments):</p>
+<ol>
+<li>Right-click the plugin on a track.</li>
+<li>Choose <strong>Create a multi-out Rack for this plugin</strong>.</li>
+</ol>
+<p>This creates a rack with enough output channels for all the plugin's outputs and places Rack Instances on sequential tracks below, one for each stereo pair. It is a quick way to set up multi-output routing without manually configuring everything.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> You can also import rack configurations by dragging .trkpreset files directly onto the main window or a track.</p>
+</blockquote>
+<h2 id="the-rack-editor-views">The Rack Editor Views<a class="headerlink" href="#the-rack-editor-views" title="Permanent link">&para;</a></h2>
+<p>Racks offer multiple ways to view and edit their contents. You can switch between them at any time using the view button (the eye icon) in the editor window's title bar.</p>
+<h3 id="rack-editor-the-graphical-node-view">Rack Editor -- The Graphical Node View<a class="headerlink" href="#rack-editor-the-graphical-node-view" title="Permanent link">&para;</a></h3>
+<p>This is the default view and the most flexible. It presents the rack as a 2D canvas where plugins appear as rectangular nodes and connections appear as curved lines between them.</p>
+<p>The layout, from left to right:</p>
+<ul>
+<li><strong>Input panel</strong> -- shows how each Rack Instance (each track using this rack) maps to the rack's input channels. Each track entry has level sliders for adjusting the input gain.</li>
+<li><strong>Central canvas</strong> -- the main area where plugins live as draggable nodes with connection points (called nodules) on their left and right edges.</li>
+<li><strong>Output panel</strong> -- the mirror of the input panel, showing output mappings and levels.</li>
+</ul>
+<p>The title bar has toggle buttons for showing or hiding the I/O panels and a detail panel that appears at the bottom for inspecting the currently selected element.</p>
+<h3 id="stack-editor-the-linear-view">Stack Editor -- The Linear View<a class="headerlink" href="#stack-editor-the-linear-view" title="Permanent link">&para;</a></h3>
+<p>The <strong>Stack Editor</strong> presents plugins in a vertical list, one on top of another, like a traditional effects chain. This view works best when your rack's plugins are connected in a simple series -- one feeding into the next.</p>
+<p>You can drag plugins up and down to reorder them, and the rack automatically rewires the connections to match the new order. Each plugin in the stack can be expanded to show its controls or minimized down to just its name bar.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> If the rack has routing that is not a simple series chain -- for example, parallel connections or disconnected plugins -- the Stack Editor shows a warning triangle. In this case, automatic connection management will not work, and the stacked order may not reflect the actual signal flow.</p>
+</blockquote>
+<p>I usually start with the Rack Editor for initial setup and wiring, then switch to the Stack Editor for day-to-day tweaking once everything is connected.</p>
+<h3 id="faceplate-view">Faceplate View<a class="headerlink" href="#faceplate-view" title="Permanent link">&para;</a></h3>
+<p>When available, the <strong>Faceplate</strong> view shows a custom parameter control surface for the rack. This provides a more streamlined, performance-oriented interface compared to the full editor views.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The Faceplate view and the Faceplate editor (in the property panel) are available in Waveform Pro.</p>
+</blockquote>
+<h3 id="default-plugin-view">Default Plugin View<a class="headerlink" href="#default-plugin-view" title="Permanent link">&para;</a></h3>
+<p>You can designate any single plugin inside the rack as the "default plugin." When you switch to this view, the rack window shows that plugin's native UI directly, as if you had opened the plugin on its own.</p>
+<p>This is handy when your rack wraps a single main plugin with some auxiliary processing around it and you mostly just want quick access to the main plugin's controls.</p>
+<p>To set or change the default plugin, use the view menu (eye icon) and look for the <strong>Set default plugin</strong> submenu. You will see a list of all plugins inside the rack -- select the one you want.</p>
+<h2 id="working-with-connections">Working with Connections<a class="headerlink" href="#working-with-connections" title="Permanent link">&para;</a></h2>
+<p>Connections are the heart of a rack. Each connection links an output pin on one element to an input pin on another.</p>
+<h3 id="connection-types">Connection Types<a class="headerlink" href="#connection-types" title="Permanent link">&para;</a></h3>
+<p>There are three types of connections, each drawn in a different color:</p>
+<ul>
+<li><strong>Audio connections</strong> -- carry the audio signal between plugins or between the rack's I/O and plugins. These are the most common.</li>
+<li><strong>MIDI connections</strong> -- route MIDI data. MIDI always uses pin 0.</li>
+<li><strong>Modifier connections</strong> -- link modifiers (like LFOs or envelope followers) to plugin parameters for modulation. These appear in a distinct color to help you tell them apart from audio and MIDI wiring.</li>
+</ul>
+<h3 id="making-connections">Making Connections<a class="headerlink" href="#making-connections" title="Permanent link">&para;</a></h3>
+<p>To create a connection, click and drag from a nodule (the small circle on the edge of a plugin node) to another compatible nodule. Audio outputs connect to audio inputs, MIDI to MIDI, and so on.</p>
+<p>To delete a connection, drag it away from its endpoint and release into empty space.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Right-click a plugin inside the rack editor to find <strong>Connect to Rack inputs</strong> and <strong>Connect to Rack outputs</strong> -- these auto-wire the plugin to the rack's I/O channels, saving you from connecting each pin manually.</p>
+</blockquote>
+<h3 id="side-chain-routing">Side-Chain Routing<a class="headerlink" href="#side-chain-routing" title="Permanent link">&para;</a></h3>
+<p>To set up a side-chain from another track:</p>
+<ol>
+<li>Right-click an input nodule on a plugin inside the rack.</li>
+<li>Choose <strong>Use this input as a side-chain from:</strong> in the menu.</li>
+<li>Select the track and channel (left or right) you want to feed in.</li>
+</ol>
+<p>This lets you route audio from any audio or submix folder track in your edit into a specific plugin input within the rack. Waveform automatically creates a Rack Instance on the source track and wires up the appropriate channels for you.</p>
+<h3 id="bulk-wiring-operations">Bulk Wiring Operations<a class="headerlink" href="#bulk-wiring-operations" title="Permanent link">&para;</a></h3>
+<p>For complex racks, the right-click context menu on the editor background (or the property panel buttons when the Rack Type is selected) provides several time-saving operations:</p>
+<ul>
+<li><strong>Clear all wiring</strong> -- removes every connection in the rack.</li>
+<li><strong>Clear all plugin wiring</strong> -- removes only connections between plugins, leaving the rack's input and output mappings intact.</li>
+<li><strong>Clear all input wiring</strong> / <strong>Clear all output wiring</strong> -- removes connections to or from the rack's I/O channels specifically.</li>
+<li><strong>Connect inputs sequentially</strong> / <strong>Connect outputs sequentially</strong> -- auto-maps multiple rack instances to sequential channels. Handy when you are using a rack with many I/O channels spread across several tracks.</li>
+</ul>
+<h2 id="managing-input-and-output-channels">Managing Input and Output Channels<a class="headerlink" href="#managing-input-and-output-channels" title="Permanent link">&para;</a></h2>
+<p>Every rack starts with a default set of channels: a MIDI channel plus a stereo audio pair (left and right) for both inputs and outputs.</p>
+<p>You can add more channels -- up to a maximum of 64 audio channels on each side. This is useful for multi-channel processing or for creating racks that accept side-chain inputs from other tracks.</p>
+<p>To manage channels, right-click the rack editor background or use the buttons in the Rack Type's property panel. From there you can:</p>
+<ul>
+<li><strong>New Input Channel</strong> / <strong>New Output Channel</strong> -- adds a named channel. You will be prompted to enter a name.</li>
+<li><strong>Rename Input</strong> / <strong>Rename Output</strong> -- changes the channel name that appears in routing menus.</li>
+<li><strong>Delete Input</strong> / <strong>Delete Output</strong> -- removes a channel and any connections to it.</li>
+</ul>
+<blockquote>
+<p>📝 <strong>Note:</strong> Channel names are what you will see in the Rack Instance routing dropdowns on each track, so give them meaningful names -- "Kick Sidechain" is a lot more helpful than "Input 3."</p>
+</blockquote>
+<h2 id="adding-plugins-inside-a-rack">Adding Plugins Inside a Rack<a class="headerlink" href="#adding-plugins-inside-a-rack" title="Permanent link">&para;</a></h2>
+<p>There are a few ways to get plugins into a rack:</p>
+<ul>
+<li><strong>Drag from the Plugin Browser</strong> onto the rack editor canvas or stack editor list.</li>
+<li><strong>Drag from a track's plugin chain</strong> into the rack editor -- the plugin moves into the rack.</li>
+<li><strong>Right-click the editor background</strong> and choose <strong>Add plugin</strong> to open the plugin selection menu.</li>
+<li><strong>Paste from the clipboard</strong> if you have copied a plugin.</li>
+</ul>
+<p>When you add the very first plugin to an empty rack, you will be asked: <strong>"Do you want to auto-connect this plugin?"</strong> Choosing yes automatically wires the rack's inputs to the plugin's inputs and the plugin's outputs to the rack's outputs, including MIDI. For a single-plugin rack, this is exactly what you want.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Not every plugin type can go inside a rack. Most notably, you cannot nest racks -- a Rack Instance cannot be placed inside another rack.</p>
+</blockquote>
+<h2 id="modifiers-inside-racks">Modifiers Inside Racks<a class="headerlink" href="#modifiers-inside-racks" title="Permanent link">&para;</a></h2>
+<p>Racks can contain <strong>Modifiers</strong> -- LFOs, envelope followers, random generators, step sequencers, breakpoint oscillators, and MIDI trackers. These are modulation sources that can automatically vary plugin parameters over time.</p>
+<p>You add a modifier by dragging from the <strong>New Modifier Generator</strong> button in the rack editor's title bar onto the canvas.</p>
+<p>Once placed, a modifier shows up as a draggable node with its own connection points. You connect a modifier's output to a plugin parameter by dragging from the modifier's output nodule to a parameter input on any plugin in the rack. Modifier connections appear as distinct colored curves to help distinguish them from audio and MIDI wiring.</p>
+<p>To assign a modifier to a new parameter, drag to the <strong>New modifier assignment</strong> input on any plugin, which opens a parameter picker where you can search and select the parameter you want to modulate.</p>
+<p>When you select a modifier in the rack editor, a detail panel appears at the bottom showing the modifier's settings on the left, a visual display of its parameters in the center, and its current assignments on the right (as shown in the screenshot above).</p>
+<h2 id="macro-parameters">Macro Parameters<a class="headerlink" href="#macro-parameters" title="Permanent link">&para;</a></h2>
+<p><strong>Macro Parameters</strong> let you expose a set of hand-picked controls for a rack, so you can adjust multiple plugin parameters from a single knob or slider. This is especially useful when you want to simplify a complex rack down to a few key controls.</p>
+<p>To set up macros, select the Rack Type in the editor and look for the <strong>Macro Parameters</strong> tab in the property panel. From there you can create new macros, name them, and assign each macro to one or more parameters from any plugin inside the rack.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Macro Parameters are available in Waveform Pro.</p>
+</blockquote>
+<h2 id="rack-instance-controls">Rack Instance Controls<a class="headerlink" href="#rack-instance-controls" title="Permanent link">&para;</a></h2>
+<p>When you select a Rack Instance on a track's plugin chain, the inspector panel shows its routing and level controls.</p>
+<h3 id="routing">Routing<a class="headerlink" href="#routing" title="Permanent link">&para;</a></h3>
+<p><strong>Left input goes to</strong> -- Which of the rack's named input channels this track's left channel feeds into. (Default: first audio input)</p>
+<p><strong>Right input goes to</strong> -- Same, for the right channel. (Default: second audio input)</p>
+<p><strong>Left output comes from</strong> -- Which of the rack's named output channels feeds back into this track's left channel. (Default: first audio output)</p>
+<p><strong>Right output comes from</strong> -- Same, for the right channel. (Default: second audio output)</p>
+<p>You can set any of these to "none" to disconnect a channel entirely.</p>
+<h3 id="levels">Levels<a class="headerlink" href="#levels" title="Permanent link">&para;</a></h3>
+<p><strong>Wet level</strong> -- How much of the processed (rack output) signal comes through. (Default: 1.0 / full)</p>
+<p><strong>Dry level</strong> -- How much of the original unprocessed signal passes through. (Default: 0.0 / silent)</p>
+<p><strong>Left input level</strong> / <strong>Right input level</strong> -- Attenuate or boost the signal going into the rack, from -100 dB to +12 dB. (Default: 0 dB)</p>
+<p><strong>Left output level</strong> / <strong>Right output level</strong> -- Control the signal coming back from the rack, same range. (Default: 0 dB)</p>
+<p><strong>Link inputs</strong> -- When enabled, the left and right input levels move together. (Default: off)</p>
+<p><strong>Link outputs</strong> -- When enabled, the left and right output levels move together. (Default: off)</p>
+<p>All of these parameters are fully automatable.</p>
+<h3 id="other-controls">Other Controls<a class="headerlink" href="#other-controls" title="Permanent link">&para;</a></h3>
+<p><strong>Rack name</strong> -- Editable field that renames the Rack Type itself (affects all instances).</p>
+<p><strong>Open window</strong> -- Buttons to open the rack editor in each available view type.</p>
+<p><strong>MIDI Controller Mappings</strong> -- A property page where you can map MIDI controllers to the rack instance's parameters.</p>
+<h2 id="unwrapping-a-rack">Unwrapping a Rack<a class="headerlink" href="#unwrapping-a-rack" title="Permanent link">&para;</a></h2>
+<p>If you decide you no longer need the rack structure and just want the plugins back on your track as a normal chain:</p>
+<ol>
+<li>Right-click the Rack Instance on the track's plugin chain.</li>
+<li>Choose <strong>Replace rack with plugins</strong>.</li>
+</ol>
+<p>This extracts all plugins from the rack (ordered by their left-to-right position on the rack editor canvas), inserts them sequentially into the track's plugin chain, and removes the Rack Instance. If this was the last instance of that Rack Type in the edit, Waveform asks whether you would like to remove the now-unused Rack Type as well.</p>
+<p>You can also select individual plugins within the rack from the right-click menu using <strong>Select one of the plugins in this rack</strong>, which is helpful for quickly jumping to a specific plugin's settings.</p>
+<h2 id="presets">Presets<a class="headerlink" href="#presets" title="Permanent link">&para;</a></h2>
+<p>Rack configurations can be saved as presets and reloaded later. When you save, the entire rack state is captured -- all plugins, their settings, positions, and connections.</p>
+<p>To save a rack as a preset, use the save option in the Rack Type's property panel. You will be prompted to give it a name and optionally add tags.</p>
+<p>Saved presets appear in the Plugin Browser under <strong>Plugin Racks &gt; New from preset</strong>. Loading a preset creates a new Rack Type in the current edit.</p>
+<p>You can also duplicate an existing rack from the property panel, which creates a complete independent copy of the Rack Type with all its plugins and connections.</p>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> Presets that contain modifier or macro assignments cannot be applied to an existing rack. If you try, you will see a message asking you to create a new rack from the preset instead. This is because modifier connections reference internal identifiers that cannot be reliably remapped onto an existing rack.</p>
+</blockquote>
+<h2 id="things-to-watch-out-for">⚡ Things to Watch Out For<a class="headerlink" href="#things-to-watch-out-for" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Racks cannot be nested.</strong> You cannot add a Rack Instance inside another rack.</p>
+</li>
+<li>
+<p><strong>Maximum 64 audio channels.</strong> This limit applies to both inputs and outputs on a single Rack Type.</p>
+</li>
+<li>
+<p><strong>Shared state with multiple instances.</strong> Because all instances of a rack share the same Rack Type, any changes you make to the plugins or connections inside the rack affect every track using it. The only things that are per-instance are the I/O routing, levels, and wet/dry mix.</p>
+</li>
+<li>
+<p><strong>The Stack Editor assumes series wiring.</strong> If your rack has parallel connections, the Stack Editor will show a warning and will not automatically manage connections when you reorder plugins. Switch to the full Rack Editor for complex routing.</p>
+</li>
+<li>
+<p><strong>Removing the last instance prompts for cleanup.</strong> When you remove the last Rack Instance of a type from your edit, Waveform asks whether you would also like to delete the Rack Type itself. If you say no, the Rack Type remains in your edit but will not be actively used -- you can still create new instances of it later from the Rack Type's property panel by dragging the "Drag here to insert an instance of this rack" area onto a track.</p>
+</li>
+<li>
+<p><strong>Deleting a Rack Type is permanent.</strong> When you delete a Rack Type from its property panel, all instances of that rack are also removed from every track in the edit. This action cannot be undone.</p>
+</li>
+<li>
+<p><strong>Side-chain routing is per-plugin-input.</strong> You set up side-chains on individual input nodules within the rack, not on the rack as a whole. Waveform creates the necessary Rack Instance on the source track automatically.</p>
+</li>
+<li>
+<p><strong>Faceplates and Macros require Waveform Pro.</strong> These features are not available in Waveform Free or OEM editions.</p>
+</li>
+</ul>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>Racks give you a flexible way to build complex signal processing chains that go beyond what a simple linear plugin order can achieve. For more on how audio routing works across your project, see the Routing chapter. For details on the individual plugins you can use inside racks, see the Plugins chapter.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3063 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/browser/">
+      
+      
+        <link rel="prev" href="../detail-editor/">
+      
+      
+        <link rel="next" href="../actions-panel/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>The Browser - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-browser" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Browser
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opening-the-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening the Browser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-search-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Search Box
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-sidebar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Sidebar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Sidebar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#favourites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Favourites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart Lists
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bookmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bookmarks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-results-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Results Area
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Results Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Columns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-folders-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show Folders Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browsing-and-selecting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browsing and Selecting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-and-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drag and Drop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#right-click-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Right-Click Menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-preview-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Preview Area
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Preview Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audio-and-midi-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio and MIDI Preview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-playback-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preview Playback Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preset-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preset Preview
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-files-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Files Panel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Files Panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-what-to-browse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing What to Browse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auditioning-and-inserting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auditioning and Inserting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-tracks-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Tracks Panel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Tracks Panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-the-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening the Panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging Tracks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering-by-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtering by Tag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-groups-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Groups Panel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantizing MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Side Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opening-the-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening the Browser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-search-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Search Box
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-sidebar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Sidebar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Sidebar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#favourites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Favourites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart Lists
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bookmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bookmarks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-results-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Results Area
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Results Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Columns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-folders-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show Folders Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browsing-and-selecting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browsing and Selecting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-and-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drag and Drop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#right-click-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Right-Click Menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-preview-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Preview Area
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Preview Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audio-and-midi-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio and MIDI Preview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-playback-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preview Playback Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preset-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preset Preview
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-files-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Files Panel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Files Panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-what-to-browse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing What to Browse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auditioning-and-inserting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auditioning and Inserting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-tracks-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Tracks Panel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Tracks Panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-the-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening the Panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging Tracks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering-by-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtering by Tag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-groups-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Groups Panel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="the-browser">The Browser<a class="headerlink" href="#the-browser" title="Permanent link">&para;</a></h1>
+<p>The Browser is your central hub for finding and auditioning content -- plugins, presets, samples, clips, tracks, and more. It lives in the sidebar panel on the right side of the edit view, under the <strong>Search</strong> tab.</p>
+<p><img alt="" src="../images/Browser%402x.png" />
+<em>The Browser panel showing Packs content with folders expanded. The sidebar on the left lets you filter by category, and the results area on the right displays matching items in a tree view.</em></p>
+<h2 id="opening-the-browser">Opening the Browser<a class="headerlink" href="#opening-the-browser" title="Permanent link">&para;</a></h2>
+<p>The Browser is one of several sidebar panels available in the edit view. Look for the <strong>Search</strong> tab at the top of the sidebar. Click it to reveal the Browser. If the sidebar is not visible, you can toggle it from the view options or by dragging it open from the right edge of the edit area.</p>
+<h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h2>
+<p>At the very top of the Browser, you will find a collapsible <strong>Tags</strong> bar. Tags are metadata labels attached to your samples, presets, and other library content. They let you narrow down results without typing a search query.</p>
+<p>You can resize the tags area by dragging the divider just below it. Drag it all the way up to hide the tags section entirely. Tags that appear here are dynamically populated based on whatever results are currently showing, so you will only see relevant tags.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> If you use tags heavily, keep the tags bar open and give it some vertical space. It becomes a powerful way to cross-filter results -- for example, selecting "Packs" in the sidebar and then clicking a "Bass" tag.</p>
+</blockquote>
+<h2 id="the-search-box">The Search Box<a class="headerlink" href="#the-search-box" title="Permanent link">&para;</a></h2>
+<p>Below the tags bar sits the <strong>Search</strong> box. Type any text here to filter the results list in real time. The search applies across whatever category or source you have selected in the sidebar.</p>
+<p>A spinning icon appears while results are being fetched. Results update as you type, so you do not need to press Enter to search.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Press the Return key while the Browser has focus to restart preview playback of the currently selected item. Handy for re-listening without reaching for the mouse.</p>
+</blockquote>
+<h2 id="the-sidebar">The Sidebar<a class="headerlink" href="#the-sidebar" title="Permanent link">&para;</a></h2>
+<p>On the left side of the Browser is a narrow sidebar divided into four sections. Only one item can be selected across all four sections at a time -- clicking an item in one section automatically deselects items in the others.</p>
+<h3 id="favourites">Favourites<a class="headerlink" href="#favourites" title="Permanent link">&para;</a></h3>
+<p>The <strong>Favourites</strong> section shows tags you have marked as favourites. This gives you one-click access to your most-used tag categories. If no favourites are set, it displays "None set."</p>
+<p>To add a favourite, click the <strong>+</strong> button next to the Favourites heading. A menu appears listing all available tags. Click a tag to add it; click it again to remove it. Favourite tags show a filled colour dot next to their name.</p>
+<p>You can right-click any favourite tag to access two options:
+- <strong>Remove from favourites</strong> -- removes the tag from this list
+- A colour picker that lets you assign a custom colour to the tag, making it visually distinct in both the sidebar and the results list</p>
+<p>When you select a favourite tag, the results area shows all content tagged with that label.</p>
+<h3 id="categories">Categories<a class="headerlink" href="#categories" title="Permanent link">&para;</a></h3>
+<p>The <strong>Categories</strong> section lets you filter by content type. The available categories are:</p>
+<ul>
+<li><strong>Plugins</strong> -- all installed audio plugins (VST, AU, etc.)</li>
+<li><strong>Presets</strong> -- saved plugin chain and track presets</li>
+<li><strong>Racks</strong> -- rack filter presets</li>
+<li><strong>Samples</strong> -- audio and MIDI files in your libraries</li>
+<li><strong>Clips</strong> -- clip presets</li>
+<li><strong>Tracks</strong> -- track presets</li>
+<li><strong>All results</strong> -- everything, unfiltered by type</li>
+</ul>
+<p>Each category has its own icon to help you identify it quickly. When you first open the Browser, it defaults to <em>All results</em>.</p>
+<h3 id="smart-lists">Smart Lists<a class="headerlink" href="#smart-lists" title="Permanent link">&para;</a></h3>
+<p><strong>Smart Lists</strong> provide context-aware views into your content:</p>
+<ul>
+<li><strong>Packs</strong> -- shows content packs you have installed. These are the bundled and downloadable sound libraries</li>
+<li><strong>Edit</strong> -- shows all assets used in the currently open edit. A <strong>Consolidate</strong> button appears at the bottom when this is selected, letting you copy any external files into the project folder</li>
+<li><strong>Project</strong> -- shows all assets in the current project. A <strong>Consolidate Project</strong> button appears when this is selected</li>
+<li><strong>Recent</strong> -- shows recently used items for quick access</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Tip:</strong> The Edit and Project smart lists are great for auditing your session before sharing it. If the Consolidate button is active, it means some files live outside the project folder and could go missing if you move the project.</p>
+</blockquote>
+<h3 id="bookmarks">Bookmarks<a class="headerlink" href="#bookmarks" title="Permanent link">&para;</a></h3>
+<p>The <strong>Bookmarks</strong> section lets you pin any folder on your computer for quick browsing. Click <strong>Add folder...</strong> at the bottom to open a folder picker and bookmark a new location.</p>
+<p>When you select a bookmark, the results area shows the contents of that folder. Right-click any bookmarked folder to <strong>Remove Bookmark</strong>.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Bookmark your sample library folders, loop collections, or any directory you frequently pull sounds from. It saves a lot of navigating.</p>
+</blockquote>
+<h2 id="the-results-area">The Results Area<a class="headerlink" href="#the-results-area" title="Permanent link">&para;</a></h2>
+<p>The main area of the Browser displays your results in a tree view. Depending on what you selected in the sidebar, you might see a hierarchical folder structure or a flat list of items.</p>
+<h3 id="columns">Columns<a class="headerlink" href="#columns" title="Permanent link">&para;</a></h3>
+<p>The results header can display up to five columns:</p>
+<ul>
+<li><strong>Name</strong> -- the item name, shown with a type-specific icon (waveform for audio, MIDI icon for MIDI files, plugin icons, etc.)</li>
+<li><strong>Tags</strong> -- any tags assigned to the item</li>
+<li><strong>Location</strong> -- the file path on disk</li>
+<li><strong>Size</strong> -- the file size</li>
+<li><strong>Date</strong> -- the creation date</li>
+</ul>
+<p>You can click column headers to sort results by that column. Click again to reverse the sort direction.</p>
+<h3 id="show-folders-toggle">Show Folders Toggle<a class="headerlink" href="#show-folders-toggle" title="Permanent link">&para;</a></h3>
+<p>At the bottom-left of the Browser, below the sidebar, is the <strong>Show Folders</strong> checkbox. (Default: on)</p>
+<ul>
+<li><strong>On</strong> -- results are displayed in their natural folder hierarchy, with expandable folders</li>
+<li><strong>Off</strong> -- results are displayed as a flat list, which can make it easier to scan through a large number of items</li>
+</ul>
+<h3 id="browsing-and-selecting">Browsing and Selecting<a class="headerlink" href="#browsing-and-selecting" title="Permanent link">&para;</a></h3>
+<p>Click any item in the results list to select it. The preview area at the bottom will automatically update to show information about the selected item and (depending on your auto-play setting) begin playing it.</p>
+<p>Double-click an item to insert it directly into your edit at the current insert point. For audio and MIDI files, this creates a new clip. For plugins, this inserts the plugin on the selected track.</p>
+<h3 id="drag-and-drop">Drag and Drop<a class="headerlink" href="#drag-and-drop" title="Permanent link">&para;</a></h3>
+<p>You can drag items from the results area directly onto tracks in your edit. This is the most common way to use the Browser:</p>
+<ol>
+<li>Find a sample, preset, or plugin in the Browser</li>
+<li>Click and drag it onto a track</li>
+<li>Release to place it</li>
+</ol>
+<p>Hold <strong>Shift</strong> while dragging audio files to place them on consecutive tracks instead of the same track.</p>
+<p>You can also drag files <em>into</em> the Browser from your operating system's file manager. Audio files dropped onto the Browser are added to your loop library. Preset files are imported into your preset library.</p>
+<h3 id="right-click-menu">Right-Click Menu<a class="headerlink" href="#right-click-menu" title="Permanent link">&para;</a></h3>
+<p>Right-clicking an item in the results list opens a context menu with options that vary by item type:</p>
+<p><strong>For all items:</strong>
+- <strong>Set tags...</strong> -- opens a dialog to edit the item's tags
+- <strong>Set tags from favourites</strong> -- a submenu showing your favourite tags as quick toggles. Filled dots indicate tags already assigned; click to add or remove</p>
+<p><strong>For audio/MIDI files:</strong>
+- <strong>Delete file</strong> -- permanently deletes the file from disk
+- <strong>Open the folder containing this file...</strong> -- reveals the file in your system's file manager</p>
+<p><strong>For presets:</strong>
+- <strong>Edit Preset...</strong> -- opens the preset editor
+- <strong>Delete Preset</strong> -- removes the preset
+- <strong>Export Preset...</strong> -- saves the preset to a file
+- <strong>Import Preset...</strong> -- imports a preset from a file
+- <strong>Open the folder containing this file...</strong> -- reveals the preset file in your file manager</p>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> Deleting a file or preset from the right-click menu is permanent. There is no undo.</p>
+</blockquote>
+<h2 id="the-preview-area">The Preview Area<a class="headerlink" href="#the-preview-area" title="Permanent link">&para;</a></h2>
+<p>At the very bottom of the Browser is the preview strip. It shows information about the currently selected item and provides playback controls.</p>
+<h3 id="audio-and-midi-preview">Audio and MIDI Preview<a class="headerlink" href="#audio-and-midi-preview" title="Permanent link">&para;</a></h3>
+<p>When you select an audio or MIDI file, the preview strip displays:</p>
+<ul>
+<li>Two info labels showing file details (format, sample rate, bit depth, duration, etc.)</li>
+<li>A waveform or MIDI thumbnail showing the content at a glance</li>
+<li>A <strong>Play</strong> button to start playback (switches to a <strong>Stop</strong> button while playing)</li>
+<li>A <strong>Menu</strong> button (three horizontal lines) for playback options</li>
+<li>A <strong>Volume</strong> control for the preview output level</li>
+<li>A <strong>Level meter</strong> showing the preview output level</li>
+</ul>
+<h3 id="preview-playback-options">Preview Playback Options<a class="headerlink" href="#preview-playback-options" title="Permanent link">&para;</a></h3>
+<p>Click the menu button (the three-line icon) in the preview area to access these settings:</p>
+<ul>
+<li><strong>Play all</strong> -- starts playback of previews across all open Browser panels</li>
+<li><strong>Stop all</strong> -- stops all previews</li>
+<li><strong>Match tempo</strong> -- time-stretches the previewed audio to match your edit's tempo. Useful for auditioning loops at your project's BPM</li>
+<li><strong>Match pitch</strong> -- pitch-shifts the preview to match your edit's key</li>
+<li><strong>Re-trigger on play</strong> -- restarts the preview when your edit begins playback</li>
+<li><strong>Sync to Edit</strong> -- synchronises preview playback with the edit's transport position</li>
+<li><strong>Auto-play</strong> -- automatically plays a file when you select it in the results list. (Default: on)</li>
+<li><strong>Loop</strong> -- loops the preview continuously. (Default: on)</li>
+<li><strong>Preview all MIDI clips as drums</strong> -- forces all MIDI previews to use a drum sound, which is helpful when browsing MIDI patterns intended for drum kits</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Tip:</strong> I recommend keeping Auto-play on and Loop on for most workflows. It lets you audition content just by clicking through the results list, which is much faster than manually hitting Play each time.</p>
+</blockquote>
+<h3 id="preset-preview">Preset Preview<a class="headerlink" href="#preset-preview" title="Permanent link">&para;</a></h3>
+<p>When you select a plugin or track preset (rather than a raw audio file), the preview area switches to a different mode. It shows:</p>
+<ul>
+<li>A text description of the preset</li>
+<li>A visual thumbnail showing the plugin chain (each plugin displayed as a shaped block with its name)</li>
+<li>A <strong>Preview</strong> button to enable live auditing through your audio inputs</li>
+<li>An <strong>Inputs</strong> button to choose which MIDI inputs feed the preview</li>
+<li>An <strong>Outputs</strong> button to select the audio output for preview playback</li>
+</ul>
+<p>Live preset preview lets you play a synth preset through your MIDI controller before committing to it.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> For live preset preview to produce sound, at least one of your selected MIDI inputs must have input monitoring enabled. If no inputs have monitoring on, a warning icon appears.</p>
+</blockquote>
+<h2 id="the-files-panel">The Files Panel<a class="headerlink" href="#the-files-panel" title="Permanent link">&para;</a></h2>
+<p>Alongside the Search browser, the sidebar has a separate <strong>Files</strong> tab. Where the Search browser organises your library by category and tags, the Files panel is a plain filesystem browser -- a folder tree you navigate just like your operating system's file manager. It is the quickest way to pull in audio that is not part of your tagged library.</p>
+<p><img alt="" src="../images/files_panel%402x.png" />
+<em>The Files panel browsing a folder of audio files</em></p>
+<h3 id="choosing-what-to-browse">Choosing What to Browse<a class="headerlink" href="#choosing-what-to-browse" title="Permanent link">&para;</a></h3>
+<p>The folder button at the top of the panel opens a menu of starting locations:</p>
+<ul>
+<li><strong>Project files</strong> -- the audio files registered in the current project</li>
+<li><strong>Project folder</strong> -- the project's folder on disk</li>
+<li><strong>Drives</strong> -- the drives and volumes on your system, so you can browse anywhere</li>
+<li><strong>Refresh</strong> -- re-scan the current folder to pick up files you have just added</li>
+<li><strong>Bookmark current folder</strong> -- pin the folder you are viewing for one-click access later (and <strong>Delete bookmark for current folder</strong> to remove it again)</li>
+</ul>
+<p>Use the up-arrow button to move up to the parent folder.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Bookmark the folders where you keep your loops and one-shots. A bookmarked folder is the fastest route to a sample library that has not been tagged into your Browser content.</p>
+</blockquote>
+<h3 id="auditioning-and-inserting">Auditioning and Inserting<a class="headerlink" href="#auditioning-and-inserting" title="Permanent link">&para;</a></h3>
+<p>The Files panel lists audio files -- plus SoundFont <code>.sf2</code> and <code>.sfz</code> files -- and shares the same preview strip at the bottom as the Search browser, so you can audition a file before using it. Drag a file onto a track to place it, double-click to insert it at the cursor, and hold <strong>Shift</strong> while dragging to spread several files across consecutive tracks, exactly as in the Search browser.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The Files panel browses your filesystem directly, so it shows files whether or not they have been tagged or added to your library. Dragging a new file in from here does not add it to your loop library -- use the Search browser for tagged, searchable content.</p>
+</blockquote>
+<h2 id="the-tracks-panel">The Tracks Panel<a class="headerlink" href="#the-tracks-panel" title="Permanent link">&para;</a></h2>
+<p>The <strong>Tracks</strong> panel is a compact track list that lets you tag your tracks and then show only the ones you are working on. On a large arrangement -- dozens of tracks across drums, vocals, synths and busses -- it is an easy way to focus the timeline on, say, just the "Drums" tracks without manually hiding everything else. The panel is available in every edition.</p>
+<p><img alt="" src="../images/tracks_panel_1%402x.png" />
+<em>The Tracks panel, showing the track tree, the tags bar, and the Show Only Tagged Tracks button at the bottom</em></p>
+<h3 id="opening-the-panel">Opening the Panel<a class="headerlink" href="#opening-the-panel" title="Permanent link">&para;</a></h3>
+<p>Look for the <strong>Tracks</strong> tab at the top of the sidebar and click it. <!-- code: waveform/common/Source/ui/edit/sidebar/SidePanel.cpp:67 / TracksPanel.h:26 --> The panel lists every track in the edit as a tree, with folder tracks expandable. Each row shows the track's colour, icon and name, plus a <strong>Hide</strong> button and a <strong>Disable</strong> button on the right; clicking these mirrors the show/hide and enable/disable state in the track header. <!-- code: TracksPanel.h:386-387 --> Selecting a row here selects the track in the edit, and vice versa.</p>
+<h3 id="tagging-tracks">Tagging Tracks<a class="headerlink" href="#tagging-tracks" title="Permanent link">&para;</a></h3>
+<p>Tags live on the tracks themselves, so you assign them from the track properties rather than from this panel:</p>
+<ol>
+<li>Select one or more tracks (Cmd/Ctrl-click to multi-select).</li>
+<li>Open the track properties and find the <strong>Tags</strong> field. <!-- code: TrackPropertyPanelBase.h:598,893 --></li>
+<li>Type one or more tags, separated by commas (for example <code>Drums, Verse</code>). The same tags are applied to every selected track.</li>
+</ol>
+<p>Only audio, folder and automation tracks can be tagged. <!-- code: TrackManager.cpp:224 --></p>
+<h3 id="filtering-by-tag">Filtering by Tag<a class="headerlink" href="#filtering-by-tag" title="Permanent link">&para;</a></h3>
+<p>The tags bar in the middle of the panel lists every tag currently in use across your tracks. Click a tag to toggle it on; click more than one to combine them. With at least one tag enabled, turn on <strong>Show Only Tagged Tracks</strong> (the button at the bottom of the panel) and the timeline collapses to show only tracks carrying an enabled tag -- their tagged parent folders and tagged child tracks stay visible too, so folder structure is preserved. <!-- code: TracksPanel.h:37,91 / TrackManager.cpp:109-127 --> Turn the button off to bring every track back; the tag selection is remembered.</p>
+<h3 id="control-reference">Control Reference<a class="headerlink" href="#control-reference" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Track tree</strong> -- lists all tracks; selection is synced with the edit. Each row has a <strong>Hide</strong> and a <strong>Disable</strong> button. <!-- code: TracksPanel.h:386-387 --></li>
+<li><strong>Tags bar</strong> -- the in-use tags; click to enable/disable a tag for filtering.</li>
+<li><strong>Show Only Tagged Tracks</strong> -- toggle; when on, only tracks with an enabled tag (and their tagged folders/children) are shown in the arrangement. Default: off.</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tag tracks by role ("Drums", "Vox") and by section ("Verse", "Chorus"), then enable a couple at once to zero in on exactly what you need.</p>
+<p>📝 <strong>Note:</strong> If no tags are enabled, or you have not tagged any tracks, the Show Only Tagged Tracks button has no effect -- the filter only kicks in once at least one enabled tag exists. <!-- code: TrackManager.cpp:111 --></p>
+</blockquote>
+<h2 id="the-groups-panel">The Groups Panel<a class="headerlink" href="#the-groups-panel" title="Permanent link">&para;</a></h2>
+<p>The <strong>Groups</strong> panel is the sidebar's home for <a href="../edit-mix-groups/">Edit Mix Groups</a> -- the feature that links several audio tracks so that an action on one (a fader move, a mute, and so on) is mirrored on the rest. It gives you a single place to see every group in the edit, create new ones, and switch them on and off.</p>
+<p><img alt="" src="../images/browser_groups%402x.png" />
+<em>The Groups panel, listing the edit's mix groups</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The Groups panel only appears in <strong>Waveform Pro</strong>, since Edit Mix Groups are a Pro feature.</p>
+</blockquote>
+<p>The panel lists every group in the edit. Each row shows the group's name drawn in that group's colour, and a small <code>*</code> appears next to any group that contains a track you currently have selected, so you can tell at a glance which groups your selection belongs to.</p>
+<ul>
+<li><strong>Create New Group</strong> -- the button at the bottom of the panel makes a new group from the audio tracks you currently have selected (and selects the new group so you can name it and set its options straight away). See <a href="../edit-mix-groups/#creating-and-managing-groups">Creating and Managing Groups</a> for the other ways to build a group.</li>
+<li><strong>Disable</strong> -- each row has its own Disable button that bypasses just that group, leaving the others untouched. This is handy for nudging a single track without breaking it out of the group permanently.</li>
+<li><strong>Open a group's properties</strong> -- double-click a row to open that group's property page, where you choose exactly which operations the group links (volume, mute, pan, solo, and so on). The full list is described in <a href="../edit-mix-groups/#what-gets-linked">What Gets Linked</a>.</li>
+<li><strong>Select and delete</strong> -- single-click selects a group (Cmd/Ctrl-click to select several); press <strong>Delete</strong> to remove the selected group(s). Deleting a group never deletes its tracks.</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Tip:</strong> A track can belong to more than one group at once -- the coloured circle in the track header shows a slice for each group it is in. See <a href="../edit-mix-groups/#the-track-header-group-icon">The Track Header Group Icon</a> for details.</p>
+</blockquote>
+<h2 id="things-to-watch-out-for">⚡ Things to Watch Out For<a class="headerlink" href="#things-to-watch-out-for" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Large libraries can be slow.</strong> If you have thousands of samples, the first time you open a category or type a search may take a moment while results load. The spinning search icon lets you know it is still working.</p>
+</li>
+<li>
+<p><strong>Tags are shared across your library.</strong> When you tag a sample or preset, that tag is stored globally. Removing a tag from one Browser view removes it everywhere.</p>
+</li>
+<li>
+<p><strong>Consolidate before sharing projects.</strong> If the Edit or Project smart list shows a Consolidate button, some of your assets live outside the project folder. Always consolidate before sending a project to someone else or moving it to a different machine.</p>
+</li>
+<li>
+<p><strong>Deleting files is permanent.</strong> The right-click Delete option removes files from disk, not just from the Browser. Double-check before confirming.</p>
+</li>
+<li>
+<p><strong>Preview volume is independent.</strong> The preview volume control in the Browser is separate from your edit's master volume. If you cannot hear previews, check this control first.</p>
+</li>
+<li>
+<p><strong>Shift-drag for multi-track placement.</strong> When dragging audio files from the Browser, hold Shift to spread them across consecutive tracks instead of layering them on one track.</p>
+</li>
+</ul>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>Now that you know your way around the Browser, you can quickly locate any sound, plugin, or preset in your library without leaving the edit view. Combine favourites, tags, bookmarks, and the search box to build a workflow that gets you to the right content fast -- and switch to the Files panel whenever you want straightforward folder-by-folder browsing. Next, you might want to explore how presets and racks work in more detail.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

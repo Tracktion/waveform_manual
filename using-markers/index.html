@@ -1,0 +1,2707 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/using-markers/">
+      
+      
+        <link rel="prev" href="../actions-panel/">
+      
+      
+        <link rel="next" href="../selecting-and-snapping/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Using Markers - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#using-markers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Using Markers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-marker-out-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In-marker &amp; Out-marker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigate-using-the-in-marker-out-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigate Using the In-marker &amp; Out-marker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zooming-to-the-in-markerout-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zooming to the In-marker/Out-marker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looping-playback-over-the-marked-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Looping Playback Over the Marked Region
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-punch-and-the-marked-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Punch and the Marked Region
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-marker-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Marker Track
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marker-clip-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marker Clip properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigating-by-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigating by Markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-browser-markers-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Browser Markers Tab
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renumbering-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Renumbering Markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjust-markers-wave-file-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adjust Markers (Wave File Markers)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantizing MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Side Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-marker-out-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In-marker &amp; Out-marker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigate-using-the-in-marker-out-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigate Using the In-marker &amp; Out-marker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zooming-to-the-in-markerout-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zooming to the In-marker/Out-marker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looping-playback-over-the-marked-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Looping Playback Over the Marked Region
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-punch-and-the-marked-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Punch and the Marked Region
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-marker-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Marker Track
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marker-clip-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marker Clip properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigating-by-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigating by Markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-browser-markers-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Browser Markers Tab
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renumbering-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Renumbering Markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjust-markers-wave-file-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adjust Markers (Wave File Markers)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="using-markers">Using Markers<a class="headerlink" href="#using-markers" title="Permanent link">&para;</a></h1>
+<p>In this chapter, You will learn about using markers in Waveform. There
+are four different kinds of markers:</p>
+<p>In-marker and Out-marker
+- Together these define the "marked region", that is the region for
+    looped playback and loop recording.</p>
+<p><img alt="" src="../images/10----01.png" /></p>
+<p><em>In-marker and Out-marker</em></p>
+<p>Bars &amp; Beats markers (B&amp;B Markers)
+- Bars &amp; Beats markers can be used to identify song sections, give you
+    a visual guide to the song, and provide quick navigation to
+    different parts of your song. They are arranged as clips on the
+    Marker track. Bars &amp; Beats markers appear with a musical note icon
+    on the Marker track. They also appear as narrow pointers on the
+    Timeline when the Marker track is closed.</p>
+<p><img alt="" src="../images/10----02.png" /></p>
+<p><em>Bars &amp; Beats Markers on the Marker Track</em></p>
+<p><img alt="" src="../images/10----03.png" /></p>
+<p><em>Bars &amp; Beats Markers on the Timeline (with Marker track closed)</em></p>
+<p>Timecode Markers (TC Markers)
+- Timecode markers mark a specific time offset into the Edit, and are
+    not dependent on tempo changes. They can can aid with navigation,
+    especially when working with video. TC markers appear as clips with
+    a clock icon on the Marker track. They appear as rounded pointers on
+    the Timeline if the Marker track is closed.</p>
+<p><img alt="" src="../images/10----04.png" /></p>
+<p><em>Timecode Marker on the Marker Track</em></p>
+<p><img alt="" src="../images/10----04b.png" /></p>
+<p><em>Timecode Marker on the Timeline (with Marker track closed)</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> In Waveform, the term 'marked region' means the range of an
+edit that occurs between the In-marker and the Out-marker.</p>
+</blockquote>
+<p>Wave File Markers
+- You can add yellow arrows directly to Wave files that then appear on
+    Audio clips. These are the least useful type of markers. More about
+    them near the end of this chapter.</p>
+<p><img alt="" src="../images/10----28.png" /></p>
+<p><em>Wave File Markers</em></p>
+<h2 id="in-marker-out-marker">In-marker &amp; Out-marker<a class="headerlink" href="#in-marker-out-marker" title="Permanent link">&para;</a></h2>
+<p>Position the In-marker and Out-marker by dragging the I and O flags
+along the Timeline. The In-marker and Out-marker together define the
+range over which playback will loop when the <em>Loop</em> button in engaged in
+the transport bar. They also define what is called the "marked region"
+used for numerous editing actions.</p>
+<p><img alt="" src="../images/10----19.png" /></p>
+<p><em>The In-marker &amp; Out-marker</em></p>
+<p>Pressing I will locate the In-marker to the cursor position. Pressing O
+locates the the Out-marker to the cursor position.</p>
+<p>You can alternatively "draw" in the range between the In-marker and
+Out-marker. Double-click on the Timeline and start dragging right.
+Double-click positions the In-marker at the starting point. As you drag
+right, the Out-marker comes along to set the out point when you lift the
+mouse button.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> To set the marked region over a selection of clips and press A.
+This also works for Marker clips making it a great way to set the
+In-marker and Out-marker over a song section.</p>
+</blockquote>
+<h2 id="navigate-using-the-in-marker-out-marker">Navigate Using the In-marker &amp; Out-marker<a class="headerlink" href="#navigate-using-the-in-marker-out-marker" title="Permanent link">&para;</a></h2>
+<p>You can quickly navigate to the In-marker or Out-marker using the square
+bracket keys. Press <code>[</code> to locate the cursor to the In-marker; Press <code>]</code>
+to locate the cursor to the Out-marker.</p>
+<h2 id="zooming-to-the-in-markerout-marker">Zooming to the In-marker/Out-marker<a class="headerlink" href="#zooming-to-the-in-markerout-marker" title="Permanent link">&para;</a></h2>
+<p>When you have a marked region set between the In-marker and Out-marker
+you can quickly zoom in to that region. To do that, right-click the
+Timeline and select <em>Zoom to show the marked region</em> or simply to press
+F7.</p>
+<p><img alt="" src="../images/10----07.png" /></p>
+<p><em>Right-click the Timeline, Zoom to In-marker/Out-marker</em></p>
+<h2 id="looping-playback-over-the-marked-region">Looping Playback Over the Marked Region<a class="headerlink" href="#looping-playback-over-the-marked-region" title="Permanent link">&para;</a></h2>
+<p>To continuously repeat playback over a section of your tune, set the
+In-marker and Out-marker to define the loop range. Turn on looped
+playback by engaging the <em>Loop</em> button (L). Playback will repeat that
+section over and over until you stop playback.</p>
+<p><img alt="" src="../images/10----06.png" /></p>
+<p><em>Enabling Loop Playback</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> When <em>Loop</em> is enabled, playback will only play within the
+marked region. If the cursor is located earlier than the In-marker or
+after the Out-marker when you press <em>Play</em>, it will jump to the
+In-marker and play from there.</p>
+</blockquote>
+<h2 id="auto-punch-and-the-marked-region">Auto Punch and the Marked Region<a class="headerlink" href="#auto-punch-and-the-marked-region" title="Permanent link">&para;</a></h2>
+<p>To use Auto Punch, first set the In-marker and Out-marker over the range
+where you want to punch in. Enable the <em>Punch</em> button (P) in the Master
+section. Make sure <em>Loop</em> is turned off. Now enable a track for
+recording, position the cursor before the In-marker and press <em>Record</em>
+on the Transport. Even though the track is armed for recording, no
+recording will happen until the cursor gets to the In-marker.</p>
+<p><img alt="" src="../images/10----08.png" /></p>
+<p><em>Enabling Auto Punch Recording</em></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Auto punch recording means that recording is only allowed
+between the In-marker and Out-marker. Also, punch recording only works
+when <em>Loop</em> is off.</p>
+</blockquote>
+<h2 id="the-marker-track">The Marker Track<a class="headerlink" href="#the-marker-track" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../images/10----09.png" /></p>
+<p><em>Marker Track</em></p>
+<p>Let's take a closer look at the Marker track. You can open and close the
+Marker track with the Marker track show/hide button.</p>
+<p><img alt="" src="../images/10----10.png" /></p>
+<p><em>Marker Track Show/Hide Button</em></p>
+<p>The Marker track can contain either Bars &amp; Beats markers or Timecode
+markers. If you don't like to see the types mixed together on the same
+track, there is an additional split mode that shows each type on
+separate lanes.</p>
+<p><img alt="" src="../images/10----11.png" /></p>
+<p><em>Marker Track Split Mode</em></p>
+<p>To access that mode, select the Marker track by clicking the header.
+Then in properties, de-select <em>Use a single track for all types of
+marker.</em> In this mode, the Marker track has two lanes. The top lane
+shows Timecode Markers and the bottom lane shows Bars &amp; Beats Markers.</p>
+<p><img alt="" src="../images/10----12.png" /></p>
+<p><em>Marker Track properties Setup for Split Mode</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> F10 is my assignment for the keyboard action <em>Toggle the
+marker view mode</em>. Pressing F10 cycles through the three marker track
+states - hidden, normal, and split mode.</p>
+<p>💡 <strong>Tip:</strong> You can click on any blank space in the Marker track to
+instantly position the cursor.</p>
+</blockquote>
+<h2 id="adding-markers">Adding Markers<a class="headerlink" href="#adding-markers" title="Permanent link">&para;</a></h2>
+<p>Here are the various ways to add markers to the Marker track:</p>
+<p>Drag the Clip Object
+- Drag the Clip object to the Marker track and choose which type of
+    Marker to create. This creates a Marker clip you can drag and
+    resize. It has left and right trim handles to adjust the length. You
+    can also drag a marker by its header and move it around. If the
+    Marker track is in split mode, the type of Marker (B&amp;B or TC) is
+    determined by which lane you drop the Clip object on.</p>
+<p><img alt="" src="../images/10----13.png" /></p>
+<p><em>Adding a Marker by Dragging the Clip Object</em></p>
+<p>Press Return
+- The Return key (Enter on PCs) has several functions related to
+    Marker navigation during playback. At the most basic level, pressing
+    Return adds a new Marker at the cursor position. The type of Marker
+    clip matches the most recently added Marker. If a Marker clip is
+    selected, it adds one of that type. Markers added with Return, use
+    the next available sequential Marker number.</p>
+<p>Right-click the Marker Track Header
+- Right-click the Marker track header and choose which type of marker
+    to add at the cursor position.</p>
+<p><img alt="" src="../images/10----14.png" /></p>
+<p><em>Add a Marker from the Marker Track Right-click Menu</em></p>
+<p>Marker Track properties Buttons
+- Click the Marker track header to select it, then look in properties.
+    There you will find the buttons <em>New Bars &amp; Beats Marker</em> and <em>New
+    Absolute TC Marker.</em></p>
+<p><img alt="" src="../images/10----15.png" /></p>
+<p><em>Add a Marker from Marker Track properties</em></p>
+<p>Browser Markers Tab <em>Add</em> Button
+- You can add either kind of Marker Clip using the selections on the
+    Browser, Markers tab.</p>
+<p><img alt="" src="../images/10----16.png" /></p>
+<p><em>Add a Marker from the Browser, Markers Tab</em></p>
+<h2 id="marker-clip-properties">Marker Clip properties<a class="headerlink" href="#marker-clip-properties" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../images/10----17.png" /></p>
+<p><em>Marker Clip properties</em></p>
+<p>Marker clips behave like other clips in several ways. You can adjust the
+length using the trim handles, you can split them, drag them, duplicate
+them, or nudge them. They also contain several properties, described
+below:</p>
+<p>Number
+- Marker numbers are issued sequentially as you add Marker clips. You
+    can edit the <em>Number</em> property if you want. If you change <em>Number</em>
+    to one that is already in use, then the other clip will be assigned
+    the next available number. Marker numbers can be used for quick
+    navigation during playback.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> If you feel compelled to renumber all your Markers to get them
+into a nice sequential order, you might want to skip some numbers, in
+order to make it easier to insert new Markers. For example, if you have
+a lot of markers in the song, you could re-number them by 5s.</p>
+</blockquote>
+<p>Type
+- <em>Type</em> allows you choose which type of Marker clip you want: <em>Bars &amp;
+    Beats</em> or <em>Absolute.</em> Bars &amp; Beats markers adjust to the tempo
+    changes in the song. Timecode markers are fixed to a specific time
+    offset into the Edit and are not affected by tempo changes.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Timecode markers are also called "absolute markers", "TC
+markers", or "absolute timecode markers" within Waveform. All those
+terms refer to the same thing. For this book, I usually call them
+Timecode markers.</p>
+</blockquote>
+<p>Name
+- The <em>Name</em> property sets the name shown on the Marker clip. By
+    default it will be "New Marker." Most users rename it based on song
+    section. For example: Intro, Verse, Chorus, Bridge, or Outro.</p>
+<p>Start
+- The <em>Start</em> property shows the bar, beat and tick start time for B&amp;B
+    markers. For Timecode markers it shows
+    Hours/Minutes/Seconds/Milliseconds. For either type, you can edit
+    <em>Start</em> directly to move the marker to a different location.</p>
+<p>Length
+- Similarly, <em>Length</em> shows B&amp;B marker length in Bars/Beats/Ticks
+    format. For Timecode markers, it shows length as
+    Hours/Minutes/Seconds/Milliseconds. Edit the <em>Length</em> property and
+    the Marker clip length will change to match.</p>
+<p>End
+- <em>End</em> values are in the same format as the <em>Start</em> property. Edit it
+    to change the ending time. When you change the <em>End</em> value, <em>Length</em>
+    gets adjusted to match. <em>Start</em> always remains the same. If you edit
+    <em>End</em> to fall before <em>Start</em>, it will be set to match the <em>Start</em>
+    time. In that case, <em>Length</em> gets set to zero.</p>
+<p>Colour
+- Choose from one of the nice colors. This sets all selected Marker
+    clips to the color you choose.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> You can change a Marker clip from Bars &amp; Beats to Timecode
+using nudge. Press F10 until the Marker track split mode is showing.
+Select the marker clip to convert and press Shift-up or Shift-down to
+nudge the clip to the other lane.</p>
+</blockquote>
+<h2 id="navigating-by-markers">Navigating by Markers<a class="headerlink" href="#navigating-by-markers" title="Permanent link">&para;</a></h2>
+<p>Once you have Markers set up, you can quickly navigate using the Marker
+number and the Return key. Just type in a Marker number like '5' or '11'
+and hit Return ('Enter' on PCs). As you type the number you will see it
+appear in green in the upper right of the Waveform window. When you see
+the number, you have about two seconds hit Return before the number
+disappears.</p>
+<p><img alt="" src="../images/10----18.png" /></p>
+<p><em>Marker Number As It Appears Momentarily</em></p>
+<p>If you enter a number that doesn't have a matching Marker, then Waveform
+will insert a marker with that number at the cursor. Also, if you just
+press Return, a Marker clips is inserted at the cursor position.</p>
+<p>Undo (Cmd + Z / Ctrl + Z) removes a marker if you didn't intend to
+insert it.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> The Number + Return approach to navigation works during
+playback but also works when Waveform is idle. If it doesn't seem to be
+working when playback is idle, click the header of the Marker track or
+select any marker and try again.</p>
+</blockquote>
+<h2 id="the-browser-markers-tab">The Browser Markers Tab<a class="headerlink" href="#the-browser-markers-tab" title="Permanent link">&para;</a></h2>
+<p>Use the Browser Markers tab to add Bars &amp; Beats or Timecode markers to
+the Marker track. You can also use it navigate to any marker by
+double-clicking on the marker name in the list. You can also quickly
+delete the selected marker or change its name in properties.</p>
+<p><img alt="" src="../images/10----21.png" /></p>
+<p><em>Browser, Markers Tab</em></p>
+<p>Select marker clips
+- Single-click a marker in the list to select it.</p>
+<p>Navigate to a marker clip
+- Double-click on a marker in the list to jump to that position. This
+    works during playback too.</p>
+<p>Rename a marker
+- Click a marker to select it. Then, edit the Name property in
+    properties.</p>
+<p>Add a Marker
+- Click <em>Add</em> at the bottom of the Markers tab. Select from the two
+    types: <em>Absolute timecode marker</em> and <em>Bars &amp; Beats Marker</em>.</p>
+<p><img alt="" src="../images/10----22.png" /></p>
+<p><em>Adding a Marker from the Markers Tab</em></p>
+<p>Delete a Marker
+- Select a marker in the list and click <em>Delete</em> or just press Delete
+    on your keyboard. Undo (Cmd + Z / Ctrl + Z) restores a deleted
+    marker.</p>
+<p>Change a Marker from one Type to the Other
+- Select the Marker and edit the Type property in properties. Or drag
+    it from the TC Marker track to the B &amp; B Marker track or vice-versa.</p>
+<p><img alt="" src="../images/10----25.png" /></p>
+<p><em>Absolute Timecode Marker Track - </em>Marker - TC**</p>
+<h2 id="renumbering-markers">Renumbering Markers<a class="headerlink" href="#renumbering-markers" title="Permanent link">&para;</a></h2>
+<p>It is sometimes too easy to get your marker numbers out of order, but
+there is an easy trick to renumber them: Open the Markers tab in the
+Browser. Select all of the markers and edit the <em>Number</em> property. For
+example if it shows "1" with all the markers selected change it to "2."
+The markers instantly renumber starting from "2." If you really want
+them numbered starting from one, simply do it again, changing the
+<em>Number</em> property back to one.</p>
+<h2 id="adjust-markers-wave-file-markers">Adjust Markers (Wave File Markers)<a class="headerlink" href="#adjust-markers-wave-file-markers" title="Permanent link">&para;</a></h2>
+<p>There is another type of marker in Waveform, also called "markers." They
+appear to mark spots in a clip, but actually are stored in the
+underlying Wave files. You work with these markers from the <em>Adjust
+Markers</em> actions in Audio clip properties. You also add and remove them
+by dragging the marker object in Audio clip properties <em>View Source
+Info.</em></p>
+<p><img alt="" src="../images/10----26.png" /></p>
+<p><em>Wave File Markers in View Source Info</em></p>
+<p><img alt="" src="../images/10----27.png" /></p>
+<p><em>Adjust Markers Options in Audio Clip properties</em></p>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>Markers can be extremely useful in the context of recording and editing.
+Not only do they keep your project organized, they also provide easy
+navigation into important locations within the Edit.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3182 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/midi-editing/">
+      
+      
+        <link rel="prev" href="../midi-loop-recording/">
+      
+      
+        <link rel="next" href="../pattern-generator/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>MIDI Editing - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#midi-editing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MIDI Editing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trimming-midi-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trimming MIDI Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-midi-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving MIDI Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-a-midi-clip-track-to-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving a MIDI Clip Track-to-Track
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slip-editing-midi-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slip Editing MIDI Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reframing-a-midi-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reframing a MIDI Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitting-a-midi-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Splitting a MIDI Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-midi-note-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The MIDI Note Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-the-number-of-octaves-note-height" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting the Number of Octaves &amp; Note Height
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mouse-wheel-options-for-midi-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mouse Wheel Options for MIDI Editing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-midi-editing-pitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic MIDI Editing - Pitch
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#per-note-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per Note Automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nudging-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nudging Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note Length
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapping-during-note-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Snapping During Note Editing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copying-and-duplicating-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copying and Duplicating Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjusting-pitch-and-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adjusting Pitch and Velocity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-start-length-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note Start, Length, &amp; End
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-pencil-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Pencil Tool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-eraser-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Eraser Tool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-line-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Line Tool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note Colors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selecting-multiple-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selecting Multiple Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-the-note-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing the Note Velocity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-entry-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Entry Mode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hearing-notes-while-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hearing Notes While Editing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-velocity-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Velocity Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-other-controller-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing other Controller Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-midi-event-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The MIDI Event List
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#midi-controller-mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MIDI Controller Mappings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-sysex-lane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The SysEx Lane
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantizing MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Side Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trimming-midi-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trimming MIDI Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-midi-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving MIDI Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-a-midi-clip-track-to-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving a MIDI Clip Track-to-Track
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slip-editing-midi-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slip Editing MIDI Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reframing-a-midi-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reframing a MIDI Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitting-a-midi-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Splitting a MIDI Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-midi-note-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The MIDI Note Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-the-number-of-octaves-note-height" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting the Number of Octaves &amp; Note Height
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mouse-wheel-options-for-midi-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mouse Wheel Options for MIDI Editing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-midi-editing-pitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic MIDI Editing - Pitch
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#per-note-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per Note Automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nudging-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nudging Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note Length
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapping-during-note-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Snapping During Note Editing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copying-and-duplicating-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copying and Duplicating Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjusting-pitch-and-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adjusting Pitch and Velocity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-start-length-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note Start, Length, &amp; End
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-pencil-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Pencil Tool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-eraser-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Eraser Tool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-line-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Line Tool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note Colors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selecting-multiple-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selecting Multiple Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-the-note-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing the Note Velocity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-entry-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Entry Mode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hearing-notes-while-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hearing Notes While Editing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-velocity-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Velocity Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-other-controller-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing other Controller Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-midi-event-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The MIDI Event List
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#midi-controller-mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MIDI Controller Mappings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-sysex-lane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The SysEx Lane
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="midi-editing">MIDI Editing<a class="headerlink" href="#midi-editing" title="Permanent link">&para;</a></h1>
+<p>In this chapter you will learn MIDI editing. There are two aspects to
+MIDI editing. You can, of course, edit individual MIDI notes, but you
+can also edit the MIDI clip. Editing a MIDI clip is similar to editing
+an Audio clip, but with a few key differences. We will go over both
+approaches in this chapter.</p>
+<p>Many of the tools for working with clips work much like they do with
+Audio clips. Each MIDI clip header has several drag handles. Let's take
+a look at how they work.</p>
+<h2 id="trimming-midi-clips">Trimming MIDI Clips<a class="headerlink" href="#trimming-midi-clips" title="Permanent link">&para;</a></h2>
+<p>To trim a MIDI clip, drag one of the trim handles left or right. The
+trim handles are the hollow arrows at the left and right of the MIDI
+clip header.</p>
+<p><img alt="" src="../images/25----01.png" /></p>
+<p><em>Trim MIDI Clips by Dragging a Trim Handle</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> One difference between Audio clips and MIDI clips is that the
+MIDI clips don't have fade handles.</p>
+</blockquote>
+<h2 id="moving-midi-clips">Moving MIDI Clips<a class="headerlink" href="#moving-midi-clips" title="Permanent link">&para;</a></h2>
+<p>To move a MIDI clip forward or backward in time, drag from the header
+area. Don't drag starting from any of the icons, but instead drag from
+the blank space in the header area.</p>
+<p><img alt="" src="../images/25----02.png" /></p>
+<p><em>Moving a MIDI Clip</em></p>
+<h2 id="moving-a-midi-clip-track-to-track">Moving a MIDI Clip Track-to-Track<a class="headerlink" href="#moving-a-midi-clip-track-to-track" title="Permanent link">&para;</a></h2>
+<p>To move a MIDI clip track-to-track, grab the header area and drag it up
+or down. To move track-to-track without affecting the timing, hold down
+Shift as you drag.</p>
+<h2 id="slip-editing-midi-clips">Slip Editing MIDI Clips<a class="headerlink" href="#slip-editing-midi-clips" title="Permanent link">&para;</a></h2>
+<p>The three solid color handles are used for slip editing: left arrow,
+right arrow, and the box. The essential tool for slip editing is the
+solid box in the center of the header. Grab the solid box and drag, in
+order to slip edit the notes within the frame of the window.</p>
+<p><img alt="" src="../images/25----03.png" /></p>
+<p><em>MIDI Clip Slip Handles</em></p>
+<p>Use the left solid arrow to slip the notes later in time, while leaving
+the ending of the clip anchored. The right solid arrow works the
+opposite way. You can slip the end of the clip, while leaving the
+beginning of the clip anchored.</p>
+<h2 id="reframing-a-midi-clip">Reframing a MIDI Clip<a class="headerlink" href="#reframing-a-midi-clip" title="Permanent link">&para;</a></h2>
+<p>The hollow box tool in the center of a MIDI clip allows you to reframe
+the entire window of the clip, leaving the notes in their original
+place. This is done by dragging the hollow box left or right.</p>
+<h2 id="splitting-a-midi-clip">Splitting a MIDI Clip<a class="headerlink" href="#splitting-a-midi-clip" title="Permanent link">&para;</a></h2>
+<p>To split a MIDI clip, select it then position the cursor at the time you
+want to make the split. Press the slash key (/). This is the exact same
+workflow you use for splitting Audio clips.</p>
+<p><img alt="" src="../images/25----04.png" /></p>
+<p><em>Split MIDI Clips Using the Slash Key</em></p>
+<p>You can also split using the <em>Split Clips</em> actions at the right side of
+properties. The various actions give you more control over splitting.</p>
+<p><img alt="" src="../images/25----05.png" /></p>
+<p><em>Split Actions Button in properties</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> As you split MIDI clips, any notes that are sustained across
+the split area are separated into two notes.</p>
+</blockquote>
+<p>You can even split a mixture of Audio clips and MIDI clips across
+multiple tracks, by selecting a combination of them at once.</p>
+<h2 id="the-midi-note-editor">The MIDI Note Editor<a class="headerlink" href="#the-midi-note-editor" title="Permanent link">&para;</a></h2>
+<p>As you increase the vertical size of a track holding MIDI clips, you'll
+see that there's a point at where it switches to the inline MIDI note
+editor. This gives you a comprehensive view of the notes contained
+within the MIDI clip. This type of view is commonly called a piano roll
+view (PRV).</p>
+<p><img alt="" src="../images/25----06.png" /></p>
+<p><em>The MIDI Note Editor</em></p>
+<p>Another way to see the MIDI note editor is to double-click on the MIDI
+clip header to toggle track height.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Clip header double-click behavior is dependent on a global
+setting. Go to the Settings tab, General page and find the
+<em>Track Resizing</em> property. You can choose a number of options, based on
+how you would like that resizing to occur when you double-click. This
+setting also holds for audio tracks.</p>
+</blockquote>
+<h2 id="setting-the-number-of-octaves-note-height">Setting the Number of Octaves &amp; Note Height<a class="headerlink" href="#setting-the-number-of-octaves-note-height" title="Permanent link">&para;</a></h2>
+<p>You can adjust how many octaves you see on the MIDI editor in the
+<em>Options</em> menu. By default <em>Options &gt; Default MIDI editor vertical
+scale</em> is set to <em>2 octaves</em>, a reasonable starting point. If you want
+you can set this to show more or fewer octaves.</p>
+<p><img alt="" src="../images/25----07.png" /></p>
+<p><em>Default MIDI Editor Vertical Scale Setting</em></p>
+<p>To fine tune the vertical size of MIDI notes, drag the arrows above and
+below the piano graphic.</p>
+<p><img alt="" src="../images/25----08.png" /></p>
+<p><em>Use Arrows to Adjust Vertical Size</em></p>
+<h2 id="mouse-wheel-options-for-midi-editing">Mouse Wheel Options for MIDI Editing<a class="headerlink" href="#mouse-wheel-options-for-midi-editing" title="Permanent link">&para;</a></h2>
+<p>You can use your mouse wheel to scroll vertically within the MIDI
+editor. During mixing you may prefer to disable this function, in order
+to prevent scrolling within the MIDI clips unintentionally.</p>
+<p><img alt="" src="../images/25----09.png" /></p>
+<p><em>Mouse Wheel MIDI Scrolling Setting</em></p>
+<p>You may find it's generally helpful to have MIDI scrolling on during
+MIDI editing. You'll find this setting in the menu under <em>Options &gt;
+Mouse wheel action &gt; Mouse wheel scrolls MIDI grid.</em></p>
+<h2 id="basic-midi-editing-pitch">Basic MIDI Editing - Pitch<a class="headerlink" href="#basic-midi-editing-pitch" title="Permanent link">&para;</a></h2>
+<p>Next, let's look at the tools for editing the actual MIDI notes. In
+general, editing works by selecting notes and then doing an action.</p>
+<p><img alt="" src="../images/25----10.png" /></p>
+<p><em>Select a Note and Drag Up or Down to Change Pitch</em></p>
+<p>The most basic edit? Click a note to select it. Drag it up or down to
+change the pitch.</p>
+<h2 id="per-note-automation">Per Note Automation<a class="headerlink" href="#per-note-automation" title="Permanent link">&para;</a></h2>
+<p>As you start to drag MIDI notes around, you will immediately see the
+per-note controller editing area appear above or below selected notes.</p>
+<p><img alt="" src="../images/25----11.png" /></p>
+<p><em>Drawing Per Note Automation</em></p>
+<p>If you don't see the per-note automation editing area, you can turn it
+on and off in properties.</p>
+<p><img alt="" src="../images/25----17.png" /></p>
+<p><em>Turn Per Note Automation Editing On or Off</em></p>
+<p>To begin, select any single note. The automation editing area will
+appear for the full length of the note. By default you will be editing
+Volume (controller 7). Select the pencil tool and draw in the desired
+automation curve by click-dragging over the editing area.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> You need to select the pencil tool to draw in the per-note
+automation.</p>
+</blockquote>
+<p>The curve will appear as steps based on the current snap resolution. The
+snap resolution is set by the zoom level; To draw in a more detailed
+curve, zoom in more.</p>
+<p><img alt="" src="../images/25----12.png" /></p>
+<p><em>Selecting the Controller Type for Per Note Automation</em></p>
+<p>You can select any other control by clicking the <em>Type</em> button on the
+MIDI editor toolbar. This type of editing gives you detailed control
+over performance details and articulations.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Not all virtual instruments respond to this type of data.</p>
+</blockquote>
+<h2 id="nudging-notes">Nudging Notes<a class="headerlink" href="#nudging-notes" title="Permanent link">&para;</a></h2>
+<p>Nudging works much like it does for Audio clips and MIDI clips. You hold
+down Shift and use the arrow keys. Shift-up and Shift-down change the
+pitch. Shift-left and Shift-right change the timing.</p>
+<p>Nudging is particularly helpful when changing the pitch, since there
+there's no chance of altering the timing of the note.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Cmd + Z / Ctrl + Z works as undo for most editing operations.</p>
+</blockquote>
+<h2 id="note-length">Note Length<a class="headerlink" href="#note-length" title="Permanent link">&para;</a></h2>
+<p>You can trim the length of a note by grabbing the right edge and
+dragging it left or right.</p>
+<p><img alt="" src="../images/25----13.png" /></p>
+<p><em>Trimming a MIDI Note</em></p>
+<h2 id="snapping-during-note-editing">Snapping During Note Editing<a class="headerlink" href="#snapping-during-note-editing" title="Permanent link">&para;</a></h2>
+<p>Many of these editing operations will snap to the grid as long as you
+have <em>Snap</em> enabled. To edit freely, disable <em>Snap</em>. The keyboard
+shortcut Q enables or disables snapping.</p>
+<p><img alt="" src="../images/25----14.png" /></p>
+<p><em>Note Editing Will Snap if </em>Snap<em> is On</em></p>
+<h2 id="copying-and-duplicating-notes">Copying and Duplicating Notes<a class="headerlink" href="#copying-and-duplicating-notes" title="Permanent link">&para;</a></h2>
+<p>To copy a note, hold down Cmd / Ctrl and drag the note to create a copy.
+Another way to do this is with the <em>Duplicate</em> keyboard shortcut. First
+select the note that you would like to copy, make sure the cursor is
+where you'd like the copy placed and then hit the keyboard shortcut D.</p>
+<p><img alt="" src="../images/25----15.png" /></p>
+<p><em>Copying a Note</em></p>
+<h2 id="adjusting-pitch-and-velocity">Adjusting Pitch and Velocity<a class="headerlink" href="#adjusting-pitch-and-velocity" title="Permanent link">&para;</a></h2>
+<p>Another way to adjust pitch and velocity is to select the note and then
+edit the values directly in properties. Both <em>Pitch</em> and <em>Velocity</em> can
+easily be edited this way.</p>
+<p><img alt="" src="../images/25----16.png" /></p>
+<p><em>Adjust Pitch and Velocity in properties</em></p>
+<h2 id="note-start-length-end">Note Start, Length, &amp; End<a class="headerlink" href="#note-start-length-end" title="Permanent link">&para;</a></h2>
+<p>You can also make very precise adjustments to the <em>Length</em>, <em>Start
+Time</em>, and <em>End Time</em> by editing the values directly in properties for
+the selected note.</p>
+<p><img alt="" src="../images/25----18.png" /></p>
+<p><em>Start, Length, &amp; End Settings in properties</em></p>
+<h2 id="the-pencil-tool">The Pencil Tool<a class="headerlink" href="#the-pencil-tool" title="Permanent link">&para;</a></h2>
+<p>The pencil tool is used to draw in notes. Simply select the pencil tool
+and then start painting in notes where you'd like them to appear on the
+piano roll.</p>
+<p><img alt="" src="../images/25----19.png" /></p>
+<p><em>Draw in New Notes with the Pencil Tool</em></p>
+<h2 id="the-eraser-tool">The Eraser Tool<a class="headerlink" href="#the-eraser-tool" title="Permanent link">&para;</a></h2>
+<p>Use the eraser tool to swipe over any series of notes that you would
+like to erase.</p>
+<p><img alt="" src="../images/25----20.png" /></p>
+<p><em>The Eraser Tool</em></p>
+<h2 id="the-line-tool">The Line Tool<a class="headerlink" href="#the-line-tool" title="Permanent link">&para;</a></h2>
+<p>There's also a line tool. We usually recommend using this for drawing in
+controllers, but it is also possible to use it for notes as well. Draw a
+line to create a stepped series of notes.</p>
+<p><img alt="" src="../images/25----21.png" /></p>
+<p><em>Draw a Series of Notes with the Line Tool</em></p>
+<h2 id="note-colors">Note Colors<a class="headerlink" href="#note-colors" title="Permanent link">&para;</a></h2>
+<p>The color selection along the top edge of the MIDI editor allows you to
+select set a note color. Select a group of notes, click on a color and
+then it will change those notes to that color. It doesn't affect
+playback, but it gives you a way to visually organize a sequence. For
+example, when programming drums you could make snares, hi-hats, and kick
+drum all different colors.</p>
+<p><img alt="" src="../images/25----22.png" /></p>
+<p><em>Note Colors</em></p>
+<h2 id="selecting-multiple-notes">Selecting Multiple Notes<a class="headerlink" href="#selecting-multiple-notes" title="Permanent link">&para;</a></h2>
+<p>Selecting multiple notes is easy. Use the arrow tool and drag a
+selection around any group of notes that you'd like to select together.</p>
+<p><img alt="" src="../images/25----23.png" /></p>
+<p><em>Note Multiple Selection</em></p>
+<p>You can also add or remove notes from a multiple selection by holding
+down Shift (or Cmd / Ctrl) then clicking additional notes you'd like to
+toggle in and out of the selection.</p>
+<p>To select an entire row of notes that are the same pitch, hold down Cmd
+/ Ctrl and click on the PRV keyboard key corresponding to that row of
+notes; doing so selects the full row of notes.</p>
+<p><img alt="" src="../images/25----24.png" /></p>
+<p><em>Selecting a Row of Notes with Cmd / Ctrl</em></p>
+<p>Once you have a multiple selection, move all the notes in time or by
+pitch by dragging with the arrow tool. Alternatively, you can change
+values in properties that will apply to all notes in the selection.
+Nudge also works on well on a multiple selection of notes (Shift plus
+the arrow keys).</p>
+<h2 id="editing-the-note-velocity">Editing the Note Velocity<a class="headerlink" href="#editing-the-note-velocity" title="Permanent link">&para;</a></h2>
+<p>To quickly change the velocity of a note, select the note and then
+select a value from the <em>Velocity</em> drop down menu. This gives you a
+variety of preset values at popular levels.</p>
+<p><img alt="" src="../images/25----30.png" /></p>
+<p><em>Quickly Set Note Velocity</em></p>
+<p>If you choose <em>Other</em>, from the velocity drop down, you can type in
+whatever value you want from 0 to 127.</p>
+<p><img alt="" src="../images/25----25.png" /></p>
+<p><em>You'll See this if you Select </em>Other**</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Here's another trick way to adjust velocity. Select a note then
+hold Shift as you drag up and down over the note. Notice the <em>Velocity</em>
+value changing in properties as you drag.</p>
+</blockquote>
+<h2 id="step-entry-mode">Step Entry Mode<a class="headerlink" href="#step-entry-mode" title="Permanent link">&para;</a></h2>
+<p>When the <em>Step</em> button is toggled on, the MIDI clip goes into step entry
+mode. In this mode, any notes you play to the track will be entered at
+the cursor position. Then, the cursor will advance to the next step
+based on the Snap grid resolution. You can adjust that based on the
+level of zoom.</p>
+<p><img alt="" src="../images/25----26.png" /></p>
+<p><em>Step Entry Mode</em></p>
+<h2 id="hearing-notes-while-editing">Hearing Notes While Editing<a class="headerlink" href="#hearing-notes-while-editing" title="Permanent link">&para;</a></h2>
+<p>You have the option to trigger notes that are being moved so you can
+hear the pitch. You can enable or disable this using the speaker icon at
+the far right at the top of the MIDI editor tool bar.</p>
+<p><img alt="" src="../images/25----27.png" /></p>
+<p><em>Enable Speaker Button to Trigger Notes During Editing</em></p>
+<h2 id="the-velocity-editor">The Velocity Editor<a class="headerlink" href="#the-velocity-editor" title="Permanent link">&para;</a></h2>
+<p>You can edit MIDI note velocity from the velocity area below the PRV.
+Click the <em>Velocity</em> button at the left of the MIDI editor toolbar to
+expose the velocity editor. For the selected note, grab the stalk which
+represents the velocity and drag it up or down. You will notice the
+<em>Velocity</em> parameter moving in properties for that note as you drag.</p>
+<p><img alt="" src="../images/25----28.png" /></p>
+<p><em>The Velocity Editor</em></p>
+<p>You can also edit multiple velocities together by first selecting
+several velocities. Say we want to edit the velocity of all the C4s.
+Hold down Cmd / Ctrl and select all the C4s, then, just grab one of them
+and they will all adjust together.</p>
+<h2 id="editing-other-controller-data">Editing other Controller Data<a class="headerlink" href="#editing-other-controller-data" title="Permanent link">&para;</a></h2>
+<p>You can use a view similar to the velocity editor with any kind of
+controller. Click the <em>Control</em> button and then click <em>Type</em> to choose
+which controller to edit.</p>
+<p><img alt="" src="../images/25----29.png" /></p>
+<p><em>Editing Other Controller Data</em></p>
+<p>Example editing aftertouch: In the MIDI editor click <em>Control &gt; Type &gt;
+Channel Pressure</em>. Now the channel pressure data will appear in the same
+way velocity appears.</p>
+<h2 id="the-midi-event-list">The MIDI Event List<a class="headerlink" href="#the-midi-event-list" title="Permanent link">&para;</a></h2>
+<p>For surgical, numbers-first editing, open the <strong>MIDI Event List</strong>. It's
+a floating, resizable table of every event in the currently selected
+MIDI clip, and it follows your selection — click a different clip and
+the list updates to match. The list and the piano roll share a
+selection, so a note you highlight in one is highlighted in the other.</p>
+<p>This is a Waveform Pro feature (version 12 and later).</p>
+<!-- code: waveform/common/Source/ui/midi/MidiEventList.cpp:116-124; Features.cpp promidi (Pro v12+) -->
+
+<p>Open it with the command <strong>Show or hide the MIDI Event List window</strong>, or
+from the View menu's <strong>Show MIDI Event List</strong> item.</p>
+<!-- code: StandardShortcuts.h:636 -->
+
+<p><img alt="" src="../images/event-list_1%402x.png" /></p>
+<p><em>The MIDI Event List window</em></p>
+<p>Across the top is an <strong>add-event</strong> menu (Add note, Controller, Program
+Change, Aftertouch, Pitch Wheel, Channel Pressure, or SysEx) alongside
+<strong>Transpose</strong>, <strong>Quantise</strong>, <strong>Groove</strong>, and <strong>Chords</strong> menus that act
+on the selected events. Along the bottom are seven filter toggles —
+<strong>Notes, Controller, Program Change, Aftertouch, Pitch wheel, Channel
+Pressure, SysEx</strong> — all on by default, so you can hide event types you
+don't want to wade through.</p>
+<!-- code: MidiEventList.cpp:185-237,763-793 -->
+
+<p>The columns change with the event type:</p>
+<ul>
+<li><strong>Notes</strong> — a mute toggle, Time, Type, Pitch (0–127), Velocity
+  (0–127), Release velocity (0–127), and Length.</li>
+<li><strong>Controllers</strong> — Time, Type, Controller type (Program Change,
+  Aftertouch, Pitch Wheel, Channel Pressure, or CC 0–127), and Value
+  (0–16383).</li>
+<li><strong>SysEx</strong> — Time, Type, and an editable Data field.</li>
+</ul>
+<!-- code: MidiEventList.cpp:357-449 -->
+
+<blockquote>
+<p>💡 <strong>Tip:</strong> The Event List is the place to type exact values — handy
+when you need a controller at precisely 64, or a note nudged to an
+exact tick that's awkward to hit by dragging.</p>
+</blockquote>
+<h2 id="midi-controller-mappings">MIDI Controller Mappings<a class="headerlink" href="#midi-controller-mappings" title="Permanent link">&para;</a></h2>
+<p>The <strong>MIDI Controller Mappings</strong> window lets you drive plugin parameters
+from a hardware MIDI controller's knobs and faders. Each row binds one
+incoming MIDI controller (CC) to one parameter in your edit.</p>
+<p>Open it from the Automation menu's <strong>Create MIDI controller mappings…</strong>
+item, or with the command <strong>Show MIDI controller mappings window</strong>.</p>
+<!-- code: waveform/common/Source/ui/edit/ParameterControlMappingsEditor.h:16,35-45; StandardShortcuts.h:626 -->
+
+<p><img alt="" src="../images/controller-mappings_1%402x.png" /></p>
+<p><em>The MIDI Controller Mappings window</em></p>
+<p>When you first open it the window looks empty -- that is normal. There is
+always one blank row waiting at the bottom of the list, and that row is how
+you add a mapping. Click either half of it to begin (see below); as soon as
+you fill a row in, a fresh blank row appears beneath it, ready for the next
+mapping. So the "empty" window already contains everything you need to start.</p>
+<p>Each row has two halves:</p>
+<ul>
+<li><strong>Left half (the controller)</strong> — Click it to enter MIDI-learn (the
+  cell reads <strong>(Move a MIDI controller)</strong>); the next CC that arrives
+  from your hardware is captured and bound to this row.</li>
+<li><strong>Right half (the parameter)</strong> — Click <strong>Choose Parameter…</strong> for a
+  hierarchical menu of everything you can map: Master Plugins, Racks,
+  and each track's plugins and their parameters, plus an <strong>Add all
+  parameters</strong> shortcut. The same menu saves, loads, and deletes
+  presets.</li>
+</ul>
+<!-- code: ParameterControlMappingsEditor.h:116-132; tracktion_ParameterControlMappings.cpp:375-533 -->
+
+<blockquote>
+<p>💡 <strong>Tip:</strong> To set up a controller quickly, click the right half of the
+blank row, open a plugin's submenu, and choose <strong>Add all parameters</strong> -- a
+row is created for every parameter of that plugin in one step. Then just
+MIDI-learn the hardware controllers you want for each.</p>
+</blockquote>
+<p>Press <strong>Delete</strong> with a row selected to remove that mapping. There's
+always a blank row at the bottom ready for the next binding. Mappings
+belong to the edit you set them up in, while presets are global and
+available to every edit.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The window shows mappings for the focused edit only, and
+it doesn't switch when you change focus to a different edit.</p>
+</blockquote>
+<h2 id="the-sysex-lane">The SysEx Lane<a class="headerlink" href="#the-sysex-lane" title="Permanent link">&para;</a></h2>
+<p>System Exclusive (SysEx) messages are manufacturer-specific MIDI data —
+often used to recall a hardware synth patch or send a device-specific
+command. Waveform shows them on a dedicated controller lane in the MIDI
+editor, where each SysEx event appears as a <strong>diamond</strong> on a timeline.</p>
+<p>Open the lane from the MIDI editor's controller-lane menu and choose the
+SysEx option. The lane header has a <strong>Close</strong> button and a <strong>Menu</strong>.
+Use the Select, Pencil, and Eraser tools to place, move, and delete
+events — a pencil click creates a new event with four zero bytes — and
+snapping applies just as it does elsewhere in the editor.</p>
+<!-- code: waveform/common/Source/ui/midi/MidiSysexEditorPanel.cpp:29-299; MidiLaneEditorWindowBase.h:23-57 -->
+
+<blockquote>
+<p>📝 <strong>Note:</strong> The lane is for placing and timing SysEx events. To edit
+the actual bytes of a message, use the <strong>Data</strong> field in the MIDI
+Event List (described above).</p>
+</blockquote>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>Those are the fundamentals of MIDI editing. We're going to get into
+quantizing MIDI notes in the next chapter.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

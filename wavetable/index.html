@@ -1,0 +1,3405 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/wavetable/">
+      
+      
+        <link rel="prev" href="../4osc/">
+      
+      
+        <link rel="next" href="../samplers-and-instruments/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Wavetable Synthesizer - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#wavetable-synthesizer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Wavetable Synthesizer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantizing MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Side Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#oscillators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oscillators
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Oscillators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browsing-and-loading-wavetables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browsing and Loading Wavetables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oscillator-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oscillator Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unison-and-stereo-spread" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unison and Stereo Spread
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wave-shaping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wave Shaping
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sub-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sub Oscillator
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#noise-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Noise Generator
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-envelope-adsr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Envelope (ADSR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Routing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-mix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Mix
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amplitude-envelope-adsr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amplitude Envelope (ADSR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lfos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LFOs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LFOs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lfo-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LFO Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-custom-lfo-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drawing Custom LFO Shapes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saving-and-loading-lfo-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saving and Loading LFO Shapes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#envelopes-env-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envelopes (ENV 1-3)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulation-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulation Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-modulation-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Modulation Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolbar-modulation-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toolbar Modulation Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chorus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chorus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distortion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distortion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reverb
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EQ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-fx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter (FX)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limiter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limiter
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arpeggiator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arpeggiator
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mpe-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MPE Support
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#oscillators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oscillators
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Oscillators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browsing-and-loading-wavetables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browsing and Loading Wavetables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oscillator-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oscillator Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unison-and-stereo-spread" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unison and Stereo Spread
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wave-shaping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wave Shaping
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sub-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sub Oscillator
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#noise-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Noise Generator
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-envelope-adsr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Envelope (ADSR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Routing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-mix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter Mix
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amplitude-envelope-adsr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amplitude Envelope (ADSR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lfos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LFOs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LFOs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lfo-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LFO Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-custom-lfo-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drawing Custom LFO Shapes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saving-and-loading-lfo-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saving and Loading LFO Shapes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#envelopes-env-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envelopes (ENV 1-3)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulation-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulation Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-modulation-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Modulation Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolbar-modulation-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toolbar Modulation Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chorus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chorus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distortion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distortion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reverb
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EQ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-fx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter (FX)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limiter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limiter
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arpeggiator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arpeggiator
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mpe-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MPE Support
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="wavetable-synthesizer">Wavetable Synthesizer<a class="headerlink" href="#wavetable-synthesizer" title="Permanent link">&para;</a></h1>
+<p>Waveform's built-in Wavetable synthesizer is a two-oscillator wavetable instrument with deep modulation, flexible filtering, and a full effects chain. It ships with a library of factory wavetables and presets, supports user wavetable import, and includes MPE support out of the box.</p>
+<p><img alt="" src="../images/Instruments/Wavetable%402x.png" />
+<em>The Wavetable synthesizer interface showing both oscillators, filters, LFOs, envelopes, macros, and the global settings.</em></p>
+<h2 id="oscillators">Oscillators<a class="headerlink" href="#oscillators" title="Permanent link">&para;</a></h2>
+<p>The synth has <strong>two independent wavetable oscillators</strong> (OSC 1 and OSC 2). Each oscillator loads a wavetable and lets you sweep through its frames to create evolving, animated timbres.</p>
+<h3 id="browsing-and-loading-wavetables">Browsing and Loading Wavetables<a class="headerlink" href="#browsing-and-loading-wavetables" title="Permanent link">&para;</a></h3>
+<p>The currently loaded wavetable name is displayed in the header of each oscillator panel. You have three ways to change it:</p>
+<ul>
+<li><strong>Click the wavetable name</strong> to open a categorized menu of all factory wavetables. Tables are grouped by prefix (Analog, Digital, etc.), so browsing is quick.</li>
+<li><strong>Use the left/right arrows</strong> beside the name to step through wavetables one at a time. This is great for auditioning.</li>
+<li><strong>Click the + button</strong> to load your own .wav file as a user wavetable. If the file doesn't contain wavetable metadata, you'll be prompted to choose a table size (256, 512, 1024, or 2048 samples per frame).</li>
+</ul>
+<p>You can also <strong>drag and drop</strong> a .wav file directly onto the wavetable display to load it.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> The 3D wavetable display is interactive. Drag up or down on it to scrub the <strong>Pos</strong> (position) parameter in real time. This is a fast way to find the sweet spot in a wavetable.</p>
+</blockquote>
+<h3 id="oscillator-controls">Oscillator Controls<a class="headerlink" href="#oscillator-controls" title="Permanent link">&para;</a></h3>
+<p>Each oscillator has the following controls:</p>
+<p><strong>Pos</strong> — Sweeps through the frames of the loaded wavetable. This is the primary sound-shaping control for wavetable synthesis. Automate or modulate it for movement. (Default: 0%)</p>
+<p><strong>Level</strong> — Output volume of the oscillator in dB. (Default: 0 dB)</p>
+<p><strong>Pan</strong> — Stereo position. Center is zero; negative values pan left, positive values pan right. (Default: center)</p>
+<p><strong>Octave</strong> — Coarse pitch offset in octaves, from -4 to +4. (Default: 0)</p>
+<p><strong>Tune</strong> — Pitch offset in semitones, from -12 to +12. (Default: 0)</p>
+<p><strong>Fine</strong> — Fine-tune in cents, from -100 to +100. Use this for subtle detuning between oscillators. (Default: 0)</p>
+<p><strong>Phase</strong> — Starting phase of the oscillator waveform. (Default: 0)</p>
+<p><strong>Rand</strong> — Randomizes the starting phase each time a note is triggered. At maximum, each note starts at a different phase, which can reduce the "machine gun" effect on repeated notes. (Default: 1.0)</p>
+<h3 id="unison-and-stereo-spread">Unison and Stereo Spread<a class="headerlink" href="#unison-and-stereo-spread" title="Permanent link">&para;</a></h3>
+<p><strong>Unison</strong> — Stacks up to 8 voices per oscillator. More voices means a thicker, wider sound at the cost of CPU. (Default: 1)</p>
+<p><strong>Detune</strong> — Controls how far apart the unison voices are pitched from each other. Only active when Unison is greater than 1. (Default: 0)</p>
+<p><strong>Spread</strong> — Pans the unison voices across the stereo field. Only active when Unison is greater than 1. (Default: 0%)</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> For classic supersaw-style sounds, set Unison to 4-8, push Detune to around 0.15, and spread to 80% or more. I find 5 voices with moderate detune hits a nice balance between richness and CPU load.</p>
+</blockquote>
+<h3 id="wave-shaping">Wave Shaping<a class="headerlink" href="#wave-shaping" title="Permanent link">&para;</a></h3>
+<p>Each oscillator includes four built-in waveshaping controls for mangling the wavetable output before it hits the filters:</p>
+<p><strong>Formant</strong> — Shifts the formant structure of the waveform, adding vocal-like resonances. (Default: 0)</p>
+<p><strong>Bend</strong> — Bends the waveform shape, creating harmonic asymmetry. (Default: 0)</p>
+<p><strong>Asym</strong> — Adds asymmetric distortion to the waveform. (Default: 0)</p>
+<p><strong>Fold</strong> — Folds the waveform back on itself, creating additional harmonics. Great for aggressive, metallic tones. (Default: 0)</p>
+<h2 id="sub-oscillator">Sub Oscillator<a class="headerlink" href="#sub-oscillator" title="Permanent link">&para;</a></h2>
+<p>The <strong>Sub</strong> oscillator adds a simple, stable tone underneath your wavetable oscillators. It's perfect for anchoring bass sounds or adding weight to pads.</p>
+<p><strong>Enable</strong> — Turns the sub oscillator on or off. (Default: Off)</p>
+<p><strong>Wave</strong> — Selects the waveform shape. Options are:
+- Sine
+- Triangle
+- Saw
+- Pulse 50%
+- Pulse 25%
+- Pulse 12%</p>
+<p>(Default: Triangle)</p>
+<p><strong>Octave</strong> — Pitch offset in octaves. Set to -1 or -2 to place the sub below your main oscillators. (Default: 0)</p>
+<p><strong>Level</strong> — Output volume in dB. (Default: 0 dB)</p>
+<p><strong>Pan</strong> — Stereo position. (Default: center)</p>
+<p><strong>Retrig</strong> — When enabled, the sub oscillator restarts its phase on each new note. (Default: Off)</p>
+<h2 id="noise-generator">Noise Generator<a class="headerlink" href="#noise-generator" title="Permanent link">&para;</a></h2>
+<p>The <strong>Noise</strong> generator adds untuned noise to the signal. Use it sparingly for breathy textures, or mix it in heavily for percussive, snare-like sounds.</p>
+<p><strong>Enable</strong> — Turns the noise generator on or off. (Default: Off)</p>
+<p><strong>Type</strong> — Choose between White noise (equal energy across all frequencies) and Pink noise (more energy in the low end). (Default: White)</p>
+<p><strong>Level</strong> — Output volume in dB. (Default: 0 dB)</p>
+<p><strong>Pan</strong> — Stereo position. (Default: center)</p>
+<h2 id="filters">Filters<a class="headerlink" href="#filters" title="Permanent link">&para;</a></h2>
+<p>The Wavetable synth has <strong>two per-voice filters</strong> (Filter 1 and Filter 2) that can be combined in parallel or serial configurations.</p>
+<h3 id="filter-types">Filter Types<a class="headerlink" href="#filter-types" title="Permanent link">&para;</a></h3>
+<p>Each filter offers eight modes:</p>
+<ul>
+<li><strong>Lowpass 12</strong> — Gentle low-pass filter with a 12 dB/octave slope</li>
+<li><strong>Lowpass 24</strong> — Steeper low-pass filter with a 24 dB/octave slope</li>
+<li><strong>Highpass 12</strong> — 12 dB/octave high-pass filter</li>
+<li><strong>Highpass 24</strong> — 24 dB/octave high-pass filter</li>
+<li><strong>Bandpass 12</strong> — 12 dB/octave band-pass filter</li>
+<li><strong>Bandpass 24</strong> — 24 dB/octave band-pass filter</li>
+<li><strong>Notch 12</strong> — 12 dB/octave notch (band-reject) filter</li>
+<li><strong>Notch 24</strong> — 24 dB/octave notch filter</li>
+</ul>
+<p>(Default: Lowpass 12)</p>
+<h3 id="filter-controls">Filter Controls<a class="headerlink" href="#filter-controls" title="Permanent link">&para;</a></h3>
+<p><strong>Freq</strong> — Cutoff frequency in Hz. This is the most important filter parameter. (Default: ~523 Hz)</p>
+<p><strong>Res</strong> — Resonance. Boosts frequencies around the cutoff point. Higher values create a sharper, more pronounced peak. (Default: 0)</p>
+<p><strong>Amnt</strong> — Envelope amount. Controls how much the filter's built-in ADSR envelope affects the cutoff frequency. Positive values sweep the filter up; negative values sweep it down. When set to zero, the filter envelope controls (A, D, S, R) are disabled. (Default: 0)</p>
+<p><strong>Key</strong> — Key tracking. When turned up, the filter cutoff follows the pitch of the note you play, so higher notes have a brighter tone. (Default: 0%)</p>
+<p><strong>Vel</strong> — Velocity tracking. Higher values make the filter cutoff respond more to how hard you play. Only active when the envelope amount is non-zero. (Default: 0%)</p>
+<p><strong>Retrig</strong> — Retrigger. When mono mode and glide are active, this controls whether the filter envelope restarts on legato notes. Only visible when relevant.</p>
+<h3 id="filter-envelope-adsr">Filter Envelope (ADSR)<a class="headerlink" href="#filter-envelope-adsr" title="Permanent link">&para;</a></h3>
+<p>Each filter has its own dedicated ADSR envelope that modulates the cutoff frequency:</p>
+<ul>
+<li><strong>A</strong> (Attack) — Time to reach peak. (Default: 0.01s)</li>
+<li><strong>D</strong> (Decay) — Time to fall from peak to sustain level. (Default: 0.1s)</li>
+<li><strong>S</strong> (Sustain) — Level held while the note is sustained. (Default: 80%)</li>
+<li><strong>R</strong> (Release) — Time to return to zero after note-off. (Default: 0.1s)</li>
+</ul>
+<p>The envelope's visual display shows the current phase of active voices in real time, so you can see exactly where each voice is in its envelope cycle.</p>
+<h3 id="filter-routing">Filter Routing<a class="headerlink" href="#filter-routing" title="Permanent link">&para;</a></h3>
+<p>Each filter has four source buttons labeled <strong>1</strong>, <strong>2</strong>, <strong>N</strong>, and <strong>S</strong> that control which sound sources are fed into that filter:</p>
+<ul>
+<li><strong>1</strong> — Oscillator 1</li>
+<li><strong>2</strong> — Oscillator 2</li>
+<li><strong>N</strong> — Noise generator</li>
+<li><strong>S</strong> — Sub oscillator</li>
+</ul>
+<p>(Default: All sources routed to Filter 1)</p>
+<h3 id="filter-mix">Filter Mix<a class="headerlink" href="#filter-mix" title="Permanent link">&para;</a></h3>
+<p>The <strong>Mix</strong> panel between the two filters controls how they combine:</p>
+<p><strong>Type</strong> — Choose between:
+- <strong>Parallel</strong> — Both filters process the signal independently, and their outputs are blended.
+- <strong>Serial</strong> — The output of Filter 1 feeds into Filter 2.</p>
+<p>(Default: Parallel)</p>
+<p><strong>Mix</strong> — In parallel mode, this blends the balance between Filter 1 and Filter 2. In serial mode, this control is disabled. (Default: 0.5)</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Serial mode is powerful for shaping complex timbres. Try setting Filter 1 to a resonant lowpass and Filter 2 to a highpass to isolate a specific frequency band.</p>
+</blockquote>
+<h2 id="amplitude-envelope-adsr">Amplitude Envelope (ADSR)<a class="headerlink" href="#amplitude-envelope-adsr" title="Permanent link">&para;</a></h2>
+<p>The main <strong>ADSR</strong> envelope controls the overall volume shape of every note you play. It's always active and sits in the upper-right area of the interface.</p>
+<p><strong>A</strong> (Attack) — Time for the note to reach full volume. (Default: 0.01s)</p>
+<p><strong>D</strong> (Decay) — Time to fall from peak to the sustain level. (Default: 0.1s)</p>
+<p><strong>S</strong> (Sustain) — Volume level held while you keep the note pressed. (Default: 80%)</p>
+<p><strong>R</strong> (Release) — Time for the sound to fade out after you release the note. (Default: 0.1s)</p>
+<p><strong>Vel</strong> — Velocity tracking. Controls how much your playing velocity affects the volume. At 100%, soft notes are quiet and hard notes are loud. At 0%, velocity has no effect. (Default: 100%)</p>
+<p><strong>Retrig</strong> — Retrigger control. When mono mode and glide are active, this determines whether the envelope restarts on legato notes. Only visible when relevant.</p>
+<p>The envelope display shows a visual representation of the ADSR curve and highlights the current phase for each active voice.</p>
+<h2 id="lfos">LFOs<a class="headerlink" href="#lfos" title="Permanent link">&para;</a></h2>
+<p>The Wavetable synth includes <strong>four LFOs</strong> (LFO 1 through LFO 4) that can be used as modulation sources. Each LFO uses an MSEG (multi-segment envelope generator) for its shape, giving you far more flexibility than simple sine or triangle LFOs.</p>
+<h3 id="lfo-controls">LFO Controls<a class="headerlink" href="#lfo-controls" title="Permanent link">&para;</a></h3>
+<p><strong>Rate</strong> — The speed of the LFO in Hz. Only visible when Sync is off. (Default: 10 Hz)</p>
+<p><strong>Beat</strong> — When Sync is on, sets the LFO rate to a musical note duration. (Default: 1/4 note)</p>
+<p><strong>Sync</strong> — Synchronizes the LFO rate to the host tempo. (Default: Off)</p>
+<p><strong>Depth</strong> — The intensity of the LFO's modulation. Supports bipolar values. (Default: 1.0)</p>
+<p><strong>Phase</strong> — Offsets the starting phase of the LFO. (Default: 0)</p>
+<p><strong>Offset</strong> — Shifts the LFO output vertically. (Default: 0)</p>
+<p><strong>Fade</strong> — Time for the LFO to fade in (positive values) or fade out (negative values) after a note is triggered. (Default: 0s)</p>
+<p><strong>Delay</strong> — Time before the LFO starts after a note is triggered. Useful for delayed vibrato. (Default: 0s)</p>
+<p><strong>Trigger</strong> — Determines the LFO's triggering behavior:
+- <strong>Mono</strong> — One shared LFO for all voices
+- <strong>Poly</strong> — Each voice gets its own independent LFO
+- <strong>Legato</strong> — Shared LFO that doesn't reset on legato notes
+- <strong>Free</strong> — Free-running, never resets</p>
+<p>(Default: Poly)</p>
+<p><strong>Playback</strong> — Controls whether the LFO shape plays once (Single Shot) or continuously (Loop). (Default: Loop)</p>
+<h3 id="drawing-custom-lfo-shapes">Drawing Custom LFO Shapes<a class="headerlink" href="#drawing-custom-lfo-shapes" title="Permanent link">&para;</a></h3>
+<p>The large MSEG display shows the LFO waveform shape. You can edit it directly:</p>
+<ul>
+<li>Click and drag points to reshape the curve</li>
+<li>The <strong>pencil button</strong> toggles draw mode, which lets you paint shapes freehand</li>
+<li>The <strong>draw mode selector</strong> (Step, Half, Down, Up, Tri) changes the behavior of the draw tool</li>
+<li><strong>XGrid</strong> and <strong>YGrid</strong> control the snap resolution when editing (Default: 8 for both)</li>
+</ul>
+<h3 id="saving-and-loading-lfo-shapes">Saving and Loading LFO Shapes<a class="headerlink" href="#saving-and-loading-lfo-shapes" title="Permanent link">&para;</a></h3>
+<p>Click the <strong>disk button</strong> to open the LFO shape file menu. From here you can:</p>
+<ul>
+<li>Browse and load factory LFO presets organized in categories (Basic, SC, Gate, Arp, Sequencer)</li>
+<li>Load a custom .mseg file</li>
+<li>Save the current shape as a .mseg file for later use</li>
+</ul>
+<p>Factory LFO shapes include useful starting points like Sine, Triangle, Saw, Square, ADSR, Side Chain, Trance Gate, and various arpeggio patterns.</p>
+<h2 id="envelopes-env-1-3">Envelopes (ENV 1-3)<a class="headerlink" href="#envelopes-env-1-3" title="Permanent link">&para;</a></h2>
+<p>In addition to the main ADSR and the two filter envelopes, the synth provides <strong>three modulation envelopes</strong> (ENV 1, ENV 2, ENV 3). These are general-purpose ADSR envelopes that can be routed to any modulatable parameter through the modulation matrix.</p>
+<p>Each envelope has:</p>
+<ul>
+<li><strong>A</strong> (Attack) — (Default: 0.01s)</li>
+<li><strong>D</strong> (Decay) — (Default: 0.1s)</li>
+<li><strong>S</strong> (Sustain) — (Default: 80%)</li>
+<li><strong>R</strong> (Release) — (Default: 0.1s)</li>
+<li><strong>Depth</strong> — Scales the envelope's output before it reaches the modulation destination. Supports bipolar values. (Default: 1.0)</li>
+<li><strong>Retrig</strong> — Retrigger on legato notes (only visible in mono mode with glide enabled).</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Use ENV 1 to modulate the wavetable position of OSC 1 for sounds that evolve over the duration of each note. Set a slow attack and decay with zero sustain for a gradual timbral sweep.</p>
+</blockquote>
+<h2 id="modulation">Modulation<a class="headerlink" href="#modulation" title="Permanent link">&para;</a></h2>
+<p>The Wavetable synth features a comprehensive <strong>modulation matrix</strong> that lets you connect any modulation source to nearly any parameter.</p>
+<h3 id="modulation-sources">Modulation Sources<a class="headerlink" href="#modulation-sources" title="Permanent link">&para;</a></h3>
+<p>The available modulation sources are:</p>
+<ul>
+<li><strong>LFO 1-4</strong> — The four MSEG-based LFOs</li>
+<li><strong>ENV 1-3</strong> — The three modulation envelopes</li>
+<li><strong>Filter Envelope 1-2</strong> — The two filter ADSR envelopes</li>
+<li><strong>ADSR</strong> — The main amplitude envelope</li>
+<li><strong>Macro 1-4</strong> — Four user-assignable macro knobs</li>
+<li><strong>MPE Pressure</strong> — Aftertouch from MPE controllers</li>
+<li><strong>MPE Timbre</strong> — Timbre (slide) from MPE controllers</li>
+<li><strong>MPE Pitch Bend</strong> — Per-note pitch bend from MPE controllers</li>
+<li><strong>Pitch Bend</strong> — Standard pitch bend</li>
+<li><strong>Mod Wheel</strong> — MIDI CC 1</li>
+<li><strong>MIDI Note Number</strong> — The pitch of the note being played</li>
+<li><strong>MIDI Velocity</strong> — How hard the note was played</li>
+<li><strong>CC 0-119</strong> — Any standard MIDI CC message</li>
+</ul>
+<h3 id="using-the-modulation-matrix">Using the Modulation Matrix<a class="headerlink" href="#using-the-modulation-matrix" title="Permanent link">&para;</a></h3>
+<p>The bottom of the interface has two tabs: <strong>SRC</strong> and <strong>MTX</strong>.</p>
+<p>The <strong>SRC</strong> tab shows all available modulation sources. Each source has a drag handle you can use to assign it to parameters.</p>
+<p>The <strong>MTX</strong> tab shows the full modulation matrix, listing all active routings with their source, destination, and depth. This is the place to go for an overview of all your modulation assignments.</p>
+<h3 id="toolbar-modulation-sources">Toolbar Modulation Sources<a class="headerlink" href="#toolbar-modulation-sources" title="Permanent link">&para;</a></h3>
+<p>The toolbar row between the oscillator/filter area and the LFO area shows six commonly used modulation sources with quick-access controls: <strong>Mod Wheel</strong>, <strong>MPE Pressure</strong>, <strong>MPE Timbre</strong>, <strong>MPE Pitch Bend</strong>, <strong>Note #</strong>, and <strong>Velocity</strong>. Each one has a modulation source button and a depth slider for quickly assigning them to parameters.</p>
+<h2 id="macros">Macros<a class="headerlink" href="#macros" title="Permanent link">&para;</a></h2>
+<p>The <strong>Macros</strong> panel provides <strong>four assignable macro knobs</strong> (Macro 1 through Macro 4). Each macro is a modulation source that you can route to multiple parameters at once, giving you a single knob that controls several things simultaneously.</p>
+<p>You can rename each macro by clicking on its label and typing a new name. This makes it easy to remember what each macro does in a given preset.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Macros are great for performance. Set up a "Brightness" macro that controls filter cutoff, wavetable position, and LFO depth all at once. Then you only need to move one knob during a live performance.</p>
+</blockquote>
+<h2 id="effects">Effects<a class="headerlink" href="#effects" title="Permanent link">&para;</a></h2>
+<p>The Wavetable synth includes a built-in <strong>effects chain</strong> with eight effect slots. Toggle between the filter/oscillator view and the effects view using the <strong>Filter</strong> and <strong>FX</strong> buttons on the toolbar.</p>
+<p>The effects can be <strong>reordered by dragging</strong> their headers left or right. The signal flows through them from left to right, so order matters.</p>
+<h3 id="gate">Gate<a class="headerlink" href="#gate" title="Permanent link">&para;</a></h3>
+<p>A rhythmic gate effect that chops the signal on and off in a pattern.</p>
+<p><strong>Beat</strong> — The tempo-synced rate of the gate pattern. (Default: 1/8 note)</p>
+<p><strong>Length</strong> — Number of active steps, from 2 to 16. (Default: 8)</p>
+<p><strong>Attack</strong> — How quickly the gate opens. (Default: 0.01s)</p>
+<p><strong>Release</strong> — How quickly the gate closes. (Default: 0.1s)</p>
+<p><strong>Mix</strong> — Wet/dry blend. (Default: 100%)</p>
+<p>The step sequencer display shows left and right channel patterns. Click steps to toggle them on and off.</p>
+<h3 id="chorus">Chorus<a class="headerlink" href="#chorus" title="Permanent link">&para;</a></h3>
+<p>Adds width and movement by mixing delayed, pitch-modulated copies of the signal.</p>
+<p><strong>Delay</strong> — Base delay time in milliseconds. (Default: 1 ms)</p>
+<p><strong>Speed</strong> — Modulation rate in Hz. (Default: 3 Hz)</p>
+<p><strong>Depth</strong> — Modulation depth in milliseconds. (Default: 1 ms)</p>
+<p><strong>Width</strong> — Stereo width of the chorus effect. (Default: 0.5)</p>
+<p><strong>Mix</strong> — Wet/dry blend. (Default: 0.5)</p>
+<h3 id="distortion">Distortion<a class="headerlink" href="#distortion" title="Permanent link">&para;</a></h3>
+<p>The distortion slot offers <strong>ten different modes</strong>, selectable from the dropdown menu in the header:</p>
+<p><strong>Simple</strong> — Basic waveshaping distortion with a single Amount control. (Default mode)</p>
+<p><strong>Light, Medium, Hard, Clip, Tube, Fuzz</strong> — Six flavors of drive-based distortion, each with:
+- <strong>Drive</strong> — Amount of distortion. (Default: 0)
+- <strong>Post Gain</strong> — Output level after distortion. (Default: 1.0)
+- <strong>Tone</strong> — Brightness control. (Default: 1.0)
+- <strong>Emphasis</strong> — Pre-distortion EQ emphasis. (Default: 0.25)</p>
+<p><strong>Bitcrusher</strong> — Sample rate and bit depth reduction for lo-fi effects:
+- <strong>Rate</strong> — Sample rate reduction. (Default: 0.5)
+- <strong>Rez</strong> — Bit depth reduction. (Default: 0.5)
+- <strong>Hard</strong> — Hardness of the quantization. (Default: 0.8)
+- <strong>Mix</strong> — Wet/dry blend. (Default: 1.0)</p>
+<p><strong>Fire Amp</strong> — Amp simulation with a bright, aggressive character:
+- <strong>Gain</strong> — Input gain. (Default: 0.5)
+- <strong>Tone</strong> — Brightness. (Default: 0.5)
+- <strong>Output</strong> — Output level. (Default: 0.8)
+- <strong>Mix</strong> — Wet/dry blend. (Default: 1.0)</p>
+<p><strong>Grind Amp</strong> — Amp simulation with a heavier, grinding character:
+- <strong>Gain</strong> — Input gain. (Default: 0.5)
+- <strong>Tone</strong> — Brightness. (Default: 0.5)
+- <strong>Output</strong> — Output level. (Default: 0.8)
+- <strong>Mix</strong> — Wet/dry blend. (Default: 1.0)</p>
+<h3 id="delay">Delay<a class="headerlink" href="#delay" title="Permanent link">&para;</a></h3>
+<p>A stereo delay effect with tempo sync.</p>
+<p><strong>Sync</strong> — Enables tempo sync. When on, the delay time is set by a note duration. (Default: Off)</p>
+<p><strong>Delay</strong> — Delay time. When Sync is off, this is in seconds (0-120s). When Sync is on, this becomes a note duration selector. (Default: 1s / 1/4 note)</p>
+<p><strong>FB</strong> — Feedback in dB. Higher values create more repeats. (Default: -10 dB)</p>
+<p><strong>CF</strong> — Cross-feedback in dB. Feeds the left delay into the right and vice versa for ping-pong effects. (Default: -100 dB, essentially off)</p>
+<p><strong>Mix</strong> — Wet/dry blend. (Default: 0.5%)</p>
+<h3 id="reverb">Reverb<a class="headerlink" href="#reverb" title="Permanent link">&para;</a></h3>
+<p>The reverb slot offers two modes, selectable from the dropdown menu:</p>
+<p><strong>Plate Reverb</strong> — A classic plate-style reverb:
+- <strong>Size</strong> — Room size. (Default: 0.6)
+- <strong>Decay</strong> — How long the reverb tail lasts. (Default: 0.3)
+- <strong>Lowpass</strong> — High frequency damping cutoff. (Default: 10000 Hz)
+- <strong>Damping</strong> — Additional high frequency absorption. (Default: 10000 Hz)
+- <strong>Predelay</strong> — Delay before reverb begins. (Default: 0)
+- <strong>Mix</strong> — Wet/dry blend. (Default: 0)</p>
+<p><strong>Natural Reverb</strong> — A more realistic room-style reverb (Default mode):
+- <strong>Predelay</strong> — Delay before reverb begins. (Default: 0)
+- <strong>Size</strong> — Room size. (Default: 0.5)
+- <strong>Decay</strong> — Reverb tail length. (Default: 0.2)
+- <strong>Density</strong> — Controls the density of early reflections. (Default: 0.8)
+- <strong>Diffusion</strong> — Smoothness of the reverb tail. (Default: 0.8)
+- <strong>Mix</strong> — Wet/dry blend. (Default: 0.5)</p>
+<h3 id="eq">EQ<a class="headerlink" href="#eq" title="Permanent link">&para;</a></h3>
+<p>A three-band parametric equalizer for final tonal shaping.</p>
+<p>Each band has:
+- <strong>Freq</strong> — Center frequency in Hz. (Defaults: 100 Hz, 1500 Hz, 8000 Hz)
+- <strong>Gain</strong> — Boost or cut in dB, from -20 to +20. (Default: 0 dB)</p>
+<h3 id="filter-fx">Filter (FX)<a class="headerlink" href="#filter-fx" title="Permanent link">&para;</a></h3>
+<p>A global filter effect (separate from the per-voice filters). It offers the same eight filter types as the per-voice filters plus three additional types:</p>
+<ul>
+<li>Lowpass 12, Lowpass 24, Highpass 12, Highpass 24, Bandpass 12, Bandpass 24, Notch 12, Notch 24</li>
+<li><strong>Low shelf</strong> — Boosts or cuts below the cutoff</li>
+<li><strong>High shelf</strong> — Boosts or cuts above the cutoff</li>
+<li><strong>Peak</strong> — Boosts or cuts a narrow band around the cutoff</li>
+</ul>
+<p><strong>Frequency</strong> — Cutoff frequency. (Default: ~523 Hz)</p>
+<p><strong>Q</strong> — Resonance / bandwidth. (Default: 0.707)</p>
+<p><strong>Gain</strong> — Boost/cut in dB. Only active for shelf and peak types. (Default: 0 dB)</p>
+<h3 id="limiter">Limiter<a class="headerlink" href="#limiter" title="Permanent link">&para;</a></h3>
+<p>A dynamics limiter at the end of the effects chain to prevent clipping.</p>
+<p><strong>Attack</strong> — How quickly the limiter responds. (Default: 0 ms)</p>
+<p><strong>Release</strong> — How quickly the limiter recovers. (Default: 5 ms)</p>
+<p><strong>Threshold</strong> — Level at which limiting begins. (Default: -3 dB)</p>
+<p><strong>Output</strong> — Output gain after limiting. (Default: 0 dB)</p>
+<h2 id="arpeggiator">Arpeggiator<a class="headerlink" href="#arpeggiator" title="Permanent link">&para;</a></h2>
+<p>The built-in <strong>Arpeggiator</strong> takes the notes you hold and plays them back as a pattern. Toggle between the Global and Arp views using the <strong>GLOBAL</strong> and <strong>ARP</strong> tabs.</p>
+<p><strong>Enable</strong> — Turns the arpeggiator on or off. (Default: Off)</p>
+<p><strong>Mode</strong> — The arpeggio pattern:
+- Up
+- Down
+- Cascade
+- Alt 1
+- Alt 2
+- Random
+- Chord 1 Octave
+- Chord All Octaves</p>
+<p>(Default: Up)</p>
+<p><strong>Speed</strong> — The rate of the arpeggio, synced to host tempo.</p>
+<p><strong>Gate</strong> — Note length as a percentage, from 25% to 400%. Values over 100% create overlapping notes. (Default: 100%)</p>
+<p><strong>Octave</strong> — Number of octaves to span, from 1 to 10. (Default: 1)</p>
+<p><strong>Rand Pos</strong> — Randomizes note position in the pattern. (Default: 0)</p>
+<p><strong>Rand Len</strong> — Randomizes note length. (Default: 0)</p>
+<p><strong>Rand Vel</strong> — Randomizes note velocity. (Default: 0)</p>
+<p><strong>Swing</strong> — Adds swing feel by delaying every other note. (Default: 0)</p>
+<h2 id="global-settings">Global Settings<a class="headerlink" href="#global-settings" title="Permanent link">&para;</a></h2>
+<p>The <strong>Global</strong> panel controls settings that affect the entire synthesizer.</p>
+<p><strong>Level</strong> — Master output volume in dB. (Default: 0 dB)</p>
+<p><strong>Mono</strong> — Switches between polyphonic and monophonic playback. (Default: Off / polyphonic)</p>
+<p><strong>Glide</strong> — Glide mode, controlling how notes transition when playing legato:
+- <strong>Off</strong> — No glide
+- <strong>Glissando</strong> — Steps between notes in semitones
+- <strong>Portamento</strong> — Smooth, continuous pitch slide</p>
+<p>(Default: Off)</p>
+<p><strong>Time</strong> — Glide time in seconds. Only active when Glide is not Off. (Default: 0.3s)</p>
+<p><strong>Legato</strong> — When enabled in mono mode with glide, new notes that overlap don't retrigger envelopes. Only active when Glide is enabled. (Default: Off)</p>
+<p><strong>Voices</strong> — Maximum number of simultaneous voices, from 2 to 40. Lower values save CPU. (Default: 40)</p>
+<p><strong>PB Range</strong> — Pitch bend range in semitones, from 0 to 48. Disabled when MPE mode is active (MPE uses its own pitch bend range). (Default: 2)</p>
+<h2 id="mpe-support">MPE Support<a class="headerlink" href="#mpe-support" title="Permanent link">&para;</a></h2>
+<p>The Wavetable synth fully supports <strong>MIDI Polyphonic Expression (MPE)</strong>. When MPE is enabled, each note can independently respond to pressure, timbre (slide), and per-note pitch bend from MPE controllers like the Roli Seaboard or Linnstrument.</p>
+<p>MPE Pressure, MPE Timbre, and MPE Pitch Bend are all available as modulation sources in the modulation matrix.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> When MPE mode is active, the global Pitch Bend Range control is disabled since MPE controllers manage pitch bend range independently.</p>
+</blockquote>
+<h2 id="presets">Presets<a class="headerlink" href="#presets" title="Permanent link">&para;</a></h2>
+<p>The Wavetable synth ships with a library of factory presets covering a range of sounds including basses, leads, pads, arps, and sound design. You can browse presets using the preset browser in the top bar of the plugin.</p>
+<p>Factory presets include sounds like 808 Over, Super Saw, FM Bass, Ambient Trails, String Evolution, Vocal Chops, and many more.</p>
+<p>To save your own presets, use the preset menu. User presets are stored in:</p>
+<ul>
+<li><strong>macOS:</strong> ~/Library/Application Support/Tracktion/Wavetable/programs/</li>
+<li><strong>Windows:</strong> %APPDATA%/Tracktion/Wavetable/programs/</li>
+<li><strong>Linux:</strong> ~/.config/Tracktion/Wavetable/programs/</li>
+</ul>
+<p>The synth also supports <strong>undo and redo</strong> for parameter changes, accessible from the toolbar buttons.</p>
+<h2 id="things-to-watch-out-for">⚡ Things to Watch Out For<a class="headerlink" href="#things-to-watch-out-for" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Unison voice count and CPU.</strong> Each unison voice on each oscillator multiplies the CPU cost. If you have both oscillators set to 8 unison voices, that's 16 oscillators per note. With 40-voice polyphony, that can add up fast. I recommend keeping unison under 5 for most situations, and reducing the voice count in the Global settings if you're using heavy unison.</p>
+</li>
+<li>
+<p><strong>Filter envelope amount at zero.</strong> If the filter envelope Amount knob is set to zero, the filter's ADSR controls are disabled and grayed out. If you're wondering why your filter envelope isn't doing anything, check the Amount knob first.</p>
+</li>
+<li>
+<p><strong>User wavetable sizes.</strong> When importing a .wav file that doesn't contain wavetable metadata, you'll need to specify the correct table size. If the size is wrong, the wavetable frames won't line up correctly and the sound will be off. Common sizes are 2048 (most wavetables from Serum, Vital, etc.) and 256 (for simpler, single-cycle waveforms).</p>
+</li>
+<li>
+<p><strong>FX order matters.</strong> The effects chain processes from left to right. Placing distortion before reverb gives a very different result than reverb before distortion. You can drag effect headers to reorder them.</p>
+</li>
+<li>
+<p><strong>Serial vs. parallel filter routing.</strong> In serial mode, the Filter Mix knob is disabled because the entire output of Filter 1 passes through Filter 2. If you're expecting to blend between the two filters and nothing seems to change, check that you're in Parallel mode.</p>
+</li>
+</ul>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>The Wavetable synthesizer covers a lot of ground, from thick analog-style basses to complex, evolving textures. The combination of wavetable oscillators, deep modulation, and a flexible effects chain means you can build most synthesized sounds without leaving the plugin. Start with one of the factory presets to get a feel for what's possible, then dig into the modulation matrix to make sounds your own.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3060 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/built-in-effects-plugins/">
+      
+      
+        <link rel="prev" href="../plugin-side-panel/">
+      
+      
+        <link rel="next" href="../utility-plugins/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Built-in Effects Plugins - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#built-in-effects-plugins" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Built-in Effects Plugins
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantizing MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Side Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#waveform-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Waveform Effects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume-pan-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Volume &amp; Pan Plugin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-meter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level Meter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equalisers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equalisers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reverbs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delay
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chorus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chorus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phaser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phaser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamics-compressor-gate-and-limiter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dynamics: Compressor, Gate, and Limiter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distortion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distortion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pitch-shifter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pitch Shifter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dj-eq-and-dj-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DJ EQ and DJ Filter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dj-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DJ Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text Plugin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guitar-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guitar IR
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guitar IR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dual-guitar-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dual Guitar IR
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artisan-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Artisan Collection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#master-mix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Master Mix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saving Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#waveform-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Waveform Effects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume-pan-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Volume &amp; Pan Plugin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-meter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level Meter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equalisers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equalisers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reverbs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delay
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chorus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chorus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phaser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phaser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamics-compressor-gate-and-limiter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dynamics: Compressor, Gate, and Limiter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distortion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distortion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pitch-shifter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pitch Shifter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dj-eq-and-dj-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DJ EQ and DJ Filter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dj-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DJ Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text Plugin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guitar-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guitar IR
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guitar IR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dual-guitar-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dual Guitar IR
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artisan-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Artisan Collection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#master-mix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Master Mix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saving Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="built-in-effects-plugins">Built-in Effects Plugins<a class="headerlink" href="#built-in-effects-plugins" title="Permanent link">&para;</a></h1>
+<p>The Waveform built-in effects are really quite simple. They act as
+plugins that you can combine to build up more complex effects chains in
+the mixer, or within plugin racks. While we won't touch on every single
+effect here, we will go over the essential ones. Let's get started.</p>
+<h2 id="waveform-effects">Waveform Effects<a class="headerlink" href="#waveform-effects" title="Permanent link">&para;</a></h2>
+<p>Drag the plugin object to the mixer and select <em>Waveform Plugins.</em>
+You'll see the list of built-in effects.</p>
+<p><img alt="" src="../images/30----01.png" /></p>
+<p><em>Built-in Plugin Effects in Waveform</em></p>
+<p>In this chapter, we will go into more detail about the plugins
+hightailed in the image above. The other effects provide specialized
+functions, or are not typical audio effects. We'll get into some of
+those in later chapters.</p>
+<h2 id="volume-pan-plugin">Volume &amp; Pan Plugin<a class="headerlink" href="#volume-pan-plugin" title="Permanent link">&para;</a></h2>
+<p>Whenever you create a track, you will see a <em>Volume &amp; Pan</em> plugin at the
+right in the mixer section. This gives you basic level and pan controls
+like you'd expect to find on any mixer channel. Since the Waveform mixer
+is made up of plugins, the <em>Volume &amp; Pan</em> plugin can be moved before
+other plugins or deleted entirely. You can even add another <em>Volume &amp;
+Pan</em> and use it as a trim control for gain staging.</p>
+<p>Adjusting Volume
+- To control volume, click and drag the volume slider up and down. A
+    large volume slider appears as drag giving you nice readable dB
+    markings for fine level adjustment. The numeric value for <em>Volume</em>
+    setting appears in properties.</p>
+<p><img alt="" src="../images/30----02.png" /></p>
+<p><em>Volume &amp; Pan Plugin, Adjusting Volume</em></p>
+<p>Adjusting Panning
+- The pan adjustment works similarly. Click the panner graphic then
+    drag left or right to adjust left to right stereo positioning.</p>
+<p><img alt="" src="../images/30----03.png" /></p>
+<p><em>Volume &amp; Pan Plugin, Adjusting Panning</em></p>
+<p>Resetting Controls
+- To reset either <em>Volume</em> or <em>Pan</em> to their default position, hold
+    down Opt / Alt as you click the control.</p>
+<p>Properties
+- With a <em>Volume &amp; Pan</em> plugin selected its values and actions appear
+    in properties.</p>
+<p><img alt="" src="../images/30----04.png" /></p>
+<p><em><em>Volume &amp; Pan</em> Plugin properties</em></p>
+<p>The <em>Volume</em> slider is repeated in properties along with buttons for
+<em>Reset</em> and <em>Mute</em>. <em>Pan</em> is repeated in properties along with a <em>Centre
+Panning</em> button that resets panning.</p>
+<p>Pan Law
+- The properties also include a setting for <em>Pan Law</em>. By default this is
+    set to <em>Linear</em> but you can change it to other popular formats. For
+    example, many DAWs use a -3 dB pan law so that as you pan to the
+    center it lowers the volume slightly to make it easier to keep a
+    track in balance as you adjusting panning.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> To apply a velocity offset to notes going into a virtual
+instruments, insert a <em>Volume &amp; Pan</em> plugin before it and enable <em>Apply
+to MIDI velocities</em>. Adjust the fader to offset MIDI velocity to
+increase or reduce the velocity. This is a quick way make your MIDI
+drums hit harder - much easier than going back to editing the MIDI data.
+This only works if you insert <em>Volume &amp; Pan</em> ahead (to the left) of the
+virtual instrument.</p>
+</blockquote>
+<h2 id="level-meter">Level Meter<a class="headerlink" href="#level-meter" title="Permanent link">&para;</a></h2>
+<p>The <em>Level Meter</em> plugin is also at the right end of the mixer for every
+track by default. <em>Level Meter</em> is stereo and shows what the left and
+right levels are doing.</p>
+<p><img alt="" src="../images/30----05.png" /></p>
+<p><em>Level Meter Plugin</em></p>
+<p>When you select a <em>Level Meter</em>, its properties display a large horizontal
+version of the meter, that also includes dB markings.</p>
+<p><img alt="" src="../images/30----07.png" /></p>
+<p><em>Large Meter in properties</em></p>
+<p>The meter indicates signal overload with a red indicator at the top of
+the meter. You can reset the meter by clicking the red overload
+indicator.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> To clear all overload indicators in the Edit, right-click any
+level meter and choose <em>Reset all overload indicators</em> ( Backslash ).</p>
+</blockquote>
+<p>By default the <em>Level Meter</em> is set to peak mode. This is typical of the
+metering in most DAWs. You may change the meter mode in properties or
+from the right-click menu. Here is an explanation of each of the modes:</p>
+<p><img alt="" src="../images/30----06.png" /></p>
+<p><em>Meter Modes for the </em>Level Meter<em> Plugin</em></p>
+<p>Peak Mode
+- Peak mode shows the digital peak. This is the normal mode for
+    Waveform and most other DAWs. From a technical point of view, you
+    want to keep this out of the red to prevent ugly digital clipping.</p>
+<p>RMS Mode
+- To get a sense of the overall perceived volume your signal, try RMS
+    mode; it emulates the response of legacy VU meters and gives you a
+    better indication of how loud one track is perceived, compared to
+    others.</p>
+<p>Sum &amp; Difference Mode
+- <em>Sum &amp; difference</em> is a specialized mode that gives you a visual
+    representation of both the level and the stereo spread. The left
+    part of the meter shows the level of sum of left plus right. This
+    represents the combined level of the stereo signal.</p>
+<p>The right side of the meter shows the difference between left and right.
+The more difference you see the wider the stereo spread between the two
+channels. This gives you a visual indication of stereo spread. If both
+channels are playing exactly the same thing, then left minus right will
+cancel to zero and the right side of the meter will show no activity: a
+mono signal.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> The level meter will also indicate MIDI activity if you enable
+<em>Show MIDI activity</em> in properties. This can be a very useful diagnostic
+if you ever wonder why a virtual instrument is not triggering.</p>
+</blockquote>
+<p><img alt="" src="../images/30----08.png" /></p>
+<p><em>Level Meter, </em>Show MIDI activity**</p>
+<h2 id="equalisers">Equalisers<a class="headerlink" href="#equalisers" title="Permanent link">&para;</a></h2>
+<p>Waveform's equalisers come in three sizes — <em>1-Band</em>, <em>3-Band</em>, and
+<em>8-Band</em> — so you can reach for exactly as much EQ as the job needs. Each
+one has a graphical frequency-response display in properties where you
+drag nodes to shape the sound: drag a node up or down for <em>Gain</em>, left or
+right for <em>Frequency</em>, and around the node to set its <em>Q</em> (width).</p>
+<p><em>1-Band Equaliser</em> is the smallest — a single band you can set to a bell
+or a shelf. It's perfect for a quick surgical cut or a gentle tone tweak
+without the clutter of a full EQ.</p>
+<p><img alt="" src="../images/Audio%20FX/1-Band%20EQ%402x.png" /></p>
+<p><em>The 1-Band Equaliser</em></p>
+<p><em>3-Band Equaliser</em> gives you a low shelf, a sweepable mid bell, and a
+high shelf — the classic three-band tone stack. Set the <em>Frequency</em> and
+<em>Gain</em> of each band by dragging its node.</p>
+<p><img alt="" src="../images/Audio%20FX/3-Band%20EQ%402x.png" /></p>
+<p><em>The 3-Band Equaliser</em></p>
+<p><em>8-Band Equaliser</em> is the full parametric EQ. It has eight bands — a low
+shelf, six peaking bands, and a high shelf — each with its own
+<em>Frequency</em>, <em>Gain</em>, and <em>Q</em>, and each able to be switched on or off
+individually. It also offers a <em>Stereo</em> or <em>Mid/Side</em> mode: in <em>Mid/Side</em>
+mode you equalise the centre (mono) and the sides (stereo) of the signal
+independently, which is handy for mastering and stereo-width work.</p>
+<p><img alt="" src="../images/Audio%20FX/8-Band%20EQ%402x.png" /></p>
+<p><em>The 8-Band Equaliser</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The older <em>4-Band Equalizer</em> from earlier versions now lives
+in the <em>Legacy</em> folder. See the <em>Legacy Plugins</em> chapter if you need it to
+open an old project.</p>
+</blockquote>
+<h2 id="reverbs">Reverbs<a class="headerlink" href="#reverbs" title="Permanent link">&para;</a></h2>
+<p>Waveform includes three algorithmic reverbs, each tuned for a different
+kind of space: <em>Natural Reverb</em>, <em>Plate Reverb</em>, and <em>Non-linear Reverb</em>.
+They share the same set of controls, so once you learn one you know them
+all.</p>
+<ul>
+<li><em>Natural Reverb</em> models real rooms and halls — the go-to for adding
+  believable depth and ambience to a track.</li>
+<li><em>Plate Reverb</em> recreates the bright, dense sound of a classic studio
+  plate, a long-time favourite on vocals and snares.</li>
+<li><em>Non-linear Reverb</em> is a gated/non-linear effect whose tail cuts off
+  abruptly rather than fading away — the big drum sound of the '80s.</li>
+</ul>
+<p><img alt="" src="../images/Audio%20FX/Natural%20Reverb%402x.png" /></p>
+<p><em>The Natural Reverb</em></p>
+<p><img alt="" src="../images/Audio%20FX/Plate%20Reverb%402x.png" /></p>
+<p><em>The Plate Reverb</em></p>
+<p><img alt="" src="../images/Audio%20FX/Non-linear%20Reverb%402x.png" /></p>
+<p><em>The Non-linear Reverb</em></p>
+<p>The controls are:</p>
+<ul>
+<li><em>Pre Delay</em> — a short gap before the reverb starts, which helps keep the
+  dry signal clear and present.</li>
+<li><em>Size</em> — the dimensions of the simulated space, from a small room to a
+  large hall.</li>
+<li><em>Decay</em> — how long the tail takes to fade out.</li>
+<li><em>Density</em> and <em>Diffusion</em> — the thickness and smoothness of the reverb
+  tail.</li>
+<li><em>Low Cut</em> / <em>High Cut</em> — filters that trim the bottom and top off the
+  reverb.</li>
+<li><em>Low Damp</em> / <em>High Damp</em> — how quickly low and high frequencies die away
+  in the tail, for a warmer or brighter sound.</li>
+<li><em>Slope</em> — (<em>Natural</em> and <em>Plate</em>) tilts the overall tonal balance of the
+  tail.</li>
+<li><em>Pan</em> — positions the reverb in the stereo field.</li>
+<li><em>Mix</em> — blends the wet reverb against the dry signal.</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Assign <em>Mix</em> as the quick control parameter so you can dial
+reverb in and out while mixing. More reverb pushes a track further back;
+less brings it forward. Combine that with left and right panning for more
+spacious mixes.</p>
+</blockquote>
+<h2 id="delay">Delay<a class="headerlink" href="#delay" title="Permanent link">&para;</a></h2>
+<p>The <em>Delay</em> is a full stereo, ping-pong-capable delay with completely
+independent left and right channels. Each side has its own delay time,
+feedback, cross-feedback, pan, and trim, so you can build everything from
+a simple slapback to wide bouncing stereo echoes.</p>
+<p><img alt="" src="../images/Audio%20FX/Delay%402x.png" /></p>
+<p><em>The Delay</em></p>
+<p>For each channel (<em>L</em> and <em>R</em>):</p>
+<ul>
+<li><em>Delay</em> — the delay time in milliseconds, or, with <em>Sync</em> on, locked to
+  a musical note value at the project tempo.</li>
+<li><em>Feedback</em> — how much of the delayed signal is fed back into itself to
+  create repeats.</li>
+<li><em>Cross FB</em> — cross-feedback, which sends each channel's echoes into the
+  other side. This is what creates the classic ping-pong bounce.</li>
+<li><em>Pan</em> and <em>Trim</em> — the position and level of that channel's output.</li>
+</ul>
+<p>The shared controls are:</p>
+<ul>
+<li><em>Sync</em> — switches the delay times between free milliseconds and
+  tempo-locked note values.</li>
+<li><em>Low Cut</em> / <em>High Cut</em> — filters in the feedback path, so the repeats get
+  progressively darker (or brighter) as they fade.</li>
+<li><em>Mix</em> — the balance of wet delay against the dry signal.</li>
+</ul>
+<blockquote>
+<p>📝 <strong>Note:</strong> The original simple mono <em>Delay</em> now lives in the <em>Legacy</em>
+folder.</p>
+</blockquote>
+<h2 id="chorus">Chorus<a class="headerlink" href="#chorus" title="Permanent link">&para;</a></h2>
+<p>The <em>Chorus</em> plugin gives you that classic shimmering, doubling effect —
+great on guitars, pads, electric pianos, bass, and vocals. It works by
+modulating a short delay so the pitch drifts gently up and down.</p>
+<p><img alt="" src="../images/Audio%20FX/Chorus%402x.png" /></p>
+<p><em>The Chorus</em></p>
+<ul>
+<li><em>Mode</em> — <em>Normal</em>, <em>Wide</em>, or <em>Wider</em>, setting how far the effect spreads
+  across the stereo field.</li>
+<li><em>Delay</em> — the base delay time the modulation works around.</li>
+<li><em>Depth</em> — how far the delay is modulated; more depth means a stronger,
+  more obvious warble.</li>
+<li><em>Rate</em> — the speed of the modulation, or, with <em>Sync</em> on, a <em>Note</em> value
+  locked to the tempo.</li>
+<li><em>Sync</em> — switches <em>Rate</em> between free Hz and tempo-locked note values.</li>
+<li><em>Mix</em> — the blend of dry and chorused signal.</li>
+</ul>
+<blockquote>
+<p>📝 <strong>Note:</strong> The older <em>Chorus</em> lives in the <em>Legacy</em> folder. The two share
+a name, but the new one — in the <em>Effects</em> folder — is the default.</p>
+</blockquote>
+<h2 id="phaser">Phaser<a class="headerlink" href="#phaser" title="Permanent link">&para;</a></h2>
+<p>A phaser gives you that instantly recognisable swirling, sweeping motion —
+popular on guitars, synths, and electric pianos, or any track that needs
+some movement. It works by sweeping a set of notches up and down through
+the frequency spectrum.</p>
+<p><img alt="" src="../images/Audio%20FX/Phaser%402x.png" /></p>
+<p><em>The Phaser</em></p>
+<ul>
+<li><em>Stages</em> — the number of filter stages (4 to 12); more stages give a
+  richer, more pronounced sweep.</li>
+<li><em>Floor</em> and <em>Ceiling</em> — the lowest and highest frequencies the sweep
+  travels between.</li>
+<li><em>Rate</em> — the speed of the sweep, or a tempo-locked <em>Note</em> value with
+  <em>Sync</em> on.</li>
+<li><em>Sync</em> — switches <em>Rate</em> between free Hz and tempo-locked note values.</li>
+<li><em>Feedback</em> — feeds the output back to intensify the resonant peaks for a
+  more dramatic effect.</li>
+<li><em>Mix</em> — the blend of dry and phased signal.</li>
+</ul>
+<blockquote>
+<p>📝 <strong>Note:</strong> The older <em>Phaser</em> lives in the <em>Legacy</em> folder.</p>
+<p>💡 <strong>Tip:</strong> As you work with effects you can easily change the order of
+effects on any track by grabbing the plugin and dragging it left or
+right. As you drag, a red drop target will glow in the spot where the
+effect will be inserted when you drop it.</p>
+</blockquote>
+<h2 id="dynamics-compressor-gate-and-limiter">Dynamics: Compressor, Gate, and Limiter<a class="headerlink" href="#dynamics-compressor-gate-and-limiter" title="Permanent link">&para;</a></h2>
+<p>Waveform's dynamics processing is split into three focused plugins, each
+doing one job well.</p>
+<p><strong>Compressor</strong> evens out the level of a signal by turning down anything
+that rises above a threshold.</p>
+<p><img alt="" src="../images/Audio%20FX/Compressor%402x.png" /></p>
+<p><em>The Compressor</em></p>
+<ul>
+<li><em>Threshold</em> — the level above which compression starts.</li>
+<li><em>Ratio</em> — how hard the signal is turned down once it crosses the
+  threshold.</li>
+<li><em>Attack</em> and <em>Release</em> — how quickly the compressor reacts, and then
+  recovers once the signal falls back below the threshold.</li>
+<li><em>Knee</em> — softens the transition around the threshold for a gentler, more
+  transparent action.</li>
+<li><em>Output gain</em> — make-up gain to bring the level back up after
+  compression.</li>
+<li><em>Sidechain gain</em> — trims the level of an external sidechain. Route
+  another track into the <em>Compressor</em>'s sidechain input to make it duck —
+  for example, a kick drum pumping a bass line.</li>
+</ul>
+<p><strong>Gate</strong> does the opposite — it turns the signal <em>down</em> when it falls
+<em>below</em> the threshold, silencing quiet passages, bleed, or hiss between
+notes.</p>
+<p><img alt="" src="../images/Audio%20FX/Gate%402x.png" /></p>
+<p><em>The Gate</em></p>
+<ul>
+<li><em>Threshold</em> — the level below which the gate closes.</li>
+<li><em>Attack</em> — how fast the gate opens when the signal returns.</li>
+<li><em>Hold</em> — how long it stays open after the signal drops.</li>
+<li><em>Release</em> — how fast it closes again.</li>
+</ul>
+<p><strong>Limiter</strong> is a brick-wall limiter that stops the signal from ever
+exceeding a set ceiling — ideal on the master bus to catch peaks and
+maximise loudness.</p>
+<p><img alt="" src="../images/Audio%20FX/Limiter%402x.png" /></p>
+<p><em>The Limiter</em></p>
+<ul>
+<li><em>Gain</em> — drives the signal into the limiter; more gain means more
+  limiting and a louder result.</li>
+<li><em>Release</em> — how quickly the limiter recovers after catching a peak.</li>
+<li><em>Ceiling</em> — the absolute maximum output level; nothing passes above it.</li>
+</ul>
+<blockquote>
+<p>📝 <strong>Note:</strong> The classic combined <em>Compressor/Limiter</em> from earlier
+versions is now in the <em>Legacy</em> folder.</p>
+</blockquote>
+<h2 id="distortion">Distortion<a class="headerlink" href="#distortion" title="Permanent link">&para;</a></h2>
+<p><em>Distortion</em> adds harmonic grit and saturation, from gentle warmth to
+full-on fuzz.</p>
+<p><img alt="" src="../images/Audio%20FX/Distortion%402x.png" /></p>
+<p><em>The Distortion</em></p>
+<ul>
+<li><em>Type</em> — the flavour of distortion: <em>Light</em>, <em>Medium</em>, <em>Hard</em>, <em>Clip</em>,
+  <em>Tube</em>, or <em>Fuzz</em>.</li>
+<li><em>Drive</em> — how hard the signal is pushed into the distortion.</li>
+<li><em>Post Gain</em> — output level, to compensate for the volume change the
+  distortion adds.</li>
+<li><em>Tone</em> — shapes the brightness of the distorted sound.</li>
+<li><em>Emphasis</em> — sharpens the character of the distortion by emphasising
+  certain frequencies before the waveshaping.</li>
+<li><em>Mix</em> — blends the distorted signal with the dry input.</li>
+</ul>
+<h2 id="pitch-shifter">Pitch Shifter<a class="headerlink" href="#pitch-shifter" title="Permanent link">&para;</a></h2>
+<p>The <em>Pitch Shifter</em> plugin uses DSP processing to change the pitch of
+the signal in real time. For audio tracks, this uses the <em>Elastique Pro</em>
+algorithm, or whichever algorithm you select in the <em>Type</em> parameter.</p>
+<p><img alt="" src="../images/Audio%20FX/Pitch%20Shifter%402x.png" /></p>
+<p><em>The Waveform Pitch Shifter Plugin</em></p>
+<p><em>Pitch Shifter</em> is set in semi-tones; if you want to go up an octave,
+set <em>Pitch</em> to 12. If you want to go down one octave set it to -12. To
+reset back to the original pitch, select <em>Pitch</em> and type in zero.</p>
+<p><img alt="" src="../images/30----21.png" /></p>
+<p><strong>Pitch Shifter, Set Pitch</strong></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> You nay find it's usually a lot easier to control the <em>Pitch</em>
+value by typing in the digits than it is to use the slider.</p>
+<p>📝 <strong>Note:</strong> If you insert <em>Pitch Shifter</em> ahead of a MIDI instrument, it
+works on the MIDI data stream to transpose notes up or down by the value
+you set in the <em>Pitch</em> parameter.</p>
+</blockquote>
+<h2 id="dj-eq-and-dj-filter">DJ EQ and DJ Filter<a class="headerlink" href="#dj-eq-and-dj-filter" title="Permanent link">&para;</a></h2>
+<p><em>DJ EQ</em> and <em>DJ Filter</em> are two performance-oriented effects built for
+quick, hands-on tone sweeps.</p>
+<p><em>DJ EQ</em> is a three-band EQ with <em>Low</em>, <em>Mid</em>, and <em>High</em> faders that boost
+or fully cut each band — turn a band all the way down to kill it
+completely, the way a DJ drops the bass out of a track. Two crossover
+controls, <em>Freq 1</em> and <em>Freq 2</em>, set the frequencies where the bands
+divide.</p>
+<p><img alt="" src="../images/Audio%20FX/DJ%20EQ%402x.png" /></p>
+<p><em>The DJ EQ</em></p>
+<p><em>DJ Filter</em> is the classic single-knob DJ filter. The <em>Freq</em> control sits
+at <em>Off</em> in the centre: turn it left and a low-pass filter sweeps the
+highs away; turn it right and a high-pass filter sweeps the lows away. <em>Q</em>
+sets the resonance at the filter's edge, and <em>Mix</em> blends the result with
+the dry signal.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The simple <em>Low/High-Pass Filter</em> from earlier versions now
+lives in the <em>Legacy</em> folder. For everyday filtering reach for the <em>1-Band
+Equaliser</em>, or, for sweeps, the <em>DJ Filter</em>.</p>
+</blockquote>
+<h2 id="dj-tools">DJ Tools<a class="headerlink" href="#dj-tools" title="Permanent link">&para;</a></h2>
+<p>The <em>DJ Tools</em> — <em>Fader</em> and <em>Crossfader</em> — come with the <strong>DJ Mix Tools
+Expansion</strong> (included in the <em>Pro</em> edition, and the same add-on that
+unlocks Stem Separation). They turn Waveform's tracks into a DJ-style
+mixer.</p>
+<p><em>Fader</em> is an automatable volume fader with a <em>Position</em> control and an
+adjustable response <em>Curve</em>, so you can ride or program smooth level
+changes.</p>
+<p><img alt="" src="../images/Audio%20FX/Fader%402x.png" /></p>
+<p><em>The Fader</em></p>
+<p><em>Crossfader</em> blends between two stereo sources, <em>A</em> and <em>B</em>. It takes two
+stereo inputs and produces one stereo output; the <em>Position</em> control fades
+from full A on the left, through the centre, to full B on the right.
+<em>Curve</em> shapes the blend — from a smooth equal-power fade to a sharp cut —
+and <em>Centre Gain</em> sets the level at the midpoint.</p>
+<p><img alt="" src="../images/Audio%20FX/Crossfader%402x.png" /></p>
+<p><em>The Crossfader</em></p>
+<h2 id="text-plugin">Text Plugin<a class="headerlink" href="#text-plugin" title="Permanent link">&para;</a></h2>
+<p>The text plugin is a convenient tool to keep your Edit organized as you
+record, edit, and mix. Drag <em>Text</em> it to a track, give it a <em>Name</em> and
+then type in a <em>Description</em>.</p>
+<p><img alt="" src="../images/30----09.png" /></p>
+<p><em>Text Plugin Example</em></p>
+<p>You can type in as much text as you'd like describing how the recording
+was made, the kind of microphones used, the artist name, and really
+anything you'd like to make a note of. <em>Text</em> plugin <em>Name</em> appears
+right in the mixer on the thumbnail. While <em>Text</em> doesn't do anything to
+your audio path it can help you remember what you were doing when you
+come back to a project later on.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> You can enable or disable several plugins at once by simply
+selecting all of them and using the keyboard shortcut F.</p>
+</blockquote>
+<h2 id="guitar-ir">Guitar IR<a class="headerlink" href="#guitar-ir" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>📝 <strong>Note:</strong> <em>Guitar IR</em> and <em>Dual Guitar IR</em> are <em>Pro</em> features, available in
+Waveform 12 and later.</p>
+</blockquote>
+<p><em>Guitar IR</em> is a convolution plugin that loads an impulse response (IR) — a
+short WAV recording that captures the sound of a guitar cabinet, speaker, or
+room — and stamps that character onto whatever passes through it. It pairs
+naturally with an amp-simulation plugin: run your DI guitar into the amp sim,
+then into <em>Guitar IR</em> to model the cabinet and miking.</p>
+<p><img alt="" src="../images/Audio%20FX/Guitar%20IR%402x.png" /></p>
+<p><em>The Guitar IR</em></p>
+<p>Load a WAV file using the IR field, then shape the result with the controls:</p>
+<ul>
+<li><em>Gain</em> — output level, from −12 dB to +6 dB.</li>
+<li><em>Low Cut</em> and <em>High Cut</em> — high-pass and low-pass filters that trim the
+  response, each adjustable from 10 Hz to 20,000 Hz.</li>
+<li><em>Filter Q</em> — the resonance of the cut filters (0.1 to 14).</li>
+<li><em>Mix</em> — blends the convolved (wet) signal against the dry input, from 0 to
+  1.0. It defaults to fully wet (1.0).</li>
+<li><em>Normalise</em> — evens out the loudness of the loaded IR so swapping impulses
+  doesn't change your level. On by default.</li>
+<li><em>Trim Silence</em> — removes leading silence from the IR. Off by default.</li>
+</ul>
+<h3 id="dual-guitar-ir">Dual Guitar IR<a class="headerlink" href="#dual-guitar-ir" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../images/Audio%20FX/Dual%20Guitar%20IR%402x.png" /></p>
+<p><em>The Dual Guitar IR</em></p>
+<p><em>Dual Guitar IR</em> works the same way but hosts <strong>two</strong> impulse responses (A and
+B) at once, so you can blend two cabinets or mic positions for a wider, more
+complex tone. In addition to the controls above it adds:</p>
+<ul>
+<li><em>Width</em> — spreads the two IRs across the stereo field (defaults to 0.5).</li>
+<li><em>Delay</em> — offsets one IR against the other by up to 200 ms (defaults to 0),
+  useful for subtle thickening or comb-filter effects.</li>
+</ul>
+<h2 id="artisan-collection">Artisan Collection<a class="headerlink" href="#artisan-collection" title="Permanent link">&para;</a></h2>
+<p>The <em>Artisan Collection</em> is a large built-in library of effects — over 180 of
+them — based on the AirWindows plugins by Chris Johnson. They're grouped into
+categories in the plugin picker: <em>Delay</em>, <em>Dither</em>, <em>Distortion</em>, <em>Dynamics</em>,
+<em>Emulation</em>, <em>EQ</em>, <em>Filter</em>, <em>Imaging</em>, <em>Modulation</em>, <em>Reverb</em>, and <em>Utility</em>.</p>
+<p>Rather than document each plugin individually, it's enough to know that every
+<em>Artisan Collection</em> effect shares two common controls — a <em>Dry</em> level and a
+<em>Wet</em> level — alongside its own specific parameters, so you can always dial in
+how much of the processed signal is blended with the original.</p>
+<p>To use them, enable the collection in <em>Settings &gt; Plugins</em> with the <em>Enable
+Artisan Collection Plugins</em> option (on by default). After enabling it you'll
+need to restart Waveform. Once enabled, the effects appear under the <em>Artisan
+Collection</em> folder in the plugin picker.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The <em>Artisan Collection</em> is a <em>Pro</em> feature.</p>
+</blockquote>
+<h2 id="master-mix">Master Mix<a class="headerlink" href="#master-mix" title="Permanent link">&para;</a></h2>
+<p><em>Master Mix</em> is an integrated mastering plugin designed to sit at the end of
+your signal chain — typically on the master or output bus — to polish a
+finished mix. It combines several mastering stages in a single plugin.</p>
+<ul>
+<li><em>Pre EQ</em> and <em>Post EQ</em> — parametric equalizers before and after the dynamics
+  processing, for corrective and final tonal shaping.</li>
+<li><em>Crossover compression</em> — a 3-band crossover splits the signal into low, mid,
+  and high bands, each feeding its own compressor with a graphical transfer
+  curve you can edit by dragging nodes.</li>
+<li><em>Dynamics</em> — a final stage offering soft clipping and a noise gate.</li>
+<li><em>Input and Output gain</em> — independent left/right input and output levels, each
+  with metering.</li>
+<li><em>DC filter</em> — removes any DC offset from the signal.</li>
+</ul>
+<p>You can store up to 100 presets, and use the <em>Mem A</em> / <em>Mem B</em> A/B buttons to
+compare two settings instantly while you fine-tune the master.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> <em>Master Mix</em> is available in the <em>Pro</em> and OEM editions of
+Waveform.</p>
+</blockquote>
+<h2 id="saving-presets">Saving Presets<a class="headerlink" href="#saving-presets" title="Permanent link">&para;</a></h2>
+<p>Most of the built-in plugins allow you to load, save, and delete
+presets. Once you have your favorite presets saved, you can search for
+presets on the Presets tab or the Search tab of the Browser.</p>
+<p><img alt="" src="../images/30----22.png" /></p>
+<p><em>Load, Save, or Delete Presets</em></p>
+<p>As you create presets you can also add tags to make it quick to filter
+to exactly what you are looking for; Vocal EQ, Guitar Focus, Bass Boost
+for example.</p>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>Now we've touched on most of the built-in plugins in Waveform. The
+built-in effects, along with third-party plugins give you tremendous
+creative potential when composing or mixing.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>
