@@ -1262,7 +1262,7 @@ These settings only have any effect once you actually engage low latency mode, w
 
 ## AI
 
-The AI page is where you switch on the AI Assistant, tell Waveform which AI provider to use, paste in the API key that lets the assistant talk to that provider, and reach the files the assistant uses to remember things and extend itself. If you never plan to use the assistant, you can leave this whole page alone. If you do, this is the one place you need to set up before it will work.
+The AI page is where you switch on the AI Assistant, set up the profiles that tell Waveform which AI service to talk to, decide which model the assistant's auto mode reaches for, and reach the files the assistant uses to remember things and extend itself. If you never plan to use the assistant, you can leave this whole page alone. If you do, this is the one place you need to set up before it will work.
 
 ![](images/settings_ai@2x.png)
 *Settings > AI*
@@ -1273,27 +1273,79 @@ To get here, open the **Settings** tab and choose **AI** from the list on the le
 
 **Enable AI Assistant** — Turns the AI Assistant panel on or off in the sidebar. When this is on, the assistant becomes available as a sidebar panel where you can chat with it and ask it to help with your project. When it is off, the panel is hidden. (Default: on).
 
-> 📝 **Note:** Even with the assistant enabled, it won't actually be able to respond until you have selected a provider and entered a valid API key (see below).
+> 📝 **Note:** Even with the assistant enabled, it won't actually be able to respond until you have a profile that can connect (see below).
 
-### API Provider
+### Profiles
 
-This section is where you choose the AI service the assistant talks to, and where you enter the key that authorises it.
+A profile is a named connection to an AI service: where to send messages, how to authorise them, and which models are on offer. Waveform ships with three built-in profiles, and you can add your own for any OpenAI-compatible server, including one running on your own computer.
 
-**AI Provider** (Choices: OpenAI, Anthropic) — Picks which AI company's models power the assistant. (Default: OpenAI).
+**Active Profile** — Picks the profile new chats use. It's also the fallback for any Auto Mode Routing tier you've left on *(Automatic)*.
 
-Changing this swaps the key field below it, because each provider needs its own key. Whichever provider you pick here is the one that will be used, and only the matching key field is shown.
+The three built-in profiles are always present and can't be removed:
 
-Below the provider selector you'll see one of two key fields, depending on the provider you chose:
+- **OpenAI API** — OpenAI's hosted service, authorised with your own OpenAI API key.
+- **Anthropic API** — Anthropic's hosted service, authorised with your own Anthropic API key.
+- **ChatGPT (Codex)** — OpenAI's ChatGPT service, reached through the sign-in already present on this computer from the Codex CLI or the ChatGPT desktop app. There's no key to enter.
 
-**OpenAI API Key** — The secret key from your OpenAI account. Shown only when the provider is set to OpenAI.
+**Add Profile** — The **Create New** button asks you for a name and creates a new custom profile, then selects it so you can fill in its settings. Use this for a local LLM server such as LM Studio or Ollama, or for any other service that speaks the OpenAI API.
 
-**Anthropic API Key** — The secret key from your Anthropic account. Shown only when the provider is set to Anthropic.
+**Remove Profile** — The **Remove Permanently** button deletes the selected custom profile after asking you to confirm. It only appears when a custom profile is selected; the three built-ins can't be deleted.
 
-In the screenshot the provider is set to Anthropic, so the **Anthropic API Key** field is showing. The key is a long string you get from the provider's own website; you paste the whole thing into this multi-line box.
+What appears below these buttons depends on which profile is selected.
 
-> 💡 **Tip:** You only ever need a key for the provider you've actually selected. If you switch providers, the page swaps to the other provider's key field, and any key you previously entered for the other provider is kept for when you switch back.
+#### Built-in profile settings
+
+Each built-in profile shows the one thing it needs from you:
+
+**OpenAI API Key** — The secret key from your OpenAI account. Shown when the **OpenAI API** profile is selected.
+
+**Anthropic API Key** — The secret key from your Anthropic account. Shown when the **Anthropic API** profile is selected.
+
+The key is a long string you get from the provider's own website; you paste the whole thing into this multi-line box. Each provider's key is stored separately, so a key you entered for one is still there when you switch back to it.
+
+**Codex Sign-in** — Shown when the **ChatGPT (Codex)** profile is selected. This is a read-only status line, not something you fill in: it tells you whether Waveform found a usable ChatGPT sign-in on this computer, and if not, that you need to sign in with the Codex CLI (`codex login`) or the ChatGPT desktop app first.
 
 > ⚠️ **Warning:** Your API key is what your provider uses to bill you, so treat it like a password. Don't share screenshots of this page, and don't paste your key anywhere public.
+
+#### Custom profile settings
+
+When a profile you added yourself is selected, you get the full set of connection settings instead:
+
+**Profile Name** — The display name for this profile. It's what appears in the **Active Profile** selector, and what prefixes this profile's models in the assistant's model selector.
+
+**API Dialect** (Choices: OpenAI-compatible (Chat Completions), OpenAI Responses (newer LM Studio)) — The wire format the server speaks. *Chat Completions* is the one to use unless you know otherwise; it works with LM Studio, Ollama, llama.cpp and vLLM. Newer LM Studio versions also support the Responses API.
+
+**Server URL** — The server's base address, for example `http://localhost:1234/v1`. Your server software tells you what this is when you start it.
+
+**API Key (optional)** — A bearer token, if the server needs one. Local servers usually don't, so this can normally be left empty.
+
+> ⚠️ **Warning:** Like the built-in providers' keys, anything entered here is stored unencrypted in the Waveform settings file. It's intended for a local server that wants a token, rather than for a key with money behind it.
+
+**Limit Models** — Restricts which of the server's models the assistant offers you, one per line. Leave it empty to offer everything the server lists. This is worth using when a server exposes models that aren't chat models at all, such as embedding models.
+
+**Default Model** — The model used when a chat's model selector doesn't name one, and the last fallback for Auto Mode Routing's tiers. Leave it empty to use the first model the server offers.
+
+**Connection Status** — A read-only report on this profile, filled in when you test it. It tells you whether the server could be reached, lists the models it offers, and warns you if a loaded model's context window is too small for the assistant to use — it needs at least 16k tokens, and 32k or more is better. Until you've tested, it reads *"Not checked yet - click Test"*.
+
+**Test Connection** — The **Test** button contacts the server, refreshes this profile's model list, and updates **Connection Status**. Use it after changing the URL, and again after loading a different model on the server.
+
+> 💡 **Tip:** A local model that's reachable but loaded with too small a context window is the most common problem here, and it doesn't fail until you're mid-conversation. **Test Connection** catches it up front, so run it before assuming a profile is ready.
+
+### Auto Mode Routing
+
+The assistant's model selector includes an **auto** option that picks a model for each message based on how demanding the request looks. This section is where you say which model each of those three levels should actually use. Every one of them can be left on *(Automatic)*, which is the default and means "let the active profile decide" — the label shows you which model that currently works out to.
+
+Each selector lists every model on every profile that's currently working, grouped under the profile it belongs to.
+
+**Fast Requests** — The profile and model auto mode uses for quick, simple requests.
+
+**Standard Requests** — The profile and model auto mode uses for ordinary requests.
+
+**Heavy Requests** — The profile and model auto mode uses for demanding, complex requests.
+
+> 💡 **Tip:** This is what makes a mixed local-and-cloud setup work. Point the fast and standard tiers at a model running on your own computer and the heavy tier at a cloud model, and most of your conversation costs nothing and stays on your machine, while the hard questions still go somewhere capable.
+
+If a pinned model isn't currently available — its server is down, or the profile was removed — the selector marks it *(unavailable)* rather than quietly forgetting it. The mapping is kept, and requests fall back to the active profile until it comes back.
 
 ### Assistant Files
 
@@ -1311,10 +1363,16 @@ The assistant keeps a few things on disk so it can remember details between sess
 
 ### ⚡ Things to Watch Out For
 
-- **The assistant needs both a provider and a matching key.** Enabling the assistant on its own isn't enough. Choose a provider in this section and paste in that provider's key, or the assistant won't be able to respond.
+- **Enabling the assistant isn't enough on its own.** The profile you leave selected as **Active Profile** also has to be able to connect — a valid API key, a usable Codex sign-in, or a reachable server — or the assistant won't respond.
 
-- **Each provider has its own separate key.** A key entered for OpenAI won't work for Anthropic, and vice versa. When you switch the **AI Provider**, the page shows the key field for the newly selected provider only.
+- **Each built-in provider has its own separate key.** A key entered for OpenAI won't work for Anthropic, and vice versa. Each profile shows only its own key field; the other keys are kept for when you switch back.
 
-- **Switching providers takes effect for the matching key only.** The provider you leave selected here is the one that's actually used. Make sure the provider showing on screen is the one you intend to use, and that its key field is filled in.
+- **The Active Profile is the one that's actually used.** The rest of the page changes to show the selected profile's settings, so it's easy to fill in a profile and then leave a different one active. Check the **Active Profile** row is the one you intend before you go looking for problems elsewhere.
+
+- **Keys are stored unencrypted.** Every key on this page, built-in or custom, is saved as plain text in the Waveform settings file. Treat it as you would any password kept in a config file, and be careful about sharing screenshots of this page.
+
+- **Removing a profile is permanent.** **Remove Permanently** deletes the profile and its settings outright; there's no undo, and any auto-mode tier pinned to it falls back to the active profile.
+
+- **Local models need a big context window.** A model loaded with less than 16k tokens of context will connect fine and then fail once a conversation gets going. **Test Connection** warns you about this; it's the first thing to check when a local profile misbehaves.
 
 - **The Assistant Files buttons open things, they don't reset them.** Clicking **Show Memory**, **Show Commands**, **Show Skills**, or **Show Conversations** just reveals the file or folder on your computer. Editing or deleting what you find there changes what the assistant remembers or can do, so be deliberate about any changes you make.

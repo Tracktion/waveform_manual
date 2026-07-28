@@ -19,14 +19,16 @@ format. Level meters scale to the channel count. (Waveform Pro.)
 
 ### AI assistant
 
-A cloud-powered AI assistant is built into Waveform, in a side panel.
-Ask it about Waveform or your project and it can carry out actions for
-you -- creating tracks, adding and configuring plugins, setting up
-routing, assigning keyboard shortcuts, and more -- by driving Waveform
-through its scripting API. It is aware of what you have selected and
-your project info, and an *auto* mode picks the right model for each
-request. It connects to an external AI provider (OpenAI or Anthropic)
-using your own API key, and is entirely optional.
+An AI assistant is built into Waveform, in a side panel. Ask it about
+Waveform or your project and it can carry out actions for you --
+creating tracks, adding and configuring plugins, setting up routing,
+assigning keyboard shortcuts, and more -- by driving Waveform through
+its scripting API. It is aware of what you have selected and your
+project info, and an *auto* mode picks the right model for each request.
+You choose which AI service it talks to: OpenAI or Anthropic using your
+own API key, ChatGPT through the sign-in from the Codex CLI or ChatGPT
+desktop app, or a model running locally on your own computer. It is
+entirely optional.
 
 ### A streamlined interface
 
