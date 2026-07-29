@@ -95,6 +95,10 @@ Plugin properties
 - To select a plugin, click on it. When selected, its properties show a
     wide variety of settings and actions related to that plugin. Most of
     the built-in plugins have the entire user interface in properties.
+- The same pages are also available in the **Plugins** tab of the Detail
+    editor, which lays the whole track's chain out side by side so you
+    can have several plugins' pages open at once. See
+    [The Plugins Detail Editor](plugins-detail-editor.md).
 
 
 ![](images/29----04.png)

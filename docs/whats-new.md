@@ -42,9 +42,13 @@ whatever you select appear in an improved **Actions panel** at the side
 
 ## Interface
 
-- **Detail editor** -- a panel with Track and Clip tabs for working
-  closely on the selected track or clip, including loop settings and
-  warp-time editing. See [The Detail Editor](detail-editor.md).
+- **Detail editor** -- a panel with Track, Clip and Plugins tabs for
+  working closely on the selected track or clip, including loop settings
+  and warp-time editing. See [The Detail Editor](detail-editor.md).
+- **Plugins detail editor** -- the whole of a track's plugin chain and
+  its modifiers laid out side by side as individually expandable panels,
+  so you can work across several plugins at once. See
+  [The Plugins Detail Editor](plugins-detail-editor.md).
 
 ## Creation and editing
 

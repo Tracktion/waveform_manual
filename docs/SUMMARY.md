@@ -12,6 +12,7 @@
 - [The Edit Tab](edit-tab.md)
 - [Layouts](layouts.md)
 - [The Detail Editor](detail-editor.md)
+- [The Plugins Detail Editor](plugins-detail-editor.md)
 - [The Browser](browser.md)
 - [The Actions Panel](actions-panel.md)
 - [Using Markers](using-markers.md)

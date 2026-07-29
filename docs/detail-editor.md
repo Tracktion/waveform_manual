@@ -1,7 +1,8 @@
 # The Detail Editor
 
 The Detail editor is a panel for working closely with the currently
-selected track or clip. It has two tabs: **Track** and **Clip**.
+selected track or clip. It has three tabs: **Track**, **Clip** and
+**Plugins**, chosen with the buttons down its left-hand edge.
 
 ## The Track tab
 
@@ -29,7 +30,16 @@ Clip tab becomes the zoomable Warp Time editor, where you can add and
 drag warp points to bend audio into time. See [Warp Time](warp-time.md)
 for the full workflow.
 
+## The Plugins tab
+
+The Plugins tab shows the whole of the selected track's plugin chain and
+its modifiers as a row of panels you can open individually, so you can
+work across several of them at once instead of one at a time. See
+[The Plugins Detail Editor](plugins-detail-editor.md) for the full
+chapter.
+
 ## Moving On
 
 For more on an audio clip's loop settings, see
-[Working With Loops](working-with-loops.md).
+[Working With Loops](working-with-loops.md), and for the Plugins tab see
+[The Plugins Detail Editor](plugins-detail-editor.md).

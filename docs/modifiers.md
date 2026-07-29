@@ -12,6 +12,8 @@ Once added, a modifier appears as a small object above the plugins in the track'
 
 Double-click a modifier object to open its editor window, where you adjust its settings and see a live display of its output.
 
+There are three places to work with a track's modifiers: the small objects in the track's mixer area, a modifier's own editor window, and the **Plugins** tab of the Detail editor, which shows every modifier on the track alongside its plugins as a row of panels. See [The Plugins Detail Editor](plugins-detail-editor.md).
+
 ## Assigning to Parameters
 
 Every modifier outputs a value that you map onto one or more plugin parameters. The editor window is split into three pages — **Modifier Settings** (the controls and live display), **Parameters**, and **Assignments**.
@@ -22,6 +24,8 @@ There are two ways to make an assignment:
 
 - **Drag the assignment handle** — the arrow-and-dot icon at the bottom-left of the editor — onto any parameter, or drop the modifier object straight onto a plugin and pick the parameter from the menu.
 - **Click the assignment handle** to put the modifier into assignment mode, then click the parameters you want to control in the list on the right. This is the quickest way to assign several parameters in one go.
+
+In the **Plugins** tab of the Detail editor, where a track's modifiers and plugins sit side by side, there is a third route: drag a modifier's tile onto any plugin panel and pick a parameter from the menu that opens. See [Assigning a Modifier to a Plugin](plugins-detail-editor.md#assigning-a-modifier-to-a-plugin).
 
 The **Assignments** page lists everything the modifier currently controls, so you can review and adjust each mapping in one place. To remove an assignment, clear it from the Assignments page, or right-click the modifier object and choose the parameter under **Remove assignment**.
 
