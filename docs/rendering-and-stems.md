@@ -266,15 +266,16 @@ already labelled rather than as *Untitled* by *Unknown Artist*.
 **Add Tags** — Writes this Edit's tags into the rendered files. It's ticked
 automatically when the Edit already has tags, and unticking it renders without
 them. (Default: on when the Edit has tags)
-<!-- code: RenderDialog.cpp:2987-2992; tracktion_RenderSpecification.h:55-60 (hasTagMetadata) -->
+<!-- code: RenderDialog.cpp:2996-2998; tracktion_RenderSpecification.h:55-60 (hasTagMetadata) -->
 
-**Edit Tags** — Opens the tag editor.
-<!-- code: RenderDialog.cpp:2996-2998, 3192-3207 -->
+**Edit Tags** — Opens the tag editor. It sits at the right-hand end of the *Add
+Tags* row.
+<!-- code: RenderDialog.cpp:3000-3002, 3192-3207 -->
 
-Both rows only appear for formats that can actually carry tags: **WAV** (in a
+The row only appears for formats that can actually carry tags: **WAV** (in a
 RIFF INFO chunk), **Ogg Vorbis** (Vorbis comments) and **MP3** (ID3). AIFF and
 FLAC have no tag support in their writers, and a MIDI file has nowhere to put
-them, so the rows are hidden for those.
+them, so it's hidden for those.
 <!-- code: tracktion_RenderSpecification.h:62-66 (formatSupportsTagMetadata) -->
 
 ![](images/rendering_7@2x.png)
