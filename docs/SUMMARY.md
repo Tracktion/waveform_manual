@@ -55,6 +55,7 @@
 - [Track Snapshots](track-snapshots.md)
 - [Automation](automation.md)
 - [Mixing Down](mixing-down.md)
+- [Rendering and Stems](rendering-and-stems.md)
 - [Working With Video](working-with-video.md)
 - [Importing and Exchanging Projects](importing-and-exchanging-projects.md)
 - [Macros](macros.md)

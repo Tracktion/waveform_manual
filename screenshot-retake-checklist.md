@@ -363,23 +363,18 @@ These 452 screenshots still show the **old Waveform 11 interface** and need re-c
 - [ ] `22----10@2x.png` — Select the Virtual Device as the Input
 - [ ] `22----11@2x.png` — Lock the Input properties While Playing the Virtual
 
-## Mixing Down  ·  `mixing-down.md`  (15)
+## Mixing Down  ·  `mixing-down.md`  (5)
 
 - [ ] `36----01@2x.png` — Waveform Master Mix
 - [ ] `36----02@2x.png` — The Waveform master
-- [ ] `36----03@2x.png` — Set the In-marker Just Before the Song Start
-- [ ] `36----04@2x.png` — Set the Out-marker Just After the Song Ending
-- [ ] `36----05@2x.png` — Export Render Dialog Box
 - [ ] `36----06@2x.png` — The Exported File on the Project Page Files List
 - [ ] `36----07@2x.png` — Locate the Project folder from the Browser
 - [ ] `36----08@2x.png` — Exported* Folder in the Browser
-- [ ] `36----09@2x.png` — Add ID3/Vorbis Info
-- [ ] `36----10@2x.png` — ID3/Vorbis Info Dialog Box
-- [ ] `36----15@2x.png` — MP3 Export *Quality* Options
-- [ ] `36----11@2x.png` — Export File Format Options
-- [ ] `36----12@2x.png` — Export Stereo/Mono Selection
-- [ ] `36----13@2x.png` — File Export Options
-- [ ] `36----14@2x.png` — More File Export Options
+
+> `36----03`, `04`, `05`, `09`–`15` are no longer referenced: the render-dialog
+> walkthrough they illustrated moved to `rendering-and-stems.md`, which already
+> has current @2x captures. The files are still in `docs/images/` and can be
+> deleted once nothing else wants them.
 
 ## Quantizing MIDI Notes  ·  `quantizing-midi-notes.md`  (18)
 
