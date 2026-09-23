@@ -82,6 +82,7 @@ Typing a `/` at the start of your message brings up slash commands — shortcuts
 - **`/clear`** — start a new conversation.
 - **`/generate_midi <description>`** — generate a MIDI sequence from a description you give it.
 - **`/production_tips <topic>`** — get production tips on a topic.
+- **`/mixcheck <platform>`** - measure your mix and check it's ready for release (Waveform Pro). Name a platform, such as *Spotify*, *Apple Music* or *broadcast*, or leave it out for streaming defaults. See *Checking your mix* below.
 
 You can also add your own commands. Anything you put in your custom commands folder (reachable from Settings > AI) becomes a slash command the assistant recognises, alongside the built-in ones.
 
@@ -103,6 +104,34 @@ Beyond answering questions, the assistant can act on Waveform and your project f
 - Search your library for presets, loops, and samples.
 - Manage its own slash commands and Skills (reusable abilities you can give it).
 - Read and write a persistent memory file so it can remember things across sessions.
+- Render your project and measure how it sounds (Waveform Pro) - see *Checking your mix* below.
+
+## Checking your mix
+
+> 📝 **Note:** Mix measurement is available in **Waveform Pro 14 and later**.
+
+The assistant can listen to your project in the only way it can - by rendering it and measuring the result. It renders in the background to a temporary file, analyses it and deletes it, so nothing is added to your project. It can measure:
+
+- **The whole mix**, e.g. "how loud is my mix?"
+- **A section**, e.g. "check the chorus from bar 33 to 49".
+- **Stems**, e.g. "which track is making the low end muddy?" - it renders each track separately and compares them.
+- **One track on its own**, with any sidechains still feeding it.
+- **An existing audio file**, such as a reference track you want to compare against.
+
+For each render it reports:
+
+- **Loudness** - integrated LUFS, maximum momentary and short-term loudness, loudness range, true peak, sample peak and clipped samples.
+- **Dynamics** - crest factor and peak-to-loudness ratios, which show how compressed the mix is.
+- **Spectrum** - the balance of low, mid and high frequencies, plus build-ups over time.
+- **Stereo field** - correlation, width, balance, mono loss, and whether the low end is safely mono.
+
+It compares these with the targets for where the music is going. Streaming services mostly aim for around -14 LUFS with true peak below -1 dBTP (Apple Music -16 LUFS), broadcast for -23 or -24 LUFS, and club tracks run much louder. Tell it the destination, or it assumes streaming.
+
+The quickest way in is **`/mixcheck`**. It measures the whole mix and reports loudness, true peak, dynamics, spectral balance and mono compatibility against your release target, leading with the biggest problem. Add a platform to check against a specific target, e.g. `/mixcheck Apple Music`.
+
+You can also ask it to fix what it finds - "bring the mix up to -14 LUFS" or "tame the harshness in the vocal". It makes small, undoable changes, measures again and shows you the numbers before and after, so you can tell whether each change helped. Always listen to the result too - the numbers show whether a mix meets a target, not whether it sounds good.
+
+> 💡 **Tip:** To watch the same readings live while you mix, put a **Loudness Meter** on the master track. See the *Utility Plugins* chapter.
 
 ## What the assistant can see
 

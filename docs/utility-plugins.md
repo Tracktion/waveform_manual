@@ -130,6 +130,77 @@ content as it passes through, so you can *see* where the energy sits in a mix.
 Insert it anywhere in a chain to check a track's tonal balance, spot a resonant
 build-up, or confirm that a high-pass filter is doing what you expect.
 
+## Loudness Meter
+
+> 📝 **Note:** The Loudness Meter is available in **Waveform Pro 14 and later**.
+
+The **Loudness Meter** measures loudness the way streaming services and
+broadcasters do (EBU R128 / ITU-R BS.1770-4), alongside true peak and the
+stereo field. Like the Spectrum, it doesn't change the audio - it just reads it.
+Put it last on the master track (or on a submix) and play the song through to
+see whether the mix is ready for release. Offline renders don't disturb its
+readings.
+
+The display has three sections:
+
+**Loudness (LUFS)**
+
+- **Momentary** - loudness over the last 400 ms, shown as a bar meter with a
+  held maximum.
+- **Short-term** - loudness over the last 3 seconds, also with a held maximum.
+- **Integrated** - the big number: the loudness of everything played since the
+  last reset, gated so silence and quiet passages don't drag it down. This is
+  the figure streaming platforms normalise to. Underneath it you'll see how far
+  you are from the target, e.g. *+1.2 LU over* or *-3.0 LU under*.
+
+Both bar meters show the target as a line and are scaled from -36 to 0 LUFS.
+
+**Peaks**
+
+- **True peak** - the highest peak in dBTP, measured with 4x oversampling so it
+  catches the inter-sample peaks that lossy encoders turn into clipping. It
+  turns red above the -1.0 dBTP ceiling.
+- **Sample peak** - the highest sample value in dB.
+- **Range** - loudness range (LRA) in LU: how much the loudness varies over the
+  song. Low values mean a heavily compressed, even mix.
+
+**Stereo Field**
+
+- **Correlation** - from -1 to +1. +1 means the channels are identical (fully
+  mono-compatible), around 0 means wide, and negative means the channels are
+  cancelling each other out, so parts of the mix will disappear in mono. The
+  bar turns red when negative, and a marker holds the worst reading so far.
+- **Balance** - from -1 (hard left) to +1 (hard right).
+- **Width** - from 0 (mono) to 1 (all side, no centre).
+- **Mono loss** - how much level the mix loses when summed to mono, in dB.
+- **Alignment** - the delay between the left and right channels in ms, and
+  *inverted* (in red) if one channel's polarity is flipped.
+
+A goniometer (XY scope) shows the stereo image as a shape: a vertical line is
+mono, a wide cloud is wide, and a horizontal line means out-of-phase channels.
+
+Readings show *-* until there is enough audio to measure, for example in the
+first 400 ms after starting playback.
+
+The plugin has two controls:
+
+- **Target** (-36 to -6 LUFS, default -14 LUFS) - the loudness you're aiming
+  for. It's drawn on the bar meters, and the Integrated reading turns to the
+  warning colour once it's more than 0.5 LU above it. -14 LUFS suits most
+  streaming services; broadcast work usually aims for -23 (EBU R128) or -24
+  (ATSC A/85).
+- **Reset** - restarts the integrated measurement and clears the held peaks and
+  extremes. Press it before playing the song through from the start.
+
+The meter handles up to 8 channels. On a surround master it weights the
+channels as the standard specifies: the surrounds count slightly more than the
+fronts, and the LFE (the fourth channel, when there are six or more) is
+ignored. The stereo measurements look at the first two channels only.
+
+> 💡 **Tip:** Keep the true peak below -1 dBTP. Streaming services encode your
+> file to a lossy format, and peaks above that can clip after encoding even if
+> the original file never did.
+
 ## Mid Side
 
 The **Mid Side** plugin converts a stereo signal between standard left/right and

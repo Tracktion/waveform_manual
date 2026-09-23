@@ -534,7 +534,16 @@ The assistant can render for you, and can measure what it rendered. Ask it for
 drum track" and it uses the same render engine this dialog does. It can also
 analyse a finished file and report its loudness, true peak, loudness range,
 clipped samples and frequency balance — useful for a quick "is this loud enough
-for Spotify?" check. See The AI Assistant chapter.
+for Spotify?" check.
+
+In Waveform Pro it can also measure your project directly, without you
+rendering anything: the whole mix, a time range, or each track as a separate
+stem. It renders to a temporary file, measures loudness, dynamics, spectrum and
+stereo field, and deletes the file. Type **`/mixcheck`** in the assistant for a
+one-step release check against streaming targets, or `/mixcheck` followed by a
+platform name for a specific one. See *Checking your mix* in The AI Assistant
+chapter, and the **Loudness Meter** in Utility Plugins for the same readings
+live.
 <!-- code: AcceleratorFunctions_FlatAPI.cpp:2990-3008 -->
 
 ## ⚡ Things to Watch Out For
