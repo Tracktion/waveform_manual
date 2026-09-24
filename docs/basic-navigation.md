@@ -41,7 +41,7 @@ When working on a song, the main areas of the Edit window are:
   cursor position, tempo, and the master controls.
 
 The **Actions panel** shows the settings and actions for whatever you
-have selected -- a clip, track, plugin, automation point, and so on. It
+have selected: a clip, track, plugin, automation point, and so on. It
 is a context-sensitive list and is central to working in Waveform, so
 you will see it referred to throughout this guide.
 
@@ -310,16 +310,15 @@ Tempo track in much the same way as automation. Click to add points
 with an adjustable *Curvature*. To shape the transition between two
 points, drag the small handle on the *midpoint* of the segment between
 them: dragging it bends the line from concave, through linear, to convex.
-<!-- code: TempoCurveEditor.cpp:290-334 -->
 
 > 📝 **Note:** New points snap to the nearest beat, and the BPM is limited
-to the range **20–300**. The very first point (at the start of the Edit)
-is locked — it can't be moved or deleted. <!-- code: tracktion_TempoSetting.h:42-45; TempoCurveEditor.cpp:456-478 -->
+to the range **20-300**. The very first point (at the start of the Edit)
+is locked, so it can't be moved or deleted.
 
 **Tap Tempo:** Select a single tempo point and the properties show a
 *Tap Tempo* control reading *"Click here to tap out a tempo!"*. Click it
 in time with the beat, then press *Apply* to set that point to the tempo
-you tapped. <!-- code: TempoSettingPropertyPanel.h:388-419 -->
+you tapped.
 
 Removing Tempo Changes
 - Click on any tempo point, to select it. In the properties, click *Delete
@@ -329,7 +328,7 @@ Removing all Tempo Changes
 - Click on the Tempo curve line. In the properties, click *Delete points
     from curve > Delete all points from the curve.* The same *Delete*
     menu can also delete only the points *within the marked region*, with
-    an option to close the gap left behind. <!-- code: TempoSequencePropertyPanel.h:205-207 -->
+    an option to close the gap left behind.
 
 ## Offsetting and Scaling the Tempo Curve
 
@@ -349,14 +348,13 @@ Scale Curve
 
 > 📝 **Note:** By default Displace and Scale affect the whole curve. Turn
 on *Only Displace/Scale the Marked Region* to limit them to the
-loop / in-out range instead. <!-- code: TempoSequencePropertyPanel.h:41,70,427 -->
+loop / in-out range instead.
 
 Copying and Pasting Tempo Curves
 - With a region marked, *Copy the marked section of the curve to the
     clipboard*, then *Paste* it back in at the cursor position. The paste
     menu also offers *Paste curves in to fit between in/out markers*,
     which stretches the pasted curve to fill the marked range.
-    <!-- code: TempoSequencePropertyPanel.h:44-45,100-105 -->
 
 ## Scroll Behaviour
 
@@ -394,13 +392,8 @@ enabled and the other two options off.
 
 ## Moving On
 
-This chapter was a basic introduction to the operation of Waveform. You
-can now operate the transport; you can open the demo files; you can
-create a new blank project; and you can adjust the playback volume and
-tempo.
-
-That is enough to start exploring Waveform. Stay tuned, there is a lot
-more to come!
+That is enough to start exploring Waveform. For a detailed tour of the Edit
+window, see [The Edit Tab](edit-tab.md).
 
 
 

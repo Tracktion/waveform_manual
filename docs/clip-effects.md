@@ -35,7 +35,7 @@ plugin to open its GUI window.*
 
 ## Removing Clip Plugins
 
-To remove a plugin, simply click on the plugin and press Delete or
+To remove a plugin, click on the plugin and press Delete or
 Backspace. You can also select multiple plugins by holding down Cmd /
 Ctrl to select multiples, and then press Delete to remove them.
 
@@ -70,8 +70,8 @@ then applying an echo to it. Here are the steps:
 
 The same technique is great for lo-fi effects as well. Apply a high pass
 and a low pass filter in order to cut the highs and the lows, or even
-apply chorusing to a few words in a vocal line. Clip effects are super
-easy to use in Waveform, and they unlock all kinds of creative options!
+apply chorusing to a few words in a vocal line. Clip effects are
+easy to use in Waveform, so try them on any short section that needs its own treatment.
 
 
 

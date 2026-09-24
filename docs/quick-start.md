@@ -30,7 +30,7 @@ available in Free, OEM, and Pro editions.
 ## 2. First-Run Setup
 
 The first time you launch Waveform, the **First Run Setup** panel appears on
-the left. Work through its steps in order — it takes you straight to each
+the left. Work through its steps in order: it takes you straight to each
 setting you need to configure. If you close it, you can reopen it any time
 from **Help > Show First Run Setup**.
 
@@ -46,7 +46,7 @@ hardware:
 - **Linux:** JACK (recommended) or ALSA
 
 Set your **sample rate** (44100 or 48000 Hz is a fine default) and an
-**audio buffer size** — start around 256 samples and raise it if you hear
+**audio buffer size**. Start around 256 samples and raise it if you hear
 clicks or dropouts.
 
 > ⚠️ **Warning:** If you plan to overdub (record while listening to existing
@@ -87,8 +87,8 @@ An Edit is where you record, arrange, and mix. The window has four main areas:
 - The **transport bar** along the bottom, with playback controls, cursor
   position, tempo, and the master controls.
 
-The **Actions panel** is central to Waveform: select anything — a clip, a
-track, a plugin — and it shows the settings and actions for that selection.
+The **Actions panel** is central to Waveform: select anything (a clip, a
+track, a plugin) and it shows the settings and actions for that selection.
 
 → See [The Edit Tab](edit-tab.md), [Basic Navigation](basic-navigation.md),
 and [The Actions Panel](actions-panel.md).
@@ -122,8 +122,8 @@ and click **Create Project**. Waveform opens a new Edit ready to work in.
 
 Waveform's mixer is inline with each track and fully modular. Every track
 starts with a **Volume & Pan** and a **Level Meter** plugin. To add an effect,
-drag the **Plugin object** into the track's mixer area and pick a plugin —
-you can drop it anywhere in the signal chain and reorder it later by dragging.
+drag the **Plugin object** into the track's mixer area and pick a plugin.
+You can drop it anywhere in the signal chain and reorder it later by dragging.
 
 → See [The Edit Tab](edit-tab.md), [Using Plugins](using-plugins.md), and
 [Built-in Effects Plugins](built-in-effects-plugins.md).
@@ -140,20 +140,20 @@ you can drop it anywhere in the signal chain and reorder it later by dragging.
 
 ## 12. Where to Go Next
 
-You now have the essentials. Waveform has much more to explore — here are some
+You now have the essentials. Waveform has much more to explore. Here are some
 highlights, each covered in its own chapter:
 
-- [The AI Assistant](ai-assistant.md) — a cloud-powered AI assistant that
+- [The AI Assistant](ai-assistant.md): a cloud-powered AI assistant that
   can carry out actions in your project.
-- [Clip Launcher](clip-launcher.md) — trigger clips and scenes live.
-- [Comping](comping.md) — build one perfect take from several passes.
-- [Warp Time](warp-time.md) — bend and stretch audio in time.
-- [Clip Layer Effects](clip-layer-effects.md) — non-destructive, layered
+- [Clip Launcher](clip-launcher.md): trigger clips and scenes live.
+- [Comping](comping.md): build one perfect take from several passes.
+- [Warp Time](warp-time.md): bend and stretch audio in time.
+- [Clip Layer Effects](clip-layer-effects.md): non-destructive, layered
   audio manipulation.
-- [Modifiers](modifiers.md) — modulate parameters without drawing automation.
-- [MIDI Effects](midi-effects.md) — real-time MIDI processing.
-- [Stem Separation](stem-separation.md) — split a mix into its parts.
-- [Macros](macros.md) — script and automate Waveform actions.
-- [Plugin Racks](racks.md) — group and wire up plugins freely.
+- [Modifiers](modifiers.md): modulate parameters without drawing automation.
+- [MIDI Effects](midi-effects.md): real-time MIDI processing.
+- [Stem Separation](stem-separation.md): split a mix into its parts.
+- [Macros](macros.md): script and automate Waveform actions.
+- [Plugin Racks](racks.md): group and wire up plugins freely.
 
 For everything that has changed recently, see [What's New](whats-new.md).

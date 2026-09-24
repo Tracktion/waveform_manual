@@ -40,3 +40,18 @@
     max-height: none;
     height: auto;
 }
+
+/* "PRO" badge for features not in the Free edition (see STYLE.md),
+   e.g. ## Faceplates <span class="pro">PRO</span> */
+.md-typeset .pro {
+    display: inline-block;
+    margin-left: 0.4em;
+    padding: 0.1em 0.45em;
+    border-radius: 0.25em;
+    font-size: 0.55em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    vertical-align: middle;
+    color: var(--md-accent-bg-color);
+    background-color: var(--md-accent-fg-color);
+}

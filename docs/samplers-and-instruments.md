@@ -1,10 +1,10 @@
 # Samplers and Instruments
 
-Waveform includes a family of built-in samplers — from a simple free-tier drum pad to a full multi-layer keyboard sampler — plus a multi-oscillator subtractive synthesizer called **Subtractive**. All of these live in the **Instruments** category of the plugin picker. This chapter walks through each one and explains when you'd reach for it.
+Waveform includes a family of built-in samplers, from a simple free-tier drum pad to a full multi-layer keyboard sampler, plus a multi-oscillator subtractive synthesizer called **Subtractive**. All of these live in the **Instruments** category of the plugin picker. This chapter walks through each one and explains when you'd reach for it.
 
 ## The Sampler Family at a Glance
 
-There are five built-in samplers, and it's worth knowing which is which before loading one up:
+There are five built-in samplers. Here's which is which:
 
 | Plugin | What it is | Available in |
 |---|---|---|
@@ -14,7 +14,7 @@ There are five built-in samplers, and it's worth knowing which is which before l
 | **Drum Sampler** | Full pad sampler with velocity layers and note repeat | Pro (or MIDI Producer / Synth Pack expansions) |
 | **Multi Sampler** | Full keyboard sampler, up to 32 layers, SFZ/SF2, per-layer FX | Pro (or MIDI Producer / Synth Pack expansions) |
 
-The **legacy Sampler** (the original simple sampler) is a separate, older plugin — it's described in the Legacy Plugins chapter.
+The **legacy Sampler** (the original simple sampler) is a separate, older plugin. It's described in the Legacy Plugins chapter.
 
 ---
 
@@ -27,7 +27,7 @@ The **Drum Sampler** and **Micro Drum Sampler** are built around a 4×4 pad grid
 
 ### Pads and Banks
 
-Each sampler has **four banks** (A, B, C, D), each containing 16 pads — 64 pads total. Switch banks using the bank selector buttons. Pads in different banks map to different MIDI notes, so you can spread a full kit across all four banks if you need more than 16 sounds.
+Each sampler has **four banks** (A, B, C, D), each containing 16 pads (64 pads total). Switch banks using the bank selector buttons. Pads in different banks map to different MIDI notes, so you can spread a full kit across all four banks if you need more than 16 sounds.
 
 To load a sample onto a pad, drag an audio file from the Browser directly onto the pad. You can also click a pad to select it, then use the file browser to choose a sample.
 
@@ -38,13 +38,13 @@ Each pad has a **Solo** and **Mute** button for quick auditioning.
 ![](images/Instruments/Micro%20Drum%20Sampler@2x.png)
 *The Micro Drum Sampler, a cut-down one-shot version of the Drum Sampler.*
 
-The **Micro Drum Sampler** is a cut-down version and is available in all editions of Waveform. It supports one-shot playback only — the sample plays through to the end whenever the pad is triggered, regardless of how long you hold the note.
+The **Micro Drum Sampler** is a cut-down version and is available in all editions of Waveform. It supports one-shot playback only: the sample plays through to the end whenever the pad is triggered, regardless of how long you hold the note.
 
 The **Drum Sampler** (Pro only) adds:
 
-- **Velocity layers** — assign different samples to play at different velocity ranges on the same pad, for more expressive drum sounds
-- **Note Repeat** — holds down a pad and automatically re-triggers it at a tempo-synced rate (see below)
-- **MIDI Learn** — right-click a pad to assign it to an incoming MIDI note
+- **Velocity layers**: assign different samples to play at different velocity ranges on the same pad, for more expressive drum sounds
+- **Note Repeat**: holds down a pad and automatically re-triggers it at a tempo-synced rate (see below)
+- **MIDI Learn**: right-click a pad to assign it to an incoming MIDI note
 
 ### Note Repeat
 
@@ -65,12 +65,12 @@ The keyboard-style samplers let you map samples across the note and velocity ran
 
 The zone grid is the central view in the Multi Sampler and Micro Sampler. It shows a grid with:
 
-- **Horizontal axis** — note range (low to high pitch)
-- **Vertical axis** — velocity range (soft to hard)
+- **Horizontal axis**: note range (low to high pitch)
+- **Vertical axis**: velocity range (soft to hard)
 
 Each layer appears as a rectangle on the grid. You define the rectangle by setting a **low note**, **high note**, **low velocity**, and **high velocity** for that layer. If a played note falls inside a layer's rectangle, that layer's sample plays.
 
-You can have **up to 32 layers** in the Multi Sampler. Layers can overlap — if multiple layers match a played note, all of them sound, which is how round-robin and velocity crossfade works.
+You can have **up to 32 layers** in the Multi Sampler. Layers can overlap. If multiple layers match a played note, all of them sound, which is how round-robin and velocity crossfade works.
 
 To add a layer, drag an audio file directly onto the zone grid. Waveform creates a new layer at the position you drop it.
 
@@ -78,9 +78,9 @@ To add a layer, drag an audio file directly onto the zone grid. Waveform creates
 
 In addition to standard audio files (WAV, AIFF), the keyboard samplers support loading complete multi-sample instruments:
 
-- **SFZ** — open-format text-based sample maps
-- **SF2** (SoundFont 2) — widely used bank format
-- **ZIP** — a packaged collection of samples with a map
+- **SFZ**: open-format text-based sample maps
+- **SF2** (SoundFont 2): widely used bank format
+- **ZIP**: a packaged collection of samples with a map
 
 Drag any of these formats onto the sampler to load the full instrument in one step.
 
@@ -88,63 +88,63 @@ Drag any of these formats onto the sampler to load the full instrument in one st
 
 Once you've selected a layer, you can fine-tune how it plays:
 
-**Root Note** — the pitch at which the sample plays at its original pitch. Notes above or below this will pitch the sample up or down accordingly.
+**Root Note**: the pitch at which the sample plays at its original pitch. Notes above or below this will pitch the sample up or down accordingly.
 
-**Gain** — volume of this layer. (Default: 0 dB)
+**Gain**: volume of this layer. (Default: 0 dB)
 
-**Pan** — stereo position. (Default: center)
+**Pan**: stereo position. (Default: center)
 
-**Fine Tune** — pitch offset in cents. Use this to correct slightly out-of-tune samples. (Default: 0)
+**Fine Tune**: pitch offset in cents. Use this to correct slightly out-of-tune samples. (Default: 0)
 
-**Sample In / Out** — sets the start and end point within the audio file. Drag the waveform display's handles to trim the sample. (Default: full file)
+**Sample In / Out**: sets the start and end point within the audio file. Drag the waveform display's handles to trim the sample. (Default: full file)
 
-**Loop In / Out** — sets the loop region within the sample. Requires looping to be enabled.
+**Loop In / Out**: sets the loop region within the sample. Requires looping to be enabled.
 
-**Choke Group** — assign a choke group number so that triggering one layer silences others in the same group (e.g. open hi-hat choked by closed hi-hat). (Default: none)
+**Choke Group**: assign a choke group number so that triggering one layer silences others in the same group (e.g. open hi-hat choked by closed hi-hat). (Default: none)
 
 ### Filter (Per Layer)
 
 Each layer has an optional filter. Enable it with the filter toggle, then set:
 
-**Filter Mode** — choose between lowpass, highpass, bandpass, and other types.
+**Filter Mode**: choose between lowpass, highpass, bandpass, and other types.
 
-**Cutoff** — the filter's cutoff frequency. (Default: open / no filtering)
+**Cutoff**: the filter's cutoff frequency. (Default: open / no filtering)
 
-**Q** — resonance. Higher values create a sharper peak at the cutoff. (Default: 0)
+**Q**: resonance. Higher values create a sharper peak at the cutoff. (Default: 0)
 
 ### Envelope (Per Layer)
 
 Each layer has an amplitude envelope with adjustable curve shapes:
 
-**Attack** — time to reach full volume. (Default: 0)
+**Attack**: time to reach full volume. (Default: 0)
 
-**Attack Shape** — curve shape of the attack ramp (linear to logarithmic).
+**Attack Shape**: curve shape of the attack ramp (linear to logarithmic).
 
-**Decay** — time to fall from peak to sustain. (Default: 0)
+**Decay**: time to fall from peak to sustain. (Default: 0)
 
-**Decay Shape** — curve shape of the decay.
+**Decay Shape**: curve shape of the decay.
 
-**Sustain** — volume level held while the note is held. (Default: full)
+**Sustain**: volume level held while the note is held. (Default: full)
 
-**Release** — time to fall to silence after the note is released. (Default: short)
+**Release**: time to fall to silence after the note is released. (Default: short)
 
-**Release Shape** — curve shape of the release.
+**Release Shape**: curve shape of the release.
 
-### LFOs (Per Layer — Multi Sampler)
+### LFOs (Per Layer, Multi Sampler)
 
 The **Multi Sampler** gives each layer **two LFOs** for modulation. Each LFO has:
 
-**Shape** — waveform type (sine, triangle, saw, square, etc.)
+**Shape**: waveform type (sine, triangle, saw, square, etc.)
 
-**Rate** — speed of the LFO in Hz. Can be synced to host tempo.
+**Rate**: speed of the LFO in Hz. Can be synced to host tempo.
 
-**Level** — depth of the modulation. (Default: 0)
+**Level**: depth of the modulation. (Default: 0)
 
-**Phase** — starting phase. (Default: 0)
+**Phase**: starting phase. (Default: 0)
 
-**Delay** — time before the LFO kicks in after note-on. Useful for delayed vibrato. (Default: 0)
+**Delay**: time before the LFO kicks in after note-on. Useful for delayed vibrato. (Default: 0)
 
-**Fade** — time for the LFO to fade in after its delay. (Default: 0)
+**Fade**: time for the LFO to fade in after its delay. (Default: 0)
 
 ### Per-Layer FX Buses (Multi Sampler, Pro only)
 
@@ -152,15 +152,15 @@ The **Multi Sampler** (Pro, Waveform 12+) adds a per-layer **FX chain** with six
 
 Available effects per layer:
 
-- **Reverb** — Natural, Non-linear, or Plate types. Controls: pre-delay, size, decay, diffusion, low/high cut, low/high damping, pan, mix.
-- **Distortion** — Drive, post gain, tone, emphasis, mix.
-- **Chorus** — Delay, depth, rate, mix.
-- **Compressor** — Threshold, ratio, attack, release, knee, output.
-- **Delay** — Low cut, high cut, feedback, delay time, mix.
-- **EQ** — Three-band (low/mid/high) with per-band frequency and gain.
-- **Filter** — Shape, slope, frequency, gain, Q.
+- **Reverb**: Natural, Non-linear, or Plate types. Controls: pre-delay, size, decay, diffusion, low/high cut, low/high damping, pan, mix.
+- **Distortion**: Drive, post gain, tone, emphasis, mix.
+- **Chorus**: Delay, depth, rate, mix.
+- **Compressor**: Threshold, ratio, attack, release, knee, output.
+- **Delay**: Low cut, high cut, feedback, delay time, mix.
+- **EQ**: Three-band (low/mid/high) with per-band frequency and gain.
+- **Filter**: Shape, slope, frequency, gain, Q.
 
-> 💡 **Tip:** Per-layer FX lets you put reverb on your pads and a compressor on your kick simultaneously, all inside a single plugin instance. I use this to keep my template tracks tidy.
+> 💡 **Tip:** Per-layer FX lets you put reverb on your pads and a compressor on your kick simultaneously, all inside a single plugin instance. It also helps keep template tracks tidy.
 
 ### Micro Sampler vs Multi Sampler
 
@@ -174,7 +174,7 @@ The **Micro Sampler** is a simpler keyboard sampler available in all editions. I
 ![](images/Instruments/Rompler@2x.png)
 *The Rompler, a preset-based keyboard instrument.*
 
-The **Rompler** is a preset-based instrument: it plays back factory sample banks without letting you edit the zone grid directly. Think of it as a read-only Multi Sampler, designed for quickly loading and playing pre-built instruments. It has the same keyboard layout view as the other samplers, but you can't drag new samples onto it — just pick a preset and play.
+The **Rompler** is a preset-based instrument: it plays back factory sample banks without letting you edit the zone grid directly. Think of it as a read-only Multi Sampler, designed for quickly loading and playing pre-built instruments. It has the same keyboard layout view as the other samplers, but you can't drag new samples onto it. Just pick a preset and play.
 
 ---
 
@@ -189,13 +189,13 @@ The **Rompler** is a preset-based instrument: it plays back factory sample banks
 
 ### Oscillators
 
-Subtractive has **four oscillators**. Each oscillator has a type selector — choose from the available waveforms (saw, square, triangle, and others). The sine and granular waveform types are not available in Subtractive (they're used in the companion Collective instrument).
+Subtractive has **four oscillators**. Each oscillator has a type selector: choose from the available waveforms (saw, square, triangle, and others). The sine and granular waveform types are not available in Subtractive (they're used in the companion Collective instrument).
 
 Each oscillator has pitch, level, and pan controls, and you can route each oscillator independently through the filter and amp section.
 
 ### Filters
 
-The synth has **two filters** that can run in parallel or series. Each filter has the standard controls: cutoff, resonance, and envelope amount. Use the two filters together to create complex, multi-layered tone-shaping — for example, a lowpass on one and a bandpass on the other.
+The synth has **two filters** that can run in parallel or series. Each filter has the standard controls: cutoff, resonance, and envelope amount. Use the two filters together to create complex, multi-layered tone-shaping, for example a lowpass on one and a bandpass on the other.
 
 ### Envelopes and LFOs
 
@@ -205,15 +205,15 @@ Subtractive provides **two envelopes** and **four LFOs** as modulation sources. 
 
 The built-in **arpeggiator** takes the notes you hold and re-plays them in a pattern. Toggle it with the Arp enable button. Key controls:
 
-**Mode** — pattern direction (up, down, alternate, random, chord).
+**Mode**: pattern direction (up, down, alternate, random, chord).
 
-**Rate** — tempo-synced speed.
+**Rate**: tempo-synced speed.
 
-**Latch** — when enabled, the arpeggio keeps playing after you release the keys.
+**Latch**: when enabled, the arpeggio keeps playing after you release the keys.
 
 ### FX Page
 
-Subtractive includes a dedicated **FX page** with built-in effects — the equivalent of the effects chains found in the Wavetable synthesizer. Switch to the FX page from the main navigation tabs.
+Subtractive includes a dedicated **FX page** with built-in effects, the equivalent of the effects chains found in the Wavetable synthesizer. Switch to the FX page from the main navigation tabs.
 
 ### Drive and EQ
 
@@ -240,8 +240,6 @@ Subtractive ships with a library of factory presets. Use the preset browser at t
 
 - **Edition gating.** The Drum Sampler and Multi Sampler are Pro-only. If you open a project that uses them in a Free or OEM edition, the plugins will be present in the chain but won't produce sound. Check the plugin's status indicator if a sampler seems silent.
 
-- **Micro Drum Sampler is one-shot only.** Samples always play to their end — there's no way to cut them short by releasing the MIDI note. If you need note-length control, use the Drum Sampler (Pro).
-
 - **Per-layer FX require Pro.** Even if you have a Multi Sampler loaded, the per-layer effects chain requires the `samplerFX` feature. In Free/OEM editions, those effect slots will be inactive.
 
 - **Zone overlaps are intentional.** The zone grid allows layers to overlap. If you're hearing two samples at once when you expected one, check whether two layers cover the same note/velocity area. Overlapping is by design for crossfades and round-robin setups, but it can be surprising the first time.
@@ -252,4 +250,4 @@ Subtractive ships with a library of factory presets. Use the preset browser at t
 
 ## Moving On
 
-The built-in samplers cover everything from a quick one-shot pad hit to a fully mapped keyboard instrument with per-layer effects. The Multi Sampler in particular is worth exploring if you're building your own instruments from sample libraries or SFZ banks. For step-sequenced drum patterns, see the **Step Clips** chapter — it has tips on combining step clips with the Drum Sampler for beat programming. For the synthesizer side, the **4OSC Synthesizer** and **Wavetable Synthesizer** chapters cover the other built-in synths.
+For step-sequenced drum patterns, see the **Step Clips** chapter. It has tips on combining step clips with the Drum Sampler for beat programming. For the synthesizer side, the **4OSC Synthesizer** and **Wavetable Synthesizer** chapters cover the other built-in synths.

@@ -110,8 +110,8 @@ There are several ways to run a macro:
 
 ## Javascript Programming
 
-Beyond creating simple step-by-step lists of actions, you can take macro
-programming to the next level using the power of Javascript. The Script
+Beyond creating simple step-by-step lists of actions, you can write macros
+in Javascript. The Script
 Editor allows you to program loops and conditions using Javascript
 syntax. It even provides color coding for the elements of the script.
 
@@ -312,7 +312,7 @@ for (var i = 0; i &lt; tracks.length; ++i)
 ## Moving On
 
 These are fairly simple examples. Waveform users are only just starting
-to explore the powerful capabilities of macro programming in Waveform.
+to explore what macro programming in Waveform can do.
 
 
 

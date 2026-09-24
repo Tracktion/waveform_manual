@@ -9,7 +9,7 @@ it from the **Utility** category of the built-in Waveform plugins. See
 ## Insert (Hardware Insert)
 
 The **Insert** plugin routes a track's signal out through a physical output,
-through an external device, and back in through a physical input — effectively
+through an external device, and back in through a physical input, effectively
 patching outboard gear inline in your plugin chain. The send and return can be
 either audio or MIDI devices, so it works equally well for outboard effects and
 external MIDI hardware.
@@ -18,19 +18,19 @@ external MIDI hardware.
 
 After adding the plugin, open its properties to configure the routing:
 
-- **Name** — an optional label shown in the plugin slot.
-- **Send Device** — the output that feeds your external device. If no output is
+- **Name**: an optional label shown in the plugin slot.
+- **Send Device**: the output that feeds your external device. If no output is
   selected, the slot shows a warning: *"You must select an output device to use
   an insert plugin."*
-- **Return Device** — the input that receives the processed signal back from
+- **Return Device**: the input that receives the processed signal back from
   your hardware.
-- **Time Adjust** — a latency compensation offset (−300 ms to +300 ms,
+- **Time Adjust**: a latency compensation offset (−300 ms to +300 ms,
   default 0). Positive values label the reading *"Late"*; negative values label
   it *"Early"*. Use this to align the returned signal with the rest of your mix.
-- **Auto-Detect** — runs a **Device Latency Test** that plays a test signal,
+- **Auto-Detect**: runs a **Device Latency Test** that plays a test signal,
   measures the round-trip delay, and offers to apply the result as the Time
   Adjust value. (Auto-detection requires an audio return signal.)
-- **Refresh Devices** — rescans your device list if you've plugged in or
+- **Refresh Devices**: rescans your device list if you've plugged in or
   switched hardware after Waveform started.
 
 ### Rendering with an Insert
@@ -61,7 +61,7 @@ snowflake icon, which brightens when the track is frozen):
   discards the rendered file and restores the original processing.
 
 A Freeze Point cannot be added to clips, plugin racks, or master tracks, and it
-cannot be disabled with the plugin's enable/bypass switch — it is always active
+cannot be disabled with the plugin's enable/bypass switch. It is always active
 when present in a chain.
 
 ### Freeze Point Settings
@@ -69,13 +69,13 @@ when present in a chain.
 The behaviour of the Freeze Point is influenced by two settings on the
 **Settings → General** page, under **Mixing Defaults**:
 
-- **Auto freeze** — controls when freezing happens: either *Manually* (only
+- **Auto freeze**: controls when freezing happens: either *Manually* (only
   when you click Freeze Track) or *Freeze track when a freeze point is created
   or copied* (automatic).
-- **Freeze point** — controls where the Freeze Point is inserted when a track
+- **Freeze point**: controls where the Freeze Point is inserted when a track
   is frozen: *Before plugins*, *Pre-fader*, or *Post-fader*.
 
-See [Reference: Settings — General](reference-settings.md#general) for the full
+See [Reference: Settings (General)](reference-settings.md#general) for the full
 description of those options.
 
 ---
@@ -95,7 +95,7 @@ into the same destination.
 
 A new Patch Bay defaults to a stereo pass-through: input 1 → output 1 and
 input 2 → output 2, both at 0 dB. The plugin slot in the mixer draws a live
-mini-diagram — input and output channels as dots, with arrows for each wire — so
+mini-diagram (input and output channels as dots, with arrows for each wire), so
 you can read the routing at a glance.
 
 Open the Patch Bay's properties to edit the wiring in its graphical editor. The
@@ -119,13 +119,13 @@ folder. These are the building blocks of an effects bus: an *Aux Send* taps a
 portion of a track's signal and routes it to a numbered bus, and an *Aux Return*
 receives that bus on another track so a single effect can be shared by many
 tracks. Because they are really part of the bus-routing workflow rather than
-standalone effects, they are covered in their own chapter — see [Effects Bus
+standalone effects, they are covered in their own chapter: see [Effects Bus
 Tracks](effects-bus-tracks.md).
 
 ## Spectrum
 
 The **Spectrum** plugin is a real-time spectrum analyser. It doesn't change the
-audio at all — it simply shows you a live graph of the signal's frequency
+audio at all. It shows you a live graph of the signal's frequency
 content as it passes through, so you can *see* where the energy sits in a mix.
 Insert it anywhere in a chain to check a track's tonal balance, spot a resonant
 build-up, or confirm that a high-pass filter is doing what you expect.
@@ -145,10 +145,10 @@ The display has three sections:
 
 **Loudness (LUFS)**
 
-- **Momentary** - loudness over the last 400 ms, shown as a bar meter with a
+- **Momentary**: loudness over the last 400 ms, shown as a bar meter with a
   held maximum.
-- **Short-term** - loudness over the last 3 seconds, also with a held maximum.
-- **Integrated** - the big number: the loudness of everything played since the
+- **Short-term**: loudness over the last 3 seconds, also with a held maximum.
+- **Integrated**: the big number: the loudness of everything played since the
   last reset, gated so silence and quiet passages don't drag it down. This is
   the figure streaming platforms normalise to. Underneath it you'll see how far
   you are from the target, e.g. *+1.2 LU over* or *-3.0 LU under*.
@@ -157,23 +157,23 @@ Both bar meters show the target as a line and are scaled from -36 to 0 LUFS.
 
 **Peaks**
 
-- **True peak** - the highest peak in dBTP, measured with 4x oversampling so it
+- **True peak**: the highest peak in dBTP, measured with 4x oversampling so it
   catches the inter-sample peaks that lossy encoders turn into clipping. It
   turns red above the -1.0 dBTP ceiling.
-- **Sample peak** - the highest sample value in dB.
-- **Range** - loudness range (LRA) in LU: how much the loudness varies over the
+- **Sample peak**: the highest sample value in dB.
+- **Range**: loudness range (LRA) in LU: how much the loudness varies over the
   song. Low values mean a heavily compressed, even mix.
 
 **Stereo Field**
 
-- **Correlation** - from -1 to +1. +1 means the channels are identical (fully
+- **Correlation**: from -1 to +1. +1 means the channels are identical (fully
   mono-compatible), around 0 means wide, and negative means the channels are
   cancelling each other out, so parts of the mix will disappear in mono. The
   bar turns red when negative, and a marker holds the worst reading so far.
-- **Balance** - from -1 (hard left) to +1 (hard right).
-- **Width** - from 0 (mono) to 1 (all side, no centre).
-- **Mono loss** - how much level the mix loses when summed to mono, in dB.
-- **Alignment** - the delay between the left and right channels in ms, and
+- **Balance**: from -1 (hard left) to +1 (hard right).
+- **Width**: from 0 (mono) to 1 (all side, no centre).
+- **Mono loss**: how much level the mix loses when summed to mono, in dB.
+- **Alignment**: the delay between the left and right channels in ms, and
   *inverted* (in red) if one channel's polarity is flipped.
 
 A goniometer (XY scope) shows the stereo image as a shape: a vertical line is
@@ -184,12 +184,12 @@ first 400 ms after starting playback.
 
 The plugin has two controls:
 
-- **Target** (-36 to -6 LUFS, default -14 LUFS) - the loudness you're aiming
+- **Target** (-36 to -6 LUFS, default -14 LUFS): the loudness you're aiming
   for. It's drawn on the bar meters, and the Integrated reading turns to the
   warning colour once it's more than 0.5 LU above it. -14 LUFS suits most
   streaming services; broadcast work usually aims for -23 (EBU R128) or -24
   (ATSC A/85).
-- **Reset** - restarts the integrated measurement and clears the held peaks and
+- **Reset**: restarts the integrated measurement and clears the held peaks and
   extremes. Press it before playing the song through from the start.
 
 The meter handles up to 8 channels. On a surround master it weights the
@@ -220,7 +220,7 @@ mix or for EQ'ing the centre and sides independently.
 The **AB Switch** plugin routes the incoming signal to one of two outputs, **A**
 or **B**, chosen with its **Mode** control. By feeding A and B into different
 processing chains you can flip between two treatments of the same source and
-compare them instantly — useful for A/B'ing effect settings while you work.
+compare them instantly, which is useful for A/B'ing effect settings while you work.
 
 ## Mono Switch
 
@@ -228,12 +228,12 @@ The **Mono Switch** is a mono-compatibility and stereo-troubleshooting tool. Its
 controls let you collapse a stereo signal to mono and check how the mix holds up:
 
 - **Mono** switches mono summing on or off.
-- **Mode** sets how the two channels are combined when summing — at **−6 dB**,
+- **Mode** sets how the two channels are combined when summing: at **−6 dB**,
   **−3 dB**, or **0 dB**, or listening to the **L Only** or **R Only** channel on
   its own.
 - **Swap L/R** exchanges the left and right channels.
 - **L Polarity** and **R Polarity** flip the polarity (phase) of each channel
   independently, which helps track down phase-cancellation problems.
 
-It's the quick way to confirm a mix still sounds right when played back in mono —
-on a phone speaker, a club PA, or anywhere the stereo image gets folded down.
+It's the quick way to confirm a mix still sounds right when played back in mono,
+whether on a phone speaker, a club PA, or anywhere the stereo image gets folded down.

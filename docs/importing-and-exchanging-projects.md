@@ -1,7 +1,7 @@
 # Importing and Exchanging Projects
 
 This chapter covers the ways you can move whole projects in and out of
-Waveform — exchanging Edits with other DAWs using the open DAWproject
+Waveform: exchanging Edits with other DAWs using the open DAWproject
 format, importing older Mackie and RADAR hard-disk-recorder projects, and
 working with Waveform's own project archives. You'll find most of these
 under the *File* menu, grouped into the *Import Other* and *Export Other*
@@ -10,8 +10,8 @@ submenus.
 ## Exchanging Projects With Other DAWs (DAWproject)
 
 DAWproject is an open, cross-DAW file format. It lets you hand a project
-to (or receive one from) other DAWs that support it — Bitwig Studio,
-Studio One, and others — without flattening everything to audio stems.
+to (or receive one from) other DAWs that support it (Bitwig Studio,
+Studio One, and others) without flattening everything to audio stems.
 Tracks, clips, and a good deal of mixer state travel with the file.
 
 ### Importing a DAWproject File
@@ -27,13 +27,13 @@ project's media folder automatically, so the imported Edit is
 self-contained.
 
 > 📝 **Note:** Importing a DAWproject always creates a *new* Edit in a new
-tab — it never merges into the Edit you're currently working on.
+tab. It never merges into the Edit you're currently working on.
 
 ### Exporting a DAWproject File
 
 To send your Edit to another DAW, select *File > Export Other > Export as
 DAWproject file…* and choose where to save the `.dawproject` file. The
-file is written immediately — again, there are no options to configure.
+file is written immediately. Again, there are no options to configure.
 
 By default the export is self-contained: the audio and your plugin state
 are embedded in the single `.dawproject` file, so you can hand off just
@@ -41,12 +41,12 @@ that one file.
 
 ### What Does and Doesn't Travel
 
-A DAWproject carries a lot, but not everything. It's worth knowing the
+A DAWproject carries a lot, but not everything. Check the
 limits before you rely on it for an important hand-off.
 
 What comes across:
 
-- Tracks of every kind — audio, MIDI, folder, and marker tracks
+- Tracks of every kind: audio, MIDI, folder, and marker tracks
 - Track name, colour, mute, and solo state
 - Track volume and pan
 - The tempo and time signature, including their automation
@@ -57,7 +57,7 @@ What comes across:
 
 What does *not* come across:
 
-- **Automation curves** on tracks and plugins (the biggest gap — volume,
+- **Automation curves** on tracks and plugins (the biggest gap: volume,
   pan, and plugin-parameter moves are not transferred)
 - Sends and bus routing
 - Step clips and Edit clips (these are Waveform-specific)
@@ -120,7 +120,7 @@ are merged into the target project.
 
 > 📝 **Note:** If the project is read-only you'll see *"Can't import into
 this project, because it's read-only"* and nothing happens. Importing into
-a folder-based project does nothing either — archives merge into a normal
+a folder-based project does nothing either, because archives merge into a normal
 Waveform project.
 
 ### Creating an Archive
@@ -130,14 +130,14 @@ can also reach this from the *Share* button on the media list, or the
 *Export* buttons in the project and Edit inspectors. The *Create Archive*
 dialog has just two controls.
 
-**Destination file** — Where the `.zip` is saved. Waveform suggests a name
+**Destination file**: Where the `.zip` is saved. Waveform suggests a name
 based on the Edit, ending in *Archive 1.zip*, and bumps the number
 automatically if a file already exists. It remembers the last folder you
 used. (Default: the project's archive media folder, or your last export
 folder.)
 
 **Compression** (Choices: No compression, Fast compression, Normal
-compression (Recommended), Best compression) — How hard Waveform works to
+compression (Recommended), Best compression): How hard Waveform works to
 shrink the file. *No compression* is fastest and largest; *Best
 compression* is slowest and smallest. (Default: Normal compression
 (Recommended))
@@ -156,14 +156,6 @@ instead.
   volume rides, pan moves, or plugin automation, those won't survive the
   round-trip. Bounce automation-heavy tracks to audio first if you need
   them to translate.
-- **Missing plugins are dropped silently** on DAWproject import. Check the
-  receiving machine has the same plugins installed.
-- **Mackie and RADAR imports go into the current Edit.** Start from a blank
-  Edit so you don't mix the imported material into existing work.
-- **Keep audio next to legacy project files.** Mackie expects the audio
-  beside the `.prj`; RADAR expects an *Audio Files* folder two levels up.
-- **Create Archive is full/demo only.** The free edition can't make
-  archives.
 
 ## Moving On
 

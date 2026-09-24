@@ -116,12 +116,12 @@ Duplicating Plugins
 *Duplicate Plugins by Pressing D*
 
 Deleting Plugins
-- To delete a plugin, simply select the plugin and hit Delete or
+- To delete a plugin, select the plugin and hit Delete or
     Backspace. You may alternatively click the red *Delete Plugin*
     button in properties.
 
 Moving Plugins
-- To move a plugin from one track to another track, simply grab the
+- To move a plugin from one track to another track, grab the
     plugin and drag it wherever you would like to put it, even to a
     different track. As you drag, a red insert illumination will appear
     showing where the plugin will be after you drop it.
@@ -138,7 +138,7 @@ Copying Plugins
 
 Bypassing a Plugin
 - To bypass a plugin, select the plugin then turn off *Enabled* in
-    properties. Or, simply select the plugin and press the keyboard
+    properties. Or, select the plugin and press the keyboard
     shortcut F. A bypassed plugin appears with a red X through it on the
     Mixer.
 
@@ -154,8 +154,8 @@ and then pressing F.
 
 You can assign a quick control parameter to any instance of a plugin.
 This allows you immediate access to tweak one parameter without mousing
-back to properties or opening the UI for the plugin. For example, I
-often set the mix control for delay plugins as quick control.
+back to properties or opening the UI for the plugin. For example, the
+mix control of a delay plugin makes a handy quick control.
 
 
 ![](images/29----06.png)
@@ -197,7 +197,7 @@ Settings Tab, Plugins page. The parameter is *Opening Plugin Windows.*
 
 ## Cmajor Patches
 
-Waveform can host *Cmajor* patches — audio effects and instruments written in
+Waveform can host *Cmajor* patches: audio effects and instruments written in
 the Cmajor language and distributed as `.cmajorpatch` bundles. Patches are
 compiled on the fly when they load, so they run as native plugins inside your
 Edit and insert exactly like any other plugin.
@@ -273,7 +273,7 @@ this a bit faster than dragging the plugin object down there!
 ## Plugin Sidechains
 
 Plugins that support a sidechain input have a sidechain assignment list
-at the upper left in the plugin header. Simply pick which track you want
+at the upper left in the plugin header. Pick which track you want
 to route to the sidechain.
 
 

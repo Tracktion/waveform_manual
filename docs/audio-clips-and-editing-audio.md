@@ -292,8 +292,7 @@ Typical cut, copy, and paste commands also work with with Audio clips:
 
 ## Clip Gain, Mute, & Pan
 
-Adjusting the gain of an Audio clip is great tool for mixing. Simply
-split out one phrase, or even one note and tweak the gain level.
+Adjusting the gain of an Audio clip is great tool for mixing. Split out one phrase, or even one note and tweak the gain level.
 Waveform has not only clip gain but also clip mute and pan - all
 available in properties. When working with stereo Audio clips, *Pan*
 works as a balance control.
@@ -337,7 +336,7 @@ Active Channels (Stereo Clips)
 ## Reversing Audio Clips
 
 Another cool thing you can do is reverse a clip so the audio plays
-backwards. Simply click the *Reverse* button in properties. The waveform
+backwards. Click the *Reverse* button in properties. The waveform
 thumbnail reverses and the sound will be backwards on playback.
 
 
@@ -397,7 +396,7 @@ audio, so its edits stay perfectly in sync with Waveform's transport and
 loop as you work.
 
 The most popular ARA plugin is **Celemony Melodyne**, and a **Melodyne
-Essential license is bundled** with Waveform — you will have received
+Essential license is bundled** with Waveform. You will have received
 information on how to install it, along with your Waveform order. The
 workflow below uses Melodyne as the worked example, but **any ARA plugin
 you install** (for example VocAlign, SynthV, or SpectraLayers) appears the
@@ -427,8 +426,8 @@ Windows only**. Installed ARA plugins also appear in the **ARA** column of
 
 *Audio Clip with Melodyne Invoked*
 
-3.  Click the plugin name at the center of the clip — or click **Show ARA
-    plugin editor** in the properties — to open the plugin's editor.
+3.  Click the plugin name at the center of the clip (or click **Show ARA
+    plugin editor** in the properties) to open the plugin's editor.
 
 
 ![](images/12----26@2x.png)
@@ -456,7 +455,7 @@ Here is how to remove an ARA plugin from a clip:
 ### Reopen the editor from the clip
 
 While a clip is in ARA mode, the clip strip shows a small **"<plugin>…"**
-button (for example *Melodyne…*) — click it at any time to reopen the
+button (for example *Melodyne…*). Click it at any time to reopen the
 plugin's editor. The pitches the plugin has detected are also drawn as a
 **note overlay** on top of the clip's waveform, so any pitch and timing
 edits you make in the plugin are reflected directly on the Waveform clip.
@@ -465,8 +464,8 @@ edits you make in the plugin are reflected directly on the Waveform clip.
 
 When a clip is in ARA mode, the properties show a **Use ARA plugin to
 convert this audio clip to MIDI** button. Clicking it uses the plugin's
-note analysis to create a **new MIDI clip** — with the same name, start,
-and length — and **replaces the audio clip** on that track. This is a quick
+note analysis to create a **new MIDI clip** with the same name, start,
+and length, and **replaces the audio clip** on that track. This is a quick
 way to turn a monophonic part, such as a vocal or bass line, into an
 editable MIDI performance.
 
@@ -612,10 +611,8 @@ linked Audio clips and MIDI clips as well.
 
 ## Moving On
 
-Those are the simple but powerful tools in for editing Audio clips in
-Waveform. We didn't even cover time stretching, Warp Time. But, these
-are the fundamentals. Let's move on to looping Audio clips in the next
-chapter.
+Time stretching is covered in [Warp Time](warp-time.md), and looping
+Audio clips in [Working with Loops](working-with-loops.md).
 
 
 

@@ -57,7 +57,7 @@ Files
 Search
 - The unified Search tab lets you search loops, presets, plugins,
     racks, clips, and tracks in one interface, filtered by category and
-    by tags. This is the main content browser -- see [The
+    by tags. This is the main content browser. See [The
     Browser](browser.md).
 
 Groups
@@ -71,18 +71,18 @@ Tracks
 
 Markers
 - Use the Markers tab to add bars & beats or timecode markers to the
-    Marker track. Navigate to any marker by simply clicking on the
+    Marker track. Navigate to any marker by clicking on the
     marker name. You can also quickly delete the selected marker, change
     its name or marker type in properties.
 
 Assistant
-- (Waveform 14) The Assistant tab hosts the AI Assistant -- a chat
+- (Waveform 14) The Assistant tab hosts the AI Assistant, a chat
     panel where you can make natural-language requests. It appears once
     you enable it on the Settings tab under AI.
 
 Plugin
 - (Waveform 14) The Plugin tab hosts a single plugin running live on the
-    Edit's main output -- handy for a tuner, analyser, or other tool you
+    Edit's main output. It's handy for a tuner, analyser, or other tool you
     want always on hand. Enable it on the Settings tab under Plugins. See
     [The Plugin Side Panel](plugin-side-panel.md).
 
@@ -191,13 +191,13 @@ audio and MIDI. Signal flow follows from left to right from Inputs, to
 Clips for recording, to the Mixer and any plugins it uses, then on to
 the master output. There is really only one kind of track in Waveform.
 Tracks can hold any kind of clip: Audio clips, MIDI clips, Step clips,
-or Edit clips. To create a new Track simply press T.
+or Edit clips. To create a new Track, press T.
 
 Track Headers
 - The leftmost column of the Arrangement forms a list of track
     headers. Select a track by clicking directly on the track name
     within the header. Additional track properties including the Name
-    became available in properties. To rename a Track, simple edit the
+    became available in properties. To rename a Track, edit the
     *name* property. Tracks can be reordered by grabbing any track from
     the header and dragging it to a new location.
 

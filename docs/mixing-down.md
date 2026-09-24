@@ -2,8 +2,8 @@
 
 Mixing down is the last step: turning your Edit into a finished audio file. This
 chapter covers getting the mix ready to be rendered and finding the file once
-it's written. The render dialog itself — formats, stems, loudness targets, file
-naming and the render queue — is covered in the Rendering and Stems chapter.
+it's written. The render dialog itself (formats, stems, loudness targets, file
+naming and the render queue) is covered in the Rendering and Stems chapter.
 
 ## Master Processing
 
@@ -35,7 +35,7 @@ to upload to your website or SoundCloud, you will want to put some
 mastering effects on to make your mix into a finished product.
 
 > 💡 **Tip:** If you're aiming at a streaming platform, you don't need a loudness
-> plugin on the master to hit their target — the render dialog can normalise to
+> plugin on the master to hit their target, because the render dialog can normalise to
 > a LUFS target with a true-peak ceiling as it writes the file. See the Rendering
 > and Stems chapter.
 
@@ -104,15 +104,10 @@ folder containing this file*.
 
 **Exported* Folder in the Browser*
 
-> 💡 **Tip:** You don't have to come here at all — each finished render in the
+> 💡 **Tip:** You don't have to come here at all: each finished render in the
 > queue has a button that reveals the file on your computer directly.
 
 ## Moving On
 
-We have gone all the way from installing the program, to recording,
-editing, adding virtual instruments, to using guitar amp sims, mixing,
-and mixing down. There's still a lot more that you can learn and explore
-about Waveform and your own music. Have fun, and make a lot of music.
-
 For everything the render dialog can do beyond a simple stereo mixdown, see the
-Rendering and Stems chapter.
+Rendering and Stems chapter. Have fun, and make a lot of music.

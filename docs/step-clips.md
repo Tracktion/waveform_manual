@@ -515,7 +515,7 @@ to add another row at any time using *Insert Row*.
 
 ## Velocity Gate Editor
 
-Take your Step clip programming to the next level using the Velocity
+Add dynamics and feel to your Step clips using the Velocity
 Gate editor. When you click *V/G* in the upper left corner of any Step
 clip, the V/G view appears below the patterns. This give you a quick
 graphical view of the velocity per note for the selected row.
@@ -621,7 +621,7 @@ the Browser Presets tab and filter by *Step Clips*.
 
 *Preset Details Dialog Box for a Step Clip*
 
-> 💡 **Tip:** I suggest you always use *Create Preset > Include patterns.*
+> 💡 **Tip:** Always use *Create Preset > Include patterns.*
 *Create Preset > Exclude Patterns* is also available, but that will
 always have the default 16 step blank pattern since the save function
 doesn't include any patterns. If you use this option, you may be
@@ -631,7 +631,7 @@ Preset > Include patterns*.
 
 ## Moving On
 
-Step clips are incredibly powerful and a fun way to work with MIDI data
+Step clips are a flexible and fun way to work with MIDI data
 and virtual instruments. They are also unique to Waveform. Use this tool
 as a secret weapon for creating cool and expressive beats!
 

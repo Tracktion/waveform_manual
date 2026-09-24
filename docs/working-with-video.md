@@ -1,15 +1,15 @@
 # Working With Video
 
 Waveform can load a video file alongside your Edit so you can score to
-picture — write music, edit dialogue, or design sound effects while
+picture: write music, edit dialogue, or design sound effects while
 watching the footage play in sync with the timeline. This chapter covers
 importing a video, working with the video window, and (on Pro) rendering
 your mix back out to a finished video file.
 
 ## What You Can Do at Each Edition
 
-Video support comes in two tiers. The basics — importing standard video,
-the playback window, and the timecode overlay — are available in
+Video support comes in two tiers. The basics (importing standard video,
+the playback window, and the timecode overlay) are available in
 Waveform Free, OEM, and Pro from version 12.5 onward. A second set of
 features is Pro-only, or unlocked by the **Pro Video Expansion** add-on.
 
@@ -37,7 +37,7 @@ more than one file at once.
 
 The standard formats Waveform accepts are *.mov*, *.avi*, *.webm*,
 *.wmv*, *.mp4*, *.m4v*, *.mpg*, *.mp2*, *.mpeg*, *.mpe*, *.mpv*, and
-*.mkv*. Image sequences — folders of *.png*, *.jpg*, or *.jpeg* frames —
+*.mkv*. Image sequences (folders of *.png*, *.jpg*, or *.jpeg* frames)
 require the Pro video features.
 
 When you import, Waveform does a few things automatically:
@@ -73,11 +73,11 @@ you can show or hide it any time:
 The window starts at 720×405 and remembers its size and position between
 sessions. It stays on top of the main window so it doesn't get buried,
 and it auto-hides when you switch away from Waveform to another
-application. Where there's no footage — before the video starts or in a
-gap — the window simply shows black.
+application. Where there's no footage (before the video starts or in a
+gap), the window shows black.
 
 > 📝 **Note:** The video window is display-only. There are no play,
-> offset, aspect-ratio, or volume controls in it — playback is driven
+> offset, aspect-ratio, or volume controls in it. Playback is driven
 > entirely by Waveform's transport. Think of it as a passive reference
 > monitor that mirrors wherever the playhead is.
 
@@ -92,7 +92,7 @@ talking timings through with a director.
 
 The **Video** menu also has a **Video Thumbnail Size** submenu with
 choices of *100%*, *75%*, *50%*, and *Disabled*. This controls the strip
-of thumbnail frames drawn along the video clip in the timeline — not the
+of thumbnail frames drawn along the video clip in the timeline, not the
 video window itself. Turn it down or off if the thumbnails are cluttering
 your view or you want to lighten the display.
 
@@ -101,9 +101,9 @@ your view or you want to lighten the display.
 If you have the Pro video features, two extra items appear in the
 **Video** menu for getting a finished video back out:
 
-- **Export: Render to a file…** — combine the video picture with a fresh
+- **Export: Render to a file…**: combine the video picture with a fresh
   mix of your audio into a new file.
-- **Export: Render and replace audio track in video…** — keep an
+- **Export: Render and replace audio track in video…**: keep an
   existing video's picture and swap in your new audio mix.
 
 Both always write a **.mov** file.
@@ -113,27 +113,27 @@ Both always write a **.mov** file.
 Choosing **Render to a file…** opens the *Render Video* dialog. The
 options are:
 
-**Video format** (Choices: H.264, H.265) — the video codec for the
+**Video format** (Choices: H.264, H.265): the video codec for the
 output. (Default: H.264)
 
-**Output resolution** (Choices: Original, 4K, 2K, 1080P, 720P) — the
+**Output resolution** (Choices: Original, 4K, 2K, 1080P, 720P): the
 frame size of the rendered video. (Default: Original)
 
-**Sample rate** (Choices: 44100, 48000) — the audio sample rate. (Default:
+**Sample rate** (Choices: 44100, 48000): the audio sample rate. (Default:
 matches your Edit)
 
-**Bit depth** (Choices: 16, 24) — the audio bit depth.
+**Bit depth** (Choices: 16, 24): the audio bit depth.
 
-**Normalise** — scales the output so its loudest peak hits a target.
+**Normalise**: scales the output so its loudest peak hits a target.
 Turning it on reveals a **Peak level** field (−30 to 0 dB). (Default:
 off)
 
-**Adjust based on RMS** — scales the output to a target average
+**Adjust based on RMS**: scales the output to a target average
 (perceived) level instead. Turning it on reveals an **RMS level** field
 (−30 to 0 dB). Only the Peak or RMS field is shown at a time, depending
 on which is active. (Default: off)
 
-**Render marked region only** — renders just the region between the In-
+**Render marked region only**: renders just the region between the In-
 and Out-markers. This option only appears when a marked region longer
 than about 50 milliseconds exists, and when it appears it defaults to on.
 
@@ -145,7 +145,7 @@ than about 50 milliseconds exists, and when it appears it defaults to on.
 ### Replace Audio in Video
 
 **Render and replace audio track in video…** opens the same dialog with
-the video-format and resolution options hidden — it reuses the existing
+the video-format and resolution options hidden. It reuses the existing
 video's picture, so only the audio settings apply. Use this when you've
 been handed a finished cut and just need to lay your new mix onto it.
 
@@ -157,15 +157,10 @@ been handed a finished cut and just need to lay your new mix onto it.
 - **Output is always .mov.** Even when you pick H.265, the file is wrapped
   in a .mov container. H.265-in-MOV doesn't play everywhere, so test your
   delivery target if you choose it.
-- **Don't move the original.** Rendering pulls the picture from your
-  original video file, not the internal working copy, so keep it where it
-  was when you imported.
 - **Rendering requires a full or demo licence**, in addition to the Pro
   video features.
 
 ## Moving On
 
-You now know how to bring footage into Waveform, score to it in the video
-window, and (on Pro) render a finished video back out. For more on the
-audio side — mixing the soundtrack and the render settings shared with
-audio exports — see the Mixing Down chapter.
+For mixing the soundtrack and the render settings shared with audio
+exports, see the Mixing Down chapter.

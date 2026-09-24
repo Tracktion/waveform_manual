@@ -134,7 +134,7 @@ appropriately as shown above.
 
 ## Defining Groove Templates
 
-To take groove to the next level, you can build grooves to your own
+For more control, you can build grooves to your own
 definition using the Groove Template Editor. At the bottom of the *Apply
 Groove* menu, you'll find *Edit groove templates*. This is also
 available in the Menu section under *Snapping > Edit Groove Templates*.

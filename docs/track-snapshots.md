@@ -8,7 +8,7 @@ a different arrangement and instantly recall the saved one. It is an A/B tool fo
 lay down a verse one way, snapshot it, rearrange the clips, and flip back and forth between the
 versions until you are happy.
 
-> 📝 **Note:** A snapshot captures the track's **clips only** — their positions, lengths, and clip-level
+> 📝 **Note:** A snapshot captures the track's **clips only**: their positions, lengths, and clip-level
 > settings. It does **not** store plugins, fader, pan, mute/solo, sends, or automation. Recalling a
 > snapshot changes which clips sit on the track; it leaves the channel strip and plugins untouched.
 
@@ -20,7 +20,7 @@ versions until you are happy.
 
 ## Opening the Snapshots Menu
 
-Track Snapshots are available on **audio tracks** only — you will not see them on folder, submix,
+Track Snapshots are available on **audio tracks** only. You will not see them on folder, submix,
 tempo, or chord tracks. There are two ways in:
 
 - **Right-click the track** and choose **Track snapshots** (camera icon) to open the submenu.
@@ -62,12 +62,12 @@ The menu lists every snapshot on the track, newest first. If there are none, it 
 ## Syncing Snapshots Across Tracks
 
 At the top of the menu is **Sync snapshots across tracks**, a toggle that is **on by default**. This is a
-global preference — it carries between projects, not just the current edit.
+global preference, so it carries between projects, not just the current edit.
 
-- **On** — adding, recalling, renaming, or deleting a snapshot acts on **every track that shares that
+- **On**: adding, recalling, renaming, or deleting a snapshot acts on **every track that shares that
   snapshot's timestamp**, and on any tracks linked through an enabled **Edit Mix Group**. This lets you
-  snapshot and recall a whole arrangement — several tracks at once — as a single operation.
-- **Off** — every snapshot operation affects only the one track you clicked on.
+  snapshot and recall a whole arrangement (several tracks at once) as a single operation.
+- **Off**: every snapshot operation affects only the one track you clicked on.
 
 > 💡 **Tip:** Use *Sync snapshots across tracks* when you want to A/B a multi-track section (for example
 > all of your drum tracks together). Turn it off when you want to experiment with a single track in

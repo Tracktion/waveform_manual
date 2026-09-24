@@ -20,13 +20,13 @@ There are four ways to copy loops into an Edit.
 2.  Use the Browser Search tab and search for loops and then drag them
     into your Edit. The Browser also gives you the ability to preview
     loops to help you select the right one for the song.
-3.  Simply drag them from you computer desktop drop them onto tracks .
+3.  Drag them from you computer desktop drop them onto tracks .
 4.  From the menu section, select *Import > Import an audio or MIDI
     file*. Navigate to a file on your system and click open. The *Select
     a file to import* dialog box even includes a basic file audition
     function with *Auto-play*.
 
-> 📝 **Note:** Beyond the common formats — WAV, AIFF, FLAC, Ogg, and MP3 —
+> 📝 **Note:** Beyond the common formats (WAV, AIFF, FLAC, Ogg, and MP3),
 Waveform also imports `.w64`, `.caf`, `.au`, and `.voc` files. On macOS it
 additionally reads Apple-format files such as `.m4a` and `.m4b`; on Windows
 it reads Windows Media Audio. REX loop files (`.rx2`, `.rcy`, `.rex`) are
@@ -164,7 +164,7 @@ Auto-Tempo
 Warp Time
 - With *Warp Time* enabled the waveform view to the right becomes a
     Warp Time editor. You can add warp points and do fine timing
-    adjustments. This powerful feature is covered in detail in [Warp Time](warp-time.md).
+    adjustments. This feature is covered in detail in [Warp Time](warp-time.md).
 
 Time Signature
 - Edit *Time Signature* values to set the time signature of the file.

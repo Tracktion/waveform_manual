@@ -4,7 +4,7 @@
 > Waveform Free or OEM editions.
 
 The Arranger Track gives you a bird's-eye view of your song's structure. You divide the project into
-named, coloured **sections** — Intro, Verse, Chorus, Bridge, Outro, and so on — and then rearrange
+named, coloured **sections** (Intro, Verse, Chorus, Bridge, Outro, and so on) and then rearrange
 the whole song by dragging those sections instead of carefully moving clips on every individual track.
 
 When you move or copy a section, Waveform moves the underlying audio and MIDI clips *plus* any tempo,
@@ -25,7 +25,7 @@ command **"Show or hide Arranger track"** or the *View > Show Arranger track* me
 Track visibility is saved with the edit and as part of View Presets.
 
 > 💡 **Tip:** If you use View Presets to switch between different working layouts, you can include or
-> exclude the Arranger Track in each preset — useful for keeping the screen tidy when you are focused
+> exclude the Arranger Track in each preset. This is useful for keeping the screen tidy when you are focused
 > on mixing rather than arrangement.
 
 
@@ -59,7 +59,7 @@ it. **Swap** exchanges the two sections' content; **Replace** overwrites the tar
 
 When you have tracks selected, a Copy or Move operation affects only those tracks. With no tracks
 selected, it affects all tracks (the Arranger Track itself is always included). This lets you make
-partial rearrangements — for example, moving a vocal part independently of the rest of the
+partial rearrangements, for example moving a vocal part independently of the rest of the
 arrangement.
 
 
@@ -87,7 +87,7 @@ controls are available:
 | **Move clip** | Options for moving the section relative to its neighbours |
 | **Delete** | Remove the selected section(s) |
 
-The Arranger Track header itself shows only the standard **Shrink** / **Grow** track-height buttons —
+The Arranger Track header itself shows only the standard **Shrink** / **Grow** track-height buttons;
 there are no arranger-specific track options.
 
 
@@ -99,13 +99,13 @@ Right-clicking a section gives you:
 - Cut / Copy / Duplicate
 - Delete
 - Split at cursor
-- **Delete time of selected clips** — removes that time range from the entire edit
-- **Insert time at selected clips** — inserts blank time at the section's position
+- **Delete time of selected clips**: removes that time range from the entire edit
+- **Insert time at selected clips**: inserts blank time at the section's position
 - Delete time gap before / after / both
 
 
 ## Related Features
 
-- **[Using Markers](using-markers.md)** — the Marker track, Tempo track, and Chord track are sibling
+- **[Using Markers](using-markers.md)**: the Marker track, Tempo track, and Chord track are sibling
   global tracks that work alongside the Arranger Track.
-- **View Presets** — Arranger Track visibility can be saved and recalled as part of any View Preset.
+- **View Presets**: Arranger Track visibility can be saved and recalled as part of any View Preset.

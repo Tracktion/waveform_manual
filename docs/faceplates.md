@@ -1,6 +1,6 @@
 # Faceplates
 
-Faceplates let you build custom control panels for your plugins and racks. Instead of using the default parameter list, you can design a visual layout with knobs, sliders, buttons, meters, and labels -- arranged exactly the way you want.
+Faceplates let you build custom control panels for your plugins and racks. Instead of using the default parameter list, you can design a visual layout with knobs, sliders, buttons, meters, and labels, arranged exactly the way you want.
 
 ![](images/Faceplate%201@2x.png)
 *A Chorus plugin with a custom faceplate showing rotary knobs, buttons, parameter names, value readouts, and level meters.*
@@ -31,19 +31,19 @@ That's all it takes. Lock the padlock again when you're done, and your faceplate
 
 The toolbar on the right side of the faceplate contains these buttons, from top to bottom:
 
-**Padlock** -- Toggles edit mode on and off. When locked, you interact with the controls normally. When unlocked, you can move, resize, add, and remove controls. The grid dots become visible in edit mode.
+**Padlock**: Toggles edit mode on and off. When locked, you interact with the controls normally. When unlocked, you can move, resize, add, and remove controls. The grid dots become visible in edit mode.
 
-**Stretch** -- When enabled, the faceplate stretches to fill all available space. When disabled, the faceplate maintains its fixed grid proportions.
+**Stretch**: When enabled, the faceplate stretches to fill all available space. When disabled, the faceplate maintains its fixed grid proportions.
 
-**Assign** -- Enters parameter assign mode. When active, this button pulses to indicate it's waiting for you to move a parameter. Tweak any parameter on your plugin, and it gets assigned to the currently selected control. This is the fastest way to connect controls.
+**Assign**: Enters parameter assign mode. When active, this button pulses to indicate it's waiting for you to move a parameter. Tweak any parameter on your plugin, and it gets assigned to the currently selected control. This is the fastest way to connect controls.
 
-**Quick Assign** -- When enabled alongside assign mode, the faceplate automatically advances to the next control after each successful assignment. This lets you rapidly assign a whole panel by just tweaking parameters one after another.
+**Quick Assign**: When enabled alongside assign mode, the faceplate automatically advances to the next control after each successful assignment. This lets you rapidly assign a whole panel by just tweaking parameters one after another.
 
-**Presets** -- Opens a menu for saving, loading, and managing faceplate presets. More on this below.
+**Presets**: Opens a menu for saving, loading, and managing faceplate presets. More on this below.
 
-**Width Slider** -- Sets the number of horizontal grid columns. (Default: 8)
+**Width Slider**: Sets the number of horizontal grid columns. (Default: 8)
 
-**Height Slider** -- Sets the number of vertical grid rows. (Default: 4)
+**Height Slider**: Sets the number of vertical grid rows. (Default: 4)
 
 > 💡 **Tip:** You can hide the edit toolbar by right-clicking the faceplate background and unchecking *Show edit menu*. Right-click again to bring it back.
 
@@ -67,14 +67,14 @@ Faceplates offer eight types of controls. Each one serves a different purpose.
 
 A knob or fader that controls a single parameter. This is the most common control type.
 
-**Style** -- Right-click a slider and choose from the *Style* submenu:
-- **Rotary** -- A traditional knob. (Default)
-- **Linear horizontal** -- A horizontal fader.
-- **Linear vertical** -- A vertical fader.
-- **Linear bar** -- A horizontal bar that fills as the value increases.
-- **Linear bar vertical** -- A vertical bar that fills upward.
+**Style**: Right-click a slider and choose from the *Style* submenu:
+- **Rotary**: A traditional knob. (Default)
+- **Linear horizontal**: A horizontal fader.
+- **Linear vertical**: A vertical fader.
+- **Linear bar**: A horizontal bar that fills as the value increases.
+- **Linear bar vertical**: A vertical bar that fills upward.
 
-**Snap to mouse position** -- Found under the *Options* submenu. When enabled, clicking the slider jumps the value to wherever you click. When disabled, the slider uses relative dragging, which is gentler for fine adjustments. (Default: snap enabled)
+**Snap to mouse position**: Found under the *Options* submenu. When enabled, clicking the slider jumps the value to wherever you click. When disabled, the slider uses relative dragging, which is gentler for fine adjustments. (Default: snap enabled)
 
 Sliders also support custom filmstrip images, rotary images (background + rotating thumb), and linear images (background + sliding thumb). See the Skins section below.
 
@@ -82,29 +82,29 @@ Sliders also support custom filmstrip images, rotary images (background + rotati
 
 A combined control that shows a parameter name label at the top, a rotary knob in the middle, and the current value readout at the bottom. It's a slider, name, and value display all in one.
 
-**Style** -- Same slider style options as above.
+**Style**: Same slider style options as above.
 
-**Large text** -- Toggle this from the right-click menu to increase the size of the name and value labels to fill their area.
+**Large text**: Toggle this from the right-click menu to increase the size of the name and value labels to fill their area.
 
 ### Parameter Name
 
 A text label that automatically displays the name of the assigned parameter. If you rename a macro parameter, this label updates to match.
 
-**Large text** -- Scales the text up to fill the available space.
+**Large text**: Scales the text up to fill the available space.
 
 ### Parameter Text
 
 A text readout that shows the current value of the assigned parameter as a formatted string (for example, "2.5 kHz" or "-12.0 dB"). It updates in real time as the parameter changes.
 
-**Large text** -- Scales the text up to fill the available space.
+**Large text**: Scales the text up to fill the available space.
 
 ### Label
 
-A static text label for annotation. Labels don't connect to any parameter -- they're purely for display. Use them to label sections of your faceplate or add descriptions.
+A static text label for annotation. Labels don't connect to any parameter; they're purely for display. Use them to label sections of your faceplate or add descriptions.
 
 Right-click a label and choose **Set text** to edit what it says.
 
-**Large text** -- Scales the text up to fill the available space.
+**Large text**: Scales the text up to fill the available space.
 
 ### Button
 
@@ -114,9 +114,9 @@ Right-click and choose **Set button text** to customise the label. If you don't 
 
 ### XY
 
-A two-dimensional pad that controls two parameters simultaneously -- one for the X axis and one for the Y axis. Drag anywhere on the pad to adjust both values at once. This is great for effects like filter cutoff vs. resonance or delay time vs. feedback.
+A two-dimensional pad that controls two parameters simultaneously: one for the X axis and one for the Y axis. Drag anywhere on the pad to adjust both values at once. This is great for effects like filter cutoff vs. resonance or delay time vs. feedback.
 
-**Reset after moving** -- When enabled, the pad snaps back to the default values when you release the mouse. Useful for performance effects where you want temporary parameter changes.
+**Reset after moving**: When enabled, the pad snaps back to the default values when you release the mouse. Useful for performance effects where you want temporary parameter changes.
 
 The XY pad supports custom background and thumb images from the *Skin* menu.
 
@@ -124,13 +124,13 @@ The XY pad supports custom background and thumb images from the *Skin* menu.
 
 A level meter that displays the output of a Level Meter plugin. Unlike other controls, meters don't map to automatable parameters. Instead, you assign them to a Level Meter plugin instance.
 
-**Style** -- Choose from the right-click menu:
-- **Stereo** -- Shows both left and right channels side by side. (Default)
-- **Left** -- Shows only the left channel.
-- **Right** -- Shows only the right channel.
-- **Peak** -- Shows whichever channel is louder.
+**Style**: Choose from the right-click menu:
+- **Stereo**: Shows both left and right channels side by side. (Default)
+- **Left**: Shows only the left channel.
+- **Right**: Shows only the right channel.
+- **Peak**: Shows whichever channel is louder.
 
-**Stretch to fit** -- When enabled, the meter stretches to fill its grid cells. When disabled, it maintains the aspect ratio of its image.
+**Stretch to fit**: When enabled, the meter stretches to fill its grid cells. When disabled, it maintains the aspect ratio of its image.
 
 > 📝 **Note:** You must have a Level Meter plugin on the track or in the rack for the meter control to display any levels. Assign the meter to the plugin via its right-click menu.
 
@@ -140,8 +140,8 @@ A level meter that displays the output of a Level Meter plugin. Unlike other con
 
 In edit mode, there are two ways to add controls:
 
-- **Click an empty cell** -- A menu appears listing all control types. Choose one, and it's placed at that position spanning a 2x2 area by default.
-- **Drag across empty cells** -- Click and drag to define a rectangular area on the grid, then choose the control type from the menu. The control is created to fill the area you selected.
+- **Click an empty cell**: A menu appears listing all control types. Choose one, and it's placed at that position spanning a 2x2 area by default.
+- **Drag across empty cells**: Click and drag to define a rectangular area on the grid, then choose the control type from the menu. The control is created to fill the area you selected.
 
 ### Moving and Resizing
 
@@ -178,9 +178,9 @@ In edit mode, left-click a control. A menu appears listing all available paramet
 ### Right-Click Assignment
 
 Right-click a control and look for the **Assign parameter** submenu. It offers:
-- **None** -- Removes any current assignment.
-- **Macros** -- Lists macro parameters.
-- **Modifiers** -- Lists modifier parameters (for racks).
+- **None**: Removes any current assignment.
+- **Macros**: Lists macro parameters.
+- **Modifiers**: Lists modifier parameters (for racks).
 - All plugin parameters grouped by plugin.
 
 ### Assign Mode (Tweak-to-Map)
@@ -210,19 +210,19 @@ Right-click the background and choose **Remove all assignments** to clear every 
 
 Right-click the faceplate background (not on a control) and look under the **Background** submenu.
 
-**Set colour** -- Opens a colour picker to set a solid background colour behind all your controls.
+**Set colour**: Opens a colour picker to set a solid background colour behind all your controls.
 
-**Set image** -- Browse for a background image (JPG, PNG, GIF, or SVG). The image is embedded in the faceplate, so it travels with your presets.
+**Set image**: Browse for a background image (JPG, PNG, GIF, or SVG). The image is embedded in the faceplate, so it travels with your presets.
 
-**Image alpha** -- A slider to adjust the transparency of the background image. (Default: 1.0, fully opaque)
+**Image alpha**: A slider to adjust the transparency of the background image. (Default: 1.0, fully opaque)
 
-**Image placement** -- Controls how the image fills the faceplate area:
-- **Centre** -- Displays the image at its original size, centred.
-- **Stretch** -- Stretches the image to fill the entire faceplate, ignoring aspect ratio.
-- **Fill** -- Scales the image to fill the faceplate while maintaining aspect ratio (may crop edges).
-- **Tile** -- Repeats the image as a tile pattern. Only available for bitmap images, not SVGs.
+**Image placement**: Controls how the image fills the faceplate area:
+- **Centre**: Displays the image at its original size, centred.
+- **Stretch**: Stretches the image to fill the entire faceplate, ignoring aspect ratio.
+- **Fill**: Scales the image to fill the faceplate while maintaining aspect ratio (may crop edges).
+- **Tile**: Repeats the image as a tile pattern. Only available for bitmap images, not SVGs.
 
-**Clear background** -- Removes the colour and image.
+**Clear background**: Removes the colour and image.
 
 ## Skins
 
@@ -232,15 +232,15 @@ Skins change the visual appearance of knobs, sliders, and other controls. You ca
 
 Right-click the faceplate background and open the **Default skin** submenu. Available skins:
 
-- **Default** -- The standard Waveform appearance.
-- **Juicy** -- A modern, clean look.
-- **Nord** -- Inspired by red Nord-style synthesiser controls.
-- **Moog** -- Large, chunky knobs reminiscent of Moog synthesisers.
-- **Juno** -- A classic analog synthesiser style.
-- **Mono Classic** -- Understated, bass-synth-inspired controls.
-- **Mono Modern** -- A contemporary take on the classic mono style.
-- **Mono Wired** -- An industrial variant with hard edges.
-- **Digital** -- A clean, digital-looking style.
+- **Default**: The standard Waveform appearance.
+- **Juicy**: A modern, clean look.
+- **Nord**: Inspired by red Nord-style synthesiser controls.
+- **Moog**: Large, chunky knobs reminiscent of Moog synthesisers.
+- **Juno**: A classic analog synthesiser style.
+- **Mono Classic**: Understated, bass-synth-inspired controls.
+- **Mono Modern**: A contemporary take on the classic mono style.
+- **Mono Wired**: An industrial variant with hard edges.
+- **Digital**: A clean, digital-looking style.
 
 ### Per-Control Skin
 
@@ -250,13 +250,13 @@ Right-click any individual control and open the **Skin** submenu. Choose a skin 
 
 For sliders, parameters, buttons, and meters, you can load custom graphics from the **Skin** menu:
 
-**Filmstrip Image** -- A single image file containing all frames of the control stacked vertically or horizontally. Waveform estimates the number of frames from the image dimensions, but you can set it manually via **Set number of frames**. Supports JPG, PNG, GIF, and SVG.
+**Filmstrip Image**: A single image file containing all frames of the control stacked vertically or horizontally. Waveform estimates the number of frames from the image dimensions, but you can set it manually via **Set number of frames**. Supports JPG, PNG, GIF, and SVG.
 
-**Rotary Image** (sliders only) -- Instead of a filmstrip, you provide two separate images:
+**Rotary Image** (sliders only): Instead of a filmstrip, you provide two separate images:
 - A **Background** image that stays fixed.
 - A **Thumb** image that rotates around the centre. You set the rotation range in degrees.
 
-**Linear Image** (sliders only) -- Two separate images for fader-style controls:
+**Linear Image** (sliders only): Two separate images for fader-style controls:
 - A **Background** image (the track).
 - A **Thumb** image (the handle) that slides along the background.
 
@@ -270,13 +270,13 @@ By default, faceplates use **Fit to space** mode, where the faceplate stretches 
 
 Right-click the background, open the **Background** submenu, then **Set size**:
 
-**Fit to space** -- When checked, the faceplate automatically scales. (Default: on)
+**Fit to space**: When checked, the faceplate automatically scales. (Default: on)
 
-**Width** -- Fixed width in pixels (50 to 2000). Only available when *Fit to space* is off.
+**Width**: Fixed width in pixels (50 to 2000). Only available when *Fit to space* is off.
 
-**Height** -- Fixed height in pixels (50 to 2000). Only available when *Fit to space* is off.
+**Height**: Fixed height in pixels (50 to 2000). Only available when *Fit to space* is off.
 
-The **Stretch** button on the toolbar is separate from this -- it controls whether grid cells stretch proportionally or maintain equal square proportions.
+The **Stretch** button on the toolbar is separate from this. It controls whether grid cells stretch proportionally or maintain equal square proportions.
 
 ## Presets
 
@@ -292,16 +292,16 @@ When you open a plugin that has a matching factory preset, Waveform can automati
 
 Click the **Presets** button (file icon) in the edit toolbar. You'll see:
 
-- **Load plugin preset** -- Shows only presets that were saved for this specific plugin type. Loads silently without prompting.
-- **Load generic preset** -- Shows all available presets. Opens a dialog where you can choose which elements to import.
-- **Load preset from file** -- Browse your file system for a `.tracktionfaceplate` file.
+- **Load plugin preset**: Shows only presets that were saved for this specific plugin type. Loads silently without prompting.
+- **Load generic preset**: Shows all available presets. Opens a dialog where you can choose which elements to import.
+- **Load preset from file**: Browse your file system for a `.tracktionfaceplate` file.
 
 When loading a generic preset, you can selectively import:
-- **Size** -- The grid dimensions.
-- **Controls** -- All the knobs, sliders, labels, and so on.
-- **Background** -- Colours and images.
-- **Parameter mappings** -- Which parameters are wired to which controls (if the plugin has matching parameters).
-- **Show assign parameters options when done** -- Pops up the auto-assign dialog after loading, so you can quickly remap controls.
+- **Size**: The grid dimensions.
+- **Controls**: All the knobs, sliders, labels, and so on.
+- **Background**: Colours and images.
+- **Parameter mappings**: Which parameters are wired to which controls (if the plugin has matching parameters).
+- **Show assign parameters options when done**: Pops up the auto-assign dialog after loading, so you can quickly remap controls.
 
 ### Saving a Preset
 
@@ -319,15 +319,13 @@ To remove a faceplate from a plugin entirely, click the **Presets** button and c
 
 Faceplates work on racks as well as individual plugins. When building a faceplate for a rack, the parameter assignment menus list controls from all plugins within the rack, grouped by plugin name. You can also assign macro parameters and modifier parameters that belong to the rack.
 
-This makes faceplates especially powerful for racks: you can build a single unified control surface that exposes the most important parameters from multiple plugins, all in one place.
+This makes faceplates especially useful for racks: you can build a single unified control surface that exposes the most important parameters from multiple plugins, all in one place.
 
 ## ⚡ Things to Watch Out For
 
-- **Edit mode blocks control interaction.** While the padlock is unlocked, you can't turn knobs or click buttons -- all mouse actions relate to layout editing. Lock the padlock to return to normal use.
+- **Edit mode blocks control interaction.** While the padlock is unlocked, you can't turn knobs or click buttons, because all mouse actions relate to layout editing. Lock the padlock to return to normal use.
 
 - **Grid resolution is permanent.** Doubling the grid resolution can't be undone by halving it, since the controls have already been scaled. Plan your grid size before placing many controls.
-
-- **Meter controls need a Level Meter plugin.** If your meter shows nothing, make sure you've added a Level Meter plugin to the track or rack and assigned it in the meter's right-click menu.
 
 - **Filmstrip frame count matters.** If a custom slider image looks wrong, right-click it and check **Set number of frames** under the skin menu. The auto-detection works well for square frames but can miscount with non-standard aspect ratios.
 
@@ -337,4 +335,4 @@ This makes faceplates especially powerful for racks: you can build a single unif
 
 ## Moving On
 
-Faceplates give you a streamlined way to interact with your plugins without getting lost in parameter lists. Start simple with a few Parameter controls and the auto-assign feature, then refine your layouts with custom images and skins as you get comfortable. Once you've built a faceplate you like, save it as a preset so you can reuse it across projects.
+For more on building racks and exposing their controls, see the Racks, Macros and Modifiers chapters.

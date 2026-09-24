@@ -93,7 +93,7 @@ multiple tracks, by selecting a combination of them at once.
 
 As you increase the vertical size of a track holding MIDI clips, you'll
 see that there's a point at where it switches to the inline MIDI note
-editor. This gives you a comprehensive view of the notes contained
+editor. This gives you a detailed view of the notes contained
 within the MIDI clip. This type of view is commonly called a piano roll
 view (PRV).
 
@@ -268,7 +268,7 @@ the selected note.
 
 ## The Pencil Tool
 
-The pencil tool is used to draw in notes. Simply select the pencil tool
+The pencil tool is used to draw in notes. Select the pencil tool
 and then start painting in notes where you'd like them to appear on the
 piano roll.
 
@@ -425,16 +425,14 @@ way velocity appears.
 
 For surgical, numbers-first editing, open the **MIDI Event List**. It's
 a floating, resizable table of every event in the currently selected
-MIDI clip, and it follows your selection — click a different clip and
+MIDI clip, and it follows your selection: click a different clip and
 the list updates to match. The list and the piano roll share a
 selection, so a note you highlight in one is highlighted in the other.
 
 This is a Waveform Pro feature (version 12 and later).
-<!-- code: waveform/common/Source/ui/midi/MidiEventList.cpp:116-124; Features.cpp promidi (Pro v12+) -->
 
 Open it with the command **Show or hide the MIDI Event List window**, or
 from the View menu's **Show MIDI Event List** item.
-<!-- code: StandardShortcuts.h:636 -->
 
 ![](images/event-list_1@2x.png)
 
@@ -443,23 +441,21 @@ from the View menu's **Show MIDI Event List** item.
 Across the top is an **add-event** menu (Add note, Controller, Program
 Change, Aftertouch, Pitch Wheel, Channel Pressure, or SysEx) alongside
 **Transpose**, **Quantise**, **Groove**, and **Chords** menus that act
-on the selected events. Along the bottom are seven filter toggles —
-**Notes, Controller, Program Change, Aftertouch, Pitch wheel, Channel
-Pressure, SysEx** — all on by default, so you can hide event types you
+on the selected events. Along the bottom are seven filter toggles
+(**Notes, Controller, Program Change, Aftertouch, Pitch wheel, Channel
+Pressure, SysEx**), all on by default, so you can hide event types you
 don't want to wade through.
-<!-- code: MidiEventList.cpp:185-237,763-793 -->
 
 The columns change with the event type:
 
-- **Notes** — a mute toggle, Time, Type, Pitch (0–127), Velocity
-  (0–127), Release velocity (0–127), and Length.
-- **Controllers** — Time, Type, Controller type (Program Change,
-  Aftertouch, Pitch Wheel, Channel Pressure, or CC 0–127), and Value
-  (0–16383).
-- **SysEx** — Time, Type, and an editable Data field.
-<!-- code: MidiEventList.cpp:357-449 -->
+- **Notes**: a mute toggle, Time, Type, Pitch (0-127), Velocity
+  (0-127), Release velocity (0-127), and Length.
+- **Controllers**: Time, Type, Controller type (Program Change,
+  Aftertouch, Pitch Wheel, Channel Pressure, or CC 0-127), and Value
+  (0-16383).
+- **SysEx**: Time, Type, and an editable Data field.
 
-> 💡 **Tip:** The Event List is the place to type exact values — handy
+> 💡 **Tip:** The Event List is the place to type exact values. It's handy
 > when you need a controller at precisely 64, or a note nudged to an
 > exact tick that's awkward to hit by dragging.
 
@@ -471,13 +467,12 @@ incoming MIDI controller (CC) to one parameter in your edit.
 
 Open it from the Automation menu's **Create MIDI controller mappings…**
 item, or with the command **Show MIDI controller mappings window**.
-<!-- code: waveform/common/Source/ui/edit/ParameterControlMappingsEditor.h:16,35-45; StandardShortcuts.h:626 -->
 
 ![](images/controller-mappings_1@2x.png)
 
 *The MIDI Controller Mappings window*
 
-When you first open it the window looks empty -- that is normal. There is
+When you first open it the window looks empty. That is normal. There is
 always one blank row waiting at the bottom of the list, and that row is how
 you add a mapping. Click either half of it to begin (see below); as soon as
 you fill a row in, a fresh blank row appears beneath it, ready for the next
@@ -485,19 +480,18 @@ mapping. So the "empty" window already contains everything you need to start.
 
 Each row has two halves:
 
-- **Left half (the controller)** — Click it to enter MIDI-learn (the
+- **Left half (the controller)**: Click it to enter MIDI-learn (the
   cell reads **(Move a MIDI controller)**); the next CC that arrives
   from your hardware is captured and bound to this row.
-- **Right half (the parameter)** — Click **Choose Parameter…** for a
+- **Right half (the parameter)**: Click **Choose Parameter…** for a
   hierarchical menu of everything you can map: Master Plugins, Racks,
   and each track's plugins and their parameters, plus an **Add all
   parameters** shortcut. The same menu saves, loads, and deletes
   presets.
-<!-- code: ParameterControlMappingsEditor.h:116-132; tracktion_ParameterControlMappings.cpp:375-533 -->
 
 > 💡 **Tip:** To set up a controller quickly, click the right half of the
-blank row, open a plugin's submenu, and choose **Add all parameters** -- a
-row is created for every parameter of that plugin in one step. Then just
+blank row, open a plugin's submenu, and choose **Add all parameters**. A
+row is created for every parameter of that plugin in one step. Then
 MIDI-learn the hardware controllers you want for each.
 
 Press **Delete** with a row selected to remove that mapping. There's
@@ -510,7 +504,7 @@ available to every edit.
 
 ## The SysEx Lane
 
-System Exclusive (SysEx) messages are manufacturer-specific MIDI data —
+System Exclusive (SysEx) messages are manufacturer-specific MIDI data,
 often used to recall a hardware synth patch or send a device-specific
 command. Waveform shows them on a dedicated controller lane in the MIDI
 editor, where each SysEx event appears as a **diamond** on a timeline.
@@ -518,9 +512,8 @@ editor, where each SysEx event appears as a **diamond** on a timeline.
 Open the lane from the MIDI editor's controller-lane menu and choose the
 SysEx option. The lane header has a **Close** button and a **Menu**.
 Use the Select, Pencil, and Eraser tools to place, move, and delete
-events — a pencil click creates a new event with four zero bytes — and
+events (a pencil click creates a new event with four zero bytes), and
 snapping applies just as it does elsewhere in the editor.
-<!-- code: waveform/common/Source/ui/midi/MidiSysexEditorPanel.cpp:29-299; MidiLaneEditorWindowBase.h:23-57 -->
 
 > 📝 **Note:** The lane is for placing and timing SysEx events. To edit
 > the actual bytes of a message, use the **Data** field in the MIDI

@@ -39,8 +39,8 @@ MIDI devices now* to initiate a scan for connected MIDI devices.
 From the Settings tab, MIDI Devices page, click on a MIDI input or
 output in the MIDI devices list. Notice that in properties, there is an
 *Alias* value. Edit that to give your MIDI input or output a friendly
-name. I often make this match the name of the controller that is
-connected.
+name. Matching it to the name of the connected controller keeps
+things easy to recognise.
 
 > 💡 **Tip:** You can customize *Alias* for a specific Edit, by selecting the
 input in the Edit tab and changing it in properties. Changing *Alias* on
@@ -177,18 +177,16 @@ virtual keyboard until you do that.
 
 The virtual keyboard along the bottom of the screen is one way to play
 notes from your computer keyboard. The **MIDI Typing** window is
-another — a small floating window with a wider key range and on-screen
+another: a small floating window with a wider key range and on-screen
 octave and velocity controls. It's handy when you want to audition or
 record an idea and don't have a controller plugged in.
 
 This is available in Waveform 14 and later, in all editions.
-<!-- code: waveform/common/Source/model/MidiTyping.cpp:175-176 (channel hard-coded); Features.cpp midiTyping (v14+, all editions) -->
 
 Show it with the command **Show or hide the MIDI Typing window**, or
 from the View menu's **Show MIDI Typing** item (which appears only when
-the *Use computer keyboard for MIDI input* setting is on — see
+the *Use computer keyboard for MIDI input* setting is on; see
 Reference: Settings > MIDI Devices).
-<!-- code: StandardShortcuts.h:635; EditTab.cpp:1279 -->
 
 ![](images/midi-typing_1@2x.png)
 
@@ -198,10 +196,9 @@ Typing is armed by **Caps Lock** (or by giving the window focus). Once
 armed, the keys `a w s e d f t g y h u j…` play a piano layout. The
 window also has:
 
-- **Octave** — Press Z or X to shift down or up. (Range 0–9, Default: 5)
-- **Velocity** — Press C or V to lower or raise it in steps of 5. (Range
-  0–127, Default: 98)
-<!-- code: MidiTyping.cpp:81-82,188,197,206,215 -->
+- **Octave**: Press Z or X to shift down or up. (Range 0-9, Default: 5)
+- **Velocity**: Press C or V to lower or raise it in steps of 5. (Range
+  0-127, Default: 98)
 
 A gear icon opens a list where you can remap the keys to your liking.
 
@@ -214,12 +211,11 @@ If you play external hardware synths, Waveform can show their patches by
 name instead of by raw program number. The **MIDI program names** dialog
 manages these named patch lists.
 
-There's no menu command or shortcut — you reach it from a MIDI output
+There's no menu command or shortcut. You reach it from a MIDI output
 device. Go to Settings > MIDI Devices, click a MIDI **output** device,
 and in properties open the **Program Names** dropdown. **Add** creates a
 named set from a preset, **Edit** opens the dialog to modify the
 selected set, and **Delete** removes one.
-<!-- code: waveform/common/Source/ui/settings/MidiOutputDevicePropertyPanel.h:108-147 -->
 
 ![](images/program-manager_1@2x.png)
 
@@ -227,17 +223,16 @@ selected set, and **Delete** removes one.
 
 Inside the dialog:
 
-- **Bank name** — A combo box for the 16 banks, with a **Rename**
+- **Bank name**: A combo box for the 16 banks, with a **Rename**
   button.
-- **Program name list** — 128 editable rows; press Tab to advance to
+- **Program name list**: 128 editable rows; press Tab to advance to
   the next one.
-- **MSB / LSB** — The bank-select bytes for the current bank. (MSB
-  0–128, LSB 0–256)
-- **Options** menu — Use zero based numbering, Set current bank to
+- **MSB / LSB**: The bank-select bytes for the current bank. (MSB
+  0-128, LSB 0-256)
+- **Options** menu: Use zero based numbering, Set current bank to
   General MIDI names, Reset, Clear, **Export all banks…** (to a
   `.trkmidi` file), and **Import all banks…** (from `.trkmidi` or
   `.midnam`).
-<!-- code: waveform/common/Source/ui/midi/MidiProgramManagerDialog.cpp:139-515 -->
 
 Click **Done** to save. These patch lists are shared across all your
 edits.
@@ -253,7 +248,6 @@ Waveform follows when that device starts, stops, and locates.
 
 You'll find these under the Edit tab's main menu. Click the main menu
 button and choose **Sync**.
-<!-- code: waveform/common/Source/ui/mainwindow/EditTab.cpp:1750 -->
 
 There's no default keyboard shortcut for the Sync menu or its items -
 assign one via Settings > Keyboard Shortcuts if you use them often.
@@ -267,7 +261,6 @@ assign one via Settings > Keyboard Shortcuts if you use them often.
 1.  Open **Sync > Change timecode offset…**.
 2.  In the **Change MIDI timecode offset** dialog, type the offset using
     the timecode field.
-    <!-- code: EditTab.cpp:1473-1490 -->
 3.  Click **OK**. Incoming and outgoing timecode is now shifted by that
     amount, which is handy when your external source starts a few frames
     away from where you want Waveform's transport to land.
@@ -278,25 +271,22 @@ assign one via Settings > Keyboard Shortcuts if you use them often.
     Devices), as described earlier in this chapter.
 2.  Open **Sync > MIDI timecode input device** and pick that device. Set
     it to **&lt;None&gt;** to stop chasing.
-    <!-- code: EditTab.cpp:1540 -->
 3.  If the master sends an hour value you don't want to follow, turn on
     **Ignore hours from incoming timecode**.
-    <!-- code: EditTab.cpp:1494 -->
 
 ### Menu reference
 
-- **Change timecode offset…** - opens the *Change MIDI timecode offset*
+- **Change timecode offset…**: opens the *Change MIDI timecode offset*
   dialog. (Default: 0)
-- **Ignore hours from incoming timecode** - a toggle; when on, the hours
+- **Ignore hours from incoming timecode**: a toggle; when on, the hours
   field of incoming MTC is ignored. (Default: off)
-- **MIDI timecode input device** - the MIDI input Waveform chases for
+- **MIDI timecode input device**: the MIDI input Waveform chases for
   MTC, or *&lt;None&gt;*.
-- **Respond to MIDI machine control from device** - the MIDI input
+- **Respond to MIDI machine control from device**: the MIDI input
   whose MMC transport commands (play/stop/locate) Waveform obeys, or
   *&lt;None&gt;*.
-- **Send MIDI machine control to device** - the MIDI output to which
+- **Send MIDI machine control to device**: the MIDI output to which
   Waveform sends MMC transport commands, or *&lt;None&gt;*.
-<!-- code: EditTab.cpp:1494-1543 -->
 
 > 📝 **Note:** The MTC input and MMC device lists only show inputs and
 > outputs you've already enabled. If a device is missing, enable it on
