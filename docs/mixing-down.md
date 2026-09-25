@@ -56,14 +56,16 @@ Markers chapter for more on placing markers.
 
 ## Rendering Your Mix
 
-Open the **Menu** at the top of the Edit tab and choose *Export: Render to a
-file*. For a straightforward stereo mixdown, set **Render** to *Whole Mix*, pick
-your format, check the folder and name, and click *Add to Queue and Start*.
+Choose *File > Export: Render to a file...* to open the Render dialog. It starts
+in Simple mode, which shows just the settings a straightforward mixdown needs.
+For a stereo mixdown, set **Render** to *Whole Mix*, pick your format, check the
+folder and name, and click *Add to Queue and Start*.
 
 That's the short version. The Rendering and Stems chapter covers the rest: MP3
 and the other formats, rendering stems for each track or submix, tagging the
 files with title and artist, normalising to a loudness target, naming batches
-with patterns, saving presets, and rendering from the command line.
+with patterns, saving presets, and rendering from the command line. Stems by
+submix and presets are in Advanced mode, which is part of Waveform Pro.
 
 ## Locating the Exported File
 

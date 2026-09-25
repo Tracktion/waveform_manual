@@ -357,8 +357,8 @@ properties.
 **Render Clips > Merge the selected clips**
 
 In a few moments, Waveform combines them into a single contiguous clip.
-There are many ways to merge, render, and export that we will touch on
-later.
+The other ways to render and export are covered in the Rendering and
+Stems chapter.
 
 
 ![](images/12----22.png)

@@ -160,5 +160,5 @@ instead.
 ## Moving On
 
 For exporting finished audio rather than whole projects, see the Mixing
-Down chapter. For more on how projects and their media are organised, see
+Down and Rendering and Stems chapters. For more on how projects and their media are organised, see
 the chapters on the Browser and the Projects tab.

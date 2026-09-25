@@ -162,5 +162,5 @@ been handed a finished cut and just need to lay your new mix onto it.
 
 ## Moving On
 
-For mixing the soundtrack and the render settings shared with audio
-exports, see the Mixing Down chapter.
+For mixing the soundtrack, see the Mixing Down chapter. For rendering
+audio files on their own, see the Rendering and Stems chapter.

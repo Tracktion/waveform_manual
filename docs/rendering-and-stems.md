@@ -4,8 +4,8 @@ This chapter covers the Render dialog: the single place you go to write files ou
 of an Edit, whether that's one stereo mixdown, a folder of stems for someone
 else's session, a MIDI file of your arrangement, or a batch of loops cut at your
 markers. It also covers the render queue, file name patterns, render presets,
-loudness normalising, and rendering from the command line without opening
-Waveform at all.
+loudness normalising, rendering tracks and clips back into the Edit, and
+rendering from the command line without opening Waveform at all.
 
 The Mixing Down chapter covers what to do *before* you get here (master
 processing, checking your levels) and how to find your files afterwards. This
@@ -18,9 +18,10 @@ underneath*
 
 ## Opening the Render Dialog
 
-Open the **Menu** at the top of the Edit tab and choose *Export: Render to a
-file*. Opening the dialog stops playback, and any plugin windows you had open
-are hidden while it's up.
+Choose *File > Export: Render to a file...*. Opening the dialog stops playback,
+and any plugin windows you had open are hidden while it's up. The track panel's
+**Render Track** button and the clip panel's **Render Clip** menu open the same
+dialog, set up for their job (see *Render Track* and *Rendering Clips* below).
 
 The dialog is laid out in three zones, side by side:
 
@@ -37,6 +38,31 @@ remembered with the Edit, so the dialog opens next time exactly as you left it.
 Second, some of the choices depend on what you had selected in the arrangement
 *when you opened the dialog*, so select your tracks or clips first, then open
 it.
+
+## Simple and Advanced Modes
+
+The dialog has two views. **Simple** shows the settings a straightforward
+mixdown needs, and **Advanced** shows every render option. Everyone starts in
+Simple.
+
+**Mode** <span class="pro">PRO</span> (Choices: Simple, Advanced): The row at
+the top of the Source zone that switches between the two views. The choice is
+remembered for the whole application rather than per Edit, so the dialog opens
+in the mode you last used. Switching back to Simple doesn't clear your Advanced
+settings; they are just not shown, and not used, until you switch back.
+(Default: Simple)
+
+Advanced mode is part of Waveform Pro. In Waveform Free the Mode row isn't
+shown and the dialog is always in Simple mode.
+
+Simple mode renders the whole mix, every track, or the selected tracks, over the
+whole Edit, the marked region or the selected clips. It has every File Format
+option except *Wrap Remainder Into Loop*, plus the folder, name, file list and
+*Add to Library*. Everything else in this chapter marked
+<span class="pro">PRO</span> needs Advanced mode: the Submixes, Groups, Tags and
+Outputs scopes and the track list, *Include Source Tracks*, the per-section
+ranges, *Wrap Remainder Into Loop*, render presets, the Destination row for
+ordinary renders, and loudness measurement.
 
 ## Rendering the Whole Mix
 
@@ -66,21 +92,24 @@ shows *Complete* and a folder button that reveals the file on your computer.
 Outputs): What gets rendered. *Whole Mix* writes one file for the whole Edit.
 Every other choice writes one file per item. (Default: Whole Mix)
 
-- **Tracks**: every audio track in the Edit, listed for you to tick.
+- **Tracks**: every audio track in the Edit, each to its own file. In Simple
+  mode that's every track; in Advanced mode they're listed for you to tick.
 - **Selected Tracks**: the tracks that were selected in the arrangement when
   you opened the dialog. There's no list to tick for this one: selecting a clip
   counts as selecting its track, a submix renders as itself, and a plain folder
   stands for the audio tracks inside it.
-- **Submixes**: every submix folder track.
-- **Groups**: every Edit Mix Group. See the Edit Mix Groups chapter.
-- **Tags**: every tag used on a track, so a tag acts as an ad-hoc stem group.
-  Tag three tracks *Drums* and you get one *Drums* stem containing all three.
-  Tags live on the tracks themselves and are saved with the Edit.
-- **Outputs**: the audio output devices the Edit plays to, with each one
-  rendering the tracks routed to it.
+- **Submixes** <span class="pro">PRO</span>: every submix folder track.
+- **Groups** <span class="pro">PRO</span>: every Edit Mix Group. See the Edit
+  Mix Groups chapter.
+- **Tags** <span class="pro">PRO</span>: every tag used on a track, so a tag
+  acts as an ad-hoc stem group. Tag three tracks *Drums* and you get one *Drums*
+  stem containing all three. Tags live on the tracks themselves and are saved
+  with the Edit.
+- **Outputs** <span class="pro">PRO</span>: the audio output devices the Edit
+  plays to, with each one rendering the tracks routed to it.
 
-Choosing anything other than *Whole Mix* or *Selected Tracks* adds a checklist
-of the items in that category. Its header tells you how many are ticked, and the
+In Advanced mode, choosing anything other than *Whole Mix* or *Selected Tracks*
+adds a checklist of the items in that category. Its header tells you how many are ticked, and the
 **All** and **None** buttons tick or untick everything currently shown. Once the
 list is long enough to scroll, a filter box appears above it. Type into it to
 narrow the list, then use **All** to tick just that subset. Items covering a
@@ -96,43 +125,51 @@ If a category has nothing in it, the list says so and tells you what you'd have
 to make first, for example *No tracks are tagged. Add tags to a track's
 properties and each tag renders as its own stem.*
 
-**Range** (Choices: Whole Edit, Marked Region, Selected Clips Range, Each
-Selected Clip Range, Each Marker Region, Each Arranger Clip Region): How much of
-the Edit each rendered file covers. (Default: Whole Edit)
+**Range** (Choices: Whole Edit, Marked Region, Selected Clips Range, Selected
+Clips in Marked Region, Each Selected Clip Range, Each Marker Region, Each
+Arranger Clip Region): How much of the Edit each rendered file covers.
+(Default: Whole Edit)
 
 - **Whole Edit**: start to end.
 - **Marked Region**: the range between the In and Out markers.
 - **Selected Clips Range**: renders the clips you had selected, and nothing
   else, into one file spanning from the first to the last. Only offered when
   clips were selected.
-- **Each Selected Clip Range**: renders each selected clip to its own file,
-  named after the clip. This is how you turn a handful of clips into a set of
-  samples in one pass. Only offered when clips were selected.
-- **Each Marker Region**: one file per marker clip, named after the marker.
-- **Each Arranger Clip Region**: one file per arranger clip, named after the
-  clip, so an arrangement built on the Arranger track exports section by
-  section. Only offered where the Arranger track is available. See the Arranger
-  Track chapter.
+- **Selected Clips in Marked Region**: the same, cut down to the part of the
+  clips inside the marked region. Only offered when clips were selected.
+- **Each Selected Clip Range** <span class="pro">PRO</span>: renders each
+  selected clip to its own file, named after the clip. This is how you turn a
+  handful of clips into a set of samples in one pass. Only offered when clips
+  were selected.
+- **Each Marker Region** <span class="pro">PRO</span>: one file per marker
+  clip, named after the marker.
+- **Each Arranger Clip Region** <span class="pro">PRO</span>: one file per
+  arranger clip, named after the clip, so an arrangement built on the Arranger
+  track exports section by section. Only offered where the Arranger track is
+  available. See the Arranger Track chapter.
 
-> 📝 **Note:** The two clip ranges render the clips themselves (nothing else on
+> 📝 **Note:** The clip ranges render the clips themselves (nothing else on
 > those tracks sounds, even if it overlaps), so they ignore the **Render** choice
 > entirely. Only arrangement clips on audio tracks count; clips in Launcher slots
 > and on the global tracks are left out.
 
 **Render Items to a Single File**: Mixes everything you've ticked into one file
 instead of writing one file per item. Use it to bounce a handful of chosen
-tracks down to a single stem. (Default: off)
+tracks down to a single stem. In Simple mode it's only offered for *Selected
+Tracks*, where it chooses between one file for the selection and one file per
+track. (Default: off)
 
-**Include Source Tracks**: Also processes the tracks that feed the chosen items'
+**Include Source Tracks** <span class="pro">PRO</span>: Also processes the tracks that feed the chosen items'
 sidechains, aux buses and racks, keeping them silent in the output. This is what
 makes a stem sound the way it does in the full mix: the kick still ducks the bass
 through the sidechain compressor even though the kick isn't in the bass stem. Leaving
-this on suits most renders. (Default: on)
+this on suits most renders, and Simple mode always leaves it on. (Default: on)
 
-### Rendering Stems
+### Rendering Stems <span class="pro">PRO</span>
 
-Rendering stems is the reason most of this zone exists. Pick the grouping that
-matches how you want the stems to arrive:
+Rendering stems is the reason most of this zone exists. In Simple mode,
+*Tracks* and *Selected Tracks* already give you a file per track; Advanced mode
+adds the groupings. Pick the one that matches how you want the stems to arrive:
 
 - Sending your song to someone mixing in another DAW? Use **Tracks**, so they
   get every track as its own file, all starting at the same point on the
@@ -213,6 +250,15 @@ it starts where the audio does. (Default: off)
 bits. If you don't know what dithering is, leaving this on is the right answer.
 (Default: off)
 
+**Include Tails**: Keeps rendering past the end of the range, for up to 10
+seconds, so reverb and delay tails aren't cut off. It stops as soon as the
+output falls silent, never runs into the next clip on the tracks being
+rendered, and adds nothing if a clip is still playing across the end of the
+range. Turn it off when a file has to end exactly at the end of the range, such
+as a loop or a section that has to line up with others. Hidden while *Wrap
+Remainder Into Loop* is ticked, since that handles the tail itself.
+(Default: on)
+
 **Render at 1x Play-Speed**: Renders in real time, taking as long as the song
 does. You need this if you're mixing through outboard gear with the Insert
 plugin, or if a plugin misbehaves when pushed faster than real time. Otherwise
@@ -222,7 +268,7 @@ leave it off. (Default: off)
 file so loop browsers and other DAWs can match it to their project.
 (Default: off)
 
-**Wrap Remainder Into Loop**: Renders the plugin tail that runs past the end of
+**Wrap Remainder Into Loop** <span class="pro">PRO</span>: Renders the plugin tail that runs past the end of
 the range and mixes it back onto the start of the file, so the file loops
 cleanly. This is the setting that turns a reverb-tailed bar into a usable
 loop instead of one that stutters at the loop point. It forces *Remove Silence
@@ -311,16 +357,36 @@ over-the-ceiling file gets clipped by their encoder. (Default: on)
 
 ## The Output Zone
 
-**Preset**: Applies a saved render preset, or saves, renames and deletes them.
-The row always tells you where you stand: it shows the name of the preset your
-current settings match, or **Custom** when they match none. See *Render Presets*
-below.
+**Preset** <span class="pro">PRO</span>: Applies a saved render preset, or
+saves, renames and deletes them. The row always tells you where you stand: it
+shows the name of the preset your current settings match, or **Custom** when
+they match none. See *Render Presets* below.
 
-**Folder**: The folder the rendered files are written to. Type a path or use the
-folder button to browse. Note that this row is the *folder* only; the file name
-comes from the row below. By default it's your project's **Exported** folder,
-where it turns up on the Projects tab alongside your other exports; an Edit with
-no project falls back to the folder the Edit file is in.
+**Destination** <span class="pro">PRO</span> (Choices: File, New Track, plus
+Replace Source Tracks or This Track and Replace Clips where they apply): Where
+the finished files go. *File* just writes them to the folder below. The other
+choices also bring each file back into the Edit, on a new track after its
+source, or in place of the source tracks or clips. See *Render Track* and
+*Rendering Clips* below for what each does. The row only appears for an Edit
+that belongs to a project. (Default: File)
+
+When the Destination brings the render back into the Edit, the Folder and Name
+rows, the file list, *Add to Library* and *Measure Loudness* are hidden. The
+file goes to the project's **Rendered** folder, named after the Edit and the
+first track being rendered, for example *My Song Bass Render 1*.
+
+**Folder**: The folder the rendered files are written to. Type a path, or use
+the folder button's menu: *Browse...* picks a folder, and *Reset to Default*
+goes back to the project's Exported folder. Note that this row is the *folder* only; the
+file name comes from the row below. By default it's your project's **Exported**
+folder; an Edit with no project falls back to the folder the Edit file is in.
+
+**Recent**: The button beside the folder lists the last 10 folders renders went
+to, from any Edit. Pick one to render there again.
+
+Wherever the folder is, each finished file is added to the project as an
+*Exported* item, so it turns up on the Projects tab alongside your other
+exports.
 
 **Name**: What the rendered files are called. How this behaves depends on how
 many files you're writing:
@@ -329,6 +395,9 @@ many files you're writing:
   file's name.
 - Every other scope writes a file per item, so the text is treated as a
   *pattern* and expanded once per file.
+
+Text containing a token is always treated as a pattern, in either mode and for
+any scope.
 
 Leave it empty and Waveform names the files after the Edit and the items being
 rendered.
@@ -354,6 +423,9 @@ Drums.wav* and so on. A token with nothing to fill it also swallows the
 separator next to it, so the same pattern used for a whole-mix render gives just
 *My Song.wav* rather than *My Song - .wav*.
 
+The spellings used for recorded file names, `%edit%`, `%track%` and `%date%`,
+work too, as aliases for `$edit`, `$track` and `$date`.
+
 Under the Name row is the list of files the render will write, headed *Will
 write one file:* or *Will write 22 files:*. It updates as you change anything
 above it.
@@ -361,7 +433,7 @@ above it.
 **Add to Library**: Adds each finished file to your loop library so you can
 search for it and use it in other projects. Audio formats only. (Default: off)
 
-**Measure Loudness of Rendered Files**: Reads each finished file back and shows
+**Measure Loudness of Rendered Files** <span class="pro">PRO</span>: Reads each finished file back and shows
 its integrated loudness and true peak on its queue row. The measuring happens on
 a background thread, one file at a time, so it doesn't compete with the render
 itself, and it never affects the audio that was written. Audio formats only.
@@ -389,9 +461,9 @@ Each row shows:
 | Column | What it shows |
 | --- | --- |
 | Name | The track, stem or mix being rendered |
-| Status | *Waiting...*, a live percentage, then *Complete*, *Limited*, *Failed* or *Cancelled* |
-| Preview | A waveform that draws in as the file is written (or a piano roll of the notes for a MIDI render), so you can see at a glance that something actually landed. A failed job shows its error here instead |
-| Loudness | The measured integrated loudness and true peak of the finished file, e.g. *-14.2 LUFS   -1.0 dBTP* |
+| Status | *Waiting...*, a live percentage, then *Complete*, *Limited*, *Failed* or *Cancelled*. A render brought back into the Edit shows *Added*, *Replaced* or *Not added* instead of *Complete* |
+| Preview | A waveform that draws in as the file is written (or a piano roll of the notes for a MIDI render), so you can see at a glance that something actually landed. Once the job is done it shows the finished file, after any trimming and normalising. A failed job shows its error here instead |
+| Loudness | The measured integrated loudness and true peak of the finished file, e.g. *-14.2 LUFS   -1.0 dBTP*. Only filled in when *Measure Loudness of Rendered Files* is on in Advanced mode |
 | Button | Cancels a job that's waiting or running; reveals the file once it's done |
 
 The header line above the rows answers "how much is left" without scrolling:
@@ -403,7 +475,7 @@ finish* appended if anything failed or was cancelled. A progress bar and a
 
 *A finished render, measured: −16.3 LUFS at −1.1 dBTP*
 
-## Render Presets
+## Render Presets <span class="pro">PRO</span>
 
 Presets are global: they're saved with the application rather than with an
 Edit, so a preset you make in one project is there in all of them.
@@ -428,6 +500,55 @@ Good candidates for presets: *Streaming master* (WAV, 24-bit, LUFS −14 with a
 on, 24-bit), *MP3 reference* (MP3 320, whole mix), *MIDI for the arranger* (MIDI,
 Tracks, source *Clips*).
 
+## Render Track
+
+The **Render Track** button in a track's properties opens the Render dialog set
+up to mix the selected tracks into one file and bring it back into the Edit.
+It's set to *Selected Tracks* with *Render Items to a Single File* ticked.
+
+**Destination** (Choices: File, New Track, Replace Source Tracks): What happens
+to the rendered file. *New Track* puts it on a new track after the source
+tracks. *Replace Source Tracks* puts it in place of them, and asks you to
+confirm before the render starts. *File* just writes the file.
+(Default: New Track)
+
+To render the tracks' MIDI instead of audio, set **Format** to *MIDI* and choose
+the **MIDI Source** as usual.
+
+Render Track remembers its own settings from one render to the next, separately
+from the settings the Edit uses for ordinary renders, so setting it up doesn't
+change your mixdown settings. In Waveform Pro it opens in Advanced mode, without
+changing the mode your ordinary renders use. In Waveform Free it opens in Simple
+mode but keeps its Destination row.
+
+## Rendering Clips
+
+The **Render Clip** button in a clip's properties opens a menu of render
+entries: render the selected clips, render just their marked region, either of
+those *and replace* the clips, and, for MIDI clips, the same four under *Render
+MIDI*. Each entry opens the Render dialog set up for it, so you can check or
+change the options before rendering.
+
+The Range is set to *Selected Clips Range*, or *Selected Clips in Marked Region*
+for the marked-region entries.
+
+**Destination** (Choices: File, New Track, This Track, Replace Clips): Where the
+render ends up. *This Track* puts it on the track of the last selected clip and
+leaves the clips where they are. *Replace Clips* puts it in place of the clips,
+and asks you to confirm before the render starts. *New Track* puts it on a new
+track, and *File* just writes the file. (Default: This Track, or Replace Clips
+for the *and replace* entries)
+
+The clips render through their own tracks and the track each one outputs
+into, and nothing else on those tracks sounds. The new clip takes the colour
+of the clips it came from. Like Render Track, the clip entries remember their
+own settings, open in Advanced mode in Waveform Pro, and open in Simple mode in
+Waveform Free with the clip range and destinations kept.
+
+*Flatten the selected clip*, *Merge the selected clips* and the Chord Player's
+render don't open the dialog. They bounce with fixed settings behind a progress
+bar and replace the clips.
+
 ## Rendering From the Command Line
 
 Waveform can render without opening its interface at all, which is useful for
@@ -442,7 +563,8 @@ There are four commands:
 
 - **render**: renders the Edit using the settings you give it.
 - **list-items**: prints the renderable items (tracks, submixes, groups, tags,
-  outputs) and the markers, so you know what you can ask for.
+  outputs) and the markers, so you know what you can ask for. In Waveform Free
+  it lists only tracks.
 - **validate-config**: checks the settings and renders nothing.
 - **run-tests**: runs Waveform's own test suite headlessly.
 
@@ -450,9 +572,18 @@ The options mirror the dialog: `--format` (including `midi`), `--sample-rate`,
 `--bit-depth`, `--channels`, `--midi-after-plugins`, `--normalise`,
 `--normalise-rms`, `--normalise-lufs`, `--normalise-level`,
 `--true-peak-ceiling`, `--no-true-peak-limit`, `--trim-silence`, `--dither`,
-`--real-time`, `--wrap-remainder`, `--add-acid`, `--separate-files`,
-`--category`, `--items`, `--together`, `--marker-clips`, `--start`, `--end`,
-`--name-pattern` and `--force`. Add `--json` for machine-readable output.
+`--real-time`, `--no-tails`, `--wrap-remainder`, `--add-acid`,
+`--separate-files`, `--category`, `--items`, `--together`, `--marker-clips`,
+`--start`, `--end`, `--name-pattern` and `--force`. Add `--json` for
+machine-readable output.
+
+`--no-tails` turns off *Include Tails*, so each file ends exactly at the end of
+its range. In a config file, and in the scripting API's `render.renderToFile`,
+the same setting is the `includeTails` key, which defaults to true.
+
+In Waveform Free, `--category` only accepts `tracks`, and `--together`, `--marker-clips` and
+`--wrap-remainder` need Waveform Pro: a render that asks for them is refused
+with an error naming the option, rather than rendering something different.
 
 Settings are layered, with later layers winning per setting: built-in defaults,
 then `WAVEFORM_RENDER_*` environment variables, then any `--preset` you name,
@@ -484,8 +615,8 @@ live.
 
 ## ⚡ Things to Watch Out For
 
-**Selections are read when the dialog opens.** *Selected Tracks*, *Selected Clips
-Range* and *Each Selected Clip Range* all use what was selected at that moment.
+**Selections are read when the dialog opens.** *Selected Tracks* and the
+selected-clip ranges all use what was selected at that moment.
 Changing the selection behind the dialog does nothing. If you picked *Selected
 Tracks* with nothing selected, it tells you: *No tracks were selected when this
 window opened - select some and reopen it*.
@@ -493,6 +624,11 @@ window opened - select some and reopen it*.
 **"Each Marker Region" and "Each Arranger Clip Region" need a scope other than
 Whole Mix.** Pick one of the item categories first, or the dialog will tell you
 it can't do it.
+
+**Simple mode renders what it shows, not what Advanced mode was set to.** If
+you set up a Submixes, Groups, Tags or Outputs render in Advanced mode and then
+switch to Simple, the render falls back to the whole mix. *Tracks* renders every
+track, whatever was ticked in Advanced mode's list.
 
 **Marked Region with no marked region renders everything.** If you choose
 *Marked Region* without having set one, the dialog warns you that the whole Edit

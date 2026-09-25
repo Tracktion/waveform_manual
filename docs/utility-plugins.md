@@ -37,8 +37,8 @@ After adding the plugin, open its properties to configure the routing:
 
 Because the signal must travel through real hardware in real time, rendering at
 faster-than-real-time speed will produce silence or incorrect results on any
-track using an Insert. When you render or export, enable the **Render at 1X
-Play-Speed** option in the render dialog. See [Mixing Down](mixing-down.md)
+track using an Insert. When you render, tick **Render at 1x Play-Speed** in
+the Render dialog. See [Rendering and Stems](rendering-and-stems.md#audio-settings)
 for details on that option.
 
 ---
@@ -130,7 +130,7 @@ content as it passes through, so you can *see* where the energy sits in a mix.
 Insert it anywhere in a chain to check a track's tonal balance, spot a resonant
 build-up, or confirm that a high-pass filter is doing what you expect.
 
-## Loudness Meter
+## Loudness Meter <span class="pro">PRO</span>
 
 > 📝 **Note:** The Loudness Meter is available in **Waveform Pro 14 and later**.
 
