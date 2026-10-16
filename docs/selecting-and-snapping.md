@@ -48,7 +48,7 @@ clip that you want to add to the selection.
 Once you have multiple clips selected, you can perform operations on
 them as a group, such as moving them by dragging, duplicating, or
 deleting them. We'll cover more about clip editing operations in
-[Basic Audio Editing](audio-clips-and-editing-audio.md). To clear a multiple
+[Audio Clips and Editing Audio](audio-clips-and-editing-audio.md). To clear a multiple
 selection, simply press the Esc key.
 
 Another way to make a multiple selection is to use the lasso tool.
@@ -106,7 +106,7 @@ highlighted.
 *Snap button in the transport bar*
 
 Pressing Q also toggles *Snap* on and off. You can also control the
-snapping state from the menu section - *Snapping > Enable snapping.*
+snapping state from the menu section: *Snap > Snap-to-grid*.
 
 > 💡 **Tip:** Remember the keyboard shortcut Q is short for quantize.
 Snap-to-grid is a form of quantizing. If you don't like that shortcut,
@@ -124,21 +124,21 @@ snap resolution gets finer and finer.
 *Hover Over Timeline to See Snap Resolution*
 
 > 💡 **Tip:** You can always see what your current snap resolution is by
-hovering the mouse pointer over the Timeline. A tooltip appears showing,
-*Snap resolution bar*, *Snap resolution beat*, or *Half beat* for
-example.
+hovering the mouse pointer over the Timeline. A label appears showing,
+for example, *Snap resolution: Bar*, *Snap resolution: Beat*, or
+*Snap resolution: 1/2 beat*.
 
 ## Snapping Clips to the Grid
 
 As you drag a clip, it snaps to the grid increments. If you want to see
-exactly where it's snapping, look at the *Start* parameter in
-properties. Snap-to-grid makes it easy to align a clip to a bar or beat
+exactly where it's snapping, look at the *Start* value in the
+Actions panel. Snap-to-grid makes it easy to align a clip to a bar or beat
 of the music.
 
 
 ![](images/11----06.png)
 
-*Clip properties *Start**
+*The clip's Start value in the Actions panel*
 
 > 📝 **Note:** Snap-to-grid is an alignment of the beginning of a clip to a
 grid line. Notice that snapping also applies to editing functions like
@@ -147,7 +147,7 @@ trimming.
 ## Snapping the Cursor to the Grid
 
 Snapping may affect how the cursor is positioned depending on another
-setting. Turn on *Snapping > Snap cursor movement* and the cursor
+setting. Turn on *Snap > Snap cursor movement* and the cursor
 position will snap to the grid. Remember that the snap resolution is
 determined by the zoom level.
 
@@ -164,9 +164,9 @@ the time display in the transport bar.
 
 ## Snapping Clips to Other Clips
 
-Another snap behavior is to *Snap clips to neighbors.* With *Snap clips
-to neighbors* off, clips snap to the grid normally. However, with
-*Snapping > Snap clips to neighbors* turned on, clips snap to other
+Another snap behavior is to *Snap clips to other clips*. With *Snap clips
+to other clips* off, clips snap to the grid normally. However, with
+*Snap > Snap clips to other clips* turned on, clips snap to other
 clips. It seems as if they are magnetically attracted to each other.
 This is useful for any editing where you want to arrange clips
 end-to-end, for example when editing voiceover tracks.
@@ -174,11 +174,11 @@ end-to-end, for example when editing voiceover tracks.
 
 ![](images/11----08.png)
 
-*Snap Clips to Neighbours Option*
+*Snap Clips to Other Clips Option*
 
-> 💡 **Tip:** A problem with *Snap clips to neighbors* is that you need to
-have snapping enabled for it work. To snap clips to other clips with
-with snap-to-grid disabled, just hold down Opt / Alt as you drag. This
+> 💡 **Tip:** A problem with *Snap clips to other clips* is that you need to
+have snapping enabled for it to work. To snap clips to other clips with
+snap-to-grid disabled, just hold down Opt / Alt as you drag. This
 is really the best way to arrange clips end to end!
 
 ## Overriding Snap-to-Grid

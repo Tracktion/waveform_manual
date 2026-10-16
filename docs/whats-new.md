@@ -8,7 +8,7 @@ This chapter lists what has changed in recent versions of Waveform, with links t
 
 - **One Render dialog in every edition**: The Render dialog replaces the old exporter in Free, Pro and every other edition. Simple mode covers everything the old exporter did: the whole mix, a file per track, selected tracks or clips, remove silence, render at 1x, ACID and tag metadata, and adding the result to your library. See [Rendering and Stems](rendering-and-stems.md).
 - **Advanced mode** <span class="pro">PRO</span>: A **Mode** switch at the top of the dialog adds stems by submix, group, tag or output, a file for each marker region, arranger section or selected clip range, render presets, **Wrap Remainder Into Loop** and **Measure Loudness of Rendered Files**. See [Rendering and Stems](rendering-and-stems.md).
-- **Include Tails**: A new option, on by default, lets reverb and delay tails ring out for up to 10 seconds past the end of a render. It stops once the output is silent and never runs into the next clip. Turn it off when you need files of an exact length, such as loops.
+- **Include Tails**: A new option, on by default (off by default for clip renders, so they end where the clips do), lets reverb and delay tails ring out for up to 10 seconds past the end of a render. It stops once the output is silent and never runs into the next clip. Turn it off when you need files of an exact length, such as loops.
 - **Render Track and clip rendering**: The track panel's **Render Track** button and the clip panel's Render menu now open the Render dialog, set up for the job. Render Track can make a **New Track** or **Replace Source Tracks**, and clip renders can go to **This Track** or **Replace Clips**. Render Track remembers its own settings between renders.
 - **MIDI files**: The dialog can write a MIDI file, taken either from the clips themselves or from the output of MIDI plugins (**MIDI Source**).
 - **File name tokens**: The **Insert** button beside the file name adds tokens such as `$edit`, `$track` and `$date`, in both modes. `%edit%`, `%track%` and `%date%` work too.
@@ -30,7 +30,7 @@ This chapter lists what has changed in recent versions of Waveform, with links t
 ### Detail editor
 
 - **Plugins tab**: A new tab in the Detail editor lays out the selected track's plugins and modifiers side by side as panels you can open individually. Drag a modifier onto a plugin to assign it, and right-click a panel for the same menu as in the mixer. See [The Plugins Detail Editor](plugins-detail-editor.md).
-- **Pattern Generator in the Clip tab**: With a MIDI clip selected, the Clip tab has a **Pattern Generator** view alongside the piano roll. It applies to every selected MIDI clip. See [Pattern Generator](pattern-generator.md).
+- **Pattern Generator in the Clip tab**: With a MIDI clip selected, the Clip tab has a **Pattern Generator** view alongside the piano roll. It applies to every selected MIDI clip, and the toggle shows how many when more than one is selected. See [Pattern Generator](pattern-generator.md).
 
 ### MIDI
 
@@ -106,4 +106,4 @@ whatever you select appear in an improved **Actions panel** at the side
 
 ### Languages
 
-- **French and Chinese**: Waveform's interface is available in French and Chinese. See [Language](reference-settings.md#language).
+- **French, Chinese and Japanese**: Waveform's interface is available in French, Chinese and Japanese. See [Language](reference-settings.md#language).

@@ -3,7 +3,7 @@
 4OSC is Waveform's built-in four-oscillator subtractive synthesizer. It gives you everything you need to build sounds from scratch: four oscillators with unison, a multi-mode filter, amplitude and filter envelopes, two modulation envelopes, two LFOs, and a chain of built-in effects. If you need a quick synth sound without reaching for a third-party plugin, this is where to start.
 
 ![](images/Instruments/4OSC@2x.png)
-*The 4OSC synthesizer showing oscillators 1 and 2, the low-pass filter, amp envelope, and global settings.*
+*4OSC with oscillators 1 and 2, the LP filter and its envelope, LFO 1 and the Reverb settings.*
 
 ## Oscillators
 
@@ -207,9 +207,7 @@ Click **Global** in the effects header to access the master voice and output set
 
 ## Presets
 
-4OSC ships with a library of factory presets. Use the preset browser in the title bar at the top of the plugin to browse and load them. Click the left and right arrows to step through presets, or click the preset name to open the full browser.
-
-You can save your own presets and reset the synth to its default state by right-clicking the preset name and selecting **Reset to default**.
+4OSC ships with a library of factory presets. The preset selector sits just below the plugin's title bar. Click the left and right arrows to step through presets, or click the preset name for the preset menu: pick a preset, or use **Save**, **Save as...**, **Delete** or **Reset to default**. Reset to default returns the synth to its starting state.
 
 ## MPE Support
 
@@ -227,4 +225,4 @@ You can save your own presets and reset the synth to its default state by right-
 
 ## Moving On
 
-4OSC covers bread-and-butter sounds like basses, pads, leads, and plucks. When you are ready for wavetables, samples, or more advanced modulation, check out Waveform's other built-in instruments.
+4OSC covers bread-and-butter sounds like basses, pads, leads, and plucks. When you are ready for wavetables, samples, or more advanced modulation, check out [Wavetable Synthesizer](wavetable.md) and [Samplers and Instruments](samplers-and-instruments.md).

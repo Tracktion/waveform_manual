@@ -16,22 +16,21 @@ needed once the model is installed.
 
 ## What You Need
 
-Stem separation has three requirements, and all three must be in place
-before the feature will run:
+Stem separation has two requirements, and both must be in place before
+the feature will run:
 
-1. **Waveform Pro.** The feature is gated behind `Feature::stemSeparation`
-   and isn't available in the Free or OEM editions.
-2. **The DJ Mix Tools Expansion**, unlocked on your account. Unlocking it
-   is what switches the feature on.
-3. **The "Stem Separation" feature pack** (the downloaded Demucs model
+1. **Waveform Pro or the DJ Mix Tools Expansion.** Either one switches
+   the feature on. It isn't available in the Free or OEM editions
+   without the expansion.
+2. **The "Stem Separation" feature pack** (the downloaded Demucs model
    and its executable), installed in your Extensions folder. The model is
    large, so it ships as a separate download rather than inside the app.
 
-If the **DJ Mix Tools Expansion** is unlocked but the feature pack hasn't
-been downloaded, the **Split to stems** menu item is still present, but
-choosing it shows the message *"Unable to find the required feature
-pack — Please ensure this has been installed via the Downloads page or
-Download Manager and try again."*
+If the feature is available but the pack is missing, the **Split to
+stems** menu item is still present, but choosing it shows a message
+titled *Unable to find the required feature pack*, saying *Please ensure
+this has been installed via the Downloads page or Download Manager and
+try again*.
 
 ### Getting the feature pack
 
@@ -40,8 +39,10 @@ Manager). To check where they live or install one by hand, open
 **Settings > File Locations** and look at the **Feature Extensions**
 section: it shows the Extensions folder, lists the packs already
 installed, and offers a **Content pack** button for installing a
-`.content` or `.zip` file manually. See the *Reference: Settings > File
-Locations* and *Reference: Settings > Downloads* chapters for details.
+`.content` or `.zip` file manually. See [Settings > File
+Locations](reference-settings.md#file-locations) and
+[Settings > Downloads](reference-settings.md#downloads) in the Settings
+reference for details.
 
 ## Separating a Clip
 
@@ -59,7 +60,8 @@ Locations* and *Reference: Settings > Downloads* chapters for details.
 
 If the clip's source isn't already a WAV, Waveform first converts it to a
 temporary WAV (*"Preparing for Stem Separation"*). It then runs the
-separation itself (*"Separating Stems — Extracting stems from: <clip>"*),
+separation itself, in a window titled *Separating Stems* that reads
+*Extracting stems from: <clip>*,
 showing a progress bar and a **Cancel** button throughout. The job auto-
 scales across your CPU cores.
 
@@ -93,6 +95,7 @@ with the result.
 ## Moving On
 
 Once you have your stems on their own tracks, they behave like any other
-audio. See *Audio Clips and Editing Audio* for trimming and editing, and
-*Mixing Down* for bouncing an isolated stem or instrumental back out to a
-file.
+audio. See [Audio Clips and Editing Audio](audio-clips-and-editing-audio.md)
+for trimming and editing, and [Mixing Down](mixing-down.md) and
+[Rendering and Stems](rendering-and-stems.md) for bouncing an isolated
+stem or instrumental back out to a file.

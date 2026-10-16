@@ -75,13 +75,15 @@ workflow you use for splitting Audio clips.
 
 *Split MIDI Clips Using the Slash Key*
 
-You can also split using the *Split Clips* actions at the right side of
-properties. The various actions give you more control over splitting.
+You can also split using the **Split Clips** action in the
+[Actions panel](actions-panel.md), which offers **Split clips at cursor
+position**, **Split clips at mark-in point** and **Split clips at mark-out
+point**. Launcher clips can't be split, so the action isn't shown for them.
 
 
 ![](images/25----05.png)
 
-*Split Actions Button in properties*
+*The Split Clips Action in the Actions Panel*
 
 > 📝 **Note:** As you split MIDI clips, any notes that are sustained across
 the split area are separated into two notes.
@@ -102,21 +104,26 @@ view (PRV).
 
 *The MIDI Note Editor*
 
-Another way to see the MIDI note editor is to double-click on the MIDI
-clip header to toggle track height.
+Another way to see the notes is to double-click the MIDI clip header. By
+default this opens the clip in the MIDI editor in the
+[Detail editor](detail-editor.md) at the bottom of the Edit.
 
-> 📝 **Note:** Clip header double-click behavior is dependent on a global
-setting. Go to the Settings tab, General page and find the
-*Track Resizing* property. You can choose a number of options, based on
-how you would like that resizing to occur when you double-click. This
-setting also holds for audio tracks.
+> 📝 **Note:** Clip header double-click behaviour depends on a global
+setting. Go to `Settings > General`, MIDI section, and find
+**Double-click MIDI clip header** (Choices: Expands for in-line editing,
+Opens the MIDI editor, Opens the MIDI editor (in-line editing disabled)).
+Choose *Expands for in-line editing* to make a double-click toggle the
+track height for inline editing instead. (Default: Opens the MIDI editor)
 
 ## Setting the Number of Octaves & Note Height
 
-You can adjust how many octaves you see on the MIDI editor in the
-*Options* menu. By default *Options > Default MIDI editor vertical
-scale* is set to *2 octaves*, a reasonable starting point. If you want
-you can set this to show more or fewer octaves.
+You can adjust how many octaves you see on the MIDI editor with
+**Default MIDI editor vertical scale** (Choices: 2 octaves, 4 octaves,
+6 octaves, Full scale) in `Settings > General`, MIDI section. By default
+it is set to *2 octaves*, a reasonable starting point. You can also
+right-click the piano keyboard and choose **Show 1 octave**,
+**Show 2 octaves**, **Show 3 octaves**, **Show 4 octaves** or
+**Show full scale**.
 
 
 ![](images/25----07.png)
@@ -142,9 +149,9 @@ to prevent scrolling within the MIDI clips unintentionally.
 
 *Mouse Wheel MIDI Scrolling Setting*
 
-You may find it's generally helpful to have MIDI scrolling on during
-MIDI editing. You'll find this setting in the menu under *Options >
-Mouse wheel action > Mouse wheel scrolls MIDI grid.*
+Having MIDI scrolling on suits MIDI editing. The setting is
+**Allow wheel to scroll within MIDI clips** in `Settings > General`,
+Mouse section. (Default: on)
 
 ## Basic MIDI Editing - Pitch
 
@@ -159,46 +166,57 @@ general, editing works by selecting notes and then doing an action.
 The most basic edit? Click a note to select it. Drag it up or down to
 change the pitch.
 
-## Per Note Automation
+## Note Expression
 
-As you start to drag MIDI notes around, you will immediately see the
-per-note controller editing area appear above or below selected notes.
+Each note can carry its own expression curve, drawn in a lane that
+appears above or below the note. There are three types: **Pitchbend**
+(+/-48 semitones), **Timbre** (0-100%) and **Pressure** (0-100%). This
+gives you detailed control over performance details and articulations.
 
 
 ![](images/25----11.png)
 
-*Drawing Per Note Automation*
+*Drawing Note Expression*
 
-If you don't see the per-note automation editing area, you can turn it
-on and off in properties.
+To show the lane, select a single note and turn on
+**Show Note Expression** in the Actions panel. The lane appears for the
+full length of the note, showing Pressure, or the type you used last.
 
 
 ![](images/25----17.png)
 
-*Turn Per Note Automation Editing On or Off*
+*Show Note Expression and Keep on Selected Note in the Actions Panel*
 
-To begin, select any single note. The automation editing area will
-appear for the full length of the note. By default you will be editing
-Volume (controller 7). Select the pencil tool and draw in the desired
-automation curve by click-dragging over the editing area.
+**Keep on Selected Note**: Keeps the lane on the selected note. Turn it
+off and the lane follows whichever note the mouse is over. (Default: on)
 
-> 📝 **Note:** You need to select the pencil tool to draw in the per-note
-automation.
+Select the Pencil or Line tool and click-drag over the lane to draw a
+curve. Use the Eraser tool to remove part of it.
 
-The curve will appear as steps based on the current snap resolution. The
-snap resolution is set by the zoom level; To draw in a more detailed
-curve, zoom in more.
+> 📝 **Note:** You need the Pencil or Line tool to draw note expression.
+
+The curve is drawn in steps that follow the MIDI editor's snap setting.
+With Smart snap the step size follows the zoom level, so zoom in to draw
+a more detailed curve.
 
 
 ![](images/25----12.png)
 
-*Selecting the Controller Type for Per Note Automation*
+*Choosing the Note Expression Type*
 
-You can select any other control by clicking the *Type* button on the
-MIDI editor toolbar. This type of editing gives you detailed control
-over performance details and articulations.
+To change the type, click the lane's **Menu** button and choose
+Pitchbend, Timbre or Pressure. The lane's **Close** button hides it.
 
-> 📝 **Note:** Not all virtual instruments respond to this type of data.
+Two more actions in the Actions panel work on the selected notes:
+**Scale Pitch Bend** scales their pitch-bend values, and
+**Remove Note Expression** deletes all of their note expression. To
+record note expression from an MPE controller, turn on
+**Record MPE to Note Expression** for that MIDI input device; devices
+that Waveform already knows are MPE record to note expression
+automatically.
+
+> 📝 **Note:** Only instruments that support MPE respond to note
+expression.
 
 ## Nudging Notes
 
@@ -247,24 +265,24 @@ where you'd like the copy placed and then hit the keyboard shortcut D.
 ## Adjusting Pitch and Velocity
 
 Another way to adjust pitch and velocity is to select the note and then
-edit the values directly in properties. Both *Pitch* and *Velocity* can
+edit the values directly in the Actions panel. Both *Pitch* and *Velocity* can
 easily be edited this way.
 
 
 ![](images/25----16.png)
 
-*Adjust Pitch and Velocity in properties*
+*Adjust Pitch and Velocity in the Actions Panel*
 
 ## Note Start, Length, & End
 
 You can also make very precise adjustments to the *Length*, *Start
-Time*, and *End Time* by editing the values directly in properties for
-the selected note.
+Time*, and *End Time* by editing the values directly in the Actions
+panel for the selected note.
 
 
 ![](images/25----18.png)
 
-*Start, Length, & End Settings in properties*
+*Start, Length, & End Settings in the Actions Panel*
 
 ## The Pencil Tool
 
@@ -337,40 +355,49 @@ notes; doing so selects the full row of notes.
 
 Once you have a multiple selection, move all the notes in time or by
 pitch by dragging with the arrow tool. Alternatively, you can change
-values in properties that will apply to all notes in the selection.
+values in the Actions panel that will apply to all notes in the selection.
 Nudge also works on well on a multiple selection of notes (Shift plus
 the arrow keys).
 
 ## Editing the Note Velocity
 
 To quickly change the velocity of a note, select the note and then
-select a value from the *Velocity* drop down menu. This gives you a
-variety of preset values at popular levels.
+choose a value from the **Vel** button in the MIDI editor toolbar (it
+shows the current value, for example "Vel: 96"). The menu offers 16 to
+112 in steps of 16, plus 127. The value you choose is applied to the
+selected notes and is also used for new notes.
 
 
 ![](images/25----30.png)
 
 *Quickly Set Note Velocity*
 
-If you choose *Other*, from the velocity drop down, you can type in
-whatever value you want from 0 to 127.
+If you choose **Other...** from the menu, the "Enter Note Velocity..."
+dialog lets you type whatever value you want from 0 to 127. Click
+**Set Velocity** to apply it.
 
 
 ![](images/25----25.png)
 
-*You'll See this if you Select *Other**
+*The Other... Velocity Dialog*
 
-> 💡 **Tip:** Here's another trick way to adjust velocity. Select a note then
-hold Shift as you drag up and down over the note. Notice the *Velocity*
-value changing in properties as you drag.
+> 💡 **Tip:** You can also adjust velocity by dragging. Select a note,
+then hold Shift as you drag up and down over the note. Watch the
+*Velocity* value change in the Actions panel as you drag.
 
 ## Step Entry Mode
 
-When the *Step* button is toggled on, the MIDI clip goes into step entry
-mode. In this mode, any notes you play to the track will be entered at
-the cursor position. Then, the cursor will advance to the next step
-based on the Snap grid resolution. You can adjust that based on the
-level of zoom.
+When the **Step** button is on (Opt + Cmd + S / Ctrl + Alt + S), the
+MIDI clip goes into step entry mode. Set the length and velocity first
+with the toolbar's **Len** and **Vel** buttons. Each note or chord you
+play to the track is then entered at the cursor position with that
+length and velocity, and the cursor moves to the end of the new note, so
+it advances by the **Len** value. The cursor has to be inside the clip.
+Press the backtick key (`` ` ``) to insert a rest of the same length.
+
+To use the velocities you actually play instead of the **Vel** value,
+turn on **Use incoming velocities for MIDI step entry** in
+`Settings > General`, MIDI section.
 
 
 ![](images/25----26.png)
@@ -380,8 +407,10 @@ level of zoom.
 ## Hearing Notes While Editing
 
 You have the option to trigger notes that are being moved so you can
-hear the pitch. You can enable or disable this using the speaker icon at
-the far right at the top of the MIDI editor tool bar.
+hear the pitch. Turn this on or off with the speaker button right after
+**Step** in the MIDI editor toolbar (Opt + Cmd + E / Ctrl + Alt + E).
+This is separate from the Note Preview tool, which also has a speaker
+icon.
 
 
 ![](images/25----27.png)
@@ -391,10 +420,11 @@ the far right at the top of the MIDI editor tool bar.
 ## The Velocity Editor
 
 You can edit MIDI note velocity from the velocity area below the PRV.
-Click the *Velocity* button at the left of the MIDI editor toolbar to
-expose the velocity editor. For the selected note, grab the stalk which
-represents the velocity and drag it up or down. You will notice the
-*Velocity* parameter moving in properties for that note as you drag.
+Click the **Velocity** button in the MIDI editor toolbar
+(Opt + Cmd + V / Ctrl + Alt + V) to show the velocity editor. For the
+selected note, grab the stalk which represents the velocity and drag it
+up or down. You will notice the *Velocity* value moving in the Actions
+panel for that note as you drag.
 
 
 ![](images/25----28.png)
@@ -409,17 +439,23 @@ and they will all adjust together.
 ## Editing other Controller Data
 
 You can use a view similar to the velocity editor with any kind of
-controller. Click the *Control* button and then click *Type* to choose
-which controller to edit.
+controller. Click **+** next to the **Controllers** button in the MIDI
+editor toolbar to choose one: the **Control Changes** submenu lists the
+CC numbers, followed by **Program Change**, **Aftertouch**,
+**Channel Pressure**, **Pitch Wheel** and **SysEx Events**. Each choice
+adds a lane, and you can stack several. The **Controllers** button
+(Opt + Cmd + C / Ctrl + Alt + C) shows or hides the lanes. Each lane
+header has a **Menu** button to change its type and a **Close** button
+to remove it.
 
 
 ![](images/25----29.png)
 
 *Editing Other Controller Data*
 
-Example editing aftertouch: In the MIDI editor click *Control > Type >
-Channel Pressure*. Now the channel pressure data will appear in the same
-way velocity appears.
+Example editing aftertouch: In the MIDI editor click
+*+ > Channel Pressure*. Now the channel pressure data will appear in the
+same way velocity appears.
 
 ## The MIDI Event List
 
@@ -429,7 +465,7 @@ MIDI clip, and it follows your selection: click a different clip and
 the list updates to match. The list and the piano roll share a
 selection, so a note you highlight in one is highlighted in the other.
 
-This is a Waveform Pro feature (version 12 and later).
+Available in Waveform Pro and with the MIDI Producer Expansion.
 
 Open it with the command **Show or hide the MIDI Event List window**, or
 from the View menu's **Show MIDI Event List** item.
@@ -484,8 +520,8 @@ Each row has two halves:
   cell reads **(Move a MIDI controller)**); the next CC that arrives
   from your hardware is captured and bound to this row.
 - **Right half (the parameter)**: Click **Choose Parameter…** for a
-  hierarchical menu of everything you can map: Master Plugins, Racks,
-  and each track's plugins and their parameters, plus an **Add all
+  hierarchical menu of everything you can map: Master Plugins, Plugin
+  Racks, and each track's plugins and their parameters, plus an **Add all
   parameters** shortcut. The same menu saves, loads, and deletes
   presets.
 
@@ -509,20 +545,23 @@ often used to recall a hardware synth patch or send a device-specific
 command. Waveform shows them on a dedicated controller lane in the MIDI
 editor, where each SysEx event appears as a **diamond** on a timeline.
 
-Open the lane from the MIDI editor's controller-lane menu and choose the
-SysEx option. The lane header has a **Close** button and a **Menu**.
+Open the lane by clicking **+** next to **Controllers** and choosing
+**SysEx Events** (or choose it from an existing lane's **Menu**). The
+lane header has a **Close** button and a **Menu**.
 Use the Select, Pencil, and Eraser tools to place, move, and delete
 events (a pencil click creates a new event with four zero bytes), and
 snapping applies just as it does elsewhere in the editor.
 
 > 📝 **Note:** The lane is for placing and timing SysEx events. To edit
-> the actual bytes of a message, use the **Data** field in the MIDI
-> Event List (described above).
+> the actual bytes of a message, select it and edit **SysEx Data** in the
+> Actions panel, or use the **Data** field in the MIDI Event List
+> (described above).
 
 ## Moving On
 
-Those are the fundamentals of MIDI editing. We're going to get into
-quantizing MIDI notes in the next chapter.
+Next, [Pattern Generator](pattern-generator.md) builds parts for you,
+and [Quantizing MIDI Notes](quantizing-midi-notes.md) covers timing
+correction.
 
 
 

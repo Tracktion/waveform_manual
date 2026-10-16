@@ -21,8 +21,8 @@ There are four ways to copy loops into an Edit.
     into your Edit. The Browser also gives you the ability to preview
     loops to help you select the right one for the song.
 3.  Drag them from you computer desktop drop them onto tracks .
-4.  From the menu section, select *Import > Import an audio or MIDI
-    file*. Navigate to a file on your system and click open. The *Select
+4.  From the main menu, choose **File > Import an audio or MIDI
+    file...**. Navigate to a file on your system and click open. The *Select
     a file to import* dialog box even includes a basic file audition
     function with *Auto-play*.
 
@@ -105,14 +105,14 @@ To stop looping, click the L icon gain to toggle looping off. That
 returns the clip to a single cycle.
 
 There is another way to activate clip looping. Select the clip then
-click *Loop this Clip* in properties. From there you can select the
+click *Loop this Clip* in the Actions panel. From there you can select the
 number of times to loop. This is an alternative to dragging the right
 trim handle to roll out repetitions.
 
 
 ![](images/13----05.png)
 
-**Loop this Clip* in properties*
+*Loop this Clip in the Actions panel*
 
 The nice thing about looping is it doesn't take up any additional space
 in the project. You can loop just about any clip. You could take a four
@@ -214,13 +214,13 @@ Add to Library
     projects, click *Add to Library* then give it a name and tags.
 
 > 📝 **Note:** When you use *Add to Library*, the loop file will be saved to
-the *User Loops Path* folder as designated on the Loop Database page of
-the Settings tab.
+the *User Loops Path* folder, set under Loop Database on the
+Settings > File Locations page.
 
-> 💡 **Tip:** If you want more control when adding loops to your library, try
-*Export > Render to a File*. If you choose, *Only Render Selected
-Clips* you get much more control over its properties and where to put
-the resulting file.
+> 💡 **Tip:** If you want more control when adding loops to your library, use
+**File > Export: Render to a file...** and set **Range** to *Selected
+Clips Range*. You get much more control over the file's properties and
+where to put it (see [Rendering and Stems](rendering-and-stems.md)).
 
 ## Moving On
 

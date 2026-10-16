@@ -1,8 +1,7 @@
 # Layouts
 
-> 📝 **Note:** Layouts are a **Waveform Pro 11 and later** feature. They are not available in Waveform
-> Free or in Waveform Pro 10. Where the feature is unavailable the **Layout** button is hidden and the
-> save/load commands do nothing.
+> 📝 **Note:** Layouts are part of **Waveform Pro**. They are not available in Waveform Free or OEM,
+> where the **Layout** button is hidden and the save/load commands do nothing.
 
 A **layout** saves the way the Edit window is arranged (which panels are showing, how big they are, and
 whether they are docked or floating) as a named preset you can recall in a single click. Set the window
@@ -40,8 +39,9 @@ A layout captures the state of the arrangement window's panels:
 
 ## Saving and Loading Layouts
 
-The **Layout** button (the dashboard icon in the Edit-tab header) opens a menu with everything you
-need:
+The **Layout** button (the dashboard icon at the right-hand end of the window's tab bar, next to the
+eye button, with the tooltip *"Load or save the current view as a layout preset"*) opens a menu with
+everything you need:
 
 | Item | What it does |
 |---|---|
@@ -54,9 +54,10 @@ preset:"* with the current edit's name filled in. Type a name and click **Save**
 name already exists, Waveform asks *"A preset with this name already exists, do you want to overwrite
 it?"* with **Overwrite** and **Cancel** buttons.
 
-> 💡 **Tip:** You can also open an edit straight into a chosen layout from the project list. Each project
-> row has a **template** button (the eye icon). Click it and pick a layout, and the edit opens with that
-> layout already applied. The neighbouring buttons open the edit with the default or Mixer layout.
+> 💡 **Tip:** You can also open an edit straight into a chosen layout. Click the **+** (New Tab) button,
+> or right-click an Edit's tab. Each Edit listed under **Recent Edits** and in the project submenus has
+> three buttons: the first opens it in the default view, the second in the Mixer layout, and the eye
+> button lets you pick a layout to open it with.
 
 If you prefer keyboard shortcuts, the commands **"Show the save view state dialog"** and **"Show the view
 state menu"** can be bound from *Settings > Keyboard Shortcuts*; neither has a default shortcut.

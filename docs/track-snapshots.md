@@ -1,7 +1,7 @@
 # Track Snapshots
 
 > 📝 **Note:** Track Snapshots are a **Waveform Pro** feature. They are not available in Waveform Free
-> or OEM editions, where the menu item appears greyed out as *"Feature unavailable"*.
+> or OEM editions, where the **Track snapshots** submenu shows only a greyed-out *"Feature unavailable"* line.
 
 A **Track Snapshot** saves the current arrangement of clips on a single audio track so you can try out
 a different arrangement and instantly recall the saved one. It is an A/B tool for *arrangement* work:
@@ -24,7 +24,7 @@ Track Snapshots are available on **audio tracks** only. You will not see them on
 tempo, or chord tracks. There are two ways in:
 
 - **Right-click the track** and choose **Track snapshots** (camera icon) to open the submenu.
-- Open the **track inspector** and click the **Track Snapshots** button.
+- Select the track and click **Track Snapshots** in the Actions panel.
 
 You can also bind the commands **"Show track snapshots menu"** and **"Add track snapshot"** to keyboard
 shortcuts from *Settings > Keyboard Shortcuts*; neither has a default shortcut.
@@ -49,12 +49,12 @@ The menu lists every snapshot on the track, newest first. If there are none, it 
 | Action | How |
 |---|---|
 | **Recall** a snapshot | Click its row in the list. The track's current clips are removed and the stored clips are reinstated. |
-| **Rename** a snapshot | Click the **pencil** icon on the row (*"Rename snapshot"*). |
+| **Rename** a snapshot | Click the **document** icon on the row (*"Rename snapshot"*). |
 | **Delete** a snapshot | Click the **trash** icon on the row (*"Delete snapshot"*). |
 
 > ⚠️ **Warning:** Recalling a snapshot **replaces all clips currently on the track**. There is no
 > confirmation prompt, so anything you have not snapshotted will be swapped out. The action is undoable
-> through the edit's normal Undo (Ctrl/⌘+Z) if you change your mind.
+> through the edit's normal Undo (Cmd + Z / Ctrl + Z) if you change your mind.
 
 > 📝 **Note:** Deleting a snapshot is immediate and is not confirmed.
 

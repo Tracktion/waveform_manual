@@ -1,6 +1,6 @@
 # The Arranger Track
 
-> 📝 **Note:** The Arranger Track is available in **Waveform Pro 11 and later**. It is not included in
+> 📝 **Note:** The Arranger Track is available in **Waveform Pro**. It is not included in
 > Waveform Free or OEM editions.
 
 The Arranger Track gives you a bird's-eye view of your song's structure. You divide the project into
@@ -21,11 +21,11 @@ Track itself makes no sound and cannot host plugins; it is purely a structural t
 
 Click the **Arranger** button in the global-tracks strip at the top of the Edit tab to show or hide
 the track. The button tooltip reads *"Show/Hide arranger track"*. You can also use the keyboard
-command **"Show or hide Arranger track"** or the *View > Show Arranger track* menu item. Arranger
-Track visibility is saved with the edit and as part of View Presets.
+command **"Show or hide Arranger track"** or the *View > Global tracks > Show Arranger track* menu
+item. Arranger Track visibility is saved with the edit and as part of each [layout](layouts.md).
 
-> 💡 **Tip:** If you use View Presets to switch between different working layouts, you can include or
-> exclude the Arranger Track in each preset. This is useful for keeping the screen tidy when you are focused
+> 💡 **Tip:** If you use [layouts](layouts.md) to switch between different working setups, you can
+> include or exclude the Arranger Track in each layout. This is useful for keeping the screen tidy when you are focused
 > on mixing rather than arrangement.
 
 
@@ -81,10 +81,10 @@ controls are available:
 | **Name** | Label the section ("Verse 1", "Chorus") |
 | **Start / Length / End** | Position and duration in timecode (Length is shown locked) |
 | **Colour** | Set the section's display colour using the hue picker |
-| **Select related** | Select other clips linked to this section |
-| **Auto tempo** | Derive the edit's BPM from this section's length |
-| **Split** | Split the section at the current playhead position |
-| **Move clip** | Options for moving the section relative to its neighbours |
+| **Select Clips** | Select other sets of clips related to this section |
+| **Set Edit Tempo** | Set the edit's tempo based on this section's length (shown when one section is selected) |
+| **Split Clips** | Split the selected sections into two |
+| **Move Clip** | Options for moving the section relative to its neighbours |
 | **Delete** | Remove the selected section(s) |
 
 The Arranger Track header itself shows only the standard **Shrink** / **Grow** track-height buttons;
@@ -108,4 +108,4 @@ Right-clicking a section gives you:
 
 - **[Using Markers](using-markers.md)**: the Marker track, Tempo track, and Chord track are sibling
   global tracks that work alongside the Arranger Track.
-- **View Presets**: Arranger Track visibility can be saved and recalled as part of any View Preset.
+- **[Layouts](layouts.md)**: Arranger Track visibility can be saved and recalled as part of any layout.

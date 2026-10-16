@@ -1,6 +1,6 @@
 # Warp Time
 
-Warp Time is an audio editing option that was introduced in T6. Rather
+Warp Time is an audio editing option. Rather
 than needing to split out notes to move them, as discussed in the
 previous chapter, you can drag Warp points to bend and stretch audio
 into time. Apart from simply correcting timing problems, you an apply it
@@ -10,8 +10,8 @@ audio.
 The implementation is actually very simple. You can get up and running
 with Warp Time very quickly.
 
-> 💡 **Tip:** Since T7, Warp time is also available as one of the Clip Layer
-Layer effects, as described in [Clip Layer Effects](clip-layer-effects.md)
+> 💡 **Tip:** Warp Time is also available as one of the Clip Layer
+effects, as described in [Clip Layer Effects](clip-layer-effects.md).
 
 ## Warp Time Mode
 
@@ -68,7 +68,7 @@ stretch until you stop dragging.
 *Warp Point*
 
 **Removing Warp Points:**
-Shift-click any existing Warp Point to remove it. Right-click any existing Warp point for options to rename it or remove all Warp points.
+Shift-click any existing Warp Point to remove it. Right-click a Warp point and choose *Remove marker* or *Remove all markers*.
 
 
 ![](images/18----04.png)
@@ -152,12 +152,9 @@ Warp Time.
 
 ## Moving On
 
-Here is a video demo of Warp Time that you might find interesting:
-
-[Warp Time Video Demo](https://w-edstrom.wistia.com/medias/8klw4ees4u)
-
-Warp Time, the standard editing tools, and Melodyne give you amazing
-potential to manipulate the timing of your Audio clips.
+For automatic timing correction of whole takes, see
+[Groove Doctor](groove-doctor.md) (Waveform Pro or the Recording
+Engineer Expansion).
 
 
 

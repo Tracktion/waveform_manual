@@ -1,10 +1,18 @@
 # Utility Plugins
 
-Waveform includes three utility plugins available to all editions that handle
-routing and CPU management tasks. To add one, drag the *Plugin Object* to a
+This chapter covers the built-in Utility plugins for routing, metering and CPU
+management: Insert, Freeze Point, Patch Bay, Aux Send and Aux Return, Spectrum,
+Loudness Meter, Mid Side, AB Switch and Mono Switch. All of them are in every
+edition except the Loudness Meter. To add one, drag the *Plugin Object* to a
 track (or right-click an existing plugin and choose *Add new plugin*) and pick
 it from the **Utility** category of the built-in Waveform plugins. See
 [Using Plugins](using-plugins.md) for more on inserting plugins.
+
+The Utility category also holds plugins documented elsewhere: the
+[Level Meter](built-in-effects-plugins.md#level-meter) and
+[Text Plugin](built-in-effects-plugins.md#text-plugin), and the MIDI utilities
+(MIDI Filter, MIDI Monitor, MIDI CC, MIDI Note Names and MIDI Patch Bay) in
+[Waveform Utilities](midi-effects.md#waveform-utilities).
 
 ## Insert (Hardware Insert)
 
@@ -67,13 +75,13 @@ when present in a chain.
 ### Freeze Point Settings
 
 The behaviour of the Freeze Point is influenced by two settings on the
-**Settings → General** page, under **Mixing Defaults**:
+**Settings > General** page, under **Mixing Defaults**:
 
-- **Auto freeze**: controls when freezing happens: either *Manually* (only
-  when you click Freeze Track) or *Freeze track when a freeze point is created
-  or copied* (automatic).
-- **Freeze point**: controls where the Freeze Point is inserted when a track
-  is frozen: *Before plugins*, *Pre-fader*, or *Post-fader*.
+- **Freeze point creation**: controls when freezing happens: either *Manually
+  freeze tracks* (only when you click Freeze Track) or *Freeze track when a
+  freeze point is created or copied* (automatic).
+- **Freeze point insert location**: controls where the Freeze Point is inserted
+  when a track is frozen: *Before plugins*, *Pre-fader*, or *Post-fader*.
 
 See [Reference: Settings (General)](reference-settings.md#general) for the full
 description of those options.

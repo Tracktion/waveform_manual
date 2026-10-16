@@ -9,8 +9,8 @@ member is mirrored on the others. Adjust the fader on a grouped vocal track and 
 the group moves with it; mute one and they all mute. This is the classic mixing-console idea of a
 fader group, brought into Waveform's mixer.
 
-Exactly *which* actions are linked is up to you. A group is not all-or-nothing: it has **eleven
-independent toggles**, so you might link only volume and mute on one group, while another group links
+Exactly *which* actions are linked is up to you. A group is not all-or-nothing: it has **ten
+independent link toggles** plus a master **Enable** switch, so you might link only volume and mute on one group, while another group links
 panning, solo, and track colour as well. By default a new group links **volume and mute** (and is
 enabled); everything else is left switched off until you turn it on.
 
@@ -22,22 +22,23 @@ enabled); everything else is left switched off until you turn it on.
 
 ## What Gets Linked
 
-Each group exposes the following link toggles in its property panel. The **Enable Group** toggle is the
-master switch: when it is off, the group does nothing, regardless of the other settings.
+Each group exposes the following toggles in the Actions panel. The **Enable** toggle is the
+master switch: when it is off, the group does nothing, regardless of the other settings. Hover over a
+toggle to see its tooltip (for example *Link volume operations*).
 
 | Toggle | Default | What it links |
 |---|---|---|
-| **Enable Group** | **On** | Master switch: when off, nothing in the group propagates |
-| **Link volume operations** | **On** | Fader moves, applied proportionally (relative balance is preserved) |
-| **Link mute operations** | **On** | Mute state |
-| **Link editing operations** | Off | Clip take selection and comp edits for clips at the same timeline position |
-| **Link pan operations** | Off | Pan, applied as an offset (relative pan positions are preserved) |
-| **Link solo operations** | Off | Solo and solo-isolate |
-| **Link record operations** | Off | Record-arm |
-| **Link send operations** | Off | Aux Send level and mute |
-| **Link colour operations** | Off | Track colour |
-| **Link track height operations** | Off | Track height |
-| **Link hide and show operations** | Off | Track visibility (show/hide) |
+| **Enable** | **On** | Master switch: when off, nothing in the group propagates |
+| **Volume** | **On** | Fader moves, applied proportionally (relative balance is preserved) |
+| **Mute** | **On** | Mute state |
+| **Editing** | Off | Clip take selection and comp edits for clips at the same timeline position |
+| **Pan** | Off | Pan, applied as an offset (relative pan positions are preserved) |
+| **Solo** | Off | Solo and solo-isolate |
+| **Record** | Off | Record-arm |
+| **Send** | Off | Aux Send level and mute |
+| **Colour** | Off | Track colour |
+| **Track Height** | Off | Track height |
+| **Visiblity** | Off | Track visibility (show/hide). The label is spelt this way in the app. |
 
 > 📝 **Note:** Volume is linked **proportionally** and pan is linked **as an offset**, so grouped
 > tracks keep the relative balance and panning you set up. They do *not* all snap to the same value.
@@ -47,15 +48,17 @@ master switch: when it is off, the group does nothing, regardless of the other s
 
 ## The Group Property Panel
 
-Selecting a group (for example, by clicking its header icon, described below) shows its properties:
+Selecting a group (for example, by clicking its header icon, described below) shows its settings in
+the Actions panel. Double-clicking a group in the Groups panel opens the same settings in an
+*Edit / Mix Group* pop-out window.
 
 | Control | Purpose |
 |---|---|
-| **Name of this group** | A label for the group. If you leave it blank, the group shows its list number instead. |
-| **Colour** | A hue picker that sets the group's display colour (*"Changes the colour of this edit mix group"*). |
-| **Enable Group** and the link toggles | The eleven switches described in the table above. |
-| **Tracks in group** | A checklist of every audio track in the edit. Tick a track to add it to the group, untick it to remove it. |
-| **Delete Group** | Removes the group (shown as a red button). Deleting a group never deletes its tracks. |
+| **Name** | A label for the group. If you leave it blank, the group shows its list number instead. |
+| Hue picker (no label) | Sets the group's display colour (*"Changes the colour of this edit mix group"*). |
+| **Enable** and the link toggles | The master switch and ten link toggles described in the table above. |
+| **Tracks** | A checklist of every audio track in the edit. Tick a track to add it to the group, untick it to remove it. |
+| **Delete** | Removes the group (shown as a red button). Deleting a group never deletes its tracks. |
 
 > 💡 **Tip:** A group with no name displays its position in the list (1, 2, 3…) so you can still tell
 > groups apart. Giving busy groups descriptive names such as "Drums" or "BG Vox" makes them much easier to
@@ -75,15 +78,15 @@ There are several ways to work with groups, so you can use whichever fits your w
 
 **Add or remove tracks**
 
-- Use the **Tracks in group** checklist in the group's property panel.
-- Or, from a track's inspector, click the **Groups** button to add the track to a new group, set it to
+- Use the **Tracks** checklist in the group's settings.
+- Or, from a track's Actions panel, click the **Groups** button to add the track to a new group, set it to
   *<None>*, or tick the existing groups it should belong to.
 - To take tracks out of every group at once, select them and run **"Remove selected tracks from Edit
   Mix Groups"**. A group that becomes empty as a result is deleted automatically.
 
 **Enable, disable, and temporarily bypass**
 
-- Toggle a group on or off with the **Enable Group** switch in its panel, the per-row **Disable**
+- Toggle a group on or off with the **Enable** switch in its settings, the per-row **Disable**
   button in the Groups panel, or the command **"Toggle Edit Mix Group enable"** (which works on the
   groups of the currently selected tracks, by majority rule).
 - The command **"Temporarily disable Edit Mix Groups"** is a hold-to-bypass action: all groups are

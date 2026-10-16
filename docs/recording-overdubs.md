@@ -65,14 +65,15 @@ and drag the right trim arrow until it does.
     turned off in the Transport section.
 2.  Turn off *Click* because we are using the drum loop track for the
     timing reference.
-3.  Let's use a two bar count-in. To set that up, select *Click Track >
-    Prerecord count-in length > Use 2-bar count-in*.
+3.  Let's use a two bar count-in. To set that up, choose **Click >
+    Count-in > 2 bars** from the main menu.
 
 ## Record the Rhythm Guitar Part
 
 1.  Use your audio interface mix knob or app to balance the level of the
     guitar mic with the level of the drum loop track. On the guitar mic
-    input, make sure *Live Input Monitoring* is turned off.
+    input, set **Live Input Monitoring** to Off (right-click the input,
+    or use **Input Monitoring Mode** in the Actions panel).
 2.  Next, arm the track for recording by clicking the R icon on the
     input. When you try this you will see the metering on the input
     moving if you play a chord.
@@ -90,12 +91,13 @@ and drag the right trim arrow until it does.
 *Recording the Guitar Part*
 
 > 💡 **Tip:** If recording doesn't go as planned, delete the Audio clip and
-try again. We went over several ways to do this in Chapter 15.
+try again. See [Deleting Clips](audio-clips-and-editing-audio.md#deleting-clips)
+for several ways to do this.
 
 > 📝 **Note:** If you hear some kind of weird phasing as you play your
 instrument, then it probably means you have *Live Input Monitoring*
-enabled while also monitoring through your audio interface. Disable
-*Live Input Monitoring*.
+on while also monitoring through your audio interface. Set
+*Live Input Monitoring* to Off.
 
 ## Doubling the Rhythm Guitar
 
@@ -106,7 +108,7 @@ enabled while also monitoring through your audio interface. Disable
     track. Now track 3 is immediately ready to go for recording an
     overdub.
 
-> 💡 **Tip:** You might want to lower the original track 3 to 6 dB using the
+> 💡 **Tip:** You might want to lower the original track by 3-6 dB using the
 Volume & Pan plugin to better balance the recorded track with your live
 mic.
 
@@ -190,11 +192,11 @@ project, you can easily add tracks. There are several ways to do that.
 
 1.  **Press T.** Select any existing track and press T. That creates a
     new track directly below the selected one.
-2.  **Right-click**. Right-click in any blank space or on any track and
-    select *Create new track*.
-3.  **Track Menu**. Another way is to select *Tracks > Create a new
-    track.* using the Tracks menu. Or, select *Tracks > Create several
-    new tracks* to add up to sixteen new tracks in one go.
+2.  **Right-click**. Right-click in any blank space and select *Create a
+    new track*, or right-click a track header and select *Add track*.
+3.  **Track Menu**. Another way is to select **Track > Add track** from
+    the main menu. Or, select **Track > Add several tracks** to add 2 to
+    14 new tracks in one go.
 
 
 ![](images/16----11.png)

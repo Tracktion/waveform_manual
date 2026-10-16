@@ -3,7 +3,7 @@
 Mixing down is the last step: turning your Edit into a finished audio file. This
 chapter covers getting the mix ready to be rendered and finding the file once
 it's written. The render dialog itself (formats, stems, loudness targets, file
-naming and the render queue) is covered in the Rendering and Stems chapter.
+naming and the render queue) is covered in [Rendering and Stems](rendering-and-stems.md).
 
 ## Master Processing
 
@@ -12,8 +12,10 @@ the entire stereo mix is processed. Master plugins often include a
 compressor and a limiter to give the final mix a professional sound.
 
 We won't get into the details about exactly what you'd apply there,
-although the included Waveform *Master Mix* plugin is a nice choice.
-It's a multi-band compressor, EQ, and limiter all in one.
+although the Waveform *Master Mix* plugin (Waveform Pro and OEM) is a nice
+choice. It's a multi-band compressor, EQ, and limiter all in one. In Waveform
+Free, the [Compressor and Limiter](built-in-effects-plugins.md#dynamics-compressor-gate-and-limiter)
+plugins do a similar job.
 
 
 ![](images/36----01.png)
@@ -36,8 +38,8 @@ mastering effects on to make your mix into a finished product.
 
 > 💡 **Tip:** If you're aiming at a streaming platform, you don't need a loudness
 > plugin on the master to hit their target, because the render dialog can normalise to
-> a LUFS target with a true-peak ceiling as it writes the file. See the Rendering
-> and Stems chapter.
+> a LUFS target with a true-peak ceiling as it writes the file. See
+> [Rendering and Stems](rendering-and-stems.md).
 
 ## Setting the Export Region
 
@@ -47,21 +49,21 @@ you open it:
 
 1. Set the In-marker exactly at the beginning of the song. Adjust its position
    to skip any extra bars or count-in at the start of the Edit.
-2. Set the Out-marker right after the end of the song. We recommend leaving a
-   couple of extra milliseconds after the final fade so nothing is clipped
-   short.
+2. Set the Out-marker right after the end of the song. Leave a second or two
+   after the final fade so nothing is clipped short, or rely on **Include
+   Tails** in the render dialog to let the last notes ring out.
 
-Then choose *Marked Region* as the **Range** in the render dialog. See the Using
-Markers chapter for more on placing markers.
+Then choose *Marked Region* as the **Range** in the render dialog. See
+[Using Markers](using-markers.md) for more on placing markers.
 
 ## Rendering Your Mix
 
 Choose *File > Export: Render to a file...* to open the Render dialog. It starts
 in Simple mode, which shows just the settings a straightforward mixdown needs.
 For a stereo mixdown, set **Render** to *Whole Mix*, pick your format, check the
-folder and name, and click *Add to Queue and Start*.
+folder and name, and click *Render*.
 
-That's the short version. The Rendering and Stems chapter covers the rest: MP3
+That's the short version. [Rendering and Stems](rendering-and-stems.md) covers the rest: MP3
 and the other formats, rendering stems for each track or submix, tagging the
 files with title and artist, normalising to a loudness target, naming batches
 with patterns, saving presets, and rendering from the command line. Stems by
@@ -111,5 +113,5 @@ folder containing this file*.
 
 ## Moving On
 
-For everything the render dialog can do beyond a simple stereo mixdown, see the
-Rendering and Stems chapter. Have fun, and make a lot of music.
+For everything the render dialog can do beyond a simple stereo mixdown, see
+[Rendering and Stems](rendering-and-stems.md). Have fun, and make a lot of music.

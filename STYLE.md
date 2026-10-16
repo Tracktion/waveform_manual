@@ -40,6 +40,7 @@ Every prompt, skill or person writing manual chapters follows this file. When a 
 ## Edition gating
 
 - Any feature that isn't in the Free edition gets the badge on its heading: `## Faceplates <span class="pro">PRO</span>` (the `.pro` style lives in `docs/stylesheets/extra.css`).
+- A badge changes the heading's automatic anchor (`#faceplates` would become `#faceplates-pro`). To keep links stable, give every badged heading an explicit anchor without the badge: `## Faceplates <span class="pro">PRO</span> { #faceplates }`. Link to that anchor.
 - Directly under the title, add one line naming the editions and expansions that unlock it.
 - Wording matches the product names: Waveform Pro, the MIDI Producer Expansion, and so on.
 
@@ -48,7 +49,7 @@ Every prompt, skill or person writing manual chapters follows this file. When a 
 - Every label, menu path, range and default must match the code. Labels come from `TRANS()` / `NEEDS_TRANS()`.
 - Menu paths use `>`, for example `Settings > General`. Show shortcuts for both platforms, Mac first: `Cmd + Z / Ctrl + Z`.
 - Don't mention version numbers ("new in Waveform 13", "T7") outside `whats-new.md`.
-- Put code citations in the verification output or report, never in the chapter. Chapters must not contain `<!-- code: -->` comments.
+- Put code citations in the verification output or report, never in the chapter. Chapters must not contain `<!-- code: -->` comments. The only HTML comment allowed is the `<!-- AUTOGEN_TOC -->` marker in `front-matter.md`, which the PDF build (`tools/ai/user_manual_processing/concat_manual.py`) replaces with a table of contents.
 
 ## Self-check before returning
 

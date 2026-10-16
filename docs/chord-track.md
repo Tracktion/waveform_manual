@@ -23,15 +23,14 @@ To show or hide it:
     View menu.
 -   Or right-click the header of any global track (Tempo, Marker, or
     Arranger) and choose *Show Chord track*.
--   Or use the keyboard shortcut Ctrl+Alt+F11 (Windows) /
-    Option+Cmd+F11 (Mac).
+-   Or use the keyboard shortcut Option + Cmd + F11 / Ctrl + Alt + F11.
 
 ## Inserting Chords
 
 To add a chord to the Chord Track, position the playhead where you
 want the chord to begin, then do one of the following:
 
--   Use the *Insert chord* command: Alt+C (Windows) / Option+C (Mac).
+-   Use the *Insert chord* command: Option + C / Alt + C.
 -   Or select the Chord Track header and click the **New Chord**
     button in the Actions panel.
 
@@ -118,7 +117,7 @@ it:
 -   **MIDI pattern generators** can generate basslines, arpeggios, and
     chord parts that track the progression.
 -   **Audio clips** can automatically pitch-shift to follow the Chord
-    Track (Waveform Pro 11 and later).
+    Track (Waveform Pro).
 
 The chord types offered throughout Waveform (including the Chord
 Track) can be customized in [Settings >

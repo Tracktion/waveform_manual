@@ -77,8 +77,8 @@ differentiate the plugin technology.
 
 ## Customizing the Thumbnail Image
 
-Open any plugin in Waveform and notice the new camera icon in the upper
-right corner. Click that camera to take a snapshot of the plugin window
+Open any plugin in Waveform and notice the camera icon (*Save thumbnail
+image of plugin UI*) in the upper right corner (macOS and Windows). Click that camera to take a snapshot of the plugin window
 and update the thumbnail image. If you want more interesting thumbnails,
 use this to capture the plugin in action with the meters moving or with
 an interesting EQ curve.
@@ -96,18 +96,18 @@ the first time, Waveform grabs the thumbnail image. Over time, the
 thumbnails will begin to fill in.
 
 If you are you want all of them populated with images right away, you
-can! Locate the *Scan for plugin thumbnails* options on the *Settings
-tab, Plugins page*.
+can! On the *Settings tab, Plugins page*, find the *Create plugin
+thumbnail images* row and click its **Plugin thumbnail images** button.
 
 
 ![](images/39----05.png)
 
 *Capture Thumbnails Options*
 
-There are three options: You can *scan all plugins*, *scan for new
-plugins* (those without thumbnails), or *scan from a selection* in the
-list of installed plugins. When you first start with a new Waveform
-installation you probably want to use *Scan for all plugins*.
+The menu has three options: *For all plugins*, *For plugins without
+thumbnails*, or *For selected plugins* (the ones selected in the list of
+installed plugins). When you first start with a new Waveform
+installation you probably want to use *For all plugins*.
 
 
 ![](images/39----06.png)
@@ -116,9 +116,9 @@ installation you probably want to use *Scan for all plugins*.
 
 ## Opening Visual Plugin Selector with a Shortcut
 
-There is a new macro action to open the Visual Plugin selector. To use
+There is a macro action to open the Visual Plugin selector. To use
 it create a new macro then right-click on the script editor on the
-Settings tab, Keyboard Shortcuts page. Navigate to *Advanced Actions >
+Settings tab, Keyboard Shortcuts page. Navigate to *Advanced actions >
 Plugins > Show or hide the plugin selector page*.
 
 
@@ -134,7 +134,9 @@ That adds the necessary code to the macro.
 *The Completed Macro*
 
 Assign a keyboard combination that makes sense. In this example, we have
-used Option + F11 / Alt + F11.
+used Option + F11 / Alt + F11. That combination is the default shortcut
+for *Lock/Unlock Actions panel*, so pick a free key combination instead
+if you want to keep that shortcut.
 
 
 

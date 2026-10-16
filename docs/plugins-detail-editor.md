@@ -2,16 +2,16 @@
 
 The **Plugins** tab of the Detail editor lays a whole track's modifiers and plugins out side by side, as a row of panels you can open and close individually. Instead of opening one plugin's properties at a time, you can have a compressor's editor, a synth's parameter list and an LFO's settings all on screen together, and work across them without losing your place.
 
-Nothing here is a new set of controls. Each panel opens the same pages you already get from the floating property panels and the modifier editor window (the Parameters list, the Faceplate, the Macro Parameters, the MIDI Controller Mappings), just docked into the Detail editor rather than floating above the arrangement. What is new is the layout: everything belonging to one track, in signal order, in one scrolling row.
+Nothing here is a new set of controls. Each panel opens the same pages you can already pop out from the Actions panel and the modifier editor window (the Parameters list, the Faceplate, the Macro Parameters, the MIDI Controller Mappings), just docked into the Detail editor rather than floating above the arrangement. What is new is the layout: everything belonging to one track, in signal order, in one scrolling row.
 
 ![](images/PluginsDetailEditor/plugins_detail_overview@2x.png)
 *The Plugins tab, with the Modifiers section on the left and the track's plugin chain on the right, most panels showing their Parameters page*
 
-> 📝 **Note:** The Plugins tab of the Detail editor is new in Waveform 14.
+> 📝 **Note:** The Plugins tab is available in all editions.
 
 ## Opening It
 
-The Detail editor has a strip of mode buttons down its left-hand edge. **Plugins** is the third of them, below **Track** and **Clip**; when it is present the strip divides into thirds.
+The Detail editor has a strip of mode buttons down its left-hand edge. **Plugins** is the third of them, below **Track** and **Clip**, so the strip divides into thirds.
 
 Which tab you last had open is saved with the Edit, so the Detail editor comes back on the Plugins tab next time you open the project.
 
@@ -103,7 +103,7 @@ Down the left-hand strip, from top to bottom:
 
 The **name strip** does more than label the panel:
 
-- **Click** it to select the plugin, which also shows its properties everywhere else in the app.
+- **Click** it to select the plugin, which also shows it in the Actions panel.
 - **Double-click** it to rename the plugin. A *Rename Plugin* dialog appears; leave the box empty to go back to the plugin's own name.
 - **Drag** it to move the plugin, either to another position in this row, or straight out to the mixer or the arranger's plugin chain. Hold a modifier key while you drag to copy the plugin instead of moving it.
 
@@ -117,7 +117,7 @@ Only the pages a plugin actually has get a toggle, so a simple utility plugin ma
 
 **Editor**: the plugin's own interface, embedded inline in the panel. This is offered for Waveform's **built-in** plugins only: third-party VST and AU plugins always use their own window. Two more conditions apply: the plugin must have parameters, and its editor must be short enough to sit sensibly in the Detail editor. Tall editors such as 4OSC and the Guitar amp's IR loader stay window-only, and you reach them with the show/hide window button in the strip. Editors that can resize, like the 8-band EQ, stretch to fill the height you have given the Detail editor.
 
-**Parameters**, **Macro Parameters**, **Faceplate** and **MIDI Controller Mappings**: the same pages as the plugin's floating property panel, and subject to the same edition gating, so Faceplates and Macro Parameters only appear where those features are available.
+**Parameters**, **Macro Parameters**, **Faceplate** and **MIDI Controller Mappings**: the same pages you can pop out from the plugin's Actions panel, and subject to the same edition gating, so Faceplates and Macro Parameters only appear where those features are available.
 
 On the **Parameters** page the assignments half starts **collapsed** in this embedded view, which keeps the page narrow. Click the expander down its edge to open the assignments out; the page widens to make room, and closes back to its narrow width when you collapse it again.
 

@@ -36,8 +36,8 @@ after take, until you hit *Stop*.
 *Set the In-marker & Out-marker*
 
 > 📝 **Note:** The *Click* count-in works for loop recording. If you want a
-running start for each take, set *Click Track > Pre-record count-in
-length* to one or two bars.
+running start for each take, set *Click > Count-in* to *1 bar* or *2
+bars*.
 
 2.  Configure the input and check your levels just like we did for
     standard recording.
@@ -69,7 +69,7 @@ make your favorite one the active take.
 *Choosing the Active Take*
 
 > 💡 **Tip:** With your takes recorded this way, it is perfectly set up for
-comping, which we will cover in the [next chapter].
+comping, which we will cover in [Comping](comping.md).
 
 ## Unpacking Takes to Tracks
 

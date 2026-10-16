@@ -6,7 +6,7 @@ unit built into your computer, or an external audio interface connected
 to it. Of importance is only to communicate with it in the right way. 
 Waveform supports the following communication protocols:
 
-- Windows: ASIO (recommended), and Windows Sound
+- Windows: ASIO (recommended), Windows Audio (three modes), and DirectSound
 - macOS:   Core Audio
 - Linux:   JACK (recommended), and ALSA or PulsAudio/ALSA
 
@@ -29,11 +29,12 @@ configured as an audio device in Waveform.
 
 If you haven't already, navigate to *Settings tab > Audio Devices page.*
 
-Audio Device Type:
- Waveform gives Windows users four choices for audio device type.
+Device type:
+ Waveform gives Windows users five choices for *Device type*.
 
 -   Windows Audio
--   Windows Audio (Exclusive)
+-   Windows Audio (Exclusive Mode)
+-   Windows Audio (Low Latency Mode)
 -   DirectSound
 -   ASIO
 
@@ -42,7 +43,7 @@ Audio Device Type:
 *Windows Audio Device Types*
 
 
-Any of the above four options might work with your computer, but there
+Any of the above five options might work with your computer, but there
 are definite differences, and best choices:
 
 **ASIO**
@@ -55,7 +56,7 @@ are definite differences, and best choices:
     outputs.
 
 **Windows Audio**
-- Use this if you are running Windows 10 and are using the internal
+- Use this if you are running Windows 10 or 11 and are using the internal
     sound on your machine. This solution is great for using a laptop
     directly while traveling. This device type uses WASAPI (Windows
     Audio Session API) which offers nicely optimized access from
@@ -68,16 +69,21 @@ are definite differences, and best choices:
     lowest latency and most critical applications, choose this option
     when using your internal sound.
 
+**Windows Audio (Low Latency Mode)**
+- This is shared like Windows Audio, so other applications can still
+    play sound, but Waveform asks Windows for smaller buffers to get
+    lower latency. Try it if you want lower latency from your internal
+    sound without locking out other applications.
+
 **DirectSound**
-- This is technology is deprecated in Windows 10 and there is no good
-    reason to choose this option. Back in the day, this was the best
-    choice when using Windows XP with your internal sound.
+- This is technology is deprecated in Windows 10 and 11, and there is
+    no good reason to choose this option.
 Tip: Stay away from the DirectSound device type.
 
 > 📝 **Note:** Windows versions earlier than Win 10 are end of life and officially no more supported. While you might
 be able to run Waveform on older Windows 64-bit systems, the Waveform development and support team run their Win tests on versions 10 and 11.
     
-> 📝 **Note:** Starting with release 1703, Windows 10 supports USB Audio
+> 📝 **Note:** Windows 10 and 11 support USB Audio
 Class 2 devices natively. For simple 2 x 2 interfaces or built-in audio
 this is a workable alternative to using ASIO. For the full feature set
 for most audio interfaces it is still recommended that you install and use
@@ -88,11 +94,11 @@ manufacturer's drivers and use ASIO if possible.
 1.  Click on the Settings tab, then select the Audio Devices page.
 2.  Select an output Device. Assuming you have the necessary drivers
     installed and the device hooked up, it should appear as an option
-    for the *Output:* property.
+    for the *Output Device* property.
 
 ![](images/04----01.png)
 
-*OS X - Audio Device Output and Input Properties*
+*macOS - Audio Device Output and Input Properties*
 
 
 > 📝 **Note:** With macOS, USB audio interfaces that follow USB Audio Class 1
@@ -100,13 +106,13 @@ manufacturer's drivers and use ASIO if possible.
 additional driver. In the product specs for such devices they are often
 listed as "class compliant."
 
-1.  Select an Input device
+1.  Select an *Input Device*
 
 > 💡 **Tip:** We strongly suggest that you select the same device for the
 output and the input. In this example, we are using a "USB iTwo" which
 is a simple 2 in / 2 out interface.
 
-> 📝 **Note:** On OS X, you can select the input device and output device
+> 📝 **Note:** On macOS, you can select the input device and output device
 separately.
 
 ![](images/04----02.png)
@@ -114,10 +120,10 @@ separately.
 *Audio Device **Test** Button on Mac*
 
 Test Button
-- There is a convenient *Test* button next to the audio device
-    parameter. Click it to send a short test tone to the audio device's
-    output. If you hear the tone, you know your device has been
-    configured correctly.
+- Further down the Audio Devices page, each enabled output in the
+    *Output Channel Groups* list has its own *Test* button. Click it to
+    send a short test tone to that output. If you hear the tone, you
+    know your device has been configured correctly.
 
 ## Audio Device Setup on Linux
 
@@ -126,7 +132,7 @@ Waveform can connect to the Linux audio system by JACK or ALSA.
 The usual requirement for low latency signal pathways and the extended
 routing options recommend to configure Waveform for JACK usage, though.
 
-**Settings tab > Audio Devices page > Audio Device Type = JACK**
+**Settings tab > Audio Devices page > Device type = JACK**
 
 While the configuration of Waveform is obviously quite easy, the
 preparation of the Linux system itself and finding an audio device
@@ -204,7 +210,8 @@ The app Ubuntu Studio Installer would allow to proceed much more specialized con
 
 With the audio device type set, you can choose any audio interface
 connected to your computer or the internal sound. Select your device if
-it's not already shown for the *Device:* property.
+it's not already shown for the *Output Device* property. With ASIO
+there is a single device for both inputs and outputs.
 
 ![](images/04----04@2x.png)
 
@@ -241,11 +248,11 @@ a complete stereo image. Here is one way to do that:
 *Loading the SubWays Demo*
 
 
-1.  Go back to the Projects tab and select one of the demo tunes -
-    Subways is a good choice.
-2.  Locate the Edit on the right (SubWays T4) and double-click to open
-    it.
-3.  Click *Play* (spacebar) and you should hear music!
+1.  Open the Welcome tab and pick a song from the *Project Templates*
+    list to open it as a new Edit. Alternatively, open any demo song
+    from the Projects tab (see [Demo Projects and
+    Templates](installing-the-demo-projects.md)).
+2.  Click *Play* (spacebar) and you should hear music!
 
 ![](images/04----06@2x.png)
 
@@ -336,14 +343,15 @@ Here are the steps:
     connect the left output to input one.
 4.  Turn the gain up about half way on the input.
 5.  In Waveform go to *Settings > Audio Devices.*
-6.  In the Channels list click on one of the Inputs
+6.  In the *Input Channel Groups* list click on one of the inputs
 
 ![](images/04----11.png)
 
 *Select an Input*
 
 
-1.  In the Actions panel click *Auto-Detect.*
+1.  In the input's properties on the Settings page, click
+    *Auto-Detect...*
 
 ![](images/04----12.png)
 
@@ -393,13 +401,13 @@ anytime you change the Audio Device Setup.
 If at any point you want to reset these settings to the defaults, click
 either of these two options:
 
-Reset Input Devices
+Reset Input Device Properties
 - Resets *Input gain*, *Trigger level*, *Time adjust*, and recording
     options.
 
-Reset Output Devices
-- Resets *Treat as stereo pair*, *Dithering Enabled*, *Left/Right
-    Reversed* and *Alias* parameters.
+Reset Output Device Properties
+- Resets the *Dithering Enabled* and *Left/Right Reversed*
+    parameters.
 
 ## Advanced Audio Device Settings
 
@@ -410,7 +418,7 @@ on the Advance page of the Settings tab. Refer to [Reference: Settings > Advance
 
 When you run Waveform for the first time, you will see the *First Run
 Setup Progress* panel over on the left. As you click each item, it takes
-you directly to the page and feature on the Setup tab needed to complete
+you directly to the page and feature on the Settings tab needed to complete
 the task. The tasks are designed to streamline setup and get new users
 configured and running quickly.
 
@@ -420,7 +428,7 @@ configured and running quickly.
 *First Run Setup Progress Panel*
 
 If you close the panel and wonder how to get it back, navigate to *Help
-> Show First Run Setup*.
+> Show the First Run Setup panel*.
 
 
 ![](images/38----53.png)

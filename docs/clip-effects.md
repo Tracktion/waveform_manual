@@ -1,7 +1,8 @@
 # Clip Effects
 
-In Chapters 29 through 31 we covered using effects plugins in a variety
-of ways. Now, we want to show you how to apply plugins to individual
+[Using Plugins](using-plugins.md) and
+[Built-in Effects Plugins](built-in-effects-plugins.md) covered using
+effects plugins in a variety of ways. Now, we want to show you how to apply plugins to individual
 Audio clips. Let's get started.
 
 ## Inserting Plugins on Clips
@@ -9,8 +10,8 @@ Audio clips. Let's get started.
 To insert a plugin on an Audio clip, drag the plugin from the Browser or
 the plugin object, and drop it onto the Audio clip. You'll notice that
 the plugin thumbnail appears in the lower right corner of the clip. You
-can add as many plugins as you'd like to create a chain of effects, all
-operating on that one clip.
+can add up to 10 plugins to create a chain of effects, all operating on
+that one clip.
 
 
 ![](images/32----01.png)
@@ -20,18 +21,20 @@ operating on that one clip.
 > 📝 **Note:** Clip effects work with Audio clips, but not MIDI clips or Step
 clips.
 
+> 📝 **Note:** For offline processing that renders into the clip, see
+> [Clip Layer Effects](clip-layer-effects.md).
+
 The rest of the operation is pretty much the same as using plugins in
 the mixer. Select a plugin and hit F to enable or disable it. You can
-also enable or disable the effect with the *Enabled* button in
-properties.
+also enable or disable the effect with the *Enabled* button in the
+Actions panel.
 
 For third-party plugins, clicking or double clicking on the plugin opens
 its user interface.
 
-> 💡 **Tip:** How plugins open, depends on a setting in the Settings tab
-Plugins page: *Opening Plugin Windows.* It can be set to either
-*Single-click on a plugin to open its GUI window* or *Double-click on a
-plugin to open its GUI window.*
+> 💡 **Tip:** How plugins open depends on a setting on the Settings tab,
+General page: under *Plugin Windows*, *Open plugin windows by* can be set
+to either *Single-clicking* or *Double-clicking*.
 
 ## Removing Clip Plugins
 

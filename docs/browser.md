@@ -1,13 +1,15 @@
 # The Browser
 
-The Browser is your central hub for finding and auditioning content: plugins, presets, samples, clips, tracks, and more. It lives in the sidebar panel on the right side of the edit view, under the **Search** tab.
+The Browser is your central hub for finding and auditioning content: plugins, presets, samples, clips, tracks, and more. It lives in the sidebar panel of the edit view (on the right by default), under the **Search** tab.
 
 ![](images/Browser@2x.png)
 *The Browser panel showing Packs content with folders expanded. The sidebar on the left lets you filter by category, and the results area on the right displays matching items in a tree view.*
 
 ## Opening the Browser
 
-The Browser is one of several sidebar panels available in the edit view. Look for the **Search** tab at the top of the sidebar. Click it to reveal the Browser. If the sidebar is not visible, you can toggle it from the view options or by dragging it open from the right edge of the edit area.
+The Browser is one of several sidebar panels available in the edit view. Look for the **Search** tab at the top of the sidebar. Click it to reveal the Browser. If the sidebar is not visible, choose **View > Show Browser** from the menu bar or press B. To move the sidebar to the left, right or top of the window, change **Browser position** in *Settings > Appearance*.
+
+The sidebar's other tabs are covered elsewhere: **Actions** in [The Actions Panel](actions-panel.md), **Markers** in [Using Markers](using-markers.md), **Plugin** in [The Plugin Side Panel](plugin-side-panel.md) (you can hide it with *Show Plugin panel in browser* in *Settings > Plugins*), and **Assistant** in [The AI Assistant](ai-assistant.md). The Files, Tracks and Groups tabs are described below.
 
 ## Tags
 
@@ -46,8 +48,8 @@ When you select a favourite tag, the results area shows all content tagged with 
 The **Categories** section lets you filter by content type. The available categories are:
 
 - **Plugins**: all installed audio plugins (VST, AU, etc.)
-- **Presets**: saved plugin chain and track presets
-- **Racks**: rack filter presets
+- **Presets**: plugin presets
+- **Racks**: rack presets
 - **Samples**: audio and MIDI files in your libraries
 - **Clips**: clip presets
 - **Tracks**: track presets
@@ -124,7 +126,7 @@ Right-clicking an item in the results list opens a context menu with options tha
 - **Set tags from favourites**: a submenu showing your favourite tags as quick toggles. Filled dots indicate tags already assigned; click to add or remove
 
 **For audio/MIDI files:**
-- **Delete file**: permanently deletes the file from disk
+- **Delete file**: moves the selected files to your system's trash (the Trash on macOS, the Recycle Bin on Windows), after asking you to confirm
 - **Open the folder containing this file...**: reveals the file in your system's file manager
 
 **For presets:**
@@ -134,7 +136,7 @@ Right-clicking an item in the results list opens a context menu with options tha
 - **Import Preset...**: imports a preset from a file
 - **Open the folder containing this file...**: reveals the preset file in your file manager
 
-> ⚠️ **Warning:** Deleting a file or preset from the right-click menu is permanent. There is no undo.
+> ⚠️ **Warning:** Deleting a preset from the right-click menu can't be undone.
 
 ## The Preview Area
 
@@ -221,10 +223,10 @@ Look for the **Tracks** tab at the top of the sidebar and click it. The panel li
 
 ### Tagging Tracks
 
-Tags live on the tracks themselves, so you assign them from the track properties rather than from this panel:
+Tags live on the tracks themselves, so you assign them from the track's Actions panel rather than from this panel:
 
 1. Select one or more tracks (Cmd/Ctrl-click to multi-select).
-2. Open the track properties and find the **Tags** field.
+2. In the track's Actions panel, find the **Tags** field.
 3. Type one or more tags, separated by commas (for example `Drums, Verse`). The same tags are applied to every selected track.
 
 Only audio, folder and automation tracks can be tagged.
@@ -271,4 +273,4 @@ The panel lists every group in the edit. Each row shows the group's name drawn i
 
 ## Moving On
 
-Next, you might want to explore how presets and racks work in more detail.
+Next, you might want to explore how presets and racks work in more detail: see [Plugin Racks](racks.md) and [Using Plugins](using-plugins.md).

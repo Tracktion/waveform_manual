@@ -1,6 +1,6 @@
 # Clip Layer Effects
 
-Clip Layer effects were introduced with T7. They offer quick offline
+Clip Layer effects offer quick offline
 rendering of many common audio processes but arranged as layers. You can
 add or remove layers at will and the effects are rendered in quickly.
 You can even rearrange the layers. Effects are applied from the top down
@@ -16,8 +16,9 @@ capabilities.
 
 *Example Clip Layers*
 
-To use Clip Layer effects, click on new FX icon in the header for any
-Audio clip.
+To use Clip Layer effects, click the FX button in the header of any
+Audio clip (or right-click the clip) and choose *Add clip effect*. The
+same menu also has *Remove all clip effects* and *Show clip effects*.
 
 
 ![](images/41----02.png)
@@ -53,17 +54,17 @@ when it comes to automating volume.
 *Volume Clip Layer*
 
 When you click the "gear" icon for a volume layer, you will see the
-*Volume & Pan* control values in properties.
+*Volume & Pan* control values in the Actions panel.
 
 
 ![](images/41----05b.png)
 
-*Volume Clip Layer properties*
+*Volume Clip Layer settings in the Actions panel*
 
 While somewhat useful, you are probably more interested in working with
 the volume automation curve itself. To do so, click on the volume curve
-(which initially shows up as a line) and then you have access to the
-properties for that.
+(which initially shows up as a line) and its settings appear in the
+Actions panel.
 
 > 💡 **Tip:** See [Automation](automation.md) for more on editing the
 automation curve. Everything about editing automation curves for tracks
@@ -92,14 +93,14 @@ Add a step volume layer to rhythmically gate the clip.
 *Step Volume Layer*
 
 With the step Clip Layer in place, click the gear icon at the right of
-the layer and then work with all the properties to set the step size and
-divisions. You can then click on the steps to turn them on or for
+the layer and then work with its settings in the Actions panel to set
+the step size and divisions. You can then click on the steps to turn them on or for
 unlimited synced gating options.
 
 
 ![](images/41----07b.png)
 
-*Step Volume properties*
+*Step Volume settings*
 
 ## Time/Pitch - Pitch Shift
 
@@ -112,19 +113,19 @@ from simple pitch offsets to dramatic pitch sweeps.
 
 *Pitch Shift Layer*
 
-When you select the pitch curve on the clip, its properties give you access
-to the normal range of controls for automation curves.
+When you select the pitch curve on the clip, the Actions panel gives you
+access to the normal range of controls for automation curves.
 
 
 ![](images/41----08b.png)
 
-*Pitch Curve properties*
+*Pitch Curve settings*
 
 ## Time/Pitch - Tape Stop/Start (Pitch Fade)
 
-You probably already know that you can right-click the fade handles on
-any Audio clip to apply pitch fades. Now you can do the same thing as a
-Clip Layer effect.
+You can right-click the fade handles on any Audio clip to apply pitch
+fades. The Tape Stop/Start layer does the same thing as a Clip Layer
+effect.
 
 
 ![](images/41----09.png)
@@ -140,10 +141,8 @@ Right-click the fade handle to choose the shape for the curve.
 
 ## Time/Pitch - Warp Time
 
-Before Clip Layers, you had to enable *Warp Time* on the clip itself
-(from the Actions panel or the [Detail editor](detail-editor.md)). While
-that still works, it's much easier with the clip layers feature; just
-add a warp time Clip Layer.
+You can enable *Warp Time* on the clip itself (from the Actions panel or
+the [Detail editor](detail-editor.md)), or add a warp time Clip Layer.
 
 The header area of the Clip Layer will appears shaded. Click anywhere in
 the shaded area to add a warp marker.
@@ -168,10 +167,9 @@ markers.
 
 *Right-click to Remove Warp Markers*
 
-You may find this implementation of Warp Time much more convenient,
-especially if you want to align transients to things happening on other
-tracks in the Edit. With the old way, you couldn't really see timing in
-relation to the rest of the Edit.
+The Clip Layer is convenient when you want to align transients to
+things happening on other tracks in the Edit, because you see the timing
+in relation to the rest of the Edit.
 
 ## Effects - Plugin Layer
 
@@ -220,21 +218,21 @@ Normalise adjusts the gain of audio so that it use all of the available
 the bit depth. The concept is analogous to "zoom-to-fit" in image
 editing software.
 
-To use it, first add Normalize layer.
+To use it, first add a Normalise layer.
 
 
 ![](images/41----13@2x.png)
 
 *Normalise Layer*
 
-Then adjust the *Normalize* value to keep peaks where you want. In
-voiceover work, many customers request the audio to be normalized to
--3db.
+Then set *Peak level* (-60 to 0 dB) to keep peaks where you want. In
+voiceover work, many customers request the audio to be normalised to
+-3 dB.
 
 
 ![](images/41----13b.png)
 
-*Normalise Property*
+*Normalise Peak level setting*
 
 ## Mastering - Mono Layer
 
@@ -248,16 +246,17 @@ First add a mono Clip Layer:
 
 *Mono Layer*
 
-The choose one of options for determine how to render to mono from
-stereo:
+Then set *Method* to choose how to render to mono from stereo: *Use
+average of all channels*, *Use left channel only* or *Use right channel
+only*.
 
 
 ![](images/41----14b.png)
 
 *Mono Options*
 
-> 📝 **Note:** Most of the time you will probably select *Average of all
-Channels*. This mixes the left and right channels to to create a mono
+> 📝 **Note:** Most of the time you will probably select *Use average of
+all channels*. This mixes the left and right channels to to create a mono
 version.
 
 ## Mastering - Phase Invert Layer

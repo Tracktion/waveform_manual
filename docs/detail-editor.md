@@ -9,15 +9,15 @@ selected track or clip. It has three tabs: **Track**, **Clip** and
 The Track tab shows detail for the selected track.
 
 Clip automation also lives here, on the right-hand side, where you can
-view and edit the automation curves recorded into the selected clip --
-see [Clip Automation](automation.md#clip-automation) for how to work with
+view and edit the automation curves recorded into the selected clip.
+See [Clip Automation](automation.md#clip-automation) for how to work with
 them.
 
 ## The Clip tab
 
 The Clip tab shows detail for the selected clip. For an Audio clip this
-includes a waveform view of the clip, with the clip's loop settings --
-Auto-Tempo, Auto-Pitch, Stretch, Beats, Root Tempo, and Beat Points --
+includes a waveform view of the clip, with the clip's loop settings
+(Auto-Tempo, Auto-Pitch, Stretch, Beats, Root Tempo, and Beat Points)
 on the right-hand side.
 
 The same loop settings are also available in the Actions panel, so you

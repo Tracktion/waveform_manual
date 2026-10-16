@@ -7,18 +7,25 @@ effect here, we will go over the essential ones. Let's get started.
 
 ## Waveform Effects
 
-Drag the plugin object to the mixer and select *Waveform Plugins.*
-You'll see the list of built-in effects.
+Drag the plugin object to the mixer to open the plugin picker, then choose
+*Waveform > Effects*. You'll see the list of built-in effects. The *Waveform*
+folder also has *Instruments* and *Utility* subfolders.
 
 
 ![](images/30----01.png)
 
 *Built-in Plugin Effects in Waveform*
 
-In this chapter, we will go into more detail about the plugins
-hightailed in the image above. The other effects provide specialized
-functions, or are not typical audio effects. We'll get into some of
-those in later chapters.
+This chapter covers the Volume & Pan and Level Meter plugins, the
+equalisers, reverbs, Delay, Chorus, Phaser, the dynamics plugins,
+Distortion, Pitch Shifter, DJ EQ and DJ Filter, the DJ Tools, the Text
+plugin, Guitar IR, the Artisan Collection and Master Mix. The MIDI effects
+and the utility plugins have chapters of their own.
+
+> 📝 **Note:** The older versions of several effects are in a *Legacy*
+folder, which is hidden until you turn it on: go to *Settings > Plugins*,
+click **Enable internal plugins** and choose *Enable Legacy Plugins*, then
+restart Waveform. See [Legacy Plugins](legacy-plugins.md).
 
 ## Volume & Pan Plugin
 
@@ -33,7 +40,7 @@ Adjusting Volume
 - To control volume, click and drag the volume slider up and down. A
     large volume slider appears as drag giving you nice readable dB
     markings for fine level adjustment. The numeric value for *Volume*
-    setting appears in properties.
+    setting appears in the Actions panel.
 
 
 ![](images/30----02.png)
@@ -53,29 +60,34 @@ Resetting Controls
 - To reset either *Volume* or *Pan* to their default position, hold
     down Opt / Alt as you click the control.
 
-Properties
+Actions Panel
 - With a *Volume & Pan* plugin selected its values and actions appear
-    in properties.
+    in the Actions panel.
 
 
 ![](images/30----04.png)
 
-**Volume & Pan* Plugin properties*
+*Volume & Pan plugin in the Actions panel*
 
-The *Volume* slider is repeated in properties along with buttons for
-*Reset* and *Mute*. *Pan* is repeated in properties along with a *Centre
-Panning* button that resets panning.
+The *Volume* slider is repeated in the Actions panel along with
+**Reset Volume to 0 dB** and **Mute/Unmute** buttons. *Pan* is repeated
+there along with a **Centre Panning** button that resets panning. Below
+them are **Invert Polarity**, which flips the polarity of the signal, and,
+on a track inside a folder, **Ignore VCA**, which makes the plugin ignore a
+VCA plugin on the parent folder track.
 
 Pan Law
-- The properties also include a setting for *Pan Law*. By default this is
-    set to *Linear* but you can change it to other popular formats. For
+- The Actions panel also includes a setting for **Pan Law** (Choices:
+    (Use Default), Linear, -2.5 dB Center, -3.0 dB Center, -4.5 dB Center,
+    -6.0 dB Center). *(Use Default)* follows the **Default pan law** in
+    *Settings > General*, which is *Linear* unless you change it. For
     example, many DAWs use a -3 dB pan law so that as you pan to the
     center it lowers the volume slightly to make it easier to keep a
-    track in balance as you adjusting panning.
+    track in balance as you adjust panning. (Default: Linear)
 
 > 💡 **Tip:** To apply a velocity offset to notes going into a virtual
 instruments, insert a *Volume & Pan* plugin before it and enable *Apply
-to MIDI velocities*. Adjust the fader to offset MIDI velocity to
+to MIDI Velocities*. Adjust the fader to offset MIDI velocity to
 increase or reduce the velocity. This is a quick way make your MIDI
 drums hit harder - much easier than going back to editing the MIDI data.
 This only works if you insert *Volume & Pan* ahead (to the left) of the
@@ -85,20 +97,21 @@ virtual instrument.
 
 The *Level Meter* plugin is also at the right end of the mixer for every
 track by default. *Level Meter* is stereo and shows what the left and
-right levels are doing.
+right levels are doing. To add another one, find it in *Waveform >
+Utility* in the plugin picker.
 
 
 ![](images/30----05.png)
 
 *Level Meter Plugin*
 
-When you select a *Level Meter*, its properties display a large horizontal
-version of the meter, that also includes dB markings.
+When you select a *Level Meter*, the Actions panel displays a large
+horizontal version of the meter, that also includes dB markings.
 
 
 ![](images/30----07.png)
 
-*Large Meter in properties*
+*Large Meter in the Actions panel*
 
 The meter indicates signal overload with a red indicator at the top of
 the meter. You can reset the meter by clicking the red overload
@@ -108,8 +121,8 @@ indicator.
 level meter and choose *Reset all overload indicators* ( Backslash ).
 
 By default the *Level Meter* is set to peak mode. This is typical of the
-metering in most DAWs. You may change the meter mode in properties or
-from the right-click menu. Here is an explanation of each of the modes:
+metering in most DAWs. You may change the meter mode in the Actions panel
+or from the right-click menu. Here is an explanation of each of the modes:
 
 
 ![](images/30----06.png)
@@ -127,7 +140,7 @@ RMS Mode
     better indication of how loud one track is perceived, compared to
     others.
 
-Sum & Difference Mode
+Sum & difference Mode
 - *Sum & difference* is a specialized mode that gives you a visual
     representation of both the level and the stereo spread. The left
     part of the meter shows the level of sum of left plus right. This
@@ -141,7 +154,7 @@ cancel to zero and the right side of the meter will show no activity: a
 mono signal.
 
 > 💡 **Tip:** The level meter will also indicate MIDI activity if you enable
-*Show MIDI activity* in properties. This can be a very useful diagnostic
+*Show MIDI activity* in the Actions panel. This can be a very useful diagnostic
 if you ever wonder why a virtual instrument is not triggering.
 
 
@@ -153,7 +166,7 @@ if you ever wonder why a virtual instrument is not triggering.
 
 Waveform's equalisers come in three sizes (*1-Band*, *3-Band*, and
 *8-Band*), so you can reach for exactly as much EQ as the job needs. Each
-one has a graphical frequency-response display in properties where you
+one has a graphical frequency-response display in the plugin window where you
 drag nodes to shape the sound: drag a node up or down for *Gain*, left or
 right for *Frequency*, and around the node to set its *Q* (width).
 
@@ -474,8 +487,8 @@ and *Centre Gain* sets the level at the midpoint.
 ## Text Plugin
 
 The text plugin is a convenient tool to keep your Edit organized as you
-record, edit, and mix. Drag *Text* it to a track, give it a *Name* and
-then type in a *Description*.
+record, edit, and mix. Drag *Text* from *Waveform > Utility* in the plugin
+picker to a track, give it a *Name* and then type in a *Description*.
 
 
 ![](images/30----09.png)
@@ -494,8 +507,8 @@ selecting all of them and using the keyboard shortcut F.
 
 ## Guitar IR
 
-> 📝 **Note:** *Guitar IR* and *Dual Guitar IR* are *Pro* features, available in
-Waveform 12 and later.
+> 📝 **Note:** *Guitar IR* and *Dual Guitar IR* are part of Waveform Pro, or
+come with the Recording Engineer Expansion.
 
 *Guitar IR* is a convolution plugin that loads an impulse response (IR), a
 short WAV recording that captures the sound of a guitar cabinet, speaker, or
@@ -545,9 +558,9 @@ Rather than document each plugin individually, it's enough to know that every
 *Wet* level) alongside its own specific parameters, so you can always dial in
 how much of the processed signal is blended with the original.
 
-To use them, enable the collection in *Settings > Plugins* with the *Enable
-Artisan Collection Plugins* option (on by default). After enabling it you'll
-need to restart Waveform. Once enabled, the effects appear under the *Artisan
+To use them, go to *Settings > Plugins*, click **Enable internal plugins** and
+make sure *Enable Artisan Collection Plugins* is ticked (it is on by default).
+After changing it you'll need to restart Waveform. Once enabled, the effects appear under the *Artisan
 Collection* folder in the plugin picker.
 
 > 📝 **Note:** The *Artisan Collection* is a *Pro* feature.

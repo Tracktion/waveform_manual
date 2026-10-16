@@ -10,10 +10,10 @@ your mix back out to a finished video file.
 
 Video support comes in two tiers. The basics (importing standard video,
 the playback window, and the timecode overlay) are available in
-Waveform Free, OEM, and Pro from version 12.5 onward. A second set of
+every edition: Waveform Free, OEM, and Pro. A second set of
 features is Pro-only, or unlocked by the **Pro Video Expansion** add-on.
 
-| Capability | Free / OEM (v12.5+) | Pro / Pro Video Expansion |
+| Capability | Free / OEM | Pro / Pro Video Expansion |
 |---|---|---|
 | Import standard video, playback window, timecode | ✓ | ✓ |
 | Import image sequences (.png / .jpg) | ✗ | ✓ |
@@ -28,7 +28,7 @@ features is Pro-only, or unlocked by the **Pro Video Expansion** add-on.
 
 There are three ways to bring a video into your Edit:
 
-- From the transport bar's **Video** menu, choose **Load video file…**
+- From the **Video** menu, choose **Load video file…**
 - From the **File** menu, choose **Load video file…**
 - Drag a video file straight onto the Edit.
 
@@ -113,40 +113,40 @@ Both always write a **.mov** file.
 Choosing **Render to a file…** opens the *Render Video* dialog. The
 options are:
 
-**Video format** (Choices: H.264, H.265): the video codec for the
-output. (Default: H.264)
+**File**: the video file to write. Type a path, or use the button next
+to it to browse.
 
-**Output resolution** (Choices: Original, 4K, 2K, 1080P, 720P): the
-frame size of the rendered video. (Default: Original)
+**Format** (Choices: H.264, H.265): the video codec for the output.
+(Default: H.264)
 
-**Sample rate** (Choices: 44100, 48000): the audio sample rate. (Default:
+**Size** (Choices: Original, 4K, 2K, 1080P, 720P): the frame size of the
+rendered video. (Default: Original)
+
+**Sample Rate** (Choices: 44100, 48000): the audio sample rate. (Default:
 matches your Edit)
 
-**Bit depth** (Choices: 16, 24): the audio bit depth.
+**Sample Size** (Choices: 16, 24): the audio bit depth.
 
 **Normalise**: scales the output so its loudest peak hits a target.
-Turning it on reveals a **Peak level** field (−30 to 0 dB). (Default:
+Turning it on reveals a **Peak Level** field (−30 to 0 dB). (Default:
 off)
 
-**Adjust based on RMS**: scales the output to a target average
-(perceived) level instead. Turning it on reveals an **RMS level** field
+**Adjust Level Based on RMS**: scales the output to a target average
+(perceived) level instead. Turning it on reveals an **RMS Level** field
 (−30 to 0 dB). Only the Peak or RMS field is shown at a time, depending
 on which is active. (Default: off)
 
-**Render marked region only**: renders just the region between the In-
+**Only Render Marked Region**: renders just the region between the In-
 and Out-markers. This option only appears when a marked region longer
-than about 50 milliseconds exists, and when it appears it defaults to on.
-
-> 📝 **Note:** Watch the *Render marked region only* option. Because it
-> defaults to on whenever you have a marked region, it's easy to render
-> only part of your video without realising. Turn it off if you want the
-> whole Edit.
+than about 50 milliseconds exists, and when it appears it defaults to on,
+so turn it off if you want the whole Edit.
 
 ### Replace Audio in Video
 
-**Render and replace audio track in video…** opens the same dialog with
-the video-format and resolution options hidden. It reuses the existing
-video's picture, so only the audio settings apply. Use this when you've
+**Render and replace audio track in video…** opens the same dialog,
+titled *Replace Audio in Video*, with the **Format** and **Size** options
+hidden. Set **File** to the existing video whose audio you want to
+replace. It reuses that video's picture, so only the audio settings apply. Use this when you've
 been handed a finished cut and just need to lay your new mix onto it.
 
 ## ⚡ Things to Watch Out For
@@ -162,5 +162,6 @@ been handed a finished cut and just need to lay your new mix onto it.
 
 ## Moving On
 
-For mixing the soundtrack, see the Mixing Down chapter. For rendering
-audio files on their own, see the Rendering and Stems chapter.
+For mixing the soundtrack, see [Mixing Down](mixing-down.md). For
+rendering audio files on their own, see
+[Rendering and Stems](rendering-and-stems.md).

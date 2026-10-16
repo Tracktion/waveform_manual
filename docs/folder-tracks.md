@@ -14,7 +14,7 @@ Let's take a closer look.
 ## Creating a Folder Track
 
 To create a Folder Track, right-click the track name for any existing
-track and select *Create a new Folder Track*. The Folder Track appears
+track and select *Add Folder track*. The Folder Track appears
 below the original track.
 
 
@@ -23,7 +23,8 @@ below the original track.
 *New Empty Folder Track*
 
 Alternatively, right click on the background of the Track section and
-choose *Create a new Folder Track*.
+choose *Create a new folder track*, or use **Track > Add folder track**
+from the main menu.
 
 Either of these methods will create a new empty Folder Track. There are
 easy ways to create a Folder Track containing existing tracks, which we
@@ -50,7 +51,7 @@ would like.
 Naming a Folder Track
 - Naming a Folder Track works exactly like any other track. Click on
     the header part of the track where the name is, and then edit *Name*
-    in properties. By default, it will have a name similar to *Folder 1*
+    in the Actions panel. By default, it will have a name similar to *Folder 1*
     or *Folder 2*.
 
 
@@ -127,10 +128,11 @@ within the Folder Track. It's a very convenient way to add high-level
 mixing to your groups of instruments, without going through the
 complexity of adding numerous additional bus.
 
-> 📝 **Note:** You can't insert plugins on Folder Tracks, since no audio
-actually passes through the track. To do so you would need to create a
-Submix Track, which we'll cover in the next chapter. \# Creating a
-Folder Track with Existing Tracks
+> 📝 **Note:** Adding an effect plugin to a Folder Track turns it into a
+Submix Track, so audio then passes through it. Submix Tracks are covered
+in the next chapter.
+
+## Creating a Folder Track with Existing Tracks
 
 With multi-track drums, you often have 10 tracks or more that you need
 to put into a Folder Track. Rather than drag each track individually,
@@ -145,13 +147,15 @@ there is a quick way to pack all of them into a Folder Track at once:
     Shift and click on the last track. All of the drum tracks will then
     be highlighted.
 2.  Next, right-click on the track name for any of the tracks and choose
-    the option *Create new folder track containing*. This instantly
-    creates a Folder Track containing all of your drum tracks.
+    the option *Pack selected tracks to a Folder track* (also in the
+    main menu's **Track** submenu, or use **Create Folder Containing** in
+    the Actions panel). This instantly creates a Folder Track containing
+    all of your drum tracks.
 3.  Finally, select on the Folder Track and give it a descriptive name
-    in properties.
+    in the Actions panel.
 
-> 💡 **Tip:** This isn't limited to drum tracks. *Create new folder track
-containing* is a great way to create Folder Tracks for any related
+> 💡 **Tip:** This isn't limited to drum tracks. *Pack selected tracks to a
+Folder track* is a great way to create Folder Tracks for any related
 selection of instruments or vocals.
 
 ## Editing With Folder Tracks
@@ -161,7 +165,8 @@ possibilities. Here is a rundown of what's possible:
 
 Splitting Contained Clips
 - To split clips across all of the contained tracks by simply
-    selecting the Folder Track clip, position the cursor, then press
+    selecting the Folder Track clip (the collection clip: the summary
+    clip on the folder track), position the cursor, then press
     Slash.
 
 

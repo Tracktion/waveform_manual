@@ -1,6 +1,6 @@
 # The Actions Panel
 
-The Actions panel gives you a single place to see and run the things you can do to whatever you currently have selected. Select a track, a clip, a plugin, or a parameter, and the panel updates to show the actions that apply to it. It's a fast way to reach commands without hunting through menus, and it's where you go to mark your favourite actions so they show up in the Quick Actions menu.
+The Actions panel gives you a single place to see and run the things you can do to whatever you currently have selected. Select a track, a clip, a plugin, or a parameter, and the panel updates to show the actions that apply to it. It's a fast way to reach commands without hunting through menus, and it's where you go to mark your favourite actions so they show up in the action menu in the transport bar.
 
 ![](images/Actions%20Panel%201@2x.png)
 *The Actions panel showing actions for the current selection*
@@ -9,11 +9,9 @@ The Actions panel gives you a single place to see and run the things you can do 
 
 The Actions panel is contextual. It watches what you have selected and shows a list of actions relevant to that selection. Click an empty area of the arrangement and you'll see Edit-level actions; click a track and you'll see track actions; click a clip and the list changes again.
 
-Many actions are more than just buttons. Depending on the action, a row might contain a toggle, a slider, a text field, or a dropdown, so you can change a value right there in the panel without opening a separate properties view.
+Many actions are more than just buttons. Depending on the action, a row might contain a toggle, a slider, a text field, or a dropdown, so you can change a value right there in the panel.
 
 To run an action, click its row. For an action that holds a value, interact with its control directly: type into the text field, drag the slider, or pick from the dropdown.
-
-> 💡 **Tip:** The Actions panel and the Properties panel overlap a lot, but the Actions panel is selection-driven and compact. Keeping it open in the sidebar during repetitive editing means the commands you need follow your selection around.
 
 ## Opening the Panel
 
@@ -22,10 +20,10 @@ There are a few ways to get to the Actions panel:
 - Add it as a tab in the left-hand sidebar (the same area as the Browser).
 - Open it as a dedicated panel on the right side of the Edit tab.
 - Use the **Show Actions** item in the View menu of the Edit tab.
-- Toggle it from the *Eye* panel selector at the upper right (F9), using the *Hide/show the actions panel* control.
+- Toggle it from the *Eye* panel selector at the upper right, using the *Hide/show the actions panel* control.
 - Float it into its own window so it stays visible while you work elsewhere.
 
-You can also assign a keyboard shortcut to show and hide the panel. Look for the *Show/Hide Actions Panel* command on the Keyboard Shortcuts page in Settings.
+You can also assign a keyboard shortcut to show and hide the panel. Look for the *Show or hide actions panel* command on the Keyboard Shortcuts page in Settings.
 
 ## The Breadcrumb
 
@@ -49,11 +47,11 @@ Not every action is something you use every day, so the panel lets you curate wh
 
 ### Marking Favourites and Hiding Actions
 
-Each row has a star on its left edge. Click it to toggle that action as a favourite. Favourites are what appear in Quick Actions, so this is how you build your own short list of go-to commands.
+Each row has a star on its left edge. Click it to toggle that action as a favourite. Favourites are what the action menu in the transport bar shows by default, so this is how you build your own short list of go-to commands.
 
 To hide an action you don't want cluttering the list, right-click the row (to the right of the star) and choose **Hide**. The same menu has a **Favourite** entry that does the same thing as clicking the star. Hidden actions only reappear when you switch to the Show hidden mode.
 
-> 📝 **Note:** The display mode is remembered between sessions, and the Actions panel and the Quick Actions menu remember their modes separately. You can have the panel showing all actions while the Quick Actions menu shows only favourites.
+> 📝 **Note:** The display mode is remembered between sessions, and the Actions panel and the transport action menu remember their modes separately. You can have the panel showing all actions while the action menu shows only favourites.
 
 ## Adding Macros
 
@@ -63,7 +61,7 @@ See the Macros chapter for how to write and manage the scripts themselves.
 
 ## Locking and Floating
 
-When the panel is configured to allow it, two extra controls appear at the top left:
+On the dedicated Actions panel at the right of the Edit tab (not the sidebar Actions tab), two extra controls appear at the top left:
 
 **Lock**: Locks the panel to its current contents so it stops following your selection. This is useful when you want to keep a particular set of actions on screen while you click around elsewhere. Click it again to unlock and resume tracking the selection.
 
@@ -94,7 +92,7 @@ You can rearrange buttons by dragging them, and add or remove whole rows using t
 
 ### The Quick Actions Bar (above the transport)
 
-The Quick Actions bar can sit directly above the transport bar, always in view. To show or hide it, open the *Eye* panel selector at the upper right (F9) and click the *Show/Hide the quick actions panel* toggle. You can also use the **Show Quick actions bar** command, or assign it a keyboard shortcut. Here the bar is limited to a handful of rows, enough for the commands you reach for constantly.
+The Quick Actions bar can sit directly above the transport bar, always in view. To show or hide it, open the *Eye* panel selector at the upper right and click the *Show/Hide the quick actions panel* toggle. You can also use the View menu's **Show Quick actions bar** item, or assign a keyboard shortcut to the *Show or hide the quick actions bar* command. Here the bar is limited to a handful of rows, enough for the commands you reach for constantly.
 
 ### The Quick Actions Window
 
@@ -105,13 +103,11 @@ For a larger workspace, open the **Quick Actions window**, a floating window tha
 
 Down the left edge of the window are three toggles that control what it shows: a **mixer** toggle, a **Quick Actions** toggle, and a **touch mode** toggle that enlarges the buttons for touchscreens. Turn off the mixer to use the window purely as a big board of action buttons, or turn off Quick Actions to use it as a standalone mixer.
 
-> 💡 **Tip:** Assign a keyboard shortcut to *Show/Hide Quick Actions Window*. Combined with touch mode, the window makes a handy control surface on a second monitor or tablet.
+> 💡 **Tip:** Assign a keyboard shortcut to *Show or hide the quick actions window*. Combined with touch mode, the window makes a handy control surface on a second monitor or tablet.
 
 ## ⚡ Things to Watch Out For
 
 - **If the panel looks empty, check the display mode.** In Favourites mode, the panel only shows actions you've starred. A selection with no favourited actions will look blank, so switch to the all-actions (outline star) mode to see what's available.
-
-- **The dedicated panel and floating window depend on your edition.** Basic actions are available across editions from version 11, but the dedicated Actions panel requires version 12 or later. If you don't see the panel option, your edition may not include it.
 
 ## Moving On
 

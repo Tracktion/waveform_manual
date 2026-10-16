@@ -18,7 +18,8 @@ playback tracks and newly recorded tracks. This essential step,
 calibrates the timing offset so that system latency doesn't throw off
 the timing of your overdubs. Re-run *Auto-Detect* test anytime you
 change your interface hardware or buffer setting. The [Auto-Detect
-procedure] is explained in detail in Chapter 4.
+procedure](audio-device-setup.md#calibrating-input-latency-compensation)
+is explained in detail in Audio Device Setup.
 
 > ⚠️ **Warning:** To configure Waveform for recording you must use the
 Auto-Detect feature along with a hardware loopback. If you don't then
@@ -67,24 +68,21 @@ of input properties appears in the Actions panel.
 ## Customizing Input Names Globally
 
 If you are happy with the default input names that's great, however, you
-can customize them with friendlier names using the *Alias* property.
+can customize them with friendlier names using the *Device Alias* property.
 
-To change your hardware input alias names globally, go the Settings tab,
-Audio Devices page. Select an input in the *Channels* list and edit the
-*Alias* name in properties.
+To change an input's alias, go the Settings tab, Audio Devices page.
+Select an input in the *Input Channel Groups* list and edit the *Device
+Alias* name in its properties.
 
-## Customizing Input Names for an Edit
-
-There is another way to rename inputs, but only for the current Edit. In
-the Edit, select an input and notice the *Alias* name in the Actions panel.
-Change this to customize the input name for that particular
-song. As an example, you could use this to indicate the microphone used
-in the session.
+You can also edit it from the Edit: select an input and change *Device
+Alias* in the Actions panel. It is the same setting either way, so the
+new name applies to every Edit, not just the current song. As an example,
+you could use this to indicate the microphone plugged into that input.
 
 
 ![](images/15----05.png)
 
-*Customized Input Names Using the Alias Property*
+*Customized Input Names Using the Device Alias Property*
 
 ## About MIDI Inputs
 
@@ -167,8 +165,8 @@ and options to stop recording which will be explained in a bit.
 ## Enable Recording for All Inputs at Once
 
 If you are doing multitrack recording with many inputs you can arm all
-the tracks at once from the input menu using the option *Enable/Disable
-all devices for recording* (Cmd + R / Ctrl + R). You can even use this
+the tracks at once from the input menu using the option *Record enable
+all* (Cmd + R / Alt + R). You can even use this
 on the fly during recording to start and stop recording without stopping
 the transport.
 
@@ -231,8 +229,8 @@ Here is a review of all the steps needed to test your recording setup:
     input.
 2.  Make sure *Loop* is turned off in the transport bar.
 
-> 📝 **Note:** Waveform supports loop recording but we'll get into that in a
-later chapter.
+> 📝 **Note:** Waveform supports loop recording, which is covered in
+[Loop Recording](loop-recording.md).
 
 1.  Make sure the cursor is rewound to beginning by clicking
     *Return-to-zero* (Home) in the transport bar.
@@ -264,38 +262,32 @@ While recording, it's often very helpful to have an audible timing
 reference. Waveform has a built-in metronome that offers a steady click
 for just this purpose.
 
-## Enabling the Click Track
+## Enabling the Click
 
-To enable the metronome click, turn on *Click* (C) in the Master
-section. That turns it on but the setup is in the *Click Track* Menu.
-Here are explanations for the options:
+To enable the metronome click, turn on *Click* (C) on the transport.
+That turns it on, but the setup is in the *Click* menu. Open it from the
+menu bar at the top of the window, or right-click the *Click* button on
+the transport. Here are explanations for the options:
 
 
 ![](images/15----14.png)
 
 *Click Settings*
 
-Enable Click
-- Another way to enable or disable click is to open the *Click Track*
-    menu and select *Turn on click track* or *Turn off click track*.
-    That does the very same thing as pressing C or clicking the *Click*
-    button in the transport bar.
+Click
+- Another way to enable or disable click is to open the *Click* menu
+    and select *Click*. That does the very same thing as pressing C or
+    clicking the *Click* button in the transport bar.
 
 Click Volume
-- Adjust the volume of the click using the *Click Track > Volume
-    slider*. There are also *Low volume* (-14dB) , *Medium volume*
-    (-4.4dB), and *Full volume* (0dB) presets available.
-
-> 📝 **Note:** Curiously, *Full volume* is not actually full. The Volume
-slider goes to +3db. That's three more than *Full volume* if you are
-keeping score.
+- Adjust the volume of the click using the *Click volume* slider in
+    the *Click* menu. It goes from -14 dB to 0 dB.
 
 Count-in
 - While recording, you can have the click start a bit before the
     cursor position. This gives you time to get into the groove before
-    performing. Enable the count-in from *Click Track > Pre-record
-    count-in length*. Select from *none*, *one bar*, *two bar*, or *two
-    beats* for the count-in length.
+    performing. Enable the count-in from *Click > Count-in*. Select from
+    *None*, *1 bar*, *2 bars*, or *2 beats* for the count-in length.
 
 With count-in enabled, you will hear the click during recording. If the
 cursor is at the beginning of the Edit, you will hear the count-in then
@@ -308,17 +300,18 @@ actually jump back by the count-in length and play from there.
 *Count-in Options*
 
 Click During Playback
-- If you want to hear the click during playback, make sure to leave
-    *Click Track > Only click during recording* disabled.
+- If you want to hear the click during playback, make sure *Click >
+    Click during playback* is ticked. With it unticked, you only hear
+    the click while recording.
 
-Emphasize Bars
-- To clearly hear the downbeat of each bar, enable *Click Track > Use
-    loud clicks to emphasize bars*. With that enabled, Waveform uses a
-    different sound for the first beat of each bar.
+Emphasize Downbeats
+- To clearly hear the downbeat of each bar, enable *Click > Emphasize
+    downbeats*. With that enabled, Waveform uses a different sound for
+    the first beat of each bar.
 
 Click Sound
-- To change what sounds are used for the click, select *Click Track >
-    Change Click Settings*. This opens the *Click Track Settings* dialog
+- To change what sounds are used for the click, select *Click > Click
+    sound...*. This opens the *Click Track Settings* dialog
     box. From here, you can change the samples used to make the click
     sound. Just select the audio files for the normal and emphasized
     beats. If you leave the *File* properties blank, you will get the
@@ -336,9 +329,9 @@ box.
 
 Click Output Device
 - If you want to redirect your click so it's not coming through your
-    main speakers, look at the click output device options (*Click Track
-    > Output device for click*). Normally and by default this is set to
-    *Default audio output*. You can pick any audio output on your system
+    main speakers, look at the click output device options (*Click >
+    Click output device...*). Normally and by default this is set to
+    *(Default audio output)*. You can pick any audio output on your system
     or even any MIDI output. If you select a MIDI output, it should be a
     sound module of some sort. When using MIDI for the click, you can
     set the click sound note numbers as explained in the previous
@@ -382,16 +375,21 @@ guitar amps while recording. We will cover the details later in the
 book, but here are a few points for those curious about such things.
 
 Step 1. Disable Hardware Monitoring
-- To try live monitoring through Waveform, first set up a track and
-    arm it for recording. Now, play something into the input using a
-    mic, guitar, or other instrument. At this point you shouldn't really
-    hear anything through Waveform to your headphones or speakers.
+- To try live monitoring through Waveform, first turn off any direct
+    monitoring on your audio interface, so that anything you hear comes
+    through Waveform. Then set up a track and arm it for recording, and
+    play something into the input using a mic, guitar, or other
+    instrument.
 
 Step 2. Enable Live Input Monitor
-- Now make sure the input is selected and look for the *Live Input
-    Monitoring* option in properties. Click to enable it. You should
-    hear the input going through Waveform and back out to your speakers
-    (or headphones).
+- Now make sure the input is selected and look for the *Input
+    Monitoring Mode* option in the Actions panel. You can also set it
+    from the input menu, under *Live Input Monitoring*. *On* always
+    plays the input through Waveform, *Auto* plays it only while the
+    input is armed for recording, and *Off* never does. (Default: Auto)
+    With *On* or *Auto* and the track armed, you should hear the input
+    going through Waveform and back out to your speakers (or
+    headphones).
 
 The downside is latency. You might possibly notice a delay between when
 you play a note and when you hear it. It's a time lag between you sing
@@ -445,24 +443,27 @@ same thing.
 There is a variation on this feature: *Abort recording, delete take, and
 restart*. That does the same thing, but then drops right back into
 recording. This action appears on the transport during recording as the
-button \* \*.
+*Abort & Restart* button.
 
 ## Recording a Stereo Signal
 
 If you are recording a pair of microphones or a stereo source like a
-keyboard, you can treat two adjacent inputs as a stereo pair. This is
-done in the Settings tab, Audio Devices page. Click on an input then
-enable *Treat as Stereo Pair* in properties.
+keyboard, you can make an input stereo. This is done in the Settings
+tab, Audio Devices page. Under *Input Channel Groups*, click the
+*Channels* button on the input's row and choose *Stereo* (or *Mono* to
+go back). Layouts with more than two channels need Waveform Pro or the
+Surround Expansion. You
+can also pick which channels an input uses from its *Channels* property.
+See [Audio Device Setup](audio-device-setup.md) for more on the device
+settings.
 
 Now instead of two inputs, you have one stereo input. This will appear
-over in the Edit when you select inputs for a track. The pairs are
-always created with the odd numbered input on the left and the even
-numbered input on the right.
+over in the Edit when you select inputs for a track.
 
 
 ![](images/15----19.png)
 
-*Treat as Stereo Pair*
+*Making an Input Stereo*
 
 When you record from a stereo input, you'll wind up with a stereo clip
 showing both the left and the right waveforms.
@@ -475,19 +476,22 @@ practice take was so amazing? Or maybe a singer sings a pickup just
 before the downbeat. Waveform's "Retrospective Record" feature actually
 keeps a recording buffer running for any track that has an input set up.
 
-To enable this feature, from the Menu choose *Option > Retrospective*
-record and select the buffer size. We find that the 30-second buffer is
-usually enough to safe-guard against chopped off picks or endings. For
-live shows or recording speeches, set it to 10 minutes.
+Retrospective record is on by default, with a 30 second buffer. To
+change the buffer size or turn it off, choose *Options > Retrospective
+record* from the menu bar and pick *Disabled*, *30 second buffer*, *1
+minute buffer*, *2 minute buffer*, *5 minute buffer* or *10 minute
+buffer*. We find that the 30-second buffer is usually enough to
+safe-guard against chopped off picks or endings. For live shows or
+recording speeches, set it to 10 minutes.
 
 
 ![](images/15----24.png)
 
 *Enabling Retrospective Record*
 
-To recover lost audio, simply click the retrospective record icon in the
-upper right corner of the Waveform window. The buffered audio will be
-added as Audio clips to the appropriate tracks. If you click the icon
+To recover lost audio, simply click the *Retrospective Record* button
+on the transport (it is hidden while you are recording). The buffered
+audio and MIDI will be added as clips to the appropriate tracks. If you click the icon
 while the transport is still running, the audio will be synched to the
 timeline. If you click the icon with the transport stopped, the audio
 will be placed at the cursor. In that case you will need to manually
@@ -519,7 +523,7 @@ recording without entering the four key shortcut.
 
 Here is how to get out of safe-record mode:
 
-OS X: Shift + Opt + Cmd + R Windows: Shift + Alt + Ctrl + R
+Shift + Option + Cmd + R / Ctrl + Shift + Alt + R
 
 
 ![](images/15----21.png)
@@ -532,7 +536,8 @@ combination you want.
 ## Moving On
 
 That was a lot of information about recording audio in Waveform. In the
-next chapter we will continue on with overdub recording.
+next chapter we will continue on with [overdub
+recording](recording-overdubs.md).
 
 
 

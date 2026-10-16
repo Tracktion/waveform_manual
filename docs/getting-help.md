@@ -6,8 +6,8 @@ with Waveform.
 ## Pop-up Help
 
 The first source of help is pop-up help. While useful at times, you can
-also turn off pop-up help with *Options > Help > Turn off pop-up
-help*. Press F1 to view pop-up help for the item under the pointer.
+also turn off pop-up help by unticking *Help > Pop-up help > Enable
+pop-up help*. Press F1 to view pop-up help for the item under the pointer.
 Refer to [Pop-up Help](basic-navigation.md#pop-up-help) for an illustrated guide to pop-up
 help.
 
@@ -23,7 +23,7 @@ If you are new to Waveform, the [Quick Start](quick-start.md) chapter at the
 front of this manual is the fastest way to get set up and making music. It
 walks you from install through your first recording and export, linking to
 the fuller chapters as you go. You can also open this manual at any time from
-*Help > User guide PDF*.
+*Help > Get help > User guide PDF*, or by pressing Shift + F1.
 
 ## Keyboard Shortcut List
 
@@ -36,9 +36,10 @@ Here you will see all the assignable actions grouped by category.
 
 *View as HTML Button*
 
-For a searchable list click *View as HTML* to load the current list in
-your web browser. From here you can search it with Cmd + F / Ctrl + F or
-print it out.
+To find a shortcut, type in the page's search box to filter the list by
+name, or click the *Press keyboard to filter* box and press a key to see
+what it does. To print the list, click *View as HTML* to load it in your
+web browser.
 
 
 ![](images/07----02.png)
@@ -54,24 +55,23 @@ overviews - new videos are added regularly as Waveform evolves. Browse the
 videos grouped by topic.
 
 The [Waveform videos page](http://www.tracktion.com/support/videos) also has
-a selection of training videos, and a *Tracktion T7 Update Explained* series
-is available from [Groove 3, Inc](http://goo.gl/GKbdlM) - a deep resource for
-all things music production.
+a selection of training videos, and [Groove 3](https://www.groove3.com) is a
+deep resource for all things music production.
 
 ## Tracktion Forums
 
 The long term official [forum for Waveform
-Software](http://goo.gl/YaygV6) is hosted at [KVR](https://www.kvraudio.com). This
+Software](https://www.kvraudio.com/forum/viewforum.php?f=22) is hosted at [KVR](https://www.kvraudio.com). This
 the most active Waveform forum that exists. Here you can interact with
-the other users, TSC staff, and developers.
+the other users, Tracktion staff, and developers.
 
 There is also a growing private [Tracktion Users
 Group](https://www.facebook.com/groups/Tracktion/) on FaceBook. If you
-use FaceBook it's a great idea to request to be added to the group. The
-TSC team are also members of that group.
+use FaceBook it's a great idea to request to be added to the group. Tracktion
+staff are also members of that group.
 
 Also check out the [Waveform Software official Facebook
-page](http://goo.gl/Hv3Xjr) for updates, news about Waveform, promo
+page](https://www.facebook.com/tracktionsoftware) for updates, news about Waveform, promo
 offers, and profiles of Waveform artists - "Tracktioneers."
 
 ## Tracktion Support
@@ -95,12 +95,12 @@ Request Form Checklist:
 -   Include your operating system and version
 -   Note your system specs like processor type and the amount of RAM
 -   List the steps to recreate the bug
--   Attach the log file (*Help > Show the Tracktion log file*)
+-   Attach the log file (*Help > Show the Waveform log file*)
 -   Attach or link to screenshot or screen video
 -   Report one issue at a time
 
 Follow these same guidelines when posting bugs and feature requests to
-the [KVR Waveform Software forum](http://goo.gl/YaygV6).
+the [KVR Waveform Software forum](https://www.kvraudio.com/forum/viewforum.php?f=22).
 
 ## Moving On
 

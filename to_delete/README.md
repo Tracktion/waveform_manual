@@ -27,7 +27,6 @@ These 102 images were in `docs/images/` but no chapter, `mkdocs.yml`, stylesheet
 - `images/09----21.png`
 - `images/09----23.png`
 - `images/09----24.png`
-- `images/17----10.jpg`
 - `images/30----10.png`
 - `images/30----11.png`
 - `images/30----12.png`

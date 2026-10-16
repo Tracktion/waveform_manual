@@ -109,8 +109,8 @@ nothing gets left behind.
 
 You can unpack an archive into a project in a few ways:
 
-- From the import popup, choose *Unpack an archive and add it to this
-  project…*
+- On the Projects tab, click a project's *Import Material* button and
+  choose *Unpack an archive and add it to this project…*
 - Right-click in the project list and choose *Unpack an archive into this
   project…*
 - Drag an archive file straight onto the Waveform window
@@ -126,8 +126,9 @@ Waveform project.
 ### Creating an Archive
 
 To create an archive, select *File > Create an archive of this edit…* You
-can also reach this from the *Share* button on the media list, or the
-*Export* buttons in the project and Edit inspectors. The *Create Archive*
+can also choose *Share an archive of this Edit* from the media list's
+Share menu, click a project's *Create Archive...* button, or click an
+Edit's *Archive Edit...* button on the Projects tab. The *Create Archive*
 dialog has just two controls.
 
 **Destination file**: Where the `.zip` is saved. Waveform suggests a name
@@ -159,6 +160,7 @@ instead.
 
 ## Moving On
 
-For exporting finished audio rather than whole projects, see the Mixing
-Down and Rendering and Stems chapters. For more on how projects and their media are organised, see
-the chapters on the Browser and the Projects tab.
+For exporting finished audio rather than whole projects, see
+[Mixing Down](mixing-down.md) and [Rendering and Stems](rendering-and-stems.md).
+For more on how projects and their media are organised, see
+[The Browser](browser.md) and [Creating a Project](basic-navigation.md#creating-a-project).

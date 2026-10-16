@@ -7,12 +7,14 @@ these before a virtual instrument to have any effect.
 
 ## Waveform Effects
 
+These plugins are under **Waveform > Effects** in the plugin menu.
+
 ### MIDI Arpeggiator (Pro edition)
 
 The MIDI Arpeggiator turns held notes or chords into rhythmic patterns:
 play a chord and the Arpeggiator cycles through its notes in time with
-the edit. It is available in Waveform Pro 11 and later, and goes on a
-track's plugin chain before the instrument (it can't be added to a
+the edit. It is available in Waveform Pro, or with the MIDI Producer
+Expansion, and goes on a track's plugin chain before the instrument (it can't be added to a
 clip).
 
 ![](images/MIDI%20Utilities/MIDI%20Arpeggiator@2x.png)
@@ -76,8 +78,8 @@ each of up to 64 pads (four banks, A to D, of 16), and a single
 trigger note then fires the whole chord. It's ideal for playing
 progressions from a pad controller or a few keys. It also includes a
 built-in arpeggiator, a chord repeater, and a randomize section.
-Chord Companion is available in Waveform Pro 11 and later, and goes on
-a track's plugin chain before the instrument (it can't be added to a
+Chord Companion is available in Waveform Pro, or with the MIDI Producer
+Expansion, and goes on a track's plugin chain before the instrument (it can't be added to a
 clip).
 
 ![](images/MIDI%20Utilities/MIDI%20Chord%20Companion@2x.png)
@@ -151,7 +153,7 @@ track.
 
 > 🎥 [MIDI Chord Player Video Tutorial](https://youtu.be/FEvS2vy7wl0)
 
-### MIDI Modifier (Pro edition)
+### MIDI Modifier
 
 MIDI modifier is a transposer for MIDI data. Use the controls to
 shift the pitch of MIDI notes up or down by fixed intervals.
@@ -166,8 +168,8 @@ The Note Repeater fires a rhythmic pattern while notes are held:
 hold a chord and it retriggers in time with the edit. It shares its
 engine and much of its design with the MIDI Arpeggiator, but it is
 purely rhythmic: the held notes always play together as a chord, with
-no note ordering or octave spread. It is available in Waveform Pro 11
-and later, and goes on a track's plugin chain before the instrument
+no note ordering or octave spread. It is available in Waveform Pro, or
+with the MIDI Producer Expansion, and goes on a track's plugin chain before the instrument
 (it can't be added to a clip).
 
 ![](images/MIDI%20Utilities/MIDI%20Note%20Repeater@2x.png)
@@ -194,6 +196,8 @@ and later, and goes on a track's plugin chain before the instrument
     and velocity, 0% to 100%. (Defaults: 0%)
 
 ## Waveform Utilities
+
+These plugins are under **Waveform > Utility** in the plugin menu.
 
 **MIDI Filter** (Pro edition)
 - MIDI Filter allows notes to pass through only within the range
@@ -232,6 +236,6 @@ and later, and goes on a track's plugin chain before the instrument
     cutoff, and the like) and send it on to a virtual instrument or
     external gear downstream.
 
-**Rewire Device**
-- Use this to use any Rewire compatible DAW as a plugin within
-    Waveform.
+**ReWire Device**
+- Use this to use any ReWire compatible DAW as a plugin within
+    Waveform. Windows and Intel Macs only.

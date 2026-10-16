@@ -19,8 +19,8 @@ underneath*
 ## Opening the Render Dialog
 
 Choose *File > Export: Render to a file...*. Opening the dialog stops playback,
-and any plugin windows you had open are hidden while it's up. The track panel's
-**Render Track** button and the clip panel's **Render Clip** menu open the same
+and any plugin windows you had open are hidden while it's up. The **Render
+Track** action and the **Render Clip** menu in the Actions panel open the same
 dialog, set up for their job (see *Render Track* and *Rendering Clips* below).
 
 The dialog is laid out in three zones, side by side:
@@ -76,7 +76,8 @@ want most of the time.
    zone.
 4. Check the **Folder** and the **Name** in the Output zone. The list underneath
    shows you exactly what's about to be written.
-5. Click **Add to Queue and Start**.
+5. Click **Render** (in Advanced mode the button reads **Add to Queue and
+   Start**).
 
 The render appears as a row in the queue with a progress percentage and a
 waveform that draws itself as the audio is written. When it finishes, the row
@@ -247,8 +248,8 @@ quality. (Default: the format's own default)
 it starts where the audio does. (Default: off)
 
 **Dithering Enabled**: Allows the output to be dithered when it's less than 32
-bits. If you don't know what dithering is, leaving this on is the right answer.
-(Default: off)
+bits. If you don't know what dithering is, turning this on is the safe choice
+for 16-bit and 24-bit files. (Default: off)
 
 **Include Tails**: Keeps rendering past the end of the range, for up to 10
 seconds, so reverb and delay tails aren't cut off. It stops as soon as the
@@ -257,7 +258,8 @@ rendered, and adds nothing if a clip is still playing across the end of the
 range. Turn it off when a file has to end exactly at the end of the range, such
 as a loop or a section that has to line up with others. Hidden while *Wrap
 Remainder Into Loop* is ticked, since that handles the tail itself.
-(Default: on)
+(Default: on; off for clip renders and the selected-clips ranges, so the file
+ends where the clips do)
 
 **Render at 1x Play-Speed**: Renders in real time, taking as long as the song
 does. You need this if you're mixing through outboard gear with the Insert
@@ -294,7 +296,7 @@ them, so it's hidden for those.
 
 ![](images/rendering_7@2x.png)
 
-*The tag editor, reached from the render dialog or the Edit's properties*
+*The tag editor, reached from the render dialog or the Edit's Actions panel*
 
 The tag editor holds seven fields:
 
@@ -309,8 +311,8 @@ The tag editor holds seven fields:
 
 > 📝 **Note:** The tags belong to the **Edit**, not to one render, so they're
 > saved with your project and reused by every render you do from it. You can
-> also reach the same editor without opening the render dialog: select the Edit
-> and choose *Edit Tags...* in its properties.
+> also reach the same editor without opening the render dialog: click an empty
+> part of the arrangement and choose *Edit Tags...* in the Actions panel.
 
 Entering tags for the first time ticks **Add Tags** for you, and clearing them
 all again unticks it, so the checkbox follows what you've actually filled in.
@@ -371,7 +373,8 @@ source, or in place of the source tracks or clips. See *Render Track* and
 that belongs to a project. (Default: File)
 
 When the Destination brings the render back into the Edit, the Folder and Name
-rows, the file list, *Add to Library* and *Measure Loudness* are hidden. The
+rows, the file list, *Add to Library* and *Measure Loudness* are hidden, except
+that a selected-clips render keeps its Name row (see *Rendering Clips*). The
 file goes to the project's **Rendered** folder, named after the Edit and the
 first track being rendered, for example *My Song Bass Render 1*.
 
@@ -445,8 +448,10 @@ Renders don't block the dialog. The queue panel at the bottom holds a row per
 render job, and you can keep changing settings and adding more while earlier
 ones are still running.
 
-The action button changes to match: it reads **Add to Queue and Start** when
-nothing is running, and just **Add to Queue** when a batch is already going.
+In Advanced mode the action button changes to match: it reads **Add to Queue
+and Start** when nothing is running, and just **Add to Queue** when a batch is
+already going. In Simple mode it always reads **Render**, and pressing it while
+a render is running adds the new one to the queue.
 
 Jobs run strictly one at a time, in order, so a 22-stem batch doesn't fight
 itself for CPU.
@@ -502,8 +507,8 @@ Tracks, source *Clips*).
 
 ## Render Track
 
-The **Render Track** button in a track's properties opens the Render dialog set
-up to mix the selected tracks into one file and bring it back into the Edit.
+The **Render Track** action in the Actions panel opens the Render dialog set up
+to mix the selected tracks into one file and bring it back into the Edit.
 It's set to *Selected Tracks* with *Render Items to a Single File* ticked.
 
 **Destination** (Choices: File, New Track, Replace Source Tracks): What happens
@@ -523,14 +528,15 @@ mode but keeps its Destination row.
 
 ## Rendering Clips
 
-The **Render Clip** button in a clip's properties opens a menu of render
+The **Render Clip** button in the Actions panel opens a menu of render
 entries: render the selected clips, render just their marked region, either of
 those *and replace* the clips, and, for MIDI clips, the same four under *Render
 MIDI*. Each entry opens the Render dialog set up for it, so you can check or
 change the options before rendering.
 
 The Range is set to *Selected Clips Range*, or *Selected Clips in Marked Region*
-for the marked-region entries.
+for the marked-region entries, and *Include Tails* starts off so the file ends
+where the clips do.
 
 **Destination** (Choices: File, New Track, This Track, Replace Clips): Where the
 render ends up. *This Track* puts it on the track of the last selected clip and
@@ -559,14 +565,17 @@ with `render` and an Edit file:
 Waveform render MySong.tracktionedit --output /tmp/mixes --format wav --bit-depth 24
 ```
 
-There are four commands:
+There are five commands:
 
 - **render**: renders the Edit using the settings you give it.
 - **list-items**: prints the renderable items (tracks, submixes, groups, tags,
   outputs) and the markers, so you know what you can ask for. In Waveform Free
   it lists only tracks.
 - **validate-config**: checks the settings and renders nothing.
-- **run-tests**: runs Waveform's own test suite headlessly.
+- **run-tests**: runs Waveform's own test suite headlessly. `--log` writes the
+  output of failing tests to a file.
+- **cmajor-check-view**: opens Cmajor patch views off-screen and reports layout
+  problems, for patch developers.
 
 The options mirror the dialog: `--format` (including `midi`), `--sample-rate`,
 `--bit-depth`, `--channels`, `--midi-after-plugins`, `--normalise`,
@@ -574,8 +583,12 @@ The options mirror the dialog: `--format` (including `midi`), `--sample-rate`,
 `--true-peak-ceiling`, `--no-true-peak-limit`, `--trim-silence`, `--dither`,
 `--real-time`, `--no-tails`, `--wrap-remainder`, `--add-acid`,
 `--separate-files`, `--category`, `--items`, `--together`, `--marker-clips`,
-`--start`, `--end`, `--name-pattern` and `--force`. Add `--json` for
-machine-readable output.
+`--start`, `--end`, `--name-pattern` and `--force`. `--quality` sets the
+format's quality index for compressed formats, `--add-tags` and `--no-add-tags`
+turn writing the Edit's tags on or off, and `--no-plugins` and
+`--no-master-plugins` render without the track plugins or the master plugin
+chain. Add `--json` for machine-readable output, `--help` for the full list and
+`--version` for the version number.
 
 `--no-tails` turns off *Include Tails*, so each file ends exactly at the end of
 its range. In a config file, and in the scripting API's `render.renderToFile`,
@@ -604,9 +617,9 @@ analyse a finished file and report its loudness, true peak, loudness range,
 clipped samples and frequency balance, useful for a quick "is this loud enough
 for Spotify?" check.
 
-In Waveform Pro it can also measure your project directly, without you
-rendering anything: the whole mix, a time range, or each track as a separate
-stem. It renders to a temporary file, measures loudness, dynamics, spectrum and
+It can also measure your project directly, without you rendering anything:
+the whole mix, a time range, or each track as a separate stem. Measuring by
+submix, group, tag or output needs Waveform Pro. It renders to a temporary file, measures loudness, dynamics, spectrum and
 stereo field, and deletes the file. Type **`/mixcheck`** in the assistant for a
 one-step release check against streaming targets, or `/mixcheck` followed by a
 platform name for a specific one. See *Checking your mix* in The AI Assistant

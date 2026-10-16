@@ -37,15 +37,13 @@ MIDI devices now* to initiate a scan for connected MIDI devices.
 ## Naming MIDI Inputs/Outputs
 
 From the Settings tab, MIDI Devices page, click on a MIDI input or
-output in the MIDI devices list. Notice that in properties, there is an
-*Alias* value. Edit that to give your MIDI input or output a friendly
-name. Matching it to the name of the connected controller keeps
+output in the MIDI devices list, then edit **Device Alias** in the panel
+on the right to give it a friendly name. Matching it to the name of the connected controller keeps
 things easy to recognise.
 
-> 💡 **Tip:** You can customize *Alias* for a specific Edit, by selecting the
-input in the Edit tab and changing it in properties. Changing *Alias* on
-the Edit tab takes precedence over the *Alias* property in the Settings
-tab.
+> 💡 **Tip:** You can also edit **Device Alias** from the Edit tab, by
+selecting the input and changing it in the Actions panel. Each device has
+only one alias, so a change made in either place applies everywhere.
 
 ## Disabling Unused MIDI Inputs
 
@@ -82,8 +80,9 @@ Back in your Edit, choose a blank track or create a new one.
 
 *Input Meter Activity*
 
-1.  With the input selected look in properties. Turn on *Enable Input
-    Monitoring* if it isn't already on.
+1.  With the input selected, set **Input Monitoring Mode** to On (or
+    Auto) in the Actions panel. You can also right-click the input and
+    use the **Live Input Monitoring** submenu.
 
 
 ![](images/22----05.png)
@@ -98,7 +97,7 @@ next.
 
 To hear what you play, you will need to insert a virtual instrument. Use
 the *Browser Search* tab to locate a synth plugin. In this example we
-are using the Waveform FM Synth.
+are using 4OSC, found under Waveform > Instruments.
 
 
 ![](images/22----06.png)
@@ -107,12 +106,12 @@ are using the Waveform FM Synth.
 
 1.  Insert your synth plugin ahead of the *Volume & Pan* plugin. By
     ahead, we mean ahead in the signal path. So in this example, we have
-    dropped *FM Synth* to the left of *Volume & Pan*.
+    dropped *4OSC* to the left of *Volume & Pan*.
 
 
 ![](images/22----07.png)
 
-**FM Synth* Installed in the Mixer*
+*4OSC installed in the mixer*
 
 1.  Play some notes on your keyboard and at this point you should hear
     synth notes.
@@ -125,68 +124,65 @@ clip like we did in the previous examples.
 
 ## Using a Virtual Keyboard
 
-If you don't have a physical MIDI keyboard, you can use your computer
-qwerty keyboard to play notes. Here is how to set it up:
+If you don't have a physical MIDI keyboard, you can still play notes. To
+play from your computer's keyboard, use the MIDI Typing window described
+in the next section. To play with the mouse, use the on-screen
+**Virtual Keyboard**.
 
-1.  Go to the Settings tab, MIDI Devices page
-2.  Click *Create New Virtual MIDI Input*
+Select a MIDI input on a track and click **Virtual Keyboard** in its
+Actions panel. A small piano keyboard pops out. Click its keys to send
+notes into that input, as if they came from the device itself.
+
+> 💡 **Tip:** Click the lock icon at the top of the Actions panel to keep it
+> showing the input while you click elsewhere in the Edit, and click it
+> again to unlock. The command is *Lock/Unlock Actions panel* (Opt + F11 /
+> Alt + F11). The lock is on the dedicated Actions panel, not the sidebar
+> Actions tab.
+
+![](images/22----11.png)
+
+*Lock the Actions panel while you play*
+
+A virtual MIDI input is something different: it duplicates input from
+your other MIDI devices, so one track input can receive from several of
+them.
+
+1.  Go to the Settings tab, MIDI Devices page.
+2.  Click *Create New Virtual MIDI Input...*
 
 
 ![](images/22----08.png)
 
 *Create New Virtual MIDI Input*
 
-1.  Enter a name such as 'Qwerty Piano' into the *Virtual MIDI device*
-    dialog box
+1.  Enter a name into the *Virtual MIDI device* dialog box and click
+    **Create**.
 
 
 ![](images/22----09.png)
 
 *Name the Virtual MIDI Device*
 
-1.  Back in your Edit create a track
-2.  Choose *Qwerty Piano* as the input
+1.  Back in your Edit, choose the new device as a track's input. Use
+    **Select MIDI Inputs** in its Actions panel to choose which devices
+    it receives from.
 
 
 ![](images/22----10.png)
 
 *Select the Virtual Device as the Input*
 
-1.  Notice the piano keyboard along the bottom of the screen. To play
-    the keyboard first click on any key with the mouse then use keys
-    A,S,D,F,G,H,J,K,L as white keys. Use W, E,T,Y,U,O,P as black keys.
-    This virtual keyboard lets you play notes in the range from C4 to
-    E5.
-
-> 💡 **Tip:** Click the 'lock' icon in the upper left corner of properties. This
-locks the Waveform keyboard to the Virtual MIDI Piano feature. Also,
-when attempting to record, it helps to start recording using a keyboard
-shortcut. If you click record, the qwerty piano loses focus until you
-click a key on the virtual keyboard.
-
-
-![](images/22----11.png)
-
-*Lock the Input properties While Playing the Virtual*
-
-> 📝 **Note:** When you are finished using the virtual keyboard, unlock
-properties by clicking on the lock icon again. It will stay stuck on the
-virtual keyboard until you do that.
-
 ## The MIDI Typing Window
 
-The virtual keyboard along the bottom of the screen is one way to play
-notes from your computer keyboard. The **MIDI Typing** window is
-another: a small floating window with a wider key range and on-screen
-octave and velocity controls. It's handy when you want to audition or
+The **MIDI Typing** window lets you play notes from your computer
+keyboard: a small floating window with on-screen octave and velocity
+controls. It's handy when you want to audition or
 record an idea and don't have a controller plugged in.
-
-This is available in Waveform 14 and later, in all editions.
 
 Show it with the command **Show or hide the MIDI Typing window**, or
 from the View menu's **Show MIDI Typing** item (which appears only when
 the *Use computer keyboard for MIDI input* setting is on; see
-Reference: Settings > MIDI Devices).
+[Reference: Settings > MIDI Devices](reference-settings.md#midi-devices)).
 
 ![](images/midi-typing_1@2x.png)
 
@@ -213,9 +209,11 @@ manages these named patch lists.
 
 There's no menu command or shortcut. You reach it from a MIDI output
 device. Go to Settings > MIDI Devices, click a MIDI **output** device,
-and in properties open the **Program Names** dropdown. **Add** creates a
-named set from a preset, **Edit** opens the dialog to modify the
-selected set, and **Delete** removes one.
+and in the panel on the right pick a set from **Program Names**. The
+rows below it manage the sets: **Add** creates a named set from a
+preset, **Edit** opens the dialog to modify the selected set, and
+**Delete** removes it. Edit and Delete only appear for sets you can
+change.
 
 ![](images/program-manager_1@2x.png)
 
@@ -230,7 +228,8 @@ Inside the dialog:
 - **MSB / LSB**: The bank-select bytes for the current bank. (MSB
   0-128, LSB 0-256)
 - **Options** menu: Use zero based numbering, Set current bank to
-  General MIDI names, Reset, Clear, **Export all banks…** (to a
+  general MIDI names, Reset current bank, Clear current bank, **Export
+  all banks…** (to a
   `.trkmidi` file), and **Import all banks…** (from `.trkmidi` or
   `.midnam`).
 
@@ -294,8 +293,8 @@ assign one via Settings > Keyboard Shortcuts if you use them often.
 
 > 💡 **Tip:** This menu is for making Waveform *follow* external timecode.
 > To make Waveform the *master* instead, turn on **Send MIDI Timecode**
-> on the MIDI output that's wired to your gear (see Reference: Settings >
-> MIDI Devices).
+> on the MIDI output that's wired to your gear (see
+> [Reference: Settings > MIDI Devices](reference-settings.md#midi-devices)).
 
 ## Moving On
 

@@ -89,14 +89,16 @@ In-marker and Out-marker over a song section.
 ## Navigate Using the In-marker & Out-marker
 
 You can quickly navigate to the In-marker or Out-marker using the square
-bracket keys. Press `[` to locate the cursor to the In-marker; Press `]`
-to locate the cursor to the Out-marker.
+bracket keys. Press Shift + `[` to locate the cursor to the In-marker;
+press Shift + `]` to locate the cursor to the Out-marker. On their own,
+`[` and `]` jump to the previous and next marker (see [Navigating by
+Markers](#navigating-by-markers)).
 
 ## Zooming to the In-marker/Out-marker
 
 When you have a marked region set between the In-marker and Out-marker
 you can quickly zoom in to that region. To do that, right-click the
-Timeline and select *Zoom to show the marked region* or simply to press
+Timeline and select *Zoom to fit marked region* or simply to press
 F7.
 
 
@@ -124,8 +126,8 @@ In-marker and play from there.
 ## Auto Punch and the Marked Region
 
 To use Auto Punch, first set the In-marker and Out-marker over the range
-where you want to punch in. Enable the *Punch* button (P) in the Master
-section. Make sure *Loop* is turned off. Now enable a track for
+where you want to punch in. Enable the *Punch* button (P) in the transport
+bar. Make sure *Loop* is turned off. Now enable a track for
 recording, position the cursor before the In-marker and press *Record*
 on the Transport. Even though the track is armed for recording, no
 recording will happen until the cursor gets to the In-marker.
@@ -154,29 +156,29 @@ Marker track with the Marker track show/hide button.
 
 *Marker Track Show/Hide Button*
 
-The Marker track can contain either Bars & Beats markers or Timecode
-markers. If you don't like to see the types mixed together on the same
-track, there is an additional split mode that shows each type on
-separate lanes.
+The Marker track can contain both Bars & Beats markers and Timecode
+markers. To choose which ones it shows, select the Marker track by
+clicking the header, then use the **Markers** setting in the Actions
+panel:
+
+**Markers** (Choices: Combined, Bars & Beats, Absolute, Hidden): Which
+markers the Marker track shows. *Combined* shows both types together,
+*Bars & Beats* and *Absolute* show only that type, and *Hidden* hides
+the Marker track. (Default: Combined)
 
 
 ![](images/10----11.png)
 
 *Marker Track Split Mode*
 
-To access that mode, select the Marker track by clicking the header.
-Then in properties, de-select *Use a single track for all types of
-marker.* In this mode, the Marker track has two lanes. The top lane
-shows Timecode Markers and the bottom lane shows Bars & Beats Markers.
-
 
 ![](images/10----12.png)
 
-*Marker Track properties Setup for Split Mode*
+*Marker Track Settings in the Actions Panel*
 
-> 📝 **Note:** F10 is my assignment for the keyboard action *Toggle the
-marker view mode*. Pressing F10 cycles through the three marker track
-states - hidden, normal, and split mode.
+> 📝 **Note:** By default F10 shows or hides the Marker track. The
+keyboard action *Cycle Marker track view mode* steps through the four
+Markers choices; it has no key by default, but you can assign one.
 
 > 💡 **Tip:** You can click on any blank space in the Marker track to
 instantly position the cursor.
@@ -189,9 +191,7 @@ Drag the Clip Object
 - Drag the Clip object to the Marker track and choose which type of
     Marker to create. This creates a Marker clip you can drag and
     resize. It has left and right trim handles to adjust the length. You
-    can also drag a marker by its header and move it around. If the
-    Marker track is in split mode, the type of Marker (B&B or TC) is
-    determined by which lane you drop the Clip object on.
+    can also drag a marker by its header and move it around.
 
 
 ![](images/10----13.png)
@@ -215,15 +215,15 @@ Right-click the Marker Track Header
 
 *Add a Marker from the Marker Track Right-click Menu*
 
-Marker Track properties Buttons
-- Click the Marker track header to select it, then look in properties.
-    There you will find the buttons *New Bars & Beats Marker* and *New
+Marker Track Actions Panel Buttons
+- Click the Marker track header to select it, then look in the Actions
+    panel. There you will find the buttons *New Bars & Beats Marker* and *New
     Absolute TC Marker.*
 
 
 ![](images/10----15.png)
 
-*Add a Marker from Marker Track properties*
+*Add a Marker from the Marker Track Actions Panel*
 
 Browser Markers Tab *Add* Button
 - You can add either kind of Marker Clip using the selections on the
@@ -234,12 +234,12 @@ Browser Markers Tab *Add* Button
 
 *Add a Marker from the Browser, Markers Tab*
 
-## Marker Clip properties
+## Marker Clip Properties
 
 
 ![](images/10----17.png)
 
-*Marker Clip properties*
+*Marker Clip Settings in the Actions Panel*
 
 Marker clips behave like other clips in several ways. You can adjust the
 length using the trim handles, you can split them, drag them, duplicate
@@ -297,11 +297,6 @@ Colour
 - Choose from one of the nice colors. This sets all selected Marker
     clips to the color you choose.
 
-> 💡 **Tip:** You can change a Marker clip from Bars & Beats to Timecode
-using nudge. Press F10 until the Marker track split mode is showing.
-Select the marker clip to convert and press Shift-up or Shift-down to
-nudge the clip to the other lane.
-
 ## Navigating by Markers
 
 Once you have Markers set up, you can quickly navigate using the Marker
@@ -333,7 +328,7 @@ select any marker and try again.
 Use the Browser Markers tab to add Bars & Beats or Timecode markers to
 the Marker track. You can also use it navigate to any marker by
 double-clicking on the marker name in the list. You can also quickly
-delete the selected marker or change its name in properties.
+delete the selected marker or change its name in the Actions panel.
 
 
 ![](images/10----21.png)
@@ -348,12 +343,12 @@ Navigate to a marker clip
     works during playback too.
 
 Rename a marker
-- Click a marker to select it. Then, edit the Name property in
-    properties.
+- Click a marker to select it. Then, edit the Name property in the
+    Actions panel.
 
 Add a Marker
 - Click *Add* at the bottom of the Markers tab. Select from the two
-    types: *Absolute timecode marker* and *Bars & Beats Marker*.
+    types: *Add bars & beats marker* and *Add absolute TC marker*.
 
 
 ![](images/10----22.png)
@@ -366,8 +361,7 @@ Delete a Marker
     marker.
 
 Change a Marker from one Type to the Other
-- Select the Marker and edit the Type property in properties. Or drag
-    it from the TC Marker track to the B & B Marker track or vice-versa.
+- Select the Marker and edit the Type property in the Actions panel.
 
 
 ![](images/10----25.png)
@@ -389,9 +383,9 @@ them numbered starting from one, simply do it again, changing the
 There is another type of marker in Waveform, also called "markers." They
 appear to mark spots in a clip, but actually are stored in the
 underlying Wave files. You work with these markers from the *Adjust
-Markers* actions in Audio clip properties. You also add and remove them
-by dragging the marker object in Audio clip properties *View Source
-Info.*
+Markers* actions in the Audio clip's Actions panel. You also add and
+remove them by dragging the marker object under *View Source Info* in
+the Audio clip's Actions panel.
 
 
 ![](images/10----26.png)
@@ -401,7 +395,7 @@ Info.*
 
 ![](images/10----27.png)
 
-*Adjust Markers Options in Audio Clip properties*
+*Adjust Markers Options in the Audio Clip's Actions Panel*
 
 ## Moving On
 

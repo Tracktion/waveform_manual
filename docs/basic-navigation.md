@@ -6,8 +6,10 @@ to change the tempo of your song.
 
 ## Tabs and Menus
 
-With Waveform open, you can see the Projects tab and the Settings tab.
-Click on the tab name or icon to switch to that tab.
+With Waveform open, you can see the Welcome tab, the Projects tab and
+the Settings tab. Click on the tab name or icon to switch to that tab.
+The Welcome tab has buttons for a new project, your recent Edits and
+project templates, plus the news feed and training videos.
 
 
 ![](images/05----02@2x.png)
@@ -35,7 +37,8 @@ you are on the Projects tab or an Edit tab.
 When working on a song, the main areas of the Edit window are:
 
 - The **menu bar** along the top of the window.
-- The **Browser** down the side, which also hosts the **Actions panel**.
+- The **Browser** down the side, and the **Actions panel** next to it
+  (it can be hidden or floated in its own window).
 - The **arrangement** (and the optional **Mixer**) in the centre.
 - The **transport bar** along the bottom, with the playback controls,
   cursor position, tempo, and the master controls.
@@ -62,8 +65,9 @@ by pointing at an item on screen and pressing F1.
 
 *Disabling Pop-up Help*
 
-Disable pop-up help from the Menu section using *Help > Pop-up help*.
-De-select *Enable pop-up help*.
+Turn pop-up help off with *Help > Pop-up help > Enable pop-up help*.
+*Delay pop-up help messages*, in the same submenu, waits longer before a
+message appears.
 
 ## Roll-over Help
 
@@ -164,14 +168,13 @@ Start and Stop Playback
 
 ![](images/05----01@2x.png)
 
-*Return to Start on Stop*
+*Return to Start on Play*
 
-> 💡 **Tip:** By default, the cursor will jump back to the start position
-when you stop playback. If you would like the cursor to instead remain
-at the stop position, there is a setting for that in the menu *Options
-> Return to start on stop*. Disable that and the cursor will pause at
-the point you hit stop. The same setting is also available when you
-right-click the Timeline.
+> 💡 **Tip:** By default, the cursor stays where you stop playback. Turn
+on *Options > Return to start on play* to have Play always restart from
+where playback last started. The same setting is also on the Timeline's
+right-click menu. Pressing Stop again while stopped returns the cursor
+to the start of the Edit.
 
 ## Zooming In and Out
 
@@ -219,33 +222,33 @@ There are numerous ways to position the cursor, including:
 
 > 📝 **Note:** If you don't want the cursor to be positioned when clicking on
 the background or the body of clips, de-select the option "Clicking the
-background locates the cursor" in Settings > General > Editing
+background locates the playhead" in Settings > General > Mouse.
 
 
 ![](images/05----13@2x.png)
 
 *Drag to Position Cursor Setting*
 
-> 💡 **Tip:** You can change the way clicking on the Timeline works by
-selecting *Options > Timeline drag action > Drag to position
-transport.* With this set, when you click in the timeline, the cursor
-jumps to that position. If you drag in the timeline, the cursor follows
-as well.
+> 💡 **Tip:** You can change the way dragging on the Timeline works with
+the *Timeline drag* setting in Settings > General > Mouse. It defaults to
+*Drag to scroll view*. Set it to *Drag to locate playhead* and the cursor
+follows the mouse as you drag in the timeline.
 
-> 📝 **Note:** In this mode, to drag zoom, you need to hold down Opt / Alt.
+> 📝 **Note:** In this mode, to drag zoom, you need to hold down Opt / Alt
+(or Shift).
 Since you can still zoom in and out with the mouse wheel or the up and
 down arrow keys, this mode is a great way to get around in Waveform.
 
 ## Changing the Tempo
 
 Tempo in Waveform is managed using the Tempo track at the top of the
-screen. You can hide or show the Tempo track using the *Eye* panel
-selector at the upper right F9.
+screen. Show or hide it with the *Tempo* button in the panel selector
+(the eye icon at the top right of the window), or press F9.
 
 
 ![](images/05----14@2x.png)
 
-*Show or Hide the Tempo Track with the *Eye* Panel Selector F9*
+*Show or Hide the Tempo Track with the Eye Panel Selector*
 
 The Tempo is represented as a line in the Tempo track. This line is
 called the "Tempo Curve." For a fixed tempo tune it will appear as a
@@ -289,16 +292,15 @@ Map](https://youtu.be/leqRsEZRUJI)
 ## Changing Tempo at a Specific Bar
 
 To change the tempo at a specific bar, use the action *Insert tempo
-change at cursor* (Opt + T / Alt + T). Here are the steps:
+change* (Opt + T / Alt + T). Here are the steps:
 
 
 ![](images/05----18@2x.png)
 
-*Right-click Timeline: *Insert tempo change at cursor**
+*Right-click Timeline: "Insert tempo change"*
 
 1.  Position the cursor where you want the tempo change to occur
-2.  Right-click on the timeline, and select *Insert tempo change at
-    cursor*
+2.  Right-click on the timeline, and select *Insert tempo change*
 3.  In the Actions panel, adjust the *BPM* parameter to the new
     tempo.
 4.  To see the results of the tempo change, open the tempo track to see
@@ -325,8 +327,8 @@ Removing Tempo Changes
     > Delete this tempo setting.*
 
 Removing all Tempo Changes
-- Click on the Tempo curve line. In the properties, click *Delete points
-    from curve > Delete all points from the curve.* The same *Delete*
+- Click on the Tempo curve line. In the properties, click *Delete Points
+    from Curve > Delete all points from the curve.* The same *Delete*
     menu can also delete only the points *within the marked region*, with
     an option to close the gap left behind.
 
@@ -351,44 +353,31 @@ on *Only Displace/Scale the Marked Region* to limit them to the
 loop / in-out range instead.
 
 Copying and Pasting Tempo Curves
-- With a region marked, *Copy the marked section of the curve to the
-    clipboard*, then *Paste* it back in at the cursor position. The paste
-    menu also offers *Paste curves in to fit between in/out markers*,
+- With a region marked, click *Copy Marked Region to Clipboard*, then
+    *Paste from Clipboard* to paste it back in at the cursor position. The
+    paste menu also offers *Paste curves in to fit between in/out markers*,
     which stretches the pasted curve to fill the marked range.
 
 ## Scroll Behaviour
 
-Scroll behaviour options are found on the Options menu under the *Scroll
-Behaviour* submenu.
+Autoscroll options are on the Options menu under the *Autoscroll
+behaviour* submenu.
 
 
 ![](images/38----54.png)
 
-*Options > Scroll Behaviour*
+*Options > Autoscroll behaviour*
 
-The Scroll Behaviour menu features the default option *Scroll with
-playback*. Here is a rundown of what each option does:
+**Autoscroll**: Keeps the cursor in view during playback. Press S to
+turn it on or off. (Default: on)
 
-Scroll with playback (default)
-- During playback the cursor stays on screen. As the cursor goes past
-    the right edge, the tracks page over keeping the cursor in view.
+**Page scroll** / **Stationary cursor**: Choose how the view follows the
+cursor. *Page scroll* pages the tracks over when the cursor reaches the
+right edge. *Stationary cursor* lets the cursor travel to the centre of
+the screen, then scrolls the tracks under it. (Default: Page scroll)
 
-Scroll smoothly
-- During playback, when the cursor arrives at a fixed position near
-    the center of the screen, the tracks scroll under the cursor. This
-    is a matter of personal preference.
-
-Keep cursor on screen
-- During playback the cursor will stay on the screen. Even while
-    editing or manually panning, the cursor always stays on screen. As
-    you pan over right the cursor stays at the left edge of the screen.
-
-No options selected
-- During playback the cursor will move past the right edge of the
-    screen and then move out of sight.
-
-> 💡 **Tip:** For most users we suggest leaving *Scroll with playback*
-enabled and the other two options off.
+If you scroll the view yourself during playback, autoscroll is
+suspended until playback stops.
 
 ## Moving On
 

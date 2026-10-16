@@ -1,18 +1,18 @@
 # The AI Assistant
 
-Waveform includes an AI Assistant: a chat panel that lives in the Edit sidebar where you can talk to an AI in plain language and ask it to help with your project. You can ask it questions about how Waveform works, have it generate MIDI, get production tips, and even let it carry out actions for you, such as creating macros or assigning keyboard shortcuts. It keeps a memory between sessions, so over time it can remember things about how you like to work.
+Waveform includes an AI Assistant: a chat panel that lives in the Browser where you can talk to an AI in plain language and ask it to help with your project. You can ask it questions about how Waveform works, have it generate MIDI, get production tips, and even let it carry out actions for you, such as creating macros or assigning keyboard shortcuts. It keeps a memory between sessions, so over time it can remember things about how you like to work.
 
 The assistant doesn't include an AI of its own; you tell it which AI service to talk to. That choice is called a **profile**, and Waveform comes with three ready-made ones (**OpenAI API**, **Anthropic API** and **ChatGPT (Codex)**), as well as the ability to add your own, including one that points at an AI model running on your own computer.
 
-Which profile you use matters for more than just the quality of the answers, because it decides where your messages go and who pays for them. The two cloud profiles that use an API key send your messages to that company and bill you for them; a local model keeps everything on your machine and costs nothing per message. Both are covered in *Privacy and cost* further down, and it's worth reading that section before you rely on the assistant.
+Which profile you use matters for more than just the quality of the answers, because it decides where your messages go and who pays for them. The two cloud profiles that use an API key send your messages to that company and bill you for them; a local model keeps everything on your machine and costs nothing per message. Both are covered in [Privacy and cost](#privacy-and-cost) further down, and it's worth reading that section before you rely on the assistant.
 
-> 📝 **Note:** The AI Assistant is a Waveform 14 feature. It also has to be switched on, and it needs a profile that can actually connect before it can respond. See *Getting set up* below.
+> 📝 **Note:** The AI Assistant is available in all editions. It needs a profile that can actually connect before it can respond. See [Getting set up](#getting-set-up) below.
 
 ## Getting set up
 
 Before the assistant can do anything, two things have to be in place:
 
-1. **The assistant has to be enabled.** Open the **Settings** tab, choose **AI** from the list on the left, and turn on **Enable AI Assistant**. This is what makes the **Assistant** panel appear in the Edit sidebar.
+1. **The assistant has to be enabled.** It is on by default. The **Enable AI Assistant** switch on the **Settings** tab's **AI** page (choose **AI** from the list on the left) is what makes the **Assistant** tab appear in the Browser, so check it's on if you can't see the tab.
 2. **You have to pick a profile and give it what it needs.** On the same Settings > AI page, choose an **Active Profile**. What appears underneath depends on which one you picked.
 
 The three built-in profiles need different things from you:
@@ -21,9 +21,9 @@ The three built-in profiles need different things from you:
 - **Anthropic API**: the same, using a key from your Anthropic account.
 - **ChatGPT (Codex)**: no key at all. This one borrows the sign-in you already have from the Codex CLI or the ChatGPT desktop app, so if you're signed in to either of those on this computer, the assistant can use it. The **Codex Sign-in** row on the settings page tells you whether a sign-in was found.
 
-You can also add your own profile pointing at any OpenAI-compatible server, which is how you run the assistant against a model on your own computer. See *Using a local model* below.
+You can also add your own profile pointing at any OpenAI-compatible server, which is how you run the assistant against a model on your own computer. See [Using a local model](#using-a-local-model) below.
 
-The full details of the AI settings page (every profile setting, the connection test, and the buttons that open the assistant's files) are covered in *Reference: Settings > AI*. This chapter is about using the assistant once it's set up.
+The full details of the AI settings page (every profile setting, the connection test, and the buttons that open the assistant's files) are covered in [Reference: Settings > AI](reference-settings.md#ai). This chapter is about using the assistant once it's set up.
 
 > 💡 **Tip:** Of the three built-in profiles, **ChatGPT (Codex)** is the quickest to get going with if you already have a ChatGPT subscription, because there's no key to create or paste. Be aware that it works by reusing another application's sign-in rather than through a published interface, so it can stop working without warning if that changes. The API key profiles are the more predictable choice if you'd rather not think about it.
 
@@ -37,24 +37,30 @@ With the **ChatGPT (Codex)** profile the equivalent messages talk about the sign
 
 ## Opening the panel
 
-Once it's enabled, the assistant appears as an **Assistant** tab in the Edit sidebar. Click it to open the chat panel. There's no keyboard shortcut for it; you open it from the sidebar like the other side panels.
+Once it's enabled, the assistant appears as an **Assistant** tab in the Browser. Click it to open the chat panel. There's no keyboard shortcut for it; you open it from the Browser like its other tabs.
 
 ## Chatting with the assistant
 
 The panel works like any chat: type a request into the message box at the bottom and send it. The assistant replies in the conversation above, streaming its answer as it goes.
 
-- **Send a message**: type your request and send it. You can ask questions ("how do I freeze a track?") or ask for actions ("create a four-bar drum pattern").
-- **Cancel a response**: if the assistant is in the middle of a long reply and you've seen enough, you can cancel it mid-stream rather than waiting for it to finish.
-- **Start a new thread**: begin a fresh conversation when you want to change topic and not carry the previous context along. (The `/clear` slash command does the same thing.)
-- **Saved conversations**: your chats are saved automatically, and you can reopen earlier ones from the conversations list to pick up where you left off or look back at something the assistant told you.
+- **Send**: sends your request. You can ask questions ("how do I freeze a track?") or ask for actions ("create a four-bar drum pattern").
+- **Cancel** (stop icon): takes the place of Send while the assistant is working. Click it to stop a long reply mid-stream rather than waiting for it to finish. It also interrupts a local model that is still reading a long prompt.
+- **New chat** (edit icon, top of the panel): begins a fresh conversation when you want to change topic and not carry the previous context along. (The `/clear` slash command does the same thing.)
+- **Load** (history icon, top of the panel): your chats are saved automatically. Click the icon and pick an earlier conversation from the list to pick up where you left off or look back at something the assistant told you.
 
-You can also choose which AI model answers you. The model selector lists the active profile's models by name, and then, underneath, the models from any other profile that's currently working, written as *profile: model*. Picking one of those routes just this conversation elsewhere without changing your active profile. This is handy for asking one hard question of a cloud model while everything else stays local.
+You can also choose which AI model answers you. The **Model** selector below the message box lists the active profile's models by name, and then, underneath, the models from any other profile that's currently working, written as *profile: model*. Picking one of those routes just this conversation elsewhere without changing your active profile. This is handy for asking one hard question of a cloud model while everything else stays local.
 
-The selector also includes an **auto** option, which lets Waveform pick a suitable model for each message automatically, along with controls for things like temperature and reasoning effort if you want to tune how the assistant responds.
+The selector also includes an **Auto** option (the default), which lets Waveform pick a suitable model for each message automatically. When you choose a specific model instead, two more controls appear beside it so you can tune how the assistant responds:
+
+**Reasoning** (Choices: Minimal, Low, Medium, High): How much effort the model spends thinking before it answers.
+
+**Temperature** (0-2): How varied the answers are. Lower values give more predictable replies. (Default: 0.7)
+
+Both are hidden while **Model** is set to **Auto**, because Auto decides them for each message.
 
 ### Auto mode routing
 
-Left alone, **auto** picks a sensible model from your active profile for each message. But you can also tell it exactly which profile and model to use, by sorting requests into three sizes on the Settings > AI page: **Fast Requests**, **Standard Requests** and **Heavy Requests**. Each can be pinned to a specific model on a specific profile, or left on *(Automatic)*.
+Left alone, **Auto** picks a sensible model from your active profile for each message. But you can also tell it exactly which profile and model to use, by sorting requests into three sizes on the Settings > AI page: **Fast Requests**, **Standard Requests** and **Heavy Requests**. Each can be pinned to a specific model on a specific profile, or left on *(Automatic)*.
 
 This is what makes a mixed setup worthwhile. Pin the fast and standard tiers to a model running on your own computer and the heavy tier to a cloud model, and everyday chat costs you nothing and never leaves your machine, while the genuinely hard requests still go somewhere capable. Any tier you leave on *(Automatic)* falls back to your active profile as before.
 
@@ -82,9 +88,9 @@ Typing a `/` at the start of your message brings up slash commands: shortcuts fo
 - **`/clear`**: start a new conversation.
 - **`/generate_midi <description>`**: generate a MIDI sequence from a description you give it.
 - **`/production_tips <topic>`**: get production tips on a topic.
-- **`/mixcheck <platform>`**: measure your mix and check it's ready for release (Waveform Pro). Name a platform, such as *Spotify*, *Apple Music* or *broadcast*, or leave it out for streaming defaults. See *Checking your mix* below.
+- **`/mixcheck <platform>`**: measure your mix and check it's ready for release. Name a platform, such as *Spotify*, *Apple Music* or *broadcast*, or leave it out for streaming defaults. See [Checking your mix](#checking-your-mix) below.
 
-You can also add your own commands. Anything you put in your custom commands folder (reachable from Settings > AI) becomes a slash command the assistant recognises, alongside the built-in ones.
+You can also add your own commands. Anything you put in your custom commands folder becomes a slash command the assistant recognises, alongside the built-in ones. To open the folder, go to `Settings > AI`, and under **Assistant Files** click **Slash commands** on the **Show Commands** row.
 
 ## Working with the results
 
@@ -99,18 +105,16 @@ Beyond answering questions, the assistant can act on Waveform and your project f
 - Search the user manual to answer "how do I…" questions.
 - Generate MIDI sequences from a description.
 - Offer production tips.
-- Create and run macros (the same JavaScript macros described in the *Macros* chapter).
+- Create and run macros (the same JavaScript macros described in the [Macros](macros.md) chapter).
 - Assign and remove keyboard shortcuts.
 - Search your library for presets, loops, and samples.
 - Manage its own slash commands and Skills (reusable abilities you can give it).
 - Read and write a persistent memory file so it can remember things across sessions.
-- Render your project and measure how it sounds (Waveform Pro) - see *Checking your mix* below.
+- Render your project and measure how it sounds. See [Checking your mix](#checking-your-mix) below.
 
 ## Checking your mix
 
-> 📝 **Note:** Mix measurement is available in **Waveform Pro 14 and later**.
-
-The assistant can listen to your project in the only way it can - by rendering it and measuring the result. It renders in the background to a temporary file, analyses it and deletes it, so nothing is added to your project. It can measure:
+The assistant can listen to your project in the only way it can: by rendering it and measuring the result. It renders to a temporary file, analyses it and deletes it, so nothing is added to your project. While it renders, a "Rendering..." overlay with a **Cancel** button covers the Edit, and you can't change the Edit until the render finishes. If you close the Edit or quit while it's rendering, Waveform asks whether to stop the render first. It can measure:
 
 - **The whole mix**, e.g. "how loud is my mix?"
 - **A section**, e.g. "check the chorus from bar 33 to 49".
@@ -131,17 +135,17 @@ The quickest way in is **`/mixcheck`**. It measures the whole mix and reports lo
 
 You can also ask it to fix what it finds - "bring the mix up to -14 LUFS" or "tame the harshness in the vocal". It makes small, undoable changes, measures again and shows you the numbers before and after, so you can tell whether each change helped. Always listen to the result too - the numbers show whether a mix meets a target, not whether it sounds good.
 
-> 💡 **Tip:** To watch the same readings live while you mix, put a **Loudness Meter** on the master track. See the *Utility Plugins* chapter.
+> 💡 **Tip:** To watch the same readings live while you mix, put a **Loudness Meter** on the master track. See [Loudness Meter](utility-plugins.md#loudness-meter-pro) in the Utility Plugins chapter.
 
 ## What the assistant can see
 
 So that its help is relevant to what you're actually doing, the assistant is given context about your project with each message. This typically includes things like the tempo and time signature, the key and scale, the chord track's progression, arranger sections, whatever clip or plugin you currently have selected, and the contents of the Project Info field. This is why it can answer questions like "what key is this in?" or act on "the selected clip" without you having to spell everything out.
 
-If you're using one of the cloud profiles, this context is part of what gets sent to the provider along with your message. See *Privacy and cost* below.
+If you're using one of the cloud profiles, this context is part of what gets sent to the provider along with your message. See [Privacy and cost](#privacy-and-cost) below.
 
 ## Persistent memory
 
-The assistant keeps a memory file on disk where it stores notes it has decided are worth remembering between conversations. This is how it can carry context from one session to the next. You can open the memory file yourself from Settings > AI (the **Show Memory** button) to see, edit, or clear what it has remembered.
+The assistant keeps a memory file on disk where it stores notes it has decided are worth remembering between conversations. This is how it can carry context from one session to the next. You can open the memory file yourself from `Settings > AI` (the **Persistent memory** button on the **Show Memory** row, under **Assistant Files**) to see, edit, or clear what it has remembered.
 
 ## Privacy and cost
 

@@ -28,9 +28,20 @@ the far right of each track.
 
 *The A and Plus Automation Icons*
 
-The first step is to click the plus sign, to add an Automation Track.
-You'll instantly see the Automation Track appear below your original
-track. The Automation Track will have minus, A, and plus icons.
+The first step is to click the plus sign. It opens a menu:
+
+- *Add a new automation track with this parameter: X* adds an Automation
+  Track showing X, the parameter the track is currently showing.
+- *Add an empty automation track* adds an Automation Track with no parameter
+  chosen yet.
+- *Add automation tracks for each active parameter on this track* adds one
+  Automation Track for every parameter on the track that already has
+  automation.
+- *Active parameter curves for this track* lists the parameters that have
+  automation. Pick one to add an Automation Track showing it.
+
+Shift-click the plus sign to add an empty Automation Track straight away. It
+appears below your original track, with minus, A, and plus icons.
 
 
 ![](images/automation_0_2@2x.png)
@@ -41,9 +52,9 @@ The minus icon will remove the Automation Track, the A icon allows you
 to set up the track, and the plus icon will add yet another Automation
 Track below this one.
 
-### Smart Automation Shower
+### Pinning the Shown Curve
 
-When showing automation on an *audio* track (i.e. not an *automation* track), you will see a "pin" icon next to the "A" button. When this pin is disabled, the displayed curve on this track will change when a plugin parameter changes. This can make it much quicker to show the relevent curve as you can just unpin the current curve, move the parameter in the plugin's UI and the curve will change. If you want to keep this curve visible you can either pin it or click the "A" button and choose to move it to a dedicated automation track.
+When showing automation on an *audio* track (i.e. not an *automation* track), you will see a pin button next to the "A" button. When this pin is disabled, the displayed curve on this track will change when a plugin parameter changes. This can make it much quicker to show the relevant curve as you can just unpin the current curve, move the parameter in the plugin's UI and the curve will change. If you want to keep this curve visible you can either pin it or click the "A" button and choose to move it to a dedicated automation track.
 
 ![Automation curve pin unpinned](images/automation_1_1@2x.png)
 
@@ -75,14 +86,14 @@ draw curves, steps, and ramps.
 
 *The Automation Curve Line*
 
-Click the curve to select it, then check out its properties. You can
-change the *Name* or choose from several actions. Those make more sense
-once you have some automation points on the curve.
+Click the curve to select it, and the Actions panel shows the curve's
+name and its actions. Those make more sense once you have some automation
+points on the curve.
 
 
 ![Automation curve properties](images/automation_2_1@2x.png)
 
-*Automation Curve properties*
+*The automation curve in the Actions panel*
 
 > 💡 **Tip:** A fast way to set the automation parameter for the track is to
 grab the A icon and just drop it on the thing you would like to
@@ -117,22 +128,22 @@ Shaping with Curvature
 
 *Adjusting a Curvature Point*
 
-> 💡 **Tip:** The automation point can also be adjusted in properties using
-the *Value* parameter slider. You will also find a slider for
-*Curvature* in properties.
+> 💡 **Tip:** The automation point can also be adjusted in the Actions panel
+using the *Value* parameter slider. You will also find a slider for
+*Curvature* there.
 
 
 ![](images/35----08.png)
 
-*Value* and *Curvature* properties
+*Value and Curvature in the Actions panel*
 
 Drawing an Automation Step
 - Insert two points that define the position of the step. Hold down
     Cmd / Ctrl and drag the line segment between the points up or down.
     You'll see that the line segment moves separately from the overall
     automation curve. This makes it really easy to draw in a step shape
-    on your automation. If you don't hold down Cmd / Ctrl, then the
-    entire automation curve moves.
+    on your automation. Without Cmd / Ctrl, dragging a line segment moves
+    its two end points, pulling the neighbouring segments with them.
 
 
 ![](images/35----09.png)
@@ -162,10 +173,11 @@ end. Drag the second point all the way down until the value reads zero.
 Adjust the speed of the fade by dragging point down to the left for a
 quicker fade or up to the right for a more gradual fade. Dragging the
 Curvature point to adjust the shape of the fade ramp. Of course, you
-always have the option to adjust that parameters directly in properties.
+always have the option to adjust those parameters directly in the Actions
+panel.
 
-As we discussed in a earlier, if you program an automation curve for
-a track folder, you can apply a fade across all the tracks together.
+If you automate a folder track's VCA fader, the fade applies to every track
+inside it. See [Automating a Fade within a Folder Track](folder-tracks.md#automating-a-fade-within-a-folder-track).
 
 ## Converting a Clip Fade-in or Fade-out to Automation
 
@@ -179,14 +191,14 @@ shape you can convert a clip level fade to and an automation curve.
 
 *Clip Fade*
 
-To convert a clip fade to automation, first select the clip and then
-click *Copy Fade To Automation > Transfer Fade-in to Automation,
-Transfer Fade-out to Automation* in properties.
+To convert a clip fade to automation, first select the clip, then click
+**Fade to Automation** in the Actions panel and choose *Transfer Fade-in to
+Automation* or *Transfer Fade-out to Automation*.
 
 
 ![](images/35----11.png)
 
-*Copy Fade to Automation*
+*Fade to Automation*
 
 That will redraw the automation curve in the shape of the fade and
 remove the clip fade from the clip. Now you can apply additional points
@@ -195,33 +207,33 @@ and shaping using the automation tools.
 
 ![](images/35----12.png)
 
-*Result of Copy Fade to Automation*
+*Result of Fade to Automation*
 
 ## Reading Automation
 
 Once you've drawn automation like this, Waveform performs the automation
-dynamically during playback, as long as you have *Automation Read*
+dynamically during playback, as long as you have the **Read** button
 enabled on the Transport.
 
 
 ![Automation read enabled](images/automation_1_3@2x.png)
 
-*Automation Read Enabled*
+*Read Enabled*
 
 As you playback, watch the controls changing in real time as the cursor
 moves through the Edit. If you go back about three decades that feature
 would cost you about a million bucks!
 
-## Automation Curve properties
+## Automation Curve Actions
 
-The automation curve has several of its own properties. Click on the
-curve to selected it and look at properties. Here is a rundown of the
+The automation curve has several of its own controls. Click on the
+curve to select it and look at the Actions panel. Here is a rundown of the
 controls:
 
 
 ![Automation curve properties](images/automation_2_1@2x.png)
 
-*Automation Curve properties*
+*The automation curve in the Actions panel*
 
 Curve
 - The *Curve* property is the name that appears above the automation
@@ -281,11 +293,11 @@ delete all the points between the In-marker and the Out-marker. You can
 do the same thing and "close the gap," means to take out the time within
 the marked region.
 
-Copy the Marked Region to the Clipboard
+Copy Marked Region to Clipboard
 - Set the In-marker and the Out-marker over a region of automation and
-    click *Copy Marked Region to the Clipboard* to copy that region of
+    click **Copy Marked Region to Clipboard** to copy that region of
     the curve. Then, position the cursor to the destination and select
-    *Paste From Clipboard > Paste Curves at Cursor Position* and that
+    **Paste from Clipboard** > *Paste curves at cursor position* and that
     pastes the automation. This makes it fast to create repeating
     patterns of automation.
 
@@ -298,8 +310,8 @@ song.
 *Paste curves at cursor position*. You can alternatively do that with
 Cmd + V / Ctrl + V.
 
-  Alternatively, choose *Paste curves to fit between the in/out markers*.
-That allows targeting the destination only within the merged region.
+  Alternatively, choose *Paste curves to fit between in/out markers*.
+That allows targeting the destination only within the marked region.
 Normally you paste at the cursor position.
 
 > 💡 **Tip:** You don't need to manually copy automation when moving or
@@ -310,8 +322,8 @@ and the automation follows along as you move or duplicate clips.
 
 It's pretty easy to program a lot of automation, but sometimes you don't
 have all of the automation curves visible. To see which ones are
-available click the A icon and select *Active Parameter Curves for This
-Track*. This shows all automation curves for the track and you can
+available click the A icon and select *Active parameter curves for this
+track*. This shows all automation curves for the track and you can
 choose which one to make visible.
 
 
@@ -324,7 +336,7 @@ separate Automation track.
 
 ## Remap on Tempo Change
 
-Each plugin has a *Remap on Tempo Change* setting in properties. With
+Each plugin has a *Remap on Tempo Change* setting in the Actions panel. With
 that enabled, as you change the tempo of the song, the automation will
 track the tempo changes. That means it will get smaller if you speed up
 the tempo or it will get longer in order to match the clips in your
@@ -337,8 +349,9 @@ turn it on for each plugin.
 *Remap on Tempo Change*
 
 > 💡 **Tip:** We suggest you turn *Remap on Tempo Change* on as a global
-option for all new Edits. To do so, enable *Timecode > Default
-remapping options > Remap plugin automation* from the Menu section.
+option for all new Edits. To do so, go to *Settings > General*, click
+**Set defaults** on the **Tempo change remapping** row and enable *Remap
+plugin automation*.
 
 
 ![](images/35----18.png)
@@ -346,8 +359,7 @@ remapping options > Remap plugin automation* from the Menu section.
 *Make Remap the Default*
 
 > 📝 **Note:** Remap Plugin Automation is not set as the default or turned on
-by default, to maintain compatibility with older projects. This setting
-and the new default option were new for T6.
+by default, to maintain compatibility with older projects.
 
 ## Writing Automation on the Fly
 
@@ -355,14 +367,14 @@ During playback, you can adjust a parameter in real time and have
 Waveform record it as automation. You can do this with a MIDI
 controller, or simply by manipulating plugin controls on-screen during
 playback. All you need to do is setup your automation track and enable
-*Automation Write* mode.
+the **Write** button on the Transport.
 
 
 ![Automation write enabled](images/automation_1_4@2x.png)
 
-**Automation Write* Enabled*
+*Write Enabled*
 
-To go into write mode, enable the *Automation Write* button on the
+To go into write mode, enable the **Write** button on the
 Transport. Now, during playback, Waveform will record any dynamic
 changes you make to the parameter.
 
@@ -375,9 +387,10 @@ changes you make to the parameter.
 changes. All you need is to have automation write turned on during
 playback.
 
-> 💡 **Tip:** When you've written automation this way, it's often a good idea
-to use *Simplify* to thin out the automation points. You may find you
-get good results with the *Medium* option.
+> 💡 **Tip:** Waveform already simplifies newly written automation
+(*Settings > Advanced > Automation > Simplify newly-recorded automation*, on by
+default; see [Reference: Settings](reference-settings.md#automation)). Use *Simplify*
+again if you want it thinner. The *Medium* option is a good starting point.
 
 
 ![](images/35----21.png)
@@ -386,7 +399,7 @@ get good results with the *Medium* option.
 
 ### Automation Modes
 
-Each track has several different automation modes it can be in. These can be set from the A button and the "Automation Mode" menu. The A button on the track will change colour based on the current mode.
+Each track has several different automation modes it can be in. These can be set from the A button and the *Automation mode* submenu. The A button on the track will change colour based on the current mode.
 
 ![Automation mode menu](images/automation_1_5@2x.png)
 
@@ -598,13 +611,13 @@ Automation Ramps are best explained with an example:
 *Selected Region of an Automation Pattern*
 
 1.  Click on the automation curve to select it.
-2.  In the Actions panel, click *Ramp from the start of Marked Region*
+2.  In the Actions panel, click *Ramp from the start of the Marked Region*
     to enable the ramp behavior.
 
 
 ![](images/38----60.png)
 
-*Enable *Ramp from the start of Marked Region**
+*Enable Ramp from the start of the Marked Region*
 
 1.  In the Actions panel, manipulate the *Displace Curve* and *Scale
     Curve* sliders. Notice how these affect the left side of the curve
@@ -636,9 +649,8 @@ that demonstrates the automation ramp modifiers.
 
 There is a lot more you can do with automation, because you can automate
 almost any parameter. You can automate sends to effects. You can even
-automate your Master plugins. Simply create a separate track then drag
-the A icon from that track over to the master track's plugins to
-automate them.
+automate your Master plugins: click the A button and choose from *Master
+parameters*, or drag the A onto a plugin on the Master track.
 
 
 

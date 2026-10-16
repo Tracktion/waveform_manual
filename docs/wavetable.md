@@ -120,7 +120,7 @@ Each filter offers eight modes:
 
 ### Filter Controls
 
-**Freq**: Cutoff frequency in Hz. This is the most important filter parameter. (Default: ~523 Hz)
+**Freq**: Cutoff frequency in Hz. This is the most important filter parameter. (Default: about 330 Hz)
 
 **Res**: Resonance. Boosts frequencies around the cutoff point. Higher values create a sharper, more pronounced peak. (Default: 0)
 
@@ -298,7 +298,7 @@ You can rename each macro by clicking on its label and typing a new name. This m
 
 The Wavetable synth includes a built-in **effects chain** with eight effect slots. Toggle between the filter/oscillator view and the effects view using the **Filter** and **FX** buttons on the toolbar.
 
-The effects can be **reordered by dragging** their headers left or right. The signal flows through them from left to right, so order matters.
+The effects can be **reordered by dragging** their headers left or right. The signal flows through them from left to right, so order matters. The default order is Gate, Chorus, Distortion, Delay, Reverb, EQ, Limiter, Filter.
 
 ### Gate
 
@@ -411,7 +411,7 @@ A global filter effect (separate from the per-voice filters). It offers the same
 - **High shelf**: Boosts or cuts above the cutoff
 - **Peak**: Boosts or cuts a narrow band around the cutoff
 
-**Frequency**: Cutoff frequency. (Default: ~523 Hz)
+**Frequency**: Cutoff frequency. (Default: about 330 Hz)
 
 **Q**: Resonance / bandwidth. (Default: 0.707)
 
@@ -419,7 +419,7 @@ A global filter effect (separate from the per-voice filters). It offers the same
 
 ### Limiter
 
-A dynamics limiter at the end of the effects chain to prevent clipping.
+A dynamics limiter near the end of the effects chain (before the FX filter by default) to prevent clipping.
 
 **Attack**: How quickly the limiter responds. (Default: 0 ms)
 

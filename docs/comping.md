@@ -4,15 +4,13 @@ In this chapter, we're going to go over the cool comping features in
 Waveform. Comping is an editing technique where you select the best
 phrases from numerous takes to build a composite or "comp." The idea is
 to create the best possible take. Engineers have been doing this for
-years, but Traction makes it much easier than the traditional methods.
+years, but Waveform makes it much easier than the traditional methods.
 
 Comping typically starts with takes recorded in *Loop* mode, covered in
 [Loop Recording](loop-recording.md).
 
-Loop recording used to be a prerequisite for doing comping. Starting
-with T6, Waveform also allows you to build composites from any
-collection of tracks, using the new *Comp Groups* feature. More on that
-later in the chapter.
+You can also build composites from any collection of tracks with *Comp
+Groups*. More on that later in the chapter.
 
 ## Copy Your Edit
 
@@ -24,7 +22,7 @@ to do the composite a different way.
 technique in the previous chapter. If not, go back to [Loop Recording](loop-recording.md) and get some takes recorded!
 
 1.  When you finish loop recording, make sure to save the Edit with
-    *Save > Save edit* (Cmd + S / ctrl + S).
+    **File > Save edit** (Cmd + S / ctrl + S).
 2.  Go to the Projects tab and select the correct Edit. In the Controls
     panel, click *Create a Copy*.
 3.  It is recommended to keep your Edits organized by adding a revision
@@ -71,7 +69,7 @@ the process.
 
 > 💡 **Tip:** While comping, sometimes it's helpful to have the cursor return
 where you started playback whenever you stop playback. Do so by enabling
-*Options > Return cursor to start position when play stops*. This makes
+**Options > Return to start on play**. This makes
 it easier to audition phrase by phrase without needing to constantly
 reposition the cursor.
 
@@ -126,8 +124,7 @@ files as this will remove them for your other saved Edits.
 
 ## Setting up a Comp Group
 
-T6 introduced *Comp Groups*, a feature that allows you to use swipe
-comping with any group of tracks. This works similarly to the techniques
+*Comp Groups* let you use swipe comping with any group of tracks. This works similarly to the techniques
 described above for comping takes. The difference is that you first add
 the tracks involved to a Comp Group.
 
@@ -142,7 +139,7 @@ Select all the tracks you want use to build the composite. These are typically r
 
 **Create a Comp Group**
 
-In the properties, open the *Comp Group* menu and select *Add group.* This opens the *Comp Group Name* dialog box. The name will default to *Comp Group 1* which is fine. You can change it to something more descriptive if you want. Click *OK*.
+In the Actions panel, open the *Comp Group* menu and select *Add group.* This opens the *Add Comp Group* dialog box. The name will default to *Comp Group 1* which is fine. You can change it to something more descriptive if you want. Click *OK*.
 
 
 ![](images/20----09.png)
@@ -166,7 +163,7 @@ To take a track out of a comp group, first, select the track. In the *Comp Group
 With some tracks added to a Comp Group, it is easy to start comping.
 
 1.  Select one of the tracks then in the *Comp Group* menu select *Show
-    Editor > Edit track comps*. This puts the tracks in to comp mode.
+    editor > Edit track comps*. This puts the tracks in to comp mode.
 
 
 ![](images/20----11.png)
@@ -194,11 +191,11 @@ want to silence, simply swipe over that range on the blank track.
 Here are few more things to know about the Comp Group Editor.
 
 **Show Track Comps**
-- When you enable comp group editing using *Show Editor > Edit track
+- When you enable comp group editing using *Show editor > Edit track
 comps,* another option, *Show track comps* is also turned on. This
 enables the color coding of the swipe selections on the tracks. You
 can turn this on separately if you want. This way you can see the
-comp selections but leave *Edit comp groups* turned off so you don't
+comp selections but leave *Edit track comps* turned off so you don't
 accidentally change them.
 
 
@@ -208,7 +205,8 @@ accidentally change them.
 
 **Render Comp**
 - When you have the composite complete, you can render the result to
-    single track. The *Comp Group* menu gives you two options for this.
+    single track. The *Comp Group* menu's **Render Comp** submenu gives
+    you two options for this.
     *Render and replace comp group* replaces the all the comp group
     tracks with the resulting track. *Render comp group to a new track*
     leaves the existing tracks in place and adds a new track with the

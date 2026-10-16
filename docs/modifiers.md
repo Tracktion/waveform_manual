@@ -6,9 +6,9 @@ Waveform includes six modifier types: the LFO, the Envelope Follower, the Random
 
 ## Adding a Modifier
 
-You create a modifier by dragging the **New Modifier Generator** button onto a track. You can drop it onto the top of a track to add it without an assignment, or drop it directly onto a plugin to choose the parameter to modulate right away. Modifiers can also live inside a Plugin Rack (see the Plugin Racks chapter).
+You create a modifier by dragging the **New Modifier Generator** button onto a track. You can drop it onto the top of a track to add it without an assignment, or drop it directly onto a plugin to choose the parameter to modulate right away. Modifiers can also live inside a Plugin Rack (see [Plugin Racks](racks.md)).
 
-Once added, a modifier appears as a small object above the plugins in the track's mixer area, alongside any Track LFOs. You can add as many modifiers to a track as you like, and a single modifier can drive several parameters at once.
+Once added, a modifier appears as a small object above the plugins in the track's mixer area. You can add as many modifiers to a track as you like, and a single modifier can drive several parameters at once.
 
 Double-click a modifier object to open its editor window, where you adjust its settings and see a live display of its output.
 
@@ -18,7 +18,7 @@ There are three places to work with a track's modifiers: the small objects in th
 
 Every modifier outputs a value that you map onto one or more plugin parameters. The editor window is split into three pages: **Modifier Settings** (the controls and live display), **Parameters**, and **Assignments**.
 
-The list down the right side of the editor is the **Parameters** list: every automatable parameter on the track's plugins, with a search box at the top to find one quickly. Each entry has its own knob that sets how far the modifier moves that parameter.
+The list down the right side of the Modifier Settings page is the track's parameter list: every automatable parameter on the track's plugins, with a search box at the top to find one quickly. Each entry has its own knob that sets how far the modifier moves that parameter.
 
 There are two ways to make an assignment:
 
@@ -36,8 +36,6 @@ The **Assignments** page lists everything the modifier currently controls, so yo
 Most of the modifiers share a small set of controls, so it is worth learning them once.
 
 **Enable**: The green power button turns the modifier on or off. Disable a modifier to silence its effect without losing it or its assignments.
-
-**Delete**: The red X removes the modifier and all of its assignments.
 
 **Sync** (Choices: Free, Transport, Note): How the modifier's timing is referenced. *Free* runs continuously at its own rate, *Transport* locks the cycle to the playhead position so it repeats consistently against the bars and beats, and *Note* restarts the cycle whenever a new MIDI note arrives. (Default: Free)
 
@@ -61,6 +59,8 @@ The gear button opens an **Options** menu with a few more settings that apply to
 
 **Select Plugins**: Selects all the plugins this modifier controls, which is a fast way to jump to them.
 
+**Delete**: Removes the modifier and all of its assignments. The same item is on the modifier object's right-click menu.
+
 ## The LFO Modifier
 
 ![](images/Modifiers/LFO@2x.png)
@@ -72,9 +72,9 @@ The **LFO** (low-frequency oscillator) repeats a chosen waveform to give smooth,
 
 Alongside Wave, the LFO offers the shared Rate, Rate Type, Sync, and Bipolar controls, plus:
 
-**Phase**: Shifts the starting point of the waveform within its cycle. (Default: centre)
+**Phase**: Shifts the starting point of the waveform within its cycle. (Default: 0, the start of the cycle)
 
-**Offset**: Shifts the whole output up or down before it reaches the parameter. (Default: centre)
+**Offset**: Shifts the whole output up or down before it reaches the parameter. (Default: 0, no offset)
 
 > 💡 **Tip:** The LFO is the quickest way to add tremolo or auto-pan. Assign it to a Volume or Pan parameter, pick a Sine wave, set the Rate Type to a musical division, and turn up the Depth. We have a [video tutorial](https://youtu.be/9UVEAJAvFZ0) showing the LFO in action with a virtual instrument.
 
@@ -87,17 +87,17 @@ The **Envelope Follower** watches the loudness of the audio on its track and tur
 
 **Gain**: Boosts or cuts the incoming audio before the envelope is measured, so quiet signals can still drive a strong response. (Range: −20 to +20 dB, Default: 0 dB)
 
-**Attack**: How quickly the output rises as the audio gets louder. Shorter times react snappily to transients. (Range: 1 to 5000 ms, Default: 50 ms)
+**Attack**: How quickly the output rises as the audio gets louder. Shorter times react snappily to transients. (Range: 1 to 5000 ms, Default: 100 ms)
 
-**Hold**: How long the output stays at its peak before it starts to fall. (Range: 0 to 5000 ms, Default: 50 ms)
+**Hold**: How long the output stays at its peak before it starts to fall. (Range: 0 to 5000 ms, Default: 0 ms)
 
-**Release**: How quickly the output falls once the audio quietens. (Range: 1 to 5000 ms, Default: 50 ms)
+**Release**: How quickly the output falls once the audio quietens. (Range: 1 to 5000 ms, Default: 500 ms)
 
-**Low-pass** and **High-pass** filters: The LP and HP buttons let you filter the audio before it is measured, each with its own frequency knob. Use them to make the follower respond only to a part of the signal, for example only the kick drum's low end. (Default: both off; frequency 700 Hz)
+**Low-pass** and **High-pass** filters: The LP and HP buttons let you filter the audio before it is measured, each with its own frequency knob. Use them to make the follower respond only to a part of the signal, for example only the kick drum's low end. (Default: both off; LP 2000 Hz, HP 500 Hz)
 
-**Depth**: How far the envelope pushes the assigned parameter, and in which direction. (Range: −1 to +1, Default: 0)
+**Depth**: How far the envelope pushes the assigned parameter, and in which direction. (Range: −1 to +1, Default: 1)
 
-**Offset**: A fixed amount added to the output, so you can set where the parameter sits when the audio is silent. (Default: centre)
+**Offset**: A fixed amount added to the output, so you can set where the parameter sits when the audio is silent. (Default: 0)
 
 > 📝 **Note:** The Envelope Follower reacts to the audio on its own track, so it only does something when that track is actually playing audio.
 
@@ -110,11 +110,11 @@ The **Random** modifier generates ever-changing random values. It is great for a
 
 **Type** (Choices: Random, Noise): *Random* produces a new value each cycle (sample-and-hold), while *Noise* produces a continuously fluctuating signal. (Default: Random)
 
-**Shape**: Adjusts the character of the generated curve. (Default: centre)
+**Shape**: Adjusts the character of the generated curve. (Default: 0)
 
-**Step Depth**: Sets how much each new random step differs from the last, controlling how jumpy the output is. (Default: centre)
+**Step Depth**: Sets how much each new random step differs from the last, controlling how jumpy the output is. (Default: 1, the maximum)
 
-**Smooth**: Rounds off the transitions between values. Turn it up to glide between random points instead of jumping. (Default: centre)
+**Smooth**: Rounds off the transitions between values. Turn it up to glide between random points instead of jumping. (Default: 0)
 
 The Random modifier also offers the shared Rate, Rate Type, Sync, Depth, and Bipolar controls. Use Rate and Sync to decide how often a new value is chosen.
 
@@ -125,7 +125,7 @@ The Random modifier also offers the shared Rate, Rate Type, Sync, Depth, and Bip
 
 The **Step** modifier is a step sequencer for a parameter. You draw a row of bars, and the modifier scrubs through them at a tempo-synced rate, like a classic analog sequencer lane. It is ideal for rhythmic, repeating patterns.
 
-**Steps**: The number of steps in the pattern. (Range: 2 to 64, Default: 31)
+**Steps**: The number of steps in the pattern. (Range: 2 to 64, Default: 16)
 
 To set each step's value, drag its bar up or down in the grid. The highlighted column shows which step is currently playing.
 
@@ -134,7 +134,7 @@ Two buttons sit next to the sequence:
 - The **dice** button fills the pattern with random step values, a quick way to find a happy accident.
 - The **broom** button clears the pattern back to its default.
 
-The Step modifier also uses the shared Rate, Rate Type, and Sync controls to set how fast it advances, plus **Depth** to scale how strongly the steps move the parameter. (Depth range: −1 to +1, Default: 0)
+The Step modifier also uses the shared Rate, Rate Type, and Sync controls to set how fast it advances, plus **Depth** to scale how strongly the steps move the parameter. (Depth range: −1 to +1, Default: 1)
 
 ## The Breakpoint Modifier
 
@@ -143,7 +143,7 @@ The Step modifier also uses the shared Rate, Rate Type, and Sync controls to set
 
 The **Breakpoint** modifier lets you draw your own modulation shape from a handful of points. Think of it as a custom LFO waveform: you place the points, bend the segments between them, and the modifier plays that shape back on a loop. Good for bespoke envelopes and one-off rhythmic curves.
 
-**Num points**: How many breakpoints make up the shape. (Range: 1 to 4 active points, Default: 2)
+**Num points**: How many breakpoints make up the shape. (Range: 1 to 4 active points, Default: 4)
 
 To edit the shape, drag the numbered points in the graph to move them in time and value, and drag the small handle on a segment to curve it. The grid above shows where each beat of the cycle falls.
 
@@ -178,4 +178,4 @@ A crosshair marks the current incoming value live as you play, so you can see th
 
 ## Moving On
 
-For hand-drawn parameter changes see the Automation chapter, and for grouping several controls under one knob see the Macros chapter.
+For hand-drawn parameter changes see [Automation](automation.md), and for grouping several controls under one knob see [Macro Parameters](racks.md#macro-parameters).

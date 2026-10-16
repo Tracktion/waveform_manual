@@ -32,7 +32,7 @@ available in Free, OEM, and Pro editions.
 The first time you launch Waveform, the **First Run Setup** panel appears on
 the left. Work through its steps in order: it takes you straight to each
 setting you need to configure. If you close it, you can reopen it any time
-from **Help > Show First Run Setup**.
+from **Help > Show the First Run Setup panel**.
 
 → See [Audio Device Setup](audio-device-setup.md).
 
@@ -66,12 +66,12 @@ under **Settings > MIDI Devices**.
 
 → See [MIDI Setup](midi-setup.md).
 
-## 5. Hear Something - Open a Demo
+## 5. Hear Something: Open a Template
 
 The quickest way to confirm everything works is to open a template and play it:
 
 1. Open the **Welcome** tab.
-2. Pick a song from the **Templates** list to open it as a new Edit.
+2. Pick a song from the **Project Templates** list to open it as a new Edit.
 3. Press the **Spacebar** to play.
 
 → See [Demo Projects and Templates](installing-the-demo-projects.md) and
@@ -132,19 +132,20 @@ You can drop it anywhere in the signal chain and reorder it later by dragging.
 
 1. Set the **In-marker** at the start of the song and the **Out-marker** at
    the end to define the export range.
-2. Choose **Export > Render to a file** from the menu bar.
-3. Pick a format (WAV or MP3), make sure **Only render the marked region** is
-   on, and click **Render**.
+2. Choose **File > Export: Render to a file...** from the menu bar.
+3. Set **Range** to **Marked Region**, pick a **Format** (such as WAV) and
+   click **Render**.
 
-→ See [Mixing Down](mixing-down.md).
+→ See [Mixing Down](mixing-down.md) and
+[Rendering and Stems](rendering-and-stems.md).
 
 ## 12. Where to Go Next
 
 You now have the essentials. Waveform has much more to explore. Here are some
 highlights, each covered in its own chapter:
 
-- [The AI Assistant](ai-assistant.md): a cloud-powered AI assistant that
-  can carry out actions in your project.
+- [The AI Assistant](ai-assistant.md): an AI assistant (cloud or local
+  model) that can carry out actions in your project.
 - [Clip Launcher](clip-launcher.md): trigger clips and scenes live.
 - [Comping](comping.md): build one perfect take from several passes.
 - [Warp Time](warp-time.md): bend and stretch audio in time.

@@ -1,12 +1,14 @@
 # Using an Amp Simulator Plugin
 
-In this chapter, you will learn how to use an amp simulator plugin while
-recording direct with an electric guitar in Waveform. Out of the box,
-Waveform doesn't include an amp simulator plugin. However, most of the
-third party amp simulator plugins will work. If you don't have any of
-these, there is a great sounding free amp sim plugin from Voxengo called
+This chapter shows how to record direct electric guitar through an amp
+simulator plugin. Waveform doesn't include a full amp simulator, but you
+can build a basic chain from the built-in Distortion plugin followed by
+Guitar IR for the cabinet (Guitar IR needs Waveform Pro or the Recording
+Engineer Expansion; see [Built-in Effects Plugins](built-in-effects-plugins.md)).
+Most third party amp simulator plugins work too. If you don't have one,
+there is a great sounding free amp sim plugin from Voxengo called
 Boogex, used as an example for this chapter. You can download it from
-[Voxengo.com](http://www.voxengo.com/product/boogex/).
+[Voxengo.com](https://www.voxengo.com/product/boogex/).
 
 
 ![](images/21----01.png)
@@ -42,13 +44,15 @@ Here is the setup:
 
 *Turn off Any Input Monitoring on Your Interface*
 
-4.  Select the input and turn on *Live Input Monitoring*. At this point
-    you should be able to hear your dry unprocessed guitar signal.
+4.  Right-click the input and choose **Live Input Monitoring > On** (or
+    select the input and set **Input Monitoring Mode** to On in the
+    Actions panel). At this point you should be able to hear your dry
+    unprocessed guitar signal.
 
 
 ![](images/21----05.png)
 
-*Enable *Live Input Monitoring**
+*Turn on Live Input Monitoring*
 
 5.  Open the Browser and go to the Search tab, and type in a few
     characters of the name of your amp simulator plugin. Drag the plugin
@@ -59,15 +63,17 @@ Here is the setup:
 
 *Drag the Amp Sim Plugin to the Mixer*
 
-6.  If the UI window for the plugin didn't open, double click it. If you
-    have *Live Input Monitoring* enabled you should hear sound through
+6.  If the UI window for the plugin didn't open, click it (or
+    double-click it, if you changed **Open plugin windows by** in
+    Settings > General). If you have Live Input Monitoring on, you
+    should hear sound through
     the plugin when you play. Select a preset and it should sound like
     you are playing through a guitar amp, maybe even amps, effects,
     cabinets, whatever your plugin simulates.
 
 > 💡 **Tip:** To bypass the plugin just click on the plugin to select it and
-press F. You can also enable or disable it using the *Enabled* control
-in properties. The shortcut F will enable or disable any selected
+press F. You can also enable or disable it using the **Enabled** row
+in the Actions panel. The shortcut F will enable or disable any selected
 plugins.
 
 
@@ -144,10 +150,9 @@ example, a buffer setting of 256 samples offers 5.8 ms of latency.
 
 What this means is that when you play a note on your guitar, you are
 going to hear the sound about 5.8 ms later. Now the speed sound through
-air is about 1 ms per foot (1ms per .3 meters). A 5 ms delay would be
-similar to playing your guitar amp if it were 5.8 feet (1.8 meters) away
-from your ears. You would need to add in the actual distance from your
-monitor speakers as well. If your speakers are two or three feet away,
+air is about 1 ms per foot (1ms per .3 meters). A 5.8 ms delay is
+like playing your guitar amp from 5.8 feet (1.8 meters) away. You would
+need to add in the actual distance from your monitor speakers as well. If your speakers are two or three feet away,
 it might be like having your amplifier nine feet away. Most guitar
 players can deal with latency delay in that range. It's similar to the
 distance you would be standing from your guitar amp on stage. If it
@@ -167,8 +172,8 @@ instruments going, the playback might halt or it might not sound clean.
 
 > 📝 **Note:** It's always a balancing act between setting the buffer size as
 low as possible to get the latency down while keeping it high enough to
-have clean, solid playback. When mixing, you can increase latency to
-approximately 1024, mostly because that is required for Melodyne ARA.
+have clean, solid playback. When you're mixing rather than recording, a
+larger buffer such as 1024 is fine.
 
 ## Dialing in the Guitar Tone
 
@@ -189,8 +194,8 @@ effects section of the mixer for the track. That will give you a quick
 and easy way to tune up.
 
 > 💡 **Tip:** If you don't have a tuner plugin, consider downloading one as
-part the the MFreeEffectsBundle from [Melda
-Production](http://www.meldaproduction.com/plugins/product.php?id=MFreeEffectsBundle).
+part of the MFreeFXBundle from [Melda
+Production](https://www.meldaproduction.com/MFreeFXBundle).
 
 
 ![](images/21----08.png)
@@ -205,9 +210,10 @@ Assuming you have a tuner plugin available, here is how to get it going:
     up in the search list.
 2.  Drag the tuner and drop it in the plug-ins area of the track.
     Normally, as soon as you drop it, the user interface window will pop
-    open. If not double click the plugin to open the UI.
+    open. If not, click the plugin to open the UI.
 3.  Play a note on your guitar. If the tuner does not respond make sure
-    to arm the track for recording and enable *Live Input Monitoring.*
+    to arm the track for recording and set **Live Input Monitoring** to
+    On.
     This is necessary for the signal to flow through the track to the
     mixer section and to the tuner plugin.
 
@@ -216,10 +222,6 @@ corner.
 
 When you are finished with tuning, click the red X in the upper left
 corner of the tuner to hide its user interface.
-
-> 📝 **Note:** In earlier versions of Waveform, *Live Input Monitoring* was
-called "End to end monitoring." It has been renamed to reduce confusion
-about this feature.
 
 ## Moving On
 

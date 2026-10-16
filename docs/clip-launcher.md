@@ -1,16 +1,17 @@
 # Clip Launcher
 
+Available in Waveform Pro, or with the Launcher Expansion.
+
+The clip launcher lets you trigger clips to play and stop, rather than
+having their start and end times fixed on the arrange timeline.
+
 ## Playback
 
 > 🎥 [Video explaining clip launcher playback](https://youtu.be/19Wd7HAWzlA)
 
-New in Waveform 13 (Pro and Launcher expansion) is the clip launcher.
-This allows triggering clips to play and stop rather than having their
-start/end times predefined on the arrange timeline.
-
 The clip launcher can be found in the mixer panel which can be bought
-into view with the M key. You can then enable the clip launcher with the
-grid button. The mixer and arrange panels can also be toggled between
+into view with the M key. You can then show the clip launcher with the
+**C** (Show clip launcher) button at the top of the mixer. The mixer and arrange panels can also be toggled between
 using the tab key.
 
 Clips can be dragged into slots in the same ways as the arranger, i.e.
@@ -18,11 +19,11 @@ from the Finder/Windows Explorer or one of the browsers. You can also
 copy/paste and drag clips between the clip launcher and arranger.
 
 The clip sizes can be toggled between standard and larger row views with
-the mixer view button.
+the mixer's **L** (Toggle track height) button.
 
-By default audio thumbnails only appear in the larger row view but you
-can also make these appear on standard row heights from the Settings >
-Appearance page.
+By default audio thumbnails only appear in the larger row view. To show
+them on standard row heights too, set **Clip launcher style** to *Show
+thumbnail* in Settings > Appearance > Clips.
 
 
 ![](images/clip_launcher_playback.jpeg)
@@ -36,7 +37,8 @@ button. This will also start play back in the arranger.
 
 If the project is already playing, the clip will be triggered but won't
 start playing until the next launch quantization point. By default this
-is set to 1 bar but can be changed from the master track.
+is set to 1 bar, but you can change it with **Global launch
+quantisation** in the master track's Actions panel.
 
 An already playing clip can be re-triggered which will start it from the
 beginning.
@@ -73,8 +75,11 @@ quantisation times will cause quicker jumps but your bar positions may
 become out of sync.
 
 If you have clips on the arranger tracks, you can play these by using
-the "back to arranger" buttons. Launching a clip will disable the
-arranger track's clips again.
+the play-arranger buttons: the one on each track switches that track
+back to its arrangement clips, and the one on the master track does this
+for all tracks. The same switch is the **Playback arranger** property in
+a track's Actions panel. Launching a clip will disable the arranger
+track's clips again.
 
 ## Clip/Slot properties
 
@@ -90,7 +95,7 @@ You can adjust the loop start/end points using the Actions panel or the
 [Detail editor](detail-editor.md) (Clip tab).
 
 By default, clips follow the global quantisation but this can be
-overridden so a clip has its own launch quantisation.
+overridden with the clip's **Launch quantisation** property.
 
 
 ![](images/clip_launcher_playback_clip_properties.jpeg)
@@ -110,6 +115,8 @@ overridden so a clip has its own launch quantisation.
   ![Legato and Nudge](images/clip_launcher_4_2_1@2x.png)
 
 ### Launch Modes
+
+Set these with the clip's **Launch Mode** property.
 
 - **Trigger:**
 
@@ -132,7 +139,7 @@ overridden so a clip has its own launch quantisation.
 
 ### Slot properties
 
-Slots have a "has stop/rec button" property. Disabling this means that
+Slots have a **Has stop/rec button** property. Disabling this means that
 when a scene is launched, if a track is already playing a clip but
 doesn't have a clip in the newly launched scene and that slot doesn't
 have a stop button, the already playing clip in that track will
@@ -193,8 +200,8 @@ play.
 
 When you stop the launched clip, the recording arranger clip also stops.
 This newly added clip won't be active at the moment as playback is still
-in the launcher. Press the "play arranger" button to hear the newly
-recorded clip.
+in the launcher. Press the track's play-arranger button to hear the
+newly recorded clip.
 
 This will sound the same as if you launched the clip as you did
 previously. The clip's start/end/offset and loop boundaries are all
@@ -223,9 +230,11 @@ clip selected.
 
 *Clip Follow Actions*
 
-The first property determines if the action should be performed after a
-duration of beats or a number of loops have been played. If the clip
-isn't looping, this second option will just trigger at the clip's end.
+The first property, **Sync follow action to** (*Beats* or *Num loops*),
+determines if the action should be performed after a duration of beats
+or a number of loops have been played. Set the duration or number of
+loops with the **After** property below it. If the clip isn't looping,
+the loops option will just trigger at the clip's end.
 
 ## Global Actions
 
@@ -361,6 +370,9 @@ layout to a drum grid.
 Some devices have a ***\"Mixer Mode\"*** which, when enabled lets you
 adjust track and plugin parameters in your session. Please refer to your
 hardware device user manual for specific capabilities.
+
+The Launcher Expansion also unlocks Ableton Link, for syncing tempo with
+other apps and devices. See [Ableton Link](reference-settings.md#ableton-link).
 
 
 ---

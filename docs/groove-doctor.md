@@ -7,8 +7,8 @@ template. It's the tool to reach for when a drum take is a little loose,
 a bass line drifts off the beat, or you want to lock a live performance
 to the click without re-recording it.
 
-> 📝 **Note:** The Groove Doctor is part of **Waveform Pro** only. It isn't
-available in the Free or OEM editions.
+> 📝 **Note:** The Groove Doctor is available in **Waveform Pro**, or with
+the Recording Engineer Expansion.
 
 ![](images/Groove%20Dr%201@2x.png)
 *The Groove Doctor window*
@@ -125,7 +125,7 @@ The four operations do the following:
 - **Extract groove**: Reads the beat transients and saves them as a new
   groove template you can reuse elsewhere.
 
-### Stage 2: Detection Settings
+### Stage 2: Separate, Warp, Tempo Map or Extract Groove
 
 The second stage tunes which beats are used. The exact controls depend on
 the operation:
@@ -166,11 +166,6 @@ None)
 **Groove Strength**: How strongly the groove template is applied. This is
 only available for *parameterised* templates; for ordinary templates it's
 greyed out. (Range: 0-100%)
-
-> 📝 **Note:** The **Groove Strength** control and parameterised groove
-> templates come from the *templated grooves* feature (Waveform Pro and
-> Free, version 11 and later). When that feature isn't present these
-> controls are hidden and the window is a little taller.
 
 ### Stage 4: Smooth or Consolidate
 

@@ -16,22 +16,25 @@ into your performance.
 
 Within a MIDI clip, select all the notes you want to quantize. If you
 want to quantize all of them, you can use select all (Cmd + A / Ctrl +
-A). The quantize actions are available by clicking *Quantize* in
-properties.
+A). The quantize actions are available by clicking *Quantise* in the
+Actions panel or in the MIDI editor's toolbar.
 
 
 ![](images/26----01.png)
 
 *MIDI Quantize Actions*
 
-There are four different quantize actions available, as shown above. The
-most common option is the first one - *Quantize note start times*. To
-complete the action, you pick which beat division to use.
+There are five quantize actions: *Quantise note start times*,
+*Quantise note lengths*, *Quantise note start and end times*, *Quantise
+note starts, leaving ends intact* and *Quantise note ends, leaving
+starts intact*. The most common option is the first one, *Quantise note
+start times*. To complete the action, you pick which beat division to
+use.
 
 The beat division selection can be a little confusing. Musical divisions
 in Waveform are represented as fractions of one beat. For example, if
 you want to quantize to eighth notes and you're in 4/4 time, then you
-select *To nearest 1/2.* One half of one beat would be an eighth note.
+select *To nearest 1/2 beat*. One half of one beat would be an eighth note.
 If you want to quantize to sixteenth notes, then select *To nearest 1/4
 beat* from this menu.
 
@@ -87,15 +90,20 @@ we will cover in the next chapter.
 
 First lets look at the basics:
 
-Select the notes to quantize and click *Apply Groove* in properties.
+Select the notes to quantize and click *Apply Groove* in the Actions
+panel, or *Groove* in the MIDI editor's toolbar.
 
 
 ![](images/26----18.png)
 
-*Apply Groove in properties*
+*Apply Groove in the Actions panel*
 
-You will then get a large menu of groove presets. These are custom
-templates that allow you to apply fine adjustments to the timing.
+You will then get a menu of groove templates that apply fine
+adjustments to the timing. When you choose one, a *Groove strength*
+window asks how strongly to apply it (0 to 100). Waveform remembers the
+last strength you used. The older templates with a fixed strength in
+their name (such as *Swing 1/2 60%*) are in the *Legacy groove
+templates* submenu, and apply straight away.
 
 
 ![](images/26----05.png)
@@ -104,9 +112,9 @@ templates that allow you to apply fine adjustments to the timing.
 
 The most common scenario is to apply swing: Delaying the eighth notes
 that follow the four primary beats in a bar. To locate the groove
-templates for standard swing, look at those starting with *Swing 1/2.*
-Swing 1/2 as in half beat. In normal musical terms, that's eighth note
-swing. To apply a nice groovy swing, try *Swing 1/2 60%*.
+template for standard swing, choose *Swing 1/2*. Swing 1/2 as in half
+beat. In normal musical terms, that's eighth note swing. To apply a nice
+groovy swing, try *Swing 1/2* with a strength of 60.
 
 
 ![](images/26----06.png)
@@ -114,9 +122,8 @@ swing. To apply a nice groovy swing, try *Swing 1/2 60%*.
 *Groove Presets for Swing*
 
 > 📝 **Note:** In 4/4 music, eighth note timing is counted 1 & 2 & 3 & 4 &.
-In swing timing, the "&" beats are delayed. The swing presets in
-Waveform let you pick how much delay as a percentage from subtle (10%)
-to dramatic (90%).
+In swing timing, the "&" beats are delayed. The groove strength sets
+how much delay, from subtle (low values) to dramatic (high values).
 
 
 ![](images/26----07.png)
@@ -126,7 +133,7 @@ to dramatic (90%).
 
 ![](images/26----08.png)
 
-*After Applying Groove - *Swing 1/2 60*%*
+*After Applying Groove: Swing 1/2 at 60% Strength*
 
 After you apply swing, you'll see it lays back all of the "and" notes to
 be a little late; groovy! Waveform will also adjust the note lengths
@@ -136,13 +143,13 @@ appropriately as shown above.
 
 For more control, you can build grooves to your own
 definition using the Groove Template Editor. At the bottom of the *Apply
-Groove* menu, you'll find *Edit groove templates*. This is also
-available in the Menu section under *Snapping > Edit Groove Templates*.
+Groove* menu, you'll find *Edit groove templates...*. You can also
+choose *View > Open Groove template editor* in the Menu section.
 
 
 ![](images/26----09.png)
 
-**Snapping > Edit groove templates**
+*View > Open Groove template editor*
 
 Select this to open the groove template editor. Click on any of the
 presets to see how the logic works.
@@ -152,8 +159,8 @@ presets to see how the logic works.
 
 *Groove Template Editor*
 
-In the image above, we have selected the *Swing 1/4 60*% template we
-used for the examples in this chapter. A groove template consists of a
+In the image above, the legacy *Swing 1/2 60%* template is selected,
+which matches the swing used for the examples in this chapter. A groove template consists of a
 pattern length, note subdivision, and the timing for each note. For each
 step of the pattern, you choose the amount that that note falls 'early'
 or 'late' relative to perfect timing.
@@ -161,7 +168,7 @@ or 'late' relative to perfect timing.
 
 ![](images/26----11.png)
 
-**Swing 1/2 60*% Template Example*
+*Swing 1/2 60% Template Example*
 
 The example in the figure shown above is the setup for a basic swing
 beat, with each 'and' eighth-note delayed. You can adjust the intensity
@@ -180,12 +187,12 @@ eight notes with each swing element slightly different.
 *Groove Template with Variable Swing*
 
 Alternatively, you can create a groove that pushes the timing over two
-bars, which will give excitement and tension like the FastSlow2 preset.
+bars, which will give excitement and tension like the *Fast Slow 2* template.
 
 
 ![](images/26----13.png)
 
-*FastSlow2 Groove Template*
+*Fast Slow 2 Groove Template*
 
 > 💡 **Tip:** It can also be useful to create a 'No Groove' template to help
 you remove the effect of groove. This is particularly useful when

@@ -13,7 +13,7 @@ Faceplates are especially useful when you want to focus on a handful of key para
 
 ## Getting Started
 
-When you first open a plugin's faceplate tab, you'll see the message "No Faceplate -- click the padlock icon to begin editing." The edit toolbar runs along the right edge of the faceplate area.
+When you first open a plugin's faceplate tab, you'll see the message "No Faceplate - click the padlock icon to begin editing". The edit toolbar runs along the right edge of the faceplate area.
 
 To create your first faceplate:
 
@@ -35,15 +35,15 @@ The toolbar on the right side of the faceplate contains these buttons, from top 
 
 **Stretch**: When enabled, the faceplate stretches to fill all available space. When disabled, the faceplate maintains its fixed grid proportions.
 
+**Width Slider**: Sets the number of horizontal grid columns. (Default: 8)
+
+**Height Slider**: Sets the number of vertical grid rows. (Default: 4)
+
 **Assign**: Enters parameter assign mode. When active, this button pulses to indicate it's waiting for you to move a parameter. Tweak any parameter on your plugin, and it gets assigned to the currently selected control. This is the fastest way to connect controls.
 
 **Quick Assign**: When enabled alongside assign mode, the faceplate automatically advances to the next control after each successful assignment. This lets you rapidly assign a whole panel by just tweaking parameters one after another.
 
 **Presets**: Opens a menu for saving, loading, and managing faceplate presets. More on this below.
-
-**Width Slider**: Sets the number of horizontal grid columns. (Default: 8)
-
-**Height Slider**: Sets the number of vertical grid rows. (Default: 4)
 
 > 💡 **Tip:** You can hide the edit toolbar by right-clicking the faceplate background and unchecking *Show edit menu*. Right-click again to bring it back.
 
@@ -248,7 +248,7 @@ Right-click any individual control and open the **Skin** submenu. Choose a skin 
 
 ### Custom Images (Filmstrips)
 
-For sliders, parameters, buttons, and meters, you can load custom graphics from the **Skin** menu:
+For sliders, parameters and buttons, you can load custom graphics from the **Skin** menu:
 
 **Filmstrip Image**: A single image file containing all frames of the control stacked vertically or horizontally. Waveform estimates the number of frames from the image dimensions, but you can set it manually via **Set number of frames**. Supports JPG, PNG, GIF, and SVG.
 
@@ -260,7 +260,9 @@ For sliders, parameters, buttons, and meters, you can load custom graphics from 
 - A **Background** image (the track).
 - A **Thumb** image (the handle) that slides along the background.
 
-Once you've loaded images into a faceplate, they become available in the **Load existing** submenu for reuse across other controls.
+**Meter images**: Meters don't use filmstrips. Their **Skin** menu has **Load from file...**, which asks for an **Unfilled Image** and a **Filled Image**, the **No. segments** in the image (if any), a **Border (Top, Left, Bottom, Right)** to leave when drawing the filled section, and the **Range (dB)** to display.
+
+Once you've loaded images into a faceplate, they become available in the **Load existing** submenu for reuse across other controls. For meters, **Load existing** has separate **Unfilled** and **Filled** submenus.
 
 > 💡 **Tip:** SVG images scale cleanly at any size and are generally recommended over bitmap formats for custom skins.
 
@@ -286,7 +288,7 @@ Faceplates can be saved and loaded as `.tracktionfaceplate` files. Waveform incl
 
 The following built-in plugins come with pre-made faceplates: Auto Filter, Bus Compressor, Chorus, Compressor, Crusher, Ducker, EQ, Flanger, Gate/Expander, Limiter, Phaser, Reverb, Stereo Delay, and Tape Delay.
 
-When you open a plugin that has a matching factory preset, Waveform can automatically load it.
+When you show the faceplate in a plugin's own window and that plugin doesn't have a faceplate yet, Waveform loads the first preset in the Faceplates folder (factory or your own) saved for that plugin type. This doesn't happen on the Faceplate pages of the Actions panel or the Detail editor, or for racks; there, use **Load plugin preset** from the Presets menu.
 
 ### Loading a Preset
 
@@ -335,4 +337,4 @@ This makes faceplates especially useful for racks: you can build a single unifie
 
 ## Moving On
 
-For more on building racks and exposing their controls, see the Racks, Macros and Modifiers chapters.
+For more on building racks and exposing their controls, see [Plugin Racks](racks.md) (including its Macro Parameters section) and [Modifiers](modifiers.md).

@@ -19,16 +19,17 @@ The quickest way to get something playable is to start from one of the
 built-in templates. These include demo songs as well as ready-to-use
 starting points for new projects.
 
-Open the **Welcome** tab and look at the **Templates** list. Each entry
-is a complete project you can open with a single click.
+Open the **Welcome** tab and look at the **Project Templates** list. Each entry
+is a complete project you can use as the starting point for a new one.
 
 ![](images/templates-list@2x.png)
 
-*The Templates List in the Welcome Tab*
+*The Project Templates List in the Welcome Tab*
 
-Click a template to create a new project from it. Waveform copies the
-template into your Active Projects and opens the new Edit, leaving the
-original template untouched so you can reuse it as often as you like.
+Click a template to open the **New Project** dialog with that template
+chosen. Give the project a **Name**, pick a **Location** and click
+**Create Project**. The original template is left untouched, so you can
+reuse it as often as you like.
 
 > 💡 **Tip:** If you'd rather keep the template's track and plugin layout
 but start with an empty arrangement, enable **Remove clips when loading

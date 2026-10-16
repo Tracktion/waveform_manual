@@ -15,9 +15,16 @@ to load the default key-mappings.
 
 ## The Parts of a Waveform Edit
 
-The Edit tab is made up of four main parts: The Browser, the
-Arrangement, the Mixer, and the transport bar. The Browser also hosts
-the Actions panel.
+The Edit tab is made up of several panels: the Browser, the Arrangement
+(with an inline mixer beside each track), the Actions panel, the Detail
+editor, the Mixer panel and the transport bar. All of them except the
+transport bar can be shown or hidden from the View menu.
+
+The Detail editor sits at the bottom of the Edit and shows the selected
+clip, track or plugins in more detail (*View > Show Content Editor*). See
+[The Detail Editor](detail-editor.md). The Mixer panel shows every track
+as a vertical channel strip (*View > Show Mixer*, or M). See
+[The Mixer Panel](#the-mixer-panel) below.
 
 
 ![](images/08----03@2x.png)
@@ -26,14 +33,15 @@ the Actions panel.
 
 ## The Browser
 
-The Waveform Browser resides along the left side of the Edit. You can
-open or close it by clicking its icon or by pressing B. The Browser
-includes a collection of tabs, giving you quick access to actions,
-media, plugins, tracks, and markers.
+The Waveform Browser sits on the right side of the Edit by default. You
+can open or close it by pressing B, by choosing *View > Show Browser*,
+or by clicking the eye button at the top right of the window and then
+clicking the Browser block. The Browser includes a collection of tabs,
+giving you quick access to actions, media, plugins, tracks, and markers.
 
-> 💡 **Tip:** Starting with T7 and higher , you can move the Browser to the
-top or right side of the Edit, by dragging its icon to the appropriate
-edge of the screen.
+> 💡 **Tip:** You can dock the Browser on the left, right or top of the
+Edit. Click the eye button at the top right of the window, then drag the
+Browser block in the pop-out to the left, right or top edge.
 
 
 ![](images/08----01.png)
@@ -65,37 +73,44 @@ Groups
     create and manage them. See [Edit Mix Groups](edit-mix-groups.md).
 
 Tracks
-- Use the Tracks tab to filter tracks in the arrangement by tag.
-    First, you need to tag them by selecting one or more tracks and
-    setting tags in properties.
+- The Tracks tab lists the tracks in the Edit, each with **Hide** and
+    **Disable** buttons. To tag tracks, select them and fill in **Tags**
+    in the Actions panel. The **Tags** box below the list shows the tags
+    in use; click the ones you want, then turn on **Show Only Tagged
+    Tracks** to filter the arrangement down to the tracks with those
+    tags.
 
 Markers
 - Use the Markers tab to add bars & beats or timecode markers to the
     Marker track. Navigate to any marker by clicking on the
     marker name. You can also quickly delete the selected marker, change
-    its name or marker type in properties.
-
-Assistant
-- (Waveform 14) The Assistant tab hosts the AI Assistant, a chat
-    panel where you can make natural-language requests. It appears once
-    you enable it on the Settings tab under AI.
+    its name or marker type in the Actions panel.
 
 Plugin
-- (Waveform 14) The Plugin tab hosts a single plugin running live on the
-    Edit's main output. It's handy for a tuner, analyser, or other tool you
-    want always on hand. Enable it on the Settings tab under Plugins. See
+- The Plugin tab hosts a single plugin running live on the Edit's main
+    output. It's handy for a tuner, analyser, or other tool you want
+    always on hand. It is shown by default; to remove it, turn off
+    *Settings > Plugins > Show Plugin panel in browser* (the change takes
+    effect the next time you open an Edit). See
     [The Plugin Side Panel](plugin-side-panel.md).
+
+Assistant
+- The Assistant tab hosts the AI Assistant, a chat panel where you can
+    make natural-language requests. It is shown by default; to hide it,
+    turn off *Settings > AI > Enable AI Assistant*. See
+    [The AI Assistant](ai-assistant.md).
 
 For much more about the Browser check out [The Browser](browser.md).
 
-> 💡 **Tip:** Resize the Browser by dragging the right edge left or right.
+> 💡 **Tip:** Resize the Browser by dragging its inner edge (the one
+facing the arrangement).
 This is particularly helpful when working with the Search tab, which has
 numerous search columns that might be hidden.
 
 ## The Arrangement
 
 The Arrangement is made up of the Timeline, Track Headers & Inputs,
-Tracks, and the Mixer.
+Tracks, and the inline mixer.
 
 
 ![](images/08----05@2x.png)
@@ -136,10 +151,12 @@ Tempo Track
 *Tempo Track*
 
 Marker Track
-- There are actually two marker tracks that can be opened below the
-    Timeline. One is for bars & beats markers, such as song sections.
-    The other is for absolute time in terms of hours:minutes:seconds and
-    milliseconds. Cycle through the options with F10.
+- The Marker track opens below the Timeline. It can show bars & beats
+    markers (such as song sections), absolute markers in terms of
+    hours:minutes:seconds and milliseconds, or both combined. Show or
+    hide it with F10. The *Cycle Marker track view mode* command steps
+    through the combined, bars & beats, absolute and hidden views; it
+    has no default key.
 
 
 ![](images/08----08.png)
@@ -167,38 +184,52 @@ The Plugin Object
     Plugins](using-plugins.md) for much more about inserting and using
     plugins.
 
-Show/Hide Buttons
+Show/Hide Panels
 - Several areas of the Edit tab can be opened for use or closed to
-    declutter the screen. Here are the buttons to control those filled
-    by the corresponding keyboard shortcuts.
+    declutter the screen. Click the eye button at the top right of the
+    window to open a small map of the window, then click a block to
+    show or hide that part: the Overview, Arranger, Tempo, Marker, Chord
+    and Master tracks, the track inputs, the inline mixer, the
+    Arrangement, the MIDI editor, the Mixer, the Browser, Quick Actions
+    and the Actions panel. Some blocks only appear in editions that
+    include those features. Right-click the eye button for the View
+    menu, which has the same options. These are the default keyboard
+    shortcuts:
 
 
 ![](images/08----10.png)
 
 *Show Hide Buttons. A, Show/Hide the Tempo track. B, Show/Hide the Inputs. C, Show/Hide the Mixer, D, Show/Hide the Actions panel, E, Show/Hide the Marker Track*
-track. B, Show/Hide the Inputs. C, Show/Hide the Mixer, D, Show/Hide the
 
 -   Show/Hide Tempo Track (F9)
 -   Show/Hide Marker Track (F10)
 -   Show/Hide Inputs Section (Shift + F12)
--   Show/Hide Mixer Section (M)
--   Show/Hide Actions panel (F11)
+-   Show/Hide Inline mixer (V)
+-   Show/Hide Mixer panel (M)
+-   Show/Hide Browser (B)
+-   Show/Hide plugins, Browser and Actions panel (Shift + F11)
+
+The Actions panel has no default key. Use the Actions panel button at
+the left of the transport bar or *View > Show Actions*.
+Opt + F11 / Alt + F11 locks the Actions panel to the current selection.
 
 ## The Track Section
 
 Tracks appears as parallel lanes that contain and organize clips of
 audio and MIDI. Signal flow follows from left to right from Inputs, to
 Clips for recording, to the Mixer and any plugins it uses, then on to
-the master output. There is really only one kind of track in Waveform.
-Tracks can hold any kind of clip: Audio clips, MIDI clips, Step clips,
-or Edit clips. To create a new Track, press T.
+the master output. Ordinary tracks can hold any kind of clip: Audio
+clips, MIDI clips, Step clips, or Edit clips. To create a new Track,
+press T. Waveform also has [folder tracks](folder-tracks.md) and
+[submix tracks](submix-tracks.md) for grouping tracks, and
+[automation tracks](automation.md) for automation curves.
 
 Track Headers
 - The leftmost column of the Arrangement forms a list of track
     headers. Select a track by clicking directly on the track name
-    within the header. Additional track properties including the Name
-    became available in properties. To rename a Track, edit the
-    *name* property. Tracks can be reordered by grabbing any track from
+    within the header. Additional track properties appear in the
+    Actions panel. To rename a Track, right-click the track header and
+    choose **Rename track**. Tracks can be reordered by grabbing any track from
     the header and dragging it to a new location.
 
 
@@ -210,7 +241,7 @@ Inputs
 - Inputs appear as right facing rectangular arrows. Click on an input
     for a menu of options that includes a selection of available inputs.
     Use the menu to set up a track for recording. Additional input
-    options are available in properties. You can even drag an input to
+    options are available in the Actions panel. You can even drag an input to
     another track to continue recording.
 
 
@@ -227,8 +258,8 @@ You can drag in audio files and loops to build your Edit, or record them
 directly. The same goes for MIDI clips. Step clips are a unique in-line
 step sequencer. Step clips are variation on MIDI Clips. While Edit clips
 allow you embed an entirely different Edit into your song as single
-clip. Selection an of the kinds of clips to access more properties and
-actions in properties.
+clip. Select any kind of clip to see more properties and actions in the
+Actions panel.
 
 Audio Clips
 - Audio clips are created during recording or can be dragged in from
@@ -236,10 +267,10 @@ Audio Clips
     Waveform arrangement. Waveform gives you a rich set of tools to work
     with Audio clips to split them, combine them, reverse them, or
     change the pitch, timing, or speed. You can also edit Audio clips
-    with Melodyne to adjust the intonation of recorded notes. T7 gives
-    you Clip Layer Effects for even more options to manipulate audio
-    clips. See [Clip Layer Effects](clip-layer-effects.md) to learn
-    about this new type of audio processing.
+    with Melodyne to adjust the intonation of recorded notes. Clip Layer
+    Effects give you even more options to manipulate audio clips. See
+    [Clip Layer Effects](clip-layer-effects.md) to learn about this type
+    of audio processing.
 
 
 ![](images/08----13.png)
@@ -295,15 +326,11 @@ to manage the link to the underlying Edit.
 
 *Edit clip properties*
 
-## The Mixer
+## The Inline Mixer
 
-![](images/Mixer@2x.png)
-
-*The Mixer, with a channel strip for every track.*
-
-Waveform's default Mixer view is one of it's unique, defining features.
+Each track has an inline mixer next to its clips in the arrangement.
 For each track, signal flows from left to right - Input to Track, Track
-to Mixer, Mixer to Master. The Mixer is where you arrange plugins to
+to Mixer, Mixer to Master. The inline mixer is where you arrange plugins to
 create whatever channel strip you need for the track. If you have MIDI
 clips on the track then insert virtual instrument as a sound source. If
 you need to EQ a vocal, drop in an EQ.
@@ -321,27 +348,29 @@ Volume & Pan Plugin
 - This acts as like the channel fader and pan controls on a
     conventional mixer. When you click either element, a larger version
     pops up allowing you to easily adjust level or panning. When
-    selected, the full set of properties appear in properties.
+    selected, the full set of properties appears in the Actions panel.
 
 Level Meter Plugin
 - The level meter shows the level of audio on the track. You can add
     additional instances or put the meter anywhere in the track using
     drag and drop. You can change the meter response between Peak, RMS,
-    and Sum & difference from the right-click menu or from properties.
+    and Sum & difference from the right-click menu or from the Actions
+    panel.
 
 Mute
-- The *Mute* button mutes and un-mutes the track. You can also mute by
-    selecting a plugin and then right-click. The keyboard shortcut for
-    mute is Shift + M.
+- The *Mute* button mutes and un-mutes the track. Right-click the
+    *Mute* or *Solo* button for *Mute*, *Solo* and *Solo isolate*. The
+    keyboard shortcut for mute is Shift + M.
 
 Solo
 - The *Solo* button silences all other tracks so you can hear one
-    track at a time. *Settings > General > Solo Behavior*
-    allows you to customize exactly how *Solo* works. Choose from
-    *Cumulative* or *Exclusive* modes. From the right-click menu you can
-    choose *Solo Isolate* which allows the track to continue to play if
-    another track is soloed. This is particularly useful if a track is
-    configured as an effects bus.
+    track at a time. **Solo behaviour** in `Settings > General`
+    (Mixing Defaults section) sets how *Solo* works when several tracks
+    are soloed (Choices: Cumulative solo, Exclusive solo; Default:
+    Cumulative solo). The keyboard shortcut for solo is Shift + S. From
+    the right-click menu you can choose *Solo isolate* which allows the
+    track to continue to play if another track is soloed. This is
+    particularly useful if a track is configured as an effects bus.
 
 > 💡 **Tip:** Right-click on either *Mute* or *Solo* to access a menu. From
 here you can reset all the solo and mute states for all tracks.
@@ -351,21 +380,28 @@ here you can reset all the solo and mute states for all tracks.
 
 *Mute/Solo Right-Click Menu*
 
-Note that starting with Waveform version 8, there is also an alternative
-"traditional" mixer view available, that displays the mixer channels
-vertically as seen on a real-world, hardware mixer. To use this mixer
-view instead, click on the *show/hide mixer panel* button in the upper
-right corner of the Waveform interface.Further details of the mixer
-panel will be included in a future review of the user's manual.
+## The Mixer Panel
+
+![](images/Mixer@2x.png)
+
+*The Mixer, with a channel strip for every track.*
+
+The Mixer panel displays every track as a vertical channel strip, as
+seen on a real-world, hardware mixer. Open it with M, with
+*View > Show Mixer*, or by clicking the Mixer block in the eye button's
+pop-out at the top right of the window. Tab switches between the
+Arrangement and the Mixer. The clip launcher grid shown above the strips
+needs Waveform Pro or the Launcher Expansion; see
+[Clip Launcher](clip-launcher.md).
 
 ## Menus
 
-A full set of menus related to the Edit are available in the menu bar at
-the top of the window. Of particular importance are the Export, Click
-Track, Snapping, and Options menus. In this manual, we make numerous
-references to these menus using a path syntax separated by
-"greater-than" symbols. For example, "to set a one bar count-in choose
-*Click Track > Pre-record count-in length > Use a 1 bar count-in.*"
+A full set of menus related to the Edit is available: File, Edit,
+Options, Automation, Click, Snap, Sync, Track, Video, View, Help and
+Actions. On macOS they are in the menu bar at the top of the screen; on
+Windows and Linux they are at the top of the window. This manual refers
+to these menus using a path syntax separated by "greater-than" symbols.
+For example, to set a one bar count-in, choose *Click > Count-in > 1 bar*.
 
 
 ![](images/08----19.png)
@@ -391,9 +427,8 @@ Browser.
 ## The Transport Bar
 
 The transport bar runs along the bottom of the window and contains
-cursor position information, the Transport, the master volume control,
-and a set of global control buttons. Final master plugins live on the
-master track or in the mixer's master channel.
+cursor position information, the Transport, the master plugins, the
+master volume control, and a set of global control buttons.
 
 
 ![](images/08----21.png)
@@ -401,31 +436,39 @@ master track or in the mixer's master channel.
 *The Transport Bar*
 
 Cursor Position Info
-- At one end of the transport bar, you will notice three key pieces
-    of information about the current cursor position: The tempo, the
-    time signature, and the location counter.
+- At one end of the transport bar, a readout shows the tempo, time
+    signature and key/scale at the cursor position, next to two clocks
+    that show the location.
 
--   Click the tempo display to see tempo properties.
--   Click the time signature for time signature properties.
--   Click and edit any of part of the location counter to move the
-    cursor to that location.
+-   Click the tempo to type a new BPM (20-300), or drag it to change the
+    tempo.
+-   Click the time signature or the key to open their actions.
+-   Click and edit any part of a clock to move the cursor to that
+    location.
 
-You can also drag any of the components of the location up and down to
-move the cursor. The location counter format will change to match what
-you have set for the Timeline.
+You can also drag any of the components of a clock up and down to
+move the cursor. The upper clock matches the format you have set for
+the Timeline. The lower clock shows seconds when the Timeline shows bars
+and beats, and bars and beats otherwise.
 
 The Transport
-- The Transport is made up of a set of eight buttons that include all
-    the usual suspects: *Play/Stop, Record, RTZ, Rewind,* and *Fast
-    Forward.* In addition, there are buttons for *Automation Read,
-    Automation Write,* and *Panic.* The *Panic* button restarts
-    Waveform's audio engine. All of these can be assigned to keyboard
-    shortcuts for fast access.
+- The Transport is made up of nine buttons: *Read* and *Write*
+    (automation read and write modes), *Play*, *Record*, *Panic*,
+    *Rewind* (back to the start of the Edit), *Back*, *Forward* and
+    *Retrospective Record*, which creates clips from previously captured
+    audio and MIDI input. The *Panic* button resets Waveform's audio
+    engine. While you are recording, *Abort* and *Abort & Restart*
+    appear in the lower row. All of these can be assigned to keyboard
+    shortcuts for fast access. See [Recording Audio](recording-audio.md).
 
 Master Plugins
-- Final processing like compression and limiting goes on the master
-    track or the mixer's master channel. Drag plugins from the Browser
-    or the Plugin object onto the master, or right-click to add them.
+- The master plugins slot holds up to four plugins for final
+    processing like compression and limiting. Drop plugins from the
+    Browser or the Plugin object into it, or right-click it to add one.
+    It is the same plugin chain as the master track. To hide the master
+    plugins, master volume and meter from the transport bar, turn off
+    *Settings > Appearance > Show master plugins in transport bar*.
+    (Default: on)
 
 Transport Bar Buttons
 - The transport bar includes eight buttons to access commonly used
@@ -471,8 +514,8 @@ Punch
 Snap
 - *Snap* (Q) button turns snap-to-grid on and off.
 
-Scroll
-- With *Scroll* (S) turned on, Waveform pans the screen to keep the
+Autoscroll
+- With *Autoscroll* (S) turned on, Waveform pans the screen to keep the
     cursor on screen during playback and recording.
 
 MIDI Learn

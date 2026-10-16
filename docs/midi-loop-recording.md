@@ -10,12 +10,12 @@ can do with audio.
 
 ## Loop Recording in Merge Mode
 
-In the last chapter you learned about MIDI merge mode. Here are the
+In [MIDI Recording](midi-recording.md) you learned about MIDI merge mode. Here are the
 steps again:
 
 1.  To put your track into MIDI merge mode, click on the track input,
-    then in properties set *Action* to *Merge newly recorded MIDI into
-    any existing clip*.
+    then in the Actions panel set *Action* to *Merge newly recorded MIDI
+    into any existing clips*.
 
 
 ![](images/24----01.png)
@@ -63,7 +63,7 @@ tools to select the best phases from the various takes.
 
 To prepare to comp with a MIDI recording, leave everything set up the
 same way as for merge mode, but change the *Action* parameter to
-*Overlay new clips containing newly recorded MIDI*.
+*Overlay new clips, containing newly recorded MIDI*.
 
 
 ![](images/24----05.png)
@@ -78,8 +78,8 @@ loop pass, just like in audio loop recording.
 
 ## Comping MIDI Takes
 
-To see the takes, click the plus icon in the lower right corner of the
-MIDI clip; You'll see a list of all your takes. From here, you can
+To see the takes, click the takes button (+) in the lower right corner
+of the MIDI clip. The menu lists all your takes. From here, you can
 choose the best take from the list and that will make it active.
 
 
@@ -88,7 +88,7 @@ choose the best take from the list and that will make it active.
 *Takes Following Loop Recording*
 
 You can also expand the view to show all the takes below the track.
-Click the plus icon and select, *Show takes*.
+Click the takes button (+) and choose *Show takes*.
 
 
 ![](images/24----07.png)

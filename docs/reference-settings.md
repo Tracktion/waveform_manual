@@ -37,11 +37,11 @@ Several other languages are available. They're contributed and maintained by use
 
 > 💡 **Tip:** You don't have to come back here to move the Browser. Inside an Edit you can drag its tab within the "eye" show/hide selector in the upper right to reposition it on the fly.
 
-**Panels open side-by-side**: When enabled, you can open two or more panels next to each other; when disabled, panels stack on top of one another instead. Leaving this on suits most setups. (Default: disabled)
+**Panels open side-by-side**: When enabled, you can open two or more panels next to each other; when disabled, panels stack on top of one another instead. (Default: disabled)
 
 **Automatically hide and show panels**: When enabled, the Browser and Actions panels stay hidden to give you more screen space, and pop open automatically as your mouse pointer approaches the edge of the window. (Default: enabled)
 
-> 💡 **Tip:** Another option is to turn this off and use keyboard shortcuts to open and close the panels instead: F11 for the Actions panel and B for the Browser.
+> 💡 **Tip:** Another option is to turn this off and use keyboard shortcuts to open and close the panels instead: Shift + F11 shows or hides all the panels, and B shows or hides the Browser. The Actions panel has its own show/hide command, which you can give a key in Keyboard Shortcuts.
 
 ### Clips
 
@@ -69,13 +69,11 @@ Several other languages are available. They're contributed and maintained by use
 
 **Double-click track header to toggle height** (Choices: Small and medium, Small and large, Small, medium, and large): Sets which heights you cycle through when you double-click a track header. (Default: Small and medium)
 
-**Show track outputs**: Adds a speaker icon to the right of each track's Mute and Solo buttons; click it to set the track's hardware or virtual output. Even with this off, the output assignment is still reachable from the plugins section whenever a track is tall enough. This option just makes it available on narrow tracks too, so leaving it off is fine for most setups. (Default: enabled)
+**Show track outputs**: Adds a speaker icon to the right of each track's Mute and Solo buttons; click it to set the track's hardware or virtual output. Even with this off, the output assignment is still reachable from the plugins section whenever a track is tall enough. This option just makes it available on narrow tracks too. Turn it off if you don't need output buttons on narrow tracks. (Default: enabled)
 
 **Loop markers extend over tracks**: When enabled, loop markers run the full height of the arrange area rather than sitting in a single strip. (Default: disabled)
 
 **Show master plugins in transport bar**: When enabled, the transport bar shows the master volume, plugins, and meters. (Default: enabled)
-
-> 📝 **Note:** This option only appears if your edition of Waveform includes the master track.
 
 ### MIDI Note Colour
 
@@ -108,13 +106,13 @@ This page is where you choose your audio interface, set the sample rate and buff
 ![](images/settings_audio_devices@2x.png)
 *Settings > Audio Devices*
 
-The page has three parts: a stack of settings at the top, lists of input and output channel groups below, and a tall **Channels** panel on the right that shows extra options for whichever input row you've selected.
+The page has three parts: a stack of settings at the top, lists of input and output channel groups below, and a tall settings pane on the right that shows the options for whichever input or output row you've selected.
 
 ### Audio I/O Devices
 
 These controls sit at the top of the page and cover the big-picture setup: which driver, which device, what rate, and how big a buffer.
 
-**Driver type** (Choices depend on your system, e.g. CoreAudio, ASIO, DirectSound, Windows Audio): picks the audio driver technology Waveform talks to. This control only appears when more than one driver type is available on your machine. On macOS you'll usually have a single type and won't see this at all.
+**Device type** (Choices depend on your system, e.g. CoreAudio, ASIO, DirectSound, Windows Audio): picks the audio driver technology Waveform talks to. This control only appears when more than one device type is available on your machine. On macOS you'll usually have a single type and won't see this at all.
 
 > 💡 **Tip:** On Windows, if your interface came with an ASIO driver, choose ASIO here. It generally gives you the lowest latency and the most reliable buffer sizes.
 
@@ -130,15 +128,17 @@ These controls sit at the top of the page and cover the big-picture setup: which
 
 > 💡 **Tip:** A common approach is to keep the buffer small while tracking so you can monitor without noticeable delay, then bump it up for mixing once the CPU is busy with plugins.
 
-**Clip audio output to 0dB**: clips Waveform's master output so it can't exceed 0dB, which protects your speakers and ears from accidental overloads. It's a safety net, not a mastering tool. (Default: off.)
+**Clip audio output to 0dB**: clips Waveform's master output so it can't exceed 0dB, which protects your speakers and ears from accidental overloads. It's a safety net, not a mastering tool. (Default: on.)
 
 #### Driver buttons
 
-Depending on your driver, a couple of extra buttons appear in this section:
+When the current device offers its own control panel (most common with ASIO interfaces), two extra buttons appear side by side. Neither appears for devices without one.
 
-**Show audio device control panel**: opens your audio driver's own settings window (most common with ASIO interfaces). This only appears if the current device provides one. After you close that window, Waveform reopens the device so any changes take effect.
+**Control Panel**: opens your audio driver's own settings window. After you close that window, Waveform reopens the device so any changes take effect.
 
-**Reset audio device**: closes and reopens the current audio device. This is the first thing to try if your interface stops passing audio or gets into a confused state. Like the control-panel button, it only appears when the device supports it.
+**Reset Device**: closes and reopens the current audio device. This is the first thing to try if your interface stops passing audio or gets into a confused state.
+
+These two buttons are always shown, whatever the device:
 
 **Reset Input Device Properties**: resets your input devices back to their default settings. You'll get a confirmation prompt first.
 
@@ -154,11 +154,11 @@ Each row has the same set of controls:
 
 **Default / (Make default)**: marks this input as the default recording source. The current default reads **Default**; the others read **(Make default)**, and clicking one promotes it.
 
-**Channels**: opens a menu for choosing how the physical channels are grouped. You can pick **Mono**, **Stereo**, or a larger layout (3, 4, 5, 5.1 Surround, 7, 7.1 Surround, 14 channels, and more under **Other**). There are also shortcuts to **Set all to mono channels** or **Set all to stereo pairs**, which apply that layout across every input at once.
+**Channels**: opens a menu for choosing how the physical channels are grouped. Every edition offers **Mono** and **Stereo**. With Waveform Pro or the Surround Expansion, the menu also offers larger layouts (3, 4, 5, 5.1 Surround, 7, 7.1 Surround, 14 channels, and more under **Other**), plus shortcuts to **Set all to mono channels** or **Set all to stereo pairs**, which apply that layout across every input (or every output) at once.
 
 **Level meter**: the bar on the right of each enabled row shows incoming signal so you can confirm audio is arriving and gauge how hot it is.
 
-Clicking anywhere on a row selects that input and fills the **Channels** panel on the right with its full settings (described below).
+Clicking anywhere on a row selects that input and fills the settings pane on the right with its full settings (described below).
 
 > 📝 **Note:** The row shows the device's name, and if you've given it an alias, the alias appears next to the name in quotes.
 
@@ -170,9 +170,9 @@ Outputs are listed the same way as inputs, with one addition.
 
 **Test**: plays a short test tone through that output so you can confirm it's wired up and audible. This button only appears on enabled output rows.
 
-### The Channels panel (selected input settings)
+### Selected device settings
 
-When you select an input row, the panel on the right shows everything about that one input. These settings apply to recording from that input, and (unless you've turned linking off) can be shared across all your inputs at once. There's no equivalent panel for outputs.
+When you select an input row, the settings pane on the right shows everything about that one input. These settings apply to recording from that input, and (unless you've turned linking off) can be shared across all your inputs at once. Selecting an output row shows that output's own settings in the same pane.
 
 **Channels**: at the top, this repeats the channel grouping for the selected input, so you can change the layout from here too.
 
@@ -224,9 +224,9 @@ If the test can't find the signal, it'll tell you so. That usually means the loo
 
 - **Disabled inputs and outputs disappear from the rest of Waveform.** If a device isn't showing up as a recording source or playback destination, check that its row reads **Enabled** here first.
 
-- **(Windows) The Microsoft GS Wavetable synth can cause trouble.** If that MIDI device is enabled, Waveform warns you when you open this page, because it can interfere with some audio drivers. If your audio device won't open, try disabling the Microsoft synth. See the MIDI Devices chapter.
+- **(Windows) The Microsoft GS Wavetable synth can cause trouble.** If that MIDI device is enabled, Waveform warns you when you open this page, because it can interfere with some audio drivers. If your audio device won't open, try disabling the Microsoft synth. See [MIDI Devices](#midi-devices).
 
-See the Settings overview chapter for how to reach this page, and the MIDI Devices chapter for configuring MIDI inputs and outputs.
+See [MIDI Devices](#midi-devices) for configuring MIDI inputs and outputs.
 
 ## Chords
 
@@ -518,11 +518,11 @@ The formats shown depend on your platform and which plugin types your build of W
 
 This section only appears if your installation supports feature extension packs (such as stem separation).
 
-**Feature extension packs folder**: Shows the folder where installed extension packs live. Clicking the folder button gives you a **Reveal folder** option that opens that location in your file browser.
+**Folder**: Shows the folder where installed feature extension packs live. Clicking the folder button gives you a **Reveal folder** option that opens that location in your file browser.
 
-**Installed feature extensions**: A read-only list of the extensions you currently have installed.
+**Installed**: A read-only list of the feature extensions you currently have installed.
 
-**Content pack**: Click this button to install a content pack manually. It opens a file chooser filtered to content pack files (`.content` and `.zip`), and installs the one you select.
+**Content pack**: Click the **Install from file...** button to install a content pack manually. It opens a file chooser filtered to content pack files (`.content` and `.zip`), and installs the one you select.
 
 ### ⚡ Things to Watch Out For
 
@@ -550,7 +550,7 @@ Changes take effect immediately. Many of these are *defaults*: they affect thing
 
 **Upon launch reload edits**: When on, Waveform reopens the Edit tabs you had open last session. (Default: on)
 
-**Upon launch** (Choices: Go to the Projects tab, Go to the Settings tab, Go to the last viewed tab, Go to the welcome tab): Which tab Waveform shows right after it starts. The welcome tab option only appears if your edition includes it. (Default: Go to the welcome tab when available, otherwise Go to the Projects tab)
+**Upon launch** (Choices: Go to the Projects tab, Go to the Settings tab, Go to the last viewed tab, Go to the welcome tab): Which tab Waveform shows right after it starts. (Default: Go to the welcome tab)
 
 ### Editing
 
@@ -560,11 +560,11 @@ Changes take effect immediately. Many of these are *defaults*: they affect thing
 
 **Default marker type** (Choices: Bars & Beats, Absolute timecode, Automatic): The marker type used when you insert a new marker. (Default: Bars & Beats)
 
-**Default timecode format for new projects** (Choices: Bars & Beats, Seconds, Frames 24 fps, Frames 25 fps, Frames 30 fps): The timeline format new projects start with. (Default: Bars & Beats)
+**Default timeline format for new projects** (Choices: Bars & Beats, Seconds, Frames 24 fps, Frames 25 fps, Frames 30 fps): The timeline format new projects start with. (Default: Bars & Beats)
 
-**Enable separate edit cursor**: Adds a second cursor that follows your mouse. Editing, zooming and pasting then act on this edit cursor instead of the playback cursor, so you don't have to keep moving the playhead for simple edits. (Default: off)
+**Enable separate edit cursor**: Adds a second cursor that follows your mouse. Editing, zooming and pasting then act on this edit cursor instead of the playback cursor, so you don't have to keep moving the playhead for simple edits. (Default: on)
 
-**Paste at edit cursor**: Makes paste operations happen at the edit cursor rather than after the source clip, giving you more control over where pasted clips land. This option only appears when **Enable separate edit cursor** is on.
+**Paste at edit cursor**: Makes paste operations happen at the edit cursor rather than after the source clip, giving you more control over where pasted clips land. This option only appears when **Enable separate edit cursor** is on. (Default: off)
 
 **Make new clips the length of the marked region**: When on, newly created clips take the size of the current marked region. (Default: off)
 
@@ -572,7 +572,7 @@ Changes take effect immediately. Many of these are *defaults*: they affect thing
 
 **Tempo change remapping** (button: Remap audio clips, Remap auto-tempo audio clips, Remap MIDI clips, Remap plugin automation): Click **Set defaults** to open a menu of toggles. Remapping stretches clip lengths and moves clips when the tempo changes so they stay in sync with the timebase. These switches let you decide exactly which clip types and plugin automation are allowed to remap.
 
-**Create fades on clip edges**: Automatically adds a tiny fade in/out to new clips to avoid clicks at their edges. (Default: on)
+**Create fades on clip edges**: Automatically adds a tiny fade in/out to new clips to avoid clicks at their edges. (Default: off)
 
 **Audio clips use proxy files by default**: Controls whether newly added clips render a proxy file or timestretch in real time. Real-time timestretching uses more CPU but avoids the proxy render. Only appears if your edition supports real-time timestretching. (Default: on, i.e. use proxy files)
 
@@ -590,17 +590,17 @@ Changes take effect immediately. Many of these are *defaults*: they affect thing
 
 **Peak hold** (Choices: 2 seconds, 10 seconds, Until cleared): How long meters keep the peak level lit after a hit. (Default: 2 seconds)
 
-> 💡 **Tip:** In "Until cleared" mode, meters hold the highest peak indefinitely. Use the "Clear all meter peaks" keyboard shortcut to reset them.
+> 💡 **Tip:** In "Until cleared" mode, meters hold the highest peak indefinitely. Use the "Reset all level meter peak indicators" command (you can give it a key in Keyboard Shortcuts) to reset them.
 
 ### MIDI
 
 **Automatically show MIDI editor toolbar**: Shows the toolbar automatically in the inline MIDI editor. With it off, the toolbar stays hidden until you toggle it (default shortcut Opt + Cmd + T / Alt + Ctrl + T). This only affects the *inline* editor; the toolbar is always visible in the full MIDI editor panel. (Default: on)
 
-**MIDI toolbar position** (Choices: Left side of track, Left side of MIDI clips): Where the MIDI pop-up keyboard and tool selector appear. "Left side of MIDI clips" usually works best, but some people prefer it pinned to the left of the track. (Default: Left side of MIDI clips)
+**MIDI toolbar position** (Choices: Left side of track, Left side of MIDI clips): Where the MIDI pop-up keyboard and tool selector appear: pinned to the left of the track, or next to each MIDI clip. (Default: Left side of track)
 
-**Default MIDI editor vertical scale** (Choices: 2 octaves, 4 octaves, 6 octaves, Full scale): The starting vertical range for MIDI clips. You can always adjust it later by dragging the arrows at the top or bottom of the piano-roll keyboard. (Default: 4 octaves)
+**Default MIDI editor vertical scale** (Choices: 2 octaves, 4 octaves, 6 octaves, Full scale): The starting vertical range for MIDI clips. You can always adjust it later by dragging the arrows at the top or bottom of the piano-roll keyboard. (Default: 2 octaves)
 
-**Double-click MIDI clip header** (Choices: Expands for in-line editing, Opens the MIDI editor, Opens the MIDI editor (in-line editing disabled)): What a double-click on a MIDI clip header does. "Opens the MIDI editor" is the most common choice. The last option lets you avoid the inline editor entirely. (Default: Expands for in-line editing)
+**Double-click MIDI clip header** (Choices: Expands for in-line editing, Opens the MIDI editor, Opens the MIDI editor (in-line editing disabled)): What a double-click on a MIDI clip header does. "Opens the MIDI editor" is the most common choice. The last option lets you avoid the inline editor entirely. (Default: Opens the MIDI editor)
 
 **Set middle C to** (Choices: C3, C4, C5): How MIDI note names are labelled. Best left at the default unless you have a reason to change it. (Default: C4)
 
@@ -610,9 +610,9 @@ Changes take effect immediately. Many of these are *defaults*: they affect thing
 
 **Default pan law** (Choices: Linear, -2.5 dB Center, -3.0 dB Center, -4.5 dB Center, -6.0 dB Center): How left/right panning is balanced. Many classic consoles attenuate the centre to keep perceived loudness steady as you pan. With a linear pan law you may need to nudge the volume after panning. (Default: Linear)
 
-**Auto freeze** (Choices: Manually freeze tracks, Freeze track when a freeze point is created or copied): What triggers track freezing. Freezing renders a track's effects and instruments to free up CPU and reduce latency. (Default: Freeze track when a freeze point is created or copied)
+**Freeze point creation** (Choices: Manually freeze tracks, Freeze track when a freeze point is created or copied): What triggers track freezing. Freezing renders a track's effects and instruments to free up CPU and reduce latency. (Default: Freeze track when a freeze point is created or copied)
 
-**Freeze point** (Choices: Before plugins, Pre-fader, Post-fader): Where the freeze point is inserted in the signal chain when a track is frozen. (Default: Pre-fader)
+**Freeze point insert location** (Choices: Before plugins, Pre-fader, Post-fader): Where the freeze point is inserted in the signal chain when a track is frozen. (Default: Pre-fader)
 
 **Solo behaviour** (Choices: Cumulative solo, Exclusive solo): How multiple soloed tracks interact. With cumulative solo, soloing more tracks adds them to what you hear; with exclusive solo, soloing a track replaces the previous solo. (Default: Cumulative solo)
 
@@ -620,13 +620,13 @@ Changes take effect immediately. Many of these are *defaults*: they affect thing
 
 There are a lot of options here for tuning mouse drag, click and wheel behaviour. Several exist to stay compatible with older versions. A reasonable approach is to start with the defaults, then adjust to taste.
 
-**Allow clips to be resized without using the header buttons**: Lets you resize clips by dragging their edges directly, rather than using the header buttons. Only appears if your edition supports edge dragging. (Default: on)
+**Allow drag from clip edges to resize**: Lets you resize clips by dragging their edges directly, rather than using the header buttons. (Default: on)
 
-**Allow tracks to be resized by dragging over the clip area**: Lets you change track height by dragging within the clip area. (Default: on)
+**Resize tracks over clip area**: Lets you change track height by dragging within the clip area. (Default: on)
 
-**Move the cursor to the mouse position when clicking on track background**: When on, clicking in the arrangement area (including the body of a clip or the empty space between clips) moves the cursor there. Clicking a clip header still selects the clip without moving the cursor. (Default: on)
+**Clicking the background locates the playhead**: When on, clicking in the arrangement area (including the body of a clip or the empty space between clips) moves the playhead there. Clicking a clip header still selects the clip without moving the playhead. (Default: on)
 
-**Timeline drag** (Choices: Drag to scroll view, Drag to locate cursor): What dragging left/right over the timeline does. "Drag to scroll view" pans the whole track view; "Drag to locate cursor" makes the cursor follow your drag. Either way, clicking the timeline positions the cursor. (Default: Drag to scroll view)
+**Timeline drag** (Choices: Drag to scroll view, Drag to locate playhead): What dragging left/right over the timeline does. "Drag to scroll view" pans the whole track view; "Drag to locate playhead" makes the playhead follow your drag. Either way, clicking the timeline positions the playhead. (Default: Drag to scroll view)
 
 **Tracks area drag** (Choices: Drag to draw marked region, Drag to select clips, Drag to move playhead): What a left-drag in the tracks area does.
 
@@ -634,13 +634,13 @@ There are a lot of options here for tuning mouse drag, click and wheel behaviour
 - *Drag to select clips* gives marquee-style clip selection, matching how you select MIDI notes. Hold Shift + Opt / Shift + Alt to draw ranges with the I-beam.
 - *Drag to move playhead* is the legacy Tracktion behaviour: dragging just relocates the cursor.
 
-(Default: Drag to select clips)
+(Default: Drag to draw marked region)
 
 Video Tutorial: [Drag to Draw Marked Region](https://youtu.be/zTrAn9u_B18)
 
-**Tracks area right drag** (Choices: Zoom horizontally, Scroll tracks): What right-button dragging over the tracks area does. (Default: Scroll tracks)
+**Tracks area right drag** (Choices: Zoom horizontally, Scroll tracks): What right-button dragging over the tracks area does. (Default: Zoom horizontally)
 
-**Mouse wheel** (Choices: Zooms horizontally (add shift to scroll), Scrolls the view (add shift to zoom)): The default mouse-wheel action; the modifier swaps it to the other behaviour. (Default: Scrolls the view (add shift to zoom))
+**Wheel** (Choices: Zooms horizontally (add shift to scroll), Scrolls the view (add shift to zoom)): The default mouse-wheel action; the modifier swaps it to the other behaviour. (Default: Zooms horizontally (add shift to scroll))
 
 **Over tracks area** (Choices: Wheel scrolls vertically, Wheel scrolls horizontally): What the wheel does when the pointer is over the tracks area. (Default: Wheel scrolls vertically)
 
@@ -666,7 +666,7 @@ To recover, go to the Projects page, pick a backup file, and click Restore Edit;
 
 **Generate audio preview files automatically**: Creates the audio previews shown with each Edit on the Welcome and Projects tabs, so you can hear what an Edit is before opening it. Generated when you close an Edit. (Default: on)
 
-**When closing an edit** (Choices: Ask to save, Always save): What happens when you close an Edit. Choose "Ask to save" if you'd rather confirm each time. (Default: Always save)
+**When closing an edit** (Choices: Ask to save, Always save): What happens when you close an Edit. Choose "Always save" if you'd rather not be asked each time. (Default: Ask to save)
 
 ### Track Inputs
 
@@ -678,13 +678,13 @@ To recover, go to the Projects page, pick a backup file, and click Restore Edit;
 
 ### ⚡ Things to Watch Out For
 
-- **Some controls only appear in certain editions.** Real-time timestretching, high-quality resampling, multi-input, clip-edge dragging, the welcome tab and the multi-monitor plugin-window option each depend on your Waveform edition, so you may not see all of them.
+- **Some controls only appear in certain editions.** Real-time timestretching, high-quality resampling, multi-input and the multi-monitor plugin-window option need Waveform Pro (some also come with expansions), so you may not see all of them.
 
 ## Keyboard Shortcuts
 
 This page is where you view and customise every keyboard shortcut in Waveform. Every action in the app, from flipping between tabs to inserting a clip, lives here as a command you can search for and bind to whatever key combination feels natural to you.
 
-If you just want to learn the shortcuts that ship with Waveform, head to the **Keyboard Shortcuts** tutorial chapter. This reference page covers the editor panel itself: how to find a command, assign or remove keys, switch between preset key sets, and save your own setup.
+If you just want to learn the shortcuts that ship with Waveform, head to the [Keyboard Shortcuts](keyboard-shortcuts.md) chapter. This reference page covers the editor panel itself: how to find a command, assign or remove keys, switch between preset key sets, and save your own setup.
 
 ![](images/settings_keyboard_shortcuts@2x.png)
 *Settings > Keyboard Shortcuts*
@@ -786,7 +786,7 @@ The status badge tells you exactly where that item stands:
 - **Demo** (green): You're running it on a time-limited trial. The badge also shows roughly how long is left (for example, "Demo 2 weeks").
 - **Expired** (red): The demo period has run out. To keep using it you'll need to buy a license and refresh.
 - **Locked** (red): You don't have a license for this item on this computer yet.
-- **Included** (orange): The feature is bundled with your edition of Waveform, so it's available without a separate license.
+- **Included** (orange): The expansion's features are already part of Waveform Pro, so no separate license is needed. You only see this on feature expansions while running Waveform Pro.
 
 > 📝 **Note:** The status reflects this computer specifically. A license that's unlocked on your studio machine will show as Locked on a laptop until you authorise that laptop too.
 
@@ -814,7 +814,7 @@ After you complete a purchase, come back to Waveform and click **Refresh License
 
 - **You need to log in to refresh.** Refresh Licenses talks to tracktion.com, so you'll need your account credentials and an internet connection. Have those ready before you click.
 
-For related settings, see the General and Maintenance reference chapters, which also touch on authorising and maintaining your installation.
+If you're not running Waveform Pro, the [Upgrade](#upgrade) section of the Maintenance page also lets you register a Pro licence.
 
 ## Maintenance
 
@@ -829,7 +829,7 @@ Despite the name, this page isn't about clearing caches or purging projects. It'
 
 ### Your Waveform Version
 
-The heading at the very top shows your edition and version number, for example "Waveform Pro v14.0.30". If you ever contact support, it's worth quoting this exactly.
+The heading at the very top shows your edition and version number, for example "Waveform Pro v14.x.y". If you ever contact support, it's worth quoting this exactly.
 
 Below the heading is a short explanation of why Tracktion collects data and how it's handled. The key points: everything sent is anonymous and can't be traced back to you, none of it is shared, and data is only sent when Waveform starts up and shuts down, never while you're working. The logging won't slow Waveform down.
 
@@ -859,7 +859,7 @@ If you hit a crash, the advice on this page is simple: report it to support and 
 
 **Show the Log File**: Reveals the log file, which records what Waveform has been doing. Include this in any support query. (On Windows, you're also reminded to attach the crash report.)
 
-**Show the Crash-Reports**: Reveals the crash report files. Include these alongside the log file when you report a crash.
+**Show the Crash Reports**: Reveals the crash report files. Include these alongside the log file when you report a crash.
 
 > 📝 **Note:** The exact buttons you see depend on your platform. The crash report button appears on macOS and Windows. On other systems, only the log file is offered.
 
@@ -869,9 +869,9 @@ If you hit a crash, the advice on this page is simple: report it to support and 
 
 This section only appears if you're not already running a full, registered copy of Waveform Pro, for example if you're on a free edition, an unregistered install, or in demo mode. If you already have Pro, you won't see it at all.
 
-**Unlock Waveform Pro**: If you've bought a Pro licence, this opens the registration dialog so you can enter it and unlock the Pro features.
+**Unlock**: If you've bought a Pro licence, this opens the registration dialog so you can enter it and unlock the Pro features.
 
-**Visit the website to see get a tour of Waveform Pro**: Opens the Tracktion website in your browser so you can see what Pro adds before buying.
+**Upgrade**: Opens the Tracktion website in your browser so you can see what Pro adds before buying.
 
 ## MIDI Devices
 
@@ -888,15 +888,15 @@ To open this page, go to the **Settings** tab and choose **MIDI Devices** from t
 
 These settings sit at the top of the page and apply to all MIDI hardware, not to any one device.
 
-**Auto-scan for new MIDI devices** (Choices: Never, Every 2 seconds, Every 5 seconds, Every 10 seconds, Every 30 seconds): how often Waveform automatically looks for MIDI gear you've plugged in or switched on. More frequent scanning means newly connected devices appear faster, at the cost of a small amount of background work. (Default: Never)
+**Auto-scan for new MIDI devices** (Choices: Never, Every 2 seconds, Every 5 seconds, Every 10 seconds, Every 30 seconds): how often Waveform automatically looks for MIDI gear you've plugged in or switched on. More frequent scanning means newly connected devices appear faster, at the cost of a small amount of background work. If scanning your MIDI ports takes too long, Waveform switches auto-scan off by itself. (Default: Every 4 seconds)
 
-> 💡 **Tip:** If you often hot-plug USB MIDI controllers mid-session, set this to one of the timed intervals so they show up without you having to do anything. If your rig stays the same, leaving it on Never is perfectly fine.
+> 💡 **Tip:** If you often hot-plug USB MIDI controllers mid-session, keep a timed interval so they show up without you having to do anything. If your rig stays the same, you can set it to Never and use **Scan for new MIDI devices now** when you need it.
 
 **Scan for new MIDI devices now**: forces an immediate one-time rescan. Use this when you've just connected something and don't want to wait for the next auto-scan (or you've turned auto-scan off entirely).
 
 **Use computer keyboard for MIDI input**: lets your computer's typing keyboard act as a MIDI input so you can play notes without any hardware attached. (Default: on)
 
-> 📝 **Note:** This option only appears if the feature is available in your edition of Waveform. When it's on, the typing keyboard is treated as a MIDI input source. See the separate Virtual Keyboard section further down for how to actually trigger notes.
+> 📝 **Note:** With this on, turn Caps Lock on to play notes from your typing keyboard.
 
 ### MIDI Input Devices
 
@@ -932,13 +932,11 @@ When you select a device, its settings appear in the pane on the right. The list
 
 **Select MIDI Inputs**: only appears for a virtual input you created. Opens a menu of your physical inputs so you can tick which ones feed into this virtual device.
 
+**Action** (Choices: Merge newly recorded MIDI into any existing clips; Overlay new clips, containing newly recorded MIDI; Replace existing clips with newly recorded MIDI clips; Monitor live input from this device, but don't actually record): what happens to MIDI you record from this device. The last option lets you play through the device live without ever creating a clip. (Default: Merge newly recorded MIDI into any existing clips)
+
 **Active MIDI Channels**: chooses which of the 16 MIDI channels are allowed through. Opens a menu where you can allow all, block all, or toggle individual channels. The current state is summarised as a range (for example "1-4, 8") or as "All channels enabled". (Default: all channels enabled)
 
 **Active MIDI Note Range**: limits which notes pass through. Opens a menu where you can allow all notes or drag sliders to set a start and end note. Useful for splitting a keyboard or ignoring stray low/high keys. (Default: all notes allowed)
-
-**Input Monitoring Mode** (Choices: On, Auto, Off): whether MIDI from this device is passed through into the plugins on its track so you can hear it live. On always monitors, Off never does, and Auto monitors only when it makes sense (for example when the track is armed). (Default: Auto)
-
-**Action** (Choices: Merge newly recorded MIDI into any existing clips; Overlay new clips, containing newly recorded MIDI; Replace existing clips with newly recorded MIDI clips; Monitor live input from this device, but don't actually record): what happens to MIDI you record from this device. The last option lets you play through the device live without ever creating a clip. (Default: Merge newly recorded MIDI into any existing clips)
 
 **Apply Channel**: forces recorded MIDI onto a specific channel (1-16), or leave it as "None" to keep the channels as played. Opens a menu to choose. (Default: None)
 
@@ -958,7 +956,9 @@ When you select a device, its settings appear in the pane on the right. The list
 
 **Allow MIDI Controller Remapping**: when on, controller (CC) messages from this device become available to map onto plugin parameters. Turn it on if you want this device's knobs and faders to control plugins. (Default: off)
 
-**Delete Virtual Device**: only appears for a virtual input you created. Removes it. This button is red because it's destructive; there's no undo for it.
+**Input Monitoring Mode** (Choices: On, Auto, Off): whether MIDI from this device is passed through into the plugins on its track so you can hear it live. On always monitors, Off never does, and Auto monitors only when it makes sense (for example when the track is armed). (Default: Auto)
+
+**Delete**: only appears for a virtual input you created. Removes it. This button is red because it's destructive; there's no undo for it.
 
 **Virtual Keyboard**: a pop-out on-screen piano keyboard for this input. Click the keys to send notes as if they were coming from the real device, which is great for testing or for playing when no hardware is to hand.
 
@@ -980,9 +980,8 @@ When you select a device, its settings appear in the pane on the right. The list
 
 - **Disabled means invisible.** A device that's listed but not enabled won't appear as an option anywhere else in Waveform. If a controller "isn't working", check that its row shows green "Enabled" first.
 - **The default isn't automatic.** Enabling a device doesn't make it the default. If you want Waveform to pick a particular input or output by default, click "(Make default)" on that row.
-- **Auto-scan is off out of the box.** With **Auto-scan for new MIDI devices** set to Never, gear you plug in mid-session won't appear until you press **Scan for new MIDI devices now** or change the auto-scan interval.
 - **Channel and note filters silently drop MIDI.** If notes or whole channels seem to be missing, check **Active MIDI Channels** and **Active MIDI Note Range** for that input, as a filter set earlier may be quietly blocking them.
-- **Deleting a virtual input can't be undone.** The red **Delete Virtual Device** button removes it immediately. Built-in virtual inputs like "All MIDI Ins" can't be deleted, only disabled.
+- **Deleting a virtual input can't be undone.** The red **Delete** button removes it immediately. Built-in virtual inputs like "All MIDI Ins" can't be deleted, only disabled.
 - **Sending Clock or Timecode to the wrong port does nothing useful.** These settings live on each output individually, so make sure you've enabled and configured them on the port that's actually wired to your external gear.
 
 ## Plugins
@@ -1030,7 +1029,7 @@ These settings control how the plugin menu behaves when you add a plugin elsewhe
 
 > ⚠️ **Warning:** Both of these changes require you to quit and restart Waveform before they take effect.
 
-**Enable plugin sandboxing**: Runs plugins in a separate process from the main application, so a misbehaving plugin is less likely to crash Waveform. There is some extra processing overhead, so for best performance leave this off and only turn it on if you have problematic plugins. With it enabled you can choose which plugins to sandbox using the **Sandbox** column in the list. This option only appears on editions that support sandboxing. (Default: disabled)
+**Enable plugin sandboxing**: Runs plugins in a separate process from the main application, so a misbehaving plugin is less likely to crash Waveform. There is some extra processing overhead, so for best performance leave this off and only turn it on if you have problematic plugins. With it enabled you can choose which plugins to sandbox using the **Sandbox** column in the list. (Default: disabled)
 
 > 📝 **Note:** After changing the sandboxing setting, close and reopen any open edits for it to take effect.
 
@@ -1038,14 +1037,14 @@ These settings control how the plugin menu behaves when you add a plugin elsewhe
 
 **Wrap multi out plugins**: When enabled, Waveform asks whether multiple-output plugins should be wrapped in a rack. (Default: enabled)
 
-**Enable Rewire**: Lets Waveform act as a Rewire host so you can stream audio in real time from Rewire-compatible software. Only appears on editions with Rewire support. Turning it on may install the Rewire shared library, and a restart is required for the change to take effect. (Default: disabled)
+**Enable ReWire hosting**: Lets Waveform act as a ReWire host so you can stream audio in real time from ReWire-compatible software. Windows and Intel Macs only; it doesn't appear on Apple Silicon Macs or Linux. Turning it on may install the ReWire shared library, and a restart is required for the change to take effect. (Default: disabled)
 
 ### The Plugin List
 
 The main table lists every registered plugin. Depending on your edition you may see the following columns: an icon, **Disabled**, **Name**, **Image**, **Show**, **Sandbox**, **Format**, **Category**, **Manufacturer**, **Version**, **ARA**, **Alias**, **Tags**, **Updated**, and **Description**.
 
 - Drag the dividers between headers to resize columns, and drag a header to reorder columns. Your layout is remembered.
-- Click a column header to sort by it (Name, Format, Category, Manufacturer, and Updated can be sorted).
+- Click any column header to sort by it.
 - **Show**: Click the tick in this column to include or hide a plugin in the selector menus.
 - **Sandbox**: When sandboxing is on, click here to run that plugin in a separate process.
 - **Image**: A camera icon here means a thumbnail exists; click it to preview the captured image.
@@ -1063,7 +1062,7 @@ Blacklisted plugins (ones that failed to initialise correctly) appear in red at 
 
 ### Scanning for Plugins
 
-**Scan for Plugins...**: Opens a menu of scanning and cleanup options. The exact entries depend on which plugin formats your system supports (for example AudioUnit, VST, VST3, SOUL Patch), so the format names below are examples.
+**Scan for Plugins...**: Opens a menu of scanning and cleanup options. The exact entries depend on which plugin formats your system supports (for example AudioUnit, VST, VST3, LV2, Cmajor), so the format names below are examples.
 
 - **Clear list**: Empties the entire plugin list.
 - **Remove all [format] plug-ins**: Removes every plugin of a given format (one entry per supported format).
@@ -1078,7 +1077,7 @@ Blacklisted plugins (ones that failed to initialise correctly) appear in red at 
 
 ### Validating Plugins
 
-Use these to check whether a plugin behaves correctly. The plugin sandboxing video above covers validation in more detail.
+Use these to check whether a plugin behaves correctly.
 
 **Validate Selected**: Validates the plugin currently selected in the list.
 
@@ -1109,7 +1108,7 @@ The page is divided into sections. Some controls only appear on certain platform
 
 ### Application
 
-**Feature set** (Choices: Best available in Tracktion account, Pro, OEM, Free): Forces Waveform to behave as a particular edition. Leave this on **Best available in Tracktion account** so you get every feature your account unlocks. The other choices exist mainly for testing, letting you preview a different edition without reinstalling or switching accounts. (Default: Best available in Tracktion account)
+**Feature set** (Choices: Best available in Tracktion account, Pro, OEM, Free): Forces Waveform to behave as a particular edition. Leave this on **Best available in Tracktion account** so you get every feature your account unlocks. The other choices exist mainly for testing, letting you preview a different edition without reinstalling or switching accounts. This setting isn't shown on Linux. (Default: Best available in Tracktion account)
 
 > 📝 **Note:** Changing the feature set only takes effect after you restart Waveform. You'll see a prompt reminding you to do so.
 
@@ -1117,7 +1116,7 @@ The page is divided into sections. Some controls only appear on certain platform
 
 These options control how and when audio is processed.
 
-**Process audio tracks when muted**: Keeps muted tracks running through the engine so they respond instantly when you unmute them. Turn this off to claw back some CPU, at the cost of a small delay when muting and unmuting.
+**Process audio tracks when muted**: Keeps muted tracks running through the engine so they respond instantly when you unmute them. Turn it on if you need that, at the cost of some extra CPU. (Default: off)
 
 **Mute track contents whilst recording**: Enables tape-style recording, where the clips on a track go silent while you're recording over them. This control only appears if your edition supports advanced record monitoring.
 
@@ -1191,7 +1190,7 @@ These settings only have any effect once you actually engage low latency mode, w
 
 ### Plugin Processing
 
-**Plugin scanning**: Chooses whether plugins are scanned in a **Separate process** or the **Main process**. Keep it on Separate process so a misbehaving plugin can't take Waveform down with it during a scan. Switch to Main process only as a troubleshooting step. (Default: Separate process)
+**Plugin scanning**: A button showing the current scanning mode, **Separate process** or **Main process**. Click it for a menu with **Use a separate process (recommended)** and **Use the main process**. Keep it on a separate process so a misbehaving plugin can't take Waveform down with it during a scan. Switch to Main process only as a troubleshooting step. (Default: Separate process)
 
 **Number of simultaneous plugin scans**: How many plugins are scanned in parallel. This control only appears when plugin scanning is set to the Main process; with a separate process it's fixed at one. More parallel scans can speed up scanning but are mainly useful for diagnostics. (Default: 1)
 
@@ -1240,29 +1239,29 @@ The three built-in profiles are always present and can't be removed:
 - **Anthropic API**: Anthropic's hosted service, authorised with your own Anthropic API key.
 - **ChatGPT (Codex)**: OpenAI's ChatGPT service, reached through the sign-in already present on this computer from the Codex CLI or the ChatGPT desktop app. There's no key to enter.
 
-**Add Profile**: The **Create New** button asks you for a name and creates a new custom profile, then selects it so you can fill in its settings. Use this for a local LLM server such as LM Studio or Ollama, or for any other service that speaks the OpenAI API.
+**Add Profile**: The **Create New** button asks you for a name and creates a new custom profile, then makes it the active profile so you can fill in its settings. Use this for a local LLM server such as LM Studio or Ollama, or for any other service that speaks the OpenAI API.
 
-**Remove Profile**: The **Remove Permanently** button deletes the selected custom profile after asking you to confirm. It only appears when a custom profile is selected; the three built-ins can't be deleted.
+**Remove Profile**: The **Remove Permanently** button deletes the active custom profile after asking you to confirm. It only appears when a custom profile is active; the three built-ins can't be deleted.
 
-What appears below these buttons depends on which profile is selected.
+What appears below these buttons depends on which profile is active.
 
 #### Built-in profile settings
 
 Each built-in profile shows the one thing it needs from you:
 
-**OpenAI API Key**: The secret key from your OpenAI account. Shown when the **OpenAI API** profile is selected.
+**OpenAI API Key**: The secret key from your OpenAI account. Shown when the **OpenAI API** profile is active.
 
-**Anthropic API Key**: The secret key from your Anthropic account. Shown when the **Anthropic API** profile is selected.
+**Anthropic API Key**: The secret key from your Anthropic account. Shown when the **Anthropic API** profile is active.
 
 The key is a long string you get from the provider's own website; you paste the whole thing into this multi-line box. Each provider's key is stored separately, so a key you entered for one is still there when you switch back to it.
 
-**Codex Sign-in**: Shown when the **ChatGPT (Codex)** profile is selected. This is a read-only status line, not something you fill in: it tells you whether Waveform found a usable ChatGPT sign-in on this computer, and if not, that you need to sign in with the Codex CLI (`codex login`) or the ChatGPT desktop app first.
+**Codex Sign-in**: Shown when the **ChatGPT (Codex)** profile is active. This is a read-only status line, not something you fill in: it tells you whether Waveform found a usable ChatGPT sign-in on this computer, and if not, that you need to sign in with the Codex CLI (`codex login`) or the ChatGPT desktop app first.
 
 > ⚠️ **Warning:** Your API key is what your provider uses to bill you, so treat it like a password. Don't share screenshots of this page, and don't paste your key anywhere public.
 
 #### Custom profile settings
 
-When a profile you added yourself is selected, you get the full set of connection settings instead:
+When a profile you added yourself is active, you get the full set of connection settings instead:
 
 **Profile Name**: The display name for this profile. It's what appears in the **Active Profile** selector, and what prefixes this profile's models in the assistant's model selector.
 
@@ -1315,8 +1314,6 @@ The assistant keeps a few things on disk so it can remember details between sess
 > 💡 **Tip:** These buttons are handy when you want to inspect or hand-edit what the assistant remembers, or when you want to add your own commands and skills rather than relying only on the built-in ones.
 
 ### ⚡ Things to Watch Out For
-
-- **The Active Profile is the one that's actually used.** The rest of the page changes to show the selected profile's settings, so it's easy to fill in a profile and then leave a different one active. Check the **Active Profile** row is the one you intend before you go looking for problems elsewhere.
 
 - **Keys are stored unencrypted.** Every key on this page, built-in or custom, is saved as plain text in the Waveform settings file. Treat it as you would any password kept in a config file, and be careful about sharing screenshots of this page.
 

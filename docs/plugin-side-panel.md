@@ -7,19 +7,19 @@ Because the plugin lives in the side panel rather than on a track, it stays put 
 ![](images/plugin_panel_1@2x.png)
 *The Plugin panel hosting a plugin's editor in the side panel*
 
-> 📝 **Note:** The Plugin panel is available in Waveform 14 and later, in all editions.
+> 📝 **Note:** The Plugin panel is available in every edition.
 
 ## How to Access It
 
 The Plugin panel appears as a tab in the left-hand Browser, next to Actions, Files, Search, Markers, and the rest. Open the Browser and click the **Plugin** tab to show it.
 
-The tab only appears if it's enabled. Open the Settings tab, go to the **Plugins** page, and turn on *Shows the Plugin panel in the side panel list*. This takes effect the next time you open an Edit.
+The tab is shown by default. To hide it, open the Settings tab, go to the **Plugins** page, and turn off *Show Plugin panel in browser*. This takes effect the next time you open an Edit.
 
 Before a plugin can be chosen in the panel, it has to be flagged for it. On the same Plugins settings page, each plugin row has a **Panel** column: tick it for the plugins you want to be able to load here. Only ticked plugins show up in the panel's picker.
 
 ## Loading a Plugin
 
-1. Make sure the panel is enabled (Settings > Plugins > *Shows the Plugin panel...*) and that at least one plugin is ticked in the **Panel** column.
+1. Make sure the panel is turned on (Settings > Plugins > *Show Plugin panel in browser*) and that at least one plugin is ticked in the **Panel** column.
 2. Open the Browser and select the **Plugin** tab.
 3. Click the picker at the top (it reads *Select a plugin...* when nothing is loaded) and choose a plugin from the list.
 4. The plugin loads and starts processing the main output. If its editor can resize to fit, it appears embedded in the panel; otherwise it opens in its own floating window.

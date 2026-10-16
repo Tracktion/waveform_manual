@@ -4,7 +4,7 @@ In this chapter you will learn how to customize the keyboard shortcuts
 in Waveform. In [Introduction](introduction.md) we covered how to change the
 default keyboard mapping. In short, go to the Settings tab and select
 the Keyboard Shortcuts page. Then near the bottom of the page click
-*Reset to Defaults*, and choose *Restore default Waveform key-mappings*.
+*Reset to Defaults*, and choose *Restore default Waveform key mappings*.
 
 > 📝 **Note:** The default Waveform key-mapping is used for all examples
 in this book.
@@ -34,8 +34,8 @@ you're working on a desktop computer.
 Let's take a look at an example. To start recording you click the
 *Record* button in the transport or press keyboard shortcut R. When
 working on a computer that has a full size keyboard, you may prefer to
-start recording by hitting the asterisk (\*) key on the keypad. To do
-so:
+start recording by hitting the asterisk (\*) key on the keypad. To do so on Mac (on Windows, the asterisk is already
+a default Record key):
 
 
 ![](images/14----02@2x.png)
@@ -86,7 +86,7 @@ will then have all your familiar assignments ready to go.
 To save your shortcuts setup, click *Save Key-Mappings* and Waveform
 presents a dialogue box requesting a file name and path. You can store
 the key-mapping file anywhere you like. Waveform key-mapping files have
-the `.Tracktionkeys` extension.
+the `.tracktionkeys` extension.
 
 
 ![](images/14----05.png)
@@ -132,8 +132,8 @@ using normal web browser features.
 ## Moving On
 
 At this point you should have a good handle on how to customize the
-keyboard shortcuts in Waveform. Since T6, Waveform offers powerful macro
-scripting you can use to further customize keyboard shortcuts. For more
+keyboard shortcuts in Waveform. Waveform's macro scripting lets you
+customise keyboard shortcuts further. For more
 about that, see [Macros](macros.md).
 
 

@@ -124,7 +124,7 @@ you want to the note to start.
     it again. The bad note will will have a separate Audio clip.
 
 
-![](images/17----11.png)
+![](images/17----10.jpg)
 
 *Split After the Note*
 
@@ -166,7 +166,7 @@ the four preset shapes in the Actions panel.
 
 ![](images/17----14.png)
 
-*Fade-out Shapes in properties*
+*Fade-out shapes in the Actions panel*
 
 ## Stretch an Ending Note
 
@@ -211,13 +211,14 @@ those by putting a very tiny fade at the beginning of the clip.
 
 You could zoom way in and add tiny fades to the beginning and ending of
 each clip. The easier way is to select the clip and click *Apply Edge
-Fade* in properties. This instantly puts 7 ms fades at the beginning and
-ending of all selected clips.
+Fades* in the Actions panel. This sets 5 ms fades at the beginning and
+ending of every selected clip (fades already longer than that are left
+alone).
 
 
 ![](images/17----18.png)
 
-**Apply Edge Fade* in properties*
+*Apply Edge Fades in the Actions panel*
 
 ## Rendering to a Single Audio Clip
 
@@ -238,14 +239,13 @@ can quickly render all the clips back to a singled clip. To do so:
 
 *Selected Clips before Rendering*
 
-1.  In the properties select *Render Clips > Merge the selected clips*. In
-    Waveform 6, merging is a single command, which is a great
-    enhancement to the workflow.
+2.  In the Actions panel, click *Render Clip* and choose *Merge the
+    selected clips*.
 
 
 ![](images/17----21.png)
 
-**Render Clips > Merge the selected clips**
+*Render Clip > Merge the selected clips*
 
 
 ![](images/17----22@2x.png)
@@ -254,10 +254,10 @@ can quickly render all the clips back to a singled clip. To do so:
 
 ## Moving On
 
-Those are some of the basic techniques you can use to clean up your
-recorded tracks. Use these techniques to trim clips, apply fade-outs,
-make minor timing adjustments, and then render all the changes to a
-single clip.
+To correct timing by stretching audio to the beat, see
+[Warp Time](warp-time.md). For automatic timing correction of whole
+takes, see [Groove Doctor](groove-doctor.md) (Waveform Pro or the
+Recording Engineer Expansion).
 
 
 

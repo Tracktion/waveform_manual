@@ -3,13 +3,12 @@
 In professional mixing, it is common to submix drums to a stereo bus to
 add compression, EQ, and limiting before mixing it with other other
 tracks. Actually, it is common to submix other things like vocals,
-guitars, or instruments. Starting with T6, awe added a Submix Tracks
-feature that resembles Folder Tracks but with a twist: you can process a
-submix with plugins.
+guitars, or instruments. A Submix Track looks like a Folder Track, but
+audio passes through it, so you can process the submix with plugins.
 
-Like earlier versions, you still have the option to use any track as a
-submix. This still works and has certain advantages. We will show you
-how to configure that later in the chapter.
+You can also use any ordinary track as a submix. This has certain
+advantages, and we will show you how to configure it later in the
+chapter.
 
 ## Creating a Submix Track
 
@@ -22,9 +21,9 @@ Creating a Submix Track in Waveform is super easy:
 
 *Creating a Submix Track*
 
-1.  Right-click any of the tracks and choose *Create submix track
-    containing*. The same action is also available in properties as
-    *Create Submix Containing.*
+1.  Right-click any of the tracks and choose *Pack selected tracks to a
+    Submix track*. The same action is also available in the Actions
+    panel as *Create Submix Containing*.
 
 
 ![](images/34----02.png)
@@ -62,9 +61,8 @@ Muting
     Submix Track.
 
 Soloing
-- soloing works a little differently than you might expect. When you
-    click Solo on the Submix, it mutes all other tracks, including the
-    ones contained within the Submix Track.
+- Soloing a Submix solos everything inside it and mutes the tracks
+    outside it.
 
 ## Creating an Old School Submix Track
 
@@ -82,7 +80,7 @@ Projects that used this method.
 1.  Name the track appropriately. In this example, we have named it
     *Drums Submix*.
 2.  Select all the tracks you want to route to the submix.
-3.  In the properties, click *Track Destination.* Select your the *Drums
+3.  In the Actions panel, click *Track Destination.* Select your the *Drums
     Submix* track. This effectively routes the output of each selected
     track through to the drum submix track.
 
@@ -104,6 +102,12 @@ compressor.
 
 Of course, you can use any processing that you like. That depends
 largely on which kind of tracks and the style of music.
+
+## Moving On
+
+To render each submix to its own file, set **Render** to *Submixes* in
+the Render dialog's Advanced mode (Waveform Pro). See
+[Rendering and Stems](rendering-and-stems.md).
 
 
 

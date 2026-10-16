@@ -64,8 +64,8 @@ Recording MIDI is very much like recording audio:
 1.  To stop, either press R again or just hit the space bar.
 
 > 💡 **Tip:** To record your MIDI performance with a metronome click,
-configure and enable *Click* using the procedure outlined in [MIDI
-Editing](midi-editing.md).
+configure and enable *Click* using the procedure outlined in [Working
+with the Click](recording-audio.md#working-with-the-click).
 
 ## Playing Back a MIDI Performance
 
@@ -108,11 +108,11 @@ note is held in musical time.
 The MIDI editor PRV includes everything you need to edit MIDI data. You
 can add notes, delete notes, copy notes, and duplicate them. You can
 also work with velocity and other controller values. We'll get into the
-details later when we go deeper into [MIDI editing].
+details later when we go deeper into [MIDI Editing](midi-editing.md).
 
 ## MIDI Record Modes - The *Action* Property
 
-Select a MIDI input and look in properties at the item labeled *Action*.
+Select a MIDI input and look in the Actions panel at the item labeled *Action*.
 The drop down menu for *Action* gives you a variety of record modes.
 
 
@@ -138,7 +138,7 @@ additional drum hits in each pass.
 ## Replace Mode
 
 If you wanted to replace what you played previously, change *Action* in
-properties for the input to *Replace existing clips with newly recorded
+the Actions panel for the input to *Replace existing clips with newly recorded
 MIDI clips*. Now when you start to record, the new recording will create
 an entirely new MIDI clip and it will gradually overwrite what you had
 before. It doesn't exactly erase the original clip. If any portion of
@@ -162,7 +162,7 @@ together.
 ## MIDI Input Quantize
 
 To find MIDI Input Quantize, click on the input and locate the
-*Quantize* property. The drop down menu for *Quantize* offers a wide
+*Quantise* property. The drop down menu for *Quantise* offers a wide
 variety of beat subdivisions.
 
 Notice how this works; you are selecting a subdivision of the beat (not
@@ -178,7 +178,7 @@ beat*, because an eighth note is half of a quarter note (when working in
 
 As you record, you're going to hear the notes however you play them, but
 on playback all of your notes will be snapped to the value you set in
-*Quantize*.
+*Quantise*.
 
 Note that the results of quantizing can sound somewhat unnatural,
 because this approach quantizes both the note start and the note ending.

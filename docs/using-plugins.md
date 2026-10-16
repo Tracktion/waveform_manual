@@ -5,19 +5,19 @@ In-line mixer or the separate mixer window.
 
 > 📝 **Note:** Scanning plugins and setting up a favorites plugin list are
 done on the Settings tab, Plugins page. Check the reference section
-[Reference: Settings > Plugins](reference-settings.md#plugins) to learn more about that.
+[Reference: Settings > Plugins](reference-settings.md#plugins_1) to learn more about that.
 
 ## The In-line Mixer
 
 The In-line mixer section resides along the right side of the Edit, and
 completes the left-to-right signal flow on each track. You can open and
 close the Mixer using the open/close icon at the upper right, or also
-using keyboard shortcut M.
+using keyboard shortcut V.
 
 
 ![](images/29----01.png)
 
-*Button to Open Close the In-line mixer (M)*
+*Button to Open Close the In-line mixer (V)*
 
 Whenever you create a new track, it will automatically have a *Volume &
 Pan* plugin and a *Level Meter* plugin inserted. These behave just like
@@ -88,13 +88,14 @@ Right-click to Insert
     pulls up the plugin selector menu and you may pick any plugin to
     add. It will be added to the left of plugin you started from.
 
-> 📝 **Note:** If you don't see some of your plugins, review the previous
-chapter that details how to scan your system for all available plugins.
+> 📝 **Note:** If you don't see some of your plugins, see
+[Scanning for Plugins](reference-settings.md#scanning-for-plugins) to scan
+your system for all available plugins.
 
-Plugin properties
-- To select a plugin, click on it. When selected, its properties show a
-    wide variety of settings and actions related to that plugin. Most of
-    the built-in plugins have the entire user interface in properties.
+Plugin settings
+- To select a plugin, click on it. When selected, the Actions panel
+    shows a wide variety of settings and actions related to that plugin,
+    and the click also opens the plugin's window.
 - The same pages are also available in the **Plugins** tab of the Detail
     editor, which lays the whole track's chain out side by side so you
     can have several plugins' pages open at once. See
@@ -103,7 +104,7 @@ Plugin properties
 
 ![](images/29----04.png)
 
-*Select a Plugin to See its properties*
+*Select a Plugin to See its Settings*
 
 Duplicating Plugins
 - To duplicate a plugin, select it and press D. This gives you a new
@@ -117,8 +118,8 @@ Duplicating Plugins
 
 Deleting Plugins
 - To delete a plugin, select the plugin and hit Delete or
-    Backspace. You may alternatively click the red *Delete Plugin*
-    button in properties.
+    Backspace. You may alternatively use **Delete this plugin** in the
+    Actions panel.
 
 Moving Plugins
 - To move a plugin from one track to another track, grab the
@@ -137,8 +138,8 @@ Copying Plugins
     duplicate to the target location.
 
 Bypassing a Plugin
-- To bypass a plugin, select the plugin then turn off *Enabled* in
-    properties. Or, select the plugin and press the keyboard
+- To bypass a plugin, select the plugin then turn off **Enabled** in
+    the Actions panel. Or, select the plugin and press the keyboard
     shortcut F. A bypassed plugin appears with a red X through it on the
     Mixer.
 
@@ -154,7 +155,7 @@ and then pressing F.
 
 You can assign a quick control parameter to any instance of a plugin.
 This allows you immediate access to tweak one parameter without mousing
-back to properties or opening the UI for the plugin. For example, the
+over to the Actions panel or opening the UI for the plugin. For example, the
 mix control of a delay plugin makes a handy quick control.
 
 
@@ -163,7 +164,7 @@ mix control of a delay plugin makes a handy quick control.
 *Delay Mix Set as a Quick Control Parameter*
 
 To set up a quick control parameter, right-click the plugin and choose
-*Select quick control parameter.* Next, choose which parameter to use.
+*Set quick control parameter.* Next, choose which parameter to use.
 
 
 ![](images/29----07.png)
@@ -176,19 +177,19 @@ more to to choose from.
 ## Third-Party Plugins
 
 Third-party plugins are inserted in the same way as built-in plugins.
-One difference is that the UI (user interface) does not appear in
-properties. Each plugin has its own UI window.
+One difference is that each one has its own UI (user interface) window,
+designed by its developer.
 
 
 ![](images/29----08.png)
 
 *Sonimus SonEQ, an Example 3rd Party Plugin*
 
-To open the UI for a third-party plugin, double-click the plugin in the
-Mixer.
+To open the UI for a third-party plugin, click the plugin in the Mixer.
 
-> 📝 **Note:** You can change to a single-click to open plugin windows the
-Settings Tab, Plugins page. The parameter is *Opening Plugin Windows.*
+> 📝 **Note:** To open plugin windows with a double-click instead, change **Open plugin windows
+by** under Plugin Windows on the Settings > General page. (Default:
+Single-clicking)
 
 
 ![](images/29----09.png)
@@ -229,7 +230,8 @@ Here are the steps:
 *Searching for Plugins Using the Browser, Search tab*
 
 The search uses an index that includes plugin names, tags, and
-manufacturer. We covered how to set tags in the previous chapter.
+manufacturer. To set tags, see
+[Tagging Plugins](reference-settings.md#tagging-plugins).
 
 > 💡 **Tip:** It often helps to disable the options for *Loops* and *Presets*
 when searching for a specific plugin. This gives you more targeted
@@ -243,8 +245,9 @@ results.
 ## Using Master Plugins
 
 To apply processing to the full stereo mix, add plugins to the master
-track or the mixer's master channel. The drop target says *Drop Master
-Plugins Here.*
+track or to the master plugin box in the transport bar. When the box is
+empty it shows a power icon; drag plugins into it to add them to the
+master output plugin chain. It holds up to four plugins.
 
 
 ![](images/29----12.png)
@@ -252,8 +255,8 @@ Plugins Here.*
 *Master plugins area*
 
 Typically, you may put a bus compressor, a limiter, and maybe an EQ on
-the master. Another great option is Waveform's own Final Mix plugin,
-which combines all of those functions in to one package expressly
+the master. Another great option is Waveform's own Master Mix plugin
+(Waveform Pro and OEM), which combines all of those functions in to one package expressly
 designed for use on a full mix.
 
 
@@ -261,14 +264,14 @@ designed for use on a full mix.
 
 *Master Mix inserted on the master*
 
-> 💡 **Tip:** You can right click the *Drop Master Plugins Here* area then
+> 💡 **Tip:** You can click an empty part of the master plugin box then
 choose *Add new plugin* to open the plugin selector menu. You may find
 this a bit faster than dragging the plugin object down there!
 
 
 ![](images/29----14.png)
 
-*Right-click to *Add new plugin**
+*Add new plugin from the master plugin box*
 
 ## Plugin Sidechains
 

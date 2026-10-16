@@ -21,7 +21,7 @@ and hit T. That creates a new blank track right after the one that you
 started with. You can drag the new track anywhere you'd like.
 
 Next, click on the track name, and rename the track by editing *Name* in
-properties. In this example you can use a reverb effect and name it
+the Actions panel. In this example you can use a reverb effect and name it
 "Master Reverb."
 
 
@@ -39,8 +39,8 @@ example we're using Waveform *Reverb*.
 
 *Insert the Reverb Plugin*
 
-Check that the *Dry Mix* fader is turned all the way down. You want only
-the wet signal to go through *Reverb*. You can tweak the other
+Check that the *Dry Level* fader is turned all the way down and *Wet Level*
+is up. You want only the wet signal to go through *Reverb*. You can tweak the other
 parameters later, after you get some sound going through it.
 
 
@@ -67,7 +67,7 @@ Insert the Waveform *Aux Return* plugin to the left of *Reverb.*
 
 *Insert the *Aux Return* Plugin*
 
-Notice that it is labeled *Aux Return #1* in properties. Also, you can
+Notice that it is labeled *Aux Return #1* in the Actions panel. Also, you can
 see it is automatically assigned to the next available bus: in this case
 \*Bus #1.
 
@@ -215,8 +215,8 @@ will automatically be entered. You can also add another tag such as
 *Preset Details Dialog Box*
 
 Remember to separate tags with a comma. Click *OK*, then the next time
-you want to create a very similar effects bus track, go to the Presets
-tab in the Browser and filter by *Effects Bus*. Drag the preset onto any
+you want to create a very similar effects bus track, pick the Presets
+category in the Browser and filter by *Effects Bus*. Drag the preset onto any
 track to instantly configure your favorite master effects set up.
 
 ## Moving On

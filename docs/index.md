@@ -4,6 +4,6 @@
 
 © 2020 - 2021 Bill Edstrom
 
-© 2024 Tracktion Corporation
+© 2024 - 2026 Tracktion Corporation
 
 Use the navigation sidebar to browse the manual, or start with the [Introduction](introduction.md).

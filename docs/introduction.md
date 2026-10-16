@@ -4,7 +4,7 @@ Welcome to the *Waveform User Guide*. The goal of this guide is to help
 you learn Waveform. If you are coming to Waveform from another DAW, or
 learning computer recording from the ground up, you will find this guide
 useful. This should serve as a useful and handy reference. For those who
-already use Waveform or its successor *Tracktion* you can learn the many
+already use Waveform or its predecessor, *Tracktion*, you can learn the many
 advancements in the software. While this book was originally written as
 a step by step guide, it has been expanded to become a reference manual.
 
@@ -16,10 +16,12 @@ All versions are maintained in parallel; as a result the latest revision
 is usually identical (or close to it) across all three platforms.
 
 Waveform is also available in Free, OEM and Pro editions. Waveform Free
-has all the core functionality while Waveform Pro includes additional
-creative tools like the chord track, Groove Doctor, instruments,
-effects, pattern generator, Quick Actions panel, and MIDI effects. The
-Free edition has no limitation on the number of tracks and supports
+has all the core functionality, including the AI assistant and the
+Pattern Generator. Waveform Pro adds creative tools such as the Chord
+Track, Groove Doctor, Track Snapshots, Layouts and Quick Actions, the
+Wavetable synth and other instruments, the MIDI effects (also available
+in the MIDI Producer Expansion) and the Render dialog's Advanced mode.
+The Free edition has no limitation on the number of tracks and supports
 third-party plugins just like the Pro edition. The OEM edition is
 included with mixers and audio interfaces from various manufactures
 including Mackie and Behringer.
@@ -36,8 +38,9 @@ There is no need to flip back and forth between a track view and mixer
 view unless you really want.
 
 Waveform has a very flexible plugin architecture, that includes native
-plugins, plugin racks, and third party plugins supporting VST, VST3 and
-AudioUnits.
+plugins, plugin racks, and third party plugins in VST, VST3, Audio Units
+(macOS), LV2 and, on Linux, LADSPA formats. On Apple Silicon Macs and
+Windows it also hosts Cmajor patches.
 
 ## What's in the Book?
 
@@ -61,7 +64,7 @@ There are numerous tutorial videos for Waveform available from my
 YouTube channel and from Tracktion. Videos usually precede the updates
 in this document so we recommend that you subscribe to both channels:
 
-My YouTube Channel - [Inventive Creation](http://goo.gl/YnaOMd)
+My YouTube Channel - [Inventive Gear](https://www.youtube.com/user/lilacwriter)
 
 Tracktion YouTube Channel - [@TracktionSoftware](https://www.youtube.com/@TracktionSoftware)
 (browse the [playlists](https://www.youtube.com/@TracktionSoftware/playlists)
@@ -73,7 +76,7 @@ DAW.
 
 Groove 3 - [Groove3.com](https://www.groove3.com)
 
-## Setting Tracktion Keyboard Shortcuts
+## Setting the Default Keyboard Shortcuts
 
 This guide uses the default keyboard shortcut layout within Waveform. If
 you have changed away from the default setup you would need to change it
@@ -83,7 +86,7 @@ To do that follow these steps:
 
 1.  Navigate to the Settings tab, Keyboard Shortcuts page
 2.  Click *Reset to Defaults* at the bottom of the page
-3.  Select *Restore default Waveform key-mappings*
+3.  Select *Restore default Waveform key mappings*
 
 
 ![](images/01----01.png)

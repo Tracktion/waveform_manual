@@ -120,7 +120,7 @@ Insert from the Track Header
 
 Insert from Track Actions
 - Select a track by clicking on the track name. In Actions, click
-    "Insert New Clip > Insert New Step Clip."
+    *Insert a New Clip > Insert Step Clip*.
 
 
 ![](images/27----05@2x.png)
@@ -129,9 +129,9 @@ Insert from Track Actions
 
 Inserting a Step Clip Preset
 - Since you can save Step clip setups as presets, a great way to get a
-    starting point is to drag in a preset. You can find any existing
-    Step clip presets in the Browser Presets tab. Filter or search by
-    "Step clip".
+    starting point is to drag in a preset. Step clip presets are clip
+    presets, so in the [Browser](browser.md) choose *Clips* under
+    *Categories*, or search for "Step Clip".
 
 
 ![](images/27----06@2x.png)
@@ -174,9 +174,7 @@ As you toggle notes you will hear the result. You are are now
 programming a variation!
 
 **Video Clip:** This video overview is a great way to get a better
-understanding of how all this works. While the video was created using
-Tracktion version 6, the workflow is almost identical in Waveform
-version 8.
+understanding of how all this works.
 
 [Step Clips Overview](https://w-edstrom.wistia.com/medias/pjf2cdmm4t)
 
@@ -208,26 +206,36 @@ Clear All Variations
 can see them or not. Fortunately, you can click *Undo* (Cmd + Z / Ctrl +
 Z) if you change your mind right after zeroing out all your variations!
 
-Delete All Unused Variations
+Remove Unused Variations
 - With Step clips, you can string together a series of pattern
-    sections - each one assigned to a variation. *Delete All Unused
-    Variations* remove any variation that is not in use.
+    sections - each one assigned to a variation. *Remove Unused
+    Variations* removes any variation that is not in use.
 
-Add Row
-- *Add Row* inserts a row as you might expect. You can also insert a
-    row using the context menu for the Step clip header or Step clip row
-    header.
+Add a row
+- *Add a row* adds a new row at the bottom of the Step clip. You can
+    also insert a row using the context menu for the Step clip header or
+    Step clip row header.
+
+Apply Common Groove
+- *Apply Common Groove* is usually used to impart a swing feel. Here
+    you select a template. The most common settings are for basic
+    swing. This setting applies groove to all rows in the Step clip.
+    You can also set the groove for each row separately (see
+    [Step Clip Row properties](#step-clip-row-properties)).
+
+Apply common groove amount
+- With groove amount set to minimum the groove template selected in
+    the previous option has no effect. Increase it for more and more
+    impact.
 
 Render Clip
 - Use any of the *Render Clip* options to convert a Step clip to an
-    Audio clip.
-
-> 📝 **Note:** In the *Render* dialogue box, make sure you have *Pass Through
-Plugins* selected. If you don't, the resulting audio clip will be
-silent.
+    Audio clip. Each option opens the Render dialog, which puts the
+    result on this track or in place of the clip. See
+    [Rendering Clips](rendering-and-stems.md#rendering-clips).
 
 Standard Clip Operations
-- Step clip properties also includes *Select Clip*, *Set Edit Tempo*,
+- Step clip properties also includes *Select Clips*, *Set Edit Tempo*,
     *Split Clips*, and *Move Clip*. These are standard operations shared
     by all the other kinds of clips.
 
@@ -237,8 +245,12 @@ Convert to MIDI Clip
     to continue editing in the MIDI editor, using the piano roll view.
 
 Create Preset
-- *Create Preset* gives you tools to create presets from Step clips.
-    Presets are searchable from the Browser.
+- *Create Preset* saves the Step clip (its rows, variations and
+    notes) as a preset. Presets are searchable from the Browser.
+
+Load Preset
+- *Load Preset* shows a menu of your Step clip presets. Choose one to
+    apply it to the selected Step clip.
 
 Delete
 - *Delete* allows you to delete the selected Step clip. Alternatively,
@@ -281,7 +293,7 @@ All of the actions also appear in the Actions panel.
 
 > 📝 **Note:** The pattern section and variation numbers are shown in the
 title line of the Actions panel when a footer is selected. For example,
-"Section 1 (Pattern 8)."
+"Section 1 (Variation 8)."
 
 ## Variation Options
 
@@ -290,12 +302,14 @@ title line of the Actions panel when a footer is selected. For example,
 
 *Variation Options in Actions*
 
-Use (Set Active Pattern)
-- "Use" sets which variation to use for this pattern section. You can
-    also set this from the footer context menu.
+Variation
+- *Variation* sets which variation to use for this pattern section. It
+    shows the current one, for example "Variation 2". You can also set
+    this from the footer context menu.
 
-Name
-- Give your clip a meaningful name if you want.
+Variation name
+- Give this variation a name if you want. The name appears in the
+    variation menus.
 
 Step Length
 - By default, step length is one-quarter beat. This means each beat is
@@ -331,7 +345,7 @@ Clear All Steps
     turned on. This is a simple way to erase the variation and start
     over with some new programming.
 
-Randomize Each Step
+Randomise Each Step
 - Randomly turns on and off notes at each step of the variation. This
     might give you some quick creative inspiration.
 
@@ -343,23 +357,11 @@ New Blank Variation
 - Creates a new blank variation and makes it active. The variation
     number is automatically assigned.
 
-**Video Clip:** [Step Clips *Randomize Each
+**Video Clip:** [Step Clips *Randomise Each
 Step*](https://w-edstrom.wistia.com/medias/ztgsqpw2y5)
 
 > 📝 **Note:** You can also randomize a row of notes. We'll get to that
 shortly.
-
-Apply Common Groove
-- *Apply Common Groove* is usually used to impart a swing feel. Here
-    you selected a template. The most common settings are for basic
-    swing. This setting applies groove to all rows in the Step clip.
-    There is a way to apply groove to separate rows - we'll cover that a
-    bit later.
-
-Apply Common Groove Amount
-- With groove amount set to minimum the groove template selected in
-    the previous option has no effect. Increase it for more and more
-    impact.
 
 ## Step Clip Pattern Section Actions
 
@@ -388,8 +390,8 @@ pattern section. Click the footer and select a variation.
 *Choosing a Variation for a Pattern Section*
 
 Remove this Pattern Section
-- Select a pattern section by clicking its footer. Choose "Remove the
-    pattern section" from the menu or Actions. This doesn't remove any
+- Select a pattern section by clicking its footer. Choose "Remove this
+    Pattern Section" from the menu or Actions. This doesn't remove any
     variations; they're still there and can be assigned to other pattern
     sections.
 
@@ -416,7 +418,7 @@ Assign a Note Value
 
 Velocity
 - *Velocity* sets maximum MIDI velocity for the row. Using the Step
-    clip V/G editor (more on that shortly), you can set each note to a
+    clip [velocity and gate editor](#velocity-and-gate-editor), you can set each note to a
     percentage of this value. The default *Velocity* value is 96.
 
 MIDI Channel
@@ -424,8 +426,8 @@ MIDI Channel
     playing into a multi-timbral virtual instrument, then this would set
     which instrument is being played from this Step clip row.
 
-Note On Every
-- The *Note On Every* parameter is followed by a series of buttons.
+Note on Every
+- The *Note on Every* parameter is followed by a series of buttons.
     Those buttons complete the sentence "Note on every (blank) steps."
     For example, click *2* to mean "Note on every 2 steps."
 
@@ -472,8 +474,8 @@ Clear Row
 - *Clear Row* simply erases any notes that have been programmed in to
     that channel.
 
-Randomized Row
-- *Randomize Row* randomly selects an on or off state for each step
+Randomise Row
+- *Randomise Row* randomly selects an on or off state for each step
     that row. This applies to variations across all the pattern
     sections.
 
@@ -513,11 +515,13 @@ all eight default rows taking up space on your screen if you are not
 using that many. Use *Delete Row* to simplify your Step clips. It's easy
 to add another row at any time using *Insert Row*.
 
-## Velocity Gate Editor
+## Velocity and Gate Editor
 
-Add dynamics and feel to your Step clips using the Velocity
-Gate editor. When you click *V/G* in the upper left corner of any Step
-clip, the V/G view appears below the patterns. This give you a quick
+Add dynamics and feel to your Step clips using the velocity and gate
+editor. Three small buttons sit in the upper left corner of any Step
+clip: *V* toggles the velocity and gate editor, *P* toggles the
+probability editor, and *View* chooses which rows to show. When you
+click *V*, the editor appears below the patterns. This give you a quick
 graphical view of the velocity per note for the selected row.
 
 
@@ -527,41 +531,46 @@ graphical view of the velocity per note for the selected row.
 
 Here is how to use it:
 
-1.  Click *V/G* at the upper corner of the Step clip to toggle the V/G
-    view. If you don't see it, expand the vertical height of the track a
-    bit until it appears.
-2.  Select one the rows in your Step clip by clicking its name. The V/G
+1.  Click *V* at the upper corner of the Step clip to toggle the
+    editor. If you don't see it, expand the vertical height of the track
+    a bit until it appears.
+2.  Select one the rows in your Step clip by clicking its name. The
     editor shows the velocity of each note in a bar graph format. Click
     or drag within one of the velocity bars to adjust its percentage.
 
 
 ![](images/27----21.png)
 
-*Adjusting a Velocity Bar in the V/G Editor*
+*Adjusting a Velocity Bar in the Velocity and Gate Editor*
 
-> 📝 **Note:** The V/G setting is a percentage of the velocity value set in
+> 📝 **Note:** The bar height is a percentage of the velocity value set in
 the Actions panel for the row. By default it starts at 100%. If you
 want the notes to hit harder, then increase the row *Velocity* and
-adjust the V/G percentage to taste.
+adjust the percentage to taste.
 
-1.  To adjust the velocity for a series of notes, hold down Shift and
-    drag across the bars. This allows you to paint in velocities for an
-    entire sequence of notes. This is really useful for rows with lots
-    of notes like high-hats or snares.
+3.  Drag across the bars to paint in velocities for an entire sequence
+    of notes. This is really useful for rows with lots of notes like
+    high-hats or snares. Hold Shift while you drag to change only the
+    velocity, so you don't catch a bar's gate edge by accident.
 
 
 ![](images/27----22.png)
 
 *Adjusting a Series of Velocities with Shift Drag*
 
-1.  You can also gate the length of notes by dragging the right side of
-    any velocity bar to narrow it. This gives you freedom to get gated,
-    glitchy notes if you want, or just to tighten up the hits.
+4.  You can also gate the length of notes by dragging the right side of
+    any velocity bar to narrow it. Hold Alt to change only the gate.
+    This gives you freedom to get gated, glitchy notes if you want, or
+    just to tighten up the hits.
 
 
 ![](images/27----23.png)
 
-*Adjusting Note Gating in the V/G Editor*
+*Adjusting Note Gating in the Velocity and Gate Editor*
+
+Hold Cmd / Ctrl while you click or drag to ignore snapping. It
+also lets you set a velocity on a step that has no note yet, which
+turns that note on.
 
 **Video Clip:** [Step Clip
 Velocity/Gate](https://w-edstrom.wistia.com/medias/mz2dg3v98s)
@@ -586,9 +595,9 @@ Whole Sequence* in the Actions panel.
 
 *Enable *Repeat Whole Sequence**
 
-## Render a Step Clip to MIDI
+## Convert a Step Clip to a MIDI Clip
 
-When you get to a point where you want to do more detailed ending on
+When you get to a point where you want to do more detailed editing on
 your Step clip sequence, convert it to a MIDI clip and use the MIDI
 editor. To do this, right-click the Step clip header and choose *Convert
 to MIDI clip*. A MIDI clip is created, replacing the Step clip.
@@ -609,25 +618,23 @@ and names.
 
 ![](images/27----25.png)
 
-*Always use *Create Preset > Include patterns**
+*Create Preset in the Actions panel*
 
 To save a preset, select the Step clip by clicking the header. Then
-click *Create Preset > Include patterns* in Actions. You can name and
-tag your preset. To find it later choose Load Preset. Alternatively use
-the Browser Presets tab and filter by *Step Clips*.
+click *Create Preset* in Actions. This saves the whole clip: its rows,
+variations and notes. The preset is named "Step Clip: " followed by the
+clip name, and is tagged "Step Clips". You can change the name and tags
+in the dialog.
 
 
 ![](images/27----24.png)
 
 *Preset Details Dialog Box for a Step Clip*
 
-> 💡 **Tip:** Always use *Create Preset > Include patterns.*
-*Create Preset > Exclude Patterns* is also available, but that will
-always have the default 16 step blank pattern since the save function
-doesn't include any patterns. If you use this option, you may be
-disappointed to see that presets don't appear to save correctly. If you
-want a blank preset, clear all the notes, then save it using *Create
-Preset > Include patterns*.
+To use a preset later, select a Step clip and click *Load Preset*, then
+choose the preset from the menu. Alternatively, find it in the
+[Browser](browser.md) under *Categories > Clips*, or search for "Step
+Clip", and drag it onto a track.
 
 ## Moving On
 
@@ -646,7 +653,7 @@ Velocity/Gate](https://w-edstrom.wistia.com/medias/mz2dg3v98s)
 [Step Clips Randomize Each
 Step](https://w-edstrom.wistia.com/medias/ztgsqpw2y5)
 
-[Step Clips Groove](https://w-edstrom.wistia.com/medias/mz2dg3v98s)
+[Step Clips Groove](https://w-edstrom.wistia.com/medias/ad5zrq9oux)
 
 [Step Clips Route Channels to Different
 Synths](https://w-edstrom.wistia.com/medias/vncjr2ilh9)
