@@ -1,11 +1,10 @@
-# The Arranger Track
-
-> 📝 **Note:** The Arranger Track is available in **Waveform Pro**. It is not included in
-> Waveform Free or OEM editions.
+# The Arranger Track <span class="pro">PRO</span> { #the-arranger-track }
 
 The Arranger Track gives you a bird's-eye view of your song's structure. You divide the project into
 named, coloured **sections** (Intro, Verse, Chorus, Bridge, Outro, and so on) and then rearrange
 the whole song by dragging those sections instead of carefully moving clips on every individual track.
+
+> 📝 **Edition:** Waveform Pro.
 
 When you move or copy a section, Waveform moves the underlying audio and MIDI clips *plus* any tempo,
 time-signature, and pitch events in that range, all in lock-step across every track. The Arranger
@@ -31,8 +30,12 @@ item. Arranger Track visibility is saved with the edit and as part of each [layo
 
 ## Creating Sections
 
-To draw a new section, **hold a modifier key and drag** across the Arranger Track. The cursor changes
-to a pencil while you drag, and the section snaps to the current snap grid.
+To draw a new section, **hold Shift, Cmd / Ctrl or Opt / Alt and drag** across the Arranger Track.
+Any of these modifier keys works. The cursor changes to a pencil while you drag, and the section snaps
+to the current snap grid.
+
+You can also select the Arranger Track and press **G** (*Insert a new MIDI clip into the selected
+track*), which adds a section instead of a MIDI clip.
 
 > 💡 **Tip:** A plain drag on the Arranger Track does *not* draw a section. You must hold a modifier
 > key first.
@@ -66,8 +69,9 @@ arrangement.
 ## Inserting Space
 
 To add blank time at a specific point, right-click a section and choose **Insert time at selected
-clips**, or use the **Insert Space** dialog. The dialog has fields for *Bars/Beats* and *Time* and an
-**Insert** button. The keyboard command *"Insert time at cursor"* does the same thing from the
+clips**, or use the **Insert Space** dialog. To open the dialog, right-click the timeline and choose
+*Insert space > Insert time at cursor*, or use the *"Insert time at cursor"* keyboard command. The
+dialog has fields for *Bars/Beats* and *Time* and an **Insert** button, and inserts the time at the
 current cursor position.
 
 
@@ -109,3 +113,5 @@ Right-clicking a section gives you:
 - **[Using Markers](using-markers.md)**: the Marker track, Tempo track, and Chord track are sibling
   global tracks that work alongside the Arranger Track.
 - **[Layouts](layouts.md)**: Arranger Track visibility can be saved and recalled as part of any layout.
+- **[Rendering and Stems](rendering-and-stems.md)**: in the Render dialog's Advanced mode, the
+  *Each Arranger Clip Region* range renders each section to its own file.

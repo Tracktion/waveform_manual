@@ -252,6 +252,18 @@ can quickly render all the clips back to a singled clip. To do so:
 
 *Audio Clip After Rendering*
 
+*Merge the selected clips* is only offered when every selected clip is an
+audio clip. When the clips sit on more than one track, the menu also has
+*Merge the selected clips from each track*, which merges each track's
+clips into one clip on that track. With a single clip selected, the
+same entry is called *Flatten the selected clip*. Launcher clips can't be
+rendered or merged.
+
+> 📝 **Note:** The other entries in the *Render Clip* menu open the Render
+dialog set up for the clips, with *Include Tails* off and the result going
+onto the clips' track or in place of them. See
+[Rendering Clips](rendering-and-stems.md#rendering-clips).
+
 ## Moving On
 
 To correct timing by stretching audio to the beat, see

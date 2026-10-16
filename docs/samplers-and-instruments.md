@@ -1,6 +1,6 @@
 # Samplers and Instruments
 
-Waveform includes a family of built-in samplers, from a simple free-tier drum pad to a full multi-layer keyboard sampler, plus a multi-oscillator subtractive synthesizer called **Subtractive**. All of these live in the **Instruments** category of the plugin picker. This chapter walks through each one and explains when you'd reach for it.
+Waveform includes a family of built-in samplers, from the Micro Drum Sampler, available in every edition, to a full multi-layer keyboard sampler. Alongside them are the **Subtractive** and **Bass Osc** synthesizers and **Attracktive**, a free player for Tracktion's sound packs. All of these are in the *Waveform > Instruments* folder of the plugin picker.
 
 ## The Sampler Family at a Glance
 
@@ -11,8 +11,8 @@ There are five built-in samplers. Here's which is which:
 | **Micro Drum Sampler** | Pad-based, one-shot only, 64 pads | All editions (Free, OEM, Pro) |
 | **Micro Sampler** | Keyboard sampler, note zones, WAV/AIFF | All editions |
 | **Rompler** | Factory preset playback, keyboard-style | All editions |
-| **Drum Sampler** | Full pad sampler with velocity layers and note repeat | Pro (or MIDI Producer / Synth Pack expansions) |
-| **Multi Sampler** | Full keyboard sampler, up to 32 layers, SFZ/SF2 | Pro (or MIDI Producer / Synth Pack expansions) |
+| **Drum Sampler** | Full pad sampler with velocity layers and note repeat | Waveform Pro, or the MIDI Producer or Synth Pack Expansion |
+| **Multi Sampler** | Full keyboard sampler, up to 32 layers, SFZ/SF2 | Waveform Pro, or the MIDI Producer or Synth Pack Expansion |
 
 The **legacy Sampler** (the original simple sampler) is a separate, older plugin. It's described in [Legacy Plugins](legacy-plugins.md).
 
@@ -40,18 +40,36 @@ Each pad has a **Solo** and **Mute** button for quick auditioning.
 
 The **Micro Drum Sampler** is a cut-down version and is available in all editions of Waveform. It supports one-shot playback only: the sample plays through to the end whenever the pad is triggered, regardless of how long you hold the note.
 
-The **Drum Sampler** (Pro only) adds:
+The **Drum Sampler** <span class="pro">PRO</span> adds:
 
 - **Velocity layers**: assign different samples to play at different velocity ranges on the same pad, for more expressive drum sounds
 - **Note Repeat**: holds down a pad and automatically re-triggers it at a tempo-synced rate (see below)
 
-On both drum samplers, the **Toggle MIDI learn** button in the pad header assigns a pad to an incoming MIDI note. Right-clicking a pad opens its menu instead: **Drum Icon**, **Colour**, **Choke group** and **Delete** or **Clear**.
+On both drum samplers, the **Toggle MIDI learn** button in the pad header assigns a pad to an incoming MIDI note. Right-clicking a pad opens its menu instead: **Drum Icon**, **Colour** and **Clear**. On the Micro Drum Sampler, the menu button on the pad's sound row has **Drum Icon**, **Colour**, **Choke group** and **Delete**.
 
-### Note Repeat
+### Note Repeat <span class="pro">PRO</span> { #note-repeat }
 
 The **Note Repeat** feature is available on the Drum Sampler. When enabled, holding a pad triggers it repeatedly at a tempo-synced rate while the note is held. Use the **Repeat Rate** control to set the subdivision (e.g. 1/8, 1/16). This is useful for rolls and fills.
 
 > 💡 **Tip:** Note Repeat is great for building fills on the fly during live performance. Hold a snare pad, enable Note Repeat, and sweep the rate to create a build-up effect.
+
+### Pad Layouts and Pad Settings
+
+The **Load / Save pad layout preset** button, next to **Toggle MIDI learn**, opens a menu:
+
+- **Load Pad Layout...**: loads a saved `.padpreset` file onto the pads.
+- **Save Pad Layout...**: saves the current pads. Choose what to store: **MIDI Note** (ticked by default), **Name**, **Icon** and **Colour**.
+- **Default Pad Layout**: picks a saved layout to apply whenever the sampler sets up its default pads, or **None**.
+
+On the Drum Sampler and the Multi Sampler's PADS page, the top row of the list to the right of the pads holds the selected pad's sound settings, plus:
+
+**Spread Zones**: Divides the velocity range evenly between the pad's sound layers, so each layer plays for its own slice of velocities.
+
+**Choke**: Puts the pad in a choke group (Group 1 to Group 16, or **None**). Triggering a pad silences the other pads in the same group, for example a closed hi-hat cutting off an open one.
+
+**Stereo Out**: Sends the pad to one of the sampler's 16 stereo outputs, so you can process it on its own.
+
+The Multi Sampler also has a **PADS** page. Whenever you open it with no pads set up, Waveform offers to set up default pads (**Setup Pads**).
 
 ---
 
@@ -71,9 +89,33 @@ The zone grid is the central view in the Multi Sampler and Micro Sampler. It sho
 
 Each layer appears as a rectangle on the grid. You define the rectangle by setting a **low note**, **high note**, **low velocity**, and **high velocity** for that layer. If a played note falls inside a layer's rectangle, that layer's sample plays. In the Micro Sampler, layers only have a note range.
 
-You can have **up to 32 layers** in the Multi Sampler. Layers can overlap. If multiple layers match a played note, all of them sound, which is how round-robin and velocity crossfade works.
+You can have **up to 32 layers** in the Multi Sampler. Layers can overlap. By default, if multiple layers match a played note, all of them sound. The play mode in the Options menu (below) can change that to Round Robin or Random.
 
 To add a layer, drag an audio file directly onto the zone grid. Waveform creates a new layer at the position you drop it.
+
+### Layer and Zone Tools
+
+Right-click a sound layer, in the zone grid or the layer list, for these options:
+
+- **Remove**, **Rename** and **Duplicate**.
+- **Duplicate: Pitch shifted up** / **Duplicate: Pitch shifted down**: for a layer mapped to a single note, makes 1x to 12x copies on the notes above or below, each pitched to its note.
+- **Quick Zones**: maps the layer to a single drum note: **Kick**, **Snare**, **Hi Hat Closed**, **Hi Hat Open**, **Clap**, **Low Tom**, **Hi Tom** or **Ride**.
+
+The menu button in the sampler's title bar opens the Options menu:
+
+**MPE**: Turns on MPE (MIDI Polyphonic Expression) input, for MPE controllers.
+
+**Voice Stealing**: Lets a new note take over a playing voice when every voice is in use.
+
+**Mono**: Plays one note at a time.
+
+**Select sound layer on note on**: Selects the layer you play, so its settings show as you play.
+
+**All** / **Round Robin** / **Random**: What happens when several layers match a note. *All* plays every one of them, *Round Robin* takes turns, and *Random* picks one at random. (Default: All; Round Robin on the Drum Sampler)
+
+**Panic**: Stops every sounding note.
+
+The Micro Drum Sampler's Options menu only has **Voice Stealing** and **Panic**.
 
 ### Supported Sample Formats
 
@@ -100,6 +142,14 @@ Once you've selected a layer, you can fine-tune how it plays:
 **Sample In / Out**: sets the start and end point within the audio file. Drag the waveform display's handles to trim the sample. (Default: full file)
 
 **Loop In / Out**: sets the loop region within the sample. Requires looping to be enabled.
+
+**Loop** (Choices: Loop: None, Loop: Until Release, Loop: Until End): turns looping on. *Until Release* loops while the note is held, then plays on to the end. *Until End* keeps looping until the note's release has finished.
+
+**Key tracking mode** (Choices: Fixed Pitch, Resample, Pitch Shift): how the layer follows the notes you play. *Fixed Pitch* plays the sample at its own pitch on every note, which suits drums. *Resample* speeds the sample up or slows it down, like a tape machine. *Pitch Shift* changes the pitch without changing the length.
+
+**Reverse**: plays the sample backwards.
+
+**Offline pitch shift** and **Offline timestretch**: process the sample itself, shifting its pitch in semitones or changing its length. The Micro Sampler doesn't have these two.
 
 **Choke Group**: assign a choke group number so that triggering one layer silences others in the same group (e.g. open hi-hat choked by closed hi-hat). (Default: none)
 
@@ -131,7 +181,7 @@ Each layer has an amplitude envelope with adjustable curve shapes:
 
 **Release Shape**: curve shape of the release.
 
-### LFOs (Per Layer, Multi Sampler)
+### LFOs (Per Layer, Multi Sampler) <span class="pro">PRO</span> { #lfos-per-layer-multi-sampler }
 
 The **Multi Sampler** gives each layer **two LFOs** for modulation. Each LFO has:
 
@@ -176,12 +226,46 @@ Each chain can hold these effects:
 
 > 💡 **Tip:** Insert effects let you put reverb on your pads and a compressor on your kick simultaneously, all inside a single plugin instance. It also helps keep template tracks tidy.
 
+### Recording a Sample <span class="pro">PRO</span> { #recording-a-sample }
+
+The Multi Sampler's **RECORD** page records audio straight into the sampler. You can also drag an audio file onto the page to edit it the same way.
+
+1. Choose what to record with the **Input source** menu: **System Input (Mono)** or **System Input (Stereo)** (pick the channels from **Channels**), **Sampler Input** (the audio coming into the plugin on its track), **Sampler Output** (the sampler itself) or **System Output** (everything your computer plays). Turn on **Live Input Monitoring** in the same menu to hear an input while you record.
+2. Click **Record** to start, and again to stop.
+3. Drag the in and out flags to the part you want, and click **Play** to audition it. **Trim** cuts the recording down to the flags.
+4. Use the **Load / save** menu to keep it: **Create New Sound Layer...** adds it to the sampler, **Save to Scratchpad...** stores it on the Scratchpad, and **Save As...** saves a WAV file. **Load...** opens an audio file instead.
+
+**Retrospective Record** grabs the audio Waveform has been buffering from your inputs, even if you weren't recording. Every captured file is saved to the Scratchpad, which opens, and the first one also opens on the page.
+
+> 📝 **Note:** On macOS, recording the System Output needs the Tracktion Virtual Device audio driver. If it isn't installed, Waveform offers to install it when you choose System Output. System Output isn't offered on Linux.
+
+### Slicing a Sample <span class="pro">PRO</span> { #slicing-a-sample }
+
+On the RECORD page, drag across the waveform to mark a slice. The slice button (its tooltip reads *Crop*) opens a menu with more options:
+
+- **Automatically create slices on beat**: finds the hits in the sample and marks a slice on each. The unlabelled Beat Sensitivity slider in the same menu sets how many hits it finds, and re-marks the slices as you move it.
+- **Clear all slices**.
+- **Save each slice to scratchpad...**: saves every slice as its own file.
+- **Create sound layer with each slice...**: asks for a name, then makes one layer per slice, each on its own note starting from the bottom of the note range, with Fixed Pitch key tracking.
+
+To slice a drum loop from the arrangement, select its audio clip and use **Slice drum loop and open in sampler** in the Actions panel. Choose **Slice drum loop** to put each hit on its own note, or **Beat replace drum loop** to play one sound in the loop's rhythm. Waveform adds a Multi Sampler to the track and marks the slices. Adjust them, then click **Create MIDI** to replace the audio clip with a MIDI clip that plays the slices.
+
+### The Scratchpad
+
+The Scratchpad is temporary storage for samples, shared by the samplers. Click the Scratchpad button in the sampler's toolbar to show it down the right-hand side. Drag audio files onto it, or save recordings and slices to it, then drag them onto pads or the zone grid. Each row has play and edit buttons; right-click a row to **Delete** it (it moves to the Trash or Recycle Bin) or, on macOS and Windows, **Show in Finder** / **Show in Explorer**. The Rompler and Micro Drum Sampler have no Scratchpad.
+
+### Presets
+
+The preset name in the sampler's title bar opens the preset menu: pick a preset, or use **Save**, **Save as...**, **Delete**, **Copy samples into Edit** (when any layer uses a sample file that isn't stored in the Edit) or **Reset to default**.
+
+**Save as...** opens **Create Sampler Preset**, with a name, an optional description, tags and **Save audio preview** (on by default). With the preview option on, a **Preset Preview** window then asks you to *Play one or more notes to record a preset preview*. Click **Use As Preview** to keep it, or **Discard**. The Multi Sampler, Drum Sampler and Rompler also have a **PRESETS** page for browsing them.
+
 ### Micro Sampler vs Multi Sampler
 
 ![](images/Instruments/Micro%20Sampler@2x.png)
 *The Micro Sampler, a simpler keyboard sampler with SOUND and ZONES pages.*
 
-The **Micro Sampler** is a simpler keyboard sampler available in all editions. It has SOUND and ZONES pages and can hold several sound layers, each mapped to a note range, but you can't set velocity ranges. It only loads WAV and AIFF files (no SFZ or SF2) and has no presets or effects pages. It's a good choice if you just need to load a few samples and play them across the keyboard without the overhead of the full Multi Sampler.
+The **Micro Sampler** is a simpler keyboard sampler available in all editions. It has SOUND and ZONES pages and can hold several sound layers, each mapped to a note range, but you can't set velocity ranges. It only loads WAV and AIFF files (no SFZ or SF2) and has no PRESETS or effects pages, though the preset menu in the title bar still works. It's a good choice if you just need to load a few samples and play them across the keyboard without the overhead of the full Multi Sampler.
 
 ### Rompler
 
@@ -192,12 +276,14 @@ The **Rompler** is a preset-based instrument: it plays back factory sample banks
 
 ---
 
-## Subtractive Synthesizer
+## Subtractive Synthesizer <span class="pro">PRO</span> { #subtractive-synthesizer }
 
 ![](images/Instruments/Subtractive@2x.png)
 *The Subtractive synthesizer showing the Oscillators page and the LFOs.*
 
-**Subtractive** is Waveform's built-in multi-oscillator synthesizer. It's a traditional subtractive/hybrid design: oscillators generate a raw waveform, filters shape the tone, and envelopes and LFOs add movement. It's a Pro-only instrument (or available with the MIDI Producer or Synth Pack expansions).
+**Subtractive** is Waveform's built-in multi-oscillator synthesizer. It's a traditional subtractive/hybrid design: oscillators generate a raw waveform, filters shape the tone, and envelopes and LFOs add movement.
+
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer or Synth Pack Expansion.
 
 > 📝 **Note:** **Collective**, which is a related instrument, ships with its own dedicated manual and is not covered here.
 
@@ -241,18 +327,48 @@ Subtractive ships with a library of factory presets. Use the preset browser at t
 
 **Unison** stacks multiple voices per note for a thicker, wider sound. You can set the number of unison voices and the detune spread per voice. More voices means more CPU, so dial it back if you're running many instances.
 
-### Bass Osc
+## Bass Osc <span class="pro">PRO</span> { #bass-osc }
 
 ![](images/Instruments/Bass%20Osc@2x.png)
 *The Bass Osc, a compact single-oscillator bass synthesizer.*
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer or Synth Pack Expansion.
+
 **Bass Osc** is a small single-oscillator synth built for bass sounds. A single **Wave** control morphs the oscillator shape, while **Tune** and **Detune** set its pitch. The signal passes through one resonant filter with **Cutoff**, **Res**, and **Drive** controls, and decay-based amp and filter envelopes (each with a velocity amount) shape the sound over time. A **Glide** control gives smooth pitch slides between notes for classic bass lines, and it ships with a set of factory presets.
+
+## Attracktive
+
+**Attracktive** is a free instrument, in every edition, that plays Tracktion's Attracktive, BioTek, BioTek 2 and BioTek 3 sound packs. Each sound brings its own set of controls, background and colours, so the main panel changes with what you load. The bar along the top and the keyboard stay the same.
+
+### Installing the Sounds
+
+Attracktive doesn't include its sounds. Install the factory content from the Download Manager: open *Settings > Downloads*, click **Launch Download Manager** and install the Attracktive content (see [Downloads](reference-settings.md#downloads)). Attracktive installs and lists new packs while its window is open and Waveform is in the foreground, showing an *Installing Content Pack* overlay while it works. Click the **Refresh** button in the Browser if a pack doesn't appear.
+
+Until content is installed, the Browser shows a **Missing Content** page. It lists the **Preset Instruments** and **Preset Samples** folders it looks in, with **Select**, clear (x) and **Reveal** buttons, and an **Install Content Pack** button for a pack you have downloaded from the website.
+
+### Loading and Saving Sounds
+
+- Click the arrows beside the instrument name to step through the instruments.
+- Click the Browse button (a list with a magnifying glass) for the **Browser**. Filter by author, pack, category, style or character, or search by name or tag, then double-click an instrument to load it. Click the star on the selected instrument to make it a favourite, and tick **Show only favourites** to list just those.
+- Click the Save button, beside the instrument name, to store your changes. It opens a **Save Instrument** dialog in your User Instruments folder.
+
+### Common Controls
+
+**Voices**: The most notes Attracktive plays at once. Lower it to save CPU. (Range: 1 to 256, Default: 40)
+
+**Tune**: The tuning reference for A, in Hz. (Range: 400 to 500 Hz, Default: 440 Hz)
+
+**Effect Mix** and **Volume**: Every sound has these two in the top-right of the main panel. Effect Mix balances the dry sound against the effects.
+
+**External**, **Tempo**, **Arp** and **Latch**: Beside the keyboard. External syncs the arpeggiator and other timed parameters to the Edit's tempo. With External off, they follow **Tempo** instead (Range: 30 to 300 BPM, Default: 120 BPM). Arp and Latch are greyed out unless the sound uses the arpeggiator (and, for Latch, arpeggiator latching).
+
+The settings button at the right of the top bar opens the **Global** panel, with **Author**, **Zoom** (75%, 100% or 150%), **Control Behaviour**, **MPE** and **Multiple Cores**, **Sample Streaming** (**Prefer Streaming** and **Streaming Buffer Size**), **Install Content Pack** and the content **Locations** (**Preset Instruments**, **Preset Samples** and **User Instruments**).
 
 ---
 
 ## ⚡ Things to Watch Out For
 
-- **Edition gating.** The Drum Sampler and Multi Sampler are Pro-only. If you open a project that uses them in a Free or OEM edition, the plugins will be present in the chain but won't produce sound. Check the plugin's status indicator if a sampler seems silent.
+- **Edition gating.** The Drum Sampler and Multi Sampler need Waveform Pro, or the MIDI Producer or Synth Pack Expansion. If you open a project that uses them in a Free or OEM edition, the plugins will be present in the chain but won't produce sound. Check the plugin's status indicator if a sampler seems silent.
 
 - **Zone overlaps are intentional.** The zone grid allows layers to overlap. If you're hearing two samples at once when you expected one, check whether two layers cover the same note/velocity area. Overlapping is by design for crossfades and round-robin setups, but it can be surprising the first time.
 

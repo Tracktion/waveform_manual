@@ -67,7 +67,9 @@ That's the short version. [Rendering and Stems](rendering-and-stems.md) covers t
 and the other formats, rendering stems for each track or submix, tagging the
 files with title and artist, normalising to a loudness target, naming batches
 with patterns, saving presets, and rendering from the command line. Stems by
-submix and presets are in Advanced mode, which is part of Waveform Pro.
+submix and presets need the dialog's **Advanced mode** <span class="pro">PRO</span>,
+which is in Waveform Pro only (see
+[Simple and Advanced Modes](rendering-and-stems.md#simple-and-advanced-modes)).
 
 ## Locating the Exported File
 

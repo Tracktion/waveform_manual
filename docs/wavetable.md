@@ -1,9 +1,13 @@
-# Wavetable Synthesizer
+# Wavetable Synthesizer <span class="pro">PRO</span> { #wavetable-synthesizer }
 
-Waveform's built-in Wavetable synthesizer is a two-oscillator wavetable instrument with deep modulation, flexible filtering, and a full effects chain. It ships with a library of factory wavetables and presets, supports user wavetable import, and includes MPE support out of the box.
+Waveform's built-in Wavetable synthesizer is a two-oscillator wavetable instrument with a sub oscillator, a noise generator, two filters, a modulation matrix and an effects chain. It ships with factory wavetables and presets, can load your own wavetables, and supports MPE.
+
+> 📝 **Edition:** Waveform Pro, or with the Synth Pack Expansion.
 
 ![](images/Instruments/Wavetable@2x.png)
 *The Wavetable synthesizer interface showing both oscillators, filters, LFOs, envelopes, macros, and the global settings.*
+
+> 📝 **Note:** Most panels have a power button in their header. Only OSC 1 and Filter 1 are on in a new instance (the main ADSR has no power button and is always on). OSC 2, Filter 2, the Sub and Noise generators, ENV 1-3, LFO 1-4, the arpeggiator and every effect start switched off, so turn a section on before expecting it to do anything.
 
 ## Oscillators
 
@@ -24,6 +28,8 @@ You can also **drag and drop** a .wav file directly onto the wavetable display t
 ### Oscillator Controls
 
 Each oscillator has the following controls:
+
+**Enable**: The power button in the oscillator's header. (Default: On for OSC 1, Off for OSC 2)
 
 **Pos**: Sweeps through the frames of the loaded wavetable. This is the primary sound-shaping control for wavetable synthesis. Automate or modulate it for movement. (Default: 0%)
 
@@ -120,6 +126,8 @@ Each filter offers eight modes:
 
 ### Filter Controls
 
+**Enable**: The power button in the filter's header. (Default: On for Filter 1, Off for Filter 2)
+
 **Freq**: Cutoff frequency in Hz. This is the most important filter parameter. (Default: about 330 Hz)
 
 **Res**: Resonance. Boosts frequencies around the cutoff point. Higher values create a sharper, more pronounced peak. (Default: 0)
@@ -140,6 +148,7 @@ Each filter has its own dedicated ADSR envelope that modulates the cutoff freque
 - **D** (Decay): Time to fall from peak to sustain level. (Default: 0.1s)
 - **S** (Sustain): Level held while the note is sustained. (Default: 80%)
 - **R** (Release): Time to return to zero after note-off. (Default: 0.1s)
+- **AC**, **DC**, **RC** (Attack, Decay and Release Curve): The shape of each stage, from -100 to 100. Zero is a straight line; other values bend the stage into a curve. (Default: 0)
 
 The envelope's visual display shows the current phase of active voices in real time, so you can see exactly where each voice is in its envelope cycle.
 
@@ -180,6 +189,8 @@ The main **ADSR** envelope controls the overall volume shape of every note you p
 
 **R** (Release): Time for the sound to fade out after you release the note. (Default: 0.1s)
 
+**AC**, **DC**, **RC** (Attack, Decay and Release Curve): The shape of each stage, from -100 to 100. Zero is a straight line; other values bend the stage into a curve. (Default: 0 for AC, -70 for DC and RC)
+
 **Vel**: Velocity tracking. Controls how much your playing velocity affects the volume. At 100%, soft notes are quiet and hard notes are loud. At 0%, velocity has no effect. (Default: 100%)
 
 **Retrig**: Retrigger control. When mono mode and glide are active, this determines whether the envelope restarts on legato notes. Only visible when relevant.
@@ -191,6 +202,8 @@ The envelope display shows a visual representation of the ADSR curve and highlig
 The Wavetable synth includes **four LFOs** (LFO 1 through LFO 4) that can be used as modulation sources. Each LFO uses an MSEG (multi-segment envelope generator) for its shape, giving you far more flexibility than simple sine or triangle LFOs.
 
 ### LFO Controls
+
+**Enable**: The power button beside each LFO's name in the panel header. (Default: Off)
 
 **Rate**: The speed of the LFO in Hz. Only visible when Sync is off. (Default: 10 Hz)
 
@@ -243,10 +256,12 @@ In addition to the main ADSR and the two filter envelopes, the synth provides **
 
 Each envelope has:
 
+- **Enable**: The power button beside each envelope's name in the panel header. (Default: Off)
 - **A** (Attack): (Default: 0.01s)
 - **D** (Decay): (Default: 0.1s)
 - **S** (Sustain): (Default: 80%)
 - **R** (Release): (Default: 0.1s)
+- **AC**, **DC**, **RC**: The curve of the attack, decay and release stages, from -100 to 100. (Default: 0)
 - **Depth**: Scales the envelope's output before it reaches the modulation destination. Supports bipolar values. (Default: 1.0)
 - **Retrig**: Retrigger on legato notes (only visible in mono mode with glide enabled).
 
@@ -278,7 +293,10 @@ The available modulation sources are:
 
 The bottom of the interface has two tabs: **SRC** and **MTX**.
 
-The **SRC** tab shows all available modulation sources. Each source has a drag handle you can use to assign it to parameters.
+The **SRC** tab shows all available modulation sources. Each source has a button you can use to assign it to parameters, in either of two ways:
+
+- Drag the button onto a control.
+- Click the button to arm it (it lights up), then drag the controls you want it to modulate to set how far it moves each one. Click the button again to stop assigning.
 
 The **MTX** tab shows the full modulation matrix, listing all active routings with their source, destination, and depth. This is the place to go for an overview of all your modulation assignments.
 
@@ -297,6 +315,8 @@ You can rename each macro by clicking on its label and typing a new name. This m
 ## Effects
 
 The Wavetable synth includes a built-in **effects chain** with eight effect slots. Toggle between the filter/oscillator view and the effects view using the **Filter** and **FX** buttons on the toolbar.
+
+Every effect starts switched off: turn one on with the power button in its header.
 
 The effects can be **reordered by dragging** their headers left or right. The signal flows through them from left to right, so order matters. The default order is Gate, Chorus, Distortion, Delay, Reverb, EQ, Limiter, Filter.
 
@@ -334,7 +354,7 @@ Adds width and movement by mixing delayed, pitch-modulated copies of the signal.
 
 The distortion slot offers **ten different modes**, selectable from the dropdown menu in the header:
 
-**Simple**: Basic waveshaping distortion with a single Amount control. (Default mode)
+**Simple**: Basic waveshaping distortion with a single **Amount** control, shown from -1.0 to 4.0 (Default: 0.0). This is the default mode.
 
 **Light, Medium, Hard, Clip, Tube, Fuzz**: Six flavors of drive-based distortion, each with:
 - **Drive**: Amount of distortion. (Default: 0)
@@ -447,7 +467,7 @@ The built-in **Arpeggiator** takes the notes you hold and plays them back as a p
 
 (Default: Up)
 
-**Speed**: The rate of the arpeggio, synced to host tempo.
+**Speed**: The rate of the arpeggio, synced to host tempo, from 4 Bars down to 1/64 T, with dotted (D) and triplet (T) values. (Default: 1/4)
 
 **Gate**: Note length as a percentage, from 25% to 400%. Values over 100% create overlapping notes. (Default: 100%)
 
@@ -459,13 +479,13 @@ The built-in **Arpeggiator** takes the notes you hold and plays them back as a p
 
 **Rand Vel**: Randomizes note velocity. (Default: 0)
 
-**Swing**: Adds swing feel by delaying every other note. (Default: 0)
+**Swing**: Adds swing feel by delaying every other note, from 0 to 33. (Default: 0)
 
 ## Global Settings
 
 The **Global** panel controls settings that affect the entire synthesizer.
 
-**Level**: Master output volume in dB. (Default: 0 dB)
+**Level**: Master output volume, from -100 to +12 dB. (Default: 0 dB)
 
 **Mono**: Switches between polyphonic and monophonic playback. (Default: Off / polyphonic)
 
@@ -486,7 +506,7 @@ The **Global** panel controls settings that affect the entire synthesizer.
 
 ## MPE Support
 
-The Wavetable synth fully supports **MIDI Polyphonic Expression (MPE)**. When MPE is enabled, each note can independently respond to pressure, timbre (slide), and per-note pitch bend from MPE controllers like the Roli Seaboard or Linnstrument.
+The Wavetable synth supports **MIDI Polyphonic Expression (MPE)**. MPE is off by default: turn it on with the **MPE** item in the menu button on the plugin window's title bar. The choice is remembered as a preference, so new Wavetable instances start with it too. When MPE is enabled, each note can independently respond to pressure, timbre (slide), and per-note pitch bend from MPE controllers like the Roli Seaboard or Linnstrument.
 
 MPE Pressure, MPE Timbre, and MPE Pitch Bend are all available as modulation sources in the modulation matrix.
 

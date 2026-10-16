@@ -52,14 +52,15 @@ in the mode you last used. Switching back to Simple doesn't clear your Advanced
 settings; they are just not shown, and not used, until you switch back.
 (Default: Simple)
 
-Advanced mode is part of Waveform Pro. In Waveform Free the Mode row isn't
-shown and the dialog is always in Simple mode.
+> 📝 **Edition:** Advanced mode is in Waveform Pro. In the other editions the
+> Mode row isn't shown and the dialog is always in Simple mode.
 
 Simple mode renders the whole mix, every track, or the selected tracks, over the
 whole Edit, the marked region or the selected clips. It has every File Format
 option except *Wrap Remainder Into Loop*, plus the folder, name, file list and
 *Add to Library*. Everything else in this chapter marked
-<span class="pro">PRO</span> needs Advanced mode: the Submixes, Groups, Tags and
+<span class="pro">PRO</span>, apart from the surround channel layouts, needs
+Advanced mode: the Submixes, Groups, Tags and
 Outputs scopes and the track list, *Include Source Tracks*, the per-section
 ranges, *Wrap Remainder Into Loop*, render presets, the Destination row for
 ordinary renders, and loudness measurement.
@@ -166,7 +167,10 @@ makes a stem sound the way it does in the full mix: the kick still ducks the bas
 through the sidechain compressor even though the kick isn't in the bass stem. Leaving
 this on suits most renders, and Simple mode always leaves it on. (Default: on)
 
-### Rendering Stems <span class="pro">PRO</span>
+### Rendering Stems { #rendering-stems }
+
+> 📝 **Edition:** Stems by *Tracks* and *Selected Tracks* work in every
+> edition. The Submixes, Groups, Tags and Outputs groupings need Waveform Pro.
 
 Rendering stems is the reason most of this zone exists. In Simple mode,
 *Tracks* and *Selected Tracks* already give you a file per track; Advanced mode
@@ -176,10 +180,11 @@ adds the groupings. Pick the one that matches how you want the stems to arrive:
   get every track as its own file, all starting at the same point on the
   timeline.
 - Delivering to a mastering engineer or a stem-mastering service? Use
-  **Submixes** or **Tags**, so you hand over six or eight musical groups rather
-  than sixty tracks.
-- Making a live backing track set? Use **Groups** or **Tags** for the parts you
-  want separate faders for on the night.
+  **Submixes** <span class="pro">PRO</span> or **Tags** <span class="pro">PRO</span>,
+  so you hand over six or eight musical groups rather than sixty tracks.
+- Making a live backing track set? Use **Groups** <span class="pro">PRO</span> or
+  **Tags** <span class="pro">PRO</span> for the parts you want separate faders
+  for on the night.
 - Just need the four tracks you're looking at? Select them in the arrangement
   before you open the dialog and use **Selected Tracks**.
 
@@ -229,10 +234,11 @@ are hidden, since neither means anything for a MIDI file.
 
 ### Audio Settings
 
-**Channel Layout** (Choices: Auto, Mono, Stereo, and 5.1 and 7.1 where surround
-is available): How many channels each file has. *Auto* follows the source, so
-leave it there unless you specifically need to force mono or a surround layout.
-(Default: Auto)
+**Channel Layout** (Choices: Auto, Mono, Stereo, 5.1, 7.1): How many channels
+each file has. *Auto* follows the source, so leave it there unless you
+specifically need to force mono or a surround layout. The 5.1 and 7.1 choices
+<span class="pro">PRO</span> only appear in Waveform Pro, or with the Surround
+Expansion. (Default: Auto)
 
 **Sample Rate**: The rate the files are written at, which doesn't have to match
 the Edit's. The list is whatever the chosen format supports. (Default: 44100)
@@ -480,7 +486,9 @@ finish* appended if anything failed or was cancelled. A progress bar and a
 
 *A finished render, measured: −16.3 LUFS at −1.1 dBTP*
 
-## Render Presets <span class="pro">PRO</span>
+## Render Presets <span class="pro">PRO</span> { #render-presets }
+
+> 📝 **Edition:** Waveform Pro (Advanced mode).
 
 Presets are global: they're saved with the application rather than with an
 Edit, so a preset you make in one project is there in all of them.
@@ -545,11 +553,22 @@ and asks you to confirm before the render starts. *New Track* puts it on a new
 track, and *File* just writes the file. (Default: This Track, or Replace Clips
 for the *and replace* entries)
 
+**Name**: The one Output row a clip render keeps when it goes onto a track
+(any Destination but *File*). It names both the rendered
+file and the new clip, and starts as the clips' name when the selected clips
+all share one; otherwise it's left empty and the render is named after the Edit
+and the track, for example *My Song Bass Render 1*. The file is saved in the
+project's **Rendered** folder.
+
 The clips render through their own tracks and the track each one outputs
 into, and nothing else on those tracks sounds. The new clip takes the colour
 of the clips it came from. Like Render Track, the clip entries remember their
 own settings, open in Advanced mode in Waveform Pro, and open in Simple mode in
 Waveform Free with the clip range and destinations kept.
+
+Only arrangement clips can be rendered this way. With a Launcher clip selected,
+**Render Clip** shows *Launcher clips can't be rendered or flattened* instead of
+its menu.
 
 *Flatten the selected clip*, *Merge the selected clips* and the Chord Player's
 render don't open the dialog. They bounce with fixed settings behind a progress
@@ -626,6 +645,13 @@ platform name for a specific one. See *Checking your mix* in The AI Assistant
 chapter, and the **Loudness Meter** in Utility Plugins for the same readings
 live.
 
+While the assistant (or a script you run) is rendering, the Edit is covered by
+a *Rendering...* progress display with a **Cancel** button, and you can't change
+the Edit until the render finishes or you cancel it. The assistant panel and the
+menu bar still work. Closing the Edit, or quitting, while one of these renders
+is running asks whether to stop it: *Stop Render* cancels it and carries on
+closing, and *Keep Rendering* leaves it running.
+
 ## ⚡ Things to Watch Out For
 
 **Selections are read when the dialog opens.** *Selected Tracks* and the
@@ -642,6 +668,18 @@ it can't do it.
 you set up a Submixes, Groups, Tags or Outputs render in Advanced mode and then
 switch to Simple, the render falls back to the whole mix. *Tracks* renders every
 track, whatever was ticked in Advanced mode's list.
+
+**Muted or un-soloed tracks render silent.** A track that is muted, or that
+can't be heard because another track is soloed, renders as silence. In Advanced
+mode, and for clip renders, the dialog warns you before you start; for a MIDI
+render the warning says no file will be created, since there's no MIDI to
+write. Choosing *Replace Source Tracks* repeats the warning in its
+confirmation.
+
+**Tracks playing their Launcher render silent.** A track that is playing its
+clip launcher renders with nothing launched, and the dialog warns you. Press
+the track's play-arranger button (or use **Playback arranger** in its
+Actions panel) to render its arrangement. See the Clip Launcher chapter.
 
 **Marked Region with no marked region renders everything.** If you choose
 *Marked Region* without having set one, the dialog warns you that the whole Edit

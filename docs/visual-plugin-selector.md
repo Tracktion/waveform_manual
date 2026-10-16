@@ -1,14 +1,16 @@
 # Visual Plugin Selector
 
-Waveform's Plugin object has useful option when working with plugins:
-Right-click it to open the Visual Plugin selector. This chapter walks
-through a full explanation on how to use the Visual Plugin selector.
+The Visual Plugin selector shows your plugins as thumbnail images, so you
+can pick one by how it looks. It opens from the Plugin object on each
+track, the button with the tooltip *Add new plugin*.
 
 ## Using the Visual Plugin Selector
 
-To open the window into the Visual Plugin selector, right-click on the
-Plugin object. You will see all your plugins represented by thumbnail
-images along with the name.
+To open the Visual Plugin selector, right-click the Plugin object, or
+hold any modifier key while you click it. You will see all your plugins
+represented by thumbnail images along with the name. A plain click opens
+whichever selector **Plugin selector** in `Settings > Plugins` is set to
+(see [Plugin View Options](reference-settings.md#plugin-view-options)).
 
 
 ![](images/39----01.png)

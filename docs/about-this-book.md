@@ -2,6 +2,12 @@
 
 Release Log:
 
+*16/10/2026*: 14.1
+- Added [Quick Start](quick-start.md), [The Plugin Side Panel](plugin-side-panel.md), [The Plugins Detail Editor](plugins-detail-editor.md) and [Rendering and Stems](rendering-and-stems.md) chapters
+- Brought the settings reference chapters together as [Reference: Settings](reference-settings.md)
+- Rewrote [What's New](whats-new.md) for 14.1, covering the Render dialog in every edition, the Loudness Meter, the assistant's mix measurement and Cmajor building
+- Marked the features that aren't in Waveform Free with a PRO badge and an Edition line
+
 *29/5/2026*: 14.0
 - Rewrote the guide as one file per chapter and brought it up to date with Waveform 14
 - Added [What's New](whats-new.md), [The Detail Editor](detail-editor.md), and [The Actions Panel](actions-panel.md) chapters
@@ -26,11 +32,13 @@ Release Log:
 ## Waveform User Guide - A Work in Progress
 
 The purpose of this user guide is to document and explain the DAW named
-Waveform. Check the release log above or the version of the DAW this is guide is up to date with.
+Waveform. Check the release log above to see which version of Waveform
+this guide covers.
 
 Waveform is available in Free, OEM and Pro editions. The core operation
-of Waveform is the same for all but I will attempt to highlight the
-differences where possible.
+of Waveform is the same in all of them. Features that aren't in Waveform
+Free carry a <span class="pro">PRO</span> badge, with an **Edition** line
+naming the editions and expansions that include them.
 
 **IMPORTANT NOTE!**
 

@@ -152,12 +152,18 @@ section you are recording over.
 
 ## Overlay Mode
 
-In overlay mode, as you record you'll get a new MIDI clip stacked on top
-of the original clip. After you have recorded this way, you'll hear the
-output from both clips mixed together.
+Set *Action* to *Overlay new clips, containing newly recorded MIDI*. As
+you record, you'll get a new MIDI clip stacked on top of the original
+clip. After you have recorded this way, you'll hear the output from both
+clips mixed together.
 
-During playback, you will hear the overlapping MIDI clips merged
-together.
+## Monitor Only
+
+With *Action* set to *Monitor live input from this device, but don't
+actually record*, you still hear the input play through the track, but
+nothing from this device is recorded when you press Record. Use it for a
+controller you want to play along on without adding its notes to the
+take.
 
 ## MIDI Input Quantize
 

@@ -1,10 +1,13 @@
-# Stem Separation
+# Stem Separation <span class="pro">PRO</span> { #stem-separation }
 
 Stem separation splits a mixed audio clip into its constituent parts
 (**drums**, **vocals**, **bass**, and **other**) using an on-device
 neural model. Reach for it when you want to isolate a vocal for a remix,
 pull out a drum loop, or turn a finished mix into an instrumental, all
 without the original multitrack.
+
+> 📝 **Edition:** Waveform Pro, or with the DJ Mix Tools Expansion. It
+> also needs the Stem Separation feature pack (see below).
 
 The separation is powered by **Demucs**, Meta's open-source music source
 separation model. It runs **entirely on your own machine** as a bundled

@@ -1,12 +1,13 @@
-# Track Snapshots
-
-> 📝 **Note:** Track Snapshots are a **Waveform Pro** feature. They are not available in Waveform Free
-> or OEM editions, where the **Track snapshots** submenu shows only a greyed-out *"Feature unavailable"* line.
+# Track Snapshots <span class="pro">PRO</span> { #track-snapshots }
 
 A **Track Snapshot** saves the current arrangement of clips on a single audio track so you can try out
 a different arrangement and instantly recall the saved one. It is an A/B tool for *arrangement* work:
 lay down a verse one way, snapshot it, rearrange the clips, and flip back and forth between the
 versions until you are happy.
+
+> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion. In other editions the
+> **Track snapshots** submenu shows only a greyed-out *"Feature unavailable"* line, and the Actions panel
+> has no **Track Snapshots** button.
 
 > 📝 **Note:** A snapshot captures the track's **clips only**: their positions, lengths, and clip-level
 > settings. It does **not** store plugins, fader, pan, mute/solo, sends, or automation. Recalling a

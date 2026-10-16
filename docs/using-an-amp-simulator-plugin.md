@@ -185,6 +185,13 @@ commit to the sound at this point. Just dial in something that's
 inspiring so that you can get a good performance. You can always come
 back and tweak the amp settings later.
 
+> 💡 **Tip:** If your amp sim has no cabinet of its own (or you've
+switched it off), put **Guitar IR** <span class="pro">PRO</span> after it
+on the track and load a cabinet impulse response there. **Dual Guitar
+IR** <span class="pro">PRO</span> blends two responses, such as two mic
+positions. Both need Waveform Pro or the Recording Engineer Expansion; see
+[Guitar IR](built-in-effects-plugins.md#guitar-ir).
+
 ## Using a Tuner Plugin
 
 If you are recording direct with a guitar or bass, you might want to add

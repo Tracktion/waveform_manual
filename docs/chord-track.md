@@ -1,4 +1,4 @@
-# The Chord Track
+# The Chord Track <span class="pro">PRO</span> { #the-chord-track }
 
 The Chord Track is a global track that maps out your project's harmony
 over time. It holds Chord clips, and each Chord clip contains a chord
@@ -7,7 +7,7 @@ plugins. Think of it as a harmonic reference for the rest of the edit.
 MIDI pattern generators can follow it to stay in harmony, and audio
 clips can automatically pitch-shift to match it.
 
-The Chord Track is available in Waveform Pro.
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 ![](images/chord-track_1@2x.png)
 
@@ -116,8 +116,9 @@ it:
 
 -   **MIDI pattern generators** can generate basslines, arpeggios, and
     chord parts that track the progression.
--   **Audio clips** can automatically pitch-shift to follow the Chord
-    Track (Waveform Pro).
+-   **Audio clips** <span class="pro">PRO</span> can automatically
+    pitch-shift to follow the Chord Track. This needs Waveform Pro; the
+    MIDI Producer Expansion doesn't include it.
 
 The chord types offered throughout Waveform (including the Chord
 Track) can be customized in [Settings >

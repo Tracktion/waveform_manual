@@ -1,13 +1,11 @@
-# Edit Mix Groups
-
-> 📝 **Note:** Edit Mix Groups are available in **Waveform Pro** only. They are not included in the
-> Free or OEM editions. The feature is also unlocked separately by the *Recording Engineer Expansion*,
-> but core Waveform Pro already includes it, so you do not need the expansion to use it.
+# Edit Mix Groups <span class="pro">PRO</span> { #edit-mix-groups }
 
 An Edit Mix Group links two or more **audio tracks** together so that an action you perform on one
 member is mirrored on the others. Adjust the fader on a grouped vocal track and every other track in
 the group moves with it; mute one and they all mute. This is the classic mixing-console idea of a
 fader group, brought into Waveform's mixer.
+
+> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion.
 
 Exactly *which* actions are linked is up to you. A group is not all-or-nothing: it has **ten
 independent link toggles** plus a master **Enable** switch, so you might link only volume and mute on one group, while another group links
@@ -123,3 +121,5 @@ slice. Clicking the icon selects and cycles through the track's groups.
   submix when you want shared *processing*; use an Edit Mix Group when you want linked *controls* while
   keeping each track's own signal path.
 - **[Mixing Down](mixing-down.md)**: the broader mixing workflow that groups fit into.
+- **[Rendering Stems](rendering-and-stems.md#rendering-stems)**: in the Render dialog's Advanced mode,
+  the *Groups* stems option renders every Edit Mix Group to its own file.

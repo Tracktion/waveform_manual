@@ -21,6 +21,9 @@ clip header.
 
 *Trim MIDI Clips by Dragging a Trim Handle*
 
+Hold Opt / Alt while you drag a start or end handle to stretch the clip's
+contents to the new length instead.
+
 > 📝 **Note:** One difference between Audio clips and MIDI clips is that the
 MIDI clips don't have fade handles.
 
@@ -115,6 +118,14 @@ Opens the MIDI editor, Opens the MIDI editor (in-line editing disabled)).
 Choose *Expands for in-line editing* to make a double-click toggle the
 track height for inline editing instead. (Default: Opens the MIDI editor)
 
+You can also open it with `View > Show Content Editor`. In the Detail
+editor's **Clip** tab, a MIDI clip gets two pills at the top left:
+**Piano Roll** shows the note editor, with the same toolbar and tools as
+the inline editor, and **Pattern Generator** switches the tab to the
+[Pattern Generator](pattern-generator.md). With several MIDI clips
+selected the second pill reads *Pattern Generator (N)*, because the
+generator works on all of them. See [The Detail Editor](detail-editor.md).
+
 ## Setting the Number of Octaves & Note Height
 
 You can adjust how many octaves you see on the MIDI editor with
@@ -152,6 +163,29 @@ to prevent scrolling within the MIDI clips unintentionally.
 Having MIDI scrolling on suits MIDI editing. The setting is
 **Allow wheel to scroll within MIDI clips** in `Settings > General`,
 Mouse section. (Default: on)
+
+## The MIDI Toolbar
+
+The toolbar runs along the top of the MIDI editor. In the inline editor
+it appears automatically while **Automatically show MIDI editor
+toolbar** is on in `Settings > General`, MIDI section (Default: on).
+Opt + Cmd + T / Ctrl + Alt + T turns that on and off. From left to right:
+
+| Control | What it does |
+| --- | --- |
+| **View** <span class="pro">PRO</span> | **Drum grid** for the selected tracks, and which note rows to show: **Show all notes**, **Show notes in key**, **Show notes in use** or **Show named notes**. |
+| **Func** <span class="pro">PRO</span> | **Duplicate MIDI Notes**, **Duplicate MIDI Notes (Last Bar)**, and **Lock CC data to notes**, which moves controller data along with the notes you drag. |
+| **Velocity**, **Controllers**, **+** | Show the velocity lane and the controller lanes, and add a controller lane. See [The Velocity Editor](#the-velocity-editor) and [Editing other Controller Data](#editing-other-controller-data). |
+| Tool buttons | The editing tools. See [The Editing Tools](#the-editing-tools). |
+| Colour swatches | The note colour. See [Note Colors](#note-colors). |
+| **Vel**, **Len** | The velocity and length for new notes. See [Editing the Note Velocity](#editing-the-note-velocity) and [Note Length](#note-length). |
+| **Snap** | The note-editing grid. See [Snapping During Note Editing](#snapping-during-note-editing). |
+| **Step**, speaker | Step entry, and hearing notes as you edit them. See [Step Entry Mode](#step-entry-mode) and [Hearing Notes While Editing](#hearing-notes-while-editing). |
+| **Zoom** | Zooms to fit all notes, or the selected notes. |
+| **Transpose**, **Quantise**, **Groove**, **Chords** | Menus that act on the selected notes. See [Quantizing MIDI Notes](quantizing-midi-notes.md) and [The Chord Track](chord-track.md). When the editor is narrow the toolbar wraps onto extra rows, and these four are the first to be left out if it still doesn't fit. |
+
+> 📝 **Edition:** **View**, **Func** and the Knife tool need Waveform Pro
+> or the MIDI Producer Expansion.
 
 ## Basic MIDI Editing - Pitch
 
@@ -220,24 +254,34 @@ expression.
 
 ## Nudging Notes
 
-Nudging works much like it does for Audio clips and MIDI clips. You hold
-down Shift and use the arrow keys. Shift-up and Shift-down change the
-pitch. Shift-left and Shift-right change the timing.
+Nudging selected notes works like nudging clips: hold Shift and use the
+arrow keys. Shift-up and Shift-down change the pitch. Shift-left and
+Shift-right change the timing. To move only the start of the notes, use
+Opt + Cmd + Left or Right / Ctrl + Alt + Left or Right.
 
-Nudging is particularly helpful when changing the pitch, since there
-there's no chance of altering the timing of the note.
+Nudging is particularly helpful when changing the pitch, since there's
+no chance of altering the timing of the note.
 
 > 💡 **Tip:** Cmd + Z / Ctrl + Z works as undo for most editing operations.
 
 ## Note Length
 
-You can trim the length of a note by grabbing the right edge and
-dragging it left or right.
+You can trim the length of a note by grabbing its right edge, or its
+left edge, and dragging it left or right. Hold Cmd / Ctrl while you drag
+an edge to strum the selected notes instead.
 
 
 ![](images/25----13.png)
 
 *Trimming a MIDI Note*
+
+The **Len** button in the toolbar (it shows the current value) sets the length of new notes. It offers 1 tick,
+fractions of a beat from 1/96 to 1/2, and 1 to 12 beats. **Other...**
+asks for a length in MIDI ticks.
+
+**Auto update on note resize**: When ticked, resizing a single note sets
+**Len** to that note's new length, so the next note you draw matches it.
+(Default: on)
 
 ## Snapping During Note Editing
 
@@ -245,10 +289,15 @@ Many of these editing operations will snap to the grid as long as you
 have *Snap* enabled. To edit freely, disable *Snap*. The keyboard
 shortcut Q enables or disables snapping.
 
+The toolbar's **Snap** button sets the grid the MIDI editor snaps to,
+and shows it, for example "Snap: smart". **Smart** (the default) follows
+the zoom level, so the grid gets finer as you zoom in. You can also pick
+a fixed resolution, and turn on **Triplet** for a triplet grid.
+
 
 ![](images/25----14.png)
 
-*Note Editing Will Snap if *Snap* is On*
+*Note editing snaps when Snap is on*
 
 ## Copying and Duplicating Notes
 
@@ -283,6 +332,37 @@ panel for the selected note.
 ![](images/25----18.png)
 
 *Start, Length, & End Settings in the Actions Panel*
+
+## Note Actions in the Actions Panel
+
+With notes selected, the [Actions panel](actions-panel.md) shows more
+than their values. **Mute** and **Note-off Velocity** sit with Pitch and
+Velocity; Mute notes is also Opt + Cmd + M / Ctrl + Alt + M, and
+Opt + V / Alt + V randomises the velocity of the selected notes.
+
+Below the times are menus that change the selected notes: **Transpose**,
+**Quantise**, **Apply Groove**, **Equalise** (sets them all to the same
+length), **Mirror** (flips them vertically or horizontally), **Insert
+Chord** and **Modify Notes**. **Select Notes** picks other notes based on
+the current selection. **Create Preset** turns the notes into a bass or
+chord preset, and **Add Custom Chord** saves them as a chord for the
+[Pattern Generator](pattern-generator.md). Quantise and Groove are
+covered in [Quantizing MIDI Notes](quantizing-midi-notes.md).
+
+## The Editing Tools
+
+The tool buttons sit in the middle of the toolbar. You can also pick a
+tool from the right-click menu in the note area, or with a shortcut.
+
+| Tool | What it does | Shortcut |
+| --- | --- | --- |
+| **Selection** | Selects multiple notes or controllers. | Opt + Cmd + 1 / Ctrl + Alt + 1 |
+| **Pencil** | Draws and moves notes and controllers. | Opt + Cmd + 2 / Ctrl + Alt + 2 |
+| **Eraser** | Deletes notes or controllers. | Opt + Cmd + 3 / Ctrl + Alt + 3 |
+| **Knife** <span class="pro">PRO</span> | Cuts notes. | Opt + Cmd + 7 / Ctrl + Alt + 7 |
+| **Line** | Draws lines of notes or controllers. | Opt + Cmd + 4 / Ctrl + Alt + 4 |
+| **Melody Paint** | Toggles notes on and off to create melodies. | Opt + Cmd + 5 / Ctrl + Alt + 5 |
+| **Note Preview** | Previews all the notes at the current time. | Opt + Cmd + 6 / Ctrl + Alt + 6 |
 
 ## The Pencil Tool
 
@@ -457,7 +537,7 @@ Example editing aftertouch: In the MIDI editor click
 *+ > Channel Pressure*. Now the channel pressure data will appear in the
 same way velocity appears.
 
-## The MIDI Event List
+## The MIDI Event List <span class="pro">PRO</span> { #the-midi-event-list }
 
 For surgical, numbers-first editing, open the **MIDI Event List**. It's
 a floating, resizable table of every event in the currently selected
@@ -465,7 +545,7 @@ MIDI clip, and it follows your selection: click a different clip and
 the list updates to match. The list and the piano roll share a
 selection, so a note you highlight in one is highlighted in the other.
 
-Available in Waveform Pro and with the MIDI Producer Expansion.
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 Open it with the command **Show or hide the MIDI Event List window**, or
 from the View menu's **Show MIDI Event List** item.

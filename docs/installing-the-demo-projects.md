@@ -13,6 +13,27 @@ One method would be to create a Waveform folder, under the Documents
 folder on your system. So, decide on a location and create your Waveform
 folder using the Finder (macOS) or File Explorer (Windows).
 
+Waveform has no setting for a projects folder. Instead, you pick the folder
+in the **Location** field of the **New Project** dialog, and Waveform
+offers the last folder you used the next time you create a project.
+
+## The Welcome Tab
+
+The **Welcome** tab is the first tab in the window. **Upon launch** in
+`Settings > General` decides whether Waveform opens on it (see
+[Startup](reference-settings.md#startup)).
+
+| Area | What it shows |
+|---|---|
+| **Recent Edits** | The Edits you've opened most recently, newest first. |
+| **Project Templates** | Templates to start a new project from (see below). |
+| **Audio Settings** | Your audio device type, devices, sample rate and buffer size, so you can check them before you start. |
+| **Colour Scheme** | Buttons for the dark scheme, the light scheme and the Colour Scheme Editor. |
+| **News Feed** / **Training Videos** | Tracktion news and tutorial videos. Click an item to open it in your web browser, or hover over it to read its full description. |
+
+Along the bottom are **New Project...**, **Browse all Projects** (which
+opens the Projects tab), **Settings** and **About**.
+
 ## Starting From a Template
 
 The quickest way to get something playable is to start from one of the
@@ -33,8 +54,9 @@ reuse it as often as you like.
 
 > 💡 **Tip:** If you'd rather keep the template's track and plugin layout
 but start with an empty arrangement, enable **Remove clips when loading
-templates** before you click. This opens the project with its routing in
-place but no clips on the tracks.
+templates** (the toggle under the Project Templates list, also in the New
+Project dialog) before you click. This opens the project with its routing
+in place but no clips on the tracks.
 
 ![](images/template-new-project@2x.png)
 

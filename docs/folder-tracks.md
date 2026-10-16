@@ -75,6 +75,12 @@ Reorder Tracks within a Folder Track
 
 *Reordering Tracks within a Folder*
 
+Removing Tracks from a Folder Track
+- To take a track out of its folder, select it and click **Unfolder**
+    in the Actions panel ("Removes this track from its parent folder").
+    To take several out at once, select them, right-click one of their
+    track headers and choose **Unpack selected tracks from folder**.
+
 Collapsing and Expanding a Folder Track
 - Click the small triangle to the left of the Folder Track name to
     expand or collapse the folder. When the folder is collapsed it
@@ -127,6 +133,12 @@ all of the individual *Volume & Pan* plugins of the tracks contained
 within the Folder Track. It's a very convenient way to add high-level
 mixing to your groups of instruments, without going through the
 complexity of adding numerous additional bus.
+
+> 📝 **Note:** To keep one track out of the VCA's control, select that
+track's *Volume & Pan* plugin and turn on **Ignore VCA** in the Actions
+panel. The option only appears for tracks inside a folder. If a folder
+has no VCA, right-click its track header and choose **Insert VCA
+plugin...** to add one.
 
 > 📝 **Note:** Adding an effect plugin to a Folder Track turns it into a
 Submix Track, so audio then passes through it. Submix Tracks are covered

@@ -63,7 +63,7 @@ See the Macros chapter for how to write and manage the scripts themselves.
 
 On the dedicated Actions panel at the right of the Edit tab (not the sidebar Actions tab), two extra controls appear at the top left:
 
-**Lock**: Locks the panel to its current contents so it stops following your selection. This is useful when you want to keep a particular set of actions on screen while you click around elsewhere. Click it again to unlock and resume tracking the selection.
+**Lock**: Locks the panel to its current contents so it stops following your selection. This is useful when you want to keep a particular set of actions on screen while you click around elsewhere. Click it again to unlock and resume tracking the selection. Shortcut: Opt + F11 / Alt + F11 (*Lock/Unlock Actions panel*).
 
 **Dock / Undock**: Pops the panel out into a floating window, or docks it back again. A floating Actions panel stays on top so you can keep it beside whatever you're working on.
 
@@ -77,18 +77,22 @@ Shift-click the breadcrumb to see all actions for that item, ignoring the menu's
 
 > 📝 **Note:** If the menu opens empty in favourites mode, you'll see "No actions to show. Mark some actions as favourites." Mark a few favourites in the Actions panel, or Shift-click to see everything.
 
-## The Quick Actions Bar and Window
+## The Quick Actions Bar and Window <span class="pro">PRO</span> { #the-quick-actions-bar-and-window }
 
 Quick Actions is a separate feature from the action menu above. Instead of showing the actions for whatever you've selected, it gives you rows of buttons that *you* assign to specific commands: your own custom shortcut bars that stay put regardless of selection.
+
+> 📝 **Edition:** Waveform Pro.
 
 ![](images/Quick%20Actions%201@2x.png)
 *Rows of assignable Quick Actions buttons*
 
 ### Assigning Quick Actions
 
-Each row is a **Quick Actions bar** of buttons. To add a button, click the **+** at the end of a row (*Add a quick action button*). To assign a command to a button, right-click it and choose a command from the **Assign action** submenu. The right-click menu also shows what's currently assigned and offers a **Remove** option.
+Each row is a **Quick Actions bar** of buttons. To add a button, click the **+** at the end of a row (*Add a quick action button*). To assign a command to a button, right-click it and choose a command from the **Assign action** submenu. The right-click menu also shows what's currently assigned and offers a **Remove** option. Use **Rename** to give the button your own label (leave it blank to go back to the command's name) or **Reset name** to undo that, and the colour picker in the same menu to colour the button. The **Icon** submenu puts an icon on the button: pick **None** or one of the installed icons, use **Import from SVG file...** to add your own, or **Show icons folder...** to open the folder they live in.
 
-You can rearrange buttons by dragging them, and add or remove whole rows using the controls at the end of each row (*Add a row* / *Remove this row*). Each set of buttons is saved as a named "Shortcuts" file, so you can keep different layouts for different jobs.
+You can rearrange buttons by dragging them, and add or remove whole rows using the controls at the end of each row (*Add a row* / *Remove this row*).
+
+Each set of buttons is saved as a named set, so you can keep different layouts for different jobs. The selector button at the left end of each bar shows the current set's name. Click it to switch to another saved set, or to manage them: **New** creates an empty set, **Duplicate** copies the current one, **Rename** renames it and **Delete** removes it (there's no undo for a delete).
 
 ### The Quick Actions Bar (above the transport)
 

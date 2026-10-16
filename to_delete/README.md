@@ -103,3 +103,5 @@ These 102 images were in `docs/images/` but no chapter, `mkdocs.yml`, stylesheet
 - `images/72----01.png`
 - `images/72----08.png`
 - `images/settings_ai_custom_profile@2x.png`
+- `images/10----11.png` (old Marker track split mode; removed from using-markers.md in refactor Pass 2)
+- `images/10----25.png` (old Marker track split mode; removed from using-markers.md in refactor Pass 2)

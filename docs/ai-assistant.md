@@ -46,9 +46,11 @@ The panel works like any chat: type a request into the message box at the bottom
 - **Send**: sends your request. You can ask questions ("how do I freeze a track?") or ask for actions ("create a four-bar drum pattern").
 - **Cancel** (stop icon): takes the place of Send while the assistant is working. Click it to stop a long reply mid-stream rather than waiting for it to finish. It also interrupts a local model that is still reading a long prompt.
 - **New chat** (edit icon, top of the panel): begins a fresh conversation when you want to change topic and not carry the previous context along. (The `/clear` slash command does the same thing.)
-- **Load** (history icon, top of the panel): your chats are saved automatically. Click the icon and pick an earlier conversation from the list to pick up where you left off or look back at something the assistant told you.
+- **Load** (history icon, top of the panel): your chats are saved automatically. Click the icon and pick an earlier conversation from the list to pick up where you left off or look back at something the assistant told you. Each chat gets a title written by a fast model from the same provider as the conversation, so a conversation with a local model stays local.
 
-You can also choose which AI model answers you. The **Model** selector below the message box lists the active profile's models by name, and then, underneath, the models from any other profile that's currently working, written as *profile: model*. Picking one of those routes just this conversation elsewhere without changing your active profile. This is handy for asking one hard question of a cloud model while everything else stays local.
+While the assistant works, a step list in the conversation shows what it is doing. Its heading reads *Working*, *Choosing a model* or *Thinking*, and any step that takes more than a moment gets its own line with a running time, such as *Searching the manual*, *Running a script* or *Working on a Cmajor patch*. Only the latest five steps stay in view; click *+N earlier steps* to see the rest. When the reply is finished the list folds up into one line showing how long the turn took and how many steps failed, if any. Click it to open the list again.
+
+You can also choose which AI model answers you. The **Model** selector below the message box lists the active profile's models by name, and then, underneath, the models from any other profile that's currently working, written as *profile: model*. For the **OpenAI API**, **Anthropic API** and **ChatGPT (Codex)** profiles the list shows every chat model your account can use, so new models appear as soon as they are released. Picking one of those routes just this conversation elsewhere without changing your active profile. This is handy for asking one hard question of a cloud model while everything else stays local.
 
 The selector also includes an **Auto** option (the default), which lets Waveform pick a suitable model for each message automatically. When you choose a specific model instead, two more controls appear beside it so you can tune how the assistant responds:
 
@@ -60,7 +62,7 @@ Both are hidden while **Model** is set to **Auto**, because Auto decides them fo
 
 ### Auto mode routing
 
-Left alone, **Auto** picks a sensible model from your active profile for each message. But you can also tell it exactly which profile and model to use, by sorting requests into three sizes on the Settings > AI page: **Fast Requests**, **Standard Requests** and **Heavy Requests**. Each can be pinned to a specific model on a specific profile, or left on *(Automatic)*.
+Left alone, **Auto** picks a sensible model from your active profile for each message. But you can also tell it exactly which profile and model to use, by sorting requests into three sizes on the Settings > AI page: **Fast Requests**, **Standard Requests** and **Heavy Requests**. Each can be pinned to a specific model on a specific profile, or left on *(Automatic)*. The automatic Fast, Standard and Heavy models move up to the newest version of each model as it becomes available.
 
 This is what makes a mixed setup worthwhile. Pin the fast and standard tiers to a model running on your own computer and the heavy tier to a cloud model, and everyday chat costs you nothing and never leaves your machine, while the genuinely hard requests still go somewhere capable. Any tier you leave on *(Automatic)* falls back to your active profile as before.
 
@@ -111,6 +113,7 @@ Beyond answering questions, the assistant can act on Waveform and your project f
 - Manage its own slash commands and Skills (reusable abilities you can give it).
 - Read and write a persistent memory file so it can remember things across sessions.
 - Render your project and measure how it sounds. See [Checking your mix](#checking-your-mix) below.
+- Build Cmajor audio effects and instruments <span class="pro">PRO</span>. See [Building Cmajor plugins](#building-cmajor-plugins) below.
 
 ## Checking your mix
 
@@ -135,11 +138,32 @@ The quickest way in is **`/mixcheck`**. It measures the whole mix and reports lo
 
 You can also ask it to fix what it finds - "bring the mix up to -14 LUFS" or "tame the harshness in the vocal". It makes small, undoable changes, measures again and shows you the numbers before and after, so you can tell whether each change helped. Always listen to the result too - the numbers show whether a mix meets a target, not whether it sounds good.
 
-> 💡 **Tip:** To watch the same readings live while you mix, put a **Loudness Meter** on the master track. See [Loudness Meter](utility-plugins.md#loudness-meter-pro) in the Utility Plugins chapter.
+> 💡 **Tip:** To watch the same readings live while you mix, put a **Loudness Meter** on the master track. See [Loudness Meter](utility-plugins.md#loudness-meter) in the Utility Plugins chapter.
+
+## Building Cmajor plugins <span class="pro">PRO</span> { #building-cmajor-plugins }
+
+The assistant can write audio effects and instruments for you in the Cmajor language and load them into your project.
+
+> 📝 **Edition:** Waveform Pro, on macOS (Apple Silicon) and Windows. It isn't available on Intel Macs or Linux.
+
+Describe what you want in plain language, for example "Build me a Cmajor tremolo effect and put it on my first audio track". The assistant then:
+
+1. Creates a new patch in the `cmajor-patches` folder inside your project folder, so the patch stays with the project when you move or archive it.
+2. Writes the DSP code, spreading a large patch across several files, and adds a custom UI if you ask for one.
+3. Compiles the patch, reads any errors and fixes them itself.
+4. Loads the finished plugin on a track.
+
+A custom UI fills the plugin window and scales with it. If a custom UI can't load, the assistant is told, so it can fix it rather than leaving you with an empty window. In the step list, each build run shows as one *Working on a Cmajor patch* row.
+
+The assistant can look at the plugin views it builds when the model reads images. On a profile you have added yourself, such as a local model, turn on **Model Reads Images** in Settings > AI only if the model is a vision model; a model that can't read images rejects them.
+
+Once a patch exists you can open and use it like any other Cmajor patch. See [Cmajor Patches](using-plugins.md#cmajor-patches).
 
 ## What the assistant can see
 
 So that its help is relevant to what you're actually doing, the assistant is given context about your project with each message. This typically includes things like the tempo and time signature, the key and scale, the chord track's progression, arranger sections, whatever clip or plugin you currently have selected, and the contents of the Project Info field. This is why it can answer questions like "what key is this in?" or act on "the selected clip" without you having to spell everything out.
+
+The strip at the top of the panel shows the selection being sent: *Selected MIDI clip* or *Selected plugin*, followed by its name and track. When neither is selected it reads *Additional context to use based on selection*.
 
 If you're using one of the cloud profiles, this context is part of what gets sent to the provider along with your message. See [Privacy and cost](#privacy-and-cost) below.
 
@@ -151,7 +175,7 @@ The assistant keeps a memory file on disk where it stores notes it has decided a
 
 Both of these depend entirely on which profile you're using, so it's worth being clear about which one you have selected.
 
-> ⚠️ **Privacy:** With a cloud profile (**OpenAI API**, **Anthropic API** or **ChatGPT (Codex)**), each message you send, along with the project context described above (which can include notes on the selected clip, information about plugins, and the contents of the assistant's memory), is sent over the internet to that company. This data leaves your computer. Don't put anything in the chat, or in places the assistant can read, that you wouldn't be comfortable sending to them. With a profile pointing at a server on your own machine, none of this leaves your computer.
+> ⚠️ **Privacy:** With a cloud profile (**OpenAI API**, **Anthropic API** or **ChatGPT (Codex)**), each message you send, along with the project context described above (which can include notes on the selected clip, information about plugins, and the contents of the assistant's memory), is sent over the internet to that company. This data leaves your computer. Don't put anything in the chat, or in places the assistant can read, that you wouldn't be comfortable sending to them. With a profile pointing at a server on your own machine, none of this leaves your computer. The ChatGPT sign-in used by the **ChatGPT (Codex)** profile is only ever sent to ChatGPT, whatever server address a profile names.
 
 > ⚠️ **Cost:** The **OpenAI API** and **Anthropic API** profiles use your own API key, and those companies bill you directly for what you use, typically per amount of text processed. **ChatGPT (Codex)** draws on your existing ChatGPT subscription and its limits rather than a separate bill. A local model costs nothing per message. In none of these cases does Waveform run an AI service of its own or absorb the cost: whatever you use is between you and whoever provides it.
 

@@ -245,6 +245,14 @@ Tempo in Waveform is managed using the Tempo track at the top of the
 screen. Show or hide it with the *Tempo* button in the panel selector
 (the eye icon at the top right of the window), or press F9.
 
+The Tempo track is one of the global tracks at the top of the
+arrangement, along with the Marker track and, if you use them, the
+[Chord](chord-track.md) and [Arranger](arranger-track.md) tracks. The
+global tracks button in the panel selector, or *View > Global tracks >
+Show global tracks*, hides or shows them all at once. Showing the Tempo
+track with its panel selector button also turns the global tracks back
+on (F9 doesn't).
+
 
 ![](images/05----14@2x.png)
 

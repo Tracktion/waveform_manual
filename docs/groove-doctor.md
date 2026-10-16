@@ -1,4 +1,4 @@
-# Groove Doctor
+# Groove Doctor <span class="pro">PRO</span> { #groove-doctor }
 
 The Groove Doctor fixes the timing of *recorded audio*. It detects the
 beats (transients) in a performance, then cuts, snaps, and smooths the
@@ -7,8 +7,7 @@ template. It's the tool to reach for when a drum take is a little loose,
 a bass line drifts off the beat, or you want to lock a live performance
 to the click without re-recording it.
 
-> 📝 **Note:** The Groove Doctor is available in **Waveform Pro**, or with
-the Recording Engineer Expansion.
+> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion.
 
 ![](images/Groove%20Dr%201@2x.png)
 *The Groove Doctor window*
@@ -111,6 +110,9 @@ each beat and snaps the pieces to the grid. Here's the full pass:
 tempo map, Extract groove): Chooses the whole workflow. The remaining
 stages change depending on what you pick here. (Default: Quantise/groove)
 
+**Set tracks to analyse**: Changes which tracks are included, from
+the same menu as **Capture Tracks**.
+
 **Analyse**: Runs transient detection across the captured range. A
 **Cancel** button and progress bar appear while it works.
 
@@ -137,6 +139,10 @@ more transients; lower values keep only the strongest hits. (Range:
 **Padding**: Nudges the cut point earlier or later than the detected
 transient. A small negative value cuts slightly *before* the hit, which
 usually sounds more natural. (Range: −50 to +50 ms)
+
+**Set tracks to separate** / **Set tracks to warp**: Changes which
+tracks the Separate or Warp stage works on, from the same menu as
+**Capture Tracks**.
 
 For **Quantise/groove** this stage is **Separate** (its button cuts the
 clips); for **Warp quantise/groove** it's **Warp**, with a **Next** button

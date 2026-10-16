@@ -227,6 +227,15 @@ Control Panel
     the *Sample Rate* and *Audio buffer* size there. In some cases, you
     will need to restart Waveform for the change to take effect.
 
+Reset Device
+- Shown next to *Control Panel*. It closes the current audio device
+    and opens it again, which can help after changing settings in the
+    driver's control panel.
+
+Clip audio output to 0dB
+- When on, Waveform limits its output to 0 dB so that overs never
+    reach your interface. (Default: on)
+
 ## Setting the Sample Rate
 
 The default for the sample rate is 44100 Hz, which matches the sample
@@ -258,6 +267,40 @@ a complete stereo image. Here is one way to do that:
 
 *Successful Play Back*
 
+
+## Channel Groups
+
+The lower part of the Audio Devices page lists your interface's inputs
+under *Input Channel Groups* and its outputs under *Output Channel
+Groups*. Each row is one input or output as Waveform sees it, and has
+these controls:
+
+- **Enabled / Disabled**: switches the input or output on or off.
+- **Default / (Make default)**: shows which input or output is the
+  default, or makes this one the default.
+- **Channels**: sets whether this input or output is *Mono* or
+  *Stereo*. Layouts with more than two channels
+  <span class="pro">PRO</span>, such as 5.1 and 7.1, need Waveform Pro
+  or the Surround Expansion.
+- **Test**: on enabled outputs, plays a short test tone.
+
+Click a row to select it and see its properties on the right. Inputs
+have the recording properties described in
+[Input Properties](recording-audio.md#input-properties). Outputs have
+*Channels*, *Dithering Enabled*, *Left/Right Reversed* and *Device
+Alias*.
+
+### Channel Layout Presets
+
+If you switch between setups, for example a stereo mix and a set of
+mono mic inputs, you can save the arrangement of channel groups as a
+preset. Click **Save Current Layout as New Preset** under *Channel Layout
+Presets* and give it a name. Saved presets are listed above the button:
+
+- Click a preset to apply it. Waveform asks you to confirm before it
+  replaces the current layout.
+- Click its update button to replace the preset with the current layout.
+- Click its delete button to remove it.
 
 ## About Latency
 

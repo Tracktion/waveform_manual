@@ -41,7 +41,7 @@ Each oscillator can stack up to eight voices for a thick, detuned "supersaw" or 
 
 ## Filter
 
-The filter section sits in the middle of the plugin. Select a filter type from the header bar: **Off**, **LP** (Low Pass), **HP** (High Pass), **BP** (Band Pass), or **Notch**. When set to Off, the entire filter section is bypassed and its controls are greyed out.
+The filter section sits in the middle of the plugin. Select a filter type from the header bar: **Off**, **LP** (Low Pass), **HP** (High Pass), **BP** (Band Pass), or **Notch**. When set to Off, the entire filter section is bypassed and its controls are greyed out. (Default: Off)
 
 **Freq**: The filter cutoff frequency, displayed in Hz. This is the most important filter control and responds beautifully to modulation. (Default: 440 Hz)
 

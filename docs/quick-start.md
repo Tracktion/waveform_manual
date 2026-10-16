@@ -142,18 +142,22 @@ You can drop it anywhere in the signal chain and reorder it later by dragging.
 ## 12. Where to Go Next
 
 You now have the essentials. Waveform has much more to explore. Here are some
-highlights, each covered in its own chapter:
+highlights, each covered in its own chapter. Items marked
+<span class="pro">PRO</span> need Waveform Pro or an expansion; each chapter
+says which.
 
 - [The AI Assistant](ai-assistant.md): an AI assistant (cloud or local
   model) that can carry out actions in your project.
-- [Clip Launcher](clip-launcher.md): trigger clips and scenes live.
+- [Clip Launcher](clip-launcher.md) <span class="pro">PRO</span>: trigger clips and scenes live.
 - [Comping](comping.md): build one perfect take from several passes.
 - [Warp Time](warp-time.md): bend and stretch audio in time.
 - [Clip Layer Effects](clip-layer-effects.md): non-destructive, layered
   audio manipulation.
 - [Modifiers](modifiers.md): modulate parameters without drawing automation.
+  The LFO is in every edition; the others need Waveform Pro or the MIDI
+  Producer Expansion.
 - [MIDI Effects](midi-effects.md): real-time MIDI processing.
-- [Stem Separation](stem-separation.md): split a mix into its parts.
+- [Stem Separation](stem-separation.md) <span class="pro">PRO</span>: split a mix into its parts.
 - [Macros](macros.md): script and automate Waveform actions.
 - [Plugin Racks](racks.md): group and wire up plugins freely.
 

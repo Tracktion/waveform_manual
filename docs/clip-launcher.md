@@ -1,9 +1,9 @@
-# Clip Launcher
-
-Available in Waveform Pro, or with the Launcher Expansion.
+# Clip Launcher <span class="pro">PRO</span> { #clip-launcher }
 
 The clip launcher lets you trigger clips to play and stop, rather than
 having their start and end times fixed on the arrange timeline.
+
+> 📝 **Edition:** Waveform Pro, or with the Launcher Expansion.
 
 ## Playback
 
@@ -44,7 +44,15 @@ An already playing clip can be re-triggered which will start it from the
 beginning.
 
 You can stop a clip by pressing the track's stop button below the slots,
-this is also quantised.
+this is also quantised. The stop button on a folder track stops every
+clip in slots inside the folder, and the one on the master track stops
+every clip in the Edit.
+
+Right-click an empty slot to **Insert MIDI Clip**, **Insert Step Clip**
+or **Paste** into it.
+
+> 📝 **Note:** Disabled clips, and clips whose audio file is missing,
+show a greyed-out play button and can't be launched.
 
 The clip launcher supports all types of clips so you can play back MIDI,
 step and Edit clips as well as audio. Just make sure you add instruments
@@ -54,8 +62,10 @@ to the relevant tracks for MIDI and Step Clips.
 ## Scenes
 
 A row of slots across multiple tracks is called a scene. You can trigger
-all clips in a scene with the scene buttons on the master track. They'll
-all be triggered to start at the same time.
+all clips in a scene with the scene buttons on the master track. They
+all start together, quantised from the same point. If launch
+quantisation is off, clips start from their beginning as soon as you
+launch them.
 
 
 ![](images/clip_launcher_playback_scenes.jpeg)
@@ -67,12 +77,29 @@ scene will stop the playing clip. With this, you can move through
 sections of your song keeping everything in sync.
 
 Launching clips also plays back the arranger transport. To keep launched
-clips in sync with the arranger, changing the transport position whilst
-playing back is now delayed until an appropriate time.
+clips in sync with the arranger, moving the playhead during playback
+waits for the next launch quantisation point. This is the **Quantise
+transport position changes** option on the Options menu and the
+Timeline's right-click menu (on by default). It only works with a Bars
+& Beats timeline; turn it off to move the playhead straight away. Jumps
+to markers wait in the same way (see [Navigating by
+Markers](using-markers.md#navigating-by-markers)).
 
 This time is also determined by the global quantisation. Shorter
 quantisation times will cause quicker jumps but your bar positions may
 become out of sync.
+
+When the playhead moves, or the arrangement loop wraps round, launched
+clips carry on from where they were rather than jumping to a different
+point in the clip.
+
+### Managing Scenes
+
+Click the add button below the scene buttons (tooltip *Adds a new scene*) to add a scene,
+and drag scenes up or down to reorder them. Select a scene to see its
+settings in the Actions panel: its **Name** and **Colour**, plus
+**Insert Scene Before**, **Insert Scene After** and **Delete** (which
+deletes all the selected scenes).
 
 If you have clips on the arranger tracks, you can play these by using
 the play-arranger buttons: the one on each track switches that track
@@ -93,6 +120,11 @@ launched clip playback starts from.
 
 You can adjust the loop start/end points using the Actions panel or the
 [Detail editor](detail-editor.md) (Clip tab).
+
+In the Detail editor, a looping audio clip shows a start flag, which sets
+where playback starts within the loop, and has no Length property. An
+unlooped audio clip can be longer than its audio file: drag its end flag
+past the end of the file, and the editor shows the extra length.
 
 By default, clips follow the global quantisation but this can be
 overridden with the clip's **Launch quantisation** property.
@@ -373,6 +405,17 @@ hardware device user manual for specific capabilities.
 
 The Launcher Expansion also unlocks Ableton Link, for syncing tempo with
 other apps and devices. See [Ableton Link](reference-settings.md#ableton-link).
+
+## ⚡ Things to Watch Out For
+
+- Clip operations that only make sense in the arrangement aren't offered
+  for launcher clips: split, crop, heal, consolidate, reverse, insert
+  silence, *Convert to Step Clip*, *Merge*, *Remove Silence* and fades.
+- Launcher clips can't be rendered in place or flattened, and Flatten
+  leaves them alone.
+- A track that is playing its clip launcher renders as silence. The
+  Render dialog warns you when this applies; switch those tracks back to
+  **Playback arranger** to render their arrangement.
 
 
 ---

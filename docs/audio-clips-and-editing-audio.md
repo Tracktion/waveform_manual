@@ -112,6 +112,9 @@ Trimming
 
 *Audio Clip Trim Handles*
 
+> 💡 **Tip:** To hear the audio under the mouse while you trim, turn on
+*Options > Audible trimming* in the menu bar. (Default: off)
+
 Slip Editing
 - Slip editing means moving the waveform within the clip without
     altering its *Start*, *Length*, or *End* values. Drag the solid box
@@ -233,7 +236,8 @@ Here are the steps to create a crossfade:
 *Crossfaded Audio Clips*
 
 That's it: a crossfade. It's a fade-out that overlaps the fade-in of the
-next clip. You can adjust the fade shapes using the buttons in the
+next clip. You can also select the overlapping clips and click *Apply
+Crossfade* in the Actions panel. You can adjust the fade shapes using the buttons in the
 Actions panel, just like any other fade.
 
 
@@ -258,7 +262,8 @@ overlaps another clip will create a crossfade.
 *Settings Tab, General page, Default Auto Crossfade Mode*
 
 > 📝 **Note:** In Waveform, *Auto Crossfade* is actually a property of each
-Audio clip, which you can toggle in the Actions panel. When you change
+Audio clip, which you can toggle in the Actions panel. With it on, moving
+the clip over another one crossfades them automatically. When you change
 *Default auto crossfade mode* it will only take effect for new clips you
 create or add to the Edit.
 
@@ -277,6 +282,10 @@ fade-out to the clip. Waveform calls those "edge fades."
 The good news is that you can instantly add edge fades by clicking
 *Apply Edge Fades* in the Actions panel. This applies 5 ms fades to the
 start and end of all selected clips.
+
+> 💡 **Tip:** To give every new clip a small fade in and out
+automatically, turn on *Create fades on clip edges* in *Settings >
+General*. (Default: off)
 
 ## Copy and Paste
 
@@ -339,6 +348,11 @@ thumbnail reverses and the sound will be backwards on playback.
 ![](images/12----20.png)
 
 *Reversing an Audio Clip*
+
+> 📝 **Note:** Some arrangement edits aren't offered for clips in the
+[Clip Launcher](clip-launcher.md). Launcher clips play without fades, so
+their Actions panel has no fade, edge fade or crossfade controls, and
+they can't be split, merged or flattened.
 
 ## Merging Clips to One Clip
 

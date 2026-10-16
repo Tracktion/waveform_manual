@@ -17,6 +17,20 @@ Roll-over messages appear in the upper right for items under the
 pointer. These messages give you a description of the object under the
 mouse pointer.
 
+## The Help Menu
+
+The **Help** menu collects the built-in sources of help:
+
+| Item | What it does |
+|---|---|
+| **About Waveform** | Shows the About box, with the version number you'll need for a support request. |
+| **Check for updates** | Checks whether a newer version of Waveform is available. |
+| **Get help > User guide PDF** | Opens this manual (Shift + F1). |
+| **Get help > Tracktion Website** | Opens the software help pages on the Tracktion website. |
+| **Pop-up help** | **Enable pop-up help** turns pop-up help on or off, and **Delay pop-up help messages** makes it wait longer before appearing. |
+| **Show the First Run Setup panel** | Shows or hides the [First Run Setup](audio-device-setup.md#first-run-setup) panel. |
+| **Show the Waveform log file** | Shows the log file in Finder or File Explorer, ready to attach to a support request. |
+
 ## Quick Start
 
 If you are new to Waveform, the [Quick Start](quick-start.md) chapter at the
@@ -24,6 +38,13 @@ front of this manual is the fastest way to get set up and making music. It
 walks you from install through your first recording and export, linking to
 the fuller chapters as you go. You can also open this manual at any time from
 *Help > Get help > User guide PDF*, or by pressing Shift + F1.
+
+## Ask the AI Assistant
+
+The [AI Assistant](ai-assistant.md), in every edition, can answer
+questions about how Waveform works and about your project. Once you've
+chosen a profile on the `Settings > AI` page, click the **Assistant** tab
+in the Browser and ask in plain language.
 
 ## Keyboard Shortcut List
 

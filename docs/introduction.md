@@ -21,10 +21,16 @@ Pattern Generator. Waveform Pro adds creative tools such as the Chord
 Track, Groove Doctor, Track Snapshots, Layouts and Quick Actions, the
 Wavetable synth and other instruments, the MIDI effects (also available
 in the MIDI Producer Expansion) and the Render dialog's Advanced mode.
+Many of these can also be added to the other editions with an expansion,
+such as the MIDI Producer Expansion or the Recording Engineer Expansion.
 The Free edition has no limitation on the number of tracks and supports
 third-party plugins just like the Pro edition. The OEM edition is
-included with mixers and audio interfaces from various manufactures
+included with mixers and audio interfaces from various manufacturers
 including Mackie and Behringer.
+
+Throughout this book, a <span class="pro">PRO</span> badge marks the
+features that aren't in Waveform Free, and an **Edition** line under the
+heading names the editions and expansions that include them.
 
 Waveform, like its predecessors, is unique in that it has a single
 screen user interface, with a mixer channel integrated to the right of
@@ -44,6 +50,10 @@ Windows it also hosts Cmajor patches.
 
 ## What's in the Book?
 
+This book covers the current version of Waveform. If you're new to it,
+start with [Quick Start](quick-start.md); if you're upgrading,
+[What's New](whats-new.md) lists the recent changes.
+
 In this book you will learn:
 
 -   How to install and set up Waveform
@@ -54,7 +64,9 @@ In this book you will learn:
 -   How to edit MIDI
 -   How to mix with the inline mixer section
 -   How to insert and use plugin effects
--   How to mix down to Wave or MP3 files
+-   How to mix down, and [render stems](rendering-and-stems.md) and other files
+-   How to launch clips and scenes with the [clip launcher](clip-launcher.md)
+-   How to get help from the [AI assistant](ai-assistant.md)
 -   A reference to settings and options used to configure and customize
     Waveform.
 

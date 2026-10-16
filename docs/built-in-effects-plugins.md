@@ -27,6 +27,11 @@ folder, which is hidden until you turn it on: go to *Settings > Plugins*,
 click **Enable internal plugins** and choose *Enable Legacy Plugins*, then
 restart Waveform. See [Legacy Plugins](legacy-plugins.md).
 
+> 📝 **Note:** Delay, Chorus, Phaser, Distortion, DJ Filter and the three
+reverbs have a **Mix Lock** button on their *Mix* control. Turn it on to keep
+your *Mix* setting when you load a preset, so you can try presets on a send or
+an insert without the wet/dry balance jumping about. (Default: off)
+
 ## Volume & Pan Plugin
 
 Whenever you create a track, you will see a *Volume & Pan* plugin at the
@@ -346,16 +351,19 @@ that rises above a threshold.
 
 *The Compressor*
 
-- *Threshold*: the level above which compression starts.
+- *Threshold*: the level above which compression starts, from -60 to
+  0 dB. (Default: -30 dB)
 - *Ratio*: how hard the signal is turned down once it crosses the
-  threshold.
+  threshold, from 1:1 to 100:1. (Default: 2:1)
 - *Attack* and *Release*: how quickly the compressor reacts, and then
-  recovers once the signal falls back below the threshold.
+  recovers once the signal falls back below the threshold. Attack runs from
+  1 to 100 ms and Release from 1 to 1000 ms. (Default: 50 ms and 500 ms)
 - *Knee*: softens the transition around the threshold for a gentler, more
-  transparent action.
+  transparent action, from 0 to 18 dB. (Default: 0 dB)
 - *Output gain*: make-up gain to bring the level back up after
-  compression.
-- *Sidechain gain*: trims the level of an external sidechain. Route
+  compression, from -20 to +20 dB. (Default: 0 dB)
+- *Sidechain gain*: trims the level of an external sidechain, from -20 to
+  +20 dB. (Default: 0 dB) Route
   another track into the *Compressor*'s sidechain input to make it duck,
   for example a kick drum pumping a bass line.
 
@@ -367,10 +375,13 @@ notes.
 
 *The Gate*
 
-- *Threshold*: the level below which the gate closes.
-- *Attack*: how fast the gate opens when the signal returns.
-- *Hold*: how long it stays open after the signal drops.
-- *Release*: how fast it closes again.
+- *Threshold*: the level below which the gate closes, from -60 to 0 dB.
+  (Default: -40 dB)
+- *Attack*: how fast the gate opens when the signal returns, from 0.1 to
+  100 ms. (Default: 1 ms)
+- *Hold*: how long it stays open after the signal drops, from 0 to
+  1000 ms. (Default: 2 ms)
+- *Release*: how fast it closes again, from 1 to 1000 ms. (Default: 100 ms)
 
 **Limiter** is a brick-wall limiter that stops the signal from ever
 exceeding a set ceiling, ideal on the master bus to catch peaks and
@@ -381,9 +392,11 @@ maximise loudness.
 *The Limiter*
 
 - *Gain*: drives the signal into the limiter; more gain means more
-  limiting and a louder result.
-- *Release*: how quickly the limiter recovers after catching a peak.
+  limiting and a louder result. From -20 to +20 dB. (Default: 0 dB)
+- *Release*: how quickly the limiter recovers after catching a peak, from
+  1 to 300 ms. (Default: 300 ms)
 - *Ceiling*: the absolute maximum output level; nothing passes above it.
+  From -60 to 0 dB. (Default: -0.3 dB)
 
 > 📝 **Note:** The classic combined *Compressor/Limiter* from earlier
 versions is now in the *Legacy* folder.
@@ -398,20 +411,30 @@ full-on fuzz.
 *The Distortion*
 
 - *Type*: the flavour of distortion (*Light*, *Medium*, *Hard*, *Clip*,
-  *Tube*, or *Fuzz*).
+  *Tube*, or *Fuzz*). (Default: Light)
 - *Drive*: how hard the signal is pushed into the distortion.
 - *Post Gain*: output level, to compensate for the volume change the
   distortion adds.
 - *Tone*: shapes the brightness of the distorted sound.
 - *Emphasis*: sharpens the character of the distortion by emphasising
   certain frequencies before the waveshaping.
-- *Mix*: blends the distorted signal with the dry input.
+- *Mix*: blends the distorted signal with the dry input. (Default: fully
+  wet)
 
 ## Pitch Shifter
 
 The *Pitch Shifter* plugin uses DSP processing to change the pitch of
 the signal in real time. For audio tracks, this uses the *Elastique Pro*
 algorithm, or whichever algorithm you select in the *Type* parameter.
+
+**Type**: The pitch-shifting algorithm, chosen from Waveform's time-stretch
+algorithms: the Elastique modes and the two Signalsmith modes. *Elastique
+(Pro)* gives the best quality; the *Efficient* and *Mobile* modes and
+*Signalsmith (Cheaper)* use less CPU, and *Elastique (Monophonic)* suits
+single-note sources such as vocals or bass. With
+*Elastique (Pro)* chosen, a **Settings** button below it opens the algorithm's
+options. The row is only shown when there's more than one algorithm to choose
+from. (Default: Elastique (Pro))
 
 
 ![](images/Audio%20FX/Pitch%20Shifter@2x.png)
@@ -459,12 +482,13 @@ the dry signal.
 lives in the *Legacy* folder. For everyday filtering reach for the *1-Band
 Equaliser*, or, for sweeps, the *DJ Filter*.
 
-## DJ Tools
+## DJ Tools <span class="pro">PRO</span> { #dj-tools }
 
-The *DJ Tools* (*Fader* and *Crossfader*) come with the **DJ Mix Tools
-Expansion** (included in the *Pro* edition, and the same add-on that
-unlocks Stem Separation). They turn Waveform's tracks into a DJ-style
-mixer.
+> 📝 **Edition:** Waveform Pro, or with the DJ Mix Tools Expansion.
+
+The *DJ Tools* (*Fader* and *Crossfader*) turn Waveform's tracks into a
+DJ-style mixer. The DJ Mix Tools Expansion that includes them also unlocks
+Stem Separation.
 
 *Fader* is an automatable volume fader with a *Position* control and an
 adjustable response *Curve*, so you can ride or program smooth level
@@ -505,10 +529,10 @@ come back to a project later on.
 > 💡 **Tip:** You can enable or disable several plugins at once by
 selecting all of them and using the keyboard shortcut F.
 
-## Guitar IR
+## Guitar IR <span class="pro">PRO</span> { #guitar-ir }
 
-> 📝 **Note:** *Guitar IR* and *Dual Guitar IR* are part of Waveform Pro, or
-come with the Recording Engineer Expansion.
+> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion. This
+> covers both *Guitar IR* and *Dual Guitar IR*.
 
 *Guitar IR* is a convolution plugin that loads an impulse response (IR), a
 short WAV recording that captures the sound of a guitar cabinet, speaker, or
@@ -546,7 +570,9 @@ complex tone. In addition to the controls above it adds:
 - *Delay*: offsets one IR against the other by up to 200 ms (defaults to 0),
   useful for subtle thickening or comb-filter effects.
 
-## Artisan Collection
+## Artisan Collection <span class="pro">PRO</span> { #artisan-collection }
+
+> 📝 **Edition:** Waveform Pro.
 
 The *Artisan Collection* is a large built-in library of over 180
 effects based on the AirWindows plugins by Chris Johnson. They're grouped into
@@ -563,13 +589,15 @@ make sure *Enable Artisan Collection Plugins* is ticked (it is on by default).
 After changing it you'll need to restart Waveform. Once enabled, the effects appear under the *Artisan
 Collection* folder in the plugin picker.
 
-> 📝 **Note:** The *Artisan Collection* is a *Pro* feature.
+## Master Mix <span class="pro">PRO</span> { #master-mix }
 
-## Master Mix
+> 📝 **Edition:** Waveform Pro and Waveform OEM.
 
 *Master Mix* is an integrated mastering plugin designed to sit at the end of
 your signal chain (typically on the master or output bus) to polish a
-finished mix. It combines several mastering stages in a single plugin.
+finished mix. Add it from *Waveform > Effects* in the plugin picker, then
+double-click it to open its window. It combines several mastering stages in a
+single plugin.
 
 - *Pre EQ* and *Post EQ*: parametric equalizers before and after the dynamics
   processing, for corrective and final tonal shaping.
@@ -583,9 +611,6 @@ finished mix. It combines several mastering stages in a single plugin.
 
 You can store up to 100 presets, and use the *Mem A* / *Mem B* A/B buttons to
 compare two settings instantly while you fine-tune the master.
-
-> 📝 **Note:** *Master Mix* is available in the *Pro* and OEM editions of
-Waveform.
 
 ## Saving Presets
 

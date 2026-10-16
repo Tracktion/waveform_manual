@@ -1,12 +1,12 @@
-# Layouts
-
-> 📝 **Note:** Layouts are part of **Waveform Pro**. They are not available in Waveform Free or OEM,
-> where the **Layout** button is hidden and the save/load commands do nothing.
+# Layouts <span class="pro">PRO</span> { #layouts }
 
 A **layout** saves the way the Edit window is arranged (which panels are showing, how big they are, and
 whether they are docked or floating) as a named preset you can recall in a single click. Set the window
 up the way you like for *tracking*, save it, then build a *mixing* layout with the Mixer enlarged and the
 Browser hidden, and flip between them instantly instead of dragging panels around by hand.
+
+> 📝 **Edition:** Waveform Pro. In Waveform Free and OEM the **Layout** button is hidden and the
+> save/load commands do nothing.
 
 Layouts only ever touch the *appearance* of the window. They never change your audio, MIDI, clips,
 plugins, or any other project data.

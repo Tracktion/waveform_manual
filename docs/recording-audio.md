@@ -56,6 +56,22 @@ case it's set to *Input 1.*
 
 *Input Menu*
 
+The input menu also has these items:
+
+- **Route audio from track** / **Route MIDI from track**: record the
+  output of another track instead of a hardware input.
+- **Live Input Monitoring**: the input's monitoring mode (see
+  [Live Input Monitoring](#live-input-monitoring)).
+- **Record enable**: arms or disarms this input, like the *R* button.
+- **Record enable all**: arms or disarms every input (see
+  [Enable Recording for All Inputs at Once](#enable-recording-for-all-inputs-at-once)).
+- **Default Audio Device Follows Selection** / **Default MIDI Device
+  Follows Selection**: when on, selecting a track that has no input
+  gives it the default audio or MIDI input. (Default: on)
+- **Assign all inputs to consecutive tracks**: see
+  [Setting Up Inputs for Multi-track Recording](#setting-up-inputs-for-multi-track-recording).
+- **Number of inputs on this track**: see [Number of Inputs](#number-of-inputs).
+
 When you select an input, the input object shows the input name, a
 real-time input meter, and the record arm "R" button. Also, a full set
 of input properties appears in the Actions panel.
@@ -83,6 +99,48 @@ you could use this to indicate the microphone plugged into that input.
 ![](images/15----05.png)
 
 *Customized Input Names Using the Device Alias Property*
+
+## Input Properties
+
+Select an audio input to see its properties in the Actions panel:
+
+**Channels**: The set of device channels this input uses.
+
+**Input Monitoring Mode** (Choices: On, Auto, Off): Whether the input is
+played through Waveform. See [Live Input Monitoring](#live-input-monitoring).
+(Default: Auto)
+
+**Input Gain**: Gain applied to the input signal before it's recorded,
+from -12 to +12 dB. (Default: 0 dB)
+
+**Trigger Level**: Recording waits until the input reaches this level,
+from -51 to 0 dB. At -50 dB or below, recording starts straight away.
+The **Close Gate** button next to it lets you audition the trigger
+level. (Default: -50 dB)
+
+**Time Adjust**: Shifts newly recorded clips to correct for latency,
+from -500 to +500 ms. Click **Auto-Detect...** to measure it (see
+[Calibrating Input Latency Compensation](audio-device-setup.md#calibrating-input-latency-compensation)).
+(Default: 0 ms)
+
+**Device Alias**: The name shown for this input (see above).
+
+**Record Mode** (Choices: Overlay newly recorded clips onto edit,
+Replace old clips in edit with new ones, Don't make recordings from
+this device): What happens to existing clips when you record over them.
+(Default: Overlay newly recorded clips onto edit)
+
+**Filename**: The pattern used to name new recordings. It can contain
+tokens such as `%edit%`, `%track%`, `%date%`, `%time%` and `%take%`.
+**Reset Filename** puts the default pattern back.
+
+**File Format** and **Bit Depth**: The file type and bits per sample
+for new recordings. (Default bit depth: 24-bit)
+
+**Use the Same Properties for All Devices**: When on, changes to these
+settings apply to every audio input.
+
+The large meter at the bottom is described in [Input Meters](#input-meters).
 
 ## About MIDI Inputs
 
@@ -115,8 +173,8 @@ live performance through a digital mixer with a lot of inputs.
 
 ## Number of Inputs
 
-This feature is something uniquely Waveform. You can set up more than
-one input on a single track, up to four inputs assigned to a track.
+You can set up more than one input on a single track, up to four. Choose
+*Number of inputs on this track* from the input menu and pick 1-4.
 
 
 ![](images/15----08@2x.png)
@@ -131,6 +189,12 @@ configured and ready to go, when auditioning microphones and preamps.
 Simply arm the input you want to try and away you go. It makes it super
 efficient to switch to a different mic/preamp combination by simply
 arming the desired input.
+
+> 📝 **Note:** Normally an input can only be on one track at a time. In
+Waveform Pro, turning on **Allow inputs to appear on multiple tracks**
+<span class="pro">PRO</span> in [Settings > General](reference-settings.md#track-inputs)
+lets one input feed several tracks, and adds *Assign this input to
+consecutive tracks* to the input menu.
 
 ## Enable a Track for Recording
 
@@ -161,6 +225,12 @@ the track. To stop recording press Spacebar.
 
 Recording always starts at the cursor position. There are several ways
 and options to stop recording which will be explained in a bit.
+
+> 💡 **Tip:** By default you still hear the existing clips on a track
+while you record onto it. For tape-style recording, where they go
+silent, turn on **Mute track contents whilst recording**
+<span class="pro">PRO</span> in [Settings > Advanced](reference-settings.md#audio-engine).
+It's available in Waveform Pro.
 
 ## Enable Recording for All Inputs at Once
 
@@ -431,8 +501,8 @@ Ctrl + Z) to undo the last recording take.
 
 If you are impatient to delete a failed recording take, then you will
 love this feature: *Abort recording and delete the take.* With a single
-keystroke you cancel the take, throw it out, rewind to the beginning,
-and get set to try again. The *Abort* button on the transport does the
+keystroke (F4) you cancel the take, throw it out, rewind to the
+beginning, and get set to try again. The *Abort* button on the transport does the
 same thing.
 
 
@@ -443,7 +513,9 @@ same thing.
 There is a variation on this feature: *Abort recording, delete take, and
 restart*. That does the same thing, but then drops right back into
 recording. This action appears on the transport during recording as the
-*Abort & Restart* button.
+*Abort & Restart* button. Its default shortcut is Ctrl + Alt + R on
+Windows; on a Mac it has none, but you can assign one in *Settings >
+Keyboard Shortcuts*.
 
 ## Recording a Stereo Signal
 
@@ -454,8 +526,8 @@ tab, Audio Devices page. Under *Input Channel Groups*, click the
 go back). Layouts with more than two channels need Waveform Pro or the
 Surround Expansion. You
 can also pick which channels an input uses from its *Channels* property.
-See [Audio Device Setup](audio-device-setup.md) for more on the device
-settings.
+See [Channel Groups](audio-device-setup.md#channel-groups) for more on
+the device settings.
 
 Now instead of two inputs, you have one stereo input. This will appear
 over in the Edit when you select inputs for a track.

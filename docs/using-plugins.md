@@ -5,7 +5,7 @@ In-line mixer or the separate mixer window.
 
 > 📝 **Note:** Scanning plugins and setting up a favorites plugin list are
 done on the Settings tab, Plugins page. Check the reference section
-[Reference: Settings > Plugins](reference-settings.md#plugins_1) to learn more about that.
+[Reference: Settings > Plugins](reference-settings.md#plugins-page) to learn more about that.
 
 ## The In-line Mixer
 
@@ -151,6 +151,30 @@ Bypassing a Plugin
 > 💡 **Tip:** You can bypass several plugins at once, by first selecting them
 and then pressing F.
 
+## Plugin Presets
+
+Most plugins have a **Preset** row with three buttons in their Actions
+panel. Presets you save go into Waveform's preset library, so they are
+available to every instance of that plugin in any Edit.
+
+**Load** (folder icon): Lists the saved presets for this plugin type;
+pick one to apply it. For third-party plugins the menu also lists preset
+files from the plugin's own preset folders, and has an item to load a
+file directly: **Load from an fxb/fxp file...** (VST),
+**Load from an aupreset file...** (AU) or **Load from a vstpreset
+file...** (VST3). For racks the item is **Import...**, which reads a
+`.trkpreset` or `.trkrack` file.
+
+**Save** (disk icon): Pick one of your own presets to overwrite it with the
+current settings (you'll be asked to confirm, and it can't be undone),
+or choose **Create new preset...** to add a new one. VST plugins can
+also **Save a bank file (fxb)...** or **Save a preset file (fxp)...**, AU
+plugins can **Save an aupreset file...**, and racks can **Export...** a
+file to share.
+
+**Delete** (bin icon): Pick a preset to remove it from the library.
+Built-in presets can't be deleted.
+
 ## Assigning a Quick Control Parameter
 
 You can assign a quick control parameter to any instance of a plugin.
@@ -211,7 +235,10 @@ is shown on the plugin slot so you can fix it. A built-in *Pro54* example synth
 is installed automatically the first time you run Waveform.
 
 > 📝 **Note:** Cmajor support is available on Apple Silicon macOS and Windows. It
-is not available on Linux or on Intel-only Macs. There is no edition restriction.
+is not available on Linux or on Intel-only Macs. There is no edition restriction
+for hosting patches. Having the AI assistant build patches for you
+<span class="pro">PRO</span> needs Waveform Pro; see
+[Building Cmajor plugins](ai-assistant.md#building-cmajor-plugins).
 
 ## Searching for Plugins
 
@@ -248,6 +275,12 @@ To apply processing to the full stereo mix, add plugins to the master
 track or to the master plugin box in the transport bar. When the box is
 empty it shows a power icon; drag plugins into it to add them to the
 master output plugin chain. It holds up to four plugins.
+
+The master track shows the same master plugin chain as a track in the
+arrangement. To show it, click **Master** in the *Eye* panel selector at
+the upper right, or choose **View > Global tracks > Show or hide Master
+track**. Plugins you add there and in the transport box are the same
+plugins.
 
 
 ![](images/29----12.png)

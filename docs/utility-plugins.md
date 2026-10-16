@@ -72,6 +72,11 @@ A Freeze Point cannot be added to clips, plugin racks, or master tracks, and it
 cannot be disabled with the plugin's enable/bypass switch. It is always active
 when present in a chain.
 
+> 📝 **Note:** A track can't be frozen while plugins before its Freeze Point
+> feed other tracks through a Rack or an aux send, for example a plugin wrapped
+> in a multi-out rack. Freezing would break that connection, so Waveform shows a
+> message naming the tracks involved instead.
+
 ### Freeze Point Settings
 
 The behaviour of the Freeze Point is influenced by two settings on the
@@ -83,7 +88,7 @@ The behaviour of the Freeze Point is influenced by two settings on the
 - **Freeze point insert location**: controls where the Freeze Point is inserted
   when a track is frozen: *Before plugins*, *Pre-fader*, or *Post-fader*.
 
-See [Reference: Settings (General)](reference-settings.md#general) for the full
+See [Mixing Defaults](reference-settings.md#mixing-defaults) for the full
 description of those options.
 
 ---
@@ -138,9 +143,15 @@ content as it passes through, so you can *see* where the energy sits in a mix.
 Insert it anywhere in a chain to check a track's tonal balance, spot a resonant
 build-up, or confirm that a high-pass filter is doing what you expect.
 
-## Loudness Meter <span class="pro">PRO</span>
+**Channel** (Choices: Stereo, Left, Right): Which channels the analyser
+measures. (Default: Stereo)
 
-> 📝 **Note:** The Loudness Meter is available in **Waveform Pro 14 and later**.
+**Mode** (Choices: Bins, Line): Draws the spectrum as separate frequency bins
+or as a continuous line. (Default: Line)
+
+## Loudness Meter <span class="pro">PRO</span> { #loudness-meter }
+
+> 📝 **Edition:** Waveform Pro.
 
 The **Loudness Meter** measures loudness the way streaming services and
 broadcasters do (EBU R128 / ITU-R BS.1770-4), alongside true peak and the
@@ -226,9 +237,15 @@ mix or for EQ'ing the centre and sides independently.
 ## AB Switch
 
 The **AB Switch** plugin routes the incoming signal to one of two outputs, **A**
-or **B**, chosen with its **Mode** control. By feeding A and B into different
+or **B**, chosen with its **Mode** control (Default: A). Switching fades
+quickly between the two, so it doesn't click. By feeding A and B into different
 processing chains you can flip between two treatments of the same source and
 compare them instantly, which is useful for A/B'ing effect settings while you work.
+
+The plugin has four output channels: **A Left**, **A Right**, **B Left** and
+**B Right**. To send A and B to different chains, put the AB Switch inside a
+[Rack](racks.md): wire A Left and A Right to the first chain, B Left and B Right
+to the second, and both chains to the rack's outputs.
 
 ## Mono Switch
 

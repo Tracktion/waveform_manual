@@ -79,7 +79,7 @@ The selected modifier's panel is drawn with a white outline, the same highlight 
 
 ### Adding and Reordering Modifiers
 
-The **+** button at the end of the section adds a modifier to the track. The LFO is always offered; the Breakpoint, Step, Envelope Follower, Random and MIDI Tracker modifiers appear in the menu in editions that include the full modifier set.
+The **+** button at the end of the section adds a modifier to the track. The LFO is offered in every edition. The Breakpoint, Step, Envelope follower, Random and MIDI Tracker modifiers need Waveform Pro or the MIDI Producer Expansion.
 
 To reorder them, drag a modifier panel sideways. A coloured insert line shows where it will land. This is a reorder within the one track only. You can't drag a modifier in from a different track or out of a Rack this way.
 
@@ -117,7 +117,11 @@ Only the pages a plugin actually has get a toggle, so a simple utility plugin ma
 
 **Editor**: the plugin's own interface, embedded inline in the panel. This is offered for Waveform's **built-in** plugins only: third-party VST and AU plugins always use their own window. Two more conditions apply: the plugin must have parameters, and its editor must be short enough to sit sensibly in the Detail editor. Tall editors such as 4OSC and the Guitar amp's IR loader stay window-only, and you reach them with the show/hide window button in the strip. Editors that can resize, like the 8-band EQ, stretch to fill the height you have given the Detail editor.
 
-**Parameters**, **Macro Parameters**, **Faceplate** and **MIDI Controller Mappings**: the same pages you can pop out from the plugin's Actions panel, and subject to the same edition gating, so Faceplates and Macro Parameters only appear where those features are available.
+**Parameters** and **MIDI Controller Mappings**: the same pages you can pop out from the plugin's Actions panel.
+
+**Faceplate** <span class="pro">PRO</span>: the plugin's [faceplate](faceplates.md). Needs Waveform Pro, or the MIDI Producer or DJ Mix Tools Expansion.
+
+**Macro Parameters** <span class="pro">PRO</span>: the plugin's macro parameters. Needs Waveform Pro or the MIDI Producer Expansion.
 
 On the **Parameters** page the assignments half starts **collapsed** in this embedded view, which keeps the page narrow. Click the expander down its edge to open the assignments out; the page widens to make room, and closes back to its narrow width when you collapse it again.
 

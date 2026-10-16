@@ -4,9 +4,13 @@ Modifiers are modulation sources that automatically vary plugin parameters over 
 
 Waveform includes six modifier types: the LFO, the Envelope Follower, the Random modifier, the Step modifier, the Breakpoint modifier, and the MIDI Tracker. This chapter covers how to add them, the controls they share, and what makes each one different.
 
+> 📝 **Edition:** The LFO is in every edition. The other five modifier types need Waveform Pro, or the MIDI Producer Expansion. In other editions the LFO is the only choice in the modifier menu.
+
 ## Adding a Modifier
 
-You create a modifier by dragging the **New Modifier Generator** button onto a track. You can drop it onto the top of a track to add it without an assignment, or drop it directly onto a plugin to choose the parameter to modulate right away. Modifiers can also live inside a Plugin Rack (see [Plugin Racks](racks.md)).
+You create a modifier by dragging the Modifier object (beside the Clip and Plugin objects above the right of the Timeline, tooltip "Drag this onto a track to create a new modifier") onto a track. A menu then asks for the type: **LFO**, **Breakpoint**, **Step**, **Envelope follower**, **Random** or **MIDI Tracker**. You can drop it onto the top of a track to add it without an assignment, or drop it directly onto a plugin to choose the parameter to modulate right away. Modifiers can also live inside a Plugin Rack (see [Plugin Racks](racks.md)).
+
+A track with no modifiers shows an **Add new Modifier** button in its modifier area. Click it for the same type menu. On a track that already has modifiers, drop the Modifier object in the gap between two of them to insert the new one at that point.
 
 Once added, a modifier appears as a small object above the plugins in the track's mixer area. You can add as many modifiers to a track as you like, and a single modifier can drive several parameters at once.
 
@@ -16,7 +20,11 @@ There are three places to work with a track's modifiers: the small objects in th
 
 ## Assigning to Parameters
 
-Every modifier outputs a value that you map onto one or more plugin parameters. The editor window is split into three pages: **Modifier Settings** (the controls and live display), **Parameters**, and **Assignments**.
+Every modifier outputs a value that you map onto one or more plugin parameters. The editor window is split into three pages:
+
+- **Modifier Settings**: the modifier's controls, its live display and the track's parameter list (described below).
+- **Parameters**: the modifier's own parameters (Rate, Depth and so on), with the sources assigned to the selected one. Other modifiers and macros can drive a modifier's parameters too, so you can, for example, have a slow LFO vary the Rate of another modifier.
+- **Assignments**: everything the modifier currently controls.
 
 The list down the right side of the Modifier Settings page is the track's parameter list: every automatable parameter on the track's plugins, with a search box at the top to find one quickly. Each entry has its own knob that sets how far the modifier moves that parameter.
 
@@ -28,6 +36,8 @@ There are two ways to make an assignment:
 In the **Plugins** tab of the Detail editor, where a track's modifiers and plugins sit side by side, there is a third route: drag a modifier's tile onto any plugin panel and pick a parameter from the menu that opens. See [Assigning a Modifier to a Plugin](plugins-detail-editor.md#assigning-a-modifier-to-a-plugin).
 
 The **Assignments** page lists everything the modifier currently controls, so you can review and adjust each mapping in one place. To remove an assignment, clear it from the Assignments page, or right-click the modifier object and choose the parameter under **Remove assignment**.
+
+A modifier's own parameters can also be automated. In an automation lane's parameter menu, the **Modifiers** submenu lists each modifier on the track and its parameters. See [Choosing What to Automate](automation.md#choosing-what-to-automate).
 
 > 💡 **Tip:** A parameter can be driven by more than one modifier at once, and the modifier's movement is added on top of any automation or manual setting you have for that parameter.
 
@@ -78,7 +88,7 @@ Alongside Wave, the LFO offers the shared Rate, Rate Type, Sync, and Bipolar con
 
 > 💡 **Tip:** The LFO is the quickest way to add tremolo or auto-pan. Assign it to a Volume or Pan parameter, pick a Sine wave, set the Rate Type to a musical division, and turn up the Depth. We have a [video tutorial](https://youtu.be/9UVEAJAvFZ0) showing the LFO in action with a virtual instrument.
 
-## The Envelope Follower Modifier
+## The Envelope Follower Modifier <span class="pro">PRO</span> { #the-envelope-follower-modifier }
 
 ![](images/Modifiers/EnvelopeFollower@2x.png)
 *The Envelope Follower Modifier, tracing the amplitude of the track's audio*
@@ -101,7 +111,7 @@ The **Envelope Follower** watches the loudness of the audio on its track and tur
 
 > 📝 **Note:** The Envelope Follower reacts to the audio on its own track, so it only does something when that track is actually playing audio.
 
-## The Random Modifier
+## The Random Modifier <span class="pro">PRO</span> { #the-random-modifier }
 
 ![](images/Modifiers/Random@2x.png)
 *The Random Modifier producing a smoothed stream of random values*
@@ -118,7 +128,7 @@ The **Random** modifier generates ever-changing random values. It is great for a
 
 The Random modifier also offers the shared Rate, Rate Type, Sync, Depth, and Bipolar controls. Use Rate and Sync to decide how often a new value is chosen.
 
-## The Step Modifier
+## The Step Modifier <span class="pro">PRO</span> { #the-step-modifier }
 
 ![](images/Modifiers/Step@2x.png)
 *The Step Modifier with a drawn sequence of step values*
@@ -136,7 +146,7 @@ Two buttons sit next to the sequence:
 
 The Step modifier also uses the shared Rate, Rate Type, and Sync controls to set how fast it advances, plus **Depth** to scale how strongly the steps move the parameter. (Depth range: −1 to +1, Default: 1)
 
-## The Breakpoint Modifier
+## The Breakpoint Modifier <span class="pro">PRO</span> { #the-breakpoint-modifier }
 
 ![](images/Modifiers/Breakpoint@2x.png)
 *The Breakpoint Modifier with a custom drawn shape across one bar*
@@ -149,7 +159,7 @@ To edit the shape, drag the numbered points in the graph to move them in time an
 
 The Breakpoint modifier also offers the shared Rate, Rate Type, Sync, Depth, and Bipolar controls, which set how long the drawn shape takes to play through and how strongly it moves the parameter.
 
-## The MIDI Tracker Modifier
+## The MIDI Tracker Modifier <span class="pro">PRO</span> { #the-midi-tracker-modifier }
 
 ![](images/Modifiers/MIDITracker@2x.png)
 *The MIDI Tracker Modifier mapping MIDI pitch onto a modulation output*

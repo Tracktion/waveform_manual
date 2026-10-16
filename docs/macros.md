@@ -27,6 +27,11 @@ You can resize the height of the Macro Editor by dragging the line that
 separates it from the keyboard shortcuts list. The Macro Editor is a
 basic text editor that you use to enter and edit macro scripts.
 
+**Call on key up and down**: Normally a macro runs once, when its key is
+pressed. Turn this on to run it on both the key press and the key
+release; the script can check `Tracktion.isKeyDown` to tell the two
+apart. (Default: off)
+
 > 💡 **Tip:** With the Macro Editor open, try clicking on some of the
 existing keyboard shortcuts. The Macro Editor will show you the
 underlying code, you can use this to get familiar with the syntax of the
@@ -138,6 +143,26 @@ parameter in parenthesis.
 
 *Macro Actions 'dot' Notation Syntax*
 
+### The wf and render Objects
+
+Alongside `Tracktion`, every macro can use the `wf` object, a newer API
+that works with handles to tracks, clips and plugins. It is the
+preferred API for track, clip and plugin work, and handles from either
+object can be passed to the other. This macro renames the selected
+tracks:
+
+```js
+var tracks = wf.getSelectedTracks();
+
+for (var i = 0; i < tracks.length; ++i)
+    wf.setName (tracks[i], 'Drums ' + (i + 1));
+```
+
+A `render` object is also available for rendering from a script.
+
+Click **Show API** in the Macro Editor to open the full reference for
+all three objects in your web browser.
+
 ## Hover Tooltip
 
 If you hover over an action in the Macro Editor for a second or two,
@@ -193,7 +218,8 @@ a longer macro. Pick a free key: Cmd + G / Ctrl + G is already used by
 Macros are actually just simple text. You can easily copy and paste the
 text directly in and out of the Macro Editor. In addition, Waveform has
 dedicated buttons to import and export macro scripts as XML files with a
-`.tracktionscript` extension.
+`.tracktionscript` extension. You can also drag script files straight
+onto the Keyboard Shortcuts page to import them.
 
 
 ![](images/37----11.png)

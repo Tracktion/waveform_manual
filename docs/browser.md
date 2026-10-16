@@ -181,7 +181,7 @@ When you select a plugin or track preset (rather than a raw audio file), the pre
 
 Live preset preview lets you play a synth preset through your MIDI controller before committing to it.
 
-> 📝 **Note:** For live preset preview to produce sound, at least one of your selected MIDI inputs must have input monitoring enabled. If no inputs have monitoring on, a warning icon appears.
+> 📝 **Note:** For live preset preview to produce sound, at least one of your selected MIDI inputs must have input monitoring enabled. Only the first four selected inputs are used. If no inputs have monitoring on, or you have selected more than four, a warning icon appears.
 
 ## The Files Panel
 
@@ -207,6 +207,13 @@ Use the up-arrow button to move up to the parent folder.
 ### Auditioning and Inserting
 
 The Files panel lists audio files (plus SoundFont `.sf2` and `.sfz` files) and shares the same preview strip at the bottom as the Search browser, so you can audition a file before using it. Drag a file onto a track to place it, double-click to insert it at the cursor, and hold **Shift** while dragging to spread several files across consecutive tracks, exactly as in the Search browser.
+
+Right-click a file in the list for these options:
+
+- **Set tags...**: edit the tags of the selected files. Only available for files that are in your loop library.
+- **Open the folder containing this file...**: reveals the file in your system's file manager.
+- **Browse to folder containing this file**: switches the panel to the file's folder. Useful when you are viewing *Project files*, which gathers files from several folders.
+- **Delete File**: moves the selected files to your system's trash, after asking you to confirm.
 
 > 📝 **Note:** The Files panel browses your filesystem directly, so it shows files whether or not they have been tagged or added to your library. Dragging a new file in from here does not add it to your loop library. Use the Search browser for tagged, searchable content.
 
@@ -245,14 +252,14 @@ The tags bar in the middle of the panel lists every tag currently in use across 
 
 > 📝 **Note:** If no tags are enabled, or you have not tagged any tracks, the Show Only Tagged Tracks button has no effect: the filter only kicks in once at least one enabled tag exists.
 
-## The Groups Panel
+## The Groups Panel <span class="pro">PRO</span> { #the-groups-panel }
+
+> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion. In other editions the Groups tab doesn't appear.
 
 The **Groups** panel is the sidebar's home for [Edit Mix Groups](edit-mix-groups.md), the feature that links several audio tracks so that an action on one (a fader move, a mute, and so on) is mirrored on the rest. It gives you a single place to see every group in the edit, create new ones, and switch them on and off.
 
 ![](images/browser_groups@2x.png)
 *The Groups panel, listing the edit's mix groups*
-
-> 📝 **Note:** The Groups panel only appears in **Waveform Pro**, since Edit Mix Groups are a Pro feature.
 
 The panel lists every group in the edit. Each row shows the group's name drawn in that group's colour, and a small `*` appears next to any group that contains a track you currently have selected, so you can tell at a glance which groups your selection belongs to.
 

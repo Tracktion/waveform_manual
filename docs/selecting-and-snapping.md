@@ -88,17 +88,71 @@ You can always press Esc to deselect everything.
 > 💡 **Tip:** Pressing Esc also works to clear selections of other objects in
 Waveform like plugins and tracks.
 
+## Working With a Marked Region
+
+A marked region is a time range drawn across one or more tracks. By default,
+dragging across an empty part of the tracks area draws one over the tracks you
+drag across. If you've set the tracks area to select clips instead (see
+[Mouse settings](reference-settings.md#mouse)), hold Shift + Opt / Shift + Alt
+while you drag. Shift + Opt / Shift + Alt dragging in the Timeline marks every
+visible track. Drag either edge of the region to resize it, and Cmd-click /
+Ctrl-click a track within its time span to add or remove that track.
+
+Right-click inside the region to open its menu. Most commands act only on the
+clips that overlap the region on the tracks it covers. Delete Time and Insert
+Time change the whole Edit. Launcher clips are always left alone.
+
+- **Cut** (Cmd + X / Ctrl + X): Copies the parts of clips inside the region to
+  the clipboard and removes them, leaving a gap.
+- **Copy** (Cmd + C / Ctrl + C): Copies the parts of clips inside the region to
+  the clipboard.
+- **Crop**: Trims each overlapping clip so only the part inside the region is
+  left.
+- **Ripple delete** (Cmd + Backspace / Ctrl + Backspace): Deletes everything
+  inside the region on its tracks, automation included, and moves later clips
+  on those tracks left to close the gap.
+- **Split**: Splits the overlapping clips at both edges of the region.
+- **Insert MIDI Clip** (G) and **Insert Step Clip**: Add a new clip that fills
+  the region on each of its tracks. If a track is selected, the clip goes on
+  the selected track instead. Only shown when you right-click a track that can
+  hold MIDI.
+- **Heal**: Renders the audio clips that overlap the region on each track into
+  one audio clip, running from the start of the first to the end of the last.
+- **Consolidate**: Renders the audio inside the region on each track into one
+  audio clip exactly the length of the region.
+- **Duplicate** (D): Copies the parts of clips inside the region and pastes
+  them straight away, in the place Paste would put them (usually the
+  playhead), not directly after the region.
+- **Reverse**: Reverses the part of each audio clip inside the region, splitting
+  the clip at the region's edges first.
+- **Silence**: Mutes the part of each clip inside the region, splitting the clip
+  at the region's edges first.
+- **Delete Time**: Removes the region's time from the whole Edit (every track,
+  automation, and tempo and pitch changes), so everything after it moves
+  earlier.
+- **Insert Time**: Inserts empty time the length of the region at its start,
+  across the whole Edit, pushing everything after it later.
+- **Set loop to marked region** (A): Sets the loop range to match the region.
+- **Insert automation shape**: Draws a repeating Sin, Square, Triangle, Ramp
+  Up or Ramp Down shape into the region on the automation curve the track is
+  showing. Only shown when you right-click a track with an automation curve
+  visible. See [Editing Automation](automation.md#editing-automation).
+
+> 📝 **Note:** Heal, Consolidate and Reverse only work on audio clips. MIDI and
+Step clips in the region are skipped.
+
 ## Using Snap-to-Grid
 
 Snap-to-grid makes aligning clips and notes to musical time accurate and
-efficient. Working with this powerful feature is crucial to using
+efficient. Working with this feature is crucial to using
 Waveform for editing audio and MIDI.
 
 ## Enable/Disable Snap-to-Grid
 
 To toggle snap-to-grid on or off, click on the *Snap* button (Q) in the
 transport bar. When snap-to-grid is enabled the *Snap* button appears
-highlighted.
+highlighted. Right-click the *Snap* button to open the Snap menu, with
+*Snap-to-grid*, *Snap clips to other clips* and *Snap cursor movement*.
 
 
 ![](images/11----10.png)
@@ -176,10 +230,13 @@ end-to-end, for example when editing voiceover tracks.
 
 *Snap Clips to Other Clips Option*
 
-> 💡 **Tip:** A problem with *Snap clips to other clips* is that you need to
-have snapping enabled for it to work. To snap clips to other clips with
-snap-to-grid disabled, just hold down Opt / Alt as you drag. This
-is really the best way to arrange clips end to end!
+> 💡 **Tip:** *Snap clips to other clips* only works while snap-to-grid is
+on. To snap clips to other clips with snap-to-grid off, hold Opt / Alt
+while you drag the clip. Press it once the drag has started: holding it
+as you start the drag makes a copy of the clip. With snap-to-grid on, holding Opt / Alt or
+Shift during the drag does the opposite: the clip snaps to the grid but
+not to other clips. Here you hold the key while dragging a clip, unlike
+the Opt / Alt lasso, which starts on an empty part of a track.
 
 ## Overriding Snap-to-Grid
 

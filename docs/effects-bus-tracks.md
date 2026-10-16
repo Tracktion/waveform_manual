@@ -114,7 +114,9 @@ from that track playing in your mix.
 "post fader." Hardware consoles will have a special switch or maybe even
 a special knob that allows you to send post fader. In Waveform you do
 this in a very direct way: rearrange the order of the fader so that it
-comes before the *Aux Send* plugin.
+comes before the *Aux Send* plugin. For a pre-fader send, such as a
+headphone mix, drag the *Aux Send* to the left of *Volume & Pan* instead.
+The send level then stays the same when you move the track's fader.
 
 ## Adjusting the Send Level
 
@@ -131,6 +133,15 @@ Alternatively, you can just click on the *Aux Send* plugin and adjust
 *Send* in the Actions panel. The more you turn it up the more
 effect you'll get. As you turn it down, you get less and less of the
 effect.
+
+The Actions panel has a few more controls for the send. **Mute/Unmute**
+drops the send to -100 dB, and clicking it again restores the level it
+had. **Invert Polarity** flips the polarity of the signal going to the
+bus. **Disable all other send plugins on this bus** turns off every other
+*Aux Send* feeding the same bus, so you hear only this track through the
+effect; **Enable all other send plugins on this bus** turns them back on.
+Clicking the pair in turn is a quick way to compare one track's send with
+the whole bus.
 
 ## Assigning the Aux Bus
 
@@ -172,7 +183,8 @@ or delay on a single bus track.
 
 There's a special solo mode that you will likely to want to use on bus
 tracks, called *Solo isolate*. To do so, right-click the *Solo* button
-on one of your bus tracks and choose the option *Solo isolate*.
+on one of your bus tracks and choose the option *Solo isolate*, or
+Opt-click / Alt-click the *Solo* button.
 
 
 ![](images/31----13.png)

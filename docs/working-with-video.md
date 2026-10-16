@@ -3,8 +3,9 @@
 Waveform can load a video file alongside your Edit so you can score to
 picture: write music, edit dialogue, or design sound effects while
 watching the footage play in sync with the timeline. This chapter covers
-importing a video, working with the video window, and (on Pro) rendering
-your mix back out to a finished video file.
+importing a video, working with the video window, and rendering your mix
+back out to a finished video file (Waveform Pro or the Pro Video
+Expansion).
 
 ## What You Can Do at Each Edition
 
@@ -96,9 +97,11 @@ of thumbnail frames drawn along the video clip in the timeline, not the
 video window itself. Turn it down or off if the thumbnails are cluttering
 your view or you want to lighten the display.
 
-## Rendering Video (Pro)
+## Rendering Video <span class="pro">PRO</span> { #rendering-video-pro }
 
-If you have the Pro video features, two extra items appear in the
+> 📝 **Edition:** Waveform Pro, or with the Pro Video Expansion.
+
+With these video features, two extra items appear in the
 **Video** menu for getting a finished video back out:
 
 - **Export: Render to a file…**: combine the video picture with a fresh
@@ -110,7 +113,7 @@ Both always write a **.mov** file.
 
 ### Render Video Options
 
-Choosing **Render to a file…** opens the *Render Video* dialog. The
+Choosing **Export: Render to a file…** opens the *Render Video* dialog. The
 options are:
 
 **File**: the video file to write. Type a path, or use the button next
@@ -141,9 +144,9 @@ and Out-markers. This option only appears when a marked region longer
 than about 50 milliseconds exists, and when it appears it defaults to on,
 so turn it off if you want the whole Edit.
 
-### Replace Audio in Video
+### Replace Audio in Video <span class="pro">PRO</span> { #replace-audio-in-video }
 
-**Render and replace audio track in video…** opens the same dialog,
+**Export: Render and replace audio track in video…** opens the same dialog,
 titled *Replace Audio in Video*, with the **Format** and **Size** options
 hidden. Set **File** to the existing video whose audio you want to
 replace. It reuses that video's picture, so only the audio settings apply. Use this when you've

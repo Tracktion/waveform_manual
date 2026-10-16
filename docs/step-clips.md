@@ -147,10 +147,11 @@ Once you insert a new Step clip, notice that the rows are pre-assigned
 to General MIDI drum notes. This makes it really fast to get started
 programming beats.
 
-> 💡 **Tip:** Use one of the Waveform drum instruments - Micro Drum Sampler,
-Drum Sampler, or Multi Sampler. Add the instrument first and load a
-preset drum kit. Next, insert a blank Step clip. The row names will
-match the pad names of the preset!
+> 💡 **Tip:** Use one of the Waveform drum instruments: Micro Drum Sampler
+(every edition), or Drum Sampler or Multi Sampler (Waveform Pro, or with
+the MIDI Producer or Synth Pack Expansion). Add the instrument first and
+load a preset drum kit. Next, insert a blank Step clip. The row names
+will match the pad names of the preset.
 
 
 ![](images/27----07@2x.png)
@@ -169,6 +170,16 @@ Here are the basic steps to programming a drum beat using a Step clip:
 ![](images/27----08@2x.png)
 
 *Programming a Step Clip*
+
+Click a cell to flip it on or off, or drag across cells to paint
+several. Hold Shift while you click or drag to turn cells on, or hold
+Cmd / Ctrl to turn them off. Right-click a cell for the pattern
+section's menu.
+
+Double-click a Step clip to open it in the editor area at the bottom of
+the window. If *Double-click MIDI clip header* in *Settings > General*
+is set to *Expands for in-line editing*, a double-click makes the track
+taller instead, so you can edit the clip in place.
 
 As you toggle notes you will hear the result. You are are now
 programming a variation!
@@ -221,12 +232,29 @@ Apply Common Groove
     you select a template. The most common settings are for basic
     swing. This setting applies groove to all rows in the Step clip.
     You can also set the groove for each row separately (see
-    [Step Clip Row properties](#step-clip-row-properties)).
+    [Step Clip Row properties](#step-clip-row-properties)). Older
+    templates are in the *Legacy groove templates* submenu, and *Edit
+    groove templates...* opens the groove template editor (see
+    [Quantizing MIDI Notes](quantizing-midi-notes.md)).
 
 Apply common groove amount
 - With groove amount set to minimum the groove template selected in
     the previous option has no effect. Increase it for more and more
     impact.
+
+Speed and Reset Ratio
+- *Speed* stretches the patterns and their notes by a ratio, so the
+    clip plays faster or slower than its steps suggest. *Reset Ratio*
+    puts it back to the default.
+
+MIDI Channel, Velocity and Mute
+- *MIDI Channel* sets the MIDI channel for every row in the clip.
+    *Velocity* scales the velocities of all the notes the clip plays
+    (0-100, where 100 leaves them unchanged). *Mute* silences the clip.
+
+Add Rows from Instrument
+- Appears when the track's instrument has named notes, such as a
+    loaded drum kit. It adds a row for each named note.
 
 Render Clip
 - Use any of the *Render Clip* options to convert a Step clip to an
@@ -268,6 +296,11 @@ Step Clip Header Context Menu
 ![](images/27----09b@2x.png)
 
 *Step-click Context Menu (Right-click)*
+
+> 📝 **Note:** A Step clip in a [Clip Launcher](clip-launcher.md) slot
+shows launcher actions (launch quantisation, looping, follow and
+trigger actions) in place of the start, length and end times. The Clip
+Launcher needs Waveform Pro, or the Launcher Expansion.
 
 ## The Step Clip Footer
 
@@ -421,6 +454,10 @@ Velocity
     clip [velocity and gate editor](#velocity-and-gate-editor), you can set each note to a
     percentage of this value. The default *Velocity* value is 96.
 
+Test Note
+- Click *Test Note* to hear the row's note on the track's instrument.
+    Clicking the row's name in the clip does the same.
+
 MIDI Channel
 - *MIDI Channel* sets the output MIDI channel number. If you're
     playing into a multi-timbral virtual instrument, then this would set
@@ -439,7 +476,11 @@ Groove
     groove is set at the row level. When you apply common groove it sets
     all rows to the same groove template.
 
-> 📝 **Note:** Typically groove is used to apply swing. Chose "Basic 8th
+Groove Amount
+- *Groove Amount* appears when the row's groove template supports it.
+    At 0 the groove has no effect; raise it for a stronger feel.
+
+> 📝 **Note:** Typically groove is used to apply swing. Choose "Basic 8th
 Swing" or "Basic 16th Swing" to get started.
 
 **Video Clip:** [Step Clip
@@ -463,6 +504,14 @@ context menu.
 ![](images/27----18.png)
 
 *Step Clip Row Actions*
+
+Right-click a row's name in the clip for a menu with *Clear row*,
+*Randomize row*, *Rename row*, *Note on every*, *Shift left*, *Shift
+right*, *Delete row* and *Insert row*. Each works like the matching
+action below, across all the pattern sections.
+
+In Waveform Pro, or with the MIDI Producer Expansion, you can also drag
+a row's name up or down to reorder the rows.
 
 Insert Row
 - Select a row and click *Insert Row*. This inserts a new row right
@@ -518,11 +567,13 @@ to add another row at any time using *Insert Row*.
 ## Velocity and Gate Editor
 
 Add dynamics and feel to your Step clips using the velocity and gate
-editor. Three small buttons sit in the upper left corner of any Step
-clip: *V* toggles the velocity and gate editor, *P* toggles the
-probability editor, and *View* chooses which rows to show. When you
-click *V*, the editor appears below the patterns. This give you a quick
+editor. Click the *V* button in the upper left corner of any Step clip
+and the editor appears below the patterns. This gives you a quick
 graphical view of the velocity per note for the selected row.
+
+In Waveform Pro, or with the MIDI Producer Expansion, two more buttons
+sit next to it: *P* toggles the [probability editor](#probability-editor),
+and *View* (below the row names) chooses which rows to show.
 
 
 ![](images/27----20.png)
@@ -568,12 +619,33 @@ adjust the percentage to taste.
 
 *Adjusting Note Gating in the Velocity and Gate Editor*
 
-Hold Cmd / Ctrl while you click or drag to ignore snapping. It
-also lets you set a velocity on a step that has no note yet, which
-turns that note on.
+Hold Cmd / Ctrl while you click or drag to set a velocity on a step
+that has no note yet, which turns that note on.
 
 **Video Clip:** [Step Clip
 Velocity/Gate](https://w-edstrom.wistia.com/medias/mz2dg3v98s)
+
+## Probability Editor <span class="pro">PRO</span> { #probability-editor }
+
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
+The probability editor sets the chance that each note plays, so a
+pattern can vary every time it loops.
+
+1.  Click *P* in the upper left corner of the Step clip. It replaces
+    the velocity and gate editor below the patterns.
+2.  Select a row by clicking its name.
+3.  Click or drag the bars to set each note's chance of playing. A
+    bubble shows the value, for example "Probability: 75%".
+
+Hold Cmd / Ctrl while you click or drag to set a probability on a
+step that has no note yet, which turns that note on.
+
+### Choosing Which Rows to Show
+
+Click *View* below the row names to choose which rows the clip shows:
+*Show all notes*, *Show notes in key*, *Show notes in use* or *Show
+named notes*.
 
 ## Looping Step Clips
 
@@ -606,6 +678,11 @@ to MIDI clip*. A MIDI clip is created, replacing the Step clip.
 ![](images/27----26.png)
 
 *Convert a Step Clip to a MIDI Clip*
+
+To go the other way, select a MIDI clip and choose *Convert to Step
+Clip* in the Actions panel (or *Convert to Step clip* in its right-click
+menu), then pick the step size from the *Quantise to* list. This isn't
+offered for clips in the Clip Launcher.
 
 ## Step Clip Presets
 

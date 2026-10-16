@@ -42,6 +42,24 @@ available options.
 
 *Clip Layer Controls Diagram*
 
+- **Add** (+): Adds a new layer directly below this one, from the same
+  list of effects.
+- **Move** (menu icon): The *Move before* and *Move after* submenus list
+  the layers by number and type, and plugin layers also show the plugin's
+  name. Pick a layer to move this one before or after it.
+- **Remove** (-): Opens a menu with *Remove effect*, which deletes the
+  layer.
+- **Settings** (gear): Shows the layer's settings. Only layers that have
+  settings show it.
+
+Plugin layers also have an **A** button. It lists the plugin's
+parameters so you can pick which one the layer's curve shows and edits;
+parameters that already have a curve are coloured.
+
+> 📝 **Note:** Clip Layer effects don't work in the Clip Launcher. When
+you drag a clip with effects into a launcher slot, Waveform removes its
+clip effects and tells you so.
+
 ## Volume - Volume
 
 Adding a volume layer is the Waveform way to do clip based volume

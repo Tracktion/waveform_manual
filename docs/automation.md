@@ -52,6 +52,9 @@ The minus icon will remove the Automation Track, the A icon allows you
 to set up the track, and the plus icon will add yet another Automation
 Track below this one.
 
+To colour an Automation Track, right-click its header and pick a colour from
+the colour strip in the menu.
+
 ### Pinning the Shown Curve
 
 When showing automation on an *audio* track (i.e. not an *automation* track), you will see a pin button next to the "A" button. When this pin is disabled, the displayed curve on this track will change when a plugin parameter changes. This can make it much quicker to show the relevant curve as you can just unpin the current curve, move the parameter in the plugin's UI and the curve will change. If you want to keep this curve visible you can either pin it or click the "A" button and choose to move it to a dedicated automation track.
@@ -101,6 +104,26 @@ automate. Then choose the parameter from the list. So, to automate
 panning, drag the A and drop it on the *Volume & Pan* plugin and then
 choose *Pan* from the list. This also works for third party plugins.
 
+### The A Button Menu
+
+Clicking the A icon opens a menu of everything the track can show:
+
+| Entry | What it does |
+| --- | --- |
+| *Show automation curves on this track* | Shows the track's volume curve again when no curve is shown |
+| *Hide automation curves on this track* | Hides the curve the track is showing |
+| *Select the plugin that contains this parameter* | Selects the plugin that owns the shown curve, so its controls appear in the Actions panel |
+| *Automation mode* | Sets the track's automation mode (see *Automation Modes* below) |
+| *Automatable parameters for this track* | Every parameter on the track, grouped by plugin, plus the track's *Macros* and *Modifiers* submenus |
+| *Rack plugins* | Each rack in the Edit, with its *Macros*, *Modifiers* and *Faceplate* controls and the plugins inside it |
+| *Master parameters* | The master volume and pan, the master plugins and the Edit's macros |
+| *Active parameter curves in Edit* | Every parameter in the Edit that already has automation |
+| *Active parameter curves for this track* | The parameters on this track that already have automation |
+
+Choosing a parameter shows its curve on the track. For the parameters these
+submenus lead to, see [Macro Parameters](racks.md#macro-parameters),
+[Modifiers](modifiers.md) and [Faceplates](faceplates.md).
+
 ## Adding Points to the Automation Curve
 
 To give your Automation Curve some shape, you need to add some points on
@@ -149,6 +172,18 @@ Drawing an Automation Step
 ![](images/35----09.png)
 
 *Hold Cmd / Ctrl to Draw a Step*
+
+### Editing Points
+
+- **Delete a point**: double-click it, or Opt-click / Alt-click it.
+- **Move a point and every point after it**: Cmd + Shift-drag / Ctrl +
+  Shift-drag the point left or right. This slides the rest of the curve in
+  time without changing any values.
+- **Move a point along one axis only**: hold Shift while you drag it, and the
+  point keeps either its time or its value, whichever you moved less.
+- **Select a run of points**: select one point, then Shift-click another to
+  select every point between them.
+- **Add or remove a point from the selection**: Cmd-click / Ctrl-click it.
 
 ## Editing Automation
 
@@ -336,12 +371,13 @@ separate Automation track.
 
 ## Remap on Tempo Change
 
-Each plugin has a *Remap on Tempo Change* setting in the Actions panel. With
-that enabled, as you change the tempo of the song, the automation will
-track the tempo changes. That means it will get smaller if you speed up
-the tempo or it will get longer in order to match the clips in your
-Edit. This is a great feature but is not enabled by default; You need to
-turn it on for each plugin.
+Each plugin has a *Remap on Tempo Change* setting. For third-party plugins,
+racks and some built-in plugins (such as Volume & Pan) it's a toggle in the
+plugin's Actions panel; for the other built-in plugins it's an item in the menu
+on the plugin window's title bar. With it enabled, the
+plugin's automation follows tempo changes: it gets shorter if you speed up the
+tempo and longer if you slow it down, so it stays lined up with the clips in
+your Edit. It's off by default, so you turn it on for each plugin.
 
 
 ![](images/35----17.png)
@@ -391,6 +427,8 @@ playback.
 (*Settings > Advanced > Automation > Simplify newly-recorded automation*, on by
 default; see [Reference: Settings](reference-settings.md#automation)). Use *Simplify*
 again if you want it thinner. The *Medium* option is a good starting point.
+The **Glide** setting on the same page sets how long newly written automation
+takes to cross-fade into the curve that was already there.
 
 
 ![](images/35----21.png)
@@ -446,7 +484,10 @@ With *Auto Lock* engaged, automation will follow as you drag the clip to
 a different place in time. It's a great feature, assuming that's what
 you want to do.
 
-## Clip Automation
+## Clip Automation <span class="pro">PRO</span> { #clip-automation }
+
+> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion, the
+> MIDI Producer Expansion or the Launcher Expansion.
 
 You can also add automation curves to specific clips. These can control parameters from clip, track or master plugins within the clip's scope (i.e. not a parameter from a plugin on a different track to the clip).
 

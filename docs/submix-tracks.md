@@ -106,8 +106,9 @@ largely on which kind of tracks and the style of music.
 ## Moving On
 
 To render each submix to its own file, set **Render** to *Submixes* in
-the Render dialog's Advanced mode (Waveform Pro). See
-[Rendering and Stems](rendering-and-stems.md).
+the Render dialog's **Advanced mode** <span class="pro">PRO</span>, which
+is in Waveform Pro only. See
+[Rendering and Stems](rendering-and-stems.md#simple-and-advanced-modes).
 
 
 

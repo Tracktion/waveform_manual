@@ -9,13 +9,14 @@ these before a virtual instrument to have any effect.
 
 These plugins are under **Waveform > Effects** in the plugin menu.
 
-### MIDI Arpeggiator (Pro edition)
+### MIDI Arpeggiator <span class="pro">PRO</span> { #midi-arpeggiator }
 
 The MIDI Arpeggiator turns held notes or chords into rhythmic patterns:
 play a chord and the Arpeggiator cycles through its notes in time with
-the edit. It is available in Waveform Pro, or with the MIDI Producer
-Expansion, and goes on a track's plugin chain before the instrument (it can't be added to a
-clip).
+the edit. It goes on a track's plugin chain before the instrument (it
+can't be added to a clip).
+
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 ![](images/MIDI%20Utilities/MIDI%20Arpeggiator@2x.png)
 
@@ -71,16 +72,16 @@ length (1 to 32 steps), and **Grid** to set the step size (1 bar, 1/2,
 >
 > 🎥 [MIDI Arpeggiator Soloing Technique](https://youtu.be/Osve5gfWQlg)
 
-### MIDI Chord Companion (Pro edition)
+### MIDI Chord Companion <span class="pro">PRO</span> { #midi-chord-companion }
 
 Chord Companion is a pad-based chord launcher. You assign a chord to
 each of up to 64 pads (four banks, A to D, of 16), and a single
-trigger note then fires the whole chord. It's ideal for playing
-progressions from a pad controller or a few keys. It also includes a
+trigger note then fires the whole chord. It also includes a
 built-in arpeggiator, a chord repeater, and a randomize section.
-Chord Companion is available in Waveform Pro, or with the MIDI Producer
-Expansion, and goes on a track's plugin chain before the instrument (it can't be added to a
-clip).
+Chord Companion goes on a track's plugin chain before the instrument
+(it can't be added to a clip).
+
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 ![](images/MIDI%20Utilities/MIDI%20Chord%20Companion@2x.png)
 
@@ -155,22 +156,30 @@ track.
 
 ### MIDI Modifier
 
-MIDI modifier is a transposer for MIDI data. Use the controls to
-shift the pitch of MIDI notes up or down by fixed intervals.
+MIDI Modifier is a transposer for MIDI data. It shifts every note
+passing through it by a fixed number of semitones.
+
+**Semitones**: The transposition, from -36 to +36 semitones. At 0 the
+value reads "(Original pitch)". (Default: 0)
+
+**Pitch**: Opens a menu of common intervals: up one or two octaves,
++11 to -11 semitones, original pitch, and down one or two octaves.
+Picking one sets **Semitones** for you.
 
 ![](images/MIDI%20Utilities/MIDI%20Modifier@2x.png)
 
 *The MIDI Modifier*
 
-### MIDI Note Repeater (Pro edition)
+### MIDI Note Repeater <span class="pro">PRO</span> { #midi-note-repeater }
 
 The Note Repeater fires a rhythmic pattern while notes are held:
 hold a chord and it retriggers in time with the edit. It shares its
 engine and much of its design with the MIDI Arpeggiator, but it is
 purely rhythmic: the held notes always play together as a chord, with
-no note ordering or octave spread. It is available in Waveform Pro, or
-with the MIDI Producer Expansion, and goes on a track's plugin chain before the instrument
-(it can't be added to a clip).
+no note ordering or octave spread. It goes on a track's plugin chain
+before the instrument (it can't be added to a clip).
+
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 ![](images/MIDI%20Utilities/MIDI%20Note%20Repeater@2x.png)
 
@@ -199,43 +208,87 @@ with the MIDI Producer Expansion, and goes on a track's plugin chain before the 
 
 These plugins are under **Waveform > Utility** in the plugin menu.
 
-**MIDI Filter** (Pro edition)
-- MIDI Filter allows notes to pass through only within the range
-    defined. To see the range and create a zone, drag the arrows from
-    the left and right sides of the on-screen keyboard. Use two or more
-    of these within a Plugin rack to create zones that play different
-    virtual instruments. For example play bass on the left side of your
-    controller and piano on the right
+### MIDI Filter <span class="pro">PRO</span> { #midi-filter }
+
+MIDI Filter lets through only the notes inside the range you set. To
+see the range and create a zone, drag the arrows from the left and
+right sides of the on-screen keyboard. Use two or more of these within
+a Plugin rack to create zones that play different virtual instruments:
+for example, bass on the left side of your controller and piano on the
+right.
+
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 > 🎥 [Video Explaining the MIDI Filter](https://youtu.be/RsxbP4Gys3U)
 
-**MIDI Monitor**
-- Shows the stream of MIDI data to debug your setup or better
-    understand the output from your controller or keyboard. This plugin
-    does not alter the data so you won't hear any effect when it is
-    active
+### MIDI Monitor <span class="pro">PRO</span> { #midi-monitor }
 
-**MIDI Patch Bay**
-- Allows mapping from one MIDI channel to another. Any of the 16
-    channels can be remapped to any other channel. In addition you can
-    selectively block channels from passing any MIDI data through the
-    plugin.
+MIDI Monitor shows the stream of MIDI data passing through it, so you
+can debug your setup or see exactly what your controller or keyboard
+sends. It doesn't change the data, so you won't hear any effect while
+it is on the chain.
 
-**MIDI Note Names**
-- Lets you give any of the 128 MIDI notes a custom name, and switch
-    individual notes on or off. It's most useful in front of a drum
-    instrument: name note 36 *Kick*, note 38 *Snare*, and so on, and those
-    names then appear in the piano roll so you're editing *Kick* and
-    *Snare* instead of *C1* and *D1*. The plugin doesn't change the audio;
-    it only relabels the notes.
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
-**MIDI CC**
-- Generates MIDI continuous-controller (CC) messages and lets you route
-    them to a chosen CC number. Each value is an automatable parameter, so
-    you can draw or record CC automation (modulation, expression, filter
-    cutoff, and the like) and send it on to a virtual instrument or
-    external gear downstream.
+The window lists each event on its own line: a running count, the
+time, the message type (controllers show as "CC"), the channel and the
+raw bytes. Above the list, **Active Notes** shows the notes currently
+held. Drag the window's corner to make it bigger.
 
-**ReWire Device**
-- Use this to use any ReWire compatible DAW as a plugin within
-    Waveform. Windows and Intel Macs only.
+**Reset**: Clears the held-note state, which is useful if a note-off
+went missing and **Active Notes** shows a stuck note.
+
+**Clear**: Empties the event list.
+
+**Copy**: Copies the whole list to the clipboard as text, one event
+per line.
+
+### MIDI Patch Bay
+
+MIDI Patch Bay remaps MIDI channels. Its window shows one dropdown for
+each of the 16 incoming channels. Pick the channel you want that input
+sent out on, or choose **Block channel** to stop it passing through.
+
+**Reset All**: Resets every mapping so no channels are changed.
+
+**Block All**: Blocks all 16 channels.
+
+### MIDI Note Names
+
+MIDI Note Names lets you give any of the 128 MIDI notes a custom name,
+and switch individual notes on or off. It's most useful in front of a
+drum instrument: name note 36 *Kick*, note 38 *Snare*, and so on, and
+those names then appear in the piano roll so you're editing *Kick* and
+*Snare* instead of *C1* and *D1*. The plugin doesn't change the audio;
+it only relabels the notes.
+
+The plugin's window and its Actions panel show the same controls. Each
+note has a row with a tick to switch the note on or off, the note
+number and pitch, a name field (click it to type), and a speaker button
+that plays the note while you hold it down.
+
+**Import Names**: Loads names from a text file. Each line starts with
+a note number followed by the name, for example `36 Kick`. Importing
+replaces all the current names.
+
+**Show MIDI Note Name Maps Folder**: Opens the folder of name files.
+Waveform puts its own drum and note maps there for you to import or
+copy.
+
+**Clear All Note Names**: Removes every name and switches all notes
+back on.
+
+### MIDI CC
+
+MIDI CC sends MIDI continuous-controller (CC) messages. It has six
+knobs, **CC 1** to **CC 6** (0 to 127, default 0), each with a
+**Dest** button below it (**Dest 1** to **Dest 6**). Click it to choose
+the channel and CC number that knob sends to; it shows "---" (sending
+nothing) until you pick one, then the CC number. Each knob is an automatable parameter, so you can draw or
+record CC automation (modulation, expression, filter cutoff) and send
+it on to a virtual instrument or external gear downstream.
+
+### ReWire Device
+
+Use this to run any ReWire-compatible DAW as a plugin within Waveform.
+Windows and Intel Macs only.

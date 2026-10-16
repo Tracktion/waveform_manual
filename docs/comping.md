@@ -21,6 +21,14 @@ to do the composite a different way.
 > 📝 **Note:** We are assuming that you have already recorded using the
 technique in the previous chapter. If not, go back to [Loop Recording](loop-recording.md) and get some takes recorded!
 
+The quickest way is **File > Save edit as...**. It suggests a numbered
+name; the copy is added to the same project and becomes the Edit you
+keep working on, while the original stays as you last saved it. For a
+snapshot of the whole project, use **File > Backup edit and project
+files...** and give the backup a name.
+
+You can also make the copy from the Projects tab:
+
 1.  When you finish loop recording, make sure to save the Edit with
     **File > Save edit** (Cmd + S / ctrl + S).
 2.  Go to the Projects tab and select the correct Edit. In the Controls
@@ -121,6 +129,22 @@ this operation is permanent.
 > 💡 **Tip:** Don't flatten the comp without first saving a copy of the Edit.
 Also, we do not recommend selecting the option to delete the source
 files as this will remove them for your other saved Edits.
+
+## Other Takes Menu Options
+
+The plus (+) menu on a clip with takes has a few more items:
+
+- **Unpack to new tracks**: Puts each take on a track of its own, so
+  you can edit or mix them separately.
+- **Delete unused takes**: Removes the takes you aren't using. It
+  appears when a single take is selected rather than a comp.
+- **Copy comp to clipboard** / **Paste comp from clipboard**: Copies the
+  current comp of an audio clip, so you can apply the same choices to
+  another audio clip with takes.
+- **Create audio comp** (MIDI clips only): **Create a new audio comp
+  clip** renders the MIDI takes into a new audio clip with takes, so you
+  can comp them as audio; **Replace with a new audio comp clip** does
+  the same and replaces the MIDI clip.
 
 ## Setting up a Comp Group
 

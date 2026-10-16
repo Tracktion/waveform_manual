@@ -24,6 +24,22 @@ action. This is really helpful if you want to have a way to do something
 on your laptop, but then take advantage of the extended keypad when
 you're working on a desktop computer.
 
+## Finding a Shortcut
+
+Type in the page's search box to filter the list. It matches the names,
+descriptions and categories of the commands. To find out what a key does,
+click the *Press keyboard to filter* box and press the key: the list then
+shows only the command mapped to it.
+
+## Using Another DAW's Shortcuts
+
+*Reset to Defaults* loads a complete set of key mappings. As well as
+*Restore default Waveform key mappings*, its menu offers *Clear all
+mappings*, *Use legacy Tracktion key-mappings*, *Use 'Ableton Live' style
+key-mappings* and *Use 'Cubase' style key-mappings*. Each one asks you to
+confirm, because it overwrites all your current key mappings, so save them
+to a file first (see below) if you might want them back.
+
 ## Setting a Keyboard Shortcut
 
 
@@ -131,10 +147,10 @@ using normal web browser features.
 
 ## Moving On
 
-At this point you should have a good handle on how to customize the
-keyboard shortcuts in Waveform. Waveform's macro scripting lets you
-customise keyboard shortcuts further. For more
-about that, see [Macros](macros.md).
+Waveform's macro scripting lets you go further than keyboard shortcuts.
+The **Show Macro Editor** button on this page opens the macro script
+editor, and **Show Custom Menu** opens the Custom Menu Editor, where you
+build your own *Actions > Custom* menu. See [Macros](macros.md).
 
 
 

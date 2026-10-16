@@ -139,6 +139,26 @@ After you apply swing, you'll see it lays back all of the "and" notes to
 be a little late; groovy! Waveform will also adjust the note lengths
 appropriately as shown above.
 
+## Clip Quantise and Groove
+
+*Quantise* and *Apply Groove* change the selected notes. A MIDI clip can
+also quantise and groove its notes as it plays, leaving the notes
+themselves untouched. Select the clip and use these settings in the
+Actions panel:
+
+**Quantise**: The quantise resolution the clip applies on playback.
+
+**Quantise Amount**: How tightly the notes are pulled to the *Quantise*
+grid. (Range: 0-100)
+
+**Groove**: The groove template the clip applies on playback.
+
+**Groove Amount**: How strongly the groove is applied. Shown only when
+the chosen template takes a strength. (Range: 0-100)
+
+Because the notes don't move, you can change or remove these at any time
+and the original timing comes back.
+
 ## Defining Groove Templates
 
 For more control, you can build grooves to your own
@@ -206,17 +226,18 @@ chapter!
 
 ## Managing Groove Templates
 
-Waveform gives you all the tools you need to create new groove
-templates, rename them, and import and export them. Exported templates
-have the `.trkgroove` file extension. This allows you to share them with
-other Waveform users or installations.
+The *Groove Templates* window has buttons to *Create a New Template...*,
+*Rename Template...*, *Import Template...* and *Export Template...*.
+Exported templates have the `.trkgroove` file extension, so you can share
+them with other Waveform users or installations.
 
 
 ![](images/26----15.png)
 
 *Create, Rename, Import, or Export Groove Templates*
 
-While editing a groove template, you may reset it. This removes the
+While editing a groove template, you may reset it with *Reset
+Template...*. This removes the
 late/early timing for the pattern, but doesn't change the length or note
 division settings.
 
@@ -232,6 +253,17 @@ Template*.
 ![](images/26----17.png)
 
 *Deleting a Groove Template*
+
+### Making Templates From a Performance
+
+You can also capture the timing of a real performance as a template.
+Select a MIDI clip and click *Extract groove from MIDI clip* in the
+Actions panel. Waveform asks for a name, then saves the timing of the
+clip's notes as a new groove template that you can apply to other MIDI
+clips, Step clips and audio. For audio, Groove Doctor's *Extract groove*
+mode does the same from the beat transients; see
+[Groove Doctor](groove-doctor.md) (Waveform Pro, or with the Recording
+Engineer Expansion).
 
 ## Moving On
 

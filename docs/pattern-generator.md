@@ -51,6 +51,10 @@ pattern to the harmony you've laid out on the Chord Track and needs
 Waveform Pro or the MIDI Producer Expansion; *Follow Global Track*
 tracks the edit's global key.
 
+With a specific root chosen, a button next to **Key** (*Update global
+track key to match key of clip*) copies the clip's key to the Edit's
+global key.
+
 **Scale**: The scale used when you've chosen a fixed root rather
 than following a track. (Only shown when Key is set to a specific root.)
 
@@ -60,15 +64,17 @@ Track. Add chords (triads, 6ths, 7ths, 9ths, or custom), drop in popular
 predictor sits alongside it, showing likely next chords as a bar chart
 so you can build a progression a chord at a time. See
 [The Chord Track](chord-track.md) for the full walkthrough of this
-builder. It works the same way here.
+builder. It works the same way here. (Progression and Suggestion are
+hidden when Key is *Follow Chord Track*, because the Chord Track supplies
+the chords.)
 
-**Octave**: Shifts the generated notes up or down by octaves.
+**Octave**: The octave the generated notes are placed in. (Range: 1-11)
 
 **Velocity Scale**: A scaling factor applied to the velocities of the
-generated notes.
+generated notes, not a velocity value itself. (Range: 0-100)
 
 **Gate**: How long each note plays relative to its step (shorter gates
-give a more staccato feel).
+give a more staccato feel). (Range: 0-100)
 
 **Auto update**: Regenerates the pattern automatically whenever you
 change a setting. (Default: on)
@@ -83,9 +89,10 @@ In addition to the shared controls, Arpeggio adds:
 
 - **Style**: A grid of arpeggio patterns to choose from.
 - **Pattern Length**: How many steps before the pattern repeats.
+  (Range: 1-16)
 - **Play root note**: Includes the chord's root note in the pattern.
 - **Up / Down**: The direction the arpeggio travels.
-- **Steps**: The number of steps in the pattern.
+- **Steps**: The number of steps in the pattern. (Choices: 2-8)
 
 ## Chords
 
@@ -114,8 +121,8 @@ In addition to the shared controls, Arpeggio adds:
 
 - **Several clips at once.** With more than one MIDI clip selected, the
   page applies to all of them, but only shows the shared settings
-  (Pattern Style, Key, Scale, Progression, Octave, Velocity Scale and
-  Auto update).
+  (Pattern Style, Key, Scale, Progression, Suggestion, Octave, Velocity
+  Scale and Auto update).
 
 ## Moving On
 

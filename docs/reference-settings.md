@@ -31,6 +31,8 @@ Several other languages are available. They're contributed and maintained by use
 
 **Colour scheme**: Click **Show editor...** to open the Colour Scheme Editor, where you can choose from the built-in schemes or customise individual interface colours to suit your taste or mood.
 
+**Colour swatches** <span class="pro">PRO</span>: In the Colour Scheme Editor, click any of the 18 swatches in the preview strip to pick its colour. The palette button loads a preset palette or copies and pastes a colour list, the lock button keeps your swatches when you switch to another scheme, and the reset button restores the default swatch colours. Available in Waveform Pro.
+
 ### Browser
 
 **Browser position** (Choices: Left, Right, Top): Sets where the Browser side panel sits when you're working in the Edit tab. (Default: Right)
@@ -51,9 +53,7 @@ Several other languages are available. They're contributed and maintained by use
 
 **Show clip names**: Shows the name of each clip in its lower-left corner. Turn it off to hide clip names. (Default: enabled)
 
-**Clip launcher style** (Choices: Show name, Show thumbnail): Controls how small clips look in the Clip Launcher: showing their name, or showing a thumbnail of their contents. (Default: Show name)
-
-> 📝 **Note:** This option only appears if your edition of Waveform includes the Clip Launcher.
+**Clip launcher style** <span class="pro">PRO</span> (Choices: Show name, Show thumbnail): Controls how small clips look in the Clip Launcher: showing their name, or showing a thumbnail of their contents. Available in Waveform Pro, or with the Launcher Expansion. (Default: Show name)
 
 **Show extra slip handles on clip headers**: Adds extra handles to clip headers for slipping the contents. The solid triangles at the left and right edges slip the audio from each edge; the open box in the centre slides the whole frame. These are handy for certain editing workflows. (Default: disabled)
 
@@ -81,11 +81,11 @@ Several other languages are available. They're contributed and maintained by use
 
 **Highlight current key in MIDI background**: Normally the piano-roll background in the MIDI editor is shaded like a piano, with the same rows always light or dark. With this on, the lighter rows instead follow the key signature set in the Tempo track, and the shading shifts whenever the key changes, so you can use the background as a guide for staying in key. (Default: disabled)
 
-The remaining swatches set the colours used to highlight notes against the current key and chords. The first two relate to the Chord track and only appear if your edition includes it.
+The remaining swatches set the colours used to highlight notes against the current key and chords. The first two relate to the Chord track, so they only appear with Waveform Pro or the MIDI Producer Expansion.
 
-**In-key chord note**: The colour for notes that are in the key and scale *and* part of the current chord (used with the Chord track). (Default: Green)
+**In-key chord note** <span class="pro">PRO</span>: The colour for notes that are in the key and scale *and* part of the current chord (used with the Chord track). (Default: Green)
 
-**Out-of-key chord note**: The colour for notes that are in the current chord but not naturally in the key and scale (used with the Chord track). (Default: Yellow)
+**Out-of-key chord note** <span class="pro">PRO</span>: The colour for notes that are in the current chord but not naturally in the key and scale (used with the Chord track). (Default: Yellow)
 
 **In-key scale note**: The colour for notes that are part of the key and scale at that point. (If a note is also part of the chord, it uses the chord colour instead.) You don't need the Chord track to get these. (Default: Light Blue)
 
@@ -116,7 +116,7 @@ These controls sit at the top of the page and cover the big-picture setup: which
 
 > 💡 **Tip:** On Windows, if your interface came with an ASIO driver, choose ASIO here. It generally gives you the lowest latency and the most reliable buffer sizes.
 
-**Output Device** (Choices: your hardware outputs, or *none*): the physical output Waveform plays through. Pick *none* if you don't want any audio output. The list shows whatever the selected driver type reports.
+**Output Device** (Choices: your hardware outputs, or *none*): the physical output Waveform plays through. Pick *none* if you don't want any audio output. The list shows whatever the selected device type reports.
 
 **Input Device** (Choices: your hardware inputs, or *none*): the physical input Waveform records from. This row only appears when the current driver keeps inputs and outputs separate. For interfaces that bundle input and output together (a single ASIO device, for example), there's just one device choice and your input follows the output selection automatically.
 
@@ -143,6 +143,14 @@ These two buttons are always shown, whatever the device:
 **Reset Input Device Properties**: resets your input devices back to their default settings. You'll get a confirmation prompt first.
 
 **Reset Output Device Properties**: resets your output devices back to their default settings, again with a confirmation prompt.
+
+### Channel Layout Presets
+
+A channel layout preset stores how your device's channels are currently arranged into input and output groups, so you can switch between setups (for example a stereo mixing layout and a multi-mic tracking layout) without regrouping every row by hand.
+
+**Save Current Layout as New Preset**: asks for a name and saves the current arrangement under it. Saving with the name of an existing preset replaces that preset.
+
+Each saved preset appears as a row above the button. Click a row to apply it; Waveform asks you to confirm before it replaces your current layout. Each row also has two icons on the right: **Update** replaces the preset with the current layout (after a confirmation), and **Delete** removes the preset straight away.
 
 ### Input Channel Groups
 
@@ -203,6 +211,16 @@ When you select an input row, the settings pane on the right shows everything ab
 **Use the Same Properties for All Devices**: when ticked, all your input devices share one set of these settings, so changing one changes them all. When you turn it on, Waveform asks whether to copy the current device's settings to the others or leave them as they are. (Default: on.)
 
 At the bottom of the panel there's a larger input level meter for the selected device.
+
+#### Settings for an output
+
+**Channels**: the channel grouping for the selected output, the same choice as on its row.
+
+**Dithering Enabled**: adds dither to this output, which masks the distortion of reducing Waveform's high-resolution mix to your interface's bit depth. (Default: off)
+
+**Left/Right Reversed**: swaps the channel order of this output, for example when your speakers are wired the wrong way round. Only shown for outputs with two or more channels. (Default: off)
+
+**Device Alias**: a friendly on-screen name for this output, shown wherever the output is referenced.
 
 ### Calibrating recording sync
 
@@ -310,6 +328,12 @@ Select a device in the list, then use the settings panel on the right. The exact
 
 > 💡 **Tip:** Leave **Hide MIDI Input Device** on for dedicated control surfaces. You almost never want fader and button messages from a control surface bleeding into your MIDI recordings.
 
+The **Mackie Control Universal** entry adds two more settings:
+
+**Set extender order...**: opens the **MCU Order** window. Drag the main unit and its extenders into the order they sit on your desk. Use it after setting **Extenders**.
+
+**One button record**: when on, pressing Record on the surface starts recording straight away. When off, you hold Record and press Play to start recording. (Default: off)
+
 ### OSC Devices
 
 Some surfaces talk to Waveform over a network using OSC instead of MIDI. For those, the port settings are different:
@@ -411,15 +435,19 @@ The main area lists everything relevant to you, grouped into sections.
 
 **Not Installed**: Content and products you own (or that are available to you) but haven't installed yet.
 
+**Up to Date**: Items you have installed at the latest version.
+
 Each row has its own action buttons on the right.
 
 **Update**: Hands the item off to the Download Manager to fetch and install the newer version. Shown on items in the **Out of Date** section.
 
 **Install**: Same idea, but for items in the **Not Installed** section: it downloads and installs that item for the first time.
 
-**Ignore**: Tells Waveform to stop nagging you about this particular update. The item stays in your list, but the update is marked as ignored so it no longer counts as something you need to act on. Use this for updates you're deliberately skipping.
+**Re-install**: Shown on items in the **Up to Date** section. It installs the current version again, which helps if an installed item has gone missing or been damaged.
 
-> 📝 **Note:** Clicking **Update** or **Install** doesn't install anything by itself. It launches the Download Manager (if installed) and asks it to handle that item. The Download Manager opens in its own window to do the work.
+**Ignore**: Shown on items in the **Out of Date** and **Not Installed** sections, until you ignore that version. Tells Waveform to stop nagging you about this particular update. The item stays in your list, but the update is marked as ignored so it no longer counts as something you need to act on. Use this for updates you're deliberately skipping.
+
+> 📝 **Note:** Clicking **Update**, **Install** or **Re-install** doesn't install anything by itself. It launches the Download Manager (if installed) and asks it to handle that item. The Download Manager opens in its own window to do the work.
 
 ### Account Controls
 
@@ -444,7 +472,7 @@ You'll find this page under **Settings**, in the list of pages down the left-han
 ![](images/settings_file_locations@2x.png)
 *Settings > File Locations*
 
-The page is split into sections: General, Presets, Loop Database, Plugins, and (if your install supports them) Feature Extensions. Each path field shows the current location, and most have a small folder button at the right end that opens a file chooser so you can pick a new one.
+The page is split into sections: General, Presets, Loop Database, Plugins, and (with Waveform Pro or the DJ Mix Tools Expansion) Feature Extensions. Each path field shows the current location, and most have a small folder button at the right end that opens a file chooser so you can pick a new one.
 
 > 💡 **Tip:** Many of the path fields and folder lists are underlined. Underlined items can be reset back to their default location. Right-click them to find the reset option.
 
@@ -510,13 +538,15 @@ The formats shown depend on your platform and which plugin types your build of W
 - **VST3 Plugins**: Folders to search for VST3 plugins.
 - **Ladspa Plugins**: Folders to search for LADSPA plugins (Linux only).
 - **LV2 Plugins**: Folders to search for LV2 plugins.
-- **Cmajor Patches**: Folders to search for Cmajor patches (only shown when Cmajor support is available).
+- **Cmajor Patches**: Folders to search for Cmajor patches (macOS on Apple Silicon and Windows only).
 
 > 📝 **Note:** Adding a folder here tells Waveform where to look, but it doesn't scan immediately on its own in every case. If a newly installed plugin doesn't appear, run a plugin scan from the Plugins settings page.
 
-### Feature Extensions
+### Feature Extensions <span class="pro">PRO</span> { #feature-extensions }
 
-This section only appears if your installation supports feature extension packs (such as stem separation).
+> 📝 **Edition:** Waveform Pro, or with the DJ Mix Tools Expansion.
+
+This section holds feature extension packs, such as the one [Stem Separation](stem-separation.md) needs.
 
 **Folder**: Shows the folder where installed feature extension packs live. Clicking the folder button gives you a **Reveal folder** option that opens that location in your file browser.
 
@@ -529,7 +559,7 @@ This section only appears if your installation supports feature extension packs 
 - Adding a plugin or preset folder makes it *searchable*, but you may still need to run a scan before new content shows up in the browser.
 - When adding a path, Waveform lets you add a folder that doesn't exist yet (after a confirmation). Double-check the spelling, or that folder will simply never turn up any content.
 
-## General
+## General { #general-page }
 
 The **General** page is where you shape how Waveform behaves day to day: your name, what happens at launch, editing defaults, metering, MIDI, mixing defaults, mouse behaviour, plugin windows, saving, and track inputs. It's a long page, and it's worth getting familiar with it: most of these settings define how new clips, tracks and projects start out, so a few minutes here saves you a lot of repetitive tweaking later.
 
@@ -566,7 +596,7 @@ Changes take effect immediately. Many of these are *defaults*: they affect thing
 
 **Paste at edit cursor**: Makes paste operations happen at the edit cursor rather than after the source clip, giving you more control over where pasted clips land. This option only appears when **Enable separate edit cursor** is on. (Default: off)
 
-**Make new clips the length of the marked region**: When on, newly created clips take the size of the current marked region. (Default: off)
+**Make new clips the size of the marked region**: When on, newly created clips take the size of the current marked region. (Default: off)
 
 **Number of undo levels**: How many actions you can undo and redo (Cmd/Ctrl + Z, or the undo buttons). Range 5-1000; raise it if you want a deeper history. (Default: 30)
 
@@ -574,11 +604,11 @@ Changes take effect immediately. Many of these are *defaults*: they affect thing
 
 **Create fades on clip edges**: Automatically adds a tiny fade in/out to new clips to avoid clicks at their edges. (Default: off)
 
-**Audio clips use proxy files by default**: Controls whether newly added clips render a proxy file or timestretch in real time. Real-time timestretching uses more CPU but avoids the proxy render. Only appears if your edition supports real-time timestretching. (Default: on, i.e. use proxy files)
+**Audio clips use proxy files by default** <span class="pro">PRO</span>: Controls whether newly added clips render a proxy file or timestretch in real time. Real-time timestretching uses more CPU but avoids the proxy render. Available in Waveform Pro, or with the Recording Engineer, MIDI Producer or DJ Mix Tools Expansion. (Default: on, i.e. use proxy files)
 
-**Default resampling quality** (Choices: Normal (Lagrange), Good (Sinc Fast), Better (Sinc Medium), Best (Sinc Best)): The default sample-rate conversion algorithm for audio clips. Higher qualities sound cleaner but cost more CPU. Only appears if your edition supports high-quality resampling. (Default: Normal (Lagrange))
+**Default resampling quality** <span class="pro">PRO</span> (Choices: Normal (Lagrange), Good (Sinc Fast), Better (Sinc Medium), Best (Sinc Best)): The default sample-rate conversion algorithm for audio clips. Higher qualities sound cleaner but cost more CPU. Available in Waveform Pro, or with the DJ Mix Tools Expansion. (Default: Normal (Lagrange))
 
-**Detect tempo of imported audio files**: Turns on automatic tempo detection when you import audio.
+**Detect tempo of imported audio files**: Turns on automatic tempo detection when you import audio. (Default: on)
 
 **Round detected tempos to the nearest beat**: Rounds detected tempos to avoid small errors. Handy if you mostly import electronic music. (Default: off)
 
@@ -592,7 +622,7 @@ Changes take effect immediately. Many of these are *defaults*: they affect thing
 
 > 💡 **Tip:** In "Until cleared" mode, meters hold the highest peak indefinitely. Use the "Reset all level meter peak indicators" command (you can give it a key in Keyboard Shortcuts) to reset them.
 
-### MIDI
+### MIDI { #general-midi }
 
 **Automatically show MIDI editor toolbar**: Shows the toolbar automatically in the inline MIDI editor. With it off, the toolbar stays hidden until you toggle it (default shortcut Opt + Cmd + T / Alt + Ctrl + T). This only affects the *inline* editor; the toolbar is always visible in the full MIDI editor panel. (Default: on)
 
@@ -650,7 +680,7 @@ Video Tutorial: [Drag to Draw Marked Region](https://youtu.be/zTrAn9u_B18)
 
 **Open plugin windows by** (Choices: Single-clicking, Double-clicking): Whether a single or double click opens a plugin's window. Choose double-click to avoid opening plugin UIs by accident. (Default: Single-clicking)
 
-**New plugins open on** (Choices: Active Display, Display 1, Display 2, …): On a multi-monitor setup, which display new plugin windows open on. The number of choices matches the displays you have connected. Below this control a small diagram shows your monitor layout, with the active one highlighted. Only appears if your edition supports the layout feature. (Default: Active Display)
+**New plugins open on** <span class="pro">PRO</span> (Choices: Active Display, Display 1, Display 2, …): On a multi-monitor setup, which display new plugin windows open on. The number of choices matches the displays you have connected. Below this control a small diagram shows your monitor layout, with the active one highlighted. Available in Waveform Pro. (Default: Active Display)
 
 ### Saving
 
@@ -670,15 +700,11 @@ To recover, go to the Projects page, pick a backup file, and click Restore Edit;
 
 ### Track Inputs
 
-**Allow inputs to appear on multiple tracks**: Lets one input (a MIDI device or audio input) be assigned to more than one track. It's a specialised need, and most users leave it off. Only appears if your edition supports multi-input. (Default: off)
+**Allow inputs to appear on multiple tracks** <span class="pro">PRO</span>: Lets one input (a MIDI device or audio input) be assigned to more than one track. It's a specialised need, and most users leave it off. Available in Waveform Pro. (Default: off)
 
 **Default audio device follows selection**: When on, selecting a track moves the audio input to follow it. Handy when overdubbing the same input across several tracks. (Default: on)
 
 **Default MIDI device follows selection**: When on, selecting a track moves the MIDI input to follow it. Handy when you want to start playing the same keyboard straight into whichever track you select. (Default: on)
-
-### ⚡ Things to Watch Out For
-
-- **Some controls only appear in certain editions.** Real-time timestretching, high-quality resampling, multi-input and the multi-monitor plugin-window option need Waveform Pro (some also come with expansions), so you may not see all of them.
 
 ## Keyboard Shortcuts
 
@@ -984,7 +1010,7 @@ When you select a device, its settings appear in the pane on the right. The list
 - **Deleting a virtual input can't be undone.** The red **Delete** button removes it immediately. Built-in virtual inputs like "All MIDI Ins" can't be deleted, only disabled.
 - **Sending Clock or Timecode to the wrong port does nothing useful.** These settings live on each output individually, so make sure you've enabled and configured them on the port that's actually wired to your external gear.
 
-## Plugins
+## Plugins { #plugins-page }
 
 The **Plugins** page is where you scan for third-party plugins, decide which ones are available to your edits, build a list of favourites, generate thumbnail images for the visual plugin selector, and validate plugin files. Open it from the **Settings** tab and pick **Plugins** in the sidebar.
 
@@ -999,14 +1025,14 @@ These settings control how the plugin menu behaves when you add a plugin elsewhe
 
 **Automatically check for newly added plugins**: When enabled, Waveform notices when new plugins have been installed and offers to scan for them, so you rarely need to scan each format by hand. (Default: enabled)
 
-**Plugin selector** (Choices: Popup menu, Popup tree, Custom popup menu, Custom popup tree, Tag menu, Browser): Changes the type of plugin selector panel you get when adding a plugin. (Default: Browser when the browser feature is available, otherwise Popup menu)
+**Plugin selector** (Choices: Popup menu, Popup tree, Custom popup menu, Custom popup tree, Tag menu, Browser): Changes the type of plugin selector panel you get when adding a plugin. (Default: Browser)
 
 - **Popup menu**: The standard context-menu style selector. A good default for most people.
 - **Popup tree**: The same organisation shown as an expandable/collapsible tree.
 - **Custom popup menu**: A context menu containing only what you have placed in the Favourite Plugin List. Choose this if you want to define the selector entirely by hand.
 - **Custom popup tree**: As above, but in tree form.
 - **Tag menu**: Builds the selector from your plugin tags, using each tag as a category. Another hand-curated approach.
-- **Browser**: Presents the selector as a browser panel. Only appears when the browser feature is available.
+- **Browser**: Presents the selector as a browser panel.
 
 [Video Tutorial: Plugin Selector and Favourite Plugins List](https://youtu.be/Ctw7KfCCo84)
 
@@ -1015,6 +1041,12 @@ These settings control how the plugin menu behaves when you add a plugin elsewhe
 > 📝 **Note:** Plugin sorting is hidden when **Plugin selector** is set to one of the custom modes, since you control the order yourself in those cases.
 
 **Show all plugins**: Forces every plugin to appear in the menus, ignoring the **Show** column in the list below. Leave this off if you want to be able to hide individual plugins. (Default: disabled)
+
+**Collapse duplicate formats**: When a plugin is installed in more than one format (for example VST3 and AudioUnit), the selector shows only your preferred format. Edits that use one of the other formats still load it as normal. (Default: disabled)
+
+**Format priority**: The row of format names next to **Collapse duplicate formats**. Drag the names into your order of preference; the first format a plugin is installed in is the one shown. It can only be changed while **Collapse duplicate formats** is on.
+
+**Show Plugin panel in browser**: Shows the [Plugin panel](plugin-side-panel.md) in the side panel list. The change takes effect the next time you open an Edit. (Default: enabled)
 
 ### Plugin Management
 
@@ -1025,7 +1057,7 @@ These settings control how the plugin menu behaves when you add a plugin elsewhe
 **Show Internal Plugins** (button: Select): Opens a menu to enable or disable Waveform's built-in plugins:
 
 - **Enable Legacy Plugins**: Shows the older FM Synth and Sampler. (Default: disabled)
-- **Enable Artisan Collection Plugins**: Shows the Artisan Collection plugins (from Airwindows). This option only appears for editions that include the Artisan Collection, letting you hide them if you prefer. (Default: enabled)
+- **Enable Artisan Collection Plugins** <span class="pro">PRO</span>: Shows the Artisan Collection plugins (from Airwindows), or hides them if you prefer. Available in Waveform Pro. (Default: enabled)
 
 > ⚠️ **Warning:** Both of these changes require you to quit and restart Waveform before they take effect.
 
@@ -1041,11 +1073,13 @@ These settings control how the plugin menu behaves when you add a plugin elsewhe
 
 ### The Plugin List
 
-The main table lists every registered plugin. Depending on your edition you may see the following columns: an icon, **Disabled**, **Name**, **Image**, **Show**, **Sandbox**, **Format**, **Category**, **Manufacturer**, **Version**, **ARA**, **Alias**, **Tags**, **Updated**, and **Description**.
+The main table lists every registered plugin. Its columns are an icon, **Disabled**, **Name**, **Image**, **Show**, **Panel**, **Sandbox**, **Format**, **Category**, **Manufacturer**, **Version**, **ARA**, **Alias**, **Tags**, **Updated**, **Description** and **Path**. The **Disabled** column only appears while at least one plugin has been disabled, and **Image** isn't shown on Linux.
 
 - Drag the dividers between headers to resize columns, and drag a header to reorder columns. Your layout is remembered.
 - Click any column header to sort by it.
+- **Path** is hidden at first. Right-click the column headers and choose it to show the location of each plugin file.
 - **Show**: Click the tick in this column to include or hide a plugin in the selector menus.
+- **Panel**: Tick a plugin here to make it available in the [Plugin panel](plugin-side-panel.md)'s picker.
 - **Sandbox**: When sandboxing is on, click here to run that plugin in a separate process.
 - **Image**: A camera icon here means a thumbnail exists; click it to preview the captured image.
 - **ARA**: A tick indicates the plugin supports ARA.
@@ -1104,7 +1138,7 @@ The **Advanced** page collects technical options that you can usually leave at t
 ![](images/settings_advanced@2x.png)
 *Settings > Advanced*
 
-The page is divided into sections. Some controls only appear on certain platforms or when a particular feature is available in your edition, so your page may not show every item described below.
+The page is divided into sections. Some controls only appear on certain platforms, and the items marked PRO need Waveform Pro or an expansion, so your page may not show every item described below.
 
 ### Application
 
@@ -1118,19 +1152,19 @@ These options control how and when audio is processed.
 
 **Process audio tracks when muted**: Keeps muted tracks running through the engine so they respond instantly when you unmute them. Turn it on if you need that, at the cost of some extra CPU. (Default: off)
 
-**Mute track contents whilst recording**: Enables tape-style recording, where the clips on a track go silent while you're recording over them. This control only appears if your edition supports advanced record monitoring.
+**Mute track contents whilst recording** <span class="pro">PRO</span>: Enables tape-style recording, where the clips on a track go silent while you're recording over them. Available in Waveform Pro. (Default: off)
 
-**Run audio engine when stopped**: Keeps the audio engine active even when transport is stopped. Best left on; it's mainly here for diagnostics.
+**Run audio engine when stopped**: Keeps the audio engine active even when transport is stopped. Best left on; it's mainly here for diagnostics. (Default: on)
 
 **Stop all playback when application is minimised**: Pauses playback whenever you minimise Waveform. Turn this off if you want playback to continue while you switch to another app. (Default: enabled)
 
 **Stop other edits when changing tabs**: When you switch tabs, any Edit you were playing in another tab stops. Leaving this on avoids the confusion of hearing a different Edit play in the background. (Default: enabled)
 
-**Remove bypassed plugins from playback (reduced latency)**: Drops bypassed plugins out of the signal chain entirely instead of running them in a bypassed state. This can shave off a little latency. It may cause a brief hesitation in the interface when it kicks in.
+**Remove bypassed plugins from playback (reduced latency)**: Drops bypassed plugins out of the signal chain entirely instead of running them in a bypassed state. This can shave off a little latency. It may cause a brief hesitation in the interface when it kicks in. (Default: off)
 
-**Process time-stretched clips in background**: Moves the work of time-stretching onto a background thread, which can reduce CPU load during playback.
+**Process time-stretched clips in background**: Moves the work of time-stretching onto a background thread, which can reduce CPU load during playback. (Default: on)
 
-**Enable audio workgroup support** (macOS only): Uses macOS's Audio Workgroup system so Waveform's audio threads are scheduled more efficiently alongside the system's audio threads.
+**Enable audio workgroup support** (macOS only): Uses macOS's Audio Workgroup system so Waveform's audio threads are scheduled more efficiently alongside the system's audio threads. (Default: on)
 
 ### Automation
 
@@ -1138,21 +1172,23 @@ These options control how and when audio is processed.
 
 **Simplify newly-recorded automation**: Thins out recorded automation by removing redundant points, cleaning up the dense, jittery curves that a live hand tends to produce. Turn it off to keep every recorded point exactly as captured. (Default: enabled)
 
-### Ableton Link
+### Ableton Link <span class="pro">PRO</span> { #ableton-link }
 
-This section only appears when Ableton Link is available in your edition. Ableton Link keeps Waveform's tempo and playback position in sync with other Link-enabled apps and devices on the same network.
+> 📝 **Edition:** Waveform Pro, or with the Launcher Expansion.
+
+Ableton Link keeps Waveform's tempo and playback position in sync with other Link-enabled apps and devices on the same network.
 
 **Enable Ableton Link**: Shows the Ableton Link toggle so you can connect to a Link session. (Default: disabled)
 
 **Start stop sync**: Synchronises starting and stopping the transport across all connected Link peers, so hitting play in one app starts the others too. (Default: disabled)
 
-**Link offset**: A small timing offset, in milliseconds, to compensate for a driver that misreports its latency. Leave it at zero unless your Link timing is consistently early or late. (Default: 0.00 ms)
+**Link offset**: A small timing offset, in milliseconds, to compensate for a driver that misreports its latency. Leave it at zero unless your Link timing is consistently early or late. (Range: -100 to 100 ms. Default: 0.00 ms)
 
 ### Experimental
 
 **Enable pooled memory**: Reduces memory use by pooling allocations during playback. This control only appears in debug builds, so most users will never see it.
 
-**Enable shared playback memory**: Reduces memory use by reusing memory wherever possible during playback.
+**Enable shared playback memory**: Reduces memory use by reusing memory wherever possible during playback. (Default: off)
 
 > 📝 **Note:** For background on how Waveform's audio engine handles delay compensation across plugins, racks and buses, see this video: [Waveform New Audio Engine](https://youtu.be/_VbPXJQMUjA).
 
@@ -1276,6 +1312,8 @@ When a profile you added yourself is active, you get the full set of connection 
 **Limit Models**: Restricts which of the server's models the assistant offers you, one per line. Leave it empty to offer everything the server lists. This is worth using when a server exposes models that aren't chat models at all, such as embedding models.
 
 **Default Model**: The model used when a chat's model selector doesn't name one, and the last fallback for Auto Mode Routing's tiers. Leave it empty to use the first model the server offers.
+
+**Model Reads Images**: Turn this on if the profile's model is a vision model that takes images. The assistant can then show it pictures, such as the views of the Cmajor plugins it builds. Leave it off for a model that can't read images, because it rejects them. (Default: off)
 
 **Connection Status**: A read-only report on this profile, filled in when you test it. It tells you whether the server could be reached, lists the models it offers, and warns you if a loaded model's context window is too small for the assistant to use. It needs at least 16k tokens, and 32k or more is better. Until you've tested, it reads *"Not checked yet - click Test"*.
 

@@ -68,9 +68,10 @@ Search
     by tags. This is the main content browser. See [The
     Browser](browser.md).
 
-Groups
-- (Waveform Pro) The Groups tab lists your Edit Mix Groups and lets you
-    create and manage them. See [Edit Mix Groups](edit-mix-groups.md).
+Groups <span class="pro">PRO</span>
+- The Groups tab lists your Edit Mix Groups and lets you create and
+    manage them. It needs Waveform Pro or the Recording Engineer
+    Expansion. See [Edit Mix Groups](edit-mix-groups.md).
 
 Tracks
 - The Tracks tab lists the tracks in the Edit, each with **Hide** and
@@ -163,12 +164,28 @@ Marker Track
 
 *Marker Track*
 
+Other Global Tracks
+- The Tempo and Marker tracks are two of the global tracks that sit
+    between the Timeline and your tracks. The **Master** track is in
+    every edition. The **Chord** track <span class="pro">PRO</span>
+    (Waveform Pro or the MIDI Producer Expansion) and the **Arranger**
+    track <span class="pro">PRO</span> (Waveform Pro) have their own
+    chapters: [The Chord Track](chord-track.md) and
+    [The Arranger Track](arranger-track.md). In Waveform Pro the eye
+    button's pop-out also has an **Overview** block
+    <span class="pro">PRO</span>, a strip that shows the whole Edit.
+    Show or hide each one from *View > Global tracks*, or hide them all
+    at once with *Show global tracks* in the same submenu.
+
 The Clip Object
 - Above the right side of the Timeline you find the Clip object. Some
     Waveform users call the *Clip object* a "clip dragger" or "clip
     maker." All of the terms are descriptive of how it works. Drag it to
-    a track to create an empty clip of any of the four types - MIDI
-    clip, Audio clip, Edit clip, or Step clip.
+    a track to create an empty clip of any of the four types: MIDI
+    clip, Audio clip, Edit clip, or Step clip. Drop it on the Marker
+    track to add a bars and beats marker or an absolute timecode marker,
+    or on the Chord or Arranger track to insert a Chord or Arranger
+    clip.
 
 
 ![](images/08----09.png)
@@ -180,9 +197,19 @@ The Plugin Object
     an audio effect plugin or virtual instrument. When you drop the
     Plugin object, you get a menu of all available plugins and
     instruments. You can control the organization of the menu from the
-    Settings tab Plugins page. Refer to [Using
+    Settings tab Plugins page. Right-click the Plugin object to open
+    the plugin selector without dragging, or drop it on an audio clip to
+    add a clip plugin. Refer to [Using
     Plugins](using-plugins.md) for much more about inserting and using
     plugins.
+
+The Modifier Object
+- The small button to the right of the Plugin object is the Modifier
+    object (*Drag this onto a track to create a new modifier*). Drop it
+    on a track and choose a modifier type. The LFO is in every edition;
+    Breakpoint, Step, Envelope follower, Random and MIDI Tracker need
+    Waveform Pro or the MIDI Producer Expansion. See
+    [Modifiers](modifiers.md).
 
 Show/Hide Panels
 - Several areas of the Edit tab can be opened for use or closed to
@@ -373,7 +400,9 @@ Solo
     particularly useful if a track is configured as an effects bus.
 
 > 💡 **Tip:** Right-click on either *Mute* or *Solo* to access a menu. From
-here you can reset all the solo and mute states for all tracks.
+here you can reset every track with **Reset all muted/soloed/isolated
+tracks**, or keep solo isolate and use **Reset all muted/soloed tracks**
+(Shift + Opt + M / Shift + Alt + M).
 
 
 ![](images/08----23.png)
@@ -403,6 +432,9 @@ Windows and Linux they are at the top of the window. This manual refers
 to these menus using a path syntax separated by "greater-than" symbols.
 For example, to set a one bar count-in, choose *Click > Count-in > 1 bar*.
 
+In the File menu, *File > Close this Edit* closes the Edit's tab, and *File > Export: Render to a file...* opens the
+Render dialog (see [Rendering and Stems](rendering-and-stems.md)).
+
 
 ![](images/08----19.png)
 
@@ -417,7 +449,10 @@ and the Actions panel automatically switches to show the values and
 actions relevant to whatever you have selected. This is a key concept
 when using Waveform, and is central to its design. The Actions panel is
 a flat list at the side of the window, and can also be opened from the
-Browser.
+Browser. To show or hide it, click the Actions panel button at the far
+left of the transport bar, choose *View > Show Actions*, or click its
+block in the eye button's pop-out. Opt + F11 / Alt + F11 locks it to the
+current selection.
 
 
 ![](images/08----20.png)
@@ -470,6 +505,23 @@ Master Plugins
     *Settings > Appearance > Show master plugins in transport bar*.
     (Default: on)
 
+Left-Hand Buttons
+- At the left of the transport bar are the Actions panel button
+    (*Show or hide Actions panel*), **Undo** and **Redo**, followed by
+    buttons that appear only when their feature is available: Groove
+    Doctor <span class="pro">PRO</span> (*Show or hide Groove Doctor
+    window*, Waveform Pro or the Recording Engineer Expansion; see
+    [Groove Doctor](groove-doctor.md)), coloured waveforms
+    <span class="pro">PRO</span> (*Toggles displaying waveforms with
+    frequency information*, Waveform Pro or the DJ Mix Tools Expansion),
+    Quick Actions <span class="pro">PRO</span> (*Show or hide Quick
+    Actions window*, Waveform Pro; right-click it for the Quick actions
+    bar), MIDI typing (*Show or hide MIDI typing window*) and, when the
+    Edit has a video, the Video window. Between these and the Loop,
+    Click and other mode buttons sits the breadcrumb, which opens the
+    action menu for the current selection (see
+    [The Actions Panel](actions-panel.md)).
+
 Transport Bar Buttons
 - The transport bar includes eight buttons to access commonly used
     global on/off functions. More on these buttons in a moment.
@@ -497,26 +549,31 @@ the shortcut used to toggle the button.
 
 Loop
 - *Loop* (L) turns looping between the In-marker and Out-marker on and
-    off. This is for both playback and loop recording.
+    off. This is for both playback and loop recording. Right-click it
+    for *Loop follows selection*.
 
 Click
-- *Click* (C) turns the metronome click on and off.
+- *Click* (C) turns the metronome click on and off. Right-click it for
+    the Click menu.
 
 Auto Lock
 - *Auto Lock* is short for "Automation Lock." As the name implies,
-    this button locks automation to clips. When on, as you move clips
-    around the automation curves follows along.
+    this button locks automation to clips. When on, the automation
+    curves follow the clips as you move them. The shortcut is
+    Shift + Cmd + A / Ctrl + Shift + A.
 
 Punch
 - With *Punch* (P) tuned on, Waveform will only record when the cursor
     is between the In-marker and the Out-marker.
 
 Snap
-- *Snap* (Q) button turns snap-to-grid on and off.
+- *Snap* (Q) button turns snap-to-grid on and off. Right-click it for
+    the Snap menu.
 
 Autoscroll
 - With *Autoscroll* (S) turned on, Waveform pans the screen to keep the
-    cursor on screen during playback and recording.
+    cursor on screen during playback and recording. Right-click it to
+    choose *Page scroll* or *Stationary cursor*.
 
 MIDI Learn
 - Click *MIDI Learn* to enter MIDI Learn mode. In this mode you can

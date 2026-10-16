@@ -148,8 +148,9 @@ when *Loop* is off.
 
 *Marker Track*
 
-Let's take a closer look at the Marker track. You can open and close the
-Marker track with the Marker track show/hide button.
+Show or hide the Marker track with the *Marker* button in the panel
+selector (the eye icon at the top right of the window), with *View >
+Global tracks > Show Marker track*, or by pressing F10.
 
 
 ![](images/10----10.png)
@@ -165,11 +166,6 @@ panel:
 markers the Marker track shows. *Combined* shows both types together,
 *Bars & Beats* and *Absolute* show only that type, and *Hidden* hides
 the Marker track. (Default: Combined)
-
-
-![](images/10----11.png)
-
-*Marker Track Split Mode*
 
 
 ![](images/10----12.png)
@@ -318,6 +314,15 @@ press Return, a Marker clips is inserted at the cursor position.
 Undo (Cmd + Z / Ctrl + Z) removes a marker if you didn't intend to
 insert it.
 
+> 📝 **Note:** **Quantise transport position changes** <span class="pro">PRO</span>
+(on the Options menu and the Timeline's right-click menu, on by default)
+comes with the Clip Launcher, in Waveform Pro or with the Launcher
+Expansion. While it's on, a jump to a marker during playback waits for
+the global launch quantisation, so the Edit stays in time. This covers
+`[` and `]`, typed marker numbers, double-clicks in the Markers tab and
+control surfaces. It only applies with a Bars & Beats timeline, and not
+while recording or when Global launch quantisation is off.
+
 > 💡 **Tip:** The Number + Return approach to navigation works during
 playback but also works when Waveform is idle. If it doesn't seem to be
 working when playback is idle, click the header of the Marker track or
@@ -362,11 +367,6 @@ Delete a Marker
 
 Change a Marker from one Type to the Other
 - Select the Marker and edit the Type property in the Actions panel.
-
-
-![](images/10----25.png)
-
-*Absolute Timecode Marker Track - *Marker - TC**
 
 ## Renumbering Markers
 
