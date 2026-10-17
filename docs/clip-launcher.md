@@ -97,7 +97,8 @@ point in the clip.
 Click the add button below the scene buttons (tooltip *Adds a new scene*) to add a scene,
 and drag scenes up or down to reorder them. Select a scene to see its
 settings in the Actions panel: its **Name** and **Colour**, plus
-**Insert Scene Before**, **Insert Scene After** and **Delete** (which
+**Duplicate** (D), **Insert Scene Before**, **Insert Scene After** and
+**Delete** (which
 deletes all the selected scenes).
 
 ![](images/clip-launcher_scene_actions@2x.png)

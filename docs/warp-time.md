@@ -22,8 +22,8 @@ To switch on Warp Time mode:
 
 *Enable Warp Time Mode*
 
-The Detail Editor's waveform view switches to the zoomable Warp Time
-editor.
+The waveform view on the Detail Editor's Clip tab switches to the
+zoomable Warp Time editor.
 
 ## The Warp Time Editor
 
@@ -125,8 +125,8 @@ does the stretching offline.
 *Stretch Property Options*
 
 Elastique Pro gives the best results most of the time. For specialised
-needs, the spanner icon next to **Stretch** (shown for the Elastique Pro
-modes) opens the Elastique options: **Stereo Mode: L/R**
+needs, the **Stretch Options** row under **Stretch** (shown for the
+Elastique Pro modes) opens the Elastique options: **Stereo Mode: L/R**
 or **Stereo Mode: M/S**, **Synchronize Timestretch / Pitchshift**, and
 **Preserve Formants**, which enables a choice of **Peak Pitch** settings
 from E2 / 86Hz to E8 / 5512Hz.

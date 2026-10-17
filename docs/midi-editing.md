@@ -43,25 +43,27 @@ Shift as you drag.
 
 ## Slip Editing MIDI Clips
 
-The three solid colour handles are for slip editing: left arrow, right
-arrow and the box. The main one is the solid box in the centre of the
-header: drag it to slip the notes inside the clip, while the clip's
-start and end stay where they are.
+The slip handle is the double arrow in the centre of the header: drag it
+to slip the notes inside the clip, while the clip's start and end stay
+where they are.
 
 
 ![](images/25----03@2x.png)
 
-*MIDI Clip Slip Handles*
+*MIDI Clip Slip Handle*
 
-Use the left solid arrow to slip the notes later in time while the end
-of the clip stays anchored. The right solid arrow works the opposite
-way: it slips the end of the clip while the start stays anchored.
+Turn on **Show extra slip handles on clip headers** in *Settings >
+Appearance* to add a solid slip trim arrow beside each trim handle and a
+reframing handle next to the slip handle. Use the left solid arrow to
+slip the notes later in time while the end of the clip stays anchored.
+The right solid arrow works the opposite way: it slips the end of the
+clip while the start stays anchored.
 
 ## Reframing a MIDI Clip
 
-Drag the hollow box in the centre of a MIDI clip left or right to
-reframe the entire window of the clip, leaving the notes in their
-original place.
+With the extra slip handles turned on, drag the reframing handle in the
+centre of a MIDI clip header left or right to reframe the entire window
+of the clip, leaving the notes in their original place.
 
 ## Splitting a MIDI Clip
 

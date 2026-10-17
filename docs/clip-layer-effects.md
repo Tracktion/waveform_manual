@@ -69,13 +69,13 @@ you may find yourself using it instead of track automation for volume.
 Click the gear icon on a volume layer to see its Volume & Pan control
 values in the Actions panel.
 
+To edit the volume automation curve itself, click the curve (at first it
+shows as a straight line) and its settings appear in the Actions panel.
+
 
 ![](images/41----05b@2x.png)
 
-*Volume Clip Layer settings in the Actions panel*
-
-To edit the volume automation curve itself, click the curve (at first it
-shows as a straight line) and its settings appear in the Actions panel.
+*Volume curve settings in the Actions panel*
 
 > 💡 **Tip:** Everything about editing track automation curves applies to volume Clip Layers too. See [Automation](automation.md).
 
@@ -191,9 +191,9 @@ effects, on a layer.
 
 *Plugin Layer*
 
-Waveform asks you to choose a plugin as you add the layer. When the
-layer is selected, the plugin's name appears at the lower right of the
-Clip Layer.
+Waveform asks you to choose a plugin as you add the layer. When you
+hover over the layer, a label at its lower right shows the layer's
+number and the plugin's name, for example "1. Plugin: Chorus".
 
 The key things to know about plugin Clip Layers:
 

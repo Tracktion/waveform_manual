@@ -89,12 +89,12 @@ section shows how it works.
 
 You can now use the **Volume & Pan** control on the *Drums Submix* track
 to set the volume of all the tracks you routed to it, and add any
-plugins you want. This example uses a tape simulator and a third-party
-bus compressor.
+plugins you want. This example uses the built-in Compressor and
+Limiter, but any plugin works here, including third-party ones.
 
 ![](images/34----05@2x.png)
 
-*Submix Using Third-Party Plugins*
+*Submix with a Compressor and Limiter*
 
 ## Moving On
 

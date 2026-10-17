@@ -99,12 +99,14 @@ then right-click the track header and choose **Insert Step Clip**.
 *Right-click Track Header*
 
 From the track's actions: select the track by clicking its name, then
-in the Actions panel click *Insert a New Clip > Insert Step Clip*.
+in the Actions panel click *Insert a New Clip > Insert Step Clip*. The
+Edit's actions also have an **Insert new Step clip** row, which adds a
+Step clip to the selected track.
 
 
 ![](images/27----05@2x.png)
 
-*Insert from Track Actions*
+*Insert new Step clip in the Edit's actions*
 
 Finally, you can drag in a Step clip preset as a starting point. Step
 clip presets are clip presets, so in the Search tab of the
@@ -280,8 +282,8 @@ the Actions panel.
 *Step Clip Footer Shows Variation & Pattern Section Options*
 
 > 📝 **Note:** When a footer is selected, the title line of the Actions
-panel shows the pattern section and variation numbers, for example
-"Section 1 (Variation 8)."
+panel reads "Edit > Pattern", and the **Variation** row shows which
+variation that pattern section uses.
 
 ## Variation Options
 

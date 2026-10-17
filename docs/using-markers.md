@@ -26,7 +26,10 @@ when the **Loop** button in the transport bar is on. They also define the
 "marked region" that many editing actions work on.
 
 > 📝 **Note:** In Waveform, "marked region" means the part of an Edit
-between the In marker and the Out marker.
+between the In marker and the Out marker, which is also the loop range.
+If you draw a marked region across tracks instead (see [Working With a
+Marked Region](selecting-and-snapping.md#working-with-a-marked-region)),
+editing actions use that region until you clear it.
 
 ![](images/10----19@2x.png)
 

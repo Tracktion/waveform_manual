@@ -15,16 +15,17 @@ a body, which holds the waveform thumbnail and fade handles.
 *Main parts of an Audio clip: A header, B body, C clip effects*
 
 **Header**: Move Audio clips by dragging from the header. The header
-includes the trim handles (hollow), slip handles (solid), and other
-tools.
+includes the clip name, the trim handles (hollow arrows at each end),
+the slip handle and buttons for looping, linking, clip effects and
+rendering.
 
 
 ![](images/12----02@2x.png)
 
 *Audio Clip Header*
 
-**Body**: The Audio clip body shows the waveform thumbnail, fade
-handles and the clip name.
+**Body**: The Audio clip body shows the waveform thumbnail and the fade
+handles.
 
 
 ![](images/12----03@2x.png)
@@ -89,8 +90,11 @@ Actions panel.
 
 ## Audio Clip Handles
 
-Each Audio clip header has six handles for trimming, slipping and
-reframing: four arrows and two boxes.
+By default each Audio clip header has three handles: a trim handle at
+each end and a slip handle in the centre. Turn on **Show extra slip
+handles on clip headers** in *Settings > Appearance* to add three more:
+a slip trim arrow beside each trim handle and a reframing handle next
+to the slip handle.
 
 **Trimming**: The hollow left and right arrows at the upper corners of
 the clip are trim handles. Drag a trim handle left or right to trim the
@@ -109,7 +113,8 @@ hold down Cmd / Ctrl as you drag or turn **Snap** off.
 
 **Slip editing**: Slip editing moves the waveform within the clip
 without changing its **Start**, **Length** or **End** values. Drag the
-solid box-shaped handle left or right to slip edit. Hold Cmd / Ctrl to
+slip handle (the double arrow in the centre of the header) left or
+right to slip edit. Hold Cmd / Ctrl to
 override snapping while you slip edit.
 
 
@@ -117,12 +122,12 @@ override snapping while you slip edit.
 
 *Audio clip slip handle (A)*
 
-**Reframing**: Drag the hollow box-shaped handle left or right to
-reframe the clip: the clip moves but the waveform doesn't, so the audio
+**Reframing**: With the extra handles turned on, drag the reframing
+handle left or right to reframe the clip: the clip moves but the waveform doesn't, so the audio
 keeps its timing.
 
-**Slip trimming**: The solid left and right arrows are slip trim
-handles. Dragging the left solid arrow moves the clip's **Start** and
+**Slip trimming**: With the extra handles turned on, the solid left
+and right arrows inside the trim handles are slip trim handles. Dragging the left solid arrow moves the clip's **Start** and
 keeps the **End** where it is. Dragging the right solid arrow moves the
 **End** and keeps the **Start** where it is. Unlike a plain trim, the
 underlying waveform slips relative to the end that isn't moving.
@@ -189,14 +194,15 @@ values in the Actions panel directly.
 
 ## Pitch Fade
 
-Right-click a fade handle to choose between a volume fade and a pitch
-fade. A pitch fade gives a tape-stop or tape run-up effect, and its fade
-graphic is shaded darker than a volume fade's.
+Right-click a fade handle to choose between **Volume fade** and **Pitch
+fade**. The buttons under them pick the fade's shape. A pitch fade gives
+a tape-stop or tape run-up effect, and its fade graphic is shaded darker
+than a volume fade's.
 
 
 ![](images/12----14@2x.png)
 
-*Right-click Fade Handle, Pitch Fade Speed Up*
+*Right-click fade handle menu, Pitch fade selected*
 
 This video tutorial demonstrates pitch fades:
 
@@ -218,7 +224,10 @@ create one:
 
 The fade-out of the first clip now overlaps the fade-in of the next.
 You can also select the overlapping clips and click **Apply Crossfade**
-in the Actions panel. Adjust the fade shapes with the buttons in the
+in the Actions panel. If a selected clip overlaps clips on both sides, a
+menu asks where to crossfade: **Crossfade at the start of overlapping
+clips**, **Crossfade at the end of overlapping clips** or **Crossfade
+both ends of this clip**. Adjust the fade shapes with the buttons in the
 Actions panel, as for any other fade.
 
 
@@ -514,8 +523,8 @@ drag is a copy that refers back to the source clip.
 *Link button in the clip header (A)*
 
 In the next image, a linked copy of an Audio clip has been dragged
-out. The lower left of each clip shows a "link" icon, marking it as a
-linked clip.
+out. A linked clip that isn't selected shows a "link" icon beside its
+name at the top left, marking it as a linked clip.
 
 
 ![](images/38----36@2x.png)
@@ -536,8 +545,9 @@ pitch, stretch mode and reverse are copied to every clip in the link
 group. Each clip keeps its own position and length, and splitting a
 clip doesn't affect the linked copies. Anything that changes the
 underlying file affects them all. For more edits of this kind, select an
-Audio clip, then in the Actions panel open *View Source Info > Edit
-Audio File > Basic Editing Operations*.
+Audio clip, then in the Actions panel open *View Source Info > Edit Audio File > Basic editing
+operations...*. **View Source Info** only appears when the clip's source
+file is a Project item.
 
 
 ![](images/38----38.png)
@@ -563,13 +573,14 @@ sit on different tracks.
 
 ![](images/38----40@2x.png)
 
-*Linked Step Clips, Green Link Button*
+*Linked Step Clips, Highlighted Link Button*
 
 You can make linked copies of Step clips with the same link button.
 
 > 💡 **Tip:** Linked Step clips are harder to spot, because they don't
-show a clip name and link icon. Instead, look at the link button in the
-header: it turns green whenever linked copies exist. This is true for
+show a clip name and link icon. Instead, select the clip and look at
+the link button in the header: it is highlighted whenever linked copies
+exist. This is true for
 linked Audio clips and MIDI clips as well.
 
 ## Moving On

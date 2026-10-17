@@ -231,8 +231,9 @@ sends. It doesn't change the data, so you won't hear any effect while
 it is on the chain.
 
 The window lists each event on its own line: a running count, the
-time, the message type (controllers show as "CC"), the channel and the
-raw bytes. Above the list, **Active Notes** shows the notes currently
+time, the message type and value (controllers show as "CC" with the
+controller name, for example "CC Modulation Wheel (coarse): 10"), the
+channel and the raw bytes. Above the list, **Active Notes** shows the notes currently
 held. Drag the window's corner to make it bigger.
 
 

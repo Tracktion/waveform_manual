@@ -36,7 +36,7 @@ By the end of the chapter, the Edit has these tracks:
 > 💡 **Tip:** If the loop doesn't align to the bars correctly, hold Opt / Alt
 and drag the right trim arrow until it does.
 
-3.  Click the L icon on the Audio clip to switch it to looping mode,
+3.  Click the loop button on the Audio clip's header to switch it to looping mode,
     then drag the right trim handle to roll out as many copies of the
     loop as you want.
 

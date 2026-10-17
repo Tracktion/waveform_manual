@@ -315,7 +315,9 @@ is locked, so it can't be moved or deleted.
 
 Select a single tempo point and the properties show a **Tap Tempo**
 control reading "Click here to tap out a tempo!". Click it in time with
-the beat, then press **Apply** to set that point to the tempo you tapped.
+the beat (or press any key). Once you've tapped a few times, an **Apply**
+button appears in the control: press it to set that point to the tempo
+you tapped.
 
 ### Removing Tempo Changes
 

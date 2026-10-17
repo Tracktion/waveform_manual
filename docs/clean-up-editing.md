@@ -142,8 +142,9 @@ to the left.
 
 *Adjusting Fade-outs*
 
-To change the shape of the fade-out, choose one of the four preset
-shapes in the Actions panel.
+To change the shape of the fade-out, choose one of the fade shape
+buttons in the Actions panel. The row has eight: the four on the left
+set the fade-in shape and the four on the right set the fade-out shape.
 
 
 ![](images/17----14@2x.png)

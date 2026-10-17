@@ -488,8 +488,9 @@ and **Centre Gain** sets the level at the midpoint.
 ## Text Plugin
 
 The *Text* plugin keeps notes with your Edit as you record, edit and mix.
-Drag *Text* from *Waveform > Utility* in the plugin picker to a track, give it
-a **Name** and type a **Description**.
+Drag *Text* from *Waveform > Utility* in the plugin picker to a track, then
+double-click it to open its window, give it a **Name** and type a
+**Description**.
 
 
 ![](images/30----09@2x.png)

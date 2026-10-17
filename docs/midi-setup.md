@@ -17,7 +17,8 @@ install them with Waveform closed.
 ## Set Up the MIDI Inputs
 
 Go to *Settings > MIDI Devices*. The page lists every MIDI input and
-output connected to your system; this example has four. Click the
+output connected to your system, so what you see depends on your
+devices. Click the
 toggle next to each entry to switch it between **Enabled** and
 **Disabled**.
 

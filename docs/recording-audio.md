@@ -24,14 +24,15 @@ an input object that looks like a rectangular arrow pointing right.
 
 *Track Input Object*
 
-> 💡 **Tip:** If you don't see the input objects, click the button that
-shows and hides the track inputs (Shift + F12), at the top right corner
-of the Edit tab.
+> 💡 **Tip:** If you don't see the input objects, click the eye button
+at the top right of the Edit tab and click the inputs button (the small
+tag icon to the left of the track names) in the panel that opens, or
+press Shift + F12.
 
 
 ![](images/15----02@2x.png)
 
-*Show/Hide Inputs button (A) in the panel visibility menu*
+*Show/Hide Inputs button (A) in the eye button panel*
 
 Click an input object for a menu of options, and choose which hardware
 input this track records from. You can choose **No input** or any input

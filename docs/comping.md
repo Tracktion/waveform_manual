@@ -152,8 +152,9 @@ collection of tracks works.
 
 In the Actions panel, open the **Comp Group** menu and select **Add
 group**. In the **Add Comp Group** dialog box, the name defaults to
-*Comp Group 1*. Change it to something more descriptive if you like,
-then click **OK**.
+*Comp Group 1*. Change it to something more descriptive if you like.
+Leave **Show Comp Editor** ticked (the default) to show the comp editor
+straight away, then click **OK**.
 
 ![](images/20----09@2x.png)
 

@@ -121,7 +121,7 @@ The **Envelope Follower** watches the loudness of the audio on its track and tur
 
 ![](images/Modifiers/Random@2x.png)
 
-*The Random Modifier producing a smoothed stream of random values*
+*The Random Modifier producing a stream of random values*
 
 The **Random** modifier generates ever-changing random values. Use it for subtle, human-style drift on a parameter, or push it harder for chaotic, unpredictable movement.
 

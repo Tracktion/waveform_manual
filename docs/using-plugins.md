@@ -244,12 +244,13 @@ The search uses an index that includes plugin names, tags, and
 manufacturer. To set tags, see
 [Tagging Plugins](reference-settings.md#tagging-plugins).
 
-> 💡 **Tip:** When you're searching for a specific plugin, disable the
-**Loops** and **Presets** options for more targeted results.
+> 💡 **Tip:** When you're searching for a specific plugin, select
+**Plugins** under **Categories** in the category list for more targeted
+results.
 
 ![](images/29----11@2x.png)
 
-*Limiting Search Filters to Plugins*
+*Limiting the Search to Plugins*
 
 ## Using Master Plugins
 
@@ -294,7 +295,9 @@ to route to the sidechain.
 
 *Selecting a Sidechain Input*
 
-In this example, the kick track is routed to the sidechain input of a
-gate on the bass track, a common trick to lock the bass to the kick.
+In this example, the Drums track is being routed to the sidechain input
+of a Compressor on the Bass track, a common trick to make the bass duck
+under the kick. Not every plugin has a sidechain input: the built-in Gate,
+for example, has no sidechain list.
 
 > 🎥 [Plugin Sidechain Video Tutorial](https://youtu.be/PEan2nhPCOA)

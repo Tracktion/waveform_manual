@@ -166,7 +166,7 @@ Chord or Arranger track to insert a Chord or Arranger clip.
 
 ![](images/08----09@2x.png)
 
-*Clip Object, A. Plugin Object, B. Modifier Object, C*
+*A Clip object, B Plugin object, C Modifier object*
 
 **The Plugin Object**: Drag the Plugin object to the inline mixer of any
 track to insert an audio effect plugin or virtual instrument. When you
@@ -351,7 +351,7 @@ track has:
 
 ![](images/08----18@2x.png)
 
-*Inline Mixer Default Setup: Volume & Pan Plugin, A. Level Meter Plugin, B. Mute Button, C. Solo Button, D*
+*Inline mixer default setup: A Volume & Pan plugin, B Level Meter plugin, C Mute and Solo buttons, D output destination*
 
 **Volume & Pan Plugin**: This acts like the channel fader and pan
 controls on a conventional mixer. Click either control for a larger
@@ -376,6 +376,10 @@ Defaults section) sets how **Solo** works when several tracks are soloed
 The keyboard shortcut for solo is Shift + S. From the right-click menu
 you can choose **Solo isolate**, which keeps the track playing when
 another track is soloed. This suits a track set up as an effects bus.
+
+**Output destination**: The button at the far right shows where the
+track's output goes (a speaker icon for an audio device). Click it to
+change the output destination for this track.
 
 > 💡 **Tip:** Right-click either **Mute** or **Solo** for a menu. From
 here you can reset every track with **Reset all muted/soloed/isolated

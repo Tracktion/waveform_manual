@@ -71,8 +71,8 @@ parameters for this track > Volume & Pan Plugin > Volume*.
 
 *Select the Parameter to Automate*
 
-An automation line appears, labelled with the name of the parameter, with the
-parameter's value shown on the right. This line is the automation curve. It's
+An automation line appears, with a label at the top right naming the track,
+plugin and parameter it controls. This line is the automation curve. It's
 flat until you add points to it, and from there you can draw curves, steps and
 ramps.
 

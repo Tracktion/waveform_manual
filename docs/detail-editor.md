@@ -43,9 +43,10 @@ edit*.
 ### Audio Clips
 
 For an Audio clip the tab shows a waveform view of the clip, with the
-clip's loop settings (Auto-Tempo, Auto-Pitch, Stretch, Beats, Root Tempo,
-and Beat Points) on the right-hand side. The same loop settings are also
-in the Actions panel.
+clip's tempo and pitch settings on the right-hand side, such as
+**Auto-Pitch**, **Auto-Tempo**, **Stretch**, **Warp Time**, **Root Tempo**,
+**Root Note** and **Beats**. The same settings are also in the Actions
+panel.
 
 Flags in the waveform view set the clip's start and end and,
 for a looping clip, its loop. A looping clip also shows a start flag that

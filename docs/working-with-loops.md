@@ -78,8 +78,8 @@ and Waveform creates extra tracks if there aren't enough.
 
 ## Looping the Loop
 
-Audio clips have an L icon on the header. Click it to toggle looping
-mode for that clip. The clip immediately appears twice as long, because
+Audio clips have a loop button (two arrows chasing each other) on the
+header. Click it to toggle looping mode for that clip. The clip immediately appears twice as long, because
 turning on looping gives you one repeat straight away.
 
 ![](images/13----04@2x.png)
@@ -92,12 +92,13 @@ repetition. The underlying wave file isn't duplicated; it's replayed
 over and over. All other editing operations work the same as on any
 other clip.
 
-To stop looping, click the L icon again. The clip returns to a single
+To stop looping, click the loop button again. The clip returns to a single
 cycle.
 
 You can also turn on looping by selecting the clip and clicking **Loop
 this Clip** in the Actions panel. There you choose the number of times
-to loop, instead of dragging the right trim handle.
+to loop, instead of dragging the right trim handle. On a looping clip
+the same row reads **Disable Looping**.
 
 ![](images/13----05@2x.png)
 
