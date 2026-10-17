@@ -15,7 +15,7 @@ To create a Submix track:
 
 1.  Select all the tracks you want to include.
 
-    ![](images/34----01.png)
+    ![](images/34----01@2x.png)
 
     *Creating a Submix Track*
 
@@ -23,7 +23,7 @@ To create a Submix track:
     Submix track**. The same action is also available in the Actions
     panel as **Create Submix Containing**.
 
-![](images/34----02.png)
+![](images/34----02@2x.png)
 
 *A Submix Track*
 
@@ -73,7 +73,7 @@ section shows how it works.
 
 1.  Create a track in the normal way.
 
-    ![](images/34----03.png)
+    ![](images/34----03@2x.png)
 
     *Creating an Old School Submix Track*
 
@@ -83,7 +83,7 @@ section shows how it works.
     Submix* track. This routes the output of each selected track to the
     *Drums Submix* track.
 
-![](images/34----04.png)
+![](images/34----04@2x.png)
 
 *Set the Track Destination on the Source Tracks*
 
@@ -92,7 +92,7 @@ to set the volume of all the tracks you routed to it, and add any
 plugins you want. This example uses a tape simulator and a third-party
 bus compressor.
 
-![](images/34----05.png)
+![](images/34----05@2x.png)
 
 *Submix Using Third-Party Plugins*
 

@@ -15,7 +15,7 @@ To create a Folder track, right-click the track name of any existing
 track and select **Add Folder track**. The Folder track appears
 below the original track.
 
-![](images/33----01.png)
+![](images/33----01@2x.png)
 
 *New Empty Folder Track*
 
@@ -35,7 +35,7 @@ To put a track into a Folder track, drag the track by its name and drop
 it on the folder. Just before you drop it, the Folder track glows red
 to show it's ready to receive your track.
 
-![](images/33----02.png)
+![](images/33----02@2x.png)
 
 *Folder Track after Dropping in One Track*
 
@@ -49,7 +49,7 @@ You name a Folder track in the same way as any other track. Click the
 name area of the track header, then edit **Name** in the Actions panel.
 The default names are *Folder 1*, *Folder 2* and so on.
 
-![](images/33----03.png)
+![](images/33----03@2x.png)
 
 *Naming a Folder Track*
 
@@ -80,7 +80,7 @@ Click the small triangle to the left of the Folder track name to expand
 or collapse the folder. Collapsing a folder doesn't affect playback: all
 the tracks in it still play and respond as normal.
 
-![](images/33----05.png)
+![](images/33----05@2x.png)
 
 *Expand/Collapse a Folder by Clicking the Triangle*
 
@@ -91,7 +91,7 @@ but they act on all the tracks in the folder. Click **Solo** on a Folder
 track that holds your drums, and all your drum tracks are soloed.
 **Mute** likewise mutes all the tracks in the folder.
 
-![](images/33----06.png)
+![](images/33----06@2x.png)
 
 *Folder Track Solo*
 
@@ -135,7 +135,7 @@ Multitrack drums often have 10 or more tracks to put into a Folder
 track. Rather than drag each track in individually, you can pack them
 all into a Folder track at once:
 
-![](images/33----08.png)
+![](images/33----08@2x.png)
 
 *Create a Folder Track Containing Existing Tracks*
 
@@ -161,7 +161,7 @@ To split clips across all of the contained tracks, select the Folder
 track clip (the collection clip: the summary clip on the Folder track),
 position the cursor, then press **/**.
 
-![](images/33----09.png)
+![](images/33----09@2x.png)
 
 *Split All Clips Within a Folder Track*
 
@@ -172,7 +172,7 @@ any order to rearrange everything in the folder, for example to swap
 verse 1 and verse 2. With all your tracks in one Folder track, you can
 block-arrange the whole song this way.
 
-![](images/33----10.png)
+![](images/33----10@2x.png)
 
 *Rearranging Clips within a Folder Track*
 
@@ -181,7 +181,7 @@ block-arrange the whole song this way.
 The Folder track clips have trim handles at each end. Drag them to trim
 all the included clips.
 
-![](images/33----11.png)
+![](images/33----11@2x.png)
 
 *Trimming Using the Folder Track Clip*
 
@@ -201,14 +201,14 @@ detail. To create a fade-out:
     the VCA fader. The automation curve for the VCA fader appears on the
     Folder track.
 
-![](images/33----12.png)
+![](images/33----12@2x.png)
 
 *Activate Automation for the VCA*
 
 2.  Double-click the automation curve to add two points: one before and
     one after the section you want to fade.
 
-![](images/33----13.png)
+![](images/33----13@2x.png)
 
 *Add Automation Points to the VCA Curve*
 
@@ -217,7 +217,7 @@ detail. To create a fade-out:
 4.  Drag the curvature point, which appears automatically between the
     two points you added, to adjust the shape of the fade.
 
-![](images/33----14.png)
+![](images/33----14@2x.png)
 
 *Customising the Fade with Curvature*
 

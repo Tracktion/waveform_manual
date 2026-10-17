@@ -21,7 +21,7 @@ Next, click the track name and rename the track by editing **Name** in the
 Actions panel. This example uses a reverb, so name it "Master Reverb".
 
 
-![](images/31----01.png)
+![](images/31----01@2x.png)
 
 *New, Blank Track*
 
@@ -31,7 +31,7 @@ Now insert an effect plugin on the bus track. This example uses
 Waveform's Reverb.
 
 
-![](images/31----02.png)
+![](images/31----02@2x.png)
 
 *Insert the Reverb Plugin*
 
@@ -40,7 +40,7 @@ up, so only the wet signal goes through Reverb. You can tweak the other
 parameters later, once you have some sound going through it.
 
 
-![](images/31----03.png)
+![](images/31----03@2x.png)
 
 *Set the Mix to 100% Wet*
 
@@ -55,7 +55,7 @@ Aux Send plugin for exactly this purpose.
 Insert the Aux Return plugin to the left of Reverb.
 
 
-![](images/31----04.png)
+![](images/31----04@2x.png)
 
 *Insert the Aux Return Plugin*
 
@@ -63,7 +63,7 @@ It's labelled **Aux Return #1** in the Actions panel, and it's
 automatically assigned to the next available bus, in this case **Bus #1**.
 
 
-![](images/31----05.png)
+![](images/31----05@2x.png)
 
 *Automatic Bus Assignment for Aux Return*
 
@@ -71,7 +71,7 @@ Optionally, type something descriptive into the **Bus Name** property,
 such as "Verb 1".
 
 
-![](images/31----06.png)
+![](images/31----06@2x.png)
 
 *Adding a Descriptive Bus Name*
 
@@ -79,7 +79,7 @@ The name appears on the plugin thumbnail in the mixer, which makes things
 clearer, especially once you have several effects buses.
 
 
-![](images/31----07.png)
+![](images/31----07@2x.png)
 
 *How the Bus Name Appears in the Mixer*
 
@@ -89,7 +89,7 @@ With the bus track set up, insert an Aux Send plugin on each track you
 want to send to the effect.
 
 
-![](images/31----08.png)
+![](images/31----08@2x.png)
 
 *Insert Aux Send on a Track*
 
@@ -106,7 +106,7 @@ Play the Edit back and set the send level: click the Aux Send plugin and
 adjust the **Send level** slider that pops up.
 
 
-![](images/31----09.png)
+![](images/31----09@2x.png)
 
 *Adjust the Aux Send Level*
 
@@ -130,7 +130,7 @@ another delay for guitars. Each extra bus is set up the same way as above.
 Make sure each Aux Send and Aux Return is assigned to the right bus number.
 
 
-![](images/31----10.png)
+![](images/31----10@2x.png)
 
 *Setup with Three Bus Effects Tracks*
 
@@ -138,7 +138,7 @@ In this example, Verb 1 uses **Bus #1**, and DLY1 uses **Bus #2** with its
 own name.
 
 
-![](images/31----11.png)
+![](images/31----11@2x.png)
 
 *Assigning Buses to the Aux Returns*
 
@@ -146,7 +146,7 @@ When you insert an Aux Send on a track, choose the bus for the effect you
 want.
 
 
-![](images/31----12.png)
+![](images/31----12@2x.png)
 
 *Selecting the Effects Bus for Aux Send*
 
@@ -162,7 +162,7 @@ on, right-click the **Solo** button on a bus track and choose **Solo
 isolate**, or Opt-click / Alt-click the **Solo** button.
 
 
-![](images/31----13.png)
+![](images/31----13@2x.png)
 
 *Enable Solo Isolate on Your Effects Tracks*
 
@@ -181,7 +181,7 @@ and recall them in later Edits. Right-click the track name and select
 *Save preset > Whole track*.
 
 
-![](images/31----14.png)
+![](images/31----14@2x.png)
 
 *Saving an Effects Track Preset*
 
@@ -190,7 +190,7 @@ Reverb". The tags area already contains the tag "Track", and you can add
 another, such as "Effects Bus".
 
 
-![](images/31----15.png)
+![](images/31----15@2x.png)
 
 *Preset Details Dialog Box*
 

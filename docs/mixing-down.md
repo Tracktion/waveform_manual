@@ -16,7 +16,7 @@ What you apply there is up to you, but the Waveform Master Mix plugin
 compressor, EQ, and limiter all in one. In Waveform Free, the [Compressor and Limiter](built-in-effects-plugins.md#dynamics-compressor-gate-and-limiter)
 plugins do a similar job.
 
-![](images/36----01.png)
+![](images/36----01@2x.png)
 
 *Waveform Master Mix*
 
@@ -24,7 +24,7 @@ Make sure the master meters don't go into the red before you export
 the mix. Exactly how you process the mix depends on what you plan to do
 with the file after it's mixed down.
 
-![](images/36----02.png)
+![](images/36----02@2x.png)
 
 *The Waveform master*
 
@@ -79,7 +79,7 @@ Click the Projects tab and look at the **Exported Audio/MIDI** list at
 the right. Your rendered file will be there, named after the Edit unless you
 gave it a name of your own.
 
-![](images/36----06.png)
+![](images/36----06@2x.png)
 
 *The Exported File on the Project Page Files List*
 
@@ -92,7 +92,7 @@ properties. Click the **...** button to the right of **File** and choose
 Open the Browser and go to the **Files** tab. Click the folder icon and
 select **Project folder**.
 
-![](images/36----07.png)
+![](images/36----07@2x.png)
 
 *Locate the Project folder from the Browser*
 
@@ -100,7 +100,7 @@ Double-click the folder named *Exported* and you will see your file. To
 locate it in Finder or File Explorer, right-click and choose **Open the
 folder containing this file...**.
 
-![](images/36----08.png)
+![](images/36----08@2x.png)
 
 *Exported Folder in the Browser*
 

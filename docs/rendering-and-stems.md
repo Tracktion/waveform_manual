@@ -121,7 +121,7 @@ long list.
 
 ![](images/rendering_2@2x.png)
 
-*The Tracks scope, with all 21 tracks ticked and the file list showing what the
+*The Tracks scope, with all 6 tracks ticked and the file list showing what the
 batch will write*
 
 If a category has nothing in it, the list says so and tells you what you'd have
@@ -226,7 +226,7 @@ arpeggiators, chord players and other MIDI effects. (Default: Clips)
 ![](images/rendering_3@2x.png)
 
 *With MIDI chosen, the audio settings give way to a single MIDI Source choice,
-and the 21 ticked tracks resolve to the 7 that actually hold MIDI*
+and the 6 ticked tracks resolve to the 1 that actually holds MIDI*
 
 Everything else works the same for MIDI as for audio: scopes, ranges, name
 patterns, the queue and presets. The queue draws a small piano roll of the notes
@@ -468,8 +468,7 @@ itself for CPU.
 
 ![](images/rendering_5@2x.png)
 
-*A batch part-way through: two done, one at 95%, the rest waiting, and a piano
-roll of each finished MIDI file*
+*A batch part-way through: two done, one at 85%, the rest waiting*
 
 Each row shows:
 
@@ -488,7 +487,7 @@ finish* appended if anything failed or was cancelled. A progress bar and a
 
 ![](images/rendering_6@2x.png)
 
-*A finished render, measured: −16.3 LUFS at −1.1 dBTP*
+*Finished renders, measured: the Synth stem is Complete at -14.0 LUFS, while the louder stems show Limited*
 
 ## Render Presets <span class="pro">PRO</span> { #render-presets }
 
@@ -563,6 +562,10 @@ and starts as the clips' name when the selected clips all share one; otherwise
 it's left empty and the render is named after the Edit and the track, for
 example *My Song Bass Render 1*. The file is saved in the project's
 **Rendered** folder.
+
+![](images/rendering-and-stems_render_clip_dialog@2x.png)
+
+*The clip render dialog, with Destination set to This Track and Name filled in from the clip*
 
 The clips render through their own tracks and the track each one outputs
 into, and nothing else on those tracks sounds. The new clip takes the colour
