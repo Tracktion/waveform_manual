@@ -97,7 +97,7 @@ notes in the clip. This type of view is commonly called a piano roll
 view (PRV).
 
 
-![](images/25----06.png)
+![](images/25----06@2x.png)
 
 *The MIDI Note Editor*
 

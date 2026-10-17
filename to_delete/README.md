@@ -114,3 +114,9 @@ Old images replaced by 2x retakes (October 2026). Safe to delete once the retake
 - `images/04----00@2x.png` -> `docs/images/04----00@2x.png`
 - `images/rendering_1@2x.png` -> `docs/images/rendering_1@2x.png`
 - `images/08----21.png` -> `docs/images/08----21@2x.png`
+- `images/Modifiers/LFO@2x.png` -> `docs/images/Modifiers/LFO@2x.png`
+- `images/25----06.png` -> `docs/images/25----06@2x.png`
+- `images/27----20.png` -> `docs/images/27----20@2x.png`
+- `images/clip_launcher_playback.jpeg` -> `docs/images/clip_launcher_playback@2x.png`
+- `images/clip_launcher_playback_scenes.jpeg` -> `docs/images/clip_launcher_playback_scenes@2x.png`
+- `images/Racks@2x.png` -> `docs/images/Racks@2x.png`

@@ -26,7 +26,7 @@ them on standard row heights too, set **Clip launcher style** to **Show
 thumbnail** in *Settings > Appearance > Clips*.
 
 
-![](images/clip_launcher_playback.jpeg)
+![](images/clip_launcher_playback@2x.png)
 
 *Clip Launcher Playback*
 
@@ -68,7 +68,7 @@ quantisation is off, clips start from their beginning as soon as you
 launch them.
 
 
-![](images/clip_launcher_playback_scenes.jpeg)
+![](images/clip_launcher_playback_scenes@2x.png)
 
 *Clip Launcher Scenes*
 

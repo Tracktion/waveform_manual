@@ -494,7 +494,7 @@ sit next to it: **P** <span class="pro">PRO</span> toggles the
 show.
 
 
-![](images/27----20.png)
+![](images/27----20@2x.png)
 
 *Step Clip Velocity Gate Editor*
 
