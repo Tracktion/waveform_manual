@@ -15,7 +15,7 @@ click **Record**, Waveform records only between the In marker and Out
 marker. The transport loops between the two markers, recording take
 after take until you click **Stop**.
 
-![](images/19----01.png)
+![](images/19----01@2x.png)
 
 *Turn on Loop for Loop Recording Mode*
 
@@ -26,7 +26,7 @@ after take until you click **Stop**.
     set the Out marker, position the cursor at the end of the loop and
     press O.
 
-    ![](images/19----02.png)
+    ![](images/19----02@2x.png)
 
     *Set the In Marker and Out Marker*
 
@@ -38,7 +38,7 @@ after take until you click **Stop**.
 2.  Configure the input and check your levels, as for
     [standard recording](recording-audio.md).
 
-    ![](images/19----03.png)
+    ![](images/19----03@2x.png)
 
     *Configure the Input for Recording*
 
@@ -55,7 +55,7 @@ last take you recorded is the one you hear during playback, called the
 in the lower right corner of the clip and pick it from the list of takes.
 You can audition each take this way and keep your favourite.
 
-![](images/19----04.png)
+![](images/19----04@2x.png)
 
 *Choosing the Active Take*
 
@@ -67,7 +67,7 @@ You can audition each take this way and keep your favourite.
 To work with your loop-recorded takes as separate audio tracks, click
 the plus (+) sign and select **Unpack to new tracks**.
 
-![](images/19----05.png)
+![](images/19----05@2x.png)
 
 *Unpack Takes to Tracks*
 

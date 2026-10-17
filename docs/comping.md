@@ -48,7 +48,7 @@ To comp the takes:
 
 1.  Select the Audio clip that contains the takes you want to comp.
 
-![](images/20----01.png)
+![](images/20----01@2x.png)
 
 *Takes Follow Loop Recording*
 
@@ -57,7 +57,7 @@ To comp the takes:
     individual takes. If you play back over this section of the Edit,
     you hear the last take from loop recording.
 
-![](images/20----02.png)
+![](images/20----02@2x.png)
 
 *Takes in the Expanded View*
 
@@ -65,7 +65,7 @@ To comp the takes:
     any take. That phrase is instantly promoted to the active take. This
     drag-to-select action is called "swiping".
 
-![](images/20----03.png)
+![](images/20----03@2x.png)
 
 *Swipe a Phrase to Add it to the Active Take*
 
@@ -78,14 +78,14 @@ cursor each time.
     selected phrase to a different take, click another take, and the
     selection moves to it.
 
-![](images/20----04.png)
+![](images/20----04@2x.png)
 
 *Building the Composite Take*
 
 5.  If the swipe selection doesn't fully enclose a phrase, drag either
     edge of the selection to trim it.
 
-![](images/20----05.png)
+![](images/20----05@2x.png)
 
 *Trim the Edges of a Selection*
 
@@ -94,7 +94,7 @@ times you'll mostly use one take and fix a couple of bad phrases.
 
 When you've finished, click the plus (+) icon and select **Hide takes**.
 
-![](images/20----06.png)
+![](images/20----06@2x.png)
 
 *Hide Takes*
 
@@ -108,7 +108,7 @@ To remove the underlying takes from the Edit, click the plus (+) icon
 on the clip and select **Flatten current comp**. This gives you the
 option to delete the source files. The operation is permanent.
 
-![](images/20----07.png)
+![](images/20----07@2x.png)
 
 *Flatten Current Comp*
 
@@ -144,7 +144,7 @@ Select all the tracks you want to use to build the composite. These are
 typically separate takes of a lead vocal or solo instrument, but any
 collection of tracks works.
 
-![](images/20----08.png)
+![](images/20----08@2x.png)
 
 *Select the Tracks to Comp*
 
@@ -155,7 +155,7 @@ group**. In the **Add Comp Group** dialog box, the name defaults to
 *Comp Group 1*. Change it to something more descriptive if you like,
 then click **OK**.
 
-![](images/20----09.png)
+![](images/20----09@2x.png)
 
 *Creating a Comp Group*
 
@@ -165,7 +165,7 @@ Any tracks selected when you create *Comp Group 1* are added to it
 automatically. To add another track to it, select the track, open the
 **Comp Group** menu and select **Comp Group 1**.
 
-![](images/20----10.png)
+![](images/20----10@2x.png)
 
 *Adding Another Track to Comp Group 1*
 
@@ -182,14 +182,14 @@ Once a comp group has tracks in it:
     comps* in the **Comp Group** menu. This puts the tracks into comp
     mode.
 
-![](images/20----11.png)
+![](images/20----11@2x.png)
 
 *Enable Comp Mode*
 
 2.  Swipe to select phrases from any of the tracks. Only the selected
     phrases play back.
 
-![](images/20----12.png)
+![](images/20----12@2x.png)
 
 *Swiping Phrases to Create a Composite*
 
@@ -213,7 +213,7 @@ selections on the tracks. You can also turn it on by itself, to see the
 comp selections with **Edit track comps** off so you don't change them
 by accident.
 
-![](images/20----13.png)
+![](images/20----13@2x.png)
 
 *Show Track Comps*
 
@@ -235,7 +235,7 @@ with the composite.
 These options on the **Comp Group** menu add, rename and remove comp
 groups.
 
-![](images/20----15.png)
+![](images/20----15@2x.png)
 
 *Comp Group Management Features*
 

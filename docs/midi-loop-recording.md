@@ -16,19 +16,19 @@ record in merge mode:
     **Merge newly recorded MIDI into any existing clips**. This puts the
     track into MIDI merge mode.
 
-    ![](images/24----01.png)
+    ![](images/24----01@2x.png)
 
     *MIDI Merge Mode*
 
 2.  Set the In marker and the Out marker over the area you want to loop.
 
-    ![](images/24----02.png)
+    ![](images/24----02@2x.png)
 
     *Set the In Marker and Out Marker*
 
 3.  Turn on **Loop** (L).
 
-    ![](images/24----03.png)
+    ![](images/24----03@2x.png)
 
     *Enable Loop*
 
@@ -38,7 +38,7 @@ record in merge mode:
 5.  Stop recording by clicking **Record** again or pressing the
     **Space bar**.
 
-![](images/24----04.png)
+![](images/24----04@2x.png)
 
 *MIDI Clip After Recording*
 
@@ -60,7 +60,7 @@ To prepare to comp with a MIDI recording, leave everything set up the
 same way as for merge mode, but change the **Action** parameter to
 **Overlay new clips, containing newly recorded MIDI**.
 
-![](images/24----05.png)
+![](images/24----05@2x.png)
 
 *Enable Overlay Mode*
 
@@ -76,21 +76,21 @@ To see the takes, click the takes button (+) in the lower right corner
 of the MIDI clip. The menu lists all your takes. Choose one to make it
 the active take.
 
-![](images/24----06.png)
+![](images/24----06@2x.png)
 
 *Takes Following Loop Recording*
 
 You can also expand the view to show all the takes below the track.
 Click the takes button (+) and choose **Show takes**.
 
-![](images/24----07.png)
+![](images/24----07@2x.png)
 
 *View After Choosing Show Takes*
 
 This also puts you in comping mode. Swipe over the phrases you want to
 keep to build a composite from the best parts of each take.
 
-![](images/24----08.png)
+![](images/24----08@2x.png)
 
 *Comping the Takes*
 
@@ -100,14 +100,14 @@ Once you have the composite assembled, you can convert it to a single
 MIDI clip. Click the takes button (+) and select **Flatten current comp**, then
 click **Delete** in the **Delete Unused Takes** dialog to go ahead.
 
-![](images/24----09.png)
+![](images/24----09@2x.png)
 
 *Flattening the MIDI Composite*
 
 > 📝 **Note:** You can't flatten the takes to a single MIDI clip without
 > deleting the unused ones, but you can **Undo** the flatten afterwards.
 
-![](images/24----10.png)
+![](images/24----10@2x.png)
 
 *Delete Clips Warning Message*
 

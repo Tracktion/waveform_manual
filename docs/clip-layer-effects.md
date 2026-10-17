@@ -19,14 +19,14 @@ Audio clip (or right-click the clip) and choose **Add clip effect**. The
 same menu also has **Remove all clip effects** and **Show clip effects**.
 
 
-![](images/41----02.png)
+![](images/41----02@2x.png)
 
 *Audio Clip Header FX Menu*
 
 Then choose an effect from the list. Each one is described below.
 
 
-![](images/41----03.png)
+![](images/41----03@2x.png)
 
 *FX Menu Add Effect Options*
 
@@ -62,7 +62,7 @@ A volume layer is Waveform's way to do clip-based volume automation, and
 you may find yourself using it instead of track automation for volume.
 
 
-![](images/41----05.png)
+![](images/41----05@2x.png)
 
 *Volume Clip Layer*
 
@@ -70,7 +70,7 @@ Click the gear icon on a volume layer to see its Volume & Pan control
 values in the Actions panel.
 
 
-![](images/41----05b.png)
+![](images/41----05b@2x.png)
 
 *Volume Clip Layer settings in the Actions panel*
 
@@ -86,7 +86,7 @@ the fade layer, drag the left or right fade handle to create the fade-in
 or fade-out.
 
 
-![](images/41----06.png)
+![](images/41----06@2x.png)
 
 *Fade In/Out*
 
@@ -97,7 +97,7 @@ or fade-out.
 Add a step volume layer to rhythmically gate the clip.
 
 
-![](images/41----07.png)
+![](images/41----07@2x.png)
 
 *Step Volume Layer*
 
@@ -108,7 +108,7 @@ or off, and drag across cells to set them the same way. Hold Shift as you
 click or drag to fill cells, or Cmd / Ctrl to clear them.
 
 
-![](images/41----07b.png)
+![](images/41----07b@2x.png)
 
 *Step Volume settings*
 
@@ -119,7 +119,7 @@ points and automate it like any other effect, for anything from simple
 pitch offsets to dramatic pitch sweeps.
 
 
-![](images/41----08.png)
+![](images/41----08@2x.png)
 
 *Pitch Shift Layer*
 
@@ -127,7 +127,7 @@ When you select the pitch curve on the clip, the Actions panel shows the
 usual controls for automation curves.
 
 
-![](images/41----08b.png)
+![](images/41----08b@2x.png)
 
 *Pitch Curve settings*
 
@@ -138,14 +138,14 @@ fades. The Tape Stop/Start layer does the same thing as a Clip Layer
 effect.
 
 
-![](images/41----09.png)
+![](images/41----09@2x.png)
 
 *Tape Stop/Start Layer*
 
 Right-click the fade handle to choose the shape for the curve.
 
 
-![](images/41----09b.png)
+![](images/41----09b@2x.png)
 
 *Tape Stop/Start Fade Options*
 
@@ -158,14 +158,14 @@ The header area of the Clip Layer appears shaded. Click anywhere in the
 shaded area to add a warp marker.
 
 
-![](images/41----10.png)
+![](images/41----10@2x.png)
 
 *Warp Time Clip Layer - Click to Add Marker*
 
 Drag a warp marker to time-stretch the audio between warp markers.
 
 
-![](images/41----10b.png)
+![](images/41----10b@2x.png)
 
 *Drag to Warp*
 
@@ -173,7 +173,7 @@ To remove a warp marker, right-click it and choose to remove that marker
 or all markers.
 
 
-![](images/41----10c.png)
+![](images/41----10c@2x.png)
 
 *Right-click to Remove Warp Markers*
 
@@ -187,7 +187,7 @@ A plugin Clip Layer lets you put any plugin, including third-party
 effects, on a layer.
 
 
-![](images/41----11.png)
+![](images/41----11@2x.png)
 
 *Plugin Layer*
 
@@ -210,7 +210,7 @@ The key things to know about plugin Clip Layers:
 Add the reverse Clip Layer and the audio in the clip plays backwards.
 
 
-![](images/41----12.png)
+![](images/41----12@2x.png)
 
 *Reverse Layer*
 
@@ -230,7 +230,7 @@ Then set **Peak level** (-60 to 0 dB) to put the peaks where you want
 them. In voiceover work, clients often ask for audio normalised to -3 dB.
 
 
-![](images/41----13b.png)
+![](images/41----13b@2x.png)
 
 *Normalise Peak level setting*
 
@@ -242,7 +242,7 @@ in Waveform.
 First add a mono Clip Layer:
 
 
-![](images/41----14.png)
+![](images/41----14@2x.png)
 
 *Mono Layer*
 
@@ -251,7 +251,7 @@ average of all channels**, **Use left channel only** or **Use right channel
 only**.
 
 
-![](images/41----14b.png)
+![](images/41----14b@2x.png)
 
 *Mono Options*
 
@@ -262,7 +262,7 @@ only**.
 The phase invert Clip Layer flips the polarity of the waveform.
 
 
-![](images/41----15.png)
+![](images/41----15@2x.png)
 
 *Phase Invert Layer*
 

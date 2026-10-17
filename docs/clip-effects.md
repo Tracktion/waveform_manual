@@ -13,7 +13,7 @@ thumbnail appears in the lower right corner of the clip. You can add up
 to 10 plugins to make a chain of effects, all working on that one clip.
 
 
-![](images/32----01.png)
+![](images/32----01@2x.png)
 
 *Plugins Using Clip Effects*
 
