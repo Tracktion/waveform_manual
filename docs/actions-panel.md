@@ -92,6 +92,10 @@ Quick Actions is a separate feature from the action menu above. Instead of showi
 
 Each row is a **Quick Actions bar** of buttons. To add a button, click the **+** at the end of a row (**Add a quick action button**). To assign a command to a button, right-click it and choose a command from the **Assign action** submenu. The right-click menu also shows what's currently assigned and offers a **Remove** option. Use **Rename** to give the button your own label (leave it blank to go back to the command's name) or **Reset name** to undo that, and the colour picker in the same menu to colour the button. The **Icon** submenu puts an icon on the button: pick **None** or one of the installed icons, use **Import from SVG file...** to add your own, or **Show icons folder...** to open the folder they live in.
 
+![](images/actions-panel_quick_action_menu@2x.png)
+
+*A Quick Actions button's right-click menu with the Icon submenu open*
+
 You can rearrange buttons by dragging them, and add or remove whole rows using the controls at the end of each row (**Add a row** / **Remove this row**).
 
 Each set of buttons is saved as a named set, so you can keep different layouts for different jobs. The selector button at the left end of each bar shows the current set's name. Click it to switch to another saved set, or to manage them: **New** creates an empty set, **Duplicate** copies the current one, **Rename** renames it and **Delete** removes it (there's no undo for a delete).

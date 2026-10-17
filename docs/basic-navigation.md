@@ -213,7 +213,7 @@ playhead** in *Settings > General > Mouse*.
 
 ![](images/05----13@2x.png)
 
-*Drag to Position Cursor Setting*
+*The Mouse section of Settings > General*
 
 > 💡 **Tip:** The **Timeline drag** setting in *Settings > General >
 Mouse* controls what dragging on the Timeline does. It defaults to

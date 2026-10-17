@@ -15,6 +15,14 @@ also shows or hides it (listed in Keyboard Shortcuts as **Show or hide MIDI
 editor**). Windows has no default shortcut, but you can assign one to **Show
 or hide Content Editor** in *Settings > Keyboard Shortcuts*.
 
+![](images/detail-editor_clip_tab@2x.png)
+
+*The Detail Editor's Clip tab for an audio clip*
+
+![](images/detail-editor_midi_clip_pills@2x.png)
+
+*The Clip tab for a MIDI clip, with the Piano Roll and Pattern Generator buttons*
+
 ## The Track Tab
 
 The Track tab shows the MIDI editor for all the MIDI clips on the

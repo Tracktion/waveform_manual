@@ -17,6 +17,10 @@ is enabled and links volume and mute; everything else stays off until you turn i
 
 *Two audio tracks linked by an Edit Mix Group*
 
+![](images/edit-mix-groups_group_actions@2x.png)
+
+*A selected group's Actions panel, with its link toggles*
+
 
 ## What Gets Linked
 

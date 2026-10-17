@@ -67,7 +67,7 @@ To automate the track's volume, click the A icon and choose *Automatable
 parameters for this track > Volume & Pan Plugin > Volume*.
 
 
-![](images/35----03.png)
+![](images/35----03@2x.png)
 
 *Select the Parameter to Automate*
 
@@ -77,7 +77,7 @@ flat until you add points to it, and from there you can draw curves, steps and
 ramps.
 
 
-![](images/35----04.png)
+![](images/35----04@2x.png)
 
 *The Automation Curve Line*
 
@@ -127,7 +127,7 @@ adjusts the steepness of the ramp. Drag the points left or right to adjust
 the start and end of the ramp.
 
 
-![](images/35----06.png)
+![](images/35----06@2x.png)
 
 *Drawing an Automation Ramp*
 
@@ -138,7 +138,7 @@ Waveform puts one midway between every pair of automation points. Drag it up
 or down to bend the segment.
 
 
-![](images/35----07.png)
+![](images/35----07@2x.png)
 
 *Adjusting a Curvature Point*
 
@@ -146,7 +146,7 @@ or down to bend the segment.
 the Actions panel, alongside a **Curvature** slider.
 
 
-![](images/35----08.png)
+![](images/35----08@2x.png)
 
 *Value and Curvature in the Actions panel*
 
@@ -159,7 +159,7 @@ Cmd / Ctrl, dragging a line segment moves its two end points, pulling the
 neighbouring segments with them.
 
 
-![](images/35----09.png)
+![](images/35----09@2x.png)
 
 *Hold Cmd / Ctrl to Draw a Step*
 
@@ -219,7 +219,7 @@ more control over the fade's shape, convert the clip fade to an automation
 curve.
 
 
-![](images/35----10.png)
+![](images/35----10@2x.png)
 
 *Clip Fade*
 
@@ -228,7 +228,7 @@ To convert it, select the clip, then click
 Automation* or *Transfer Fade-out to Automation*.
 
 
-![](images/35----11.png)
+![](images/35----11@2x.png)
 
 *Fade to Automation*
 
@@ -237,7 +237,7 @@ the fade from the clip. You can then add points and reshape it with the
 automation tools.
 
 
-![](images/35----12.png)
+![](images/35----12@2x.png)
 
 *Result of Fade to Automation*
 
@@ -294,7 +294,7 @@ entire curve*, then *Light*, *Medium* or *Strong*: *Light* removes the fewest
 points and *Strong* the most. This helps most with automation recorded from a
 hardware controller, which can add hundreds of points.
 
-![](images/35----15.png)
+![](images/35----15@2x.png)
 
 *Automation Curve Simplify*
 
@@ -331,7 +331,7 @@ track*. The submenu lists every automated parameter on the track, and you can
 pick the one to show.
 
 
-![](images/35----16.png)
+![](images/35----16@2x.png)
 
 *Active Parameters for a Track*
 
@@ -349,7 +349,7 @@ and longer if you slow it down, so it stays lined up with the clips in your
 Edit. It's off by default, so you turn it on for each plugin.
 
 
-![](images/35----17.png)
+![](images/35----17@2x.png)
 
 *Remap on Tempo Change*
 
@@ -358,7 +358,7 @@ Edit. It's off by default, so you turn it on for each plugin.
 remapping** row and enable *Remap plugin automation*.
 
 
-![](images/35----18.png)
+![](images/35----18@2x.png)
 
 *Make Remap the Default*
 
@@ -396,7 +396,7 @@ The **Glide** setting on the same page sets how long newly written automation
 takes to cross-fade into the curve that was already there.
 
 
-![](images/35----21.png)
+![](images/35----21@2x.png)
 
 *Automation with Medium Simplification*
 
@@ -442,7 +442,7 @@ The transport bar has an **Auto Lock** button, which is off by default. While
 it's off, moving a clip on a track leaves the automation where it was.
 
 
-![](images/35----22.png)
+![](images/35----22@2x.png)
 
 *Automation Lock Engaged*
 
@@ -558,33 +558,33 @@ repeating automation pattern.
 2.  Set the In marker and Out marker over the range you want the pattern to
     fill.
 
-    ![](images/38----41.png)
+    ![](images/38----41@2x.png)
 
     *Volume Automation Between In Marker and Out Marker*
 
 3.  Select the automation curve, then in the Actions panel click **Create
     Pattern Between the Marked Region**.
 
-    ![](images/38----42.png)
+    ![](images/38----42@2x.png)
 
     *Create Pattern Between the Marked Region*
 
 4.  Choose a pattern shape. This example uses *Triangle*.
 
-    ![](images/38----43.png)
+    ![](images/38----43@2x.png)
 
     *Select the Pattern Shape*
 
 5.  Choose a note division or a number of repeats. Here, *1/2 beat* repeats
     the pattern every 1/8th note.
 
-    ![](images/38----44.png)
+    ![](images/38----44@2x.png)
 
     *Select Beat Division or Repetitions*
 
     The result looks like this:
 
-    ![](images/38----45.png)
+    ![](images/38----45@2x.png)
 
     *Repeating Triangle Automation*
 
@@ -592,29 +592,29 @@ repeating automation pattern.
     controls, or edit the automation points in the usual way.
 
 
-![](images/38----50.png)
+![](images/38----50@2x.png)
 
 *Displace and Scale Curve Controls*
 
 The other pattern shapes look like this:
 
 
-![](images/38----46.png)
+![](images/38----46@2x.png)
 
 *Sine Wave*
 
 
-![](images/38----47.png)
+![](images/38----47@2x.png)
 
 *Square Wave*
 
 
-![](images/38----48.png)
+![](images/38----48@2x.png)
 
 *Ramp Up*
 
 
-![](images/38----49.png)
+![](images/38----49@2x.png)
 
 *Ramp Down*
 
@@ -629,7 +629,7 @@ To ramp a pattern in:
 1.  Set the In marker and Out marker over the part of the automation you want
     to ramp in.
 
-    ![](images/38----59.png)
+    ![](images/38----59@2x.png)
 
     *Selected Region of an Automation Pattern*
 
@@ -637,7 +637,7 @@ To ramp a pattern in:
 3.  In the Actions panel, click **Ramp from the start of the Marked Region**
     to turn the ramp on.
 
-    ![](images/38----60.png)
+    ![](images/38----60@2x.png)
 
     *Enable Ramp from the start of the Marked Region*
 
@@ -646,7 +646,7 @@ To ramp a pattern in:
     pattern in.
 
 
-![](images/38----61.png)
+![](images/38----61@2x.png)
 
 *Taper the Curve Using the Displace Curve and Scale Curve Sliders*
 
@@ -654,7 +654,7 @@ To ramp a pattern in:
 can taper the automation down.
 
 
-![](images/38----62.png)
+![](images/38----62@2x.png)
 
 *Ramp from the end of the Marked Region*
 
