@@ -20,7 +20,7 @@ offers the last folder you used the next time you create a project.
 ## The Welcome Tab
 
 The **Welcome** tab is the first tab in the window. **Upon launch** in
-`Settings > General` decides whether Waveform opens on it (see
+*Settings > General* decides whether Waveform opens on it (see
 [Startup](reference-settings.md#startup)).
 
 | Area | What it shows |
@@ -53,10 +53,10 @@ chosen. Give the project a **Name**, pick a **Location** and click
 reuse it as often as you like.
 
 > 💡 **Tip:** If you'd rather keep the template's track and plugin layout
-but start with an empty arrangement, enable **Remove clips when loading
-templates** (the toggle under the Project Templates list, also in the New
-Project dialog) before you click. This opens the project with its routing
-in place but no clips on the tracks.
+> but start with an empty arrangement, enable **Remove clips when loading
+> templates** (the toggle under the Project Templates list, also in the New
+> Project dialog) before you click. This opens the project with its routing
+> in place but no clips on the tracks.
 
 ![](images/template-new-project@2x.png)
 
@@ -68,8 +68,8 @@ Any demo songs bundled with your installation are added to your projects
 automatically the first time you run Waveform - there's nothing to
 download. They appear in the **Projects** tab alongside your own work.
 
-> 💡 **Tip:** We like to reorganize the demos into a folder to keep them
-separate from our own projects.
+> 💡 **Tip:** We like to reorganise the demos into a folder to keep them
+> separate from our own projects.
 
 ![](images/demo-songs-folder@2x.png)
 
@@ -79,5 +79,3 @@ separate from our own projects.
 
 With Waveform installed, and a few projects ready to play with, it's
 time to move on to configuring your audio interface.
-
-

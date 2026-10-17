@@ -25,8 +25,8 @@ The **Help** menu collects the built-in sources of help:
 |---|---|
 | **About Waveform** | Shows the About box, with the version number you'll need for a support request. |
 | **Check for updates** | Checks whether a newer version of Waveform is available. |
-| **Get help > User guide PDF** | Opens this manual (Shift + F1). |
-| **Get help > Tracktion Website** | Opens the software help pages on the Tracktion website. |
+| *Get help > User guide PDF* | Opens this manual (Shift + F1). |
+| *Get help > Tracktion Website* | Opens the software help pages on the Tracktion website. |
 | **Pop-up help** | **Enable pop-up help** turns pop-up help on or off, and **Delay pop-up help messages** makes it wait longer before appearing. |
 | **Show the First Run Setup panel** | Shows or hides the [First Run Setup](audio-device-setup.md#first-run-setup) panel. |
 | **Show the Waveform log file** | Shows the log file in Finder or File Explorer, ready to attach to a support request. |
@@ -43,25 +43,23 @@ the fuller chapters as you go. You can also open this manual at any time from
 
 The [AI Assistant](ai-assistant.md), in every edition, can answer
 questions about how Waveform works and about your project. Once you've
-chosen a profile on the `Settings > AI` page, click the **Assistant** tab
+chosen a profile on the *Settings > AI* page, click the **Assistant** tab
 in the Browser and ask in plain language.
 
 ## Keyboard Shortcut List
 
 Studying the keyboard shortcut list, is a great way to get more familiar
-with Waveform. Navigate to the Settings tab, Keyboard Shortcuts page.
+with Waveform. Open *Settings > Keyboard Shortcuts*.
 Here you will see all the assignable actions grouped by category.
-
 
 ![](images/07----03.png)
 
 *View as HTML Button*
 
 To find a shortcut, type in the page's search box to filter the list by
-name, or click the *Press keyboard to filter* box and press a key to see
-what it does. To print the list, click *View as HTML* to load it in your
+name, or click the **Press keyboard to filter** box and press a key to see
+what it does. To print the list, click **View as HTML...** to load it in your
 web browser.
-
 
 ![](images/07----02.png)
 
@@ -103,7 +101,6 @@ guidelines, when filling out the request form.
 
 [Waveform Request Form](https://tracktion.zendesk.com/hc/en-us/requests/new)
 
-
 ![](images/07----01.png)
 
 *Waveform Request Form*
@@ -127,9 +124,3 @@ the [KVR Waveform Software forum](https://www.kvraudio.com/forum/viewforum.php?f
 
 Those are the key ways to get help when learning and using Waveform.
 Next let's get into more detail on using Waveform!
-
-
-
-
-
-

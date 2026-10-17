@@ -14,34 +14,31 @@ In [MIDI Recording](midi-recording.md) you learned about MIDI merge mode. Here a
 steps again:
 
 1.  To put your track into MIDI merge mode, click on the track input,
-    then in the Actions panel set *Action* to *Merge newly recorded MIDI
-    into any existing clips*.
+    then in the Actions panel set **Action** to **Merge newly recorded MIDI
+    into any existing clips**.
 
+    ![](images/24----01.png)
 
-![](images/24----01.png)
+    *MIDI Merge Mode*
 
-*MIDI Merge Mode*
-
-1.  To prepare for loop recording, set the In-marker and the Out-marker
+2.  To prepare for loop recording, set the In marker and the Out marker
     over the area you want to loop.
 
+    ![](images/24----02.png)
 
-![](images/24----02.png)
+    *Set the In Marker and Out Marker*
 
-*Set the In-marker & Out-marker*
+3.  Turn on **Loop** (L).
 
-1.  Toggle the *Loop* button to until it's enabled.
+    ![](images/24----03.png)
 
+    *Enable Loop*
 
-![](images/24----03.png)
-
-*Enable *Loop**
-
-1.  As Waveform cycles through the loop, you'll immediately hear the
+4.  As Waveform cycles through the loop, you'll immediately hear the
     results of what you played in previous passes. Keep adding passes
     until you're happy with the part.
-2.  To stop recording, either click *Record* again or hit Spacebar.
-
+5.  To stop recording, either click **Record** again or press the
+    **Space bar**.
 
 ![](images/24----04.png)
 
@@ -62,18 +59,17 @@ comping, you record multiple takes of a part then use simple editing
 tools to select the best phases from the various takes.
 
 To prepare to comp with a MIDI recording, leave everything set up the
-same way as for merge mode, but change the *Action* parameter to
-*Overlay new clips, containing newly recorded MIDI*.
-
+same way as for merge mode, but change the **Action** parameter to
+**Overlay new clips, containing newly recorded MIDI**.
 
 ![](images/24----05.png)
 
 *Enable Overlay Mode*
 
-Set the In-marker and Out-marker and turn *Loop* on. Hit *Record* and
+Set the In marker and Out marker and turn **Loop** on. Hit **Record** and
 record a performance during each cycle through the loop.
 
-When you hit *Stop* you'll have separate takes in the MIDI clip for each
+When you hit **Stop** you'll have separate takes in the MIDI clip for each
 loop pass, just like in audio loop recording.
 
 ## Comping MIDI Takes
@@ -82,23 +78,20 @@ To see the takes, click the takes button (+) in the lower right corner
 of the MIDI clip. The menu lists all your takes. From here, you can
 choose the best take from the list and that will make it active.
 
-
 ![](images/24----06.png)
 
 *Takes Following Loop Recording*
 
 You can also expand the view to show all the takes below the track.
-Click the takes button (+) and choose *Show takes*.
-
+Click the takes button (+) and choose **Show takes**.
 
 ![](images/24----07.png)
 
-*View following *Show takes**
+*View After Choosing Show Takes*
 
 Not only does this show the takes, but it puts you in comping mode.
 Swipe over the phrases you want to keep and build a composite from the
 best parts of each take.
-
 
 ![](images/24----08.png)
 
@@ -107,20 +100,18 @@ best parts of each take.
 ## Flattening the Composite to a Single Clip
 
 Once you have the composite assembled, you can convert it to a single
-MIDI clip. Click the plus icon and select *Flatten current comp*. You
-will need to press *Delete* on the *Delete Unused Takes* dialog box to
+MIDI clip. Click the plus icon and select **Flatten current comp**. You
+will need to press **Delete** in the **Delete Unused Takes** dialog to
 proceed.
-
 
 ![](images/24----09.png)
 
 *Flattening the MIDI Composite*
 
-> 📝 **Note:** When you select *Flatten current comp* Waveform asks if you
-want to delete the unused takes. If you want to flatten the takes to a
-single MIDI clip, you need to accept this. Note that you can use *Undo*
-following this action.
-
+> 📝 **Note:** When you select **Flatten current comp** Waveform asks if you
+> want to delete the unused takes. If you want to flatten the takes to a
+> single MIDI clip, you need to accept this. Note that you can use **Undo**
+> following this action.
 
 ![](images/24----10.png)
 
@@ -131,9 +122,3 @@ following this action.
 Loop recording and comping are really powerful tools for MIDI
 composition, just as they are when working with audio. Next up, learn
 how to edit MIDI clips and MIDI notes.
-
-
-
-
-
-

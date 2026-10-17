@@ -1,7 +1,7 @@
 # Selecting and Snapping
 
 In this chapter, we start working with clips. The examples focus on
-Audio Clips and MIDI Clips. Keep in mind that most of these techniques
+Audio clips and MIDI clips. Keep in mind that most of these techniques
 also apply to Step clips, Edit clips, and markers.
 
 First, you'll learn how to select clips and groups of clips. Then, you
@@ -63,7 +63,7 @@ Here's how that works:
 2.  Now as you drag, the cursor draws a yellow box.
 3.  Anything the yellow box touches gets selected.
 
-> 💡 **Tip:** You can further customize a multiple selection by holding down
+> 💡 **Tip:** You can further customise a multiple selection by holding down
 Cmd / Ctrl then click any clip you want to de-select.
 
 ## Shift Selecting Clips
@@ -116,14 +116,14 @@ Time change the whole Edit. Launcher clips are always left alone.
   the region on each of its tracks. If a track is selected, the clip goes on
   the selected track instead. Only shown when you right-click a track that can
   hold MIDI.
-- **Heal**: Renders the audio clips that overlap the region on each track into
-  one audio clip, running from the start of the first to the end of the last.
+- **Heal**: Renders the Audio clips that overlap the region on each track into
+  one Audio clip, running from the start of the first to the end of the last.
 - **Consolidate**: Renders the audio inside the region on each track into one
-  audio clip exactly the length of the region.
+  Audio clip exactly the length of the region.
 - **Duplicate** (D): Copies the parts of clips inside the region and pastes
   them straight away, in the place Paste would put them (usually the
-  playhead), not directly after the region.
-- **Reverse**: Reverses the part of each audio clip inside the region, splitting
+  cursor), not directly after the region.
+- **Reverse**: Reverses the part of each Audio clip inside the region, splitting
   the clip at the region's edges first.
 - **Silence**: Mutes the part of each clip inside the region, splitting the clip
   at the region's edges first.
@@ -138,7 +138,7 @@ Time change the whole Edit. Launcher clips are always left alone.
   showing. Only shown when you right-click a track with an automation curve
   visible. See [Editing Automation](automation.md#editing-automation).
 
-> 📝 **Note:** Heal, Consolidate and Reverse only work on audio clips. MIDI and
+> 📝 **Note:** Heal, Consolidate and Reverse only work on Audio clips. MIDI and
 Step clips in the region are skipped.
 
 ## Using Snap-to-Grid
@@ -147,26 +147,26 @@ Snap-to-grid makes aligning clips and notes to musical time accurate and
 efficient. Working with this feature is crucial to using
 Waveform for editing audio and MIDI.
 
-## Enable/Disable Snap-to-Grid
+### Enable/Disable Snap-to-Grid
 
-To toggle snap-to-grid on or off, click on the *Snap* button (Q) in the
-transport bar. When snap-to-grid is enabled the *Snap* button appears
-highlighted. Right-click the *Snap* button to open the Snap menu, with
-*Snap-to-grid*, *Snap clips to other clips* and *Snap cursor movement*.
+To toggle snap-to-grid on or off, click on the **Snap** button (Q) in the
+transport bar. When snap-to-grid is enabled the **Snap** button appears
+highlighted. Right-click the **Snap** button to open the Snap menu, with
+**Snap-to-grid**, **Snap clips to other clips** and **Snap cursor movement**.
 
 
 ![](images/11----10.png)
 
 *Snap button in the transport bar*
 
-Pressing Q also toggles *Snap* on and off. You can also control the
-snapping state from the menu section: *Snap > Snap-to-grid*.
+Pressing Q also toggles **Snap** on and off. You can also control the
+snapping state from the main menu: *Snap > Snap-to-grid*.
 
-> 💡 **Tip:** Remember the keyboard shortcut Q is short for quantize.
-Snap-to-grid is a form of quantizing. If you don't like that shortcut,
+> 💡 **Tip:** Remember the keyboard shortcut Q is short for quantise.
+Snap-to-grid is a form of quantising. If you don't like that shortcut,
 you can always remap it to another key.
 
-## About Snap Resolution
+### About Snap Resolution
 
 The snap resolution is dependent on the zoom level. If you're zoomed way
 out, the snap resolution might be one bar. The more you zoom in, the
@@ -179,13 +179,13 @@ snap resolution gets finer and finer.
 
 > 💡 **Tip:** You can always see what your current snap resolution is by
 hovering the mouse pointer over the Timeline. A label appears showing,
-for example, *Snap resolution: Bar*, *Snap resolution: Beat*, or
-*Snap resolution: 1/2 beat*.
+for example, **Snap resolution: Bar**, **Snap resolution: Beat**, or
+**Snap resolution: 1/2 beat**.
 
-## Snapping Clips to the Grid
+### Snapping Clips to the Grid
 
 As you drag a clip, it snaps to the grid increments. If you want to see
-exactly where it's snapping, look at the *Start* value in the
+exactly where it's snapping, look at the **Start** value in the
 Actions panel. Snap-to-grid makes it easy to align a clip to a bar or beat
 of the music.
 
@@ -198,7 +198,7 @@ of the music.
 grid line. Notice that snapping also applies to editing functions like
 trimming.
 
-## Snapping the Cursor to the Grid
+### Snapping the Cursor to the Grid
 
 Snapping may affect how the cursor is positioned depending on another
 setting. Turn on *Snap > Snap cursor movement* and the cursor
@@ -208,7 +208,7 @@ determined by the zoom level.
 
 ![](images/11----07.png)
 
-*caption*
+*Snap cursor movement in the Snap menu*
 
 To test this, zoom out so that the snap resolution is "Beat." Now move
 the cursor around and it will obviously snap to the nearest beat.
@@ -216,10 +216,10 @@ the cursor around and it will obviously snap to the nearest beat.
 > 💡 **Tip:** To get clear indication of exactly where the cursor is, look at
 the time display in the transport bar.
 
-## Snapping Clips to Other Clips
+### Snapping Clips to Other Clips
 
-Another snap behavior is to *Snap clips to other clips*. With *Snap clips
-to other clips* off, clips snap to the grid normally. However, with
+Another snap behaviour is **Snap clips to other clips**. With **Snap clips
+to other clips** off, clips snap to the grid normally. However, with
 *Snap > Snap clips to other clips* turned on, clips snap to other
 clips. It seems as if they are magnetically attracted to each other.
 This is useful for any editing where you want to arrange clips
@@ -230,7 +230,7 @@ end-to-end, for example when editing voiceover tracks.
 
 *Snap Clips to Other Clips Option*
 
-> 💡 **Tip:** *Snap clips to other clips* only works while snap-to-grid is
+> 💡 **Tip:** **Snap clips to other clips** only works while snap-to-grid is
 on. To snap clips to other clips with snap-to-grid off, hold Opt / Alt
 while you drag the clip. Press it once the drag has started: holding it
 as you start the drag makes a copy of the clip. With snap-to-grid on, holding Opt / Alt or
@@ -238,19 +238,19 @@ Shift during the drag does the opposite: the clip snaps to the grid but
 not to other clips. Here you hold the key while dragging a clip, unlike
 the Opt / Alt lasso, which starts on an empty part of a track.
 
-## Overriding Snap-to-Grid
+### Overriding Snap-to-Grid
 
 Temporarily override snap-to-grid by holding down Cmd / Ctrl. Using this
 modifier, you can freely position clips without first turning off
-*Snap*.
+**Snap**.
 
 ## Nudging Clips
 
-To move clips using the keyboard, select a clip then press *Shift +
-Right Arrow* or *Shift + Left Arrow.* The nudge action moves the clip by
+To move clips using the keyboard, select a clip then press Shift +
+Right Arrow or Shift + Left Arrow. The nudge action moves the clip by
 one grid increment. You can also move clips track to track using nudge.
-To nudge clips track to track, use *Shift + Up Arrow* and *Shift + Down
-Arrow.*
+To nudge clips track to track, use Shift + Up Arrow and Shift + Down
+Arrow.
 
 You can use nudging when moving large selections of clips over, to add a
 song section or make room for an intro.
@@ -261,7 +261,7 @@ nudge move is by the grid increment.
 ## Nudging Notes
 
 Snapping is useful when working with Audio clips, but even more so when
-working with MIDI notes. We cover MIDI editing in [MIDI editing](midi-editing.md) However, here is a preview while we are on the topic of
+working with MIDI notes. We cover MIDI editing in [MIDI Editing](midi-editing.md). However, here is a preview while we are on the topic of
 nudging.
 
 
@@ -276,16 +276,9 @@ current grid increment: bar, for example. You can nudge notes forward or
 backward in time by the grid increment as well. To do so, hold Shift
 while pressing the Left Arrow or Right Arrow.
 
-> 💡 **Tip:** Remember the keyboard shortcut Q to toggle *Snap* on and off.
+> 💡 **Tip:** Remember the keyboard shortcut Q to toggle **Snap** on and off.
 
 ## Moving On
 
-Now that you've learned how to get around in Waveform, it's time to
-start having fun manipulating audio. We'll jump into that in the next
-chapter.
-
-
-
-
-
-
+To start editing Audio clips, see
+[Audio Clips and Editing Audio](audio-clips-and-editing-audio.md).

@@ -8,7 +8,7 @@ through the layers.
 
 You may find Clip Layer effects to be most useful for things like
 applying clip based volume automation, conversion to mono, and
-normalizing. However, those are just a few example of Clip Layer effects
+normalising. However, those are just a few example of Clip Layer effects
 capabilities.
 
 
@@ -17,8 +17,8 @@ capabilities.
 *Example Clip Layers*
 
 To use Clip Layer effects, click the FX button in the header of any
-Audio clip (or right-click the clip) and choose *Add clip effect*. The
-same menu also has *Remove all clip effects* and *Show clip effects*.
+Audio clip (or right-click the clip) and choose **Add clip effect**. The
+same menu also has **Remove all clip effects** and **Show clip effects**.
 
 
 ![](images/41----02.png)
@@ -44,10 +44,10 @@ available options.
 
 - **Add** (+): Adds a new layer directly below this one, from the same
   list of effects.
-- **Move** (menu icon): The *Move before* and *Move after* submenus list
+- **Move** (menu icon): The **Move before** and **Move after** submenus list
   the layers by number and type, and plugin layers also show the plugin's
   name. Pick a layer to move this one before or after it.
-- **Remove** (-): Opens a menu with *Remove effect*, which deletes the
+- **Remove** (-): Opens a menu with **Remove effect**, which deletes the
   layer.
 - **Settings** (gear): Shows the layer's settings. Only layers that have
   settings show it.
@@ -56,7 +56,7 @@ Plugin layers also have an **A** button. It lists the plugin's
 parameters so you can pick which one the layer's curve shows and edits;
 parameters that already have a curve are coloured.
 
-> 📝 **Note:** Clip Layer effects don't work in the Clip Launcher. When
+> 📝 **Note:** Clip Layer effects don't work in the clip launcher. When
 you drag a clip with effects into a launcher slot, Waveform removes its
 clip effects and tells you so.
 
@@ -72,7 +72,7 @@ when it comes to automating volume.
 *Volume Clip Layer*
 
 When you click the "gear" icon for a volume layer, you will see the
-*Volume & Pan* control values in the Actions panel.
+Volume & Pan control values in the Actions panel.
 
 
 ![](images/41----05b.png)
@@ -99,7 +99,7 @@ fade out.
 
 *Fade In/Out*
 
-> 💡 **Tip:** Right click a fade handle to set the fade shape.
+> 💡 **Tip:** Right-click a fade handle to set the fade shape.
 
 ## Volume - Step
 
@@ -159,8 +159,8 @@ Right-click the fade handle to choose the shape for the curve.
 
 ## Time/Pitch - Warp Time
 
-You can enable *Warp Time* on the clip itself (from the Actions panel or
-the [Detail editor](detail-editor.md)), or add a warp time Clip Layer.
+You can enable **Warp Time** on the clip itself (from the Actions panel or
+the [Detail Editor](detail-editor.md)), or add a warp time Clip Layer.
 
 The header area of the Clip Layer will appears shaded. Click anywhere in
 the shaded area to add a warp marker.
@@ -208,17 +208,16 @@ Layers:
 
 1.  Click the gear icon at the right to open the plugin UI. When you
     tweak parameters, a few second later the change is rendered in.
+2.  Click the **A** at the top right to show automation curves. Any exposed
+    automation parameter can be selected which makes its curves visible.
+    Use all your standard automation editing tools to draw in
+    appropriate automation.
 
 > 📝 **Note:** Because of the way rendering works, it is a bit hard to
 audition changes to plugin parameters. You may find plugin Clip Layers
 are best for applying known presets. If you want to do a lot of real
 time tweaking, then you will probably be better off to use a Clip effect
 or normal track plugin.
-
-1.  Click the A at the top right to show automation curves. Any exposed
-    automation parameter can be selected which makes its curves visible.
-    Use all your standard automation editing tools to draw in
-    appropriate automation.
 
 ## Effects - Reverse Clip Layer
 
@@ -243,7 +242,7 @@ To use it, first add a Normalise layer.
 
 *Normalise Layer*
 
-Then set *Peak level* (-60 to 0 dB) to keep peaks where you want. In
+Then set **Peak level** (-60 to 0 dB) to keep peaks where you want. In
 voiceover work, many customers request the audio to be normalised to
 -3 dB.
 
@@ -264,22 +263,22 @@ First add a mono Clip Layer:
 
 *Mono Layer*
 
-Then set *Method* to choose how to render to mono from stereo: *Use
-average of all channels*, *Use left channel only* or *Use right channel
-only*.
+Then set **Method** to choose how to render to mono from stereo: **Use
+average of all channels**, **Use left channel only** or **Use right channel
+only**.
 
 
 ![](images/41----14b.png)
 
 *Mono Options*
 
-> 📝 **Note:** Most of the time you will probably select *Use average of
-all channels*. This mixes the left and right channels to to create a mono
+> 📝 **Note:** Most of the time you will probably select **Use average of
+all channels**. This mixes the left and right channels to create a mono
 version.
 
 ## Mastering - Phase Invert Layer
 
-The phase invert Clip layer is pretty straightforward. It flips the
+The phase invert Clip Layer is pretty straightforward. It flips the
 polarity of the wave.
 
 
@@ -293,9 +292,3 @@ We think you will enjoy exploring and working with Clip Layers. It is
 really only from experimenting with this approach that you will
 understand how it works. There are likely many new editing workflows
 that have yet to be discovered, that leverage the power of Clip Layers.
-
-
-
-
-
-

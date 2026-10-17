@@ -1,8 +1,9 @@
-# 4OSC Synthesizer
+# 4OSC Synthesiser { #4osc-synthesizer }
 
-4OSC is Waveform's built-in four-oscillator subtractive synthesizer. It gives you everything you need to build sounds from scratch: four oscillators with unison, a multi-mode filter, amplitude and filter envelopes, two modulation envelopes, two LFOs, and a chain of built-in effects. If you need a quick synth sound without reaching for a third-party plugin, this is where to start.
+4OSC is Waveform's built-in four-oscillator subtractive synthesiser. It gives you everything you need to build sounds from scratch: four oscillators with unison, a multi-mode filter, amplitude and filter envelopes, two modulation envelopes, two LFOs, and a chain of built-in effects. If you need a quick synth sound without reaching for a third-party plugin, this is where to start.
 
 ![](images/Instruments/4OSC@2x.png)
+
 *4OSC with oscillators 1 and 2, the LP filter and its envelope, LFO 1 and the Reverb settings.*
 
 ## Oscillators
@@ -17,7 +18,7 @@
 
 ### Per-Oscillator Controls
 
-**PW** (Pulse Width): Adjusts the pulse width of the Square waveform. Only active when the oscillator is set to Square. Moving this away from center creates increasingly asymmetric square waves with a thinner, more nasal character. (Default: 50%)
+**PW** (Pulse Width): Adjusts the pulse width of the Square waveform. Only active when the oscillator is set to Square. Moving this away from centre creates increasingly asymmetric square waves with a thinner, more nasal character. (Default: 50%)
 
 **Tune**: Coarse pitch tuning in semitones, from -36 to +36. Use this to set octave intervals between oscillators or create chord-like stacks. (Default: 0 st)
 
@@ -25,7 +26,7 @@
 
 **Level**: The volume of this oscillator in decibels, from -100 dB to 0 dB. (Default: 0 dB)
 
-**Pan**: Stereo position of the oscillator, from full left to full right. Panning oscillators apart creates a wider stereo image. (Default: center)
+**Pan**: Stereo position of the oscillator, from full left to full right. Panning oscillators apart creates a wider stereo image. (Default: centre)
 
 ### Unison
 
@@ -33,9 +34,9 @@ Each oscillator can stack up to eight voices for a thick, detuned "supersaw" or 
 
 **Unison**: The number of stacked voices, from 1 to 8. Higher values create a denser, more chorus-like sound at the cost of CPU. (Default: 1)
 
-**Detune**: How far apart the unison voices are detuned from each other. Small values give subtle richness; large values sound more like a detuned chorus. Only active when Unison is greater than 1. (Default: 0%)
+**Detune**: How far apart the unison voices are detuned from each other. Small values give subtle richness; large values sound more like a detuned chorus. Only active when **Unison** is greater than 1. (Default: 0%)
 
-**Spread**: The stereo spread of the unison voices, from -100% to +100%. At higher values, voices are panned further apart across the stereo field. Only active when Unison is greater than 1. (Default: 0%)
+**Spread**: The stereo spread of the unison voices, from -100% to +100%. At higher values, voices are panned further apart across the stereo field. Only active when **Unison** is greater than 1. (Default: 0%)
 
 > 💡 **Tip:** For a classic supersaw lead, set one oscillator to Saw with 5-7 unison voices, a small amount of detune, and spread around 50-70%.
 
@@ -57,7 +58,7 @@ The filter section sits in the middle of the plugin. Select a filter type from t
 
 ### Filter Envelope
 
-The filter has its own dedicated ADSR envelope, shown both as knobs (A, D, S, R) and as a draggable visual graph. This envelope only takes effect when Env Amt is set to a non-zero value.
+The filter has its own dedicated ADSR envelope, shown both as knobs (A, D, S, R) and as a draggable visual graph. This envelope only takes effect when **Env Amt** is set to a non-zero value.
 
 - **A** (Attack): Time for the filter to sweep from initial cutoff to peak, from 0 to 60 seconds. (Default: 100 ms)
 - **D** (Decay): Time for the filter to fall from peak to sustain level, from 0 to 60 seconds. (Default: 100 ms)
@@ -79,13 +80,13 @@ The amp envelope controls the volume shape of each note. Select the **A** tab (t
 
 **Velocity**: How much MIDI velocity affects the note volume, from 0% to 100%. At 0%, every note plays at the same volume regardless of how hard you play. At 100%, soft notes are much quieter than hard ones. (Default: 100%)
 
-**Analog**: When enabled, the envelope uses an exponential (analog-style) curve rather than a linear one. This generally sounds more natural and musical. (Default: On)
+**Analog**: When enabled, the envelope uses an exponential (analogue-style) curve rather than a linear one. This generally sounds more natural and musical. (Default: On)
 
 > 💡 **Tip:** Keeping Analog on suits most sounds. Linear envelopes can sound stiff in comparison.
 
 ## Modulation Envelopes
 
-4OSC includes two independent modulation envelopes, labeled **1** and **2** in the modulation header. These are additional ADSR envelopes that don't directly control anything on their own. Instead, you assign them as modulation sources in the modulation matrix to control any knob parameter.
+4OSC includes two independent modulation envelopes, labelled **1** and **2** in the modulation header. These are additional ADSR envelopes that don't directly control anything on their own. Instead, you assign them as modulation sources in the modulation matrix to control any knob parameter.
 
 Each modulation envelope has the same four controls:
 
@@ -96,13 +97,13 @@ Each modulation envelope has the same four controls:
 
 ## LFOs
 
-Two LFOs are available, labeled with wave icons (**1** and **2**) in the modulation header. Like the modulation envelopes, LFOs are used as modulation sources to add movement and animation to your sound.
+Two LFOs are available, labelled with wave icons (**1** and **2**) in the modulation header. Like the modulation envelopes, LFOs are used as modulation sources to add movement and animation to your sound.
 
 **Wave**: The LFO waveform: None, Sine, Triangle, Saw Up, Saw Down, Square, or Sample & Hold. Sample & Hold produces random stepped values, which is great for glitchy or retro-style effects. (Default: LFO 1 is Sine, LFO 2 is None)
 
 **Depth**: The intensity of the LFO, from 0% to 100%. This sets how far the LFO swings the modulated parameter. (Default: 100%)
 
-**Sync**: When enabled, the LFO rate locks to the project tempo instead of running freely. This switches the Rate control from a free-running Hz knob to a beat-division selector. (Default: Off)
+**Sync**: When enabled, the LFO rate locks to the Edit tempo instead of running freely. This switches the **Rate** control from a free-running Hz knob to a beat-division selector. (Default: Off)
 
 **Rate** (free-running): The LFO speed in Hz, from 0 to 500 Hz. (Default: 1 Hz)
 
@@ -142,7 +143,7 @@ Right-click on a modulated knob while in assignment mode to see a list of its ac
 
 ## Effects
 
-The effects section is on the right side of the bottom panel. Four built-in effects are available, each with a checkbox to enable or disable it: **Dist** (Distortion), **Chorus**, **Delay**, and **Reverb**. Click the **Global** tab to access voice and level settings. Effects are applied in this order: Distortion, Chorus, Delay, Reverb.
+The effects section is on the right side of the plugin's bottom section. Four built-in effects are available, each with a checkbox to enable or disable it: **Dist** (Distortion), **Chorus**, **Delay**, and **Reverb**. Click the **Global** tab to access voice and level settings. Effects are applied in this order: Distortion, Chorus, Delay, Reverb.
 
 ### Distortion
 
@@ -166,7 +167,7 @@ A stereo chorus effect that thickens and widens the sound.
 
 A tempo-synced stereo delay with crossfeed between left and right channels.
 
-**Delay**: The delay time as a beat division, from 8 beats down to 1/32 beat. This syncs to your project tempo automatically. (Default: 1 beat)
+**Delay**: The delay time as a beat division, from 8 beats down to 1/32 beat. This syncs to the Edit tempo automatically. (Default: 1 beat)
 
 **Feedback**: How much of the delayed signal is fed back into the delay line, in dB from -100 to 0 dB. Higher values (closer to 0 dB) create more repeats. (Default: -10 dB)
 
@@ -192,22 +193,22 @@ A built-in reverb for adding space to the sound.
 
 Click **Global** in the effects header to access the master voice and output settings.
 
-**Mode**: The voice mode for the synthesizer:
+**Mode**: The voice mode for the synthesiser:
 - **Mono**: One voice at a time. New notes cut off the previous note immediately.
 - **Legato**: One voice at a time, but overlapping notes glide smoothly instead of retriggering the envelopes.
 - **Poly**: Multiple simultaneous voices.
 
 (Default: Poly)
 
-**Legato**: The glide time in milliseconds when in Legato mode, from 0 to 500 ms. Only active when Mode is set to Legato. (Default: 0 ms)
+**Legato**: The glide time in milliseconds when in Legato mode, from 0 to 500 ms. Only active when **Mode** is set to Legato. (Default: 0 ms)
 
-**Level**: Master output level in dB, from -100 dB to 0 dB. Use this to match the 4OSC's output volume with other instruments in your project. (Default: 0 dB)
+**Level**: Master output level in dB, from -100 dB to 0 dB. Use this to match the 4OSC's output volume with other instruments in your Edit. (Default: 0 dB)
 
 **Voices**: The maximum number of simultaneous voices in Poly mode, from 1 to 32. Lower values save CPU but may cause notes to be stolen when you play dense chords. (Default: 32)
 
 ## Presets
 
-4OSC ships with a library of factory presets. The preset selector sits just below the plugin's title bar. Click the left and right arrows to step through presets, or click the preset name for the preset menu: pick a preset, or use **Save**, **Save as...**, **Delete** or **Reset to default**. Reset to default returns the synth to its starting state.
+4OSC ships with a library of factory presets. The preset selector sits just below the plugin's title bar. Click the left and right arrows to step through presets, or click the preset name for the preset menu: pick a preset, or use **Save**, **Save as...**, **Delete** or **Reset to default**. **Reset to default** returns the synth to its starting state.
 
 ## MPE Support
 
@@ -215,14 +216,14 @@ Click **Global** in the effects header to access the master voice and output set
 
 ## ⚡ Things to Watch Out For
 
-- **Filter Resonance at high values.** Resonance above 80-90% can produce very loud, piercing peaks. Turn down the master Level or your monitoring volume before experimenting with extreme resonance settings.
+- **Filter Resonance at high values.** Resonance above 80-90% can produce very loud, piercing peaks. Turn down the master **Level** or your monitoring volume before experimenting with extreme resonance settings.
 
-- **Unison voice count and CPU.** Each oscillator can have up to 8 unison voices, and you have four oscillators. Running all four at max unison in Poly mode with 32 voices means the synth could be rendering over 1,000 oscillator voices simultaneously. If you hear crackling or audio dropouts, reduce the Unison count or the Voices setting.
+- **Unison voice count and CPU.** Each oscillator can have up to 8 unison voices, and you have four oscillators. Running all four at max unison in Poly mode with 32 voices means the synth could be rendering over 1,000 oscillator voices simultaneously. If you hear crackling or audio dropouts, reduce the **Unison** count or the **Voices** setting.
 
-- **Delay time is tempo-synced only.** The delay effect always locks to your project tempo. If you need a free-running delay with a specific time in milliseconds, use a separate delay plugin on the track instead.
+- **Delay time is tempo-synced only.** The delay effect always locks to the Edit tempo. If you need a free-running delay with a specific time in milliseconds, use a separate delay plugin on the track instead.
 
 - **Effects are post-voice.** Distortion, Chorus, Delay, and Reverb are applied after all voices are mixed together. You cannot process individual voices through separate effect settings.
 
 ## Moving On
 
-4OSC covers bread-and-butter sounds like basses, pads, leads, and plucks. When you are ready for wavetables, samples, or more advanced modulation, check out [Wavetable Synthesizer](wavetable.md) and [Samplers and Instruments](samplers-and-instruments.md).
+4OSC covers bread-and-butter sounds like basses, pads, leads, and plucks. When you are ready for wavetables, samples, or more advanced modulation, check out [Wavetable Synthesiser](wavetable.md) and [Samplers and Instruments](samplers-and-instruments.md).

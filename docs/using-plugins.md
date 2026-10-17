@@ -1,80 +1,76 @@
 # Using Plugins
 
-In this chapter, we will show you how to apply effects plugins using the
-In-line mixer or the separate mixer window.
+Effects plugins go on a track's plugin chain, which you can work with in
+the inline mixer or in the separate Mixer.
 
-> 📝 **Note:** Scanning plugins and setting up a favorites plugin list are
-done on the Settings tab, Plugins page. Check the reference section
+> 📝 **Note:** Scanning plugins and setting up a favourites plugin list are
+done in *Settings > Plugins*. Check the reference section
 [Reference: Settings > Plugins](reference-settings.md#plugins-page) to learn more about that.
 
-## The In-line Mixer
+## The Inline Mixer
 
-The In-line mixer section resides along the right side of the Edit, and
+The inline mixer resides along the right side of the Edit, and
 completes the left-to-right signal flow on each track. You can open and
-close the Mixer using the open/close icon at the upper right, or also
-using keyboard shortcut V.
-
+close the inline mixer using the open/close icon at the upper right, or also
+using keyboard shortcut **V**.
 
 ![](images/29----01.png)
 
-*Button to Open Close the In-line mixer (V)*
+*Button to Open or Close the Inline Mixer (V)*
 
-Whenever you create a new track, it will automatically have a *Volume &
-Pan* plugin and a *Level Meter* plugin inserted. These behave just like
+Whenever you create a new track, it will automatically have a Volume &
+Pan plugin and a Level Meter plugin inserted. These behave just like
 any other plugin. You can change the order, remove them, or even add
 additional instances of them on the same track.
 
-
 ![](images/29----02.png)
 
-*Default Plugins *Volume & Pan* and *Level Meter**
+*Default Plugins Volume & Pan and Level Meter*
 
 For example, you might want a level meter before and after a compressor.
 Of course, you can add other plugins, both built-in and third party to
-the Mixer section.
-
+the inline mixer.
 
 ![](images/29----03.png)
 
 *Level Meter Before and After a 3rd Party Compressor*
 
-> 💡 **Tip:** Each Mixer channel is stereo. If the track contains mono clips,
+> 💡 **Tip:** Each inline mixer channel is stereo. If the track contains mono clips,
 you will still typically want to choose stereo versions of plugins for
-the Mixer, as mono plugins will only effect the left side of the signal.
+the inline mixer, as mono plugins will only affect the left side of the signal.
 
-## Adjusting the Size of the In-line Mixer Section
+## Adjusting the Size of the Inline Mixer
 
-Try moving the mouse pointer from the arrangement slowly to the Mixer
-section. As your pointer crosses over from the arrangement to the Mixer,
+Try moving the mouse pointer from the arrangement slowly to the inline
+mixer. As your pointer crosses over from the arrangement to the inline mixer,
 notice the vertical highlight line.
-
 
 ![](images/29----05.png)
 
-*Resizing the Mixer*
+*Resizing the Inline Mixer*
 
-Drag the highlight line to the left to expand the Mixer section. If you
-drag it right, then you can make the Mixer section smaller. All of the
-plugins on the Mixer are dynamically resized.
+Drag the highlight line to the left to expand the inline mixer. If you
+drag it right, then you can make the inline mixer smaller. All of the
+plugins in the inline mixer are dynamically resized.
 
 > 💡 **Tip:** If you accidentally delete, change, or move a plugin, or simply
-change your mind, click *Undo* on the Menu (Ctrl + Z / Cmd + Z) to
+change your mind, choose *Edit > Undo* from the main menu (Cmd + Z / Ctrl + Z) to
 restore it.
 
 ## Working with Plugins
 
-You can fully customize the mixer for each track by inserting a chain of
+You can fully customise the inline mixer for each track by inserting a chain of
 plugins. This is one of the most compelling features of Waveform, as
 there is no need to switch between a horizontal track view and a
 vertical console view.
 
-Here are the essentials for working with plugins in the Mixer:
+The sections below cover the essentials for working with plugins in the inline mixer.
 
-Inserting Plugins
-- To insert additional Waveform plugins or third-party plugins, drag
-    the Plugin Object to a track and then select the plugin that you
-    would like from the list.
+### Inserting Plugins
 
+To insert additional Waveform plugins or third-party plugins, drag the
+Plugin Object to a track and then select the plugin that you would like
+from the list.
 
 ![](images/29----15.png)
 
@@ -83,73 +79,77 @@ Inserting Plugins
 For third-party plugins, the UI window will pop up. Apart from the core
 built-in plugins, each has its own graphical user interface.
 
-Right-click to Insert
-- Right-click on any existing plugin and select *Add new plugin.* This
-    pulls up the plugin selector menu and you may pick any plugin to
-    add. It will be added to the left of plugin you started from.
+### Right-Click to Insert
+
+Right-click on any existing plugin and select **Add new plugin**. This
+pulls up the plugin selector menu and you may pick any plugin to add. It
+will be added to the left of plugin you started from.
 
 > 📝 **Note:** If you don't see some of your plugins, see
 [Scanning for Plugins](reference-settings.md#scanning-for-plugins) to scan
 your system for all available plugins.
 
-Plugin settings
-- To select a plugin, click on it. When selected, the Actions panel
-    shows a wide variety of settings and actions related to that plugin,
-    and the click also opens the plugin's window.
-- The same pages are also available in the **Plugins** tab of the Detail
-    editor, which lays the whole track's chain out side by side so you
-    can have several plugins' pages open at once. See
-    [The Plugins Detail Editor](plugins-detail-editor.md).
+### Plugin Settings
 
+To select a plugin, click on it. When selected, the Actions panel shows
+a wide variety of settings and actions related to that plugin, and the
+click also opens the plugin's window.
+
+The same pages are also available in the **Plugins** tab of the Detail
+Editor, which lays the whole track's chain out side by side so you can
+have several plugins' pages open at once. See
+[The Plugins Detail Editor](plugins-detail-editor.md).
 
 ![](images/29----04.png)
 
 *Select a Plugin to See its Settings*
 
-Duplicating Plugins
-- To duplicate a plugin, select it and press D. This gives you a new
-    instance of the plugin to drag to a different position or to another
-    track.
+### Duplicating Plugins
 
+To duplicate a plugin, select it and press **D**. This gives you a new
+instance of the plugin to drag to a different position or to another
+track.
 
 ![](images/29----16.png)
 
 *Duplicate Plugins by Pressing D*
 
-Deleting Plugins
-- To delete a plugin, select the plugin and hit Delete or
-    Backspace. You may alternatively use **Delete this plugin** in the
-    Actions panel.
+### Deleting Plugins
 
-Moving Plugins
-- To move a plugin from one track to another track, grab the
-    plugin and drag it wherever you would like to put it, even to a
-    different track. As you drag, a red insert illumination will appear
-    showing where the plugin will be after you drop it.
+To delete a plugin, select the plugin and hit **Delete** or
+**Backspace**. You may alternatively use **Delete this plugin** in the
+Actions panel.
 
+### Moving Plugins
+
+To move a plugin from one track to another track, grab the plugin and
+drag it wherever you would like to put it, even to a different track.
+As you drag, a red insert illumination will appear showing where the
+plugin will be after you drop it.
 
 ![](images/29----17.png)
 
 *Moving a Plugin*
 
-Copying Plugins
-- To copy a plugin, hold down Opt / Alt and drag it to where you want
-    the copy. Alternatively, press D to duplicated it then drag the
-    duplicate to the target location.
+### Copying Plugins
 
-Bypassing a Plugin
-- To bypass a plugin, select the plugin then turn off **Enabled** in
-    the Actions panel. Or, select the plugin and press the keyboard
-    shortcut F. A bypassed plugin appears with a red X through it on the
-    Mixer.
+To copy a plugin, hold down Opt / Alt and drag it to where you want the
+copy. Alternatively, press **D** to duplicate it, then drag the duplicate
+to the target location.
 
+### Bypassing a Plugin
+
+To bypass a plugin, select the plugin then turn off **Enabled** in the
+Actions panel. Or, select the plugin and press the keyboard shortcut
+**F**. A bypassed plugin appears with a red X through it in the inline
+mixer.
 
 ![](images/29----18.png)
 
 *A Bypassed Plugin*
 
 > 💡 **Tip:** You can bypass several plugins at once, by first selecting them
-and then pressing F.
+and then pressing **F**.
 
 ## Plugin Presets
 
@@ -182,14 +182,12 @@ This allows you immediate access to tweak one parameter without mousing
 over to the Actions panel or opening the UI for the plugin. For example, the
 mix control of a delay plugin makes a handy quick control.
 
-
 ![](images/29----06.png)
 
 *Delay Mix Set as a Quick Control Parameter*
 
 To set up a quick control parameter, right-click the plugin and choose
-*Set quick control parameter.* Next, choose which parameter to use.
-
+**Set quick control parameter**. Next, choose which parameter to use.
 
 ![](images/29----07.png)
 
@@ -204,17 +202,15 @@ Third-party plugins are inserted in the same way as built-in plugins.
 One difference is that each one has its own UI (user interface) window,
 designed by its developer.
 
-
 ![](images/29----08.png)
 
 *Sonimus SonEQ, an Example 3rd Party Plugin*
 
-To open the UI for a third-party plugin, click the plugin in the Mixer.
+To open the UI for a third-party plugin, click the plugin in the inline mixer.
 
 > 📝 **Note:** To open plugin windows with a double-click instead, change **Open plugin windows
-by** under Plugin Windows on the Settings > General page. (Default:
+by** under Plugin Windows on the *Settings > General* page. (Default:
 Single-clicking)
-
 
 ![](images/29----09.png)
 
@@ -222,21 +218,21 @@ Single-clicking)
 
 ## Cmajor Patches
 
-Waveform can host *Cmajor* patches: audio effects and instruments written in
+Waveform can host Cmajor patches: audio effects and instruments written in
 the Cmajor language and distributed as `.cmajorpatch` bundles. Patches are
 compiled on the fly when they load, so they run as native plugins inside your
 Edit and insert exactly like any other plugin.
 
 To use them, first tell Waveform where to find your patches: open *Settings >
-File Locations* and add a folder under *Directories to search for Cmajor
-patches*. Scan for plugins, and the patches will then appear in the plugin
-selector under the *Cmajor* format. If a patch contains an error, the message
-is shown on the plugin slot so you can fix it. A built-in *Pro54* example synth
+File Locations* and add a folder under **Directories to search for Cmajor
+patches**. Scan for plugins, and the patches will then appear in the plugin
+selector under the Cmajor format. If a patch contains an error, the message
+is shown on the plugin slot so you can fix it. A built-in Pro54 example synth
 is installed automatically the first time you run Waveform.
 
 > 📝 **Note:** Cmajor support is available on Apple Silicon macOS and Windows. It
 is not available on Linux or on Intel-only Macs. There is no edition restriction
-for hosting patches. Having the AI assistant build patches for you
+for hosting patches. Having the AI Assistant build patches for you
 <span class="pro">PRO</span> needs Waveform Pro; see
 [Building Cmajor plugins](ai-assistant.md#building-cmajor-plugins).
 
@@ -246,24 +242,22 @@ The Waveform Browser includes a Search tab. This allows you to search
 for plugins. When you find one you want to use, drag it to your Edit.
 Here are the steps:
 
-1.  Open the Browser and click the Search tab
-2.  Type in a few characters of the name of the plugin
+1.  Open the Browser and click the Search tab.
+2.  Type in a few characters of the name of the plugin.
 3.  From the search results, drag the plugin from the Browser to the
-    Mixer.
-
+    inline mixer.
 
 ![](images/29----10.png)
 
-*Searching for Plugins Using the Browser, Search tab*
+*Searching for Plugins in the Search Tab of the Browser*
 
 The search uses an index that includes plugin names, tags, and
 manufacturer. To set tags, see
 [Tagging Plugins](reference-settings.md#tagging-plugins).
 
-> 💡 **Tip:** It often helps to disable the options for *Loops* and *Presets*
+> 💡 **Tip:** It often helps to disable the options for **Loops** and **Presets**
 when searching for a specific plugin. This gives you more targeted
 results.
-
 
 ![](images/29----11.png)
 
@@ -271,17 +265,16 @@ results.
 
 ## Using Master Plugins
 
-To apply processing to the full stereo mix, add plugins to the master
+To apply processing to the full stereo mix, add plugins to the Master
 track or to the master plugin box in the transport bar. When the box is
 empty it shows a power icon; drag plugins into it to add them to the
 master output plugin chain. It holds up to four plugins.
 
-The master track shows the same master plugin chain as a track in the
-arrangement. To show it, click **Master** in the *Eye* panel selector at
-the upper right, or choose **View > Global tracks > Show or hide Master
-track**. Plugins you add there and in the transport box are the same
+The Master track shows the same master plugin chain as a track in the
+arrangement. To show it, click the eye button at the upper right
+and choose **Master**, or choose *View > Global tracks > Show or hide Master
+track*. Plugins you add there and in the transport box are the same
 plugins.
-
 
 ![](images/29----12.png)
 
@@ -292,15 +285,13 @@ the master. Another great option is Waveform's own Master Mix plugin
 (Waveform Pro and OEM), which combines all of those functions in to one package expressly
 designed for use on a full mix.
 
-
 ![](images/29----13@2x.png)
 
 *Master Mix inserted on the master*
 
 > 💡 **Tip:** You can click an empty part of the master plugin box then
-choose *Add new plugin* to open the plugin selector menu. You may find
+choose **Add new plugin** to open the plugin selector menu. You may find
 this a bit faster than dragging the plugin object down there!
-
 
 ![](images/29----14.png)
 
@@ -312,7 +303,6 @@ Plugins that support a sidechain input have a sidechain assignment list
 at the upper left in the plugin header. Pick which track you want
 to route to the sidechain.
 
-
 ![](images/38----51.png)
 
 *Selecting a Sidechain Input*
@@ -321,11 +311,4 @@ In the above example, we have routed the kick track to the sidechain
 input of a gate on the bass track. It's a common trick to lock the bass
 to the kick.
 
-**Video Clip:** Here is a [video tutorial](https://youtu.be/PEan2nhPCOA)
-demonstrating how to use the plugin sidechain feature.
-
-
-
-
-
-
+> 🎥 [Plugin Sidechain Video Tutorial](https://youtu.be/PEan2nhPCOA)

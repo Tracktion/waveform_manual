@@ -15,36 +15,34 @@ thumbnail and fade handles.
 
 *Main Parts of and Audio Clip*
 
-Header
-- Move Audio clips by dragging from the header. The header includes
-    the trim handles (hollow), slip handles (solid), and other tools.
+**Header**: Move Audio clips by dragging from the header. The header
+includes the trim handles (hollow), slip handles (solid), and other
+tools.
 
 
 ![](images/12----02.png)
 
 *Audio Clip Header*
 
-Body
-- The Audio clip body features the waveform thumbnail, fade handles,
-    and the clip name.
+**Body**: The Audio clip body features the waveform thumbnail, fade
+handles, and the clip name.
 
 
 ![](images/12----03.png)
 
 *Audio Clip Body*
 
-Plugins
-- Audio clips can host plugins directly, so you might see one or more
-    plugins right on the clip body. Learn more about that in [Clip Effects](clip-effects.md).
+**Plugins**: Audio clips can host plugins directly, so you might see one
+or more plugins right on the clip body. Learn more about that in
+[Clip Effects](clip-effects.md).
 
 
 ![](images/12----04.png)
 
 *Audio Clip Effects*
 
-Properties
-- Like most other objects in Waveform, Audio clips have lots of
-    additional properties and controls in the Actions panel.
+**Properties**: Like most other objects in Waveform, Audio clips have
+lots of additional properties and controls in the Actions panel.
 
 
 ![](images/12----05.png)
@@ -52,13 +50,13 @@ Properties
 *Audio Clip properties*
 
 > 📝 **Note:** If you accidentally move or edit an Audio clip, you can always
-press *Undo* (Cmd + Z / Ctrl + Z).
+press **Undo** (Cmd + Z / Ctrl + Z).
 
 ## Moving Clips
 
 As you move the mouse pointer over the Audio clip header, it changes to
 a grabbing hand. Use that to drag the clip forward or backward in time.
-If *Snap* is on, the beginning of the clip will snap by grid increments.
+If **Snap** is on, the beginning of the clip will snap by grid increments.
 
 
 ![](images/12----06.png)
@@ -83,12 +81,12 @@ Arrow or Down Arrow to nudge it to another track.
 The easiest way to delete a clip is to selected it and press Delete or
 Backspace. The cut (Cmd + X / Ctrl + X) keyboard action does the same
 thing. If you need yet another way to delete, locate and click the
-convenient *Delete* button in the Actions panel.
+convenient **Delete** button in the Actions panel.
 
 
 ![](images/12----07.png)
 
-*Audio Clip properties *Delete* button*
+*Audio Clip Properties Delete Button*
 
 > 💡 **Tip:** As you work with clips sometimes you just want clear the
 selection. The fastest way is to just hit Esc.
@@ -99,13 +97,12 @@ Each Audio clip header includes six handles that you use for trimming,
 slipping, stretching. These are represented as four arrows and two
 boxes.
 
-Trimming
-- Hollow left and right arrows on both of the upper corners of the
-    clip are trim handles. Grab a trim handle and drag left or right to
-    trim the start or end of the the clip. Notice that trimming this way
-    directly changes the *Start* and *End* values in the Actions panel. With
-    *Snap* turned on, trimming snaps to the grid. To trim freely, hold
-    down Cmd / Ctrl as you drag or turn *Snap* off.
+**Trimming**: Hollow left and right arrows on both of the upper corners
+of the clip are trim handles. Grab a trim handle and drag left or right
+to trim the start or end of the clip. Notice that trimming this way
+directly changes the **Start** and **End** values in the Actions panel.
+With **Snap** turned on, trimming snaps to the grid. To trim freely,
+hold down Cmd / Ctrl as you drag or turn **Snap** off.
 
 
 ![](images/12----08.png)
@@ -113,34 +110,32 @@ Trimming
 *Audio Clip Trim Handles*
 
 > 💡 **Tip:** To hear the audio under the mouse while you trim, turn on
-*Options > Audible trimming* in the menu bar. (Default: off)
+*Options > Audible trimming* in the main menu. (Default: off)
 
-Slip Editing
-- Slip editing means moving the waveform within the clip without
-    altering its *Start*, *Length*, or *End* values. Drag the solid box
-    shaped handle left or right to slip edit. You can override
-    snap-to-grid during slip editing by holding down Cmd / Ctrl.
+**Slip editing**: Slip editing means moving the waveform within the clip
+without altering its **Start**, **Length**, or **End** values. Drag the
+solid box shaped handle left or right to slip edit. You can override
+snap-to-grid during slip editing by holding down Cmd / Ctrl.
 
 
 ![](images/12----09.png)
 
 *Audio Clip Slip Handle*
 
-Reframing
-- The hollow box shaped handle allows reframing the clip. Drag it left
-    or right and the clip moves but the waveform doesn't. It essentially
-    allows you to reframe the audio without affecting its timing.
+**Reframing**: The hollow box shaped handle allows reframing the clip.
+Drag it left or right and the clip moves but the waveform doesn't. It
+essentially allows you to reframe the audio without affecting its
+timing.
 
-Slip Trimming
-- The solid left and right arrow handles are for slip trimming. Try
-    dragging the left solid arrow. Notice that it moves the clip *Start*
-    while keeping the *End* planted. Now try the right solid arrow.
-    Moving that one, moves the *End* while keeping the the *Start*
-    planted. Although this operation seems similar to trimming, the
-    difference is that the underlying waveform slips relative to the end
-    that is not moving.
+**Slip trimming**: The solid left and right arrow handles are for slip
+trimming. Try dragging the left solid arrow. Notice that it moves the
+clip **Start** while keeping the **End** planted. Now try the right
+solid arrow. Moving that one moves the **End** while keeping the
+**Start** planted. Although this operation seems similar to trimming,
+the difference is that the underlying waveform slips relative to the end
+that is not moving.
 
-> 💡 **Tip:** With *Snap* on, hold down Cmd / Ctrl as you drag to temporarily
+> 💡 **Tip:** With **Snap** on, hold down Cmd / Ctrl as you drag to temporarily
 override snapping for most editing operations.
 
 **Video Clip:** [Basic Audio
@@ -164,10 +159,10 @@ quickest way:
 the left mouse button as you drag the cursor and press slash (/) - never
 lifting the mouse button.
 
-Audio clip properties also include *Split Clips* actions. Find the
-*Split Clips* button in the Actions panel. You will find
-options to slip at the cursor along with options to split at the
-in-marker or out-marker. Keep in mind that these actions will only
+Audio clip properties also include **Split Clips** actions. Find the
+**Split Clips** button in the Actions panel. You will find options to
+split at the cursor along with options to split at the In marker or Out
+marker. Keep in mind that these actions will only
 affect selected clips.
 
 
@@ -182,8 +177,8 @@ copy the clip and paste it right after the original clip. Duplicate
 works like copy and paste, all in one action.
 
 > 💡 **Tip:** If you want to use a different key for the duplicate action,
-you can change it in *Settings tab > Keyboard Shortcuts > Editing
-Functions: Duplicate*.
+you can change it in *Settings > Keyboard Shortcuts* (the **Duplicate**
+command in the **Editing** group).
 
 ## Fade-in/Fade-out
 
@@ -198,7 +193,7 @@ fade handle and pull it inward. This action draws a fade-in or fade-out.
 
 By default, you will get a linear fade, but there are other fade types
 available in the Actions panel for the clip. For more control, directly
-edit the *Fade In* and *Fade Out* numerical values in the Actions panel.
+edit the **Fade In** and **Fade Out** numerical values in the Actions panel.
 
 
 ![](images/12----13.png)
@@ -224,7 +219,7 @@ Tutorial](https://w-edstrom.wistia.com/medias/o2ff37pknl)
 
 ## Crossfades
 
-A crossfade is fading out one Audio Clip while fading in another.
+A crossfade is fading out one Audio clip while fading in another.
 Here are the steps to create a crossfade:
 
 1.  Drag a clip so that it it overlaps another one somewhat.
@@ -236,8 +231,8 @@ Here are the steps to create a crossfade:
 *Crossfaded Audio Clips*
 
 That's it: a crossfade. It's a fade-out that overlaps the fade-in of the
-next clip. You can also select the overlapping clips and click *Apply
-Crossfade* in the Actions panel. You can adjust the fade shapes using the buttons in the
+next clip. You can also select the overlapping clips and click **Apply
+Crossfade** in the Actions panel. You can adjust the fade shapes using the buttons in the
 Actions panel, just like any other fade.
 
 
@@ -251,9 +246,9 @@ of the crossfade for the fade shape buttons to work.
 
 ## Auto Crossfade
 
-The Settings tab, General page has a setting labeled *Default auto
-crossfade mode*. It has two possible settings: *Disabled* or *Enabled*.
-When set to *Enabled*, the simple act of dragging a clip so that it
+*Settings > General* has a setting labelled **Default auto crossfade
+mode**. It has two possible settings: **Disabled** or **Enabled**.
+When set to **Enabled**, the simple act of dragging a clip so that it
 overlaps another clip will create a crossfade.
 
 
@@ -261,16 +256,16 @@ overlaps another clip will create a crossfade.
 
 *Settings Tab, General page, Default Auto Crossfade Mode*
 
-> 📝 **Note:** In Waveform, *Auto Crossfade* is actually a property of each
+> 📝 **Note:** In Waveform, **Auto Crossfade** is actually a property of each
 Audio clip, which you can toggle in the Actions panel. With it on, moving
 the clip over another one crossfades them automatically. When you change
-*Default auto crossfade mode* it will only take effect for new clips you
+**Default auto crossfade mode** it will only take effect for new clips you
 create or add to the Edit.
 
 ## Edge Fades
 
 When editing, sometimes you need to apply short fades to both edges of
-an Audio Clip to avoid popping. This is especially true if you split a
+an Audio clip to avoid popping. This is especially true if you split a
 clip in the middle of a note. The solution is add as short fade-in and
 fade-out to the clip. Waveform calls those "edge fades."
 
@@ -280,11 +275,11 @@ fade-out to the clip. Waveform calls those "edge fades."
 *Apply Edge Fades*
 
 The good news is that you can instantly add edge fades by clicking
-*Apply Edge Fades* in the Actions panel. This applies 5 ms fades to the
+**Apply Edge Fades** in the Actions panel. This applies 5 ms fades to the
 start and end of all selected clips.
 
 > 💡 **Tip:** To give every new clip a small fade in and out
-automatically, turn on *Create fades on clip edges* in *Settings >
+automatically, turn on **Create fades on clip edges** in *Settings >
 General*. (Default: off)
 
 ## Copy and Paste
@@ -299,49 +294,43 @@ Typical cut, copy, and paste commands also work with with Audio clips:
 
 Adjusting the gain of an Audio clip is great tool for mixing. Split out one phrase, or even one note and tweak the gain level.
 Waveform has not only clip gain but also clip mute and pan - all
-available in the Actions panel. When working with stereo Audio clips, *Pan*
-works as a balance control.
+available in the Actions panel. When working with stereo Audio clips,
+**Pan** works as a balance control.
 
 
 ![](images/12----19.png)
 
 *Audio Clip Gain, Mute, Pan, & Active Channels*
 
-Gain
-- Drag the slider left or right to adjust the Gain value.
-    Alternatively, click the slider and type in a value directly. The
-    gain change is reflected right away in the height of the waveform
-    thumbnail on the clip.
+**Gain**: Drag the slider left or right to adjust the **Gain** value.
+Alternatively, click the slider and type in a value directly. The gain
+change is reflected right away in the height of the waveform thumbnail
+on the clip.
 
-Mute
-- Click the *Mute* icon to silence the clip. The waveform thumbnail
-    will dim to gray.
+**Mute**: Click the **Mute** icon to silence the clip. The waveform
+thumbnail will dim to grey.
 
-Pan (Mono Clips)
-- Drag the *Pan* slider left or right to adjust the stereo placement
-    of the clip. You can also click and type in values directly. Full
-    left is -1.00, centered is 0, and full right is 1.00.
+**Pan** (mono clips): Drag the **Pan** slider left or right to adjust
+the stereo placement of the clip. You can also click and type in values
+directly. Full left is -1.00, centred is 0, and full right is 1.00.
 
-Pan (Stereo Clips)
-- With stereo Audio clips, *Pan* acts as a balance control. What that
-    means is that as you slide it more right the left side gets quieter.
-    Slide it left and the right side gets quieter. At the extreme left
-    and right positions the opposite side is silent. The really cool
-    thing about this is that the waveform thumbnail updates dynamically
-    show to show the effect.
+**Pan** (stereo clips): With stereo Audio clips, **Pan** acts as a
+balance control. What that means is that as you slide it more right the
+left side gets quieter. Slide it left and the right side gets quieter.
+At the extreme left and right positions the opposite side is silent. The
+waveform thumbnail updates dynamically to show the effect.
 
-Active Channels (Stereo Clips)
-- For stereo clips you can turn off either the left or right channels
-    using the *Active Channels* buttons in the Actions panel. When you click
-    *Left*, for example, it toggles the left side off. But it's not just
-    muting the left side, it switches the clip to a mono version of the
-    right side material. The great thing is that the waveform thumbnail
-    updates to show this instantly.
+**Active Channels** (stereo clips): For stereo clips you can turn off
+either the left or right channels using the **Active Channels** buttons
+in the Actions panel. When you click **Left**, for example, it toggles
+the left side off. But it's not just muting the left side, it switches
+the clip to a mono version of the right side material. The waveform
+thumbnail updates to show this instantly.
 
 ## Reversing Audio Clips
 
 Another cool thing you can do is reverse a clip so the audio plays
-backwards. Click the *Reverse* button in the Actions panel. The waveform
+backwards. Click the **Reverse** button in the Actions panel. The waveform
 thumbnail reverses and the sound will be backwards on playback.
 
 
@@ -350,7 +339,7 @@ thumbnail reverses and the sound will be backwards on playback.
 *Reversing an Audio Clip*
 
 > 📝 **Note:** Some arrangement edits aren't offered for clips in the
-[Clip Launcher](clip-launcher.md). Launcher clips play without fades, so
+[clip launcher](clip-launcher.md). Launcher clips play without fades, so
 their Actions panel has no fade, edge fade or crossfade controls, and
 they can't be split, merged or flattened.
 
@@ -359,9 +348,9 @@ they can't be split, merged or flattened.
 Following editing, you may want to combine several clips back into to a
 single clip. To do so, select all the clips using shift select or lasso
 selection. Then choose *Render Clip > Merge the selected clips* in the
-Actions panel. If the clips are on several tracks, *Merge the selected
-clips from each track* merges the clips on each track separately. With a
-single clip selected, the menu offers *Flatten the selected clip*
+Actions panel. If the clips are on several tracks, **Merge the selected
+clips from each track** merges the clips on each track separately. With a
+single clip selected, the menu offers **Flatten the selected clip**
 instead.
 
 
@@ -370,8 +359,8 @@ instead.
 *Render Clip > Merge the selected clips*
 
 In a few moments, Waveform combines them into a single contiguous clip.
-The other ways to render and export are covered in the Rendering and
-Stems chapter.
+The other ways to render and export are covered in
+[Rendering and Stems](rendering-and-stems.md).
 
 
 ![](images/12----22.png)
@@ -389,13 +378,13 @@ You can easily delete a section of audio from one or more clips and
 remove the space between clips. While it's not entirely obvious how to
 do this, it is easy if you follow these steps:
 
-1.  Set the in-marker and out-marker over the section you want to
+1.  Set the In marker and Out marker over the section you want to
     delete.
 2.  Select all the clips on all tracks (Cmd + A / Ctrl + A)
 3.  In the Actions panel, choose *Delete > Delete marked region of
     selected clips, and move up selected clips* (Cmd + L / Ctrl + L).
-    With every clip selected, *Delete marked region of selected clips,
-    and move up all on track* (Cmd + J / Ctrl + J) does the same job.
+    With every clip selected, **Delete marked region of selected clips,
+    and move up all on track** (Cmd + J / Ctrl + J) does the same job.
 
 
 ![](images/12----23@2x.png)
@@ -404,53 +393,50 @@ do this, it is easy if you follow these steps:
 
 ## Editing with ARA
 
-Waveform supports **ARA** (Audio Random Access) plugins for deep,
+Waveform supports ARA (Audio Random Access) plugins for deep,
 non-destructive pitch and time editing directly on a clip. Unlike a
 conventional plugin, an ARA plugin has continuous access to the clip's
 audio, so its edits stay perfectly in sync with Waveform's transport and
 loop as you work.
 
-The most popular ARA plugin is **Celemony Melodyne**, and a **Melodyne
-Essential license is bundled** with Waveform. You will have received
+The most popular ARA plugin is Celemony Melodyne, and a Melodyne
+Essential licence is bundled with Waveform. You will have received
 information on how to install it, along with your Waveform order. The
-workflow below uses Melodyne as the worked example, but **any ARA plugin
-you install** (for example VocAlign, SynthV, or SpectraLayers) appears the
+workflow below uses Melodyne as the worked example, but any ARA plugin
+you install (for example VocAlign, SynthV, or SpectraLayers) appears the
 same way and is invoked by name.
 
-> 📝 **Note:** ARA is available in all editions of Waveform, on **macOS and
-Windows only**. Installed ARA plugins also appear in the **ARA** column of
+> 📝 **Note:** ARA is available in all editions of Waveform, on macOS and
+Windows only. Installed ARA plugins also appear in the **ARA** column of
 *Settings > Plugins*.
 
-### Invoke an ARA plugin
+### Invoke an ARA Plugin
 
 1.  Select an Audio clip.
 
+    ![](images/12----24.png)
 
-![](images/12----24.png)
+    *Change Stretch Property to Melodyne*
 
-*Change *Stretch* Property to *Melodyne**
-
-2.  In the Actions panel change the *Stretch* property to the name of the ARA
+2.  In the Actions panel change the **Stretch** property to the name of the ARA
     plugin you want to use. Installed ARA plugins are listed together under
-    an **ARA** heading in the dropdown; choose *Melodyne* here. The clip's
-    Stretch property now reads **ARA: Melodyne** and the plugin's name
-    appears at the center of the clip.
+    an **ARA** heading in the dropdown; choose **Melodyne** here. The clip's
+    **Stretch** property now reads **ARA: Melodyne** and the plugin's name
+    appears at the centre of the clip.
 
+    ![](images/12----25.png)
 
-![](images/12----25.png)
+    *Audio Clip with Melodyne Invoked*
 
-*Audio Clip with Melodyne Invoked*
-
-3.  Click the plugin name at the center of the clip (or click **Show ARA
+3.  Click the plugin name at the centre of the clip (or click **Show ARA
     Plugin UI** in the Actions panel) to open the plugin's editor.
 
+    ![](images/12----26@2x.png)
 
-![](images/12----26@2x.png)
-
-*The Melodyne UI*
+    *The Melodyne UI*
 
 4.  Edit pitch and time by manipulating the note "blobs" in the plugin's
-    UI. Note that the transport and loop is synchronized between
+    UI. Note that the transport and loop is synchronised between
     Waveform and the ARA plugin as you edit.
 
 > 💡 **Tip:** To learn all about Melodyne click *Help > Manual* within the
@@ -463,24 +449,24 @@ unavailable for that clip.
 Here is how to remove an ARA plugin from a clip:
 
 1.  Select an Audio clip that is using an ARA plugin.
-2.  In the Actions panel change the *Stretch* property to *No Time-Stretching*
-    or a time-stretch algorithm such as *Elastique Pro*. The ARA plugin is
+2.  In the Actions panel change the **Stretch** property to **No Time-Stretching**
+    or a time-stretch algorithm such as **Elastique (Pro)**. The ARA plugin is
     removed from the clip.
 
-### Reopen the editor from the clip
+### Reopen the Editor from the Clip
 
-While a clip is in ARA mode, the clip strip shows a small **"<plugin>…"**
-button (for example *Melodyne…*). Click it at any time to reopen the
+While a clip is in ARA mode, the clip strip shows a small **"&lt;plugin&gt;..."**
+button (for example **Melodyne...**). Click it at any time to reopen the
 plugin's editor. The pitches the plugin has detected are also drawn as a
-**note overlay** on top of the clip's waveform, so any pitch and timing
+note overlay on top of the clip's waveform, so any pitch and timing
 edits you make in the plugin are reflected directly on the Waveform clip.
 
-### Convert an audio clip to MIDI
+### Convert an Audio Clip to MIDI
 
 When a clip is in ARA mode, the Actions panel shows a **Convert to MIDI
 clip** button. Clicking it uses the plugin's
-note analysis to create a **new MIDI clip** with the same name, start,
-and length, and **replaces the audio clip** on that track. This is a quick
+note analysis to create a new MIDI clip with the same name, start,
+and length, and replaces the Audio clip on that track. This is a quick
 way to turn a monophonic part, such as a vocal or bass line, into an
 editable MIDI performance.
 
@@ -489,18 +475,20 @@ Melodyne in Waveform](https://youtu.be/N3T8G-qF4zQ).
 
 ## Group Clips
 
-With Group Clips, you can combine clips on a track into a single grouped
+With Group clips, you can combine clips on a track into a single grouped
 clip without rendering. The advantage of this is that you can ungroup at
 any time for access to the individual clips.
 
-To create a Group Clip, select the clips you want to group on a track.
+To create a Group clip, select the clips you want to group on a track.
 It doesn't have to be a contiguous selection, but the clips do need to
 reside on the same track.
 
 
 ![Select the clips to group](images/38----30.png)
 
-Next, click *Create Group Clip* in the Actions panel.
+*Select the Clips to Group*
+
+Next, click **Create Group Clip** in the Actions panel.
 
 
 ![](images/38----31.png)
@@ -517,19 +505,19 @@ simplified header.
 *A Group Clip*
 
 To ungroup the clip back to the original state, select it and click
-*Ungroup* in the Actions panel.
+**Ungroup** in the Actions panel.
 
 
 ![](images/38----33.png)
 
 *Ungroup from the Actions panel*
 
-You can also use the keyboard: *Group clips* is Cmd + G / Ctrl + G and
-*Ungroup clips* is Shift + Cmd + G / Ctrl + Shift + G by default.
+You can also use the keyboard: **Group clips** is Cmd + G / Ctrl + G and
+**Ungroup clips** is Shift + Cmd + G / Ctrl + Shift + G by default.
 
 
-Group Clips can be useful when working with beats created from sliced up
-audio. You can treat the Group Clip as a single clip, making move and
+Group clips can be useful when working with beats created from sliced up
+audio. You can treat the Group clip as a single clip, making move and
 duplicate operations straightforward. At any point you can ungroup it to
 modify the various parts.
 
@@ -540,7 +528,7 @@ same underlying audio file or MIDI data. Changes to the original clip
 are then reflected in any of the linked copies. This works for Audio
 clips, MIDI clips and Step clips.
 
-To create a linked clip, drag the *Linked Clip* handle from the clip
+To create a linked clip, drag the **Linked Clip** handle from the clip
 header. As you drag, you are dragging a copy referenced back to the
 source clip.
 
@@ -572,7 +560,7 @@ pitch, stretch mode and reverse are copied to every clip in the link
 group. Each clip keeps its own position and length, and splitting a
 clip doesn't affect the linked copies. Anything that changes the
 underlying file affects them all. For other
-examples of this type of edit, select an audio clip then in the Actions
+examples of this type of edit, select an Audio clip then in the Actions
 panel open *View Source Info > Edit Audio File > Basic Editing
 Operations*.
 
@@ -604,11 +592,11 @@ separate clips and can even be placed on separate tracks.
 
 *Linked Step Clips Green Handle*
 
-Step clips can also be copied using the *Linked Clips* handle.
+Step clips can also be copied using the **Linked Clip** handle.
 
-> 💡 **Tip:** It's a bit more difficult to identify linked Step Clips because
+> 💡 **Tip:** It's a bit more difficult to identify linked Step clips because
 they don't have clip names along with the link icon. You can identify
-linked Step Clips because the *Linked Clip* handle in the header turns
+linked Step clips because the **Linked Clip** handle in the header turns
 green whenever there are linked copies present. This holds true for
 linked Audio clips and MIDI clips as well.
 
@@ -616,9 +604,3 @@ linked Audio clips and MIDI clips as well.
 
 Time stretching is covered in [Warp Time](warp-time.md), and looping
 Audio clips in [Working with Loops](working-with-loops.md).
-
-
-
-
-
-

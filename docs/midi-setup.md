@@ -19,11 +19,10 @@ the drivers. Once you've done that, the rest is easy.
 
 ## Set Up the MIDI Inputs
 
-Go to the Settings tab, MIDI devices page. You will see a list of all
+Go to *Settings > MIDI Devices*. You will see a list of all
 available MIDI inputs and outputs that are connected to your system. In
 this example I have four of them. To enable the MIDI inputs and outputs,
-click to toggle between *Enabled* and *Disabled* next to each entry.
-
+click to toggle between **Enabled** and **Disabled** next to each entry.
 
 ![](images/22----01.png)
 
@@ -31,12 +30,12 @@ click to toggle between *Enabled* and *Disabled* next to each entry.
 
 > 💡 **Tip:** If you don't see your devices listed, make sure the controller
 is connected and has power. If that checks out, then make sure the
-latest drivers are installed. At any time you can click *Scan for new
-MIDI devices now* to initiate a scan for connected MIDI devices.
+latest drivers are installed. At any time you can click **Scan for new
+MIDI devices now** to initiate a scan for connected MIDI devices.
 
 ## Naming MIDI Inputs/Outputs
 
-From the Settings tab, MIDI Devices page, click on a MIDI input or
+From *Settings > MIDI Devices*, click on a MIDI input or
 output in the MIDI devices list, then edit **Device Alias** in the panel
 on the right to give it a friendly name. Matching it to the name of the connected controller keeps
 things easy to recognise.
@@ -53,7 +52,6 @@ support USB. If you don't plan to use the hardware MIDI in and out
 connections, you can leave them disabled. In this example we have
 disabled.
 
-
 ![](images/22----02.png)
 
 *Disable Unused MIDI I/O*
@@ -67,23 +65,20 @@ Back in your Edit, choose a blank track or create a new one.
 1.  Click on an input and select the MIDI input that matches the
     controller you just configured.
 
-
 ![](images/22----03.png)
 
 *Select the MIDI Input Device*
 
-1.  Play some notes on your keyboard. You will see the meter registering
+2.  Play some notes on your keyboard. You will see the meter registering
     the MIDI activity on that track.
-
 
 ![](images/22----04.png)
 
 *Input Meter Activity*
 
-1.  With the input selected, set **Input Monitoring Mode** to On (or
+3.  With the input selected, set **Input Monitoring Mode** to On (or
     Auto) in the Actions panel. You can also right-click the input and
     use the **Live Input Monitoring** submenu.
-
 
 ![](images/22----05.png)
 
@@ -96,24 +91,22 @@ next.
 ## Insert a Synth Plugin
 
 To hear what you play, you will need to insert a virtual instrument. Use
-the *Browser Search* tab to locate a synth plugin. In this example we
-are using 4OSC, found under Waveform > Instruments.
-
+the Search tab of the Browser to locate a synth plugin. In this example we
+are using 4OSC, found under *Waveform > Instruments*.
 
 ![](images/22----06.png)
 
 *Search for a Synth Plugin*
 
-1.  Insert your synth plugin ahead of the *Volume & Pan* plugin. By
+1.  Insert your synth plugin ahead of the Volume & Pan plugin. By
     ahead, we mean ahead in the signal path. So in this example, we have
-    dropped *4OSC* to the left of *Volume & Pan*.
-
+    dropped 4OSC to the left of Volume & Pan.
 
 ![](images/22----07.png)
 
 *4OSC installed in the mixer*
 
-1.  Play some notes on your keyboard and at this point you should hear
+2.  Play some notes on your keyboard and at this point you should hear
     synth notes.
 
 > 📝 **Note:** There is no difference between a MIDI track and an audio track
@@ -135,9 +128,9 @@ notes into that input, as if they came from the device itself.
 
 > 💡 **Tip:** Click the lock icon at the top of the Actions panel to keep it
 > showing the input while you click elsewhere in the Edit, and click it
-> again to unlock. The command is *Lock/Unlock Actions panel* (Opt + F11 /
-> Alt + F11). The lock is on the dedicated Actions panel, not the sidebar
-> Actions tab.
+> again to unlock. The command is **Lock/Unlock Actions panel** (Opt + F11 /
+> Alt + F11). The lock is on the dedicated Actions panel, not the Browser's
+> **Actions** tab.
 
 ![](images/22----11.png)
 
@@ -147,26 +140,23 @@ A virtual MIDI input is something different: it duplicates input from
 your other MIDI devices, so one track input can receive from several of
 them.
 
-1.  Go to the Settings tab, MIDI Devices page.
-2.  Click *Create New Virtual MIDI Input...*
-
+1.  Go to *Settings > MIDI Devices*.
+2.  Click **Create New Virtual MIDI Input...**
 
 ![](images/22----08.png)
 
 *Create New Virtual MIDI Input*
 
-1.  Enter a name into the *Virtual MIDI device* dialog box and click
+3.  Enter a name into the **Virtual MIDI device** dialog box and click
     **Create**.
-
 
 ![](images/22----09.png)
 
 *Name the Virtual MIDI Device*
 
-1.  Back in your Edit, choose the new device as a track's input. Use
+4.  Back in your Edit, choose the new device as a track's input. Use
     **Select MIDI Inputs** in its Actions panel to choose which devices
     it receives from.
-
 
 ![](images/22----10.png)
 
@@ -181,7 +171,7 @@ record an idea and don't have a controller plugged in.
 
 Show it with the command **Show or hide the MIDI Typing window**, or
 from the View menu's **Show MIDI Typing** item (which appears only when
-the *Use computer keyboard for MIDI input* setting is on; see
+the **Use computer keyboard for MIDI input** setting is on; see
 [Reference: Settings > MIDI Devices](reference-settings.md#midi-devices)).
 
 ![](images/midi-typing_1@2x.png)
@@ -189,11 +179,11 @@ the *Use computer keyboard for MIDI input* setting is on; see
 *The MIDI Typing window*
 
 Typing is armed by **Caps Lock** (or by giving the window focus). Once
-armed, the keys `a w s e d f t g y h u j…` play a piano layout. The
+armed, the keys `a w s e d f t g y h u j...` play a piano layout. The
 window also has:
 
-- **Octave**: Press Z or X to shift down or up. (Range 0-9, Default: 5)
-- **Velocity**: Press C or V to lower or raise it in steps of 5. (Range
+- **Octave**: Press **Z** or **X** to shift down or up. (Range 0-9, Default: 5)
+- **Velocity**: Press **C** or **V** to lower or raise it in steps of 5. (Range
   0-127, Default: 98)
 
 A gear icon opens a list where you can remap the keys to your liking.
@@ -208,11 +198,11 @@ name instead of by raw program number. The **MIDI program names** dialog
 manages these named patch lists.
 
 There's no menu command or shortcut. You reach it from a MIDI output
-device. Go to Settings > MIDI Devices, click a MIDI **output** device,
+device. Go to *Settings > MIDI Devices*, click a MIDI **output** device,
 and in the panel on the right pick a set from **Program Names**. The
 rows below it manage the sets: **Add** creates a named set from a
 preset, **Edit** opens the dialog to modify the selected set, and
-**Delete** removes it. Edit and Delete only appear for sets you can
+**Delete** removes it. **Edit** and **Delete** only appear for sets you can
 change.
 
 ![](images/program-manager_1@2x.png)
@@ -223,18 +213,17 @@ Inside the dialog:
 
 - **Bank name**: A combo box for the 16 banks, with a **Rename**
   button.
-- **Program name list**: 128 editable rows; press Tab to advance to
+- **Program name list**: 128 editable rows; press **Tab** to advance to
   the next one.
 - **MSB / LSB**: The bank-select bytes for the current bank. (MSB
   0-128, LSB 0-256)
 - **Options** menu: Use zero based numbering, Set current bank to
   general MIDI names, Reset current bank, Clear current bank, **Export
-  all banks…** (to a
-  `.trkmidi` file), and **Import all banks…** (from `.trkmidi` or
+  all banks...** (to a `.trkmidi` file), and **Import all banks...** (from `.trkmidi` or
   `.midnam`).
 
 Click **Done** to save. These patch lists are shared across all your
-edits.
+Edits.
 
 ## Synchronisation
 
@@ -249,47 +238,47 @@ You'll find these under the Edit tab's main menu. Click the main menu
 button and choose **Sync**.
 
 There's no default keyboard shortcut for the Sync menu or its items -
-assign one via Settings > Keyboard Shortcuts if you use them often.
+assign one in *Settings > Keyboard Shortcuts* if you use them often.
 
 ![](images/sync_menu_1@2x.png)
 
 *The Sync menu on the Edit tab*
 
-### Setting a timecode offset
+### Setting a Timecode Offset
 
-1.  Open **Sync > Change timecode offset…**.
+1.  Open *Sync > Change timecode offset...*.
 2.  In the **Change MIDI timecode offset** dialog, type the offset using
     the timecode field.
 3.  Click **OK**. Incoming and outgoing timecode is now shifted by that
     amount, which is handy when your external source starts a few frames
     away from where you want Waveform's transport to land.
 
-### Chasing external MTC
+### Chasing External MTC
 
-1.  Enable the MIDI input that carries timecode (Settings > MIDI
-    Devices), as described earlier in this chapter.
-2.  Open **Sync > MIDI timecode input device** and pick that device. Set
+1.  Enable the MIDI input that carries timecode (*Settings > MIDI
+    Devices*), as described in [Set Up the MIDI Inputs](#set-up-the-midi-inputs).
+2.  Open *Sync > MIDI timecode input device* and pick that device. Set
     it to **&lt;None&gt;** to stop chasing.
 3.  If the master sends an hour value you don't want to follow, turn on
     **Ignore hours from incoming timecode**.
 
-### Menu reference
+### Menu Reference
 
-- **Change timecode offset…**: opens the *Change MIDI timecode offset*
+- **Change timecode offset...**: opens the **Change MIDI timecode offset**
   dialog. (Default: 0)
 - **Ignore hours from incoming timecode**: a toggle; when on, the hours
   field of incoming MTC is ignored. (Default: off)
 - **MIDI timecode input device**: the MIDI input Waveform chases for
-  MTC, or *&lt;None&gt;*.
+  MTC, or **&lt;None&gt;**.
 - **Respond to MIDI machine control from device**: the MIDI input
   whose MMC transport commands (play/stop/locate) Waveform obeys, or
-  *&lt;None&gt;*.
+  **&lt;None&gt;**.
 - **Send MIDI machine control to device**: the MIDI output to which
-  Waveform sends MMC transport commands, or *&lt;None&gt;*.
+  Waveform sends MMC transport commands, or **&lt;None&gt;**.
 
 > 📝 **Note:** The MTC input and MMC device lists only show inputs and
 > outputs you've already enabled. If a device is missing, enable it on
-> the Settings > MIDI Devices page first.
+> the *Settings > MIDI Devices* page first.
 
 > 💡 **Tip:** This menu is for making Waveform *follow* external timecode.
 > To make Waveform the *master* instead, turn on **Send MIDI Timecode**
@@ -298,11 +287,5 @@ assign one via Settings > Keyboard Shortcuts if you use them often.
 
 ## Moving On
 
-In the next chapter, you'll learn how to record a MIDI performance onto
+In the next chapter, [MIDI Recording](midi-recording.md), you'll learn how to record a MIDI performance onto
 the track!
-
-
-
-
-
-

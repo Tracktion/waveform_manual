@@ -1,14 +1,15 @@
 # Plugin Racks
 
-Plugin Racks let you group multiple plugins inside a single container and wire them up however you like. If you have ever wanted to run effects in parallel, create a shared reverb bus, set up side-chain processing, or build a multi-channel effects unit, racks are how you do it.
+Plugin Racks let you group multiple plugins inside a single container and wire them up however you like. If you have ever wanted to run effects in parallel, create a shared reverb bus, set up sidechain processing, or build a multi-channel effects unit, racks are how you do it.
 
 ![](images/Racks@2x.png)
-*The Rack Editor showing a 4OSC synth routed through multiple effects in parallel, with a Step Modifier controlling parameters.*
+
+*The Rack editor showing a 4OSC synth routed through multiple effects in parallel, with a Step Modifier controlling parameters.*
 
 
 ## What Are Racks?
 
-Instead of being limited to a simple linear chain of effects on a track, a rack gives you a 2D canvas where you can connect plugins in series, in parallel, or in any combination. You can feed one plugin's output into two others, mix signals back together, route side-chains between tracks, and more.
+Instead of being limited to a simple linear chain of effects on a track, a rack gives you a 2D canvas where you can connect plugins in series, in parallel, or in any combination. You can feed one plugin's output into two others, mix signals back together, route sidechains between tracks, and more.
 
 The key idea is the separation between the **Rack Type** and the **Rack Instance**.
 
@@ -25,17 +26,17 @@ There are several ways to create a rack, depending on your starting point.
 
 ### From Scratch
 
-1. Open the **Plugin Browser**.
-2. Find the **Plugin Racks** category.
-3. Drag **Create New Empty Rack** onto a track's plugin area.
+1. Open the plugin selector on a track, the same way you add any plugin: drag the Plugin object onto the track's inline mixer, or right-click an existing plugin and choose **Add new plugin**.
+2. Open the **Plugin Racks** folder.
+3. Choose **Create New Empty Rack**.
 
-This creates a new empty Rack Type with a default stereo input pair (left and right), a MIDI input, and matching outputs. A Rack Instance is automatically placed on the track you dropped it onto.
+This creates a new empty Rack Type with a default stereo input pair (left and right), a MIDI input, and matching outputs. A Rack Instance is automatically placed on that track.
 
 ### From a Preset
 
-1. Open the **Plugin Browser**.
+1. Open the plugin selector on a track, as above.
 2. Look under **Plugin Racks > New from preset**.
-3. Drag the preset onto a track.
+3. Choose the preset.
 
 This creates a new Rack Type pre-loaded with the preset's plugins and connections. Waveform ships with a few built-in rack presets, and any racks you have saved as presets will also appear here.
 
@@ -55,7 +56,7 @@ For plugins with more than one set of outputs (like multi-output drum samplers o
 1. Right-click the plugin on a track.
 2. Choose **Create a multi-out Rack for this plugin**, or **Create a multi-out Rack for this plugin inside a submix**.
 
-Waveform wraps the plugin in a rack and adds a new audio track below for each of the plugin's extra outputs, each with a Rack Instance routed to that pair of rack channels. The plugin becomes the rack's default plugin (see [Default Plugin View](#default-plugin-view)), so opening the rack shows the plugin's own window. The submix version also moves the original track and the new tracks into a new submix track. The same two options are in the plugin's Actions panel, where the second one reads **Create a multi-out Rack in a submix for this plugin**.
+Waveform wraps the plugin in a rack and adds a new audio track below for each of the plugin's extra outputs, each with a Rack Instance routed to that pair of rack channels. The plugin becomes the rack's default plugin (see [Default Plugin View](#default-plugin-view)), so opening the rack shows the plugin's own window. The submix version also moves the original track and the new tracks into a new Submix track. The same two options are in the plugin's Actions panel, where the second one reads **Create a multi-out Rack in a submix for this plugin**.
 
 When you add a plugin like this to a track, Waveform asks **Create Multi-out Wrapper?** and offers **Add single plugin**, **Create multi-out wrapper** and **Create multi-out wrapper in submix**. Tick **Don't show again** to stop the question; plugins are then added on their own.
 
@@ -65,14 +66,14 @@ When you add a plugin like this to a track, Waveform asks **Create Multi-out Wra
 
 ### Adding Another Instance
 
-Every rack already in the Edit is listed by name in the Plugin Browser's **Plugin Racks** category. Drag one onto another track to add a second instance of the same rack. In the Rack Editor, the **+** button on the input or output panel has an **Add to track** submenu that places a new instance on any audio track. The Stack Editor's detail panel also has a "Drag here to insert an instance of this rack..." area you can drag onto a track.
+Every rack already in the Edit is listed by name in the **Plugin Racks** folder of the plugin selector. Choose one when adding a plugin to another track to add a second instance of the same rack. In the Rack editor, the **+** button on the input or output panel has an **Add to track** submenu that places a new instance on any audio track. The Stack editor's detail panel also has a "Drag here to insert an instance of this rack..." area you can drag onto a track.
 
 
 ## The Rack Editor Views
 
-Racks offer multiple ways to view and edit their contents. You can switch between them at any time using the view button (the eye icon) in the editor window's title bar.
+Racks offer multiple ways to view and edit their contents. You can switch between them at any time using the eye button in the editor window's title bar.
 
-> 📝 **Edition:** The Rack Editor and the Default Plugin view are in every edition. The view button, the Stack Editor and the Faceplate view need Waveform Pro, or the MIDI Producer or DJ Mix Tools Expansion. Without them, the Rack Instance's **Select Rack view to use** submenu (see [Other Controls](#other-controls)) still lists every view, but **Show Stack Editor** and **Show Rack Faceplate** open the Rack Editor.
+> 📝 **Edition:** The Rack editor and the Default Plugin view are in every edition. The eye button, the Stack editor and the Faceplate view need Waveform Pro, or the MIDI Producer Expansion or the DJ Mix Tools Expansion. Without them, the Rack Instance's **Select Rack view to use** submenu (see [Other Controls](#other-controls)) still lists every view, but **Show Stack Editor** and **Show Rack Faceplate** open the Rack editor.
 
 ### Rack Editor: The Graphical Node View
 
@@ -88,19 +89,21 @@ The title bar has a toggle button for showing or hiding the I/O panels. An Actio
 
 ### Stack Editor: The Linear View <span class="pro">PRO</span> { #stack-editor-the-linear-view }
 
-The **Stack Editor** presents plugins in a vertical list, one on top of another, like a traditional effects chain. This view works best when your rack's plugins are connected in a simple series, with one feeding into the next.
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion or the DJ Mix Tools Expansion.
 
-You can drag plugins up and down to reorder them, and the rack automatically rewires the connections to match the new order. Each plugin in the stack can be expanded to show its controls or minimized down to just its name bar.
+The **Stack editor** presents plugins in a vertical list, one on top of another, like a traditional effects chain. This view works best when your rack's plugins are connected in a simple series, with one feeding into the next.
 
-> 📝 **Note:** If the rack has routing that is not a simple series chain (for example, parallel connections or disconnected plugins), the Stack Editor shows a warning triangle. In this case, automatic connection management will not work, and the stacked order may not reflect the actual signal flow.
+You can drag plugins up and down to reorder them, and the rack automatically rewires the connections to match the new order. Each plugin in the stack can be expanded to show its controls or minimised down to just its name bar.
 
-A common approach is to start with the Rack Editor for initial setup and wiring, then switch to the Stack Editor for day-to-day tweaking once everything is connected.
+> 📝 **Note:** If the rack has routing that is not a simple series chain (for example, parallel connections or disconnected plugins), the Stack editor shows a warning triangle. In this case, automatic connection management will not work, and the stacked order may not reflect the actual signal flow.
+
+A common approach is to start with the Rack editor for initial setup and wiring, then switch to the Stack editor for day-to-day tweaking once everything is connected.
 
 ### Faceplate View <span class="pro">PRO</span> { #faceplate-view }
 
-The **Faceplate** view shows only the controls you have placed on the rack's faceplate, without the plugins and wiring. You build the faceplate on the **Faceplate** page of the Rack Instance's Actions panel, or the **Faceplate** tab of the Stack Editor's detail panel. See [Faceplates](faceplates.md).
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion or the DJ Mix Tools Expansion.
 
-> 📝 **Edition:** Waveform Pro, or with the MIDI Producer or DJ Mix Tools Expansion.
+The **Faceplate** view shows only the controls you have placed on the rack's faceplate, without the plugins and wiring. You build the faceplate on the **Faceplate** page of the Rack Instance's Actions panel, or the **Faceplate** tab of the Stack editor's detail panel. See [Faceplates](faceplates.md).
 
 ### Default Plugin View
 
@@ -108,7 +111,7 @@ You can designate any single plugin inside the rack as the "default plugin." Whe
 
 This is handy when your rack wraps a single main plugin with some auxiliary processing around it and you mostly just want quick access to the main plugin's controls.
 
-To set or change the default plugin, open the view menu (eye icon) and choose a plugin from the **Set default plugin** submenu, which lists every plugin inside the rack. The same menu has **Show default plugin** to switch to this view, alongside **Show Rack Editor**, **Show Stack Editor** and **Show Rack Faceplate**. You can also open a plugin's own window from inside the rack and choose **Set this as default Rack plugin** from its view menu (the eye button). That route works in every edition, as does **Show Default Plugin** in the Rack Instance's **Select Rack view to use** submenu.
+To set or change the default plugin, open the view menu (eye button) and choose a plugin from the **Set default plugin** submenu, which lists every plugin inside the rack. The same menu has **Show default plugin** to switch to this view, alongside **Show Rack Editor**, **Show Stack Editor** and **Show Rack Faceplate**. You can also open a plugin's own window from inside the rack and choose **Set this as default Rack plugin** from its view menu (the eye button). That route works in every edition, as does **Show Default Plugin** in the Rack Instance's **Select Rack view to use** submenu.
 
 
 ## Working with Connections
@@ -117,11 +120,11 @@ Connections are the heart of a rack. Each connection links an output pin on one 
 
 ### Connection Types
 
-There are three types of connections, each drawn in a different color:
+There are three types of connections, each drawn in a different colour:
 
 - **Audio connections**: carry the audio signal between plugins or between the rack's I/O and plugins. These are the most common.
 - **MIDI connections**: route MIDI data. MIDI always uses pin 0.
-- **Modifier connections**: link modifiers (like LFOs or envelope followers) to plugin parameters for modulation. These appear in a distinct color to help you tell them apart from audio and MIDI wiring.
+- **Modifier connections**: link modifiers (like LFOs or envelope followers) to plugin parameters for modulation. These appear in a distinct colour to help you tell them apart from audio and MIDI wiring.
 
 ### Making Connections
 
@@ -129,21 +132,21 @@ To create a connection, click and drag from a nodule (the small circle on the ed
 
 To delete a connection, drag it away from its endpoint and release into empty space.
 
-> 💡 **Tip:** Right-click a plugin inside the rack editor to find **Connect to Rack inputs** and **Connect to Rack outputs**. These auto-wire the plugin to the rack's I/O channels, saving you from connecting each pin manually.
+> 💡 **Tip:** Right-click a plugin inside the Rack editor to find **Connect to Rack inputs** and **Connect to Rack outputs**. These auto-wire the plugin to the rack's I/O channels, saving you from connecting each pin manually.
 
-### Side-Chain Routing
+### Sidechain Routing { #side-chain-routing }
 
-To set up a side-chain from another track:
+To set up a sidechain from another track:
 
 1. Right-click an input nodule on a plugin inside the rack.
 2. Choose **Use this input as a side-chain from:** in the menu.
 3. Select the track and channel you want to feed in: **Left**, **Right**, or **Left + Right** when the plugin has a second input.
 
-This lets you route audio from any audio or submix folder track in your edit into a specific plugin input within the rack. Waveform automatically creates a Rack Instance on the source track and wires up the appropriate channels for you.
+This lets you route audio from any audio track or Submix track in your Edit into a specific plugin input within the rack. Waveform automatically creates a Rack Instance on the source track and wires up the appropriate channels for you.
 
 ### Bulk Wiring Operations
 
-For complex racks, the right-click context menu on the editor background (or the **Clear Wiring** and **Connect Wires** buttons in the Actions panel on the right of the Rack Editor window, shown when you select the rack background) provides several time-saving operations:
+For complex racks, the right-click menu on the editor background (or the **Clear Wiring** and **Connect Wires** buttons in the Actions panel on the right of the Rack editor window, shown when you select the rack background) provides several time-saving operations:
 
 - **Clear all wiring**: removes every connection in the rack.
 - **Clear all plugin wiring**: removes only connections between plugins, leaving the rack's input and output mappings intact.
@@ -155,9 +158,9 @@ For complex racks, the right-click context menu on the editor background (or the
 
 Every rack starts with a default set of channels: a MIDI channel plus a stereo audio pair (left and right) for both inputs and outputs.
 
-You can add more channels, up to a maximum of 64 audio channels on each side. This is useful for multi-channel processing or for creating racks that accept side-chain inputs from other tracks.
+You can add more channels, up to a maximum of 64 audio channels on each side. This is useful for multi-channel processing or for creating racks that accept sidechain inputs from other tracks.
 
-To manage channels, right-click the rack editor background or use the buttons in the Rack Editor window's Actions panel (select the rack background). From there you can:
+To manage channels, right-click the Rack editor background or use the buttons in the Rack editor window's Actions panel (select the rack background). From there you can:
 
 - **New Input Channel** / **New Output Channel**: adds a named channel. You will be prompted to enter a name.
 - **Rename Input Channel** / **Rename Output Channel**: changes the channel name that appears in routing menus.
@@ -170,8 +173,8 @@ To manage channels, right-click the rack editor background or use the buttons in
 
 There are a few ways to get plugins into a rack:
 
-- **Drag from the Plugin Browser** onto the rack editor canvas or stack editor list.
-- **Drag from a track's plugin chain** into the rack editor. The plugin moves into the rack.
+- **Drag from the Browser's Search tab** onto the Rack editor canvas or Stack editor list.
+- **Drag from a track's plugin chain** into the Rack editor. The plugin moves into the rack.
 - **Right-click the editor background** and choose **Add plugin** to open the plugin selection menu.
 - **Paste from the clipboard** if you have copied a plugin.
 
@@ -184,22 +187,22 @@ When you add the very first plugin to an empty rack, you will be asked: **"Do yo
 
 Racks can contain **Modifiers**: LFOs, envelope followers, random generators, step sequencers, breakpoint oscillators, and MIDI trackers. These are modulation sources that can automatically vary plugin parameters over time. The LFO is in every edition; the other five need Waveform Pro or the MIDI Producer Expansion. See [Modifiers](modifiers.md).
 
-You add a modifier by dragging the modifier button in the rack editor's title bar (next to the plugin button, tooltip "Drag this onto a track to create a new modifier") onto the canvas.
+You add a modifier by dragging the modifier button in the Rack editor's title bar (next to the plugin button, tooltip "Drag this onto a track to create a new modifier") onto the canvas.
 
-Once placed, a modifier shows up as a draggable node with its own connection points. You connect a modifier's output to a plugin parameter by dragging from the modifier's output nodule to a parameter input on any plugin in the rack. Modifier connections appear as distinct colored curves to help distinguish them from audio and MIDI wiring.
+Once placed, a modifier shows up as a draggable node with its own connection points. You connect a modifier's output to a plugin parameter by dragging from the modifier's output nodule to a parameter input on any plugin in the rack. Modifier connections appear as distinct coloured curves to help distinguish them from audio and MIDI wiring.
 
 To assign a modifier to a new parameter, drag to the **New modifier assignment** input on any plugin, which opens a parameter picker where you can search and select the parameter you want to modulate.
 
-When you select a modifier in the Rack Editor, the Actions panel on the right of the window shows three pages you can pop out: **Modifier Settings**, **Parameters** and **Assignments**.
+When you select a modifier in the Rack editor, the Actions panel on the right of the window shows three pages you can pop out: **Modifier Settings**, **Parameters** and **Assignments**.
 
 
 ## Macro Parameters <span class="pro">PRO</span> { #macro-parameters }
 
-**Macro Parameters** let you expose a set of hand-picked controls for a rack, so you can adjust multiple plugin parameters from a single knob or slider. This is especially useful when you want to simplify a complex rack down to a few key controls.
-
 > 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
-To set up macros, switch to the Stack Editor, show its detail panel with the detail button in the title bar, and open the **Macro Parameters** tab. From there you can create new macros, name them, and assign each macro to one or more parameters from any plugin inside the rack. This tab is only in the Stack Editor's detail panel: the Rack Editor's Actions panel doesn't have it.
+**Macro Parameters** let you expose a set of hand-picked controls for a rack, so you can adjust multiple plugin parameters from a single knob or slider. This is especially useful when you want to simplify a complex rack down to a few key controls.
+
+To set up macros, switch to the Stack editor, show its detail panel with the detail button in the title bar, and open the **Macro Parameters** tab. From there you can create new macros, name them, and assign each macro to one or more parameters from any plugin inside the rack. This tab is only in the Stack editor's detail panel: the Rack editor's Actions panel doesn't have it.
 
 
 ## Rack Instance Controls
@@ -218,7 +221,7 @@ Each channel then has its own group of rows, numbered from 1:
 
 **Ch N Output Comes From**: Which of the rack's named output channels feeds back into this track channel. (Default: the rack output with the same number)
 
-You can set any of these to "<none>" to disconnect a channel entirely.
+You can set any of these to **&lt;none&gt;** to disconnect a channel entirely.
 
 **Add Channel Mapping**: Adds another numbered channel group to this instance.
 
@@ -246,7 +249,7 @@ The input and output levels, Wet and Dry can be automated. The routing choices c
 
 **MIDI Controller Mappings**: A page you can pop out from the Actions panel to map MIDI controllers to the rack instance's parameters. See [MIDI Controller Mappings](midi-editing.md#midi-controller-mappings).
 
-**Faceplate** <span class="pro">PRO</span>: A page you can pop out to edit the rack's faceplate. Needs Waveform Pro, or the MIDI Producer or DJ Mix Tools Expansion.
+**Faceplate** <span class="pro">PRO</span>: A page you can pop out to edit the rack's faceplate. Needs Waveform Pro, or the MIDI Producer Expansion or the DJ Mix Tools Expansion.
 
 **Enabled**, **Remap on Tempo Change** and **Delete**: The same rows every plugin shows in the Actions panel.
 
@@ -260,7 +263,7 @@ If you decide you no longer need the rack structure and just want the plugins ba
 1. Right-click the Rack Instance on the track's plugin chain.
 2. Choose **Replace rack with plugins**.
 
-This extracts all plugins from the rack (ordered by their left-to-right position on the rack editor canvas), inserts them sequentially into the track's plugin chain, and removes the Rack Instance. If this was the last instance of that Rack Type in the edit, Waveform asks whether you would like to remove the now-unused Rack Type as well.
+This extracts all plugins from the rack (ordered by their left-to-right position on the Rack editor canvas), inserts them sequentially into the track's plugin chain, and removes the Rack Instance. If this was the last instance of that Rack Type in the Edit, Waveform asks whether you would like to remove the now-unused Rack Type as well.
 
 You can also select individual plugins within the rack from the right-click menu using **Select one of the plugins in this rack**, which is helpful for quickly jumping to a specific plugin's settings.
 
@@ -269,9 +272,9 @@ You can also select individual plugins within the rack from the right-click menu
 
 Rack configurations can be saved as presets and reloaded later. When you save, the entire rack state is captured: all plugins, their settings, positions, and connections.
 
-To save a rack as a preset, switch to the Stack Editor, show its detail panel with the detail button in the title bar, and use the **Preset** row: the save button's menu has **Create new preset...** (and **Export...** to save a rack file), and the folder button's menu has **Import...**. You will be prompted to give the preset a name and optionally add tags. The Preset row is only in the Stack Editor's detail panel, so saving rack presets this way needs Waveform Pro, or the MIDI Producer or DJ Mix Tools Expansion.
+To save a rack as a preset, switch to the Stack editor, show its detail panel with the detail button in the title bar, and use the **Preset** row: the save button's menu has **Create new preset...** (and **Export...** to save a rack file), and the folder button's menu has **Import...**. You will be prompted to give the preset a name and optionally add tags. The Preset row is only in the Stack editor's detail panel, so saving rack presets this way needs Waveform Pro, or the MIDI Producer Expansion or the DJ Mix Tools Expansion.
 
-Saved presets appear in the Plugin Browser under **Plugin Racks > New from preset**. Loading a preset creates a new Rack Type in the current edit.
+Saved presets appear in the plugin selector under **Plugin Racks > New from preset**. Loading a preset creates a new Rack Type in the current Edit.
 
 > ⚠️ **Warning:** Presets that contain modifier or macro assignments cannot be applied to an existing rack. If you try, you will see a message asking you to create a new rack from the preset instead. This is because modifier connections reference internal identifiers that cannot be reliably remapped onto an existing rack.
 
@@ -280,11 +283,11 @@ Saved presets appear in the Plugin Browser under **Plugin Racks > New from prese
 
 - **Shared state with multiple instances.** Because all instances of a rack share the same Rack Type, any changes you make to the plugins or connections inside the rack affect every track using it. The only things that are per-instance are the I/O routing, levels, and wet/dry mix.
 
-- **Removing the last instance prompts for cleanup.** When you remove the last Rack Instance of a type from your edit, Waveform asks whether you would also like to delete the Rack Type itself. If you say no, the Rack Type remains in your edit but will not be actively used. You can still create new instances of it later from the **Plugin Racks** category of the Plugin Browser (see [Adding Another Instance](#adding-another-instance)).
+- **Removing the last instance prompts for cleanup.** When you remove the last Rack Instance of a type from your Edit, Waveform asks whether you would also like to delete the Rack Type itself. If you say no, the Rack Type remains in your Edit but will not be actively used. You can still create new instances of it later from the **Plugin Racks** folder of the plugin selector (see [Adding Another Instance](#adding-another-instance)).
 
-- **Deleting a Rack Type is permanent.** When you delete a Rack Type with the **Delete Rack** button in the Rack Editor window's Actions panel (or the Stack Editor's detail panel), all instances of that rack are also removed from every track in the edit. This action cannot be undone.
+- **Deleting a Rack Type is permanent.** When you delete a Rack Type with the **Delete Rack** button in the Rack editor window's Actions panel (or the Stack editor's detail panel), all instances of that rack are also removed from every track in the Edit. This action cannot be undone.
 
 
 ## Moving On
 
-For more on how audio routing works across your project, see [Submix Tracks](submix-tracks.md) and [Effects Bus Tracks](effects-bus-tracks.md). For details on the individual plugins you can use inside racks, see [Using Plugins](using-plugins.md) and [Built-in Effects Plugins](built-in-effects-plugins.md). [Faceplates](faceplates.md) and [Modifiers](modifiers.md) cover those features in detail.
+For more on how audio routing works across an Edit, see [Submix Tracks](submix-tracks.md) and [Effects Bus Tracks](effects-bus-tracks.md). For details on the individual plugins you can use inside racks, see [Using Plugins](using-plugins.md) and [Built-in Effects Plugins](built-in-effects-plugins.md). [Faceplates](faceplates.md) and [Modifiers](modifiers.md) cover those features in detail.

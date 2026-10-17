@@ -46,9 +46,9 @@ Shift as you drag.
 
 ## Slip Editing MIDI Clips
 
-The three solid color handles are used for slip editing: left arrow,
+The three solid colour handles are used for slip editing: left arrow,
 right arrow, and the box. The essential tool for slip editing is the
-solid box in the center of the header. Grab the solid box and drag, in
+solid box in the centre of the header. Grab the solid box and drag, in
 order to slip edit the notes within the frame of the window.
 
 
@@ -63,7 +63,7 @@ beginning of the clip anchored.
 
 ## Reframing a MIDI Clip
 
-The hollow box tool in the center of a MIDI clip allows you to reframe
+The hollow box tool in the centre of a MIDI clip allows you to reframe
 the entire window of the clip, leaving the notes in their original
 place. This is done by dragging the hollow box left or right.
 
@@ -86,7 +86,7 @@ point**. Launcher clips can't be split, so the action isn't shown for them.
 
 ![](images/25----05.png)
 
-*The Split Clips Action in the Actions Panel*
+*The Split Clips Action in the Actions panel*
 
 > 📝 **Note:** As you split MIDI clips, any notes that are sustained across
 the split area are separated into two notes.
@@ -109,29 +109,29 @@ view (PRV).
 
 Another way to see the notes is to double-click the MIDI clip header. By
 default this opens the clip in the MIDI editor in the
-[Detail editor](detail-editor.md) at the bottom of the Edit.
+[Detail Editor](detail-editor.md) at the bottom of the Edit.
 
 > 📝 **Note:** Clip header double-click behaviour depends on a global
-setting. Go to `Settings > General`, MIDI section, and find
+setting. Go to *Settings > General*, MIDI section, and find
 **Double-click MIDI clip header** (Choices: Expands for in-line editing,
 Opens the MIDI editor, Opens the MIDI editor (in-line editing disabled)).
-Choose *Expands for in-line editing* to make a double-click toggle the
+Choose **Expands for in-line editing** to make a double-click toggle the
 track height for inline editing instead. (Default: Opens the MIDI editor)
 
-You can also open it with `View > Show Content Editor`. In the Detail
-editor's **Clip** tab, a MIDI clip gets two pills at the top left:
+You can also open it with *View > Show Content Editor*. In the Detail
+Editor's **Clip** tab, a MIDI clip gets two pills at the top left:
 **Piano Roll** shows the note editor, with the same toolbar and tools as
 the inline editor, and **Pattern Generator** switches the tab to the
 [Pattern Generator](pattern-generator.md). With several MIDI clips
-selected the second pill reads *Pattern Generator (N)*, because the
+selected the second pill reads **Pattern Generator (N)**, because the
 generator works on all of them. See [The Detail Editor](detail-editor.md).
 
 ## Setting the Number of Octaves & Note Height
 
 You can adjust how many octaves you see on the MIDI editor with
 **Default MIDI editor vertical scale** (Choices: 2 octaves, 4 octaves,
-6 octaves, Full scale) in `Settings > General`, MIDI section. By default
-it is set to *2 octaves*, a reasonable starting point. You can also
+6 octaves, Full scale) in *Settings > General*, MIDI section. By default
+it is set to **2 octaves**, a reasonable starting point. You can also
 right-click the piano keyboard and choose **Show 1 octave**,
 **Show 2 octaves**, **Show 3 octaves**, **Show 4 octaves** or
 **Show full scale**.
@@ -161,28 +161,28 @@ to prevent scrolling within the MIDI clips unintentionally.
 *Mouse Wheel MIDI Scrolling Setting*
 
 Having MIDI scrolling on suits MIDI editing. The setting is
-**Allow wheel to scroll within MIDI clips** in `Settings > General`,
+**Allow wheel to scroll within MIDI clips** in *Settings > General*,
 Mouse section. (Default: on)
 
 ## The MIDI Toolbar
 
 The toolbar runs along the top of the MIDI editor. In the inline editor
 it appears automatically while **Automatically show MIDI editor
-toolbar** is on in `Settings > General`, MIDI section (Default: on).
+toolbar** is on in *Settings > General*, MIDI section (Default: on).
 Opt + Cmd + T / Ctrl + Alt + T turns that on and off. From left to right:
 
 | Control | What it does |
 | --- | --- |
 | **View** <span class="pro">PRO</span> | **Drum grid** for the selected tracks, and which note rows to show: **Show all notes**, **Show notes in key**, **Show notes in use** or **Show named notes**. |
 | **Func** <span class="pro">PRO</span> | **Duplicate MIDI Notes**, **Duplicate MIDI Notes (Last Bar)**, and **Lock CC data to notes**, which moves controller data along with the notes you drag. |
-| **Velocity**, **Controllers**, **+** | Show the velocity lane and the controller lanes, and add a controller lane. See [The Velocity Editor](#the-velocity-editor) and [Editing other Controller Data](#editing-other-controller-data). |
+| **Velocity**, **Controllers**, **+** | Show the velocity lane and the controller lanes, and add a controller lane. See [The Velocity Editor](#the-velocity-editor) and [Editing Other Controller Data](#editing-other-controller-data). |
 | Tool buttons | The editing tools. See [The Editing Tools](#the-editing-tools). |
-| Colour swatches | The note colour. See [Note Colors](#note-colors). |
+| Colour swatches | The note colour. See [Note Colours](#note-colors). |
 | **Vel**, **Len** | The velocity and length for new notes. See [Editing the Note Velocity](#editing-the-note-velocity) and [Note Length](#note-length). |
 | **Snap** | The note-editing grid. See [Snapping During Note Editing](#snapping-during-note-editing). |
 | **Step**, speaker | Step entry, and hearing notes as you edit them. See [Step Entry Mode](#step-entry-mode) and [Hearing Notes While Editing](#hearing-notes-while-editing). |
 | **Zoom** | Zooms to fit all notes, or the selected notes. |
-| **Transpose**, **Quantise**, **Groove**, **Chords** | Menus that act on the selected notes. See [Quantizing MIDI Notes](quantizing-midi-notes.md) and [The Chord Track](chord-track.md). When the editor is narrow the toolbar wraps onto extra rows, and these four are the first to be left out if it still doesn't fit. |
+| **Transpose**, **Quantise**, **Groove**, **Chords** | Menus that act on the selected notes. See [Quantising MIDI Notes](quantizing-midi-notes.md) and [The Chord Track](chord-track.md). When the editor is narrow the toolbar wraps onto extra rows, and these four are the first to be left out if it still doesn't fit. |
 
 > 📝 **Edition:** **View**, **Func** and the Knife tool need Waveform Pro
 > or the MIDI Producer Expansion.
@@ -219,7 +219,7 @@ full length of the note, showing Pressure, or the type you used last.
 
 ![](images/25----17.png)
 
-*Show Note Expression and Keep on Selected Note in the Actions Panel*
+*Show Note Expression and Keep on Selected Note in the Actions panel*
 
 **Keep on Selected Note**: Keeps the lane on the selected note. Turn it
 off and the lane follows whichever note the mouse is over. (Default: on)
@@ -239,7 +239,7 @@ a more detailed curve.
 *Choosing the Note Expression Type*
 
 To change the type, click the lane's **Menu** button and choose
-Pitchbend, Timbre or Pressure. The lane's **Close** button hides it.
+**Pitchbend**, **Timbre** or **Pressure**. The lane's **Close** button hides it.
 
 Two more actions in the Actions panel work on the selected notes:
 **Scale Pitch Bend** scales their pitch-bend values, and
@@ -286,7 +286,7 @@ asks for a length in MIDI ticks.
 ## Snapping During Note Editing
 
 Many of these editing operations will snap to the grid as long as you
-have *Snap* enabled. To edit freely, disable *Snap*. The keyboard
+have **Snap** enabled. To edit freely, disable **Snap**. The keyboard
 shortcut Q enables or disables snapping.
 
 The toolbar's **Snap** button sets the grid the MIDI editor snaps to,
@@ -302,7 +302,7 @@ a fixed resolution, and turn on **Triplet** for a triplet grid.
 ## Copying and Duplicating Notes
 
 To copy a note, hold down Cmd / Ctrl and drag the note to create a copy.
-Another way to do this is with the *Duplicate* keyboard shortcut. First
+Another way to do this is with the **Duplicate** keyboard shortcut. First
 select the note that you would like to copy, make sure the cursor is
 where you'd like the copy placed and then hit the keyboard shortcut D.
 
@@ -314,24 +314,24 @@ where you'd like the copy placed and then hit the keyboard shortcut D.
 ## Adjusting Pitch and Velocity
 
 Another way to adjust pitch and velocity is to select the note and then
-edit the values directly in the Actions panel. Both *Pitch* and *Velocity* can
+edit the values directly in the Actions panel. Both **Pitch** and **Velocity** can
 easily be edited this way.
 
 
 ![](images/25----16.png)
 
-*Adjust Pitch and Velocity in the Actions Panel*
+*Adjust Pitch and Velocity in the Actions panel*
 
 ## Note Start, Length, & End
 
-You can also make very precise adjustments to the *Length*, *Start
-Time*, and *End Time* by editing the values directly in the Actions
+You can also make very precise adjustments to the **Length**, **Start
+Time**, and **End Time** by editing the values directly in the Actions
 panel for the selected note.
 
 
 ![](images/25----18.png)
 
-*Start, Length, & End Settings in the Actions Panel*
+*Start, Length, & End Settings in the Actions panel*
 
 ## Note Actions in the Actions Panel
 
@@ -347,7 +347,7 @@ Chord** and **Modify Notes**. **Select Notes** picks other notes based on
 the current selection. **Create Preset** turns the notes into a bass or
 chord preset, and **Add Custom Chord** saves them as a chord for the
 [Pattern Generator](pattern-generator.md). Quantise and Groove are
-covered in [Quantizing MIDI Notes](quantizing-midi-notes.md).
+covered in [Quantising MIDI Notes](quantizing-midi-notes.md).
 
 ## The Editing Tools
 
@@ -366,7 +366,7 @@ tool from the right-click menu in the note area, or with a shortcut.
 
 ## The Pencil Tool
 
-The pencil tool is used to draw in notes. Select the pencil tool
+The Pencil tool is used to draw in notes. Select the Pencil tool
 and then start painting in notes where you'd like them to appear on the
 piano roll.
 
@@ -377,7 +377,7 @@ piano roll.
 
 ## The Eraser Tool
 
-Use the eraser tool to swipe over any series of notes that you would
+Use the Eraser tool to swipe over any series of notes that you would
 like to erase.
 
 
@@ -387,7 +387,7 @@ like to erase.
 
 ## The Line Tool
 
-There's also a line tool. We usually recommend using this for drawing in
+There's also a Line tool. It's mainly for drawing in
 controllers, but it is also possible to use it for notes as well. Draw a
 line to create a stepped series of notes.
 
@@ -396,23 +396,23 @@ line to create a stepped series of notes.
 
 *Draw a Series of Notes with the Line Tool*
 
-## Note Colors
+## Note Colours { #note-colors }
 
-The color selection along the top edge of the MIDI editor allows you to
-select set a note color. Select a group of notes, click on a color and
-then it will change those notes to that color. It doesn't affect
-playback, but it gives you a way to visually organize a sequence. For
+The colour selection along the top edge of the MIDI editor allows you to
+set a note colour. Select a group of notes, click on a colour and
+then it will change those notes to that colour. It doesn't affect
+playback, but it gives you a way to visually organise a sequence. For
 example, when programming drums you could make snares, hi-hats, and kick
-drum all different colors.
+drum all different colours.
 
 
 ![](images/25----22.png)
 
-*Note Colors*
+*Note Colours*
 
 ## Selecting Multiple Notes
 
-Selecting multiple notes is easy. Use the arrow tool and drag a
+Selecting multiple notes is easy. Use the Selection tool and drag a
 selection around any group of notes that you'd like to select together.
 
 
@@ -434,7 +434,7 @@ notes; doing so selects the full row of notes.
 *Selecting a Row of Notes with Cmd / Ctrl*
 
 Once you have a multiple selection, move all the notes in time or by
-pitch by dragging with the arrow tool. Alternatively, you can change
+pitch by dragging with the Selection tool. Alternatively, you can change
 values in the Actions panel that will apply to all notes in the selection.
 Nudge also works on well on a multiple selection of notes (Shift plus
 the arrow keys).
@@ -463,7 +463,7 @@ dialog lets you type whatever value you want from 0 to 127. Click
 
 > 💡 **Tip:** You can also adjust velocity by dragging. Select a note,
 then hold Shift as you drag up and down over the note. Watch the
-*Velocity* value change in the Actions panel as you drag.
+**Velocity** value change in the Actions panel as you drag.
 
 ## Step Entry Mode
 
@@ -477,7 +477,7 @@ Press the backtick key (`` ` ``) to insert a rest of the same length.
 
 To use the velocities you actually play instead of the **Vel** value,
 turn on **Use incoming velocities for MIDI step entry** in
-`Settings > General`, MIDI section.
+*Settings > General*, MIDI section.
 
 
 ![](images/25----26.png)
@@ -503,7 +503,7 @@ You can edit MIDI note velocity from the velocity area below the PRV.
 Click the **Velocity** button in the MIDI editor toolbar
 (Opt + Cmd + V / Ctrl + Alt + V) to show the velocity editor. For the
 selected note, grab the stalk which represents the velocity and drag it
-up or down. You will notice the *Velocity* value moving in the Actions
+up or down. You will notice the **Velocity** value moving in the Actions
 panel for that note as you drag.
 
 
@@ -516,7 +516,7 @@ several velocities. Say we want to edit the velocity of all the C4s.
 Hold down Cmd / Ctrl and select all the C4s, then, just grab one of them
 and they will all adjust together.
 
-## Editing other Controller Data
+## Editing Other Controller Data
 
 You can use a view similar to the velocity editor with any kind of
 controller. Click **+** next to the **Controllers** button in the MIDI
@@ -539,16 +539,16 @@ same way velocity appears.
 
 ## The MIDI Event List <span class="pro">PRO</span> { #the-midi-event-list }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
 For surgical, numbers-first editing, open the **MIDI Event List**. It's
 a floating, resizable table of every event in the currently selected
 MIDI clip, and it follows your selection: click a different clip and
 the list updates to match. The list and the piano roll share a
 selection, so a note you highlight in one is highlighted in the other.
 
-> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
-
 Open it with the command **Show or hide the MIDI Event List window**, or
-from the View menu's **Show MIDI Event List** item.
+from *View > Show MIDI Event List*.
 
 ![](images/event-list_1@2x.png)
 
@@ -575,14 +575,33 @@ The columns change with the event type:
 > when you need a controller at precisely 64, or a note nudged to an
 > exact tick that's awkward to hit by dragging.
 
+## The SysEx Lane
+
+System Exclusive (SysEx) messages are manufacturer-specific MIDI data,
+often used to recall a hardware synth patch or send a device-specific
+command. Waveform shows them on a dedicated controller lane in the MIDI
+editor, where each SysEx event appears as a **diamond** on a timeline.
+
+Open the lane by clicking **+** next to **Controllers** and choosing
+**SysEx Events** (or choose it from an existing lane's **Menu**). The
+lane header has a **Close** button and a **Menu**.
+Use the Selection, Pencil, and Eraser tools to place, move, and delete
+events (a pencil click creates a new event with four zero bytes), and
+snapping applies just as it does elsewhere in the editor.
+
+> 📝 **Note:** The lane is for placing and timing SysEx events. To edit
+> the actual bytes of a message, select it and edit **SysEx Data** in the
+> Actions panel, or use the **Data** field in the
+> [MIDI Event List](#the-midi-event-list).
+
 ## MIDI Controller Mappings
 
 The **MIDI Controller Mappings** window lets you drive plugin parameters
 from a hardware MIDI controller's knobs and faders. Each row binds one
-incoming MIDI controller (CC) to one parameter in your edit.
+incoming MIDI controller (CC) to one parameter in your Edit.
 
-Open it from the Automation menu's **Create MIDI controller mappings…**
-item, or with the command **Show MIDI controller mappings window**.
+Open it from *Automation > Create MIDI controller mappings...*,
+or with the command **Show MIDI controller mappings window**.
 
 ![](images/controller-mappings_1@2x.png)
 
@@ -599,7 +618,7 @@ Each row has two halves:
 - **Left half (the controller)**: Click it to enter MIDI-learn (the
   cell reads **(Move a MIDI controller)**); the next CC that arrives
   from your hardware is captured and bound to this row.
-- **Right half (the parameter)**: Click **Choose Parameter…** for a
+- **Right half (the parameter)**: Click **Choose Parameter...** for a
   hierarchical menu of everything you can map: Master Plugins, Plugin
   Racks, and each track's plugins and their parameters, plus an **Add all
   parameters** shortcut. The same menu saves, loads, and deletes
@@ -612,39 +631,14 @@ MIDI-learn the hardware controllers you want for each.
 
 Press **Delete** with a row selected to remove that mapping. There's
 always a blank row at the bottom ready for the next binding. Mappings
-belong to the edit you set them up in, while presets are global and
-available to every edit.
+belong to the Edit you set them up in, while presets are global and
+available to every Edit.
 
-> 📝 **Note:** The window shows mappings for the focused edit only, and
-> it doesn't switch when you change focus to a different edit.
-
-## The SysEx Lane
-
-System Exclusive (SysEx) messages are manufacturer-specific MIDI data,
-often used to recall a hardware synth patch or send a device-specific
-command. Waveform shows them on a dedicated controller lane in the MIDI
-editor, where each SysEx event appears as a **diamond** on a timeline.
-
-Open the lane by clicking **+** next to **Controllers** and choosing
-**SysEx Events** (or choose it from an existing lane's **Menu**). The
-lane header has a **Close** button and a **Menu**.
-Use the Select, Pencil, and Eraser tools to place, move, and delete
-events (a pencil click creates a new event with four zero bytes), and
-snapping applies just as it does elsewhere in the editor.
-
-> 📝 **Note:** The lane is for placing and timing SysEx events. To edit
-> the actual bytes of a message, select it and edit **SysEx Data** in the
-> Actions panel, or use the **Data** field in the MIDI Event List
-> (described above).
+> 📝 **Note:** The window shows mappings for the focused Edit only, and
+> it doesn't switch when you change focus to a different Edit.
 
 ## Moving On
 
 Next, [Pattern Generator](pattern-generator.md) builds parts for you,
-and [Quantizing MIDI Notes](quantizing-midi-notes.md) covers timing
+and [Quantising MIDI Notes](quantizing-midi-notes.md) covers timing
 correction.
-
-
-
-
-
-

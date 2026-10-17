@@ -14,10 +14,8 @@ occasionally.
 
 ## Macro Editor
 
-To open the Macro Editor, go to the Settings tab, and select the
-Keyboard Shortcuts page. Click **Show Macro Editor** at the bottom right
+To open the Macro Editor, open *Settings > Keyboard Shortcuts*. Click **Show Macro Editor** at the bottom right
 of the Keyboard Shortcuts page. The Macro Editor will open.
-
 
 ![](images/37----01.png)
 
@@ -39,10 +37,9 @@ actions triggered by each shortcut.
 
 ## Creating a Macro
 
-To create a new macro, click *Add a new macro* on the Macro Editor.
+To create a new macro, click **Add a new macro** on the Macro Editor.
 This adds a new macro named "Untitled Macro" to the bottom of the
 keyboard shortcuts list under the Macros section.
-
 
 ![](images/37----02.png)
 
@@ -75,16 +72,15 @@ heading. When you find an action you
 want to use, select it and the appropriate code will be inserted into
 the script.
 
-
 ![](images/37----03.png)
 
 *Selecting Actions from the Macro Editor Right-click Menu*
 
--   *Keyboard shortcuts* includes all the built-in keyboard
+-   **Keyboard shortcuts** includes all the built-in keyboard
     shortcuts shown on the Keyboard Shortcuts page.
--   *Basic actions* includes available actions that are not
+-   **Basic actions** includes available actions that are not
     necessarily available as pre-assigned shortcuts.
--   *Advanced actions* includes actions that allow you
+-   **Advanced actions** includes actions that allow you to
     manipulate selected objects and even display messages on the screen.
     Advanced actions are provided as tools for more advanced script
     programming.
@@ -100,44 +96,40 @@ There are several ways to run a macro:
     macros in the very same way as the built-in shortcuts. Find the
     macro in the list and click the "+" to the far right and enter the
     desired key combination.
-2.  Choose **Actions > User macros** from the Edit tab's main menu. All
+2.  Choose *Actions > User macros* from the Edit tab's main menu. All
     your custom macros appear there automatically. Select the
     one you want to run.
-
 
 ![](images/37----09.png)
 
 *Running macros from Actions > User macros*
 
-1.  Add macros to the Custom Menu. At the bottom of the Keyboard
+3.  Add macros to the Custom Menu. At the bottom of the Keyboard
     Shortcuts page, click **Show Custom Menu** to open the Custom Menu
     Editor. Then drag your macros (or any built-in actions) into it.
     Arrange it using drag and drop, add groups, and rename groups.
     Access the Custom Menu from the Edit tab's main menu:
-    **Actions > Custom**.
-
+    *Actions > Custom*.
 
 ![](images/37----10.png)
 
 *The Custom Menu Editor*
 
-## Javascript Programming
+## JavaScript Programming
 
 Beyond creating simple step-by-step lists of actions, you can write macros
-in Javascript. The Macro
-Editor allows you to program loops and conditions using Javascript
-syntax. It even provides color coding for the elements of the script.
-
+in JavaScript. The Macro
+Editor allows you to program loops and conditions using JavaScript
+syntax. It even provides colour coding for the elements of the script.
 
 ![](images/37----04.png)
 
-*Javascript Macro Example*
+*JavaScript Macro Example*
 
 > 📝 **Note:** Waveform actions are exposed as methods using 'dot' notation.
 By that, we mean that they start with the word Tracktion, then a dot,
 then the method. Following the method you can provide one or more
 parameter in parenthesis.
-
 
 ![](images/37----05@2x.png)
 
@@ -172,7 +164,6 @@ These tooltips give you key information when programming macros.
 Waveform's developers use this to give you meaningful clues about how
 each of the actions work.
 
-
 ![](images/37----08.png)
 
 *Hover Over an Action for a Tooltip*
@@ -185,29 +176,27 @@ amount of vertical zoom, the track height).
 ## RTZ Macro Example
 
 By default Waveform doesn't have a true return-to-zero (RTZ) keyboard
-shortcut. The built-in command stops first if it encounters the In-mark
-so you need, to hit it twice to really get back to zero. However, you
+shortcut. The built-in command stops first if it encounters the In marker,
+so you need to hit it twice to really get back to zero. However, you
 can create a macro that performs does the action twice, always returning
 the cursor to the start of the Edit.
-
 
 ![](images/37----06.png)
 
 *True Return-to-Zero Macro Example*
 
-For example, you couldassign the RTZ macro to the Home key.
+For example, you could assign the RTZ macro to the **Home** key.
 
 ## Merge Clips Macro Example
 
 Another feature that you may use often is merging clips. Normally you
 use this by selecting a few clips on a track that you want to combine to
 a single clip. Then you click **Render Clip** in the Actions panel and
-choose *Merge the selected clips*. If you do this frequently, assign a
-key to the built-in *Merge selected clips* command on the Keyboard
-Shortcuts page, or call `Tracktion.mergeSelectedClips();` as one step of
+choose **Merge the selected clips**. If you do this frequently, assign a
+key to the built-in **Merge selected clips** command in *Settings > Keyboard
+Shortcuts*, or call `Tracktion.mergeSelectedClips();` as one step of
 a longer macro. Pick a free key: Cmd + G / Ctrl + G is already used by
-*Group clips*.
-
+**Group clips**.
 
 ![](images/37----07.png)
 
@@ -221,16 +210,14 @@ dedicated buttons to import and export macro scripts as XML files with a
 `.tracktionscript` extension. You can also drag script files straight
 onto the Keyboard Shortcuts page to import them.
 
-
 ![](images/37----11.png)
 
-*Script Input and Export Buttons*
+*Script Import and Export Buttons*
 
 ## Example Scripts
 
 Waveform's engineers have supplied code samples of several macro scripts
 to get you started:
-
 
 ```js
 // Rename Clips From Track
@@ -250,8 +237,6 @@ for (var i = 0; i < tracks.length; ++i)
 }
 ```
 
-
-
 ```js
 // Reset Tracks Solo/Mute
 var tracks = Tracktion.getEditElements ('track');
@@ -260,14 +245,11 @@ Tracktion.setSoloIsolate (tracks, false);
 Tracktion.setMute (tracks, false);
 ```
 
-
 ```js
 //Next Active Automation Parameter
 var track = Tracktion.getTrackFromSelectedObject();
 Tracktion.changeActiveAutomationParameter (track, 1);
 ```
-
-
 
 ```js
 // Insert Plugin with Preset
@@ -277,14 +259,12 @@ var preset = Tracktion.getPresetFromLibrary ("Massive All Souls");
 Tracktion.setPluginPreset (plugin, preset);
 ```
 
-
 ```js
 // Jump to tab 2
 var index = Tracktion.getWindowTabIndex();
 var delta = 2 - index;
 Tracktion.changeWindowTabIndex (delta);
 ```
-
 
 ```js
 // Rename Selected Tracks
@@ -295,15 +275,13 @@ Tracktion.setName (tracks[2], 'Hats');
 // etc.
 ```
 
-
 ```js
 // Save Selected Plugins as Preset
 var plugins = Tracktion.getSelectedEditElements ('plugin');
 Tracktion.saveObjectsAsPreset (plugins);
 ```
 
-## My Code Samples
-
+## More Code Samples
 
 ```js
 /* Park the In-Marker & Out-Markers
@@ -317,7 +295,6 @@ Tracktion.markOut();
 Tracktion.setPosition ('cursor', SavePosition);
 ```
 
-
 ```js
  /* Search Plugins
  Opens the Browser to the Search tab, enables the Plugin searching while disabling searching for Presets and Loops.
@@ -329,14 +306,12 @@ Tracktion.setPosition ('cursor', SavePosition);
  Tracktion.setSearchPanelText ('');  // loads blank text so you can start typing the search term right away
 ```
 
-
 ```js
 // Rename selected clips to 'Drums'
 var clips = Tracktion.getSelectedEditElements ('clip');
 for (var i = 0; i < clips.length; ++i)
     Tracktion.setName (clips[i], 'Drums');
 ```
-
 
 ```js
 // Rename selected tracks to 'Drums'
@@ -349,9 +324,3 @@ for (var i = 0; i < tracks.length; ++i)
 
 These are fairly simple examples. Waveform users are only just starting
 to explore what macro programming in Waveform can do.
-
-
-
-
-
-

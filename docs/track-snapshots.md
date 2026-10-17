@@ -1,18 +1,17 @@
 # Track Snapshots <span class="pro">PRO</span> { #track-snapshots }
 
+> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion. In other editions the
+> **Track snapshots** submenu shows only a greyed-out *"Feature unavailable"* line, and the Actions panel
+> has no **Track Snapshots** button.
+
 A **Track Snapshot** saves the current arrangement of clips on a single audio track so you can try out
 a different arrangement and instantly recall the saved one. It is an A/B tool for *arrangement* work:
 lay down a verse one way, snapshot it, rearrange the clips, and flip back and forth between the
 versions until you are happy.
 
-> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion. In other editions the
-> **Track snapshots** submenu shows only a greyed-out *"Feature unavailable"* line, and the Actions panel
-> has no **Track Snapshots** button.
-
 > 📝 **Note:** A snapshot captures the track's **clips only**: their positions, lengths, and clip-level
 > settings. It does **not** store plugins, fader, pan, mute/solo, sends, or automation. Recalling a
 > snapshot changes which clips sit on the track; it leaves the channel strip and plugins untouched.
-
 
 ![](images/snapshots_1@2x.png)
 
@@ -21,8 +20,8 @@ versions until you are happy.
 
 ## Opening the Snapshots Menu
 
-Track Snapshots are available on **audio tracks** only. You will not see them on folder, submix,
-tempo, or chord tracks. There are two ways in:
+Track Snapshots are available on **audio tracks** only. You will not see them on Folder, Submix,
+Tempo, or Chord tracks. There are two ways in:
 
 - **Right-click the track** and choose **Track snapshots** (camera icon) to open the submenu.
 - Select the track and click **Track Snapshots** in the Actions panel.
@@ -39,7 +38,7 @@ the real-world date and time it was taken, shown in brackets beside its name so 
 apart at a glance.
 
 There is no limit on the number of snapshots a track can hold, and they are saved inside the project, so
-they travel with the edit.
+they travel with the Edit.
 
 
 ## Recalling, Renaming, and Deleting
@@ -55,7 +54,7 @@ The menu lists every snapshot on the track, newest first. If there are none, it 
 
 > ⚠️ **Warning:** Recalling a snapshot **replaces all clips currently on the track**. There is no
 > confirmation prompt, so anything you have not snapshotted will be swapped out. The action is undoable
-> through the edit's normal Undo (Cmd + Z / Ctrl + Z) if you change your mind.
+> through the Edit's normal **Undo** (Cmd + Z / Ctrl + Z) if you change your mind.
 
 > 📝 **Note:** Deleting a snapshot is immediate and is not confirmed.
 
@@ -63,14 +62,14 @@ The menu lists every snapshot on the track, newest first. If there are none, it 
 ## Syncing Snapshots Across Tracks
 
 At the top of the menu is **Sync snapshots across tracks**, a toggle that is **on by default**. This is a
-global preference, so it carries between projects, not just the current edit.
+global preference, so it carries between projects, not just the current Edit.
 
 - **On**: adding, recalling, renaming, or deleting a snapshot acts on **every track that shares that
   snapshot's timestamp**, and on any tracks linked through an enabled **Edit Mix Group**. This lets you
   snapshot and recall a whole arrangement (several tracks at once) as a single operation.
 - **Off**: every snapshot operation affects only the one track you clicked on.
 
-> 💡 **Tip:** Use *Sync snapshots across tracks* when you want to A/B a multi-track section (for example
+> 💡 **Tip:** Use **Sync snapshots across tracks** when you want to A/B a multi-track section (for example
 > all of your drum tracks together). Turn it off when you want to experiment with a single track in
 > isolation without disturbing the others.
 

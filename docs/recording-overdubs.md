@@ -1,7 +1,7 @@
 # Recording Overdubs
 
 In this chapter we walk through an example of recording a simple song.
-In the previous chapter, we explained how to use the *Click* feature to
+[Recording Audio](recording-audio.md) explains how to use the **Click** feature to
 hear a metronome tempo reference while recording. In this chapter we
 will use a drum loop instead. Later you will learn the steps to overdub
 guitars and bass, in order to create a simple tune.
@@ -17,21 +17,19 @@ Here are the tracks we will have by the end of the chapter:
 -   Track 3: Acoustic Guitar - Double
 -   Track 4: Bass
 
-## Set up the Drum Loop
+## Set Up the Drum Loop
 
-1.  First, set the desired tempo. Click on the tempo (e.g. 77 bpm) in
-    the transport bar. Then edit the *BPM* value in the Actions panel and
+1.  First, set the desired tempo. Click on the tempo (e.g. 77 BPM) in
+    the transport bar. Then edit the **BPM** value in the Actions panel and
     type in the tempo.
-
 
 ![](images/16----01.png)
 
 *Click BPM to Edit Tempo*
 
-1.  Drag in a loop from the Browser, for example a two bar loop. This
+2.  Drag in a loop from the Browser, for example a two bar loop. This
     will create an Audio clip. The example shown uses Track 1 for the
     loop, which has been renamed to "DrumLoop."
-
 
 ![](images/16----02.png)
 
@@ -40,10 +38,9 @@ Here are the tracks we will have by the end of the chapter:
 > 💡 **Tip:** If the loop doesn't align to the bars correctly, hold Opt / Alt
 and drag the right trim arrow until it does.
 
-1.  Click the L icon on the Audio clip to convert it to looping mode.
+3.  Click the L icon on the Audio clip to convert it to looping mode.
     Now drag the right trim handle to roll out as many copies of the
     loop as you want.
-
 
 ![](images/16----03.png)
 
@@ -53,20 +50,19 @@ and drag the right trim arrow until it does.
 
 1.  Set up the input. In this example, the drum loop is on the first
     track, and the second track is used for recording the acoustic
-    guitar rhythm part. We have selected *Input 1* where the mic is
+    guitar rhythm part. We have selected **Input 1** where the mic is
     connected.
-
 
 ![](images/16----04.png)
 
 *Configure the Input*
 
-1.  We won't use loop recording, so make sure the *Loop* button is
-    turned off in the Transport section.
-2.  Turn off *Click* because we are using the drum loop track for the
+2.  We won't use loop recording, so make sure the **Loop** button is
+    turned off in the transport bar.
+3.  Turn off **Click** because we are using the drum loop track for the
     timing reference.
-3.  Let's use a two bar count-in. To set that up, choose **Click >
-    Count-in > 2 bars** from the main menu.
+4.  Use a two-bar count-in. To set that up, choose *Click >
+    Count-in > 2 bars* from the main menu.
 
 ## Record the Rhythm Guitar Part
 
@@ -80,11 +76,10 @@ and drag the right trim arrow until it does.
 3.  Test the input level by playing at the loudest level you plan to use
     for the track. Adjust the level using the gain control on the audio
     interface.
-4.  Verify that the cursor is at the beginning of the edit. If not,
-    press Home.
-5.  Press *Record* (R) on the Transport to start recording. Now record a
-    take of your song. At the end hit Spacebar to stop recording.
-
+4.  Verify that the cursor is at the beginning of the Edit. If not,
+    press **Home**.
+5.  Press **Record** (**R**) in the transport bar to start recording. Now record a
+    take of your song. At the end press **Space bar** to stop recording.
 
 ![](images/16----05.png)
 
@@ -95,14 +90,14 @@ try again. See [Deleting Clips](audio-clips-and-editing-audio.md#deleting-clips)
 for several ways to do this.
 
 > 📝 **Note:** If you hear some kind of weird phasing as you play your
-instrument, then it probably means you have *Live Input Monitoring*
+instrument, then it probably means you have **Live Input Monitoring**
 on while also monitoring through your audio interface. Set
-*Live Input Monitoring* to Off.
+**Live Input Monitoring** to Off.
 
 ## Doubling the Rhythm Guitar
 
 1.  Following recording the initial rhythm guitar part, rewind and play
-    it back. Use the Volume & Pan plugins in the mixer section to
+    it back. Use the Volume & Pan plugins in the inline mixer to
     balance the signal with the drum loop.
 2.  To double the rhythm guitar, drag the Input object to the the next
     track. Now track 3 is immediately ready to go for recording an
@@ -112,18 +107,16 @@ on while also monitoring through your audio interface. Set
 Volume & Pan plugin to better balance the recorded track with your live
 mic.
 
-1.  Rewind then click *Record* in the Transport.
-
+3.  Rewind then click **Record** in the transport bar.
 
 ![](images/16----06.png)
 
 *Recording the Second Guitar Part*
 
-1.  After recording, play back and balance the new recording with the
+4.  After recording, play back and balance the new recording with the
     original guitar track. To get a wide stereo effect from the doubled
-    part, pan the tracks to opposite sides using the *Pan* slider from
+    part, pan the tracks to opposite sides using the **Pan** slider from
     the Volume & Pan plugin.
-
 
 ![](images/16----07.png)
 
@@ -143,25 +136,23 @@ better if you have the hi-z mode enabled.
 1.  Connect your bass to the interface using a normal 1/4" to 1/4"
     guitar cord.
 
-
 ![](images/16----08.jpg)
 
 *Engage High Impedance Mode on Your Audio Interface*
 
-1.  From this point, recording works exactly the same as with a mic.
+2.  From this point, recording works exactly the same as with a mic.
     Select the correct input and adjust the input level. Make sure the
     bass has a good level but is not activating the clip LED on the
     interface using the gain knob on the audio interface.
-2.  Arm the input for recording if it's not already. Adjust the levels
+3.  Arm the input for recording if it's not already. Adjust the levels
     of the existing tracks so that you can hear the the tracks. At the
     same time, you want to hear what you are playing on the bass.
-3.  Rewind and hit *Record*. If if the take doesn't go well, stop, press
-    *Undo* and try again.
-
+4.  Rewind and hit **Record**. If the take doesn't go well, stop, press
+    **Undo** and try again.
 
 ![](images/16----09.png)
 
-*Overedubbed Bass Line*
+*Overdubbed Bass Line*
 
 > 💡 **Tip:** If you get a good take but think you can do better, don't
 delete the clip. You can drag the input to another track and try again.
@@ -171,10 +162,9 @@ take!
 
 ## Rename Tracks
 
-As you record overdubs, it's good idea to stay organized. One key is to
+As you record overdubs, it's a good idea to stay organised. One key is to
 name the tracks appropriately. Click directly on the track name then
-edit the *Name* property.
-
+edit the **Name** property.
 
 ![](images/16----10.png)
 
@@ -182,34 +172,33 @@ edit the *Name* property.
 
 > 💡 **Tip:** It can get annoying when renaming several tracks. You keep
 mousing between the track and the Actions panel. To avoid all the
-extra mouse mileage, click the track name then press Tab. Tab puts the
-focus directly on the *Name* property ready for typing.
+extra mouse mileage, click the track name then press **Tab**. **Tab** puts the
+focus directly on the **Name** property ready for typing.
 
 ## Adding Additional Tracks
 
 If you get to this point and you do not have enough tracks in your
-project, you can easily add tracks. There are several ways to do that.
+Edit, you can easily add tracks. There are several ways to do that.
 
-1.  **Press T.** Select any existing track and press T. That creates a
+1.  **Press T.** Select any existing track and press **T**. That creates a
     new track directly below the selected one.
-2.  **Right-click**. Right-click in any blank space and select *Create a
-    new track*, or right-click a track header and select *Add track*.
-3.  **Track Menu**. Another way is to select **Track > Add track** from
-    the main menu. Or, select **Track > Add several tracks** to add 2 to
+2.  **Right-click**. Right-click in any blank space and select **Create a
+    new track**, or right-click a track header and select **Add track**.
+3.  **Track Menu**. Another way is to select *Track > Add track* from
+    the main menu. Or, select *Track > Add several tracks* to add 2 to
     14 new tracks in one go.
-
 
 ![](images/16----11.png)
 
-*Create Tracks from the Tracks Menu*
+*Create Tracks from the Track Menu*
 
 > 💡 **Tip:** Like most things in Waveform, you can undo creating tracks
-using the *Undo* button (Cmd + Z / Ctrl + Z). To remove a track from
-your project, select it and hit Delete or Backspace.
+using the **Undo** button (Cmd + Z / Ctrl + Z). To remove a track from
+your Edit, select it and press **Delete** or **Backspace**.
 
 ## Rearranging Tracks
 
-To rearrange the tracks, drag the track from the track name area and
+To rearrange the tracks, drag the track by its track header and
 drop it in the new position. As you drag the track, a glowing bar will
 appear between tracks showing you the target for your drop. When that
 bar is in the right spot, let go of the drag and the track will be
@@ -222,22 +211,14 @@ continue to record and overdub vocals, keyboards, or other instruments.
 As you add more tracks, you will need to reduce the level of each to
 avoid overloading the master level.
 
-
 ![](images/16----12.png)
 
 *Adjust the Mix*
 
 > 💡 **Tip:** If you temporarily overload the master meter, you can reset the
-overload indicators using the backslash key ( \\ ).
+overload indicators using the backslash key (**\\**).
 
-## Moving on
+## Moving On
 
-That was a walk-through of overdubbing. At this point, you should be
-getting familiar with basic recording in Waveform and have a handle on
-how to work with tracks in Waveform.
-
-
-
-
-
-
+Next, [Clean-up Editing](clean-up-editing.md) covers tidying up the clips
+you've recorded.

@@ -6,11 +6,11 @@ phrases from numerous takes to build a composite or "comp." The idea is
 to create the best possible take. Engineers have been doing this for
 years, but Waveform makes it much easier than the traditional methods.
 
-Comping typically starts with takes recorded in *Loop* mode, covered in
+Comping typically starts with takes recorded in **Loop** mode, covered in
 [Loop Recording](loop-recording.md).
 
-You can also build composites from any collection of tracks with *Comp
-Groups*. More on that later in the chapter.
+You can also build composites from any collection of tracks with comp
+groups; see [Setting up a Comp Group](#setting-up-a-comp-group).
 
 ## Copy Your Edit
 
@@ -21,20 +21,20 @@ to do the composite a different way.
 > 📝 **Note:** We are assuming that you have already recorded using the
 technique in the previous chapter. If not, go back to [Loop Recording](loop-recording.md) and get some takes recorded!
 
-The quickest way is **File > Save edit as...**. It suggests a numbered
-name; the copy is added to the same project and becomes the Edit you
+The quickest way is *File > Save edit as...*. It suggests a numbered
+name; the copy is added to the same Project and becomes the Edit you
 keep working on, while the original stays as you last saved it. For a
-snapshot of the whole project, use **File > Backup edit and project
-files...** and give the backup a name.
+snapshot of the whole Project, use *File > Backup edit and project
+files...* and give the backup a name.
 
 You can also make the copy from the Projects tab:
 
 1.  When you finish loop recording, make sure to save the Edit with
-    **File > Save edit** (Cmd + S / ctrl + S).
+    *File > Save edit* (Cmd + S / Ctrl + S).
 2.  Go to the Projects tab and select the correct Edit. In the Controls
-    panel, click *Create a Copy*.
-3.  It is recommended to keep your Edits organized by adding a revision
-    number. Do so by clicking on each Edit, then editing the *Name*
+    panel, click **Create a Copy**.
+3.  It is recommended to keep your Edits organised by adding a revision
+    number. Do so by clicking on each Edit, then editing the **Name**
     property.
 4.  On the original Edit, add a comment that says, "This version is
     before comping" or similar.
@@ -51,16 +51,14 @@ the process.
 
 1.  Select the Audio clip that contains the takes you want to comp.
 
-
 ![](images/20----01.png)
 
 *Takes Follow Loop Recording*
 
-1.  Click on the plus (+) icon in the lower right corner of the clip and
-    select *Show takes.* That expands the clip to show all of the
+2.  Click on the plus (+) icon in the lower right corner of the clip and
+    select **Show takes**. That expands the clip to show all of the
     individual takes. If you play back over this section of the Edit,
     you will hear the very last take you did during loop recording.
-
 
 ![](images/20----02.png)
 
@@ -70,14 +68,13 @@ the process.
     any take. That phrase is instantly promoted to the active take. This
     drag-to-select action is called "swiping."
 
-
 ![](images/20----03.png)
 
 *Swipe a Phrase to Add it to the Active Take*
 
 > 💡 **Tip:** While comping, sometimes it's helpful to have the cursor return
 where you started playback whenever you stop playback. Do so by enabling
-**Options > Return to start on play**. This makes
+*Options > Return to start on play*. This makes
 it easier to audition phrase by phrase without needing to constantly
 reposition the cursor.
 
@@ -85,14 +82,12 @@ reposition the cursor.
     want to switch a selected phrase to a different take, just click
     another take. The selection instantly moves to that take.
 
-
 ![](images/20----04.png)
 
 *Building the Composite Take*
 
 5.  If the swipe selection doesn't fully enclose a phrase, adjust either
     edge of the selection by simply dragging the edge to trim it.
-
 
 ![](images/20----05.png)
 
@@ -102,9 +97,8 @@ reposition the cursor.
 take. Other times you'll predominantly use one take and just fix a
 couple of bad phrases.
 
-Once you have finished, click the plus (+) icon and select *Hide takes*.
+Once you have finished, click the plus (+) icon and select **Hide takes**.
 At that point, you're finished comping!
-
 
 ![](images/20----06.png)
 
@@ -117,10 +111,9 @@ the option to roll back if you ever want to make some changes.
 ## Flatten Comp
 
 If you feel compelled to remove the underlying takes from the Edit,
-click the plus (+) icon on the clip and select *Flatten current comp*.
+click the plus (+) icon on the clip and select **Flatten current comp**.
 This gives you the option to delete the source files. Keep in mind that
 this operation is permanent.
-
 
 ![](images/20----07.png)
 
@@ -139,56 +132,64 @@ The plus (+) menu on a clip with takes has a few more items:
 - **Delete unused takes**: Removes the takes you aren't using. It
   appears when a single take is selected rather than a comp.
 - **Copy comp to clipboard** / **Paste comp from clipboard**: Copies the
-  current comp of an audio clip, so you can apply the same choices to
-  another audio clip with takes.
+  current comp of an Audio clip, so you can apply the same choices to
+  another Audio clip with takes.
 - **Create audio comp** (MIDI clips only): **Create a new audio comp
-  clip** renders the MIDI takes into a new audio clip with takes, so you
+  clip** renders the MIDI takes into a new Audio clip with takes, so you
   can comp them as audio; **Replace with a new audio comp clip** does
   the same and replaces the MIDI clip.
 
-## Setting up a Comp Group
+## Setting Up a Comp Group
 
-*Comp Groups* let you use swipe comping with any group of tracks. This works similarly to the techniques
-described above for comping takes. The difference is that you first add
-the tracks involved to a Comp Group.
+Comp groups let you use swipe comping with any group of tracks. This
+works similarly to the techniques described above for comping takes.
+The difference is that you first add the tracks involved to a comp
+group.
 
-**Select Tracks to Comp**
+### Select Tracks to Comp
 
-Select all the tracks you want use to build the composite. These are typically recorded as various takes of a lead vocal or solo instrument. However you can use any collection of tracks you want.
-
+Select all the tracks you want use to build the composite. These are
+typically recorded as various takes of a lead vocal or solo instrument.
+However you can use any collection of tracks you want.
 
 ![](images/20----08.png)
 
 *Select the Tracks to Comp*
 
-**Create a Comp Group**
+### Create a Comp Group
 
-In the Actions panel, open the *Comp Group* menu and select *Add group.* This opens the *Add Comp Group* dialog box. The name will default to *Comp Group 1* which is fine. You can change it to something more descriptive if you want. Click *OK*.
-
+In the Actions panel, open the **Comp Group** menu and select **Add
+group**. This opens the **Add Comp Group** dialog box. The name will
+default to *Comp Group 1* which is fine. You can change it to something
+more descriptive if you want. Click **OK**.
 
 ![](images/20----09.png)
 
 *Creating a Comp Group*
 
-**Add a Track to a Comp Group**
+### Add a Track to a Comp Group
 
- Any tracks pre-selected at the time you created *Comp Group 1* are automatically added as you create the Comp Group. To add another track to *Comp Group 1*, select the track, open the *Comp Group* menu and select *Comp Group 1*.
-
+Any tracks pre-selected at the time you created *Comp Group 1* are
+automatically added as you create the comp group. To add another track
+to *Comp Group 1*, select the track, open the **Comp Group** menu and
+select **Comp Group 1**.
 
 ![](images/20----10.png)
 
-*Adding Another Track to *Comp Group 1**
+*Adding Another Track to Comp Group 1*
 
-**Removing a Track from a Comp Group**
-To take a track out of a comp group, first, select the track. In the *Comp Group* menu, select *None*.
+### Removing a Track from a Comp Group
+
+To take a track out of a comp group, first, select the track. In the
+**Comp Group** menu, select **None**.
 
 ## Comping Tracks Using a Comp Group
 
-With some tracks added to a Comp Group, it is easy to start comping.
+With some tracks added to a comp group, it is easy to start comping.
 
-1.  Select one of the tracks then in the *Comp Group* menu select *Show
-    editor > Edit track comps*. This puts the tracks in to comp mode.
-
+1.  Select one of the tracks then in the **Comp Group** menu select
+    *Show editor > Edit track comps*. This puts the tracks into comp
+    mode.
 
 ![](images/20----11.png)
 
@@ -197,54 +198,52 @@ With some tracks added to a Comp Group, it is easy to start comping.
 2.  Now you can start swiping to select phrases from any of the tracks.
     On playback only the selected phrases are played back.
 
-
 ![](images/20----12.png)
 
 *Swiping Phrases to Create a Composite*
 
 3.  You can adjust the window of your selection by dragging either edge
-    of range. This works very similarly to comping takes which we
-    covered earlier in the chapter.
+    of range. This works very similarly to comping takes, covered in
+    [Comping Takes](#comping-takes).
 
 > 💡 **Tip:** If you want to have good control over the silent parts of a
-comp, it helps to add a blank track to the Comp Group. For the parts you
+comp, it helps to add a blank track to the comp group. For the parts you
 want to silence, simply swipe over that range on the blank track.
 
 ## Comp Group Editor
 
 Here are few more things to know about the Comp Group Editor.
 
-**Show Track Comps**
-- When you enable comp group editing using *Show editor > Edit track
-comps,* another option, *Show track comps* is also turned on. This
-enables the color coding of the swipe selections on the tracks. You
-can turn this on separately if you want. This way you can see the
-comp selections but leave *Edit track comps* turned off so you don't
-accidentally change them.
+### Show Track Comps
 
+When you enable comp group editing using *Show editor > Edit track
+comps*, another option, **Show track comps**, is also turned on. This
+enables the colour coding of the swipe selections on the tracks. You can
+turn this on separately if you want. This way you can see the comp
+selections but leave **Edit track comps** turned off so you don't
+accidentally change them.
 
 ![](images/20----13.png)
 
 *Show Track Comps*
 
-**Render Comp**
-- When you have the composite complete, you can render the result to
-    single track. The *Comp Group* menu's **Render Comp** submenu gives
-    you two options for this.
-    *Render and replace comp group* replaces the all the comp group
-    tracks with the resulting track. *Render comp group to a new track*
-    leaves the existing tracks in place and adds a new track with the
-    composite.
+### Render Comp
 
+When you have the composite complete, you can render the result to a
+single track. The **Comp Group** menu's **Render Comp** submenu gives
+you two options for this. **Render and replace comp group** replaces all
+the comp group tracks with the resulting track. **Render comp group to a
+new track** leaves the existing tracks in place and adds a new track
+with the composite.
 
 ![](images/20----14@2x.png)
 
 *Rendering a Comp to a New Track*
 
-**Add, Rename, Remove**
-- These options on the *Comp Group* menu give you all the features
-    need to manage your comp groups.
+### Add, Rename, Remove
 
+These options on the **Comp Group** menu give you all the features you
+need to manage your comp groups.
 
 ![](images/20----15.png)
 
@@ -258,11 +257,5 @@ songs.
 
 ## Moving On
 
-The comping features in Waveform are very easy to use. As you are
-learning Waveform, make sure to explore these powerful features.
-
-
-
-
-
-
+Next, [Using an Amp Simulator Plugin](using-an-amp-simulator-plugin.md)
+shows how to record electric guitar directly through an amp simulator.

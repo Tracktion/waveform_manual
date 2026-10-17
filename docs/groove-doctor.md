@@ -1,5 +1,7 @@
 # Groove Doctor <span class="pro">PRO</span> { #groove-doctor }
 
+> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion.
+
 The Groove Doctor fixes the timing of *recorded audio*. It detects the
 beats (transients) in a performance, then cuts, snaps, and smooths the
 audio so it lines up with the grid, or with the feel of a groove
@@ -7,33 +9,32 @@ template. It's the tool to reach for when a drum take is a little loose,
 a bass line drifts off the beat, or you want to lock a live performance
 to the click without re-recording it.
 
-> 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion.
-
 ![](images/Groove%20Dr%201@2x.png)
+
 *The Groove Doctor window*
 
-This is an audio tool, not a MIDI one. To quantise MIDI notes, see the
-Quantizing MIDI Notes chapter instead. It's also separate from the
+This is an audio tool, not a MIDI one. To quantise MIDI notes, see
+[Quantising MIDI Notes](quantizing-midi-notes.md) instead. It's also separate from the
 Groove Template editor (opened from the View menu), which manages and
 imports the groove templates themselves. That said, the Groove Doctor's
-*Extract Groove* mode can *create* a template that the Groove Template
+**Extract groove** operation can *create* a template that the Groove Template
 editor then looks after.
 
 ## Opening the Groove Doctor
 
 The Groove Doctor opens in its own floating window, titled *"Groove
-Doctor - "* followed by your edit's name. You can open it in three ways:
+Doctor - "* followed by your Edit's name. You can open it in three ways:
 
-- Click the stethoscope button in the transport bar (tooltip *"Show or
-  hide Groove Doctor window"*).
-- Use the **View** menu and choose *Show Groove Doctor*.
+- Click the stethoscope button in the transport bar (tooltip **Show or
+  hide Groove Doctor window**).
+- Choose *View > Show Groove Doctor*.
 - Run the command **Show or hide Groove Doctor window**. There's no
-  default keyboard shortcut, so assign one via Settings > Keyboard
-  Shortcuts if you use it often. A second command, **Zoom to fit Groove
+  default keyboard shortcut, so assign one in *Settings > Keyboard
+  Shortcuts* if you use it often. A second command, **Zoom to fit Groove
   Doctor selection**, frames your captured range in the main Edit view.
 
 The window is a fixed size and can't be resized; its position is
-remembered per edit.
+remembered per Edit.
 
 ## The Top Panels
 
@@ -45,23 +46,23 @@ which workflow you're in.
 This is where you tell the Groove Doctor *what* to work on: a time
 range and a set of tracks.
 
-- **Start** / **End**: The time range, shown in your edit's timecode
+- **Start** / **End**: The time range, shown in your Edit's timecode
   format. You can type values directly.
 - **Capture Selection**: Grabs both the time range and the tracks from
   your current selection in the Edit in one click. This is usually the
   fastest way to set up.
-- **Capture Time**: Sets just the time range, from a sub-menu: *From
-  selected range*, *From loop range*, or *From selected clips*.
-- **Capture Tracks**: Sets just the tracks, from a sub-menu: *From
-  group*, *From selected range*, *From selected tracks*, or *From
-  selected clips*.
+- **Capture Time**: Sets just the time range, from a submenu: **From
+  selected range**, **From loop range**, or **From selected clips**.
+- **Capture Tracks**: Sets just the tracks, from a submenu: **From
+  group**, **From selected range**, **From selected tracks**, or **From
+  selected clips**.
 
 ### View
 
 Controls for navigating the waveform while you work. These don't change
 your audio.
 
-- **Zoom −** / **Zoom +**: Zoom the waveform out and in.
+- **Zoom -** / **Zoom +**: Zoom the waveform out and in.
 - **Fit to Selection**: Zoom so the captured range fills the view.
 - **Previous** / **Next** clip: Jump between clips.
 - **Show Transients**: Toggles the detected beat markers on and off.
@@ -69,7 +70,7 @@ your audio.
   this window. (Default: on)
 - **Trash**: Clears all detected transient markers.
 
-## Correcting Timing: the Common Workflow
+## Correcting Timing: The Common Workflow
 
 The Groove Doctor is a guided, numbered workflow. The lit-up number tells
 you which stage is active; earlier stages dim once you move on. The most
@@ -79,7 +80,7 @@ each beat and snaps the pieces to the grid. Here's the full pass:
 1.  Select the range and tracks you want to fix in the Edit, then click
     **Capture Selection** in the Groove Doctor.
 2.  In **Stage 1 - Analyse**, leave the **Operation** dropdown on
-    *Quantise/groove* and click **Analyse**. A progress bar runs while
+    **Quantise/groove** and click **Analyse**. A progress bar runs while
     Waveform finds the beats; click **Cancel** to stop it. When it
     finishes, the Doctor advances to Stage 2 automatically.
 3.  In **Stage 2 - Separate**, adjust **Sensitivity** and **Padding** if
@@ -96,10 +97,11 @@ each beat and snaps the pieces to the grid. Here's the full pass:
 > 💡 **Tip:** Each stage from Separate onward has a small camera
 > **snapshot** button in its title bar. Click it *before* you run that
 > stage to save a Track Snapshot you can roll back to. These edits are
-> destructive, so snapshotting first is cheap insurance. See the Track
-> Snapshots chapter for how to restore one.
+> destructive, so snapshotting first is cheap insurance. See [Track
+> Snapshots](track-snapshots.md) for how to restore one.
 
 ![](images/Groove%20Dr%202@2x.png)
+
 *Working through the Quantise/groove stages*
 
 ## Stage Reference
@@ -123,7 +125,7 @@ The four operations do the following:
 - **Warp quantise/groove**: Time-stretches (warps) the audio onto the
   grid *without* cutting it, then consolidates.
 - **Extract tempo map**: Reads the bar transients and writes a matching
-  tempo map to the edit's tempo track.
+  tempo map to the Edit's Tempo track.
 - **Extract groove**: Reads the beat transients and saves them as a new
   groove template you can reuse elsewhere.
 
@@ -138,7 +140,7 @@ more transients; lower values keep only the strongest hits. (Range:
 
 **Padding**: Nudges the cut point earlier or later than the detected
 transient. A small negative value cuts slightly *before* the hit, which
-usually sounds more natural. (Range: −50 to +50 ms)
+usually sounds more natural. (Range: -50 to +50 ms)
 
 **Set tracks to separate** / **Set tracks to warp**: Changes which
 tracks the Separate or Warp stage works on, from the same menu as
@@ -156,10 +158,10 @@ and stop there, with no Stages 3 and 4:
   1/4 beat, 1/3 beat, 1/2 beat, 1 beat) and an **Extract Groove** button
   that prompts you for a *"Groove Name?"*. (Default: 1/8 beat)
 
-### Stage 3: Quantise (Quantise/groove and Warp modes)
+### Stage 3: Quantise (Quantise/groove and Warp Modes)
 
 **Grid**: The note value the beats snap to. The choices come from your
-edit's available quantise values.
+Edit's available quantise values.
 
 **Grid Strength**: How far each beat moves toward the grid. At 100% beats
 land exactly on the grid; lower values keep some of the original feel.
@@ -181,7 +183,7 @@ For **Quantise/groove** this stage is **Smooth**:
 (Range: 0-100 ms)
 
 **Offset**: Shifts every quantised clip start earlier or later, handy if
-the whole part feels a touch ahead of or behind the beat. (Range: −100 to
+the whole part feels a touch ahead of or behind the beat. (Range: -100 to
 +100 ms)
 
 After smoothing, **Consolidate** flattens all the pieces into one clip. A
@@ -196,16 +198,16 @@ whichever control your mouse is hovering over.
 
 ## ⚡ Things to Watch Out For
 
-> ⚠️ **Warning:** *Extract tempo map* **overwrites** any existing tempo
+> ⚠️ **Warning:** **Extract tempo map** overwrites any existing tempo
 > changes within the captured range once you confirm the prompt.
 
-> ⚠️ **Warning:** *Warp quantise/groove* renders and consolidates the clips
+> ⚠️ **Warning:** **Warp quantise/groove** renders and consolidates the clips
 > before warping and suppresses the normal undo step, so you can't
 > press Undo to get back. Take a snapshot first.
 
 ## Moving On
 
 For lighter, hands-on timing corrections, the Warp Time editor lets you
-bend audio in place by dragging warp points (see the Warp Time chapter).
-The Track Snapshots chapter covers rolling back if a Groove Doctor pass
+bend audio in place by dragging warp points (see [Warp Time](warp-time.md)).
+[Track Snapshots](track-snapshots.md) covers rolling back if a Groove Doctor pass
 doesn't go the way you hoped.

@@ -7,8 +7,8 @@ a blank canvas. The notes it creates are real, editable MIDI; once
 they're generated you can tweak them like anything else you'd draw by
 hand.
 
-This is available in all editions. The one exception is the *Follow
-Chord Track* key option, which needs Waveform Pro or the MIDI Producer
+This is available in all editions. The one exception is the **Follow
+Chord Track** key option, which needs Waveform Pro or the MIDI Producer
 Expansion.
 
 ![](images/pattern-generator_1@2x.png)
@@ -21,7 +21,7 @@ Select a MIDI clip, then either:
 
 - Click **Pattern Generator** in the Actions panel to open it in a
   pop-out window.
-- In the Detail editor's Clip view, click **Pattern Generator** (next
+- In the Detail Editor's Clip tab, click **Pattern Generator** (next
   to **Piano Roll**) to show the same page inline.
 
 ## Choosing a Pattern Type
@@ -46,26 +46,26 @@ These appear for every pattern type (except None).
 
 **Key**: Where the generated notes get their pitch reference. (Choices:
 Follow Chord Track, Follow Global Track, or one of the twelve chromatic
-roots) (Default: Follow Global Track). *Follow Chord Track* ties the
-pattern to the harmony you've laid out on the Chord Track and needs
-Waveform Pro or the MIDI Producer Expansion; *Follow Global Track*
-tracks the edit's global key.
+roots) (Default: Follow Global Track). **Follow Chord Track** ties the
+pattern to the harmony you've laid out on the Chord track and needs
+Waveform Pro or the MIDI Producer Expansion; **Follow Global Track**
+tracks the Edit's global key.
 
-With a specific root chosen, a button next to **Key** (*Update global
-track key to match key of clip*) copies the clip's key to the Edit's
+With a specific root chosen, a button next to **Key** ("Update global
+track key to match key of clip") copies the clip's key to the Edit's
 global key.
 
 **Scale**: The scale used when you've chosen a fixed root rather
-than following a track. (Only shown when Key is set to a specific root.)
+than following a track. (Only shown when **Key** is set to a specific root.)
 
 **Progression**: A chord-progression builder shared with the Chord
-Track. Add chords (triads, 6ths, 7ths, 9ths, or custom), drop in popular
+track. Add chords (triads, 6ths, 7ths, 9ths, or custom), drop in popular
 3- and 4-chord progressions, and save or load presets. A **Suggestion**
 predictor sits alongside it, showing likely next chords as a bar chart
 so you can build a progression a chord at a time. See
 [The Chord Track](chord-track.md) for the full walkthrough of this
-builder. It works the same way here. (Progression and Suggestion are
-hidden when Key is *Follow Chord Track*, because the Chord Track supplies
+builder. It works the same way here. (**Progression** and **Suggestion** are
+hidden when **Key** is **Follow Chord Track**, because the Chord track supplies
 the chords.)
 
 **Octave**: The octave the generated notes are placed in. (Range: 1-11)
@@ -79,9 +79,9 @@ give a more staccato feel). (Range: 0-100)
 **Auto update**: Regenerates the pattern automatically whenever you
 change a setting. (Default: on)
 
-> ⚠️ **Warning:** With *Auto update* on, regenerating the pattern
+> ⚠️ **Warning:** With **Auto update** on, regenerating the pattern
 > overwrites any manual edits you've made to the notes. If you want to
-> hand-tweak the result, turn *Auto update* off first.
+> hand-tweak the result, turn **Auto update** off first.
 
 ## Arpeggio
 
@@ -127,5 +127,5 @@ In addition to the shared controls, Arpeggio adds:
 ## Moving On
 
 The Pattern Generator shares its Progression builder with the Chord
-Track, so the two work nicely together: set up your harmony on the
-Chord Track, then have each clip's generator follow it.
+track, so the two work nicely together: set up your harmony on the
+Chord track, then have each clip's generator follow it.

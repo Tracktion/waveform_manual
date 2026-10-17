@@ -7,16 +7,16 @@ these before a virtual instrument to have any effect.
 
 ## Waveform Effects
 
-These plugins are under **Waveform > Effects** in the plugin menu.
+These plugins are under *Waveform > Effects* in the plugin menu.
 
 ### MIDI Arpeggiator <span class="pro">PRO</span> { #midi-arpeggiator }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
 The MIDI Arpeggiator turns held notes or chords into rhythmic patterns:
 play a chord and the Arpeggiator cycles through its notes in time with
-the edit. It goes on a track's plugin chain before the instrument (it
+the Edit. It goes on a track's plugin chain before the instrument (it
 can't be added to a clip).
-
-> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 ![](images/MIDI%20Utilities/MIDI%20Arpeggiator@2x.png)
 
@@ -43,14 +43,14 @@ can't be added to a clip).
     (Default: 100%)
 -   **Swing**: Delays alternate steps for a shuffle feel, 0% to 100%.
     (Default: 0%)
--   **Rand Pos / Rand Len / Rand Vel**: Randomize each note's
+-   **Rand Pos / Rand Len / Rand Vel**: Randomise each note's
     position, length, and velocity, 0% to 100%. (Defaults: 0%)
 
 **Input section:**
 
 -   **Input Fix**: Forces all input notes to a fixed velocity.
--   **Velocity**: The fixed velocity used when Input Fix is on, 0 to
-    127. (Default: 64)
+-   **Velocity**: The fixed velocity used when **Input Fix** is on, 0
+    to 127. (Default: 64)
 -   **Input**: How input velocities map to the pattern: As Played,
     Note, or Inverse Note. (Default: Note)
 -   **Max**: The maximum number of held notes used, 1 to 16.
@@ -60,7 +60,7 @@ can't be added to a clip).
 
 **Pattern section:**
 
-Switch the Pattern toggle on to replace the straight cycle with a
+Switch the **Pattern** toggle on to replace the straight cycle with a
 step pattern of your own. The piano-roll style editor covers ±12
 semitones relative to the arpeggiated notes. Use **Pattern** to load a
 preset pattern, **Save** and **Clear** to manage your own, **Import**
@@ -74,14 +74,14 @@ length (1 to 32 steps), and **Grid** to set the step size (1 bar, 1/2,
 
 ### MIDI Chord Companion <span class="pro">PRO</span> { #midi-chord-companion }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
 Chord Companion is a pad-based chord launcher. You assign a chord to
 each of up to 64 pads (four banks, A to D, of 16), and a single
 trigger note then fires the whole chord. It also includes a
-built-in arpeggiator, a chord repeater, and a randomize section.
+built-in arpeggiator, a chord repeater, and a randomise section.
 Chord Companion goes on a track's plugin chain before the instrument
 (it can't be added to a clip).
-
-> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 ![](images/MIDI%20Utilities/MIDI%20Chord%20Companion@2x.png)
 
@@ -100,7 +100,7 @@ Each pad has a trigger note plus two settings of its own: **Octave**
 The footer holds the **Bank A-D** selector, **Learn** (press keys on
 your controller to assign trigger notes to the pads in sequence),
 **Presets** (save and load complete pad layouts), and **Follow host
-key** (when enabled, the pads follow the edit's key signature).
+key** (when enabled, the pads follow the Edit's key signature).
 (Default: on)
 
 **Arp**: Switch it on to arpeggiate the triggered chords. Controls
@@ -122,7 +122,7 @@ defaults 0%).
 
 ### MIDI Chord Player
 
-The MIDI Chord Player is a live single-note harmonizer: play one note
+The MIDI Chord Player is a live single-note harmoniser: play one note
 and hear a full chord. Modifier keys let you switch chord types as you
 play. It is available in all editions of Waveform, and goes on a
 track's plugin chain before the instrument (it can't be added to a
@@ -139,7 +139,7 @@ clip).
     diminished, augmented, major 7th, minor 7th, dominant 7th,
     half-diminished 7th, minor-major 7th, augmented 7th, major 6th,
     minor 6th, and suspended 4th.
--   **Chords in key only**: A smart mode that follows the edit's key
+-   **Chords in key only**: A smart mode that follows the Edit's key
     and only produces diatonic chords. Two modifier keys add 6th and
     7th variations.
 
@@ -148,7 +148,7 @@ keyboard, starting just above the playing range. Drag the marker on
 the keyboard to move where the modifier keys begin. (Default: MIDI
 note 72)
 
-**Render Clips**: Bakes the harmonized chords into the MIDI clips on
+**Render Clips**: Bakes the harmonised chords into the MIDI clips on
 the track as ordinary notes, then removes the Chord Player from the
 track.
 
@@ -172,14 +172,14 @@ Picking one sets **Semitones** for you.
 
 ### MIDI Note Repeater <span class="pro">PRO</span> { #midi-note-repeater }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
 The Note Repeater fires a rhythmic pattern while notes are held:
-hold a chord and it retriggers in time with the edit. It shares its
+hold a chord and it retriggers in time with the Edit. It shares its
 engine and much of its design with the MIDI Arpeggiator, but it is
 purely rhythmic: the held notes always play together as a chord, with
 no note ordering or octave spread. It goes on a track's plugin chain
 before the instrument (it can't be added to a clip).
-
-> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 ![](images/MIDI%20Utilities/MIDI%20Note%20Repeater@2x.png)
 
@@ -201,14 +201,16 @@ before the instrument (it can't be added to a clip).
 -   **Length**: Gate length of each repeated note, 1% to 100%. (Note
     the smaller range than the Arpeggiator's 25-400%.) (Default: 100%)
 -   **Swing**: 0% to 100%. (Default: 0%)
--   **Rand Pos / Rand Len / Rand Vel**: Randomize position, length,
+-   **Rand Pos / Rand Len / Rand Vel**: Randomise position, length,
     and velocity, 0% to 100%. (Defaults: 0%)
 
 ## Waveform Utilities
 
-These plugins are under **Waveform > Utility** in the plugin menu.
+These plugins are under *Waveform > Utility* in the plugin menu.
 
 ### MIDI Filter <span class="pro">PRO</span> { #midi-filter }
+
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 MIDI Filter lets through only the notes inside the range you set. To
 see the range and create a zone, drag the arrows from the left and
@@ -217,18 +219,16 @@ a Plugin rack to create zones that play different virtual instruments:
 for example, bass on the left side of your controller and piano on the
 right.
 
-> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
-
 > 🎥 [Video Explaining the MIDI Filter](https://youtu.be/RsxbP4Gys3U)
 
 ### MIDI Monitor <span class="pro">PRO</span> { #midi-monitor }
+
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 MIDI Monitor shows the stream of MIDI data passing through it, so you
 can debug your setup or see exactly what your controller or keyboard
 sends. It doesn't change the data, so you won't hear any effect while
 it is on the chain.
-
-> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
 
 The window lists each event on its own line: a running count, the
 time, the message type (controllers show as "CC"), the channel and the

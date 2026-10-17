@@ -3,7 +3,7 @@
 In professional mixing, it is common to submix drums to a stereo bus to
 add compression, EQ, and limiting before mixing it with other other
 tracks. Actually, it is common to submix other things like vocals,
-guitars, or instruments. A Submix Track looks like a Folder Track, but
+guitars, or instruments. A Submix track looks like a Folder track, but
 audio passes through it, so you can process the submix with plugins.
 
 You can also use any ordinary track as a submix. This has certain
@@ -12,57 +12,61 @@ chapter.
 
 ## Creating a Submix Track
 
-Creating a Submix Track in Waveform is super easy:
+Creating a Submix track in Waveform is super easy:
 
 1.  First, select all the tracks you want to include.
 
+    ![](images/34----01.png)
 
-![](images/34----01.png)
+    *Creating a Submix Track*
 
-*Creating a Submix Track*
-
-1.  Right-click any of the tracks and choose *Pack selected tracks to a
-    Submix track*. The same action is also available in the Actions
-    panel as *Create Submix Containing*.
-
+2.  Right-click any of the tracks and choose **Pack selected tracks to a
+    Submix track**. The same action is also available in the Actions
+    panel as **Create Submix Containing**.
 
 ![](images/34----02.png)
 
 *A Submix Track*
 
-The result looks very similar to a Folder Track. It differs in that the
-audio actually passes through the Submix Track. You can use the *Volume
-& Pan* plug and add any additional plugins you want.
+The result looks very similar to a Folder track. It differs in that the
+audio actually passes through the Submix track. You can use the
+**Volume & Pan** plugin and add any additional plugins you want.
 
 ## Working with Submix Tracks
 
-Adding Tracks
-- To add a track to a Submix, just drag and drop it on the Submix
-    folder. You also drag tracks up or down within the Submix Track to
-    re-order them. This works exactly like it does for Folder Tracks.
+### Adding Tracks
 
-Removing Tracks
-- To remove a track from a Submix, simple grab it by the track name
-    and drag it back out.
+To add a track to a Submix, just drag and drop it on the Submix
+folder. You also drag tracks up or down within the Submix track to
+re-order them. This works exactly like it does for Folder tracks.
+
+### Removing Tracks
+
+To remove a track from a Submix, simple grab it by the track name
+and drag it back out.
 
 > 💡 **Tip:** When dragging tracks, grab them by the track name.
 
-Open/Close a Submix
-- A Submix works just a like Track Folder in that you can open and
-    close it with triangular control at the far left of the header.
+### Opening and Closing a Submix
 
-Adding Effects
-- You can add any built-in or third-party effect you want (accept for
-    the Waveform *Freeze Point*) to Submix Tracks. Just drag them to the
-    mixer like any other track.
+A Submix works just like a Folder track in that you can open and
+close it with the triangular control at the far left of the header.
 
-Muting
-- *Mute* works like you would expect, muting everything within the
-    Submix Track.
+### Adding Effects
 
-Soloing
-- Soloing a Submix solos everything inside it and mutes the tracks
-    outside it.
+You can add any built-in or third-party effect you want (except for
+the Waveform Freeze Point) to Submix tracks. Just drag them to the
+mixer like any other track.
+
+### Muting
+
+**Mute** works like you would expect, muting everything within the
+Submix track.
+
+### Soloing
+
+Soloing a Submix solos everything inside it and mutes the tracks
+outside it.
 
 ## Creating an Old School Submix Track
 
@@ -72,29 +76,26 @@ Projects that used this method.
 
 1.  Create a track in the normal way.
 
+    ![](images/34----03.png)
 
-![](images/34----03.png)
+    *Creating an Old School Submix Track*
 
-*Creating an Old School Submix Track*
-
-1.  Name the track appropriately. In this example, we have named it
+2.  Name the track appropriately. In this example, we have named it
     *Drums Submix*.
-2.  Select all the tracks you want to route to the submix.
-3.  In the Actions panel, click *Track Destination.* Select your the *Drums
+3.  Select all the tracks you want to route to the submix.
+4.  In the Actions panel, click **Track Destination**. Select the *Drums
     Submix* track. This effectively routes the output of each selected
     track through to the drum submix track.
-
 
 ![](images/34----04.png)
 
 *Set the Track Destination on the Source Tracks*
 
-Now, you can use the *Volume & Pan* control on your *Drum Submix* track
+Now, you can use the **Volume & Pan** control on your *Drums Submix* track
 to control the volume of all the tracks that you have just routed to it.
-You can also add any plugins you want to the new Submix Track. In this
+You can also add any plugins you want to the new submix track. In this
 example, we have inserted a tape simulator and a third party bus
 compressor.
-
 
 ![](images/34----05.png)
 
@@ -105,13 +106,7 @@ largely on which kind of tracks and the style of music.
 
 ## Moving On
 
-To render each submix to its own file, set **Render** to *Submixes* in
+To render each submix to its own file, set **Render** to **Submixes** in
 the Render dialog's **Advanced mode** <span class="pro">PRO</span>, which
 is in Waveform Pro only. See
 [Rendering and Stems](rendering-and-stems.md#simple-and-advanced-modes).
-
-
-
-
-
-

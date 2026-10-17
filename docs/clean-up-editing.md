@@ -23,8 +23,8 @@ that happens after the song is done.
 
 *Trimming an Audio Clip*
 
-To use the trim handle just grab and drag. If you leave *Snap* on,
-trimming will snap to the grid. With *Snap* turned off, you can trim
+To use the trim handle just grab and drag. If you leave **Snap** on,
+trimming will snap to the grid. With **Snap** turned off, you can trim
 freely.
 
 > 💡 **Tip:** You can temporarily override snapping by holding Cmd / Ctrl
@@ -47,7 +47,7 @@ option you can easily correct small issues like this. The strategy is to
 separate the out-of-time note to its own Audio clip, them move it
 slightly.
 
-1.  Turn off *Snap*.
+1.  Turn off **Snap**.
 2.  Select the Audio clip you want to fix.
 3.  Position the cursor just at the beginning of the note that needs
     fixing and press slash ( / ) to split the clip.
@@ -88,7 +88,7 @@ slightly.
 
 *The Completed Correction*
 
-**Splitting & Selecting**. Right after you split a clip, you'll notice
+> 📝 **Note:** Right after you split a clip, you'll notice
 that the two resulting clips are both selected. If you trim, slip or
 move a clip the action will apply to all selected clips. That might not
 be what you want. To select a single clip, just click one of the clips.
@@ -101,7 +101,7 @@ you "slip" the waveform within the Audio clip rather than moving the
 clip. The key to this approach is to put the initial split exactly where
 you want to the note to start.
 
-1.  Turn *Snap* off
+1.  Turn **Snap** off.
 2.  Zoom in enough to see where the note should start and select the
     clip to fix.
 3.  Position the cursor at the exact spot you wish the note had started
@@ -112,7 +112,7 @@ you want to the note to start.
 
 *Split the Clip Where the Note Should Start*
 
-3.  If the note was early, trim back the previous clip to get rid of the
+4.  If the note was early, trim back the previous clip to get rid of the
     extra bit.
 
 
@@ -120,7 +120,7 @@ you want to the note to start.
 
 *Trim Back the Extra Bit From the Previous Clip*
 
-4.  Position the cursor at the end of the note and press slash to split
+5.  Position the cursor at the end of the note and press slash to split
     it again. The bad note will will have a separate Audio clip.
 
 
@@ -128,7 +128,7 @@ you want to the note to start.
 
 *Split After the Note*
 
-5.  Select only the note you want to adjust. Grab and drag the slip
+6.  Select only the note you want to adjust. Grab and drag the slip
     handle (solid box). The waveform will slip within the window of the
     Audio clip. Align the waveform so it starts just after the leading
     edge of the clip.
@@ -138,7 +138,7 @@ you want to the note to start.
 
 *Drag the Slip Edit Handle to Adjust Timing Within the Clip*
 
-6.  Clean up the edges with trimming and crossfading.
+7.  Clean up the edges with trimming and crossfading.
 
 
 ![](images/17----12.png)
@@ -177,7 +177,7 @@ lengthen an ending note.
 
 1.  First, separate out the note that you want to stretch using split as
     in the other examples.
-2.  Hold Opt /Alt and drag the right trim handle to extend the note to
+2.  Hold Opt / Alt and drag the right trim handle to extend the note to
     the desired length.
 
 
@@ -210,8 +210,8 @@ those by putting a very tiny fade at the beginning of the clip.
 *Example of and Edge Fade*
 
 You could zoom way in and add tiny fades to the beginning and ending of
-each clip. The easier way is to select the clip and click *Apply Edge
-Fades* in the Actions panel. This sets 5 ms fades at the beginning and
+each clip. The easier way is to select the clip and click **Apply Edge
+Fades** in the Actions panel. This sets 5 ms fades at the beginning and
 ending of every selected clip (fades already longer than that are left
 alone).
 
@@ -239,8 +239,8 @@ can quickly render all the clips back to a singled clip. To do so:
 
 *Selected Clips before Rendering*
 
-2.  In the Actions panel, click *Render Clip* and choose *Merge the
-    selected clips*.
+2.  In the Actions panel, click **Render Clip** and choose **Merge the
+    selected clips**.
 
 
 ![](images/17----21.png)
@@ -252,15 +252,15 @@ can quickly render all the clips back to a singled clip. To do so:
 
 *Audio Clip After Rendering*
 
-*Merge the selected clips* is only offered when every selected clip is an
-audio clip. When the clips sit on more than one track, the menu also has
-*Merge the selected clips from each track*, which merges each track's
+**Merge the selected clips** is only offered when every selected clip is an
+Audio clip. When the clips sit on more than one track, the menu also has
+**Merge the selected clips from each track**, which merges each track's
 clips into one clip on that track. With a single clip selected, the
-same entry is called *Flatten the selected clip*. Launcher clips can't be
+same entry is called **Flatten the selected clip**. Launcher clips can't be
 rendered or merged.
 
-> 📝 **Note:** The other entries in the *Render Clip* menu open the Render
-dialog set up for the clips, with *Include Tails* off and the result going
+> 📝 **Note:** The other entries in the **Render Clip** menu open the Render
+dialog set up for the clips, with **Include Tails** off and the result going
 onto the clips' track or in place of them. See
 [Rendering Clips](rendering-and-stems.md#rendering-clips).
 
@@ -270,9 +270,3 @@ To correct timing by stretching audio to the beat, see
 [Warp Time](warp-time.md). For automatic timing correction of whole
 takes, see [Groove Doctor](groove-doctor.md) (Waveform Pro or the
 Recording Engineer Expansion).
-
-
-
-
-
-

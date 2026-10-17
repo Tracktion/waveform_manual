@@ -1,13 +1,13 @@
 # Stem Separation <span class="pro">PRO</span> { #stem-separation }
 
-Stem separation splits a mixed audio clip into its constituent parts
+> 📝 **Edition:** Waveform Pro, or with the DJ Mix Tools Expansion. It
+> also needs the Stem Separation feature pack (see below).
+
+Stem separation splits a mixed Audio clip into its constituent parts
 (**drums**, **vocals**, **bass**, and **other**) using an on-device
 neural model. Reach for it when you want to isolate a vocal for a remix,
 pull out a drum loop, or turn a finished mix into an instrumental, all
 without the original multitrack.
-
-> 📝 **Edition:** Waveform Pro, or with the DJ Mix Tools Expansion. It
-> also needs the Stem Separation feature pack (see below).
 
 The separation is powered by **Demucs**, Meta's open-source music source
 separation model. It runs **entirely on your own machine** as a bundled
@@ -15,6 +15,7 @@ background process. Nothing is uploaded and no internet connection is
 needed once the model is installed.
 
 ![](images/stemseparation_1@2x.png)
+
 *The Separate to Stems dialog*
 
 ## What You Need
@@ -31,15 +32,15 @@ the feature will run:
 
 If the feature is available but the pack is missing, the **Split to
 stems** menu item is still present, but choosing it shows a message
-titled *Unable to find the required feature pack*, saying *Please ensure
+titled **Unable to find the required feature pack**, saying "Please ensure
 this has been installed via the Downloads page or Download Manager and
-try again*.
+try again".
 
-### Getting the feature pack
+### Getting the Feature Pack
 
-Feature packs are fetched through **Settings > Downloads** (the Download
+Feature packs are fetched through *Settings > Downloads* (the Download
 Manager). To check where they live or install one by hand, open
-**Settings > File Locations** and look at the **Feature Extensions**
+*Settings > File Locations* and look at the **Feature Extensions**
 section: it shows the Extensions folder, lists the packs already
 installed, and offers a **Content pack** button for installing a
 `.content` or `.zip` file manually. See [Settings > File
@@ -49,22 +50,22 @@ reference for details.
 
 ## Separating a Clip
 
-1. Right-click a wave audio clip and choose **Split to stems**.
-2. The **Separate to Stems** dialog opens, warning that it *"will separate
-   the source file of "<clip>" to its constituent parts"* and that *"This
-   may take a while depending on the length of the material."*
+1. Right-click an Audio clip and choose **Split to stems**.
+2. The **Separate to Stems** dialog opens, warning that it "will separate
+   the source file of `<clip>` to its constituent parts" and that "This
+   may take a while depending on the length of the material."
 3. Pick a **Separation type** from the dropdown:
    - **Four Stems (drums, vocals, bass, other)**: the default; produces
      all four stems.
    - **Two Stems (extract drums)** / **(extract bass)** / **(extract
      vocals)** / **(extract other)**: produces just the chosen stem plus
-     its residual, e.g. *Vocals* and *No Vocals*.
+     its residual, e.g. "Vocals" and "No Vocals".
 4. Click **Separate**.
 
 If the clip's source isn't already a WAV, Waveform first converts it to a
-temporary WAV (*"Preparing for Stem Separation"*). It then runs the
-separation itself, in a window titled *Separating Stems* that reads
-*Extracting stems from: <clip>*,
+temporary WAV ("Preparing for Stem Separation"). It then runs the
+separation itself, in a window titled **Separating Stems** that reads
+"Extracting stems from: `<clip>`",
 showing a progress bar and a **Cancel** button throughout. The job auto-
 scales across your CPU cores.
 
@@ -76,16 +77,17 @@ stems stay lined up with the original. The stem WAVs are written into the
 project's rendered-media folder.
 
 ![](images/stemseparation_2@2x.png)
+
 *Stem tracks inserted beneath the original clip*
 
 The **original clip and track are left untouched**. The stems are added
 alongside them. Mute or delete the original yourself once you're happy
 with the result.
 
-## Things to Watch Out For
+## ⚡ Things to Watch Out For
 
 > ⚠️ **Warning:** Separation runs on the clip's **whole source file, not
-> the trimmed clip region**. If you separate a short clip taken from a long
+> just the trimmed clip**. If you separate a short clip taken from a long
 > recording, Demucs still processes the entire underlying file. Trim or
 > consolidate the clip down first if you only want part of it.
 

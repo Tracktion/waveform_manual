@@ -11,8 +11,8 @@ available in Free, OEM, and Pro editions.
 
 > 💡 **Tip:** You can view and customise every keyboard shortcut on the
 > *Settings > Keyboard Shortcuts* page. If your shortcuts have been changed
-> and you want Waveform's standard set back, click *Reset to Defaults* there
-> and choose *Restore default Waveform key mappings*. See
+> and you want Waveform's standard set back, click **Reset to Defaults** there
+> and choose **Restore default Waveform key mappings**. See
 > [Keyboard Shortcuts](keyboard-shortcuts.md) for the full list.
 
 ## 1. Install and Unlock
@@ -22,7 +22,7 @@ available in Free, OEM, and Pro editions.
 2. Launch Waveform. Until it is unlocked it runs in demo mode.
 3. To unlock, go to the **Settings** tab, choose **Licensing**, and click
    **Refresh Licenses**. Log in with your tracktion.com account and Waveform
-   pulls down and applies any licenses you own.
+   pulls down and applies any licences you own.
 
 → For status badges, expansions, and per-computer licensing, see
 [Reference: Settings > Licensing](reference-settings.md#licensing).
@@ -32,13 +32,13 @@ available in Free, OEM, and Pro editions.
 The first time you launch Waveform, the **First Run Setup** panel appears on
 the left. Work through its steps in order: it takes you straight to each
 setting you need to configure. If you close it, you can reopen it any time
-from **Help > Show the First Run Setup panel**.
+from *Help > Show the First Run Setup panel*.
 
 → See [Audio Device Setup](audio-device-setup.md).
 
 ## 3. Set Up Your Audio Device
 
-Open **Settings > Audio Devices** and choose how Waveform talks to your
+Open *Settings > Audio Devices* and choose how Waveform talks to your
 hardware:
 
 - **Windows:** ASIO (recommended) or Windows Audio
@@ -62,7 +62,7 @@ clicks or dropouts.
 ## 4. Connect MIDI (Optional)
 
 If you have a MIDI keyboard or controller, connect it and check it appears
-under **Settings > MIDI Devices**.
+under *Settings > MIDI Devices*.
 
 → See [MIDI Setup](midi-setup.md).
 
@@ -72,7 +72,7 @@ The quickest way to confirm everything works is to open a template and play it:
 
 1. Open the **Welcome** tab.
 2. Pick a song from the **Project Templates** list to open it as a new Edit.
-3. Press the **Spacebar** to play.
+3. Press the **Space bar** to play.
 
 → See [Demo Projects and Templates](installing-the-demo-projects.md) and
 [Basic Navigation](basic-navigation.md).
@@ -81,8 +81,8 @@ The quickest way to confirm everything works is to open a template and play it:
 
 An Edit is where you record, arrange, and mix. The window has four main areas:
 
-- The **menu bar** along the top.
-- The **Browser** down the left side, which also hosts the **Actions panel**.
+- The **main menu** along the top.
+- The **Browser** down one side (the right by default), which also hosts the **Actions panel**.
 - The **arrangement** (and the optional **Mixer**) in the centre.
 - The **transport bar** along the bottom, with playback controls, cursor
   position, tempo, and the master controls.
@@ -110,7 +110,7 @@ and click **Create Project**. Waveform opens a new Edit ready to work in.
 
 ## 9. Record MIDI / Use an Instrument
 
-1. Drag the **Plugin object** onto a track's mixer area and choose a virtual
+1. Drag the **Plugin object** onto a track's inline mixer and choose a virtual
    instrument from the menu. Double-click the instrument to open its
    interface.
 2. Set the track's **input** to your MIDI device and record-arm it.
@@ -122,7 +122,7 @@ and click **Create Project**. Waveform opens a new Edit ready to work in.
 
 Waveform's mixer is inline with each track and fully modular. Every track
 starts with a **Volume & Pan** and a **Level Meter** plugin. To add an effect,
-drag the **Plugin object** into the track's mixer area and pick a plugin.
+drag the **Plugin object** into the track's inline mixer and pick a plugin.
 You can drop it anywhere in the signal chain and reorder it later by dragging.
 
 → See [The Edit Tab](edit-tab.md), [Using Plugins](using-plugins.md), and
@@ -130,9 +130,9 @@ You can drop it anywhere in the signal chain and reorder it later by dragging.
 
 ## 11. Export Your Song
 
-1. Set the **In-marker** at the start of the song and the **Out-marker** at
+1. Set the **In marker** at the start of the song and the **Out marker** at
    the end to define the export range.
-2. Choose **File > Export: Render to a file...** from the menu bar.
+2. Choose *File > Export: Render to a file...*.
 3. Set **Range** to **Marked Region**, pick a **Format** (such as WAV) and
    click **Render**.
 
@@ -146,8 +146,8 @@ highlights, each covered in its own chapter. Items marked
 <span class="pro">PRO</span> need Waveform Pro or an expansion; each chapter
 says which.
 
-- [The AI Assistant](ai-assistant.md): an AI assistant (cloud or local
-  model) that can carry out actions in your project.
+- [The AI Assistant](ai-assistant.md): an assistant (cloud or local
+  model) that can carry out actions in your Edit.
 - [Clip Launcher](clip-launcher.md) <span class="pro">PRO</span>: trigger clips and scenes live.
 - [Comping](comping.md): build one perfect take from several passes.
 - [Warp Time](warp-time.md): bend and stretch audio in time.

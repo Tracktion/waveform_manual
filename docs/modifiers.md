@@ -1,6 +1,6 @@
 # Modifiers
 
-Modifiers are modulation sources that automatically vary plugin parameters over time. Instead of drawing automation by hand, you attach a modifier to a parameter and let it move continuously. This is perfect for tremolo, filter sweeps, auto-pan, side-chain-style ducking, and rhythmic effects.
+Modifiers are modulation sources that automatically vary plugin parameters over time. Instead of drawing automation by hand, you attach a modifier to a parameter and let it move continuously. This is perfect for tremolo, filter sweeps, auto-pan, sidechain-style ducking, and rhythmic effects.
 
 Waveform includes six modifier types: the LFO, the Envelope Follower, the Random modifier, the Step modifier, the Breakpoint modifier, and the MIDI Tracker. This chapter covers how to add them, the controls they share, and what makes each one different.
 
@@ -12,11 +12,11 @@ You create a modifier by dragging the Modifier object (beside the Clip and Plugi
 
 A track with no modifiers shows an **Add new Modifier** button in its modifier area. Click it for the same type menu. On a track that already has modifiers, drop the Modifier object in the gap between two of them to insert the new one at that point.
 
-Once added, a modifier appears as a small object above the plugins in the track's mixer area. You can add as many modifiers to a track as you like, and a single modifier can drive several parameters at once.
+Once added, a modifier appears as a small object above the track's plugins in the inline mixer. You can add as many modifiers to a track as you like, and a single modifier can drive several parameters at once.
 
 Double-click a modifier object to open its editor window, where you adjust its settings and see a live display of its output.
 
-There are three places to work with a track's modifiers: the small objects in the track's mixer area, a modifier's own editor window, and the **Plugins** tab of the Detail editor, which shows every modifier on the track alongside its plugins as a row of panels. See [The Plugins Detail Editor](plugins-detail-editor.md).
+There are three places to work with a track's modifiers: the small objects in the inline mixer, a modifier's own editor window, and the **Plugins** tab of the Detail Editor, which shows every modifier on the track alongside its plugins as a row of panels. See [The Plugins Detail Editor](plugins-detail-editor.md).
 
 ## Assigning to Parameters
 
@@ -33,7 +33,7 @@ There are two ways to make an assignment:
 - **Drag the assignment handle** (the arrow-and-dot icon at the bottom-left of the editor) onto any parameter, or drop the modifier object straight onto a plugin and pick the parameter from the menu.
 - **Click the assignment handle** to put the modifier into assignment mode, then click the parameters you want to control in the list on the right. This is the quickest way to assign several parameters in one go.
 
-In the **Plugins** tab of the Detail editor, where a track's modifiers and plugins sit side by side, there is a third route: drag a modifier's tile onto any plugin panel and pick a parameter from the menu that opens. See [Assigning a Modifier to a Plugin](plugins-detail-editor.md#assigning-a-modifier-to-a-plugin).
+In the **Plugins** tab of the Detail Editor, where a track's modifiers and plugins sit side by side, there is a third route: drag a modifier's tile onto any plugin's panel and pick a parameter from the menu that opens. See [Assigning a Modifier to a Plugin](plugins-detail-editor.md#assigning-a-modifier-to-a-plugin).
 
 The **Assignments** page lists everything the modifier currently controls, so you can review and adjust each mapping in one place. To remove an assignment, clear it from the Assignments page, or right-click the modifier object and choose the parameter under **Remove assignment**.
 
@@ -47,15 +47,15 @@ Most of the modifiers share a small set of controls, so it is worth learning the
 
 **Enable**: The green power button turns the modifier on or off. Disable a modifier to silence its effect without losing it or its assignments.
 
-**Sync** (Choices: Free, Transport, Note): How the modifier's timing is referenced. *Free* runs continuously at its own rate, *Transport* locks the cycle to the playhead position so it repeats consistently against the bars and beats, and *Note* restarts the cycle whenever a new MIDI note arrives. (Default: Free)
+**Sync** (Choices: Free, Transport, Note): How the modifier's timing is referenced. **Free** runs continuously at its own rate, **Transport** locks the cycle to the cursor position so it repeats consistently against the bars and beats, and **Note** restarts the cycle whenever a new MIDI note arrives. (Default: Free)
 
-**Rate Type** (Choices: Hertz, 4 Bars, 2 Bars, 1 Bar, and the musical divisions from 1/2 down to 1/64, each available as triplet (T) and dotted (D)): Sets the unit for the rate. Choose *Hertz* for a free speed in cycles per second, or a musical division to lock the speed to tempo. (Default: 1 Bar)
+**Rate Type** (Choices: Hertz, 4 Bars, 2 Bars, 1 Bar, and the musical divisions from 1/2 down to 1/64, each available as triplet (T) and dotted (D)): Sets the unit for the rate. Choose **Hertz** for a free speed in cycles per second, or a musical division to lock the speed to tempo. (Default: 1 Bar)
 
-**Rate**: The speed of the modifier. When Rate Type is Hertz this is a frequency; when it is a musical division this acts as a multiplier on that division. (Default: 1.000)
+**Rate**: The speed of the modifier. When **Rate Type** is **Hertz** this is a frequency; when it is a musical division this acts as a multiplier on that division. (Default: 1.000)
 
 **Depth**: How far the modifier pushes the assigned parameter. At zero the modifier has no effect; turn it up for a stronger sweep.
 
-**Bipolar / Unipolar**: The +/- button switches between *Uni-polar* output (the value moves in one direction, from the parameter's setting upward) and *Bi-polar* output (the value swings both above and below the parameter's setting). Use bipolar for symmetrical movement like vibrato, and unipolar when you only want to push a parameter one way.
+**Bipolar / Unipolar**: The +/- button switches between **Uni-polar** output (the value moves in one direction, from the parameter's setting upward) and **Bi-polar** output (the value swings both above and below the parameter's setting). Use bipolar for symmetrical movement like vibrato, and unipolar when you only want to push a parameter one way.
 
 ### The Options Menu
 
@@ -74,6 +74,7 @@ The gear button opens an **Options** menu with a few more settings that apply to
 ## The LFO Modifier
 
 ![](images/Modifiers/LFO@2x.png)
+
 *The LFO Modifier editor, showing a sine wave, the wave and sync menus, and the parameter assignment list on the right*
 
 The **LFO** (low-frequency oscillator) repeats a chosen waveform to give smooth, regular movement. It is the go-to modifier for tremolo, auto-pan, and rhythmic filter wobbles.
@@ -90,12 +91,15 @@ Alongside Wave, the LFO offers the shared Rate, Rate Type, Sync, and Bipolar con
 
 ## The Envelope Follower Modifier <span class="pro">PRO</span> { #the-envelope-follower-modifier }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
 ![](images/Modifiers/EnvelopeFollower@2x.png)
+
 *The Envelope Follower Modifier, tracing the amplitude of the track's audio*
 
-The **Envelope Follower** watches the loudness of the audio on its track and turns that into modulation. As the signal gets louder the output rises; as it fades the output falls. This is how you build side-chain-style effects, for example ducking a reverb's wet level whenever a vocal is present, or opening a filter in time with a drum hit.
+The **Envelope Follower** watches the loudness of the audio on its track and turns that into modulation. As the signal gets louder the output rises; as it fades the output falls. This is how you build sidechain-style effects, for example ducking a reverb's wet level whenever a vocal is present, or opening a filter in time with a drum hit.
 
-**Gain**: Boosts or cuts the incoming audio before the envelope is measured, so quiet signals can still drive a strong response. (Range: −20 to +20 dB, Default: 0 dB)
+**Gain**: Boosts or cuts the incoming audio before the envelope is measured, so quiet signals can still drive a strong response. (Range: -20 to +20 dB, Default: 0 dB)
 
 **Attack**: How quickly the output rises as the audio gets louder. Shorter times react snappily to transients. (Range: 1 to 5000 ms, Default: 100 ms)
 
@@ -105,7 +109,7 @@ The **Envelope Follower** watches the loudness of the audio on its track and tur
 
 **Low-pass** and **High-pass** filters: The LP and HP buttons let you filter the audio before it is measured, each with its own frequency knob. Use them to make the follower respond only to a part of the signal, for example only the kick drum's low end. (Default: both off; LP 2000 Hz, HP 500 Hz)
 
-**Depth**: How far the envelope pushes the assigned parameter, and in which direction. (Range: −1 to +1, Default: 1)
+**Depth**: How far the envelope pushes the assigned parameter, and in which direction. (Range: -1 to +1, Default: 1)
 
 **Offset**: A fixed amount added to the output, so you can set where the parameter sits when the audio is silent. (Default: 0)
 
@@ -113,12 +117,15 @@ The **Envelope Follower** watches the loudness of the audio on its track and tur
 
 ## The Random Modifier <span class="pro">PRO</span> { #the-random-modifier }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
 ![](images/Modifiers/Random@2x.png)
+
 *The Random Modifier producing a smoothed stream of random values*
 
 The **Random** modifier generates ever-changing random values. It is great for adding subtle human-style drift to a parameter, or for chaotic, unpredictable movement when pushed harder.
 
-**Type** (Choices: Random, Noise): *Random* produces a new value each cycle (sample-and-hold), while *Noise* produces a continuously fluctuating signal. (Default: Random)
+**Type** (Choices: Random, Noise): **Random** produces a new value each cycle (sample-and-hold), while **Noise** produces a continuously fluctuating signal. (Default: Random)
 
 **Shape**: Adjusts the character of the generated curve. (Default: 0)
 
@@ -130,10 +137,13 @@ The Random modifier also offers the shared Rate, Rate Type, Sync, Depth, and Bip
 
 ## The Step Modifier <span class="pro">PRO</span> { #the-step-modifier }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
 ![](images/Modifiers/Step@2x.png)
+
 *The Step Modifier with a drawn sequence of step values*
 
-The **Step** modifier is a step sequencer for a parameter. You draw a row of bars, and the modifier scrubs through them at a tempo-synced rate, like a classic analog sequencer lane. It is ideal for rhythmic, repeating patterns.
+The **Step** modifier is a step sequencer for a parameter. You draw a row of bars, and the modifier scrubs through them at a tempo-synced rate, like a classic analogue sequencer lane. It is ideal for rhythmic, repeating patterns.
 
 **Steps**: The number of steps in the pattern. (Range: 2 to 64, Default: 16)
 
@@ -144,11 +154,14 @@ Two buttons sit next to the sequence:
 - The **dice** button fills the pattern with random step values, a quick way to find a happy accident.
 - The **broom** button clears the pattern back to its default.
 
-The Step modifier also uses the shared Rate, Rate Type, and Sync controls to set how fast it advances, plus **Depth** to scale how strongly the steps move the parameter. (Depth range: −1 to +1, Default: 1)
+The Step modifier also uses the shared Rate, Rate Type, and Sync controls to set how fast it advances, plus **Depth** to scale how strongly the steps move the parameter. (Depth range: -1 to +1, Default: 1)
 
 ## The Breakpoint Modifier <span class="pro">PRO</span> { #the-breakpoint-modifier }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
 ![](images/Modifiers/Breakpoint@2x.png)
+
 *The Breakpoint Modifier with a custom drawn shape across one bar*
 
 The **Breakpoint** modifier lets you draw your own modulation shape from a handful of points. Think of it as a custom LFO waveform: you place the points, bend the segments between them, and the modifier plays that shape back on a loop. Good for bespoke envelopes and one-off rhythmic curves.
@@ -161,7 +174,10 @@ The Breakpoint modifier also offers the shared Rate, Rate Type, Sync, Depth, and
 
 ## The MIDI Tracker Modifier <span class="pro">PRO</span> { #the-midi-tracker-modifier }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.
+
 ![](images/Modifiers/MIDITracker@2x.png)
+
 *The MIDI Tracker Modifier mapping MIDI pitch onto a modulation output*
 
 The **MIDI Tracker** turns incoming MIDI performance data into modulation. Instead of mapping a knob, you map the notes you play, so the pitch or velocity of what you perform can drive any parameter. For example, higher notes could open a filter, or harder hits could add more distortion.
@@ -184,7 +200,7 @@ A crosshair marks the current incoming value live as you play, so you can see th
 - A modifier's effect is layered on top of a parameter's existing value and any automation. It nudges the parameter rather than replacing it. If a parameter does not seem to move, check the **Depth** is above zero.
 - You cannot assign a modifier to itself.
 - The **Envelope Follower** only responds while audio is playing on its track, and the **MIDI Tracker** only responds while MIDI notes are arriving.
-- **Note** sync restarts the cycle on each new note, so it needs incoming MIDI to do anything useful. On an audio-only track, use *Free* or *Transport* instead.
+- **Note** sync restarts the cycle on each new note, so it needs incoming MIDI to do anything useful. On an audio-only track, use **Free** or **Transport** instead.
 
 ## Moving On
 

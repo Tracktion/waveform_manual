@@ -3,8 +3,8 @@
 This chapter covers the built-in Utility plugins for routing, metering and CPU
 management: Insert, Freeze Point, Patch Bay, Aux Send and Aux Return, Spectrum,
 Loudness Meter, Mid Side, AB Switch and Mono Switch. All of them are in every
-edition except the Loudness Meter. To add one, drag the *Plugin Object* to a
-track (or right-click an existing plugin and choose *Add new plugin*) and pick
+edition except the Loudness Meter. To add one, drag the Plugin object to a
+track (or right-click an existing plugin and choose **Add new plugin**) and pick
 it from the **Utility** category of the built-in Waveform plugins. See
 [Using Plugins](using-plugins.md) for more on inserting plugins.
 
@@ -32,7 +32,7 @@ After adding the plugin, open its properties to configure the routing:
   an insert plugin."*
 - **Return Device**: the input that receives the processed signal back from
   your hardware.
-- **Time Adjust**: a latency compensation offset (−300 ms to +300 ms,
+- **Time Adjust**: a latency compensation offset (-300 ms to +300 ms,
   default 0). Positive values label the reading *"Late"*; negative values label
   it *"Early"*. Use this to align the returned signal with the rest of your mix.
 - **Auto-Detect**: runs a **Device Latency Test** that plays a test signal,
@@ -68,7 +68,7 @@ snowflake icon, which brightens when the track is frozen):
 - While a track is frozen the button changes to **Unfreeze Track**. Clicking it
   discards the rendered file and restores the original processing.
 
-A Freeze Point cannot be added to clips, plugin racks, or master tracks, and it
+A Freeze Point cannot be added to clips, plugin racks, or Master tracks, and it
 cannot be disabled with the plugin's enable/bypass switch. It is always active
 when present in a chain.
 
@@ -80,13 +80,13 @@ when present in a chain.
 ### Freeze Point Settings
 
 The behaviour of the Freeze Point is influenced by two settings on the
-**Settings > General** page, under **Mixing Defaults**:
+*Settings > General* page, under **Mixing Defaults**:
 
-- **Freeze point creation**: controls when freezing happens: either *Manually
-  freeze tracks* (only when you click Freeze Track) or *Freeze track when a
-  freeze point is created or copied* (automatic).
+- **Freeze point creation**: controls when freezing happens: either **Manually
+  freeze tracks** (only when you click **Freeze Track**) or **Freeze track when a
+  freeze point is created or copied** (automatic).
 - **Freeze point insert location**: controls where the Freeze Point is inserted
-  when a track is frozen: *Before plugins*, *Pre-fader*, or *Post-fader*.
+  when a track is frozen: **Before plugins**, **Pre-fader**, or **Post-fader**.
 
 See [Mixing Defaults](reference-settings.md#mixing-defaults) for the full
 description of those options.
@@ -100,7 +100,7 @@ the matrix routes one source channel to one destination channel at a specific
 gain level (in dB). Multiple wires can fan out from the same source and sum
 into the same destination.
 
-> The Patch Bay is an *audio* routing matrix. It is different from the
+> 📝 **Note:** The Patch Bay is an *audio* routing matrix. It is different from the
 > **MIDI Patch Bay**, which is a MIDI-routing plugin covered in the
 > [MIDI Effects](midi-effects.md) chapter.
 
@@ -128,8 +128,8 @@ Bay cannot be added to clips or plugin racks and cannot be bypassed.
 ## Aux Send and Aux Return
 
 You will also find the **Aux Send** and **Aux Return** plugins in the Utility
-folder. These are the building blocks of an effects bus: an *Aux Send* taps a
-portion of a track's signal and routes it to a numbered bus, and an *Aux Return*
+folder. These are the building blocks of an effects bus: an Aux Send taps a
+portion of a track's signal and routes it to a numbered bus, and an Aux Return
 receives that bus on another track so a single effect can be shared by many
 tracks. Because they are really part of the bus-routing workflow rather than
 standalone effects, they are covered in their own chapter: see [Effects Bus
@@ -156,7 +156,7 @@ or as a continuous line. (Default: Line)
 The **Loudness Meter** measures loudness the way streaming services and
 broadcasters do (EBU R128 / ITU-R BS.1770-4), alongside true peak and the
 stereo field. Like the Spectrum, it doesn't change the audio - it just reads it.
-Put it last on the master track (or on a submix) and play the song through to
+Put it last on the Master track (or on a submix) and play the song through to
 see whether the mix is ready for release. Offline renders don't disturb its
 readings.
 
@@ -229,8 +229,8 @@ The **Mid Side** plugin converts a stereo signal between standard left/right and
   stereo difference).
 - **Decode** turns a mid/side signal back into normal left/right.
 
-Insert a *Mid Side* in *Encode* mode, then process the centre and sides
-separately with other plugins, and finally insert another *Mid Side* in *Decode*
+Insert a Mid Side in **Encode** mode, then process the centre and sides
+separately with other plugins, and finally insert another Mid Side in **Decode**
 mode to return to a normal stereo signal. It's a classic trick for widening a
 mix or for EQ'ing the centre and sides independently.
 
@@ -253,8 +253,8 @@ The **Mono Switch** is a mono-compatibility and stereo-troubleshooting tool. Its
 controls let you collapse a stereo signal to mono and check how the mix holds up:
 
 - **Mono** switches mono summing on or off.
-- **Mode** sets how the two channels are combined when summing: at **−6 dB**,
-  **−3 dB**, or **0 dB**, or listening to the **L Only** or **R Only** channel on
+- **Mode** sets how the two channels are combined when summing: at **-6 dB**,
+  **-3 dB**, or **0 dB**, or listening to the **L Only** or **R Only** channel on
   its own.
 - **Swap L/R** exchanges the left and right channels.
 - **L Polarity** and **R Polarity** flip the polarity (phase) of each channel

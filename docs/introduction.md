@@ -16,9 +16,9 @@ All versions are maintained in parallel; as a result the latest revision
 is usually identical (or close to it) across all three platforms.
 
 Waveform is also available in Free, OEM and Pro editions. Waveform Free
-has all the core functionality, including the AI assistant and the
+has all the core functionality, including the AI Assistant and the
 Pattern Generator. Waveform Pro adds creative tools such as the Chord
-Track, Groove Doctor, Track Snapshots, Layouts and Quick Actions, the
+track, Groove Doctor, Track Snapshots, Layouts and Quick Actions, the
 Wavetable synth and other instruments, the MIDI effects (also available
 in the MIDI Producer Expansion) and the Render dialog's Advanced mode.
 Many of these can also be added to the other editions with an expansion,
@@ -29,19 +29,21 @@ included with mixers and audio interfaces from various manufacturers
 including Mackie and Behringer.
 
 Throughout this book, a <span class="pro">PRO</span> badge marks the
-features that aren't in Waveform Free, and an **Edition** line under the
-heading names the editions and expansions that include them.
+features that aren't in Waveform Free. A badged heading has an **Edition**
+line under it naming the editions and expansions that include the
+feature. A badged control without a heading of its own names the editions
+in the sentence that describes it.
 
 Waveform, like its predecessors, is unique in that it has a single
 screen user interface, with a mixer channel integrated to the right of
 each track. This left-to-right workflow is what fans of this DAW have
 loved for years. For many it just makes more sense than other designs.
 
-In recent years, Waveform has gained a traditional mixer view. While it
+In recent years, Waveform has gained a traditional Mixer. While it
 is optional it gives you a familiar console style view. In addition the
-mixer view can be detached and positioned on another monitor screen.
-There is no need to flip back and forth between a track view and mixer
-view unless you really want.
+Mixer can be detached and positioned on another monitor screen.
+There is no need to flip back and forth between the tracks and the
+Mixer unless you really want.
 
 Waveform has a very flexible plugin architecture, that includes native
 plugins, plugin racks, and third party plugins in VST, VST3, Audio Units
@@ -62,28 +64,26 @@ In this book you will learn:
 -   How to record with guitar amp simulators
 -   How to edit audio
 -   How to edit MIDI
--   How to mix with the inline mixer section
+-   How to mix with the inline mixer
 -   How to insert and use plugin effects
 -   How to mix down, and [render stems](rendering-and-stems.md) and other files
 -   How to launch clips and scenes with the [clip launcher](clip-launcher.md)
--   How to get help from the [AI assistant](ai-assistant.md)
--   A reference to settings and options used to configure and customize
+-   How to get help from the [AI Assistant](ai-assistant.md)
+-   A reference to settings and options used to configure and customise
     Waveform.
 
 ## Video Resources
 
-There are numerous tutorial videos for Waveform available from my
-YouTube channel and from Tracktion. Videos usually precede the updates
-in this document so we recommend that you subscribe to both channels:
-
-My YouTube Channel - [Inventive Gear](https://www.youtube.com/user/lilacwriter)
+There are numerous tutorial videos for Waveform available from
+Tracktion. Videos usually precede the updates in this document so we
+recommend that you subscribe to the channel:
 
 Tracktion YouTube Channel - [@TracktionSoftware](https://www.youtube.com/@TracktionSoftware)
 (browse the [playlists](https://www.youtube.com/@TracktionSoftware/playlists)
 for videos grouped by topic)
 
 Groove3.com has some older but useful content on Tracktion. Look for
-videos there on plugin-racks, MasterMix, and videos on the Tracktion
+videos there on plugin racks, Master Mix, and videos on the Tracktion
 DAW.
 
 Groove 3 - [Groove3.com](https://www.groove3.com)
@@ -96,10 +96,9 @@ back in order to follow along.
 
 To do that follow these steps:
 
-1.  Navigate to the Settings tab, Keyboard Shortcuts page
-2.  Click *Reset to Defaults* at the bottom of the page
-3.  Select *Restore default Waveform key mappings*
-
+1.  Open *Settings > Keyboard Shortcuts*
+2.  Click **Reset to Defaults** at the bottom of the page
+3.  Select **Restore default Waveform key mappings**
 
 ![](images/01----01.png)
 
@@ -118,7 +117,7 @@ The book uses the following abbreviations for modifier keys:
 -   Alt: Alt
 
 In most cases, Cmd on macOS will translate to Ctrl on Windows. In this
-user's manual, we present both using the convention Mac / PC. For
+user's manual, we present both using the convention Mac / Windows. For
 example: Cmd + C / Ctrl + C.
 
 Here is another example:
@@ -127,19 +126,13 @@ Here is another example:
     the copy and paste it, using Cmd + V / Ctrl + V.
 
 > 📝 **Note:** Most Linux users will use the 'Meta' key in place of Alt. On a
-typical PC keyboard, Meta is usually the Windows key.
+> typical PC keyboard, Meta is usually the Windows key.
 
 > 📝 **Note:** In some parts of the world Mac keyboards use Alt rather than
-*option*. This shouldn't offer much confusion but I did want to
-acknowledge this.
+> Option (Opt). This shouldn't offer much confusion but I did want to
+> acknowledge this.
 
 ## Moving On
 
 With those things set, your Waveform installation will match the
 examples here. Get ready to explore the world of Waveform!
-
-
-
-
-
-

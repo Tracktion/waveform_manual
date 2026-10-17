@@ -1,8 +1,8 @@
 # Warp Time
 
 Warp Time is an audio editing option. Rather
-than needing to split out notes to move them, as discussed in the
-previous chapter, you can drag Warp points to bend and stretch audio
+than needing to split out notes to move them, as described in
+[Clean-up Editing](clean-up-editing.md), you can drag Warp points to bend and stretch audio
 into time. Apart from simply correcting timing problems, you an apply it
 creatively to compositions and loops to alter the feel of recorded
 audio.
@@ -17,16 +17,16 @@ effects, as described in [Clip Layer Effects](clip-layer-effects.md).
 
 Here is how to switch into the Warp Time mode:
 
-1.  Select an audio clip
-2.  In the Actions panel (or the [Detail editor](detail-editor.md), Clip
-    tab), enable the *Warp Time* option
+1.  Select an Audio clip.
+2.  In the Actions panel (or the [Detail Editor](detail-editor.md), Clip
+    tab), enable the **Warp Time** option.
 
 
 ![](images/18----01.png)
 
 *Enable Warp Time Mode*
 
-The Detail editor's waveform view switches to the zoomable Warp Time
+The Detail Editor's waveform view switches to the zoomable Warp Time
 editor.
 
 ## The Warp Time Editor
@@ -34,29 +34,31 @@ editor.
 
 ![](images/18----02@2x.png)
 
-*Warp Time Editor in the Detail editor*
+*Warp Time Editor in the Detail Editor*
 
-The Warp Time Editor is working on the underlying audio in the clip so
+The Warp Time editor is working on the underlying audio in the clip so
 there might be much more audio shown than you see on the Audio clip.
 This will usually be the case if you have trimmed the Audio clip before
 hand.
 
 > 💡 **Tip:** If you want the Warp Time editor view to exactly match the
-waveform on the selected Audio clip, render the clip using *Render Clip
-> Flatten the selected clip*. This will create a new underlying file.
+waveform on the selected Audio clip, render the clip using *Render Clip > Flatten the selected clip*.
+This will create a new underlying file.
 After that, what you see and hear in the Warp Time editor will match
 what you see and hear in the Audio clip.
 
-Zooming In & Out
-- To zoom the waveform, use the mouse scroll wheel. On many laptops
-    you can use a two finger up/down gesture in place of a scroll wheel.
-    On Mac laptops you can also use a two finger left or right gesture
-    to slide the waveform left and right.
+### Zooming In & Out
 
-Warp Points
-- Click on the timeline to add a Warp point. When you drag a Warp
-    point left or right, time is stretched or compressed between that
-    point and next surrounding Warp points.
+To zoom the waveform, use the mouse scroll wheel. On many laptops
+you can use a two finger up/down gesture in place of a scroll wheel.
+On Mac laptops you can also use a two finger left or right gesture
+to slide the waveform left and right.
+
+### Warp Points
+
+Click on the timeline to add a Warp point. When you drag a Warp
+point left or right, time is stretched or compressed between that
+point and next surrounding Warp points.
 
 > 💡 **Tip:** You can add a Warp point and drag in a single action. Just
 click on the timeline, hold and start dragging. The waveform will
@@ -67,13 +69,14 @@ stretch until you stop dragging.
 
 *Warp Point*
 
-**Removing Warp Points:**
-Shift-click any existing Warp Point to remove it. Right-click a Warp point and choose *Remove marker* or *Remove all markers*.
+### Removing Warp Points
+
+Shift-click any existing Warp point to remove it. Right-click a Warp point and choose **Remove marker** or **Remove all markers**.
 
 
 ![](images/18----04.png)
 
-*Warp Point Right Click Menu*
+*Warp Point Right-click Menu*
 
 ## Working with Warp Points
 
@@ -116,7 +119,7 @@ not the zoom level of the Edit.
 To override snapping when adjusting Warp points, hold down Cmd / Ctrl as
 you drag the points.
 
-## Limitations of Warp Time editing
+## Limitations of Warp Time Editing
 
 Warp Time editing works best for single track parts. If you use it on
 multitrack drum parts, you will find it seriously affects the phase
@@ -138,7 +141,7 @@ modes, since Waveform does the actual stretching offline.
 *Stretch Property Options*
 
 Most of the time, Elastique Pro will give you the best results. If you
-have specialized needs, you can experiment with the other Elastique
+have specialised needs, you can experiment with the other Elastique
 options under the spanner icon.
 
 
@@ -146,7 +149,7 @@ options under the spanner icon.
 
 *Elastique Options*
 
-> 📝 **Note:** If the *Stretch* property is set to "Melodyne" or "No
+> 📝 **Note:** If the **Stretch** property is set to "Melodyne" or "No
 Time-Stretching," Waveform still uses the Elastique Pro algorithm for
 Warp Time.
 
@@ -155,9 +158,3 @@ Warp Time.
 For automatic timing correction of whole takes, see
 [Groove Doctor](groove-doctor.md) (Waveform Pro or the Recording
 Engineer Expansion).
-
-
-
-
-
-

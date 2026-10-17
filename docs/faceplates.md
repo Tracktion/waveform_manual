@@ -1,10 +1,11 @@
 # Faceplates <span class="pro">PRO</span> { #faceplates }
 
+> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion or the DJ Mix Tools Expansion.
+
 Faceplates let you build custom control panels for your plugins and racks. Instead of using the default parameter list, you can design a visual layout with knobs, sliders, buttons, meters, and labels, arranged exactly the way you want.
 
-> 📝 **Edition:** Waveform Pro, or with the MIDI Producer or DJ Mix Tools Expansion.
-
 ![](images/Faceplate%201@2x.png)
+
 *A Chorus plugin with a custom faceplate showing rotary knobs, buttons, parameter names, value readouts, and level meters.*
 
 ## What Is a Faceplate?
@@ -19,13 +20,13 @@ A plugin's faceplate can be shown and edited in several places:
 
 - **The plugin's own window**: click the eye button in the title bar (*Toggle between plugin UI and plugin faceplate*). For a plugin inside a rack the button opens a menu instead: choose **Show Plugin Faceplate**, or **Show Plugin Editor** to go back.
 - **The Actions panel**: select the plugin and pop out its **Faceplate** page.
-- **The Plugins detail editor**: open the plugin panel's **Faceplate** page. See [The Plugins Detail Editor](plugins-detail-editor.md).
+- **The Plugins tab of the Detail Editor**: open the **Faceplate** page on the plugin's panel. See [The Plugins Detail Editor](plugins-detail-editor.md).
 
 A rack's faceplate has its own routes:
 
 - **The Faceplate view**: choose **Show Rack Faceplate** from the rack window's eye button, or from the Rack Instance's **Select Rack view to use** submenu.
 - **The Rack Instance's Actions panel**: pop out its **Faceplate** page.
-- **The Stack Editor's detail panel**: open its **Faceplate** tab. See [Plugin Racks](racks.md#faceplate-view).
+- **The Stack editor's detail panel**: open its **Faceplate** tab. See [Plugin Racks](racks.md#faceplate-view).
 
 ## Getting Started
 
@@ -35,12 +36,13 @@ To create your first faceplate:
 
 1. Click the **Padlock** button on the right toolbar to unlock edit mode.
 2. Click on any empty grid cell. A menu appears listing the available control types.
-3. Choose a control type (for example, *Slider* or *Parameter*).
+3. Choose a control type (for example, **Slider** or **Parameter**).
 4. The new control appears on the grid. Right-click it or left-click it to assign a plugin parameter.
 
 Lock the padlock again when you're done, and your faceplate is ready to use.
 
 ![](images/Faceplate%202@2x.png)
+
 *Edit mode active: controls are highlighted in red with visible borders, and the grid dots are shown for placement guidance.*
 
 ## The Edit Toolbar
@@ -61,7 +63,7 @@ The toolbar on the right side of the faceplate contains these buttons, from top 
 
 **Presets**: Opens a menu for saving, loading, and managing faceplate presets. More on this below.
 
-> 💡 **Tip:** You can hide the edit toolbar by right-clicking the faceplate background and unchecking *Show edit menu*. Right-click again to bring it back. The same menu has **Lock**, which turns edit mode on and off like the padlock.
+> 💡 **Tip:** You can hide the edit toolbar by right-clicking the faceplate background and unchecking **Show edit menu**. Right-click again to bring it back. The same menu has **Lock**, which turns edit mode on and off like the padlock.
 
 ## The Grid System
 
@@ -83,14 +85,14 @@ Faceplates offer eight types of controls. Each one serves a different purpose.
 
 A knob or fader that controls a single parameter. This is the most common control type.
 
-**Style**: Right-click a slider and choose from the *Style* submenu:
+**Style**: Right-click a slider and choose from the **Style** submenu:
 - **Rotary**: A traditional knob. (Default)
 - **Linear horizontal**: A horizontal fader.
 - **Linear vertical**: A vertical fader.
 - **Linear bar**: A horizontal bar that fills as the value increases.
 - **Linear bar vertical**: A vertical bar that fills upward.
 
-**Snap to mouse position**: Found under the *Options* submenu. When enabled, clicking the slider jumps the value to wherever you click. When disabled, the slider uses relative dragging, which is gentler for fine adjustments. (Default: snap enabled)
+**Snap to mouse position**: Found under the **Options** submenu. When enabled, clicking the slider jumps the value to wherever you click. When disabled, the slider uses relative dragging, which is gentler for fine adjustments. (Default: snap enabled)
 
 Sliders also support custom filmstrip images, rotary images (background + rotating thumb), and linear images (background + sliding thumb). See the Skins section below.
 
@@ -134,7 +136,7 @@ A two-dimensional pad that controls two parameters simultaneously: one for the X
 
 **Reset after moving**: When enabled, the pad snaps back to the default values when you release the mouse. Useful for performance effects where you want temporary parameter changes.
 
-The XY pad supports custom background and thumb images from the *Skin* menu.
+The XY pad supports custom background and thumb images from the **Skin** menu.
 
 ### Meter
 
@@ -253,7 +255,7 @@ Right-click the faceplate background and open the **Default skin** submenu. Avai
 - **Juicy**: A modern, clean look.
 - **Nord**: Inspired by red Nord-style synthesiser controls.
 - **Moog**: Large, chunky knobs reminiscent of Moog synthesisers.
-- **Juno**: A classic analog synthesiser style.
+- **Juno**: A classic analogue synthesiser style.
 - **Mono Classic**: Understated, bass-synth-inspired controls.
 - **Mono Modern**: A contemporary take on the classic mono style.
 - **Mono Wired**: An industrial variant with hard edges.
@@ -291,9 +293,9 @@ Right-click the background, open the **Background** submenu, then **Set size**:
 
 **Fit to space**: When checked, the faceplate automatically scales. (Default: on)
 
-**Width**: Fixed width in pixels (50 to 2000). Only available when *Fit to space* is off.
+**Width**: Fixed width in pixels (50 to 2000). Only available when **Fit to space** is off.
 
-**Height**: Fixed height in pixels (50 to 2000). Only available when *Fit to space* is off.
+**Height**: Fixed height in pixels (50 to 2000). Only available when **Fit to space** is off.
 
 The **Stretch** button on the toolbar is separate from this. It controls whether grid cells stretch proportionally or maintain equal square proportions.
 
@@ -305,7 +307,7 @@ Faceplates can be saved and loaded as `.tracktionfaceplate` files. Waveform incl
 
 The following built-in plugins come with pre-made faceplates: Auto Filter, Bus Compressor, Chorus, Compressor, Crusher, Ducker, EQ, Flanger, Gate/Expander, Limiter, Phaser, Reverb, Stereo Delay, and Tape Delay.
 
-When you show the faceplate in a plugin's own window and that plugin doesn't have a faceplate yet, Waveform loads the first preset in the Faceplates folder (factory or your own) saved for that plugin type. This doesn't happen on the Faceplate pages of the Actions panel or the Detail editor, or for racks; there, use **Load plugin preset** from the Presets menu.
+When you show the faceplate in a plugin's own window and that plugin doesn't have a faceplate yet, Waveform loads the first preset in the Faceplates folder (factory or your own) saved for that plugin type. This doesn't happen on the Faceplate pages of the Actions panel or the Detail Editor, or for racks; there, use **Load plugin preset** from the Presets menu.
 
 ### Loading a Preset
 
@@ -348,9 +350,9 @@ This makes faceplates especially useful for racks: you can build a single unifie
 
 - **Filmstrip frame count matters.** If a custom slider image looks wrong, right-click it and check **Set number of frames** under the skin menu. The auto-detection works well for square frames but can miscount with non-standard aspect ratios.
 
-- **Presets store images.** Background images and filmstrip graphics are embedded in both the plugin state and preset files. Using very large images will increase your project file size.
+- **Presets store images.** Background images and filmstrip graphics are embedded in both the plugin state and preset files. Using very large images will increase the size of your Edit file.
 
-- **Quick assign order is spatial.** Auto-assign and quick-assign both process controls left to right, top to bottom. If your layout doesn't follow that reading order, the assignments may not land where you expect. Rearrange controls on the grid or use manual assignment instead.
+- **Quick Assign order is spatial.** Auto-assign and Quick Assign both process controls left to right, top to bottom. If your layout doesn't follow that reading order, the assignments may not land where you expect. Rearrange controls on the grid or use manual assignment instead.
 
 ## Moving On
 

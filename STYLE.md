@@ -2,6 +2,10 @@
 
 Every prompt, skill or person writing manual chapters follows this file. When a prompt and this file disagree, this file wins.
 
+## Terminology
+
+Use the terms, spellings and formats in `GLOSSARY.md` (in this folder). Its owner decisions at the top take precedence over everything else in it.
+
 ## Voice
 
 - Talk to the reader as "you". Keep it plain and friendly, the way an experienced user would explain something to a colleague.
@@ -41,7 +45,7 @@ Every prompt, skill or person writing manual chapters follows this file. When a 
 
 - Any feature that isn't in the Free edition gets the badge on its heading: `## Faceplates <span class="pro">PRO</span>` (the `.pro` style lives in `docs/stylesheets/extra.css`).
 - A badge changes the heading's automatic anchor (`#faceplates` would become `#faceplates-pro`). To keep links stable, give every badged heading an explicit anchor without the badge: `## Faceplates <span class="pro">PRO</span> { #faceplates }`. Link to that anchor.
-- Directly under the title, add one line naming the editions and expansions that unlock it.
+- Directly under the badged heading (H1 or section), add one line naming every edition and expansion that unlocks it, in this form: `> 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion.` For a badged control with no heading of its own, the sentence that describes it names the editions instead.
 - Wording matches the product names: Waveform Pro, the MIDI Producer Expansion, and so on.
 
 ## Facts and sources

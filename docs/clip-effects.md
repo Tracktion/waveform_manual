@@ -19,22 +19,22 @@ that one clip.
 *Plugins Using Clip Effects*
 
 > 📝 **Note:** Clip effects work with Audio clips, but not MIDI clips or Step
-clips.
+> clips.
 
 > 📝 **Note:** For offline processing that renders into the clip, see
 > [Clip Layer Effects](clip-layer-effects.md).
 
 The rest of the operation is pretty much the same as using plugins in
 the mixer. Select a plugin and hit F to enable or disable it. You can
-also enable or disable the effect with the *Enabled* button in the
+also enable or disable the effect with the **Enabled** button in the
 Actions panel.
 
-For third-party plugins, clicking or double clicking on the plugin opens
+For third-party plugins, clicking or double-clicking on the plugin opens
 its user interface.
 
-> 💡 **Tip:** How plugins open depends on a setting on the Settings tab,
-General page: under *Plugin Windows*, *Open plugin windows by* can be set
-to either *Single-clicking* or *Double-clicking*.
+> 💡 **Tip:** How plugins open depends on a setting in *Settings > General*:
+> under **Plugin Windows**, **Open plugin windows by** can be set to either
+> **Single-clicking** or **Double-clicking**.
 
 ## Removing Clip Plugins
 
@@ -61,12 +61,12 @@ then applying an echo to it. Here are the steps:
 1.  First, separate the final word of the phrase from the rest of the
     phrase. To do that position the cursor where you'd like to make the
     split and hit the slash (/) key.
-2.  Now that clip is separated into its own clip, drag in the *Delay*
+2.  Now that clip is separated into its own clip, drag in the Delay
     plugin.
-3.  Dial in the *Delay* parameter so it echoes out in a musically useful
+3.  Dial in the **Delay** parameter so it echoes out in a musically useful
     way, maybe using eighth notes or quarter notes. Add a little bit of
-    *Feedback* so you get some echoes that die out over time.
-4.  Playback and tweak the *Delay* parameters until you get the echo
+    **Feedback** so you get some echoes that die out over time.
+4.  Playback and tweak the Delay parameters until you get the echo
     throw effect that you like.
 
 ## Moving On
@@ -75,9 +75,3 @@ The same technique is great for lo-fi effects as well. Apply a high pass
 and a low pass filter in order to cut the highs and the lows, or even
 apply chorusing to a few words in a vocal line. Clip effects are
 easy to use in Waveform, so try them on any short section that needs its own treatment.
-
-
-
-
-
-

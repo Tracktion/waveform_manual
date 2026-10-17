@@ -1,11 +1,12 @@
-# Wavetable Synthesizer <span class="pro">PRO</span> { #wavetable-synthesizer }
-
-Waveform's built-in Wavetable synthesizer is a two-oscillator wavetable instrument with a sub oscillator, a noise generator, two filters, a modulation matrix and an effects chain. It ships with factory wavetables and presets, can load your own wavetables, and supports MPE.
+# Wavetable Synthesiser <span class="pro">PRO</span> { #wavetable-synthesizer }
 
 > 📝 **Edition:** Waveform Pro, or with the Synth Pack Expansion.
 
+Waveform's built-in Wavetable synthesiser is a two-oscillator wavetable instrument with a sub oscillator, a noise generator, two filters, a modulation matrix and an effects chain. It ships with factory wavetables and presets, can load your own wavetables, and supports MPE.
+
 ![](images/Instruments/Wavetable@2x.png)
-*The Wavetable synthesizer interface showing both oscillators, filters, LFOs, envelopes, macros, and the global settings.*
+
+*The Wavetable synthesiser interface showing both oscillators, filters, LFOs, envelopes, macros, and the global settings.*
 
 > 📝 **Note:** Most panels have a power button in their header. Only OSC 1 and Filter 1 are on in a new instance (the main ADSR has no power button and is always on). OSC 2, Filter 2, the Sub and Noise generators, ENV 1-3, LFO 1-4, the arpeggiator and every effect start switched off, so turn a section on before expecting it to do anything.
 
@@ -17,7 +18,7 @@ The synth has **two independent wavetable oscillators** (OSC 1 and OSC 2). Each 
 
 The currently loaded wavetable name is displayed in the header of each oscillator panel. You have three ways to change it:
 
-- **Click the wavetable name** to open a categorized menu of all factory wavetables. Tables are grouped by prefix (Analog, Digital, etc.), so browsing is quick.
+- **Click the wavetable name** to open a categorised menu of all factory wavetables. Tables are grouped by prefix (Analog, Digital, etc.), so browsing is quick.
 - **Use the left/right arrows** beside the name to step through wavetables one at a time. This is great for auditioning.
 - **Click the + button** to load your own .wav file as a user wavetable. If the file doesn't contain wavetable metadata, you'll be prompted to choose a table size (256, 512, 1024, or 2048 samples per frame).
 
@@ -35,7 +36,7 @@ Each oscillator has the following controls:
 
 **Level**: Output volume of the oscillator in dB. (Default: 0 dB)
 
-**Pan**: Stereo position. Center is zero; negative values pan left, positive values pan right. (Default: center)
+**Pan**: Stereo position. Centre is zero; negative values pan left, positive values pan right. (Default: centre)
 
 **Octave**: Coarse pitch offset in octaves, from -4 to +4. (Default: 0)
 
@@ -45,17 +46,17 @@ Each oscillator has the following controls:
 
 **Phase**: Starting phase of the oscillator waveform. (Default: 0)
 
-**Rand**: Randomizes the starting phase each time a note is triggered. At maximum, each note starts at a different phase, which can reduce the "machine gun" effect on repeated notes. (Default: 1.0)
+**Rand**: Randomises the starting phase each time a note is triggered. At maximum, each note starts at a different phase, which can reduce the "machine gun" effect on repeated notes. (Default: 1.0)
 
 ### Unison and Stereo Spread
 
 **Unison**: Stacks up to 8 voices per oscillator. More voices means a thicker, wider sound at the cost of CPU. (Default: 1)
 
-**Detune**: Controls how far apart the unison voices are pitched from each other. Only active when Unison is greater than 1. (Default: 0)
+**Detune**: Controls how far apart the unison voices are pitched from each other. Only active when **Unison** is greater than 1. (Default: 0)
 
-**Spread**: Pans the unison voices across the stereo field. Only active when Unison is greater than 1. (Default: 0%)
+**Spread**: Pans the unison voices across the stereo field. Only active when **Unison** is greater than 1. (Default: 0%)
 
-> 💡 **Tip:** For classic supersaw-style sounds, set Unison to 4-8, push Detune to around 0.15, and spread to 80% or more. Five voices with moderate detune is a good balance between richness and CPU load.
+> 💡 **Tip:** For classic supersaw-style sounds, set **Unison** to 4-8, push **Detune** to around 0.15, and **Spread** to 80% or more. Five voices with moderate detune is a good balance between richness and CPU load.
 
 ### Wave Shaping
 
@@ -75,21 +76,13 @@ The **Sub** oscillator adds a simple, stable tone underneath your wavetable osci
 
 **Enable**: Turns the sub oscillator on or off. (Default: Off)
 
-**Wave**: Selects the waveform shape. Options are:
-- Sine
-- Triangle
-- Saw
-- Pulse 50%
-- Pulse 25%
-- Pulse 12%
-
-(Default: Triangle)
+**Wave** (Choices: Sine, Triangle, Saw, Pulse 50%, Pulse 25%, Pulse 12%): Selects the waveform shape. (Default: Triangle)
 
 **Octave**: Pitch offset in octaves. Set to -1 or -2 to place the sub below your main oscillators. (Default: 0)
 
 **Level**: Output volume in dB. (Default: 0 dB)
 
-**Pan**: Stereo position. (Default: center)
+**Pan**: Stereo position. (Default: centre)
 
 **Retrig**: When enabled, the sub oscillator restarts its phase on each new note. (Default: Off)
 
@@ -103,7 +96,7 @@ The **Noise** generator adds untuned noise to the signal. Use it sparingly for b
 
 **Level**: Output volume in dB. (Default: 0 dB)
 
-**Pan**: Stereo position. (Default: center)
+**Pan**: Stereo position. (Default: centre)
 
 ## Filters
 
@@ -132,7 +125,7 @@ Each filter offers eight modes:
 
 **Res**: Resonance. Boosts frequencies around the cutoff point. Higher values create a sharper, more pronounced peak. (Default: 0)
 
-**Amnt**: Envelope amount. Controls how much the filter's built-in ADSR envelope affects the cutoff frequency. Positive values sweep the filter up; negative values sweep it down. When set to zero, the filter envelope controls (A, D, S, R) are disabled. (Default: 0)
+**Amnt**: Envelope amount. Controls how much the filter's built-in ADSR envelope affects the cutoff frequency. Positive values sweep the filter up; negative values sweep it down. When set to zero, the filter envelope controls (**A**, **D**, **S**, **R**) are disabled. (Default: 0)
 
 **Key**: Key tracking. When turned up, the filter cutoff follows the pitch of the note you play, so higher notes have a brighter tone. (Default: 0%)
 
@@ -154,7 +147,7 @@ The envelope's visual display shows the current phase of active voices in real t
 
 ### Filter Routing
 
-Each filter has four source buttons labeled **1**, **2**, **N**, and **S** that control which sound sources are fed into that filter:
+Each filter has four source buttons labelled **1**, **2**, **N**, and **S** that control which sound sources are fed into that filter:
 
 - **1**: Oscillator 1
 - **2**: Oscillator 2
@@ -205,11 +198,11 @@ The Wavetable synth includes **four LFOs** (LFO 1 through LFO 4) that can be use
 
 **Enable**: The power button beside each LFO's name in the panel header. (Default: Off)
 
-**Rate**: The speed of the LFO in Hz. Only visible when Sync is off. (Default: 10 Hz)
+**Rate**: The speed of the LFO in Hz. Only visible when **Sync** is off. (Default: 10 Hz)
 
-**Beat**: When Sync is on, sets the LFO rate to a musical note duration. (Default: 1/4 note)
+**Beat**: When **Sync** is on, sets the LFO rate to a musical note duration. (Default: 1/4 note)
 
-**Sync**: Synchronizes the LFO rate to the host tempo. (Default: Off)
+**Sync**: Synchronises the LFO rate to the host tempo. (Default: Off)
 
 **Depth**: The intensity of the LFO's modulation. Supports bipolar values. (Default: 1.0)
 
@@ -221,7 +214,7 @@ The Wavetable synth includes **four LFOs** (LFO 1 through LFO 4) that can be use
 
 **Delay**: Time before the LFO starts after a note is triggered. Useful for delayed vibrato. (Default: 0s)
 
-**Trigger**: Determines the LFO's triggering behavior:
+**Trigger**: Determines the LFO's triggering behaviour:
 - **Mono**: One shared LFO for all voices
 - **Poly**: Each voice gets its own independent LFO
 - **Legato**: Shared LFO that doesn't reset on legato notes
@@ -237,14 +230,14 @@ The large MSEG display shows the LFO waveform shape. You can edit it directly:
 
 - Click and drag points to reshape the curve
 - The **pencil button** toggles draw mode, which lets you paint shapes freehand
-- The **draw mode selector** (Step, Half, Down, Up, Tri) changes the behavior of the draw tool
+- The **draw mode selector** (Step, Half, Down, Up, Tri) changes the behaviour of the draw tool
 - **XGrid** and **YGrid** control the snap resolution when editing (Default: 8 for both)
 
 ### Saving and Loading LFO Shapes
 
 Click the **disk button** to open the LFO shape file menu. From here you can:
 
-- Browse and load factory LFO presets organized in categories (Basic, SC, Gate, Arp, Sequencer)
+- Browse and load factory LFO presets organised in categories (Basic, SC, Gate, Arp, Sequencer)
 - Load a custom .mseg file
 - Save the current shape as a .mseg file for later use
 
@@ -356,7 +349,7 @@ The distortion slot offers **ten different modes**, selectable from the dropdown
 
 **Simple**: Basic waveshaping distortion with a single **Amount** control, shown from -1.0 to 4.0 (Default: 0.0). This is the default mode.
 
-**Light, Medium, Hard, Clip, Tube, Fuzz**: Six flavors of drive-based distortion, each with:
+**Light, Medium, Hard, Clip, Tube, Fuzz**: Six flavours of drive-based distortion, each with:
 - **Drive**: Amount of distortion. (Default: 0)
 - **Post Gain**: Output level after distortion. (Default: 1.0)
 - **Tone**: Brightness control. (Default: 1.0)
@@ -365,7 +358,7 @@ The distortion slot offers **ten different modes**, selectable from the dropdown
 **Bitcrusher**: Sample rate and bit depth reduction for lo-fi effects:
 - **Rate**: Sample rate reduction. (Default: 0.5)
 - **Rez**: Bit depth reduction. (Default: 0.5)
-- **Hard**: Hardness of the quantization. (Default: 0.8)
+- **Hard**: Hardness of the quantisation. (Default: 0.8)
 - **Mix**: Wet/dry blend. (Default: 1.0)
 
 **Fire Amp**: Amp simulation with a bright, aggressive character:
@@ -386,7 +379,7 @@ A stereo delay effect with tempo sync.
 
 **Sync**: Enables tempo sync. When on, the delay time is set by a note duration. (Default: Off)
 
-**Delay**: Delay time. When Sync is off, this is in seconds (0-120s). When Sync is on, this becomes a note duration selector. (Default: 1s / 1/4 note)
+**Delay**: Delay time. When **Sync** is off, this is in seconds (0-120s). When **Sync** is on, this becomes a note duration selector. (Default: 1s / 1/4 note)
 
 **FB**: Feedback in dB. Higher values create more repeats. (Default: -10 dB)
 
@@ -416,10 +409,10 @@ The reverb slot offers two modes, selectable from the dropdown menu:
 
 ### EQ
 
-A three-band parametric equalizer for final tonal shaping.
+A three-band parametric equaliser for final tonal shaping.
 
 Each band has:
-- **Freq**: Center frequency in Hz. (Defaults: 100 Hz, 1500 Hz, 8000 Hz)
+- **Freq**: Centre frequency in Hz. (Defaults: 100 Hz, 1500 Hz, 8000 Hz)
 - **Gain**: Boost or cut in dB, from -20 to +20. (Default: 0 dB)
 
 ### Filter (FX)
@@ -455,17 +448,7 @@ The built-in **Arpeggiator** takes the notes you hold and plays them back as a p
 
 **Enable**: Turns the arpeggiator on or off. (Default: Off)
 
-**Mode**: The arpeggio pattern:
-- Up
-- Down
-- Cascade
-- Alt 1
-- Alt 2
-- Random
-- Chord 1 Octave
-- Chord All Octaves
-
-(Default: Up)
+**Mode** (Choices: Up, Down, Cascade, Alt 1, Alt 2, Random, Chord 1 Octave, Chord All Octaves): The arpeggio pattern. (Default: Up)
 
 **Speed**: The rate of the arpeggio, synced to host tempo, from 4 Bars down to 1/64 T, with dotted (D) and triplet (T) values. (Default: 1/4)
 
@@ -473,17 +456,17 @@ The built-in **Arpeggiator** takes the notes you hold and plays them back as a p
 
 **Octave**: Number of octaves to span, from 1 to 10. (Default: 1)
 
-**Rand Pos**: Randomizes note position in the pattern. (Default: 0)
+**Rand Pos**: Randomises note position in the pattern. (Default: 0)
 
-**Rand Len**: Randomizes note length. (Default: 0)
+**Rand Len**: Randomises note length. (Default: 0)
 
-**Rand Vel**: Randomizes note velocity. (Default: 0)
+**Rand Vel**: Randomises note velocity. (Default: 0)
 
 **Swing**: Adds swing feel by delaying every other note, from 0 to 33. (Default: 0)
 
 ## Global Settings
 
-The **Global** panel controls settings that affect the entire synthesizer.
+The **Global** panel controls settings that affect the entire synthesiser.
 
 **Level**: Master output volume, from -100 to +12 dB. (Default: 0 dB)
 
@@ -496,9 +479,9 @@ The **Global** panel controls settings that affect the entire synthesizer.
 
 (Default: Off)
 
-**Time**: Glide time in seconds. Only active when Glide is not Off. (Default: 0.3s)
+**Time**: Glide time in seconds. Only active when **Glide** is not *Off*. (Default: 0.3s)
 
-**Legato**: When enabled in mono mode with glide, new notes that overlap don't retrigger envelopes. Only active when Glide is enabled. (Default: Off)
+**Legato**: When enabled in mono mode with glide, new notes that overlap don't retrigger envelopes. Only active when **Glide** is enabled. (Default: Off)
 
 **Voices**: Maximum number of simultaneous voices, from 2 to 40. Lower values save CPU. (Default: 40)
 
@@ -510,7 +493,7 @@ The Wavetable synth supports **MIDI Polyphonic Expression (MPE)**. MPE is off by
 
 MPE Pressure, MPE Timbre, and MPE Pitch Bend are all available as modulation sources in the modulation matrix.
 
-> 📝 **Note:** When MPE mode is active, the global Pitch Bend Range control is disabled since MPE controllers manage pitch bend range independently.
+> 📝 **Note:** When MPE mode is active, the global **PB Range** control is disabled since MPE controllers manage pitch bend range independently.
 
 ## Presets
 
@@ -530,12 +513,12 @@ The synth also supports **undo and redo** for parameter changes, accessible from
 
 - **Unison voice count and CPU.** Each unison voice on each oscillator multiplies the CPU cost. If you have both oscillators set to 8 unison voices, that's 16 oscillators per note. With 40-voice polyphony, that can add up fast. Keeping unison under 5 suits most situations. If you're using heavy unison, also reduce the voice count in the Global settings.
 
-- **Filter envelope amount at zero.** If the filter envelope Amount knob is set to zero, the filter's ADSR controls are disabled and grayed out. If you're wondering why your filter envelope isn't doing anything, check the Amount knob first.
+- **Filter envelope amount at zero.** If the filter envelope **Amnt** knob is set to zero, the filter's ADSR controls are disabled and greyed out. If you're wondering why your filter envelope isn't doing anything, check the **Amnt** knob first.
 
 - **User wavetable sizes.** When importing a .wav file that doesn't contain wavetable metadata, you'll need to specify the correct table size. If the size is wrong, the wavetable frames won't line up correctly and the sound will be off. Common sizes are 2048 (most wavetables from Serum, Vital, etc.) and 256 (for simpler, single-cycle waveforms).
 
-- **Serial vs. parallel filter routing.** In serial mode, the Filter Mix knob is disabled because the entire output of Filter 1 passes through Filter 2. If you're expecting to blend between the two filters and nothing seems to change, check that you're in Parallel mode.
+- **Serial vs. parallel filter routing.** In serial mode, the filter **Mix** knob is disabled because the entire output of Filter 1 passes through Filter 2. If you're expecting to blend between the two filters and nothing seems to change, check that you're in *Parallel* mode.
 
 ## Moving On
 
-For Waveform's other built-in instruments, see the 4OSC and Samplers and Instruments chapters.
+For Waveform's other built-in instruments, see [4OSC Synthesiser](4osc.md) and [Samplers and Instruments](samplers-and-instruments.md).

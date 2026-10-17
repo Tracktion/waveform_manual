@@ -3,6 +3,7 @@
 The Actions panel gives you a single place to see and run the things you can do to whatever you currently have selected. Select a track, a clip, a plugin, or a parameter, and the panel updates to show the actions that apply to it. It's a fast way to reach commands without hunting through menus, and it's where you go to mark your favourite actions so they show up in the action menu in the transport bar.
 
 ![](images/Actions%20Panel%201@2x.png)
+
 *The Actions panel showing actions for the current selection*
 
 ## How the Panel Works
@@ -17,13 +18,13 @@ To run an action, click its row. For an action that holds a value, interact with
 
 There are a few ways to get to the Actions panel:
 
-- Add it as a tab in the left-hand sidebar (the same area as the Browser).
+- Open the **Actions** tab of the Browser.
 - Open it as a dedicated panel on the right side of the Edit tab.
 - Use the **Show Actions** item in the View menu of the Edit tab.
-- Toggle it from the *Eye* panel selector at the upper right, using the *Hide/show the actions panel* control.
+- Toggle it from the eye button at the upper right, using the **Hide/show the actions panel** control.
 - Float it into its own window so it stays visible while you work elsewhere.
 
-You can also assign a keyboard shortcut to show and hide the panel. Look for the *Show or hide actions panel* command on the Keyboard Shortcuts page in Settings.
+You can also assign a keyboard shortcut to show and hide the panel. Look for the **Show or hide actions panel** command in *Settings > Keyboard Shortcuts*.
 
 ## The Breadcrumb
 
@@ -57,13 +58,13 @@ To hide an action you don't want cluttering the list, right-click the row (to th
 
 If the action you want doesn't exist as a built-in, you can add one of your own macros to the list. Click the **Add Macro** button at the bottom of the panel and pick a script from the menu. The macro is attached to the type of item you currently have selected, so it shows up whenever you select a similar item later.
 
-See the Macros chapter for how to write and manage the scripts themselves.
+See [Macros](macros.md) for how to write and manage the scripts themselves.
 
 ## Locking and Floating
 
-On the dedicated Actions panel at the right of the Edit tab (not the sidebar Actions tab), two extra controls appear at the top left:
+On the dedicated Actions panel at the right of the Edit tab (not the Browser's **Actions** tab), two extra controls appear at the top left:
 
-**Lock**: Locks the panel to its current contents so it stops following your selection. This is useful when you want to keep a particular set of actions on screen while you click around elsewhere. Click it again to unlock and resume tracking the selection. Shortcut: Opt + F11 / Alt + F11 (*Lock/Unlock Actions panel*).
+**Lock**: Locks the panel to its current contents so it stops following your selection. This is useful when you want to keep a particular set of actions on screen while you click around elsewhere. Click it again to unlock and resume tracking the selection. Shortcut: Opt + F11 / Alt + F11 (**Lock/Unlock Actions panel**).
 
 **Dock / Undock**: Pops the panel out into a floating window, or docks it back again. A floating Actions panel stays on top so you can keep it beside whatever you're working on.
 
@@ -79,35 +80,37 @@ Shift-click the breadcrumb to see all actions for that item, ignoring the menu's
 
 ## The Quick Actions Bar and Window <span class="pro">PRO</span> { #the-quick-actions-bar-and-window }
 
-Quick Actions is a separate feature from the action menu above. Instead of showing the actions for whatever you've selected, it gives you rows of buttons that *you* assign to specific commands: your own custom shortcut bars that stay put regardless of selection.
-
 > 📝 **Edition:** Waveform Pro.
 
+Quick Actions is a separate feature from the action menu above. Instead of showing the actions for whatever you've selected, it gives you rows of buttons that *you* assign to specific commands: your own custom shortcut bars that stay put regardless of selection.
+
 ![](images/Quick%20Actions%201@2x.png)
+
 *Rows of assignable Quick Actions buttons*
 
 ### Assigning Quick Actions
 
-Each row is a **Quick Actions bar** of buttons. To add a button, click the **+** at the end of a row (*Add a quick action button*). To assign a command to a button, right-click it and choose a command from the **Assign action** submenu. The right-click menu also shows what's currently assigned and offers a **Remove** option. Use **Rename** to give the button your own label (leave it blank to go back to the command's name) or **Reset name** to undo that, and the colour picker in the same menu to colour the button. The **Icon** submenu puts an icon on the button: pick **None** or one of the installed icons, use **Import from SVG file...** to add your own, or **Show icons folder...** to open the folder they live in.
+Each row is a **Quick Actions bar** of buttons. To add a button, click the **+** at the end of a row (**Add a quick action button**). To assign a command to a button, right-click it and choose a command from the **Assign action** submenu. The right-click menu also shows what's currently assigned and offers a **Remove** option. Use **Rename** to give the button your own label (leave it blank to go back to the command's name) or **Reset name** to undo that, and the colour picker in the same menu to colour the button. The **Icon** submenu puts an icon on the button: pick **None** or one of the installed icons, use **Import from SVG file...** to add your own, or **Show icons folder...** to open the folder they live in.
 
-You can rearrange buttons by dragging them, and add or remove whole rows using the controls at the end of each row (*Add a row* / *Remove this row*).
+You can rearrange buttons by dragging them, and add or remove whole rows using the controls at the end of each row (**Add a row** / **Remove this row**).
 
 Each set of buttons is saved as a named set, so you can keep different layouts for different jobs. The selector button at the left end of each bar shows the current set's name. Click it to switch to another saved set, or to manage them: **New** creates an empty set, **Duplicate** copies the current one, **Rename** renames it and **Delete** removes it (there's no undo for a delete).
 
-### The Quick Actions Bar (above the transport)
+### The Quick Actions Bar (Above the Transport)
 
-The Quick Actions bar can sit directly above the transport bar, always in view. To show or hide it, open the *Eye* panel selector at the upper right and click the *Show/Hide the quick actions panel* toggle. You can also use the View menu's **Show Quick actions bar** item, or assign a keyboard shortcut to the *Show or hide the quick actions bar* command. Here the bar is limited to a handful of rows, enough for the commands you reach for constantly.
+The Quick Actions bar can sit directly above the transport bar, always in view. To show or hide it, click the eye button at the upper right, then the **Show/Hide the quick actions panel** toggle. You can also use the View menu's **Show Quick actions bar** item, or assign a keyboard shortcut to the **Show or hide the quick actions bar** command. Here the bar is limited to a handful of rows, enough for the commands you reach for constantly.
 
 ### The Quick Actions Window
 
 For a larger workspace, open the **Quick Actions window**, a floating window that combines a mixer with a much taller Quick Actions bar (up to thirty rows). Click the **Quick Actions** button (the shortcut-style icon) in the transport bar to toggle it, or right-click that button and choose **Open Quick actions window**.
 
 ![](images/Quick%20Actions%202@2x.png)
+
 *The Quick Actions window, with the mixer above and Quick Actions below*
 
 Down the left edge of the window are three toggles that control what it shows: a **mixer** toggle, a **Quick Actions** toggle, and a **touch mode** toggle that enlarges the buttons for touchscreens. Turn off the mixer to use the window purely as a big board of action buttons, or turn off Quick Actions to use it as a standalone mixer.
 
-> 💡 **Tip:** Assign a keyboard shortcut to *Show or hide the quick actions window*. Combined with touch mode, the window makes a handy control surface on a second monitor or tablet.
+> 💡 **Tip:** Assign a keyboard shortcut to **Show or hide the quick actions window**. Combined with touch mode, the window makes a handy control surface on a second monitor or tablet.
 
 ## ⚡ Things to Watch Out For
 
@@ -115,4 +118,4 @@ Down the left edge of the window are three toggles that control what it shows: a
 
 ## Moving On
 
-To build your own commands, see the Macros chapter for writing scripts, and the Keyboard Shortcuts chapter for assigning them to keys.
+To build your own commands, see [Macros](macros.md) for writing scripts, and [Keyboard Shortcuts](keyboard-shortcuts.md) for assigning them to keys.

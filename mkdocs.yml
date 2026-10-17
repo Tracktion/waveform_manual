@@ -36,6 +36,7 @@ plugins:
 
 markdown_extensions:
   - admonition
+  - sane_lists   # honour the starting number of a numbered list that continues after an image
   - attr_list
   - toc:
       permalink: true

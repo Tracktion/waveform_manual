@@ -10,7 +10,6 @@ there is a great sounding free amp sim plugin from Voxengo called
 Boogex, used as an example for this chapter. You can download it from
 [Voxengo.com](https://www.voxengo.com/product/boogex/).
 
-
 ![](images/21----01.png)
 
 *Free Boogex Amp Simulator from Voxengo*
@@ -23,13 +22,11 @@ Here is the setup:
     interface as described in [Audio Device Setup](audio-device-setup.md). If your interface
     doesn't have a guitar input then use a suitable preamp.
 
-
 ![](images/21----02@2x.jpg)
 
 *Connect Your Guitar to your Interface*
 
 2.  Create a new track, select the input, and arm it for recording.
-
 
 ![](images/21----03.png)
 
@@ -39,16 +36,14 @@ Here is the setup:
     interface is turned all the way down or disabled. To make this work
     you need to monitor 100% of your guitar signal through Waveform.
 
-
 ![](images/21----04.png)
 
 *Turn off Any Input Monitoring on Your Interface*
 
-4.  Right-click the input and choose **Live Input Monitoring > On** (or
+4.  Right-click the input and choose *Live Input Monitoring > On* (or
     select the input and set **Input Monitoring Mode** to On in the
     Actions panel). At this point you should be able to hear your dry
     unprocessed guitar signal.
-
 
 ![](images/21----05.png)
 
@@ -56,8 +51,7 @@ Here is the setup:
 
 5.  Open the Browser and go to the Search tab, and type in a few
     characters of the name of your amp simulator plugin. Drag the plugin
-    to the mixer section.
-
+    to the track in the inline mixer.
 
 ![](images/21----06@2x.png)
 
@@ -65,17 +59,16 @@ Here is the setup:
 
 6.  If the UI window for the plugin didn't open, click it (or
     double-click it, if you changed **Open plugin windows by** in
-    Settings > General). If you have Live Input Monitoring on, you
+    *Settings > General*). If you have Live Input Monitoring on, you
     should hear sound through
     the plugin when you play. Select a preset and it should sound like
     you are playing through a guitar amp, maybe even amps, effects,
     cabinets, whatever your plugin simulates.
 
 > 💡 **Tip:** To bypass the plugin just click on the plugin to select it and
-press F. You can also enable or disable it using the **Enabled** row
-in the Actions panel. The shortcut F will enable or disable any selected
+press **F**. You can also enable or disable it using the **Enabled** row
+in the Actions panel. The shortcut **F** will enable or disable any selected
 plugins.
-
 
 ![](images/21----07.png)
 
@@ -83,15 +76,14 @@ plugins.
 
 ## Recording with the Amp Sim
 
-At this point, recording works the same as before.
+At this point, recording works the same as in [Recording Audio](recording-audio.md).
 
 1.  Record-enable the track, make sure the cursor is at the beginning.
-2.  Click *Record* in the Transport. If you want to do loop recording
-    then have *Loop* on and then you can record several takes in a quick
+2.  Click **Record** in the transport bar. If you want to do loop recording
+    then have **Loop** on and then you can record several takes in a quick
     succession.
 3.  Once you have actually recorded the part, you can still tweak the
     sound.
-
 
 ![](images/21----09@2x.png)
 
@@ -100,7 +92,7 @@ At this point, recording works the same as before.
 A big advantage of recording this way is the ability to tweak the sound
 after the fact. You can also record using an endless variety of guitar
 rigs that you don't own. Plus, you can do this without disturbing the
-neighbors!
+neighbours!
 
 An important but subtle advantage is when you go to edit your guitar
 tracks. Edits that occur before the amp and distortion sounds more
@@ -126,22 +118,24 @@ the high impedance mode engaged.
 ## Managing Latency
 
 When working with guitar amp simulators, latency can be a factor. If you
-have the *Audio buffer size* set too high, you get a big delay between
+have the **Audio buffer size** set too high, you get a big delay between
 when you play and when you hear a note. If you set it too low the you
 might get pops and clicks if the computer doesn't have adequate CPU
 power to handle the low latency you have chosen. The challenge is to
 find a good setting the feels responsive, but still has perfect sound
 quality.
 
-Latency is determined by *Audio Buffer Size* parameter. Here is how to
+Latency is determined by the **Audio buffer size** setting. Here is how to
 set that:
 
-1.  Navigate to the Settings tab, Audio Devices page.
-2.  Locate the *Audio buffer size* setting. The value shows a number of
+1.  Open *Settings > Audio Devices*.
+2.  Locate the **Audio buffer size** setting. The value shows a number of
     samples followed by a calculated latency delay.
-3. Enter an *Audio Buffer Size* value. Values around 256 or lower tend to work pretty well depending on what else is going on in the Edit.
+3.  Enter an **Audio buffer size** value. Values around 256 or lower tend to work pretty well depending on what else is going on in the Edit.
 
-![Settings Tab, Audio Devices Page - Audio Buffer Size](images/21----10.png)
+![](images/21----10.png)
+
+*The Audio buffer size setting on the Audio Devices page*
 
 ## Speed of Sound Through Air
 
@@ -149,9 +143,9 @@ Here is some background on the impact of the buffer size. In this
 example, a buffer setting of 256 samples offers 5.8 ms of latency.
 
 What this means is that when you play a note on your guitar, you are
-going to hear the sound about 5.8 ms later. Now the speed sound through
-air is about 1 ms per foot (1ms per .3 meters). A 5.8 ms delay is
-like playing your guitar amp from 5.8 feet (1.8 meters) away. You would
+going to hear the sound about 5.8 ms later. Now the speed of sound through
+air is about 1 ms per foot (1 ms per 0.3 metres). A 5.8 ms delay is
+like playing your guitar amp from 5.8 feet (1.8 metres) away. You would
 need to add in the actual distance from your monitor speakers as well. If your speakers are two or three feet away,
 it might be like having your amplifier nine feet away. Most guitar
 players can deal with latency delay in that range. It's similar to the
@@ -160,9 +154,9 @@ starts getting much longer than that, then you are going to hear a
 noticeable lag and that will affect the feel and potential impact your
 playing.
 
-As another example, if you have your *Audio buffer size* set to 1024
-samples, that gives you 23 ms of delay, That is going to give you the
-feeling of playing with your amplifier 23 feet (7 meters) from your
+As another example, if you have your **Audio buffer size** set to 1024
+samples, that gives you 23 ms of delay. That is going to give you the
+feeling of playing with your amplifier 23 feet (7 metres) from your
 ears. That is going to be really hard to work with.
 
 Why not just set the buffer size as low as it will possibly go? That
@@ -175,7 +169,7 @@ low as possible to get the latency down while keeping it high enough to
 have clean, solid playback. When you're mixing rather than recording, a
 larger buffer such as 1024 is fine.
 
-## Dialing in the Guitar Tone
+## Dialling in the Guitar Tone
 
 You can dial in your ideal guitar tone using the controls on the amp
 simulator. Flip through the presets or start with a preset and tweak the
@@ -196,14 +190,13 @@ positions. Both need Waveform Pro or the Recording Engineer Expansion; see
 
 If you are recording direct with a guitar or bass, you might want to add
 a tuner plugin before the amp sim. Waveform does not include a native
-tuner, but if you have a tuner plug-in, you can just drop it into the
-effects section of the mixer for the track. That will give you a quick
+tuner, but if you have a tuner plugin, you can just drop it onto the
+track in the inline mixer. That will give you a quick
 and easy way to tune up.
 
 > 💡 **Tip:** If you don't have a tuner plugin, consider downloading one as
 part of the MFreeFXBundle from [Melda
 Production](https://www.meldaproduction.com/MFreeFXBundle).
-
 
 ![](images/21----08.png)
 
@@ -211,18 +204,18 @@ Production](https://www.meldaproduction.com/MFreeFXBundle).
 
 Assuming you have a tuner plugin available, here is how to get it going:
 
-1.  Open the Browser, go to the Search tab. Make sure *Plugins* is
-    selected from the search options drop down menu. Type in a few
-    characters of the name of your tuner plugin. The plug-in will show
+1.  Open the Browser, go to the Search tab. Make sure **Plugins** is
+    selected from the search options dropdown. Type in a few
+    characters of the name of your tuner plugin. The plugin will show
     up in the search list.
-2.  Drag the tuner and drop it in the plug-ins area of the track.
+2.  Drag the tuner and drop it in the plugins area of the track.
     Normally, as soon as you drop it, the user interface window will pop
     open. If not, click the plugin to open the UI.
 3.  Play a note on your guitar. If the tuner does not respond make sure
     to arm the track for recording and set **Live Input Monitoring** to
     On.
     This is necessary for the signal to flow through the track to the
-    mixer section and to the tuner plugin.
+    inline mixer and to the tuner plugin.
 
 > 💡 **Tip:** To keep the plugin open, click the pin icon in the upper right
 corner.
@@ -236,9 +229,3 @@ You can always record in the traditional way by miking your guitar
 amplifier. It's also interesting to split your guitar signal and record
 the direct signal along with your miked guitar amp. That way you can
 blend the sound of the amp sim with the real amp when mixing.
-
-
-
-
-
-
