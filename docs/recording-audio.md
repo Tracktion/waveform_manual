@@ -83,7 +83,7 @@ new name applies to every Edit, not just the current one. For example,
 you could name an input after the microphone plugged into it.
 
 
-![](images/15----05.png)
+![](images/15----05@2x.png)
 
 *Customised Input Names Using the Device Alias Property*
 

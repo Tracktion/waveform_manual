@@ -11,8 +11,6 @@ Waveform has four kinds of marker:
 - **Timecode markers** (TC markers): Marker track clips fixed to a time
   offset, unaffected by tempo changes. See [The Marker
   Track](#the-marker-track).
-- **Wave file markers**: markers stored in the audio file itself. See
-  [Adjust Markers (Wave File Markers)](#adjust-markers-wave-file-markers).
 
 ## In Marker and Out Marker
 
@@ -194,7 +192,7 @@ number.
 Right-click the Marker track header and choose which type of marker to
 add at the cursor position.
 
-![](images/10----14.png)
+![](images/10----14@2x.png)
 
 *Add a Marker from the Marker Track Right-click Menu*
 
@@ -204,7 +202,7 @@ Click the Marker track header to select it. The Actions panel then
 shows the **New Bars & Beats Marker** and **New Absolute TC Marker**
 buttons.
 
-![](images/10----15.png)
+![](images/10----15@2x.png)
 
 *Add a Marker from the Marker Track Actions Panel*
 
@@ -213,13 +211,13 @@ buttons.
 You can add either kind of Marker clip with the **Add** button on the
 **Markers** tab of the Browser.
 
-![](images/10----16.png)
+![](images/10----16@2x.png)
 
 *Add a Marker from the Markers Tab of the Browser*
 
 ## Marker Clip Properties
 
-![](images/10----17.png)
+![](images/10----17@2x.png)
 
 *Marker Clip Settings in the Actions Panel*
 
@@ -303,7 +301,7 @@ markers to the Marker track, and to jump to any marker by double-clicking
 its name in the list. Select a marker there to delete it, or to rename it
 in the Actions panel.
 
-![](images/10----21.png)
+![](images/10----21@2x.png)
 
 *The Markers Tab of the Browser*
 
@@ -319,7 +317,7 @@ in the Actions panel.
 from the two types: **Add bars & beats marker** and **Add absolute TC
 marker**.
 
-![](images/10----22.png)
+![](images/10----22@2x.png)
 
 *Adding a Marker from the Markers Tab*
 
@@ -338,27 +336,6 @@ Markers tab in the Browser, select all the markers and edit the
 selected, change it to "2": the markers renumber starting from 2. To
 number them from 1 again, repeat the step and change **Number** back
 to 1.
-
-## Adjust Markers (Wave File Markers)
-
-Waveform has another kind of marker, also called "markers". They
-mark spots in a clip but are stored in the underlying Wave files. You can
-add these yellow arrows to Wave files, and they then appear on Audio
-clips. Work with them using the **Adjust Markers** actions in the Audio
-clip's Actions panel. You can also add and remove them by dragging the
-marker object under **View Source Info** in the same panel.
-
-![](images/10----28.png)
-
-*Wave File Markers*
-
-![](images/10----26.png)
-
-*Wave File Markers in View Source Info*
-
-![](images/10----27.png)
-
-*Adjust Markers Options in the Audio Clip's Actions Panel*
 
 ## Moving On
 

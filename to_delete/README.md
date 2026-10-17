@@ -535,3 +535,12 @@ Old images replaced by 2x retakes (October 2026). Safe to delete once the retake
 - `images/37----07.png` -> `docs/images/37----07@2x.png`
 - `images/37----03.png` -> `docs/images/37----03@2x.png`
 - `images/37----10.png` -> `docs/images/37----10@2x.png`
+- `images/10----14.png` -> `docs/images/10----14@2x.png`
+- `images/10----15.png` -> `docs/images/10----15@2x.png`
+- `images/10----17.png` -> `docs/images/10----17@2x.png`
+- `images/10----21.png` -> `docs/images/10----21@2x.png`
+- `images/10----16.png` -> `docs/images/10----16@2x.png`
+- `images/10----22.png` -> `docs/images/10----22@2x.png`
+- `images/15----05.png` -> `docs/images/15----05@2x.png`
+
+- `images/10----26.png`, `images/10----27.png`, `images/10----28.png`: wave file markers section removed (the app no longer reads audio-file cue markers; checked 2026-10-18)
