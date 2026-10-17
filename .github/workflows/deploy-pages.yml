@@ -1,11 +1,11 @@
 name: Deploy manual to GitHub Pages
 
-# Versioned with mike: each deploy lands in its own subdirectory of gh-pages.
-#   push to main   -> "dev" (unreleased manual)
-#   push tag v*    -> that version (v14.1 -> "14.1"), and moves the "latest" alias to it
+# Versioned with mike: each tag deploys to its own subdirectory of gh-pages.
+#   tag v14.1.20       -> "14.1.20", and moves the "latest" alias to it
+#   tag v14.1.20-beta  -> "14.1.20-beta" only; "latest" is left alone
+# Pushes to main do not deploy.
 on:
   push:
-    branches: [main]
     tags: ['v*']
   workflow_dispatch:
 
@@ -35,12 +35,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Deploy dev
-        if: github.ref == 'refs/heads/main'
-        run: mike deploy --push --title "Public Beta" dev
+      - name: Deploy beta
+        if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref_name, '-')
+        run: mike deploy --push "${GITHUB_REF_NAME#v}"
 
       - name: Deploy release
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           mike deploy --push --update-aliases "$VERSION" latest
