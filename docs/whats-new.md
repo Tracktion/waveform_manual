@@ -8,14 +8,14 @@ This chapter lists what has changed in recent versions of Waveform, with links t
 
 - **One Render dialog in every edition**: The Render dialog replaces the old exporter in Free, Pro and every other edition. Simple mode covers everything the old exporter did: the whole mix, a file per track, selected tracks or clips, remove silence, render at 1x, ACID and tag metadata, and adding the result to your library. See [Rendering and Stems](rendering-and-stems.md).
 - **Advanced mode** <span class="pro">PRO</span>: In Waveform Pro, a **Mode** switch at the top of the dialog adds stems by submix, group, tag or output, a file for each marker region, arranger section or selected clip range, render presets, **Wrap Remainder Into Loop** and **Measure Loudness of Rendered Files**. See [Rendering and Stems](rendering-and-stems.md).
-- **Include Tails**: A new option, on by default (off by default for clip renders, so they end where the clips do), lets reverb and delay tails ring out for up to 10 seconds past the end of a render. It stops once the output is silent and never runs into the next clip. Turn it off when you need files of an exact length, such as loops.
+- **Include Tails**: A new option that lets reverb and delay tails ring out for up to 10 seconds past the end of a render. The tail stops once the output is silent and never runs into the next clip. The option is on by default, except for clip renders, which end where the clips do. Turn it off when you need files of an exact length, such as loops.
 - **Render Track and clip rendering**: The **Render Track** button in a track's Actions panel and the Render menu in a clip's Actions panel now open the Render dialog, set up for the job. Render Track can make a **New Track** or **Replace Source Tracks**, and clip renders can go to **This Track** or **Replace Clips**. Render Track remembers its own settings between renders.
 - **MIDI files**: The dialog can write a MIDI file, taken either from the clips themselves or from the output of MIDI plugins (**MIDI Source**).
 - **File name tokens**: The **Insert** button beside the file name adds tokens such as `$edit`, `$track` and `$date`, in both modes. `%edit%`, `%track%` and `%date%` work too.
 - **Recent folders**: A **Recent** button beside the folder lists the last 10 folders you rendered to, from any Edit.
 - **Tags**: **Add Tags** writes the Edit's title, artist, album and other tags into WAV, OGG and MP3 files. Edit them with the **Edit Tags** action in the Edit's Actions panel.
 - **Warnings for silent renders**: The dialog warns when a track you're rendering is muted or not soloed, since it would render as silence.
-- Rendered files show up in the project again, as they did with the old exporter.
+- **Rendered files in the project**: Rendered files show up in the project again, as they did with the old exporter.
 - **Clip render names**: A clip render's file name starts as the clip's name, which you can change in the dialog. See [Rendering Clips](rendering-and-stems.md#rendering-clips).
 - **Tracks playing the launcher render silent**: A track that is playing its clip launcher renders as silence, and the dialog says so. Switch its playback to the arranger to render its arrangement. Clip renders still include their arrangement clips.
 - **Renders from scripts and the assistant**: While a script or the assistant is rendering, its progress and a **Cancel** button cover the Edit, and the Edit can't be changed until the render finishes. Closing the Edit or quitting asks whether to stop the render first. See [Rendering From the AI Assistant](rendering-and-stems.md#rendering-from-the-ai-assistant).
@@ -74,7 +74,7 @@ This chapter lists what has changed in recent versions of Waveform, with links t
 - **Automation track colour**: Automation tracks have a **Colour** option in their right-click menu.
 - **Insert clip on the Arranger track** <span class="pro">PRO</span>: In Waveform Pro, with the Arranger track selected, the Insert clip key (G) adds an Arranger clip. See [The Arranger Track](arranger-track.md#creating-sections).
 
-Plus many fixes across the clip launcher, freezing, projects and plugins.
+This release also includes many fixes to the clip launcher, freezing, projects and plugins.
 
 ## Waveform 14.0
 
@@ -100,15 +100,15 @@ its scripting API. It is aware of what you have selected and of the notes
 you write in the Edit's **Info** field, and an **Auto** mode picks the right model for each request.
 You choose which AI service it talks to: OpenAI or Anthropic using your
 own API key, ChatGPT through the sign-in from the Codex CLI or ChatGPT
-desktop app, or a model running locally on your own computer. It is
-entirely optional. See [The AI Assistant](ai-assistant.md).
+desktop app, or a model running locally on your own computer. The
+assistant is optional. See [The AI Assistant](ai-assistant.md).
 
 ### A New Interface Layout
 
 The old bottom Properties panel has been replaced. Menus now live in a
 standard main menu at the top of the window, playback and master controls
 sit in a transport bar along the bottom, and the settings and actions for
-whatever you select appear in an improved **Actions panel** at the side
+whatever you select appear in an improved Actions panel at the side
 (and in the Browser) as a flat, context-sensitive list. See
 [The Actions Panel](actions-panel.md), [Basic Navigation](basic-navigation.md),
 [The Edit Tab](edit-tab.md), and [The Detail Editor](detail-editor.md).
@@ -117,7 +117,7 @@ whatever you select appear in an improved **Actions panel** at the side
 
 - **Detail Editor Clip tab**: The Detail Editor gained a Clip tab for working closely on the selected clip, including loop settings and warp-time editing. See [The Detail Editor](detail-editor.md).
 - **Plugin panel**: Host a single plugin live on the main output from the Browser's **Plugin** tab. See [The Plugin Panel](plugin-side-panel.md).
-- **Mixer panel**: The Mixer panel can be docked or floated in its own window. See [The Mixer](edit-tab.md#the-mixer-panel).
+- **Floating Mixer**: The Mixer can be docked or floated in its own window. See [The Mixer](edit-tab.md#the-mixer-panel).
 - **Actions panel lock**: A lock button keeps the Actions panel showing its current contents while you select other things (Opt + F11 / Alt + F11). See [Locking and Floating](actions-panel.md#locking-and-floating).
 - **Colours**: A new colour palette and track colour order.
 - **Editable colour swatches** <span class="pro">PRO</span>: In Waveform Pro, all 18 colour swatches can be edited in the Colour Scheme Editor. See [Look and Feel](reference-settings.md#look-and-feel).

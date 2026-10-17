@@ -76,10 +76,9 @@ and it auto-hides when you switch away from Waveform to another
 application. Where there's no footage (before the video starts or in a
 gap), the window shows black.
 
-> 📝 **Note:** The video window is display-only. There are no play,
-> offset, aspect-ratio, or volume controls in it. Playback is driven
-> entirely by Waveform's transport. Think of it as a passive reference
-> monitor that mirrors wherever the cursor is.
+> 📝 **Note:** The video window is display-only. It has no play,
+> offset, aspect-ratio or volume controls, and playback is driven
+> entirely by Waveform's transport.
 
 ### Timecode Overlay
 
@@ -93,15 +92,15 @@ talking timings through with a director.
 The Video menu also has a *Video > Video Thumbnail Size* submenu with
 choices of **100%**, **75%**, **50%** and **Disabled**. This controls the strip
 of thumbnail frames drawn along the video clip in the timeline, not the
-video window itself. Turn it down or off if the thumbnails are cluttering
-your view or you want to lighten the display.
+video window itself. Turn it down or off if the thumbnails clutter your
+view.
 
 ## Rendering Video <span class="pro">PRO</span> { #rendering-video-pro }
 
 > 📝 **Edition:** Waveform Pro, or with the Pro Video Expansion.
 
-With these video features, two extra items appear in the
-Video menu for getting a finished video back out:
+With these editions, the Video menu has two extra items for getting a
+finished video back out:
 
 - *Video > Export: Render to a file...*: combine the video picture with a fresh
   mix of your audio into a new file.
@@ -150,8 +149,9 @@ so turn it off if you want the whole Edit.
 *Video > Export: Render and replace audio track in video...* opens the same dialog,
 titled **Replace Audio in Video**, with the **Format** and **Size** options
 hidden. Set **File** to the existing video whose audio you want to
-replace. It reuses that video's picture, so only the audio settings apply. Use this when you've
-been handed a finished cut and just need to lay your new mix onto it.
+replace. It reuses that video's picture, so only the audio settings
+apply. Use this when you've been handed a finished cut and need to lay
+your new mix onto it.
 
 ## ⚡ Things to Watch Out For
 

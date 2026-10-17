@@ -12,19 +12,19 @@ Waveform's built-in Wavetable synthesiser is a two-oscillator wavetable instrume
 
 ## Oscillators
 
-The synth has **two independent wavetable oscillators** (OSC 1 and OSC 2). Each oscillator loads a wavetable and lets you sweep through its frames to create evolving, animated timbres.
+The synth has two independent wavetable oscillators, OSC 1 and OSC 2. Each one loads a wavetable, and sweeping through the table's frames gives you timbres that change over time.
 
 ### Browsing and Loading Wavetables
 
-The currently loaded wavetable name is displayed in the header of each oscillator panel. You have three ways to change it:
+Each oscillator panel shows the name of its wavetable in the header. To change it:
 
-- **Click the wavetable name** to open a categorised menu of all factory wavetables. Tables are grouped by prefix (Analog, Digital, etc.), so browsing is quick.
-- **Use the left/right arrows** beside the name to step through wavetables one at a time. This is great for auditioning.
-- **Click the + button** to load your own .wav file as a user wavetable. If the file doesn't contain wavetable metadata, you'll be prompted to choose a table size (256, 512, 1024, or 2048 samples per frame).
+- Click the wavetable name to open a menu of all the factory wavetables, grouped by prefix (Analog, Digital and so on).
+- Use the left and right arrows beside the name to step through the wavetables one at a time, which is handy for auditioning them.
+- Click the **+** button to load your own .wav file as a user wavetable. If the file has no wavetable metadata, you're asked to choose a table size (256, 512, 1024 or 2048 samples per frame).
 
-You can also **drag and drop** a .wav file directly onto the wavetable display to load it.
+You can also drag a .wav file onto the wavetable display to load it.
 
-> 💡 **Tip:** The 3D wavetable display is interactive. Drag up or down on it to scrub the **Pos** (position) parameter in real time. This is a fast way to find the sweet spot in a wavetable.
+> 💡 **Tip:** Drag up or down on the 3D wavetable display to scrub the **Pos** (position) parameter while you listen. It's a quick way to find the part of a wavetable you want.
 
 ### Oscillator Controls
 
@@ -32,7 +32,7 @@ Each oscillator has the following controls:
 
 **Enable**: The power button in the oscillator's header. (Default: On for OSC 1, Off for OSC 2)
 
-**Pos**: Sweeps through the frames of the loaded wavetable. This is the primary sound-shaping control for wavetable synthesis. Automate or modulate it for movement. (Default: 0%)
+**Pos**: Sweeps through the frames of the loaded wavetable. It's the main sound-shaping control in wavetable synthesis; automate or modulate it to make the sound move. (Default: 0%)
 
 **Level**: Output volume of the oscillator in dB. (Default: 0 dB)
 
@@ -60,7 +60,7 @@ Each oscillator has the following controls:
 
 ### Wave Shaping
 
-Each oscillator includes four built-in waveshaping controls for mangling the wavetable output before it hits the filters:
+Each oscillator has four waveshaping controls that reshape its output before it reaches the filters:
 
 **Formant**: Shifts the formant structure of the waveform, adding vocal-like resonances. (Default: 0)
 
@@ -68,11 +68,11 @@ Each oscillator includes four built-in waveshaping controls for mangling the wav
 
 **Asym**: Adds asymmetric distortion to the waveform. (Default: 0)
 
-**Fold**: Folds the waveform back on itself, creating additional harmonics. Great for aggressive, metallic tones. (Default: 0)
+**Fold**: Folds the waveform back on itself, adding harmonics for harder, more metallic tones. (Default: 0)
 
 ## Sub Oscillator
 
-The **Sub** oscillator adds a simple, stable tone underneath your wavetable oscillators. It's perfect for anchoring bass sounds or adding weight to pads.
+The **Sub** oscillator adds a simple, stable tone underneath the wavetable oscillators, to anchor a bass sound or add weight to a pad.
 
 **Enable**: Turns the sub oscillator on or off. (Default: Off)
 
@@ -100,7 +100,7 @@ The **Noise** generator adds untuned noise to the signal. Use it sparingly for b
 
 ## Filters
 
-The Wavetable synth has **two per-voice filters** (Filter 1 and Filter 2) that can be combined in parallel or serial configurations.
+The Wavetable synth has two per-voice filters, Filter 1 and Filter 2, which you can run in parallel or in series.
 
 ### Filter Types
 
@@ -121,7 +121,7 @@ Each filter offers eight modes:
 
 **Enable**: The power button in the filter's header. (Default: On for Filter 1, Off for Filter 2)
 
-**Freq**: Cutoff frequency in Hz. This is the most important filter parameter. (Default: about 330 Hz)
+**Freq**: Cutoff frequency in Hz. (Default: about 330 Hz)
 
 **Res**: Resonance. Boosts frequencies around the cutoff point. Higher values create a sharper, more pronounced peak. (Default: 0)
 
@@ -131,7 +131,7 @@ Each filter offers eight modes:
 
 **Vel**: Velocity tracking. Higher values make the filter cutoff respond more to how hard you play. Only active when the envelope amount is non-zero. (Default: 0%)
 
-**Retrig**: Retrigger. When mono mode and glide are active, this controls whether the filter envelope restarts on legato notes. Only visible when relevant.
+**Retrig**: Retrigger. With mono mode and glide on, this sets whether the filter envelope restarts on legato notes. Only shown in that case.
 
 ### Filter Envelope (ADSR)
 
@@ -172,7 +172,7 @@ The **Mix** panel between the two filters controls how they combine:
 
 ## Amplitude Envelope (ADSR)
 
-The main **ADSR** envelope controls the overall volume shape of every note you play. It's always active and sits in the upper-right area of the interface.
+The main **ADSR** envelope shapes the volume of every note you play. It's always on, and sits in the upper right of the interface.
 
 **A** (Attack): Time for the note to reach full volume. (Default: 0.01s)
 
@@ -186,13 +186,13 @@ The main **ADSR** envelope controls the overall volume shape of every note you p
 
 **Vel**: Velocity tracking. Controls how much your playing velocity affects the volume. At 100%, soft notes are quiet and hard notes are loud. At 0%, velocity has no effect. (Default: 100%)
 
-**Retrig**: Retrigger control. When mono mode and glide are active, this determines whether the envelope restarts on legato notes. Only visible when relevant.
+**Retrig**: Retrigger. With mono mode and glide on, this sets whether the envelope restarts on legato notes. Only shown in that case.
 
-The envelope display shows a visual representation of the ADSR curve and highlights the current phase for each active voice.
+The envelope display draws the ADSR curve and highlights where each active voice is in it.
 
 ## LFOs
 
-The Wavetable synth includes **four LFOs** (LFO 1 through LFO 4) that can be used as modulation sources. Each LFO uses an MSEG (multi-segment envelope generator) for its shape, giving you far more flexibility than simple sine or triangle LFOs.
+The Wavetable synth has four LFOs, LFO 1 to LFO 4, for use as modulation sources. Each one draws its shape with an MSEG (multi-segment envelope generator), so it isn't limited to sine or triangle waves.
 
 ### LFO Controls
 
@@ -229,23 +229,23 @@ The Wavetable synth includes **four LFOs** (LFO 1 through LFO 4) that can be use
 The large MSEG display shows the LFO waveform shape. You can edit it directly:
 
 - Click and drag points to reshape the curve
-- The **pencil button** toggles draw mode, which lets you paint shapes freehand
-- The **draw mode selector** (Step, Half, Down, Up, Tri) changes the behaviour of the draw tool
+- The pencil button turns on draw mode, for painting shapes freehand
+- The draw mode selector (Step, Half, Down, Up, Tri) changes how the draw tool behaves
 - **XGrid** and **YGrid** control the snap resolution when editing (Default: 8 for both)
 
 ### Saving and Loading LFO Shapes
 
-Click the **disk button** to open the LFO shape file menu. From here you can:
+Click the disk button to open the LFO shape file menu. From there you can:
 
 - Browse and load factory LFO presets organised in categories (Basic, SC, Gate, Arp, Sequencer)
 - Load a custom .mseg file
 - Save the current shape as a .mseg file for later use
 
-Factory LFO shapes include useful starting points like Sine, Triangle, Saw, Square, ADSR, Side Chain, Trance Gate, and various arpeggio patterns.
+The factory shapes include Sine, Triangle, Saw, Square, ADSR, Side Chain, Trance Gate and several arpeggio patterns.
 
 ## Envelopes (ENV 1-3)
 
-In addition to the main ADSR and the two filter envelopes, the synth provides **three modulation envelopes** (ENV 1, ENV 2, ENV 3). These are general-purpose ADSR envelopes that can be routed to any modulatable parameter through the modulation matrix.
+As well as the main ADSR and the two filter envelopes, the synth has three modulation envelopes, ENV 1, ENV 2 and ENV 3. These are general-purpose ADSR envelopes that you can route to any parameter that takes modulation, through the modulation matrix.
 
 Each envelope has:
 
@@ -262,7 +262,7 @@ Each envelope has:
 
 ## Modulation
 
-The Wavetable synth has a **modulation matrix** that lets you connect any modulation source to nearly any parameter.
+The Wavetable synth's modulation matrix connects any modulation source to nearly any parameter.
 
 ### Modulation Sources
 
@@ -291,27 +291,27 @@ The **SRC** tab shows all available modulation sources. Each source has a button
 - Drag the button onto a control.
 - Click the button to arm it (it lights up), then drag the controls you want it to modulate to set how far it moves each one. Click the button again to stop assigning.
 
-The **MTX** tab shows the full modulation matrix, listing all active routings with their source, destination, and depth. This is the place to go for an overview of all your modulation assignments.
+The **MTX** tab shows the full modulation matrix: every active routing, with its source, destination and depth.
 
 ### Toolbar Modulation Sources
 
-The toolbar row between the oscillator/filter area and the LFO area shows six commonly used modulation sources with quick-access controls: **Mod Wheel**, **MPE Pressure**, **MPE Timbre**, **MPE Pitch Bend**, **Note #**, and **Velocity**. Each one has a modulation source button and a depth slider for quickly assigning them to parameters.
+The toolbar row between the oscillator/filter area and the LFO area gives quick access to six common modulation sources: **Mod Wheel**, **MPE Pressure**, **MPE Timbre**, **MPE Pitch Bend**, **Note #**, and **Velocity**. Each one has a modulation source button and a depth slider.
 
 ## Macros
 
-The **Macros** panel provides **four assignable macro knobs** (Macro 1 through Macro 4). Each macro is a modulation source that you can route to multiple parameters at once, giving you a single knob that controls several things simultaneously.
+The **Macros** panel has four assignable macro knobs, Macro 1 to Macro 4. Each macro is a modulation source you can route to several parameters, so one knob controls them all at once.
 
-You can rename each macro by clicking on its label and typing a new name. This makes it easy to remember what each macro does in a given preset.
+To rename a macro, click its label and type a new name. A clear name shows what each macro does in a preset.
 
-> 💡 **Tip:** Macros are great for performance. Set up a "Brightness" macro that controls filter cutoff, wavetable position, and LFO depth all at once. Then you only need to move one knob during a live performance.
+> 💡 **Tip:** Macros are handy when you play live. Set up a "Brightness" macro that moves the filter cutoff, wavetable position and LFO depth together, and you only have one knob to turn.
 
 ## Effects
 
-The Wavetable synth includes a built-in **effects chain** with eight effect slots. Toggle between the filter/oscillator view and the effects view using the **Filter** and **FX** buttons on the toolbar.
+The Wavetable synth has its own effects chain with eight effect slots. The **FX** button on the toolbar shows the effects, and the **Filter** button takes you back to the oscillators and filters.
 
 Every effect starts switched off: turn one on with the power button in its header.
 
-The effects can be **reordered by dragging** their headers left or right. The signal flows through them from left to right, so order matters. The default order is Gate, Chorus, Distortion, Delay, Reverb, EQ, Limiter, Filter.
+Drag an effect's header left or right to reorder the chain. The signal flows through the effects from left to right, so the order changes the sound. The default order is Gate, Chorus, Distortion, Delay, Reverb, EQ, Limiter, Filter.
 
 ### Gate
 
@@ -345,7 +345,7 @@ Adds width and movement by mixing delayed, pitch-modulated copies of the signal.
 
 ### Distortion
 
-The distortion slot offers **ten different modes**, selectable from the dropdown menu in the header:
+The distortion slot has ten modes, chosen from the dropdown in its header:
 
 **Simple**: Basic waveshaping distortion with a single **Amount** control, shown from -1.0 to 4.0 (Default: 0.0). This is the default mode.
 
@@ -383,13 +383,13 @@ A stereo delay effect with tempo sync.
 
 **FB**: Feedback in dB. Higher values create more repeats. (Default: -10 dB)
 
-**CF**: Cross-feedback in dB. Feeds the left delay into the right and vice versa for ping-pong effects. (Default: -100 dB, essentially off)
+**CF**: Cross-feedback in dB. Feeds the left delay into the right and the right into the left, for ping-pong effects. (Default: -100 dB, which is effectively off)
 
 **Mix**: Wet/dry blend. (Default: 0.5%)
 
 ### Reverb
 
-The reverb slot offers two modes, selectable from the dropdown menu:
+The reverb slot has two modes, chosen from its dropdown:
 
 **Plate Reverb**: A classic plate-style reverb:
 - **Size**: Room size. (Default: 0.6)
@@ -489,7 +489,7 @@ The **Global** panel controls settings that affect the entire synthesiser.
 
 ## MPE Support
 
-The Wavetable synth supports **MIDI Polyphonic Expression (MPE)**. MPE is off by default: turn it on with the **MPE** item in the menu button on the plugin window's title bar. The choice is remembered as a preference, so new Wavetable instances start with it too. When MPE is enabled, each note can independently respond to pressure, timbre (slide), and per-note pitch bend from MPE controllers like the Roli Seaboard or Linnstrument.
+The Wavetable synth supports MIDI Polyphonic Expression (MPE). MPE is off by default: turn it on with the **MPE** item in the menu button on the plugin window's title bar. The choice is remembered as a preference, so new Wavetable instances start with it too. When MPE is enabled, each note can independently respond to pressure, timbre (slide), and per-note pitch bend from MPE controllers like the Roli Seaboard or Linnstrument.
 
 MPE Pressure, MPE Timbre, and MPE Pitch Bend are all available as modulation sources in the modulation matrix.
 
@@ -497,9 +497,7 @@ MPE Pressure, MPE Timbre, and MPE Pitch Bend are all available as modulation sou
 
 ## Presets
 
-The Wavetable synth ships with a library of factory presets covering a range of sounds including basses, leads, pads, arps, and sound design. You can browse presets using the preset browser in the top bar of the plugin.
-
-Factory presets include sounds like 808 Over, Super Saw, FM Bass, Ambient Trails, String Evolution, Vocal Chops, and many more.
+The Wavetable synth comes with a library of factory presets: basses, leads, pads, arps and sound-design patches such as 808 Over, Super Saw, FM Bass, Ambient Trails, String Evolution and Vocal Chops. Browse them with the preset browser in the plugin's top bar.
 
 To save your own presets, use the preset menu. User presets are stored in:
 
@@ -507,17 +505,13 @@ To save your own presets, use the preset menu. User presets are stored in:
 - **Windows:** %APPDATA%/Tracktion/Wavetable/programs/
 - **Linux:** ~/.config/Tracktion/Wavetable/programs/
 
-The synth also supports **undo and redo** for parameter changes, accessible from the toolbar buttons.
+The undo and redo buttons on the toolbar undo and redo parameter changes.
 
 ## ⚡ Things to Watch Out For
 
-- **Unison voice count and CPU.** Each unison voice on each oscillator multiplies the CPU cost. If you have both oscillators set to 8 unison voices, that's 16 oscillators per note. With 40-voice polyphony, that can add up fast. Keeping unison under 5 suits most situations. If you're using heavy unison, also reduce the voice count in the Global settings.
+- **Unison voice count and CPU.** Every unison voice on every oscillator adds to the CPU load. With both oscillators at 8 unison voices, each note plays 16 oscillators, and with 40-voice polyphony that adds up fast. Keeping unison under 5 suits most sounds; if you do use heavy unison, lower **Voices** in the Global settings too.
 
-- **Filter envelope amount at zero.** If the filter envelope **Amnt** knob is set to zero, the filter's ADSR controls are disabled and greyed out. If you're wondering why your filter envelope isn't doing anything, check the **Amnt** knob first.
-
-- **User wavetable sizes.** When importing a .wav file that doesn't contain wavetable metadata, you'll need to specify the correct table size. If the size is wrong, the wavetable frames won't line up correctly and the sound will be off. Common sizes are 2048 (most wavetables from Serum, Vital, etc.) and 256 (for simpler, single-cycle waveforms).
-
-- **Serial vs. parallel filter routing.** In serial mode, the filter **Mix** knob is disabled because the entire output of Filter 1 passes through Filter 2. If you're expecting to blend between the two filters and nothing seems to change, check that you're in *Parallel* mode.
+- **User wavetable sizes.** When you import a .wav file without wavetable metadata, you have to pick the table size yourself. If it's wrong, the frames won't line up and the wavetable will sound wrong. 2048 is the usual size for wavetables made in Serum, Vital and similar synths, and 256 for simpler single-cycle waveforms.
 
 ## Moving On
 

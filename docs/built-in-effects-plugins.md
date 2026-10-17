@@ -1,9 +1,7 @@
 # Built-in Effects Plugins
 
-The Waveform built-in effects are really quite simple. They act as
-plugins that you can combine to build up more complex effects chains in
-the mixer, or within plugin racks. While we won't touch on every single
-effect here, we will go over the essential ones. Let's get started.
+Waveform's built-in effects are plugins you combine into effects chains in
+the mixer or inside plugin racks.
 
 ## Waveform Effects
 
@@ -35,19 +33,17 @@ an insert without the wet/dry balance jumping about. (Default: off)
 
 ## Volume & Pan Plugin
 
-Whenever you create a track, you will see a *Volume & Pan* plugin at the
-right in the inline mixer. This gives you basic level and pan controls
-like you'd expect to find on any mixer channel. Since the Waveform mixer
-is made up of plugins, the *Volume & Pan* plugin can be moved before
-other plugins or deleted entirely. You can even add another *Volume &
+Every new track has a *Volume & Pan* plugin at the right of the inline
+mixer, with the level and pan controls you'd find on any mixer channel.
+Because the Waveform mixer is made of plugins, you can move *Volume & Pan*
+in front of other plugins or delete it. You can also add a second *Volume &
 Pan* and use it as a trim control for gain staging.
 
 ### Adjusting Volume
 
-To control volume, click and drag the volume slider up and down. A large
-volume slider appears as you drag, with readable dB markings for fine level
-adjustment. The numeric value of the **Volume** setting appears in the
-Actions panel.
+Drag the volume slider up or down. While you drag, a larger slider appears
+with dB markings for fine adjustment. The **Volume** value is also shown in
+the Actions panel.
 
 
 ![](images/30----02.png)
@@ -56,8 +52,8 @@ Actions panel.
 
 ### Adjusting Panning
 
-The pan adjustment works similarly. Click the panner graphic, then drag left
-or right to adjust the stereo position.
+Panning works the same way: click the panner, then drag left or right to set
+the stereo position.
 
 
 ![](images/30----03.png)
@@ -66,12 +62,12 @@ or right to adjust the stereo position.
 
 ### Resetting Controls
 
-To reset either **Volume** or **Pan** to its default position, hold down
-Opt / Alt as you click the control.
+To reset **Volume** or **Pan** to its default, Opt-click / Alt-click the
+control.
 
 ### In the Actions Panel
 
-With a *Volume & Pan* plugin selected, its values and actions appear in the
+Select a *Volume & Pan* plugin to show its values and actions in the
 Actions panel.
 
 
@@ -89,77 +85,69 @@ VCA plugin on the parent folder track.
 **Pan Law** (Choices: (Use Default), Linear, -2.5 dB Center, -3.0 dB Center,
 -4.5 dB Center, -6.0 dB Center): How the level changes as you pan.
 *(Use Default)* follows the **Default pan law** in *Settings > General*, which
-is *Linear* unless you change it. For example, many DAWs use a -3 dB pan law
-so that as you pan to the centre it lowers the volume slightly, which makes it
-easier to keep a track in balance as you adjust panning. (Default: Linear)
+is *Linear* unless you change it. Many DAWs use a -3 dB pan law, which lowers
+the level slightly as you pan towards the centre so a track stays in balance
+as you move it across the stereo field. (Default: Linear)
 
-> 💡 **Tip:** To apply a velocity offset to notes going into a virtual
-instrument, insert a *Volume & Pan* plugin before it and enable **Apply
-to MIDI Velocities**. Adjust the fader to offset MIDI velocity to
-increase or reduce the velocity. This is a quick way to make your MIDI
-drums hit harder - much easier than going back to editing the MIDI data.
-This only works if you insert *Volume & Pan* ahead (to the left) of the
-virtual instrument.
+> 💡 **Tip:** To offset the velocity of notes going into a virtual
+instrument, insert a *Volume & Pan* plugin before it (to its left) and turn on
+**Apply to MIDI Velocities**. The fader then raises or lowers the MIDI
+velocity, which is a quicker way to make MIDI drums hit harder than editing
+the notes. It only works with *Volume & Pan* ahead of the instrument.
 
 ## Level Meter
 
-The *Level Meter* plugin is also at the right end of the mixer for every
-track by default. *Level Meter* is stereo and shows what the left and
-right levels are doing. To add another one, find it in *Waveform >
-Utility* in the plugin picker.
+Every track also has a *Level Meter* plugin at the right end of the mixer by
+default. It's a stereo meter showing the left and right levels. To add another
+one, find it in *Waveform > Utility* in the plugin picker.
 
 
 ![](images/30----05.png)
 
 *Level Meter Plugin*
 
-When you select a *Level Meter*, the Actions panel displays a large
-horizontal version of the meter, that also includes dB markings.
+Select a *Level Meter* and the Actions panel shows a large horizontal
+version of the meter, with dB markings.
 
 
 ![](images/30----07.png)
 
 *Large Meter in the Actions panel*
 
-The meter indicates signal overload with a red indicator at the top of
-the meter. You can reset the meter by clicking the red overload
-indicator.
+A red indicator at the top of the meter shows when the signal has
+overloaded. Click it to reset the meter.
 
 > 💡 **Tip:** To clear all overload indicators in the Edit, right-click any
-level meter and choose *Reset all overload indicators* ( Backslash ).
+level meter and choose *Reset all overload indicators*, or press **\\**.
 
-By default the *Level Meter* is set to peak mode. This is typical of the
-metering in most DAWs. You may change the meter mode in the Actions panel
-or from the right-click menu. Here is an explanation of each of the modes:
+The *Level Meter* starts in peak mode, like the meters in most DAWs. To
+change the mode, use the Actions panel or the right-click menu. The modes
+are:
 
 
 ![](images/30----06.png)
 
 *Meter Modes for the Level Meter Plugin*
 
-**Peak**: Shows the digital peak. This is the normal mode for Waveform and
-most other DAWs. From a technical point of view, you want to keep this out of
-the red to prevent digital clipping.
+**Peak**: Shows the digital peak level. Keep it out of the red to avoid
+digital clipping.
 
-**RMS**: Gives a sense of the overall perceived volume of your signal. It
-emulates the response of legacy VU meters and gives you a better indication of
-how loud one track is perceived, compared to others.
+**RMS**: Shows the average level, closer to how loud the signal sounds. It
+behaves like a traditional VU meter, so it's a better guide to how loud one
+track sounds compared with others.
 
-**Sum & difference**: A specialised mode that gives you a visual
-representation of both the level and the stereo spread. The left part of the
-meter shows the level of the sum of left plus right. This represents the
-combined level of the stereo signal.
+**Sum & difference**: Shows both the level and the stereo spread. The left
+part of the meter shows the sum of left and right, the combined level of the
+stereo signal.
 
-The right side of the meter shows the difference between left and right.
-The more difference you see the wider the stereo spread between the two
-channels. This gives you a visual indication of stereo spread. If both
-channels are playing exactly the same thing, then left minus right will
-cancel to zero and the right side of the meter will show no activity: a
-mono signal.
+The right part shows the difference between left and right: the more it
+shows, the wider the stereo spread. If both channels play exactly the same
+thing, left minus right cancels to zero and the right part stays still,
+meaning the signal is mono.
 
-> 💡 **Tip:** The level meter will also indicate MIDI activity if you enable
-**Show MIDI activity** in the Actions panel. This can be a very useful diagnostic
-if you ever wonder why a virtual instrument is not triggering.
+> 💡 **Tip:** Turn on **Show MIDI activity** in the Actions panel and the
+meter also shows MIDI activity, which helps when you're working out why a
+virtual instrument isn't playing.
 
 
 ![](images/30----08.png)
@@ -168,22 +156,20 @@ if you ever wonder why a virtual instrument is not triggering.
 
 ## Equalisers
 
-Waveform's equalisers come in three sizes (*1-Band*, *3-Band*, and
-*8-Band*), so you can reach for exactly as much EQ as the job needs. Each
-one has a graphical frequency-response display in the plugin window where you
+Waveform's equalisers come in three sizes: *1-Band*, *3-Band* and
+*8-Band*. Each has a frequency-response display in the plugin window where you
 drag nodes to shape the sound: drag a node up or down for **Gain**, left or
 right for **Frequency**, and around the node to set its **Q** (width).
 
-*1-Band Equaliser* is the smallest: a single band you can set to a bell
-or a shelf. It's perfect for a quick surgical cut or a gentle tone tweak
-without the clutter of a full EQ.
+*1-Band Equaliser* is the smallest: a single band you can set to a bell or a
+shelf, for a single cut or a gentle tone change.
 
 ![](images/Audio%20FX/1-Band%20EQ@2x.png)
 
 *The 1-Band Equaliser*
 
-*3-Band Equaliser* gives you a low shelf, a sweepable mid bell, and a
-high shelf, the classic three-band tone stack. Set the **Frequency** and
+*3-Band Equaliser* has a low shelf, a sweepable mid bell and a high shelf,
+the classic three-band tone stack. Set the **Frequency** and
 **Gain** of each band by dragging its node.
 
 ![](images/Audio%20FX/3-Band%20EQ@2x.png)
@@ -193,9 +179,9 @@ high shelf, the classic three-band tone stack. Set the **Frequency** and
 *8-Band Equaliser* is the full parametric EQ. It has eight bands (a low
 shelf, six peaking bands, and a high shelf), each with its own
 **Frequency**, **Gain** and **Q**, and each able to be switched on or off
-individually. It also offers a *Stereo* or *Mid/Side* mode: in *Mid/Side*
+individually. It also has a *Stereo* or *Mid/Side* mode: in *Mid/Side*
 mode you equalise the centre (mono) and the sides (stereo) of the signal
-independently, which is handy for mastering and stereo-width work.
+separately, which is useful for mastering and stereo-width work.
 
 ![](images/Audio%20FX/8-Band%20EQ@2x.png)
 
@@ -207,17 +193,15 @@ to open an old project.
 
 ## Reverbs
 
-Waveform includes three algorithmic reverbs, each tuned for a different
-kind of space: *Natural Reverb*, *Plate Reverb*, and *Non-linear Reverb*.
-They share the same set of controls, so once you learn one you know them
-all.
+Waveform has three algorithmic reverbs, each tuned for a different kind of
+space: *Natural Reverb*, *Plate Reverb* and *Non-linear Reverb*. They share the
+same controls, so once you know one you know them all.
 
-- *Natural Reverb* models real rooms and halls, the go-to for adding
-  believable depth and ambience to a track.
-- *Plate Reverb* recreates the bright, dense sound of a classic studio
-  plate, a long-time favourite on vocals and snares.
-- *Non-linear Reverb* is a gated/non-linear effect whose tail cuts off
-  abruptly rather than fading away: the big drum sound of the '80s.
+- *Natural Reverb* models real rooms and halls, for natural depth and ambience.
+- *Plate Reverb* recreates the bright, dense sound of a studio plate, a
+  long-standing choice for vocals and snares.
+- *Non-linear Reverb* is a gated reverb whose tail cuts off abruptly rather
+  than fading away, the big drum sound of the 1980s.
 
 ![](images/Audio%20FX/Natural%20Reverb@2x.png)
 
@@ -249,17 +233,17 @@ The controls are:
 - **Pan**: positions the reverb in the stereo field.
 - **Mix**: blends the wet reverb against the dry signal.
 
-> 💡 **Tip:** Assign **Mix** as the quick control parameter so you can dial
-reverb in and out while mixing. More reverb pushes a track further back;
-less brings it forward. Combine that with left and right panning for more
-spacious mixes.
+> 💡 **Tip:** Assign **Mix** as the quick control parameter so you can bring
+the reverb in and out while mixing. More reverb pushes a track further back,
+and less brings it forward; combined with panning, that gives a mix more
+space.
 
 ## Delay
 
-The *Delay* is a full stereo, ping-pong-capable delay with completely
-independent left and right channels. Each side has its own delay time,
-feedback, cross-feedback, pan, and trim, so you can build everything from
-a simple slapback to wide bouncing stereo echoes.
+*Delay* is a stereo delay with independent left and right channels, and can
+ping-pong between them. Each side has its own delay time, feedback,
+cross-feedback, pan and trim, for anything from a simple slapback to wide
+bouncing stereo echoes.
 
 ![](images/Audio%20FX/Delay@2x.png)
 
@@ -288,9 +272,9 @@ folder.
 
 ## Chorus
 
-The *Chorus* plugin gives you that classic shimmering, doubling effect,
-great on guitars, pads, electric pianos, bass, and vocals. It works by
-modulating a short delay so the pitch drifts gently up and down.
+*Chorus* gives the classic shimmering, doubling effect, often used on
+guitars, pads, electric pianos, bass and vocals. It modulates a short delay so
+the pitch drifts gently up and down.
 
 ![](images/Audio%20FX/Chorus@2x.png)
 
@@ -311,10 +295,9 @@ a name, but the new one (in the *Effects* folder) is the default.
 
 ## Phaser
 
-A phaser gives you that instantly recognisable swirling, sweeping motion,
-popular on guitars, synths, and electric pianos, or any track that needs
-some movement. It works by sweeping a set of notches up and down through
-the frequency spectrum.
+*Phaser* gives a swirling, sweeping sound, often used on guitars, synths and
+electric pianos, or any track that needs movement. It sweeps a set of notches
+up and down through the frequency spectrum.
 
 ![](images/Audio%20FX/Phaser@2x.png)
 
@@ -333,15 +316,14 @@ the frequency spectrum.
 
 > 📝 **Note:** The older *Phaser* lives in the *Legacy* folder.
 
-> 💡 **Tip:** As you work with effects you can easily change the order of
-effects on any track by grabbing the plugin and dragging it left or
-right. As you drag, a red drop target will glow in the spot where the
-effect will be inserted when you drop it.
+> 💡 **Tip:** To change the order of effects on a track, drag a plugin left
+or right. As you drag, a red drop target glows where the plugin will go when
+you drop it.
 
 ## Dynamics: Compressor, Gate, and Limiter
 
-Waveform's dynamics processing is split into three focused plugins, each
-doing one job well.
+Waveform's dynamics processing is split into three plugins, one for each
+job.
 
 **Compressor** evens out the level of a signal by turning down anything
 that rises above a threshold.
@@ -382,9 +364,9 @@ notes.
   1000 ms. (Default: 2 ms)
 - **Release**: how fast it closes again, from 1 to 1000 ms. (Default: 100 ms)
 
-**Limiter** is a brick-wall limiter that stops the signal from ever
-exceeding a set ceiling, ideal on the master bus to catch peaks and
-maximise loudness.
+**Limiter** is a brick-wall limiter that stops the signal from ever going
+over a set ceiling. Use it on the master bus to catch peaks and raise the
+overall loudness.
 
 ![](images/Audio%20FX/Limiter@2x.png)
 
@@ -422,44 +404,40 @@ full-on fuzz.
 
 ## Pitch Shifter
 
-The *Pitch Shifter* plugin uses DSP processing to change the pitch of
-the signal in real time. For audio tracks, this uses the *Elastique Pro*
-algorithm, or whichever algorithm you select in the **Type** parameter.
-
-**Type**: The pitch-shifting algorithm, chosen from Waveform's time-stretch
-algorithms: the Elastique modes and the two Signalsmith modes. *Elastique
-(Pro)* gives the best quality; the *Efficient* and *Mobile* modes and
-*Signalsmith (Cheaper)* use less CPU, and *Elastique (Monophonic)* suits
-single-note sources such as vocals or bass. With
-*Elastique (Pro)* chosen, a **Settings** button below it opens the algorithm's
-options. The row is only shown when there's more than one algorithm to choose
-from. (Default: Elastique (Pro))
-
+*Pitch Shifter* changes the pitch of the signal in real time.
 
 ![](images/Audio%20FX/Pitch%20Shifter@2x.png)
 
 *The Waveform Pitch Shifter Plugin*
 
-*Pitch Shifter* is set in semitones; if you want to go up an octave,
-set **Pitch** to 12. If you want to go down one octave set it to -12. To
-reset back to the original pitch, select **Pitch** and type in zero.
+**Semitones**: How far to shift the pitch, from -24 to +24 semitones: 12
+shifts up an octave and -12 down an octave. Click the value under the knob to
+type an exact number, or double-click the knob to go back to the original
+pitch. (Default: 0)
 
+**Pitch**: Opens a menu of exact shifts, from +2 octaves down to -2 octaves in
+semitone steps, with *Original pitch* in the middle.
 
 ![](images/30----21.png)
 
 *Pitch Shifter, Set Pitch*
 
-> 💡 **Tip:** It's usually easier to control the **Pitch** value by typing
-in the digits than by using the slider.
+**Mode** (Choices: Elastique (Pro), Elastique (Efficient), Elastique (Mobile),
+Elastique (Monophonic), Signalsmith (Default), Signalsmith (Cheaper)): The
+pitch-shifting algorithm used on audio. *Elastique (Pro)* gives the best
+quality; the *Efficient* and *Mobile* modes and *Signalsmith (Cheaper)* use
+less CPU, and *Elastique (Monophonic)* suits single-note sources such as vocals
+or bass. (Default: Elastique (Pro))
 
-> 📝 **Note:** If you insert *Pitch Shifter* ahead of a MIDI instrument, it
-works on the MIDI data stream to transpose notes up or down by the value
-you set in the **Pitch** parameter.
+**Settings**: Opens the options for the *Elastique (Pro)* algorithm.
+
+> 📝 **Note:** Inserted ahead of a MIDI instrument, *Pitch Shifter* works on
+the MIDI instead, transposing the notes by the **Semitones** value rounded to
+the nearest semitone.
 
 ## DJ EQ and DJ Filter
 
-*DJ EQ* and *DJ Filter* are two performance-oriented effects built for
-quick, hands-on tone sweeps.
+*DJ EQ* and *DJ Filter* are performance effects for hands-on tone sweeps.
 
 *DJ EQ* is a three-band EQ with **Low**, **Mid** and **High** faders that boost
 or fully cut each band. Turn a band all the way down to kill it
@@ -478,8 +456,8 @@ sets the resonance at the filter's edge, and **Mix** blends the result with
 the dry signal.
 
 > 📝 **Note:** The simple *Low/High-Pass Filter* from earlier versions now
-lives in the *Legacy* folder. For everyday filtering reach for the *1-Band
-Equaliser*, or, for sweeps, the *DJ Filter*.
+lives in the *Legacy* folder. For everyday filtering use the *1-Band
+Equaliser*, or the *DJ Filter* for sweeps.
 
 ## DJ Tools <span class="pro">PRO</span> { #dj-tools }
 
@@ -490,7 +468,7 @@ DJ-style mixer. The DJ Mix Tools Expansion that includes them also unlocks
 [Stem Separation](stem-separation.md).
 
 *Fader* is an automatable volume fader with a **Position** control and an
-adjustable response **Curve**, so you can ride or program smooth level
+adjustable response **Curve**, for riding or programming smooth level
 changes.
 
 ![](images/Audio%20FX/Fader@2x.png)
@@ -509,35 +487,34 @@ and **Centre Gain** sets the level at the midpoint.
 
 ## Text Plugin
 
-The text plugin is a convenient tool to keep your Edit organised as you
-record, edit, and mix. Drag *Text* from *Waveform > Utility* in the plugin
-picker to a track, give it a **Name** and then type in a **Description**.
+The *Text* plugin keeps notes with your Edit as you record, edit and mix.
+Drag *Text* from *Waveform > Utility* in the plugin picker to a track, give it
+a **Name** and type a **Description**.
 
 
 ![](images/30----09.png)
 
 *Text Plugin Example*
 
-You can type in as much text as you'd like describing how the recording
-was made, the kind of microphones used, the artist name, and really
-anything you'd like to make a note of. The *Text* plugin's **Name** appears
-right in the mixer on the thumbnail. While *Text* doesn't do anything to
-your audio path it can help you remember what you were doing when you
-come back to a project later on.
+The description can be as long as you like: how the recording was made,
+which microphones you used, the artist's name or anything else worth noting.
+The plugin's **Name** appears on its thumbnail in the mixer. *Text* doesn't
+touch the audio, but it reminds you what you were doing when you come back to
+a project later.
 
 > 💡 **Tip:** You can enable or disable several plugins at once by
-selecting all of them and using the keyboard shortcut F.
+selecting all of them and pressing **F**.
 
 ## Guitar IR <span class="pro">PRO</span> { #guitar-ir }
 
 > 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion. This
 > covers both *Guitar IR* and *Dual Guitar IR*.
 
-*Guitar IR* is a convolution plugin that loads an impulse response (IR), a
-short WAV recording that captures the sound of a guitar cabinet, speaker, or
-room, and stamps that character onto whatever passes through it. It pairs
-naturally with an amp-simulation plugin: run your DI guitar into the amp sim,
-then into *Guitar IR* to model the cabinet and miking.
+*Guitar IR* is a convolution plugin. It loads an impulse response (IR), a
+short WAV recording that captures the sound of a guitar cabinet, speaker or
+room, and applies that character to whatever passes through it. It pairs
+with an amp-simulation plugin: run your DI guitar into the amp sim, then into
+*Guitar IR* to model the cabinet and microphone.
 
 ![](images/Audio%20FX/Guitar%20IR@2x.png)
 
@@ -561,9 +538,9 @@ Load a WAV file using the IR field, then shape the result with the controls:
 
 *The Dual Guitar IR*
 
-*Dual Guitar IR* works the same way but hosts **two** impulse responses (A and
-B) at once, so you can blend two cabinets or mic positions for a wider, more
-complex tone. In addition to the controls above it adds:
+*Dual Guitar IR* works the same way but hosts two impulse responses (A and
+B) at once, so you can blend two cabinets or mic positions for a wider,
+fuller tone. As well as the controls above, it has:
 
 - **Width**: spreads the two IRs across the stereo field (defaults to 0.5).
 - **Delay**: offsets one IR against the other by up to 200 ms (defaults to 0),
@@ -573,59 +550,57 @@ complex tone. In addition to the controls above it adds:
 
 > 📝 **Edition:** Waveform Pro.
 
-The *Artisan Collection* is a large built-in library of over 180
-effects based on the AirWindows plugins by Chris Johnson. They're grouped into
+The *Artisan Collection* is a built-in library of over 180 effects based on
+the AirWindows plugins by Chris Johnson. They're grouped into
 categories in the plugin picker: *Delay*, *Dither*, *Distortion*, *Dynamics*,
 *Emulation*, *EQ*, *Filter*, *Imaging*, *Modulation*, *Reverb*, and *Utility*.
 
-Rather than document each plugin individually, it's enough to know that every
-*Artisan Collection* effect shares two common controls (a **Dry** level and a
-**Wet** level) alongside its own specific parameters, so you can always dial in
-how much of the processed signal is blended with the original.
+Every *Artisan Collection* effect has a **Dry** level and a **Wet** level
+alongside its own parameters, so you can always set how much of the processed
+signal is blended with the original.
 
 To use them, go to *Settings > Plugins*, click **Enable internal plugins** and
-make sure *Enable Artisan Collection Plugins* is ticked (it is on by default).
-After changing it you'll need to restart Waveform. Once enabled, the effects
+make sure *Enable Artisan Collection Plugins* is ticked (it's on by default).
+After changing it, restart Waveform. Once enabled, the effects
 appear under the *Artisan Collection* folder in the plugin picker.
 
 ## Master Mix <span class="pro">PRO</span> { #master-mix }
 
 > 📝 **Edition:** Waveform Pro and Waveform OEM.
 
-*Master Mix* is an integrated mastering plugin designed to sit at the end of
-your signal chain (typically on the master or output bus) to polish a
-finished mix. Add it from *Waveform > Effects* in the plugin picker, then
-double-click it to open its window. It combines several mastering stages in a
-single plugin.
+*Master Mix* is a mastering plugin that sits at the end of your signal chain,
+usually on the master or output bus, to polish a finished mix. Add it from
+*Waveform > Effects* in the plugin picker, then double-click it to open its
+window. It combines several mastering stages:
 
-- **Pre EQ** and **Post EQ**: parametric equalisers before and after the dynamics
-  processing, for corrective and final tonal shaping.
-- **Crossover compression**: a 3-band crossover splits the signal into low, mid,
-  and high bands, each feeding its own compressor with a graphical transfer
-  curve you can edit by dragging nodes.
-- **Dynamics**: a final stage offering soft clipping and a noise gate.
-- **Input and Output gain**: independent left/right input and output levels, each
-  with metering.
-- **DC filter**: removes any DC offset from the signal.
+- Two parametric equalisers, one before and one after the dynamics
+  processing, for corrective and final tonal shaping. The **Pre** and
+  **Post** buttons switch each one in or out.
+- Three-band crossover compression: the signal is split into low, mid and
+  high bands (**BAND 1**, **BAND 2**, **BAND 3**), each feeding its own
+  compressor with a transfer curve you edit by dragging nodes.
+- A final **DYNAMICS** stage with soft clipping (**Softclip**) and a noise
+  gate (**Gating**).
+- Separate left and right **INPUT** and **OUTPUT** levels, each with
+  metering.
+- A DC filter, switched on with the **DC** button, that removes any DC offset
+  from the signal.
 
-You can store up to 100 presets, and use the **Mem A** / **Mem B** A/B buttons to
-compare two settings instantly while you fine-tune the master.
+The **PRESET** box recalls Master Mix's factory presets.
 
 ## Saving Presets
 
-Most of the built-in plugins allow you to load, save, and delete
-presets. Once you have your favourite presets saved, you can find them in
-the Search tab of the Browser: choose **Presets** in the category list to
-show only presets (see [Categories](browser.md#categories)).
+Most of the built-in plugins can load, save and delete presets. Your saved
+presets are in the Search tab of the Browser: choose **Presets** in the
+category list to show only presets (see [Categories](browser.md#categories)).
 
 
 ![](images/30----22.png)
 
 *Load, Save, or Delete Presets*
 
-As you create presets you can also add tags to make it quick to filter
-to exactly what you are looking for; Vocal EQ, Guitar Focus, Bass Boost
-for example.
+When you save a preset you can also give it tags, such as Vocal EQ, Guitar
+Focus or Bass Boost, to make it quicker to find later.
 
 ## Moving On
 

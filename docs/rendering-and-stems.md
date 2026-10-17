@@ -1,11 +1,11 @@
 # Rendering and Stems
 
-This chapter covers the Render dialog: the single place you go to write files out
-of an Edit, whether that's one stereo mixdown, a folder of stems for someone
-else's session, a MIDI file of your arrangement, or a batch of loops cut at your
-markers. It also covers the render queue, file name patterns, render presets,
-loudness normalising, rendering tracks and clips back into the Edit, and
-rendering from the command line without opening Waveform at all.
+The Render dialog is where you write files out of an Edit: one stereo mixdown,
+a folder of stems for someone else's session, a MIDI file of your arrangement,
+or a batch of loops cut at your markers. This chapter also covers the render
+queue, file name patterns, render presets, loudness normalising, rendering
+tracks and clips back into the Edit, and rendering from the command line
+without opening Waveform at all.
 
 [Mixing Down](mixing-down.md) covers what to do *before* you get here (master
 processing, checking your levels) and how to find your files afterwards. This
@@ -34,11 +34,10 @@ The dialog is laid out in three zones, side by side:
 
 Underneath those sits the **render queue**, which fills up as you add renders.
 
-Two things are worth knowing before you start. First, everything you set is
-remembered with the Edit, so the dialog opens next time exactly as you left it.
-Second, some of the choices depend on what you had selected in the arrangement
-*when you opened the dialog*, so select your tracks or clips first, then open
-it.
+Everything you set is remembered with the Edit, so the dialog opens next time
+exactly as you left it. Some of the choices depend on what you had selected in
+the arrangement *when you opened the dialog*, so select your tracks or clips
+first, then open it.
 
 ## Simple and Advanced Modes
 
@@ -50,7 +49,7 @@ Simple.
 the top of the Source zone that switches between the two views. The choice is
 remembered for the whole application rather than per Edit, so the dialog opens
 in the mode you last used. Switching back to Simple doesn't clear your Advanced
-settings; they are just not shown, and not used, until you switch back.
+settings: they're hidden, and not used, until you switch back.
 (Default: Simple)
 
 > 📝 **Edition:** Advanced mode is in Waveform Pro. In the other editions the
@@ -115,7 +114,7 @@ In Advanced mode, choosing anything other than *Whole Mix* or *Selected Tracks*
 adds a checklist of the items in that category. Its header tells you how many
 are ticked, and the **All** and **None** buttons tick or untick everything
 currently shown. Once the list is long enough to scroll, a filter box appears
-above it. Type into it to narrow the list, then use **All** to tick just that
+above it. Type into it to narrow the list, then use **All** to tick only that
 subset. Items covering a track you had selected in the arrangement are marked
 with a coloured tab down their left edge, so you can find them quickly in a
 long list.
@@ -175,21 +174,20 @@ Simple mode always leaves it on. (Default: on)
 > 📝 **Edition:** Stems by *Tracks* and *Selected Tracks* work in every
 > edition. The Submixes, Groups, Tags and Outputs groupings need Waveform Pro.
 
-Rendering stems is the reason most of this zone exists. In Simple mode,
-*Tracks* and *Selected Tracks* already give you a file per track; Advanced mode
-adds the groupings. Pick the one that matches how you want the stems to arrive:
+Most of this zone exists for rendering stems. In Simple mode, *Tracks* and
+*Selected Tracks* already give you a file per track; Advanced mode adds the
+groupings. Pick the one that matches how you want the stems to arrive:
 
-- Sending your song to someone mixing in another DAW? Use **Tracks**, so they
-  get every track as its own file, all starting at the same point on the
-  timeline.
-- Delivering to a mastering engineer or a stem-mastering service? Use
+- For someone mixing in another DAW, use **Tracks**, so they get every track
+  as its own file, all starting at the same point on the timeline.
+- For a mastering engineer or a stem-mastering service, use
   **Submixes** <span class="pro">PRO</span> or **Tags** <span class="pro">PRO</span>,
   so you hand over six or eight musical groups rather than sixty tracks.
-- Making a live backing track set? Use **Groups** <span class="pro">PRO</span> or
-  **Tags** <span class="pro">PRO</span> for the parts you want separate faders
-  for on the night.
-- Just need the four tracks you're looking at? Select them in the arrangement
-  before you open the dialog and use **Selected Tracks**.
+- For a live backing-track set, use **Groups** <span class="pro">PRO</span> or
+  **Tags** <span class="pro">PRO</span> for the parts you want on separate
+  faders on the night.
+- If you only need the four tracks you're looking at, select them in the
+  arrangement before you open the dialog and use **Selected Tracks**.
 
 The dialog warns you about the one thing that catches people out. If you include
 tracks that live inside a submix, it says *Tracks inside a submix render without
@@ -299,7 +297,7 @@ them. (Default: on when the Edit has tags)
 **Edit Tags**: Opens the tag editor. It sits at the right-hand end of the
 **Add Tags** row.
 
-The row only appears for formats that can actually carry tags: **WAV** (in a
+The row only appears for formats that can carry tags: **WAV** (in a
 RIFF INFO chunk), **Ogg Vorbis** (Vorbis comments) and **MP3** (ID3). AIFF and
 FLAC have no tag support in their writers, and a MIDI file has nowhere to put
 them, so it's hidden for those.
@@ -325,7 +323,7 @@ The tag editor holds seven fields:
 > part of the arrangement and choose **Edit Tags...** in the Actions panel.
 
 Entering tags for the first time ticks **Add Tags** for you, and clearing them
-all again unticks it, so the checkbox follows what you've actually filled in.
+all again unticks it, so the checkbox follows what you've filled in.
 
 > ⚠️ **Warning:** The **Genre** here is the tag written into the file. It is not
 > the Edit's own *Genre* property, which describes your project to the AI
@@ -376,7 +374,7 @@ they match none. See [Render Presets](#render-presets) below.
 
 **Destination** <span class="pro">PRO</span> (Choices: File, New Track, plus
 Replace Source Tracks or This Track and Replace Clips where they apply): Where
-the finished files go. *File* just writes them to the folder below. The other
+the finished files go. *File* only writes them to the folder below. The other
 choices also bring each file back into the Edit, on a new track after its
 source, or in place of the source tracks or clips. See
 [Render Track](#render-track) and [Rendering Clips](#rendering-clips) below for
@@ -392,10 +390,9 @@ for example *My Song Bass Render 1*.
 
 **Folder**: The folder the rendered files are written to. Type a path, or use
 the folder button's menu: *Browse...* picks a folder, and *Reset to Default*
-goes back to the project's Exported folder. Note that this row is the *folder*
-only; the file name comes from the row below. By default it's your project's
-**Exported** folder; an Edit with no project falls back to the folder the Edit
-file is in.
+goes back to the default. This row sets the *folder* only; the file name comes
+from the row below. By default it's your project's **Exported** folder; an Edit
+with no project falls back to the folder the Edit file is in.
 
 **Recent**: The button beside the folder lists the last 10 folders renders went
 to, from any Edit. Pick one to render there again.
@@ -451,8 +448,7 @@ search for it and use it in other projects. Audio formats only. (Default: off)
 
 **Measure Loudness of Rendered Files** <span class="pro">PRO</span>: Reads
 each finished file back and shows its integrated loudness and true peak on its
-queue row. The measuring happens on
-a background thread, one file at a time, so it doesn't compete with the render
+queue row. The measuring happens on a background thread, one file at a time, so it doesn't compete with the render
 itself, and it never affects the audio that was written. Audio formats only.
 (Default: on)
 
@@ -463,7 +459,7 @@ render job, and you can keep changing settings and adding more while earlier
 ones are still running.
 
 In Advanced mode the action button changes to match: it reads **Add to Queue
-and Start** when nothing is running, and just **Add to Queue** when a batch is
+and Start** when nothing is running, and **Add to Queue** when a batch is
 already going. In Simple mode it always reads **Render**, and pressing it while
 a render is running adds the new one to the queue.
 
@@ -530,7 +526,7 @@ It's set to *Selected Tracks* with **Render Items to a Single File** ticked.
 **Destination** (Choices: File, New Track, Replace Source Tracks): What happens
 to the rendered file. *New Track* puts it on a new track after the source
 tracks. *Replace Source Tracks* puts it in place of them, and asks you to
-confirm before the render starts. *File* just writes the file.
+confirm before the render starts. *File* only writes the file.
 (Default: New Track)
 
 To render the tracks' MIDI instead of audio, set **Format** to *MIDI* and choose
@@ -545,7 +541,7 @@ mode but keeps its Destination row.
 ## Rendering Clips
 
 The **Render Clip** button in the Actions panel opens a menu of render
-entries: render the selected clips, render just their marked region, either of
+entries: render the selected clips, render only their marked region, either of
 those *and replace* the clips, and, for MIDI clips, the same four under *Render
 MIDI*. Each entry opens the Render dialog set up for it, so you can check or
 change the options before rendering.
@@ -558,7 +554,7 @@ where the clips do.
 render ends up. *This Track* puts it on the track of the last selected clip and
 leaves the clips where they are. *Replace Clips* puts it in place of the clips,
 and asks you to confirm before the render starts. *New Track* puts it on a new
-track, and *File* just writes the file. (Default: This Track, or Replace Clips
+track, and *File* only writes the file. (Default: This Track, or Replace Clips
 for the *and replace* entries)
 
 **Name**: The one Output row a clip render keeps when it goes onto a track

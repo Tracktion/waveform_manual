@@ -1,44 +1,41 @@
 # MIDI Setup
 
-We're going to move on to MIDI recording and editing in this and the
-next few chapters. The first step is to set up a MIDI keyboard so that
-you can play notes into Waveform. If you don't have a MIDI keyboard, you
-can enter notes manually into the MIDI editor, or you can use the
-computer keyboard as a virtual MIDI device.
+This and the next few chapters cover MIDI recording and editing. The
+first step is to set up a MIDI keyboard so you can play notes into
+Waveform. If you don't have one, you can enter notes by hand in the MIDI
+editor, or use the computer keyboard as a virtual MIDI device.
 
-The setup is quite simple. We are using a USB external keyboard
-controller, but the setup works much the same for other types of
-controllers.
+The example here uses an external USB keyboard controller, but other
+types of controller are set up in much the same way.
 
 ## MIDI Drivers
 
-Before you dive in here, you might need drivers for your controller.
-Check the manufacturer's website for drivers for the controller model
-and your operating system. With Waveform closed, download and install
-the drivers. Once you've done that, the rest is easy.
+Your controller might need drivers. Check the manufacturer's website
+for drivers for your model and operating system, then download and
+install them with Waveform closed.
 
 ## Set Up the MIDI Inputs
 
-Go to *Settings > MIDI Devices*. You will see a list of all
-available MIDI inputs and outputs that are connected to your system. In
-this example I have four of them. To enable the MIDI inputs and outputs,
-click to toggle between **Enabled** and **Disabled** next to each entry.
+Go to *Settings > MIDI Devices*. The page lists every MIDI input and
+output connected to your system; this example has four. Click the
+toggle next to each entry to switch it between **Enabled** and
+**Disabled**.
 
 ![](images/22----01.png)
 
 *Click to Enable/Disable MIDI Inputs and Outputs*
 
-> 💡 **Tip:** If you don't see your devices listed, make sure the controller
-is connected and has power. If that checks out, then make sure the
-latest drivers are installed. At any time you can click **Scan for new
-MIDI devices now** to initiate a scan for connected MIDI devices.
+> 💡 **Tip:** If your devices aren't listed, check that the controller
+is connected and powered, then that the latest drivers are installed.
+You can click **Scan for new MIDI devices now** at any time to scan for
+connected MIDI devices.
 
 ## Naming MIDI Inputs/Outputs
 
-From *Settings > MIDI Devices*, click on a MIDI input or
-output in the MIDI devices list, then edit **Device Alias** in the panel
-on the right to give it a friendly name. Matching it to the name of the connected controller keeps
-things easy to recognise.
+In *Settings > MIDI Devices*, click a MIDI input or output in the
+list, then edit **Device Alias** in the panel on the right to give it a
+friendly name. Naming it after the connected controller makes it easy to
+recognise.
 
 > 💡 **Tip:** You can also edit **Device Alias** from the Edit tab, by
 selecting the input and changing it in the Actions panel. Each device has
@@ -46,31 +43,30 @@ only one alias, so a change made in either place applies everywhere.
 
 ## Disabling Unused MIDI Inputs
 
-Your audio interface might also include MIDI in and out hardware
-connections. Those allow connecting legacy controllers that don't
-support USB. If you don't plan to use the hardware MIDI in and out
-connections, you can leave them disabled. In this example we have
-disabled.
+Your audio interface might also have hardware MIDI In and Out
+connections for older controllers that don't support USB. If you don't
+plan to use them, leave them disabled. In this example the interface's
+MIDI ports are disabled.
 
 ![](images/22----02.png)
 
 *Disable Unused MIDI I/O*
 
-This hides those from the selection list when setting up a track.
+Disabled ports don't appear in the input list when you set up a track.
 
 ## Configuring the Track
 
 Back in your Edit, choose a blank track or create a new one.
 
-1.  Click on an input and select the MIDI input that matches the
+1.  Click an input and select the MIDI input that matches the
     controller you just configured.
 
 ![](images/22----03.png)
 
 *Select the MIDI Input Device*
 
-2.  Play some notes on your keyboard. You will see the meter registering
-    the MIDI activity on that track.
+2.  Play some notes on your keyboard. The track's meter shows the MIDI
+    activity.
 
 ![](images/22----04.png)
 
@@ -84,36 +80,34 @@ Back in your Edit, choose a blank track or create a new one.
 
 *Enable MIDI Input Monitoring*
 
-With this done, MIDI events come into the track from your keyboard and
-the pass through to the virtual instrument that we're going to setup
-next.
+MIDI events from your keyboard now come into the track and pass through
+to the virtual instrument, which you'll set up next.
 
 ## Insert a Synth Plugin
 
-To hear what you play, you will need to insert a virtual instrument. Use
-the Search tab of the Browser to locate a synth plugin. In this example we
-are using 4OSC, found under *Waveform > Instruments*.
+To hear what you play, insert a virtual instrument. Use the Search tab
+of the Browser to find a synth plugin. This example uses 4OSC, found
+under *Waveform > Instruments*.
 
 ![](images/22----06.png)
 
 *Search for a Synth Plugin*
 
-1.  Insert your synth plugin ahead of the Volume & Pan plugin. By
-    ahead, we mean ahead in the signal path. So in this example, we have
-    dropped 4OSC to the left of Volume & Pan.
+1.  Insert your synth plugin ahead of the Volume & Pan plugin in the
+    signal path. In this example, 4OSC is dropped to the left of
+    Volume & Pan.
 
 ![](images/22----07.png)
 
 *4OSC installed in the mixer*
 
-2.  Play some notes on your keyboard and at this point you should hear
-    synth notes.
+2.  Play some notes on your keyboard. You should now hear the synth.
 
-> 📝 **Note:** There is no difference between a MIDI track and an audio track
-in Waveform. To configure a MIDI track, just set a MIDI input and insert
-a virtual instrument plugin as a sound generating source. Then, as you
-record your performance, you'll create a MIDI clip instead of an audio
-clip like we did in the previous examples.
+> 📝 **Note:** There's no difference between a MIDI track and an audio
+track in Waveform. To configure a MIDI track, set a MIDI input and insert
+a virtual instrument plugin as the sound source. When you record your
+performance, you get a MIDI clip instead of the Audio clips in the
+earlier chapters.
 
 ## Using a Virtual Keyboard
 
@@ -123,7 +117,7 @@ in the next section. To play with the mouse, use the on-screen
 **Virtual Keyboard**.
 
 Select a MIDI input on a track and click **Virtual Keyboard** in its
-Actions panel. A small piano keyboard pops out. Click its keys to send
+Actions panel. A small piano keyboard opens. Click its keys to send
 notes into that input, as if they came from the device itself.
 
 > 💡 **Tip:** Click the lock icon at the top of the Actions panel to keep it
@@ -186,7 +180,7 @@ window also has:
 - **Velocity**: Press **C** or **V** to lower or raise it in steps of 5. (Range
   0-127, Default: 98)
 
-A gear icon opens a list where you can remap the keys to your liking.
+A gear icon opens a list where you can remap the keys.
 
 > 📝 **Note:** Notes from the MIDI Typing window always play on MIDI
 > channel 1. There's no channel selector.
@@ -197,8 +191,8 @@ If you play external hardware synths, Waveform can show their patches by
 name instead of by raw program number. The **MIDI program names** dialog
 manages these named patch lists.
 
-There's no menu command or shortcut. You reach it from a MIDI output
-device. Go to *Settings > MIDI Devices*, click a MIDI **output** device,
+There's no menu command or shortcut for it; you reach it from a MIDI
+output device. Go to *Settings > MIDI Devices*, click a MIDI **output** device,
 and in the panel on the right pick a set from **Program Names**. The
 rows below it manage the sets: **Add** creates a named set from a
 preset, **Edit** opens the dialog to modify the selected set, and
@@ -211,7 +205,7 @@ change.
 
 Inside the dialog:
 
-- **Bank name**: A combo box for the 16 banks, with a **Rename**
+- **Bank name**: A dropdown for the 16 banks, with a **Rename**
   button.
 - **Program name list**: 128 editable rows; press **Tab** to advance to
   the next one.
@@ -227,18 +221,18 @@ Edits.
 
 ## Synchronisation
 
-If you run Waveform alongside external timecode-aware gear - a hardware
-recorder, a video deck, or another DAW - you can lock the two together so
-they play in step. The **Sync** menu collects the project-wide settings
-for this: a timecode offset, MIDI Timecode (MTC) input, and MIDI Machine
-Control (MMC). A typical scenario is chasing an external MTC master so
-Waveform follows when that device starts, stops, and locates.
+If you run Waveform alongside timecode-aware gear such as a hardware
+recorder, a video deck or another DAW, you can lock the two together so they play in step. The
+**Sync** menu holds the project-wide settings for this: a timecode
+offset, MIDI Timecode (MTC) input and MIDI Machine Control (MMC). A
+typical use is chasing an external MTC master, so Waveform follows that
+device as it starts, stops and locates.
 
-You'll find these under the Edit tab's main menu. Click the main menu
-button and choose **Sync**.
+**Sync** is one of the Edit tab's main menus. It's also in the menu that
+the **Menu** button on the transport bar opens.
 
-There's no default keyboard shortcut for the Sync menu or its items -
-assign one in *Settings > Keyboard Shortcuts* if you use them often.
+There's no default keyboard shortcut for the Sync menu or its items. If
+you use them often, assign one in *Settings > Keyboard Shortcuts*.
 
 ![](images/sync_menu_1@2x.png)
 
@@ -287,5 +281,5 @@ assign one in *Settings > Keyboard Shortcuts* if you use them often.
 
 ## Moving On
 
-In the next chapter, [MIDI Recording](midi-recording.md), you'll learn how to record a MIDI performance onto
-the track!
+The next chapter, [MIDI Recording](midi-recording.md), shows how to
+record a MIDI performance onto the track.

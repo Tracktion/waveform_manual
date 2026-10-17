@@ -1,13 +1,13 @@
 # Basic Navigation
 
-This chapter is an overview of how to operate Waveform. You will also
-learn how to set up Waveform for an efficient workflow, as well as how
-to change the tempo of your song.
+This chapter covers the basics of working in Waveform: finding your way
+around the window and its help, creating a Project, moving around an
+Edit, and changing the tempo.
 
 ## Tabs and Menus
 
 With Waveform open, you can see the Welcome tab, the Projects tab and
-the Settings tab. Click on the tab name or icon to switch to that tab.
+the Settings tab. Click a tab's name or icon to switch to it.
 The Welcome tab has buttons for a new Project, your recent Edits and
 Project templates, plus the news feed and training videos.
 
@@ -54,10 +54,9 @@ you will see it referred to throughout this guide.
 
 *Example of a Pop-up Help Message*
 
-Pop-up help is helpful for the first few minutes, but you may not wish
-to use it after you are more familiar with the program. If you are using
-the default Waveform key-mappings, you can see available pop-up help
-by pointing at an item on screen and pressing **F1**.
+Pop-up help is useful while you're learning Waveform, and you can turn
+it off once you know your way around. With the default key mappings,
+point at an item on screen and press **F1** to see its pop-up help.
 
 
 ![](images/05----06@2x.png)
@@ -70,23 +69,21 @@ message appears.
 
 ## Rollover Help
 
-In addition to pop-up help, Waveform also offers rollover help.
-Rollover help messages appear in the upper right for controls and
-objects. The messages appear automatically as you roll over items on the
-screen.
+Waveform also has rollover help. As you move the mouse over controls
+and objects, a message about each one appears automatically in the upper
+right.
 
 
 ![](images/05----07@2x.png)
 
 *Example of Rollover Help*
 
-> 💡 **Tip:** If you find any help messages wrong or unclear, please a
-message and screenshot to support@tracktion.com
+> 💡 **Tip:** If a help message is wrong or unclear, please send a
+message and a screenshot to support@tracktion.com.
 
 ## Creating a Project
 
-The very first step to produce a song in Waveform is to create a
-Project. To do so:
+To start a song in Waveform, first create a Project:
 
 
 ![](images/05----08@2x.png)
@@ -94,7 +91,7 @@ Project. To do so:
 *The "New Project" button on the Projects tab*
 
 1.  Go to the Projects tab.
-2.  Click **New Project** and the New Project dialog box appears.
+2.  Click **New Project**. The New Project dialog box appears.
 3.  Fill in the **Name**.
 4.  Select the **Location**.
 5.  Click **Create Project**.
@@ -104,24 +101,23 @@ Project. To do so:
 
 *The New Project Dialog Box*
 
-Click **Create Project** and the new Edit opens, ready for you to
-compose, record and mix. Click back to the Projects tab and you will see
-the contents of the Project in a list to the right with the title "All
-items in project: projectname".
+The new Edit opens, ready for you to compose, record and mix. Go back
+to the Projects tab and you'll see the contents of the Project listed on
+the right, under the title "All items in project: projectname".
 
-For now, the most important entry in the "All Items" list follows the
-word "edit"; that file is called an Edit. In our example, the Edit name
-is "SummerSong100 Edit 1."
+For now, the most important entry in the All Items list is the one that
+follows the word "edit": that file is the Edit. In this example, the
+Edit is called "SummerSong100 Edit 1".
 
 
 ![](images/05----10@2x.png)
 
 *All Items List*
 
-> 📝 **Note:** Creating a Project creates a folder, that in turn contains
-sub-folders that contain the project media, a Project file (`.Waveform`)
-and an Edit file (`songname.tractionedit`). The folder, Project, and
-Edit all use the name you provided in the New Project dialog box.
+> 📝 **Note:** Creating a Project creates a folder containing
+sub-folders for the project media, a Project file (`.Waveform`) and an
+Edit file (`songname.tractionedit`). The folder, Project and Edit all
+take the name you gave in the New Project dialog box.
 
 
 ![](images/05----11.png)
@@ -131,35 +127,30 @@ Edit all use the name you provided in the New Project dialog box.
 ## Opening the Edit
 
 An Edit is the workspace in Waveform where you record, edit, and mix
-your songs. Double-click the Edit in the All Items list; and it opens to
-a new tab. This type of tab carries the name of the Edit and is called
-an 'Edit tab.'
+your songs. Double-click the Edit in the All Items list to open it in
+a new tab. The tab carries the Edit's name and is called an Edit tab.
 
-**Edits and Revision Control:** In Waveform you can have as many Edits
-per Project as you want. This gives you a great system for revision
-control. At key milestones in your workflow, go back to the Projects tab
-and click **Create a Copy**. This copies the Edit to a new file. Rename the
-copy appropriately and resume work using the new Edit. You can return to
-the previous state of the Project at any point by opening an earlier
-Edit. Important note: all Edits within a Project use the same underlying
-source files. Creating a copy of the Edit does not in anyway make new
-copies of the underlying files.
+**Edits and Revision Control:** A Project can hold as many Edits as you
+want, which makes them handy for revision control. At key milestones, go
+back to the Projects tab and click **Create a Copy** to copy the Edit to
+a new file. Give the copy a suitable name and carry on working in it. To
+return to an earlier state of the Project, open an earlier Edit. All
+Edits in a Project share the same source files: copying an Edit does not
+copy the underlying files.
 
 ## The Edit Tab
 
-The Edit tab is where most of the action occurs while working in
-Waveform. What other DAWs call a "project" or "song", Waveform calls an
-Edit. In a way, this is similar to the terminology used in many video
-editing programs. You have a collection of media that you organise into
-an Edit. In concept, you can organise the same media into other Edits.
-In music production, having multiple Edits gives you revision control
-and flexibility to have multiple mixes all contained within the Project.
+The Edit tab is where you do most of your work in Waveform. What other
+DAWs call a "project" or "song", Waveform calls an Edit, much as many
+video editing programs do. You have a collection of media that you
+organise into an Edit, and you can organise the same media into other
+Edits too. In music production, multiple Edits give you revision control
+and let you keep several mixes in the same Project.
 
 ## Playback
 
-The obvious way to play and stop is to use the **Play/Stop** button on
-the transport bar. Alternatively, press the **Space bar** to toggle
-between start and stop.
+To play and stop, use the **Play/Stop** button on the transport bar,
+or press the **Space bar**.
 
 
 ![](images/05----01@2x.png)
@@ -174,15 +165,15 @@ to the start of the Edit.
 
 ## Zooming In and Out
 
-Here are some basic ways to control zooming:
+To zoom in and out:
 
--   Use the **Up** and **Down** arrow keys to zoom in and out
+-   Press the **Up** and **Down** arrow keys
 -   Use the zoom controls in the lower right corner
--   On the timeline just above the cursor, grab and drag up or down
+-   Drag up or down on the timeline just above the cursor
 
-> 💡 **Tip:** There are a full set of zoom actions that can be assigned to
-keyboard shortcuts. These are also available from the Zoom menu by
-right-clicking the Timeline.
+> 💡 **Tip:** A full set of zoom actions can be assigned to keyboard
+shortcuts. They're also on the Zoom menu when you right-click the
+Timeline.
 
 
 ![](images/05----01b@2x.png)
@@ -191,53 +182,51 @@ right-clicking the Timeline.
 
 You can also use the quick zoom tool:
 
--   Hold Opt + Cmd / Ctrl + Alt and drag to draw an area. The pointer
+-   Hold **Opt + Cmd / Ctrl + Alt** and drag to draw an area. The pointer
     changes to a magnifying glass. When you release, the view zooms in
     to your selection.
--   To step back from that zoom level, once again hold Opt + Cmd /
-    Ctrl + Alt and click in the arrangement.
--   Waveform remembers the zoom levels, so you can zoom in repeatedly.
-    Then, hold Opt + Cmd / Ctrl + Alt and click to zoom back out.
+-   To step back from that zoom level, hold **Opt + Cmd / Ctrl + Alt**
+    again and click in the arrangement.
+-   Waveform remembers the zoom levels, so you can zoom in repeatedly,
+    then hold **Opt + Cmd / Ctrl + Alt** and click to zoom back out.
 
 ## Positioning the Cursor
 
-The cursor position is used as the playback start time, and is also used
-to reference many of Waveform's editing functions. In other DAWs it is
-called a playhead, now time, or playback cursor. In Waveform it's simply
-the 'cursor.'
+Playback starts from the cursor position, and many of Waveform's
+editing functions work from it too. Other DAWs call it the playhead, now
+time or playback cursor. In Waveform it's the cursor, although a few
+settings call it the playhead.
 
-There are numerous ways to position the cursor, including:
+To position the cursor:
 
--   On the timeline just above the cursor, grab and drag it left or
-    right
--   Click the timeline and the cursor will jump to that spot
+-   Drag left or right on the timeline just above the cursor
+-   Click the timeline to make the cursor jump to that spot
 -   Click in the background of the track area
 -   Click within the body of clips
--   Use the left and right arrow keys to move the cursor backward and
+-   Use the **Left** and **Right** arrow keys to move the cursor backward and
     forward
 
-> 📝 **Note:** If you don't want the cursor to be positioned when clicking on
-the background or the body of clips, de-select the option **Clicking the
-background locates the playhead** in *Settings > General > Mouse*.
+> 📝 **Note:** If you don't want clicks on the background or the body of
+clips to move the cursor, turn off **Clicking the background locates the
+playhead** in *Settings > General > Mouse*.
 
 
 ![](images/05----13@2x.png)
 
 *Drag to Position Cursor Setting*
 
-> 💡 **Tip:** You can change the way dragging on the Timeline works with
-the **Timeline drag** setting in *Settings > General > Mouse*. It defaults to
+> 💡 **Tip:** The **Timeline drag** setting in *Settings > General >
+Mouse* controls what dragging on the Timeline does. It defaults to
 **Drag to scroll view**. Set it to **Drag to locate playhead** and the cursor
 follows the mouse as you drag in the timeline.
 
-> 📝 **Note:** In this mode, to drag zoom, you need to hold down **Opt / Alt**
-(or **Shift**).
-Since you can still zoom in and out with the mouse wheel or the up and
-down arrow keys, this mode is a great way to get around in Waveform.
+> 📝 **Note:** In this mode, hold **Opt / Alt** (or **Shift**) to
+drag-zoom. You can still zoom with the mouse wheel or the **Up** and **Down**
+arrow keys, so this mode makes it quick to get around an Edit.
 
 ## Changing the Tempo
 
-Tempo in Waveform is managed using the Tempo track at the top of the
+Waveform handles tempo in the Tempo track at the top of the
 screen. Show or hide it with the **Tempo** button in the eye button's
 panel (the eye button is at the top right of the window), or press **F9**.
 
@@ -254,18 +243,18 @@ on (**F9** doesn't).
 
 *Show or Hide the Tempo Track with the Eye Button*
 
-The Tempo is represented as a line in the Tempo track. This line is
-called the "Tempo Curve." For a fixed tempo tune it will appear as a
-line set to a beats-per-minute (BPM) value.
+The tempo appears as a line in the Tempo track, called the "Tempo
+Curve". For a song with a fixed tempo, it's a flat line at one
+beats-per-minute (BPM) value.
 
 
 ![](images/05----15@2x.png)
 
 *Fixed BPM Tempo Curve*
 
-For tunes with tempo changes it might appear with step ups or step downs
-in tempo, or even gradual tempo changes represented as curves (thus the
-name Tempo Curve). In other software this is often called a "tempo map."
+When the tempo changes, the line steps up or down, or bends into curves
+for gradual changes (hence the name Tempo Curve). Other software often
+calls this a "tempo map".
 
 
 ![](images/05----16@2x.png)
@@ -280,23 +269,24 @@ To change the tempo of your Edit:
 *Changing Tempo: (A) Click the BPM Readout, (B) Adjust the BPM Property*
 
 1.  Click the tempo BPM readout in the transport bar. The Actions panel
-    will show the tempo properties.
-2.  Adjust the **BPM** parameter to the desired tempo. Either click and
-    type it in, or drag the slider.
-3.  Alternatively, open the Tempo track and drag the tempo curve line up
-    and down.
+    shows the tempo properties.
+2.  Set the **BPM** parameter to the tempo you want: click and type it
+    in, or drag the slider.
+
+Alternatively, open the Tempo track and drag the tempo curve line up or
+down.
 
 > 📝 **Note:** Setting the tempo this way changes the tempo only for the
 segment of the tempo curve that is under the current cursor position.
 
-**Video Clip:** To learn how to use the tempo track to map tempo changes
-to an existing recording, Check out my video on [Creating a Tempo
-Map](https://youtu.be/leqRsEZRUJI)
+**Video Clip:** To learn how to use the Tempo track to map tempo changes
+to an existing recording, check out my video on [Creating a Tempo
+Map](https://youtu.be/leqRsEZRUJI).
 
 ## Changing Tempo at a Specific Bar
 
-To change the tempo at a specific bar, use the action **Insert tempo
-change** (Opt + T / Alt + T). Here are the steps:
+To change the tempo at a specific bar, use the **Insert tempo
+change** action (**Opt + T / Alt + T**):
 
 
 ![](images/05----18@2x.png)
@@ -304,16 +294,16 @@ change** (Opt + T / Alt + T). Here are the steps:
 *Right-click Timeline: "Insert tempo change"*
 
 1.  Position the cursor where you want the tempo change to occur.
-2.  Right-click on the timeline, and select **Insert tempo change**.
+2.  Right-click the timeline and select **Insert tempo change**.
 3.  In the Actions panel, adjust the **BPM** parameter to the new
     tempo.
-4.  To see the results of the tempo change, open the Tempo track to see
-    the step up or down on the Tempo Curve.
+4.  Open the Tempo track to see the step up or down on the Tempo
+    Curve.
 
-> 📝 **Note:** The Tempo Curve can also be adjusted with more detail in the
-Tempo track in much the same way as automation. Click to add points
-(nodes) to the curve and drag them to shape your tempo changes along
-with an adjustable **Curvature**. To shape the transition between two
+> 📝 **Note:** For finer control, edit the Tempo Curve in the Tempo track
+much as you would automation. Click to add points (nodes) to the curve
+and drag them to shape your tempo changes, with an adjustable
+**Curvature**. To shape the transition between two
 points, drag the small handle on the *midpoint* of the segment between
 them: dragging it bends the line from concave, through linear, to convex.
 
@@ -329,12 +319,12 @@ the beat, then press **Apply** to set that point to the tempo you tapped.
 
 ### Removing Tempo Changes
 
-Click on any tempo point to select it. In the properties, click
+Click a tempo point to select it. In the properties, click
 *Delete > Delete this tempo setting*.
 
 ### Removing All Tempo Changes
 
-Click on the Tempo curve line. In the properties, click *Delete Points
+Click the Tempo Curve line. In the properties, click *Delete Points
 from Curve > Delete all points from the curve*. The same **Delete** menu
 can also delete only the points *within the marked region*, with an
 option to close the gap left behind.
@@ -390,5 +380,4 @@ suspended until playback stops.
 
 ## Moving On
 
-That is enough to start exploring Waveform. For a detailed tour of the Edit
-tab, see [The Edit Tab](edit-tab.md).
+For a detailed tour of the Edit tab, see [The Edit Tab](edit-tab.md).

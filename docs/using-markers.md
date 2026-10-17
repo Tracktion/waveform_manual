@@ -20,45 +20,42 @@ Waveform has four kinds of marker:
 
 *In Marker and Out Marker*
 
-Position the In marker and Out marker by dragging the I and O flags
-along the Timeline. The In marker and Out marker together define the
-range over which playback will loop when the **Loop** button is engaged in
-the transport bar. They also define what is called the "marked region"
-used for numerous editing actions.
+Drag the I and O flags along the Timeline to position the In marker
+and Out marker. Together they set the range that playback loops over
+when the **Loop** button in the transport bar is on. They also define the
+"marked region" that many editing actions work on.
 
-> 📝 **Note:** In Waveform, the term 'marked region' means the range of an
-Edit that occurs between the In marker and the Out marker.
+> 📝 **Note:** In Waveform, "marked region" means the part of an Edit
+between the In marker and the Out marker.
 
 ![](images/10----19.png)
 
 *The In Marker and Out Marker*
 
-Pressing I will locate the In marker to the cursor position. Pressing O
-locates the Out marker to the cursor position.
+Press **I** to move the In marker to the cursor position, and **O** to move the
+Out marker there.
 
-You can alternatively "draw" in the range between the In marker and
-Out marker. Double-click on the Timeline and start dragging right.
-Double-click positions the In marker at the starting point. As you drag
-right, the Out marker comes along to set the out point when you lift the
-mouse button.
+You can also "draw" the range between the In marker and Out marker:
+double-click the Timeline and drag right. The double-click places the
+In marker at the starting point, and the Out marker follows as you drag,
+setting the out point when you release the mouse button.
 
 > 💡 **Tip:** To set the marked region over a selection of clips, select
-them and press A. This also works for Marker clips, making it a great
+them and press **A**. This also works for Marker clips, so it's a quick
 way to set the In marker and Out marker over a song section.
 
 ## Navigate Using the In and Out Markers
 
-You can quickly navigate to the In marker or Out marker using the square
-bracket keys. Press Shift + [ to locate the cursor to the In marker;
-press Shift + ] to locate the cursor to the Out marker. On their own,
+The square bracket keys jump to the In and Out markers. Press
+**Shift + [** to move the cursor to the In marker, and **Shift + ]** to move it
+to the Out marker. On their own,
 **[** and **]** jump to the previous and next marker (see [Navigating by
 Markers](#navigating-by-markers)).
 
 ## Zooming to the In and Out Markers
 
-When you have a marked region set between the In marker and Out marker
-you can quickly zoom in to that region. To do that, right-click the
-Timeline and select **Zoom to fit marked region**, or press F7.
+When you have a marked region set, you can zoom in to it: right-click
+the Timeline and select **Zoom to fit marked region**, or press **F7**.
 
 ![](images/10----07.png)
 
@@ -66,36 +63,39 @@ Timeline and select **Zoom to fit marked region**, or press F7.
 
 ## Looping Playback Over the Marked Region
 
-To continuously repeat playback over a section of your tune, set the
-In marker and Out marker to define the marked region. Turn on looped
-playback by engaging the **Loop** button (L). Playback will repeat that
-section over and over until you stop playback.
+To repeat playback over a section of your song, set the In marker and
+Out marker around it and turn on the **Loop** button (**L**). Playback
+repeats that section until you stop it.
 
 ![](images/10----06.png)
 
 *Enabling Loop Playback*
 
-> 📝 **Note:** When **Loop** is enabled, playback will only play within the
-marked region. If the cursor is located earlier than the In marker or
-after the Out marker when you press **Play**, it will jump to the
-In marker and play from there.
+> 📝 **Note:** When **Loop** is on, playback stays within the marked
+region. If the cursor is before the In marker or after the Out marker
+when you press **Play**, it jumps to the In marker and plays from there.
 
 ## Auto Punch and the Marked Region
 
-To use Auto Punch, first set the In marker and Out marker over the range
-where you want to punch in. Enable the **Punch** button (P) in the transport
-bar. Make sure **Loop** is turned off. Now enable a track for
-recording, position the cursor before the In marker and press **Record**
-on the transport bar. Even though the track is armed for recording, no
-recording will happen until the cursor gets to the In marker.
+To use Auto Punch:
+
+1. Set the In marker and Out marker over the range where you want to
+   punch in.
+2. Turn on the **Punch** button (**P**) in the transport bar, and make sure
+   **Loop** is off.
+3. Arm a track for recording.
+4. Position the cursor before the In marker and press **Record** on the
+   transport bar.
+
+Even though the track is armed, nothing is recorded until the cursor
+reaches the In marker.
 
 ![](images/10----08.png)
 
 *Enabling Auto Punch Recording*
 
-> 💡 **Tip:** Auto punch recording means that recording is only allowed
-between the In marker and Out marker. Also, punch recording only works
-when **Loop** is off.
+> 💡 **Tip:** With Auto Punch, recording only happens between the
+In marker and Out marker, and only while **Loop** is off.
 
 ## The Marker Track
 
@@ -105,7 +105,7 @@ when **Loop** is off.
 
 Show or hide the Marker track with the **Marker** button in the eye
 button's panel (the eye button is at the top right of the window), with
-*View > Global tracks > Show Marker track*, or by pressing F10.
+*View > Global tracks > Show Marker track*, or by pressing **F10**.
 
 ![](images/10----10.png)
 
@@ -113,12 +113,10 @@ button's panel (the eye button is at the top right of the window), with
 
 ### Bars & Beats and Timecode Markers
 
-Bars & Beats markers can be used to identify song sections, give you a
-visual guide to the song, and provide quick navigation to different
-parts of your song. They are arranged as clips on the Marker track.
-Bars & Beats markers appear with a musical note icon on the Marker
-track. They also appear as narrow pointers on the Timeline when the
-Marker track is closed.
+Bars & Beats markers identify song sections, give you a visual guide to
+the song and let you jump quickly between its parts. They are clips on
+the Marker track, shown with a musical note icon, and appear as narrow
+pointers on the Timeline when the Marker track is closed.
 
 ![](images/10----02.png)
 
@@ -128,11 +126,11 @@ Marker track is closed.
 
 *Bars & Beats Markers on the Timeline (with Marker track closed)*
 
-Timecode markers mark a specific time offset into the Edit, and are not
-dependent on tempo changes. They can aid with navigation, especially
-when working with video. TC markers appear as clips with a clock icon on
-the Marker track. They appear as rounded pointers on the Timeline if the
-Marker track is closed.
+Timecode markers mark a specific time offset into the Edit and don't
+move with tempo changes. They help with navigation, especially when
+working with video. TC markers appear as clips with a clock icon on the
+Marker track, and as rounded pointers on the Timeline when the Marker
+track is closed.
 
 ![](images/10----04.png)
 
@@ -146,7 +144,7 @@ Marker track is closed.
 
 The Marker track can contain both Bars & Beats markers and Timecode
 markers. To choose which ones it shows, select the Marker track by
-clicking the header, then use the **Markers** setting in the Actions
+clicking its header, then use the **Markers** setting in the Actions
 panel:
 
 **Markers** (Choices: Combined, Bars & Beats, Absolute, Hidden): Which
@@ -158,23 +156,22 @@ the Marker track. (Default: Combined)
 
 *Marker Track Settings in the Actions Panel*
 
-> 📝 **Note:** By default F10 shows or hides the Marker track. The
+> 📝 **Note:** By default **F10** shows or hides the Marker track. The
 keyboard action **Cycle Marker track view mode** steps through the four
-Markers choices; it has no key by default, but you can assign one.
+Markers choices. It has no key by default, but you can assign one.
 
-> 💡 **Tip:** You can click on any blank space in the Marker track to
-instantly position the cursor.
+> 💡 **Tip:** Click any blank space in the Marker track to move the
+cursor there.
 
 ## Adding Markers
 
-Here are the various ways to add markers to the Marker track.
+There are several ways to add markers to the Marker track.
 
 ### Drag the Clip Object
 
 Drag the Clip object to the Marker track and choose which type of marker
-to create. This creates a Marker clip you can drag and resize. It has
-left and right trim handles to adjust the length. You can also drag a
-marker by its header and move it around.
+to create. This creates a Marker clip, which you can resize with its
+left and right trim handles or move by dragging its header.
 
 ![](images/10----13.png)
 
@@ -182,12 +179,12 @@ marker by its header and move it around.
 
 ### Press Return
 
-The Return key (Enter on Windows) has several functions related to
-marker navigation during playback. At the most basic level, pressing
-Return adds a new marker at the cursor position. The type of Marker clip
-matches the most recently added marker. If a Marker clip is selected, it
-adds one of that type. Markers added with Return use the next available
-sequential marker number.
+The Return key (Enter on Windows) does several marker-related jobs
+during playback. At its simplest, pressing Return adds a new marker at
+the cursor position. The new Marker clip is the same type as the most
+recently added marker, or, if a Marker clip is selected, the same type
+as that one. Markers added with Return take the next available marker
+number.
 
 ### Right-click the Marker Track Header
 
@@ -200,9 +197,9 @@ add at the cursor position.
 
 ### Marker Track Buttons in the Actions Panel
 
-Click the Marker track header to select it, then look in the Actions
-panel. There you will find the buttons **New Bars & Beats Marker** and
-**New Absolute TC Marker**.
+Click the Marker track header to select it. The Actions panel then
+shows the **New Bars & Beats Marker** and **New Absolute TC Marker**
+buttons.
 
 ![](images/10----15.png)
 
@@ -223,73 +220,64 @@ You can add either kind of Marker clip with the **Add** button on the
 
 *Marker Clip Settings in the Actions Panel*
 
-Marker clips behave like other clips in several ways. You can adjust the
-length using the trim handles, you can split them, drag them, duplicate
-them, or nudge them. They also contain several properties, described
-below:
+Marker clips behave like other clips in several ways: you can change
+their length with the trim handles, and split, drag, duplicate or nudge
+them. They also have these properties:
 
-**Number**: Marker numbers are issued sequentially as you add Marker
-clips. You can edit the **Number** property if you want. If you change
-**Number** to one that is already in use, then the other clip will be
-assigned the next available number. Marker numbers can be used for quick
-navigation during playback.
+**Number**: Marker numbers are issued in sequence as you add Marker
+clips, and you can edit them. If you change **Number** to one that is
+already in use, the other clip gets the next available number. Marker
+numbers give you quick navigation during playback.
 
-> 💡 **Tip:** If you feel compelled to renumber all your markers to get them
-into a nice sequential order, you might want to skip some numbers, in
-order to make it easier to insert new markers. For example, if you have
-a lot of markers in the song, you could re-number them by 5s.
+> 💡 **Tip:** If you renumber your markers into order, consider leaving
+gaps so new markers are easier to fit in. With a lot of markers in the
+song, for example, number them in 5s.
 
-**Type**: **Type** allows you choose which type of Marker clip you
-want: **Bars & Beats** or **Absolute**. Bars & Beats markers adjust to
-the tempo changes in the song. Timecode markers are fixed to a specific
-time offset into the Edit and are not affected by tempo changes.
+**Type**: Choose the type of Marker clip: **Bars & Beats** or
+**Absolute**. Bars & Beats markers follow tempo changes in the song.
+Timecode markers are fixed to a specific time offset into the Edit and are not affected by tempo changes.
 
 > 📝 **Note:** Timecode markers are also called "absolute markers", "TC
 markers", or "absolute timecode markers" within Waveform. All those
 terms refer to the same thing. For this book, I usually call them
 Timecode markers.
 
-**Name**: The **Name** property sets the name shown on the Marker clip.
-By default it will be "New Marker." Most users rename it based on song
-section. For example: Intro, Verse, Chorus, Bridge, or Outro.
+**Name**: The name shown on the Marker clip. The default is "New
+Marker". Most users name markers after song sections, for example Intro,
+Verse, Chorus, Bridge or Outro.
 
-**Start**: The **Start** property shows the bar, beat and tick start
-time for B&B markers. For Timecode markers it shows
-Hours/Minutes/Seconds/Milliseconds. For either type, you can edit
-**Start** directly to move the marker to a different location.
+**Start**: The start time, in bars, beats and ticks for B&B markers, or
+in Hours/Minutes/Seconds/Milliseconds for Timecode markers. For either
+type, edit **Start** to move the marker.
 
-**Length**: Similarly, **Length** shows B&B marker length in
-Bars/Beats/Ticks format. For Timecode markers, it shows length as
-Hours/Minutes/Seconds/Milliseconds. Edit the **Length** property and the
-Marker clip length will change to match.
+**Length**: The length, in Bars/Beats/Ticks for B&B markers or in
+Hours/Minutes/Seconds/Milliseconds for Timecode markers. Edit it to
+change the Marker clip's length.
 
-**End**: **End** values are in the same format as the **Start**
-property. Edit it to change the ending time. When you change the **End**
-value, **Length** gets adjusted to match. **Start** always remains the
-same. If you edit **End** to fall before **Start**, it will be set to
-match the **Start** time. In that case, **Length** gets set to zero.
+**End**: The end time, in the same format as **Start**. When you edit
+**End**, **Length** adjusts to match and **Start** stays the same. If you
+set **End** before **Start**, it's set to the **Start** time and
+**Length** becomes zero.
 
-**Colour**: Choose a colour. This sets all selected Marker clips to the
-colour you choose.
+**Colour**: Sets the colour of all selected Marker clips.
 
 ## Navigating by Markers
 
-Once you have markers set up, you can quickly navigate using the marker
-number and the Return key. Just type in a marker number like '5' or '11'
-and hit Return ('Enter' on Windows). As you type the number you will see
-it appear in green in the upper right of the Waveform window. When you
-see the number, you have about two seconds hit Return before the number
-disappears.
+Once you have markers set up, you can jump between them with the marker
+number and the Return key. Type a marker number such as 5 or 11 and press
+Return (Enter on Windows). As you type, the number appears in green in
+the upper right of the Waveform window. Once it appears, you have about
+two seconds to press Return before it disappears.
 
 ![](images/10----18.png)
 
 *Marker Number As It Appears Momentarily*
 
-If you enter a number that doesn't have a matching marker, then Waveform
-will insert a marker with that number at the cursor. Also, if you just
-press Return, a Marker clips is inserted at the cursor position.
+If you enter a number that has no matching marker, Waveform inserts a
+marker with that number at the cursor. Pressing Return on its own
+inserts a Marker clip at the cursor position.
 
-Undo (Cmd + Z / Ctrl + Z) removes a marker if you didn't intend to
+Undo (**Cmd + Z / Ctrl + Z**) removes a marker if you didn't intend to
 insert it.
 
 > 📝 **Note:** **Quantise transport position changes** <span class="pro">PRO</span>
@@ -301,17 +289,16 @@ the global launch quantisation, so the Edit stays in time. This covers
 control surfaces. It only applies with a Bars & Beats timeline, and not
 while recording or when Global launch quantisation is off.
 
-> 💡 **Tip:** The Number + Return approach to navigation works during
-playback but also works when Waveform is idle. If it doesn't seem to be
-working when playback is idle, click the header of the Marker track or
-select any marker and try again.
+> 💡 **Tip:** Number + Return works when Waveform is stopped as well as
+during playback. If it doesn't seem to work while stopped, click the
+Marker track header or select any marker and try again.
 
 ## The Browser Markers Tab
 
 Use the **Markers** tab of the Browser to add Bars & Beats or Timecode
-markers to the Marker track. You can also use it navigate to any marker by
-double-clicking on the marker name in the list. You can also quickly
-delete the selected marker or change its name in the Actions panel.
+markers to the Marker track, and to jump to any marker by double-clicking
+its name in the list. Select a marker there to delete it, or to rename it
+in the Actions panel.
 
 ![](images/10----21.png)
 
@@ -319,11 +306,11 @@ delete the selected marker or change its name in the Actions panel.
 
 **Select marker clips**: Single-click a marker in the list to select it.
 
-**Navigate to a marker clip**: Double-click on a marker in the list to
+**Navigate to a marker clip**: Double-click a marker in the list to
 jump to that position. This works during playback too.
 
-**Rename a marker**: Click a marker to select it. Then, edit the
-**Name** property in the Actions panel.
+**Rename a marker**: Select a marker, then edit the **Name** property
+in the Actions panel.
 
 **Add a marker**: Click **Add** at the bottom of the Markers tab. Select
 from the two types: **Add bars & beats marker** and **Add absolute TC
@@ -334,7 +321,7 @@ marker**.
 *Adding a Marker from the Markers Tab*
 
 **Delete a marker**: Select a marker in the list and click **Delete** or
-just press Delete on your keyboard. Undo (Cmd + Z / Ctrl + Z) restores a
+press **Delete** on your keyboard. Undo (**Cmd + Z / Ctrl + Z**) restores a
 deleted marker.
 
 **Change a marker from one type to the other**: Select the marker and
@@ -342,23 +329,21 @@ edit the **Type** property in the Actions panel.
 
 ## Renumbering Markers
 
-It is sometimes too easy to get your marker numbers out of order, but
-there is an easy trick to renumber them: Open the Markers tab in the
-Browser. Select all of the markers and edit the **Number** property. For
-example if it shows "1" with all the markers selected change it to "2."
-The markers instantly renumber starting from "2." If you really want
-them numbered starting from one, simply do it again, changing the
-**Number** property back to one.
+Marker numbers easily get out of order. To renumber them, open the
+Markers tab in the Browser, select all the markers and edit the
+**Number** property. For example, if it shows "1" with all the markers
+selected, change it to "2": the markers renumber starting from 2. To
+number them from 1 again, repeat the step and change **Number** back
+to 1.
 
 ## Adjust Markers (Wave File Markers)
 
-There is another type of marker in Waveform, also called "markers." They
-appear to mark spots in a clip, but actually are stored in the
-underlying Wave files. You can add these yellow arrows directly to Wave
-files, and they then appear on Audio clips. You work with these markers
-from the **Adjust Markers** actions in the Audio clip's Actions panel.
-You also add and remove them by dragging the marker object under **View
-Source Info** in the Audio clip's Actions panel.
+Waveform has another kind of marker, also called "markers". They
+mark spots in a clip but are stored in the underlying Wave files. You can
+add these yellow arrows to Wave files, and they then appear on Audio
+clips. Work with them using the **Adjust Markers** actions in the Audio
+clip's Actions panel. You can also add and remove them by dragging the
+marker object under **View Source Info** in the same panel.
 
 ![](images/10----28.png)
 
@@ -374,6 +359,6 @@ Source Info** in the Audio clip's Actions panel.
 
 ## Moving On
 
-Markers can be extremely useful in the context of recording and editing.
-Not only do they keep your Edit organised, they also provide easy
-navigation into important locations within the Edit.
+For recording over the marked region, see [Recording Audio](recording-audio.md)
+and [Loop Recording](loop-recording.md). For the rest of the Edit tab, see
+[The Edit Tab](edit-tab.md).

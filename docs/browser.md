@@ -14,38 +14,36 @@ The Browser's other tabs are covered elsewhere: **Actions** in [The Actions Pane
 
 ## The Search Tab
 
-Click the **Search** tab at the top of the Browser to search your library. It has a tags bar and a search box at the top, the category list on the left, the results area in the middle and the preview area at the bottom.
+Click the **Search** tab at the top of the Browser to search your library. It has a tags bar and a search box at the top, the category list on the left, the results area to the right of the category list, and the preview area at the bottom.
 
 ### Tags
 
-At the very top of the Search tab, you will find a collapsible **Tags** bar. Tags are metadata labels attached to your samples, presets, and other library content. They let you narrow down results without typing a search query.
+At the very top of the Search tab is a collapsible **Tags** bar. Tags are labels attached to your samples, presets and other library content, and they let you narrow down results without typing a search.
 
-You can resize the tags area by dragging the divider just below it. Drag it all the way up to hide the tags section entirely. Tags that appear here are dynamically populated based on whatever results are currently showing, so you will only see relevant tags.
+Drag the divider just below the tags area to resize it, or drag it all the way up to hide the tags. The tags shown depend on the current results, so you only see tags that apply.
 
-> 💡 **Tip:** If you use tags heavily, keep the tags bar open and give it some vertical space. It becomes a handy way to cross-filter results. For example, try selecting **Packs** in the category list and then clicking a "Bass" tag.
+> 💡 **Tip:** If you use tags a lot, keep the tags bar open and give it some height, so you can combine a tag with a category. For example, select **Packs** in the category list and then click a "Bass" tag.
 
 ### The Search Box
 
-Below the tags bar sits the **Search** box. Type any text here to filter the results list in real time. The search applies across whatever category or source you have selected in the category list.
+Below the tags bar is the **Search** box. Type here to filter the results within whatever you have selected in the category list. The results update as you type, so you don't need to press Enter. A spinning icon shows while results are being fetched; with thousands of samples, the first search or category you open can take a moment.
 
-A spinning icon appears while results are being fetched. Results update as you type, so you do not need to press Enter to search.
-
-> 💡 **Tip:** Press the Return key while the Search tab has focus to restart preview playback of the currently selected item. Handy for re-listening without reaching for the mouse.
+> 💡 **Tip:** Press Return while the Search tab has focus to restart the preview of the selected item, so you can listen again without reaching for the mouse.
 
 ### The Category List
 
-On the left side of the Search tab is a narrow category list divided into four sections. Only one item can be selected across all four sections at a time, so clicking an item in one section automatically deselects items in the others.
+The category list runs down the left side of the Search tab, in four sections. Only one item can be selected across all four sections at a time, so clicking an item in one section deselects any item in the others.
 
 #### Favourites
 
-The **Favourites** section shows tags you have marked as favourites. This gives you one-click access to your most-used tag categories. If no favourites are set, it displays "None set."
+The **Favourites** section shows the tags you have marked as favourites, so your most-used tags are one click away. If you haven't set any, it shows "None set."
 
-To add a favourite, click the **+** button next to the Favourites heading. A menu appears listing all available tags. Click a tag to add it; click it again to remove it. Favourite tags show a filled colour dot next to their name.
+To add a favourite, click the **+** button next to the Favourites heading. A menu lists all the available tags: click a tag to add it, and click it again to remove it. Favourite tags show a filled colour dot next to their name.
 
-You can right-click any favourite tag to access two options:
+Right-click any favourite tag for two options:
 
 - **Remove from favourites**: removes the tag from this list
-- A colour picker that lets you assign a custom colour to the tag, making it visually distinct in both the category list and the results list
+- A colour picker that gives the tag its own colour, so it stands out in both the category list and the results list
 
 When you select a favourite tag, the results area shows all content tagged with that label.
 
@@ -61,30 +59,30 @@ The **Categories** section lets you filter by content type. The available catego
 - **Tracks**: track presets
 - **All results**: everything, unfiltered by type
 
-Each category has its own icon to help you identify it quickly. When you first open the Search tab, it defaults to **All results**.
+Each category has its own icon. When you first open the Search tab, **All results** is selected.
 
 #### Smart Lists
 
-**Smart Lists** provide context-aware views into your content:
+**Smart Lists** show content based on what you're working on:
 
-- **Packs**: shows content packs you have installed. These are the bundled and downloadable sound libraries
-- **Edit**: shows all assets used in the currently open Edit. A **Consolidate** button appears at the bottom when this is selected, letting you copy any external files into the project folder
-- **Project**: shows all assets in the current Project. A **Consolidate Project** button appears when this is selected
-- **Recent**: shows recently used items for quick access
+- **Packs**: the content packs you have installed, which are the bundled and downloadable sound libraries
+- **Edit**: all the assets used in the open Edit. When this is selected, a **Consolidate** button appears at the bottom, which copies any external files into the project folder
+- **Project**: all the assets in the current Project. When this is selected, a **Consolidate Project** button appears
+- **Recent**: recently used items
 
-> 💡 **Tip:** The Edit and Project smart lists are great for auditing your Edit before sharing it. If the **Consolidate** button is active, it means some files live outside the project folder and could go missing if you move the Project.
+> 💡 **Tip:** Check the Edit and Project smart lists before you share an Edit. If the **Consolidate** button is active, some files live outside the project folder and could go missing if you move the Project.
 
 #### Bookmarks
 
-The **Bookmarks** section lets you pin any folder on your computer for quick browsing. Click **Add folder...** at the bottom to open a folder picker and bookmark a new location.
+The **Bookmarks** section holds folders on your computer that you want to reach quickly. Click **Add folder...** at the bottom to pick a folder and bookmark it.
 
-When you select a bookmark, the results area shows the contents of that folder. Right-click any bookmarked folder to **Remove Bookmark**.
+Select a bookmark to show that folder's contents in the results area. To remove one, right-click it and choose **Remove Bookmark**.
 
-> 💡 **Tip:** Bookmark your sample library folders, loop collections, or any directory you frequently pull sounds from. It saves a lot of navigating.
+> 💡 **Tip:** Bookmark your sample library folders, loop collections and any other folders you often pull sounds from.
 
 ### The Results Area
 
-The main area of the Search tab displays your results in a tree view. Depending on what you selected in the category list, you might see a hierarchical folder structure or a flat list of items.
+The main area of the Search tab shows your results in a tree view. Depending on what you selected in the category list, you see either a folder hierarchy or a flat list of items.
 
 #### Columns
 
@@ -96,32 +94,32 @@ The results header can display up to five columns:
 - **Size**: the file size
 - **Date**: the creation date
 
-You can click column headers to sort results by that column. Click again to reverse the sort direction.
+Click a column header to sort the results by that column, and click it again to reverse the order.
 
 #### Show Folders Toggle
 
 At the bottom-left of the Search tab, below the category list, is the **Show Folders** checkbox. (Default: on)
 
-- **On**: results are displayed in their natural folder hierarchy, with expandable folders
-- **Off**: results are displayed as a flat list, which can make it easier to scan through a large number of items
+- **On**: results are shown in their folder hierarchy, with expandable folders
+- **Off**: results are shown as a flat list, which can be easier to scan when there are a lot of items
 
 #### Browsing and Selecting
 
-Click any item in the results list to select it. The preview area at the bottom will automatically update to show information about the selected item and (depending on your **Auto-play** setting) begin playing it.
+Click any item in the results list to select it. The preview area at the bottom shows information about the item and, if **Auto-play** is on, starts playing it.
 
-Double-click an item to insert it directly into your Edit at the current insert point. For audio and MIDI files, this creates a new clip. For plugins, this inserts the plugin on the selected track.
+Double-click an item to insert it into your Edit at the current insert point. For audio and MIDI files, this creates a new clip. For plugins, this inserts the plugin on the selected track.
 
 #### Drag and Drop
 
-You can drag items from the results area directly onto tracks in your Edit. This is the most common way to use the Search tab:
+Most of the time, you use the Search tab by dragging items from the results area onto tracks in your Edit:
 
-1. Find a sample, preset, or plugin in the Search tab
-2. Click and drag it onto a track
-3. Release to place it
+1. Find a sample, preset or plugin in the Search tab.
+2. Drag it onto a track.
+3. Release the mouse button to place it.
 
 Hold **Shift** while dragging audio files to place them on consecutive tracks instead of the same track.
 
-You can also drag files *into* the Search tab from your operating system's file manager. Audio files dropped onto it are added to your loop library. Preset files are imported into your preset library.
+You can also drag files *into* the Search tab from your operating system's file manager. Audio files you drop there are added to your loop library, and preset files are imported into your preset library.
 
 #### Right-Click Menu
 
@@ -149,7 +147,7 @@ Right-click an item in the results list for options that vary by item type:
 
 ### The Preview Area
 
-At the very bottom of the Search tab is the preview strip. It shows information about the currently selected item and provides playback controls.
+The preview strip at the very bottom of the Search tab shows information about the selected item, with playback controls.
 
 #### Audio and MIDI Preview
 
@@ -158,17 +156,17 @@ When you select an audio or MIDI file, the preview strip displays:
 - Two info labels showing file details (format, sample rate, bit depth, duration, etc.)
 - A waveform or MIDI thumbnail showing the content at a glance
 - A **Play** button to start playback (switches to a **Stop** button while playing)
-- A **Menu** button (three horizontal lines) for playback options
-- A **Volume** control for the preview output level
-- A **Level meter** showing the preview output level
+- A menu button (three horizontal lines) for playback options
+- A volume control for the preview output level. It is separate from your Edit's master volume, so check it first if you can't hear previews
+- A level meter showing the preview output level
 
 #### Preview Playback Options
 
-Click the menu button (the three-line icon) in the preview area to access these settings:
+Click the menu button (the three-line icon) in the preview area for these settings:
 
 - **Play all**: starts playback of all the previews in the Browser
 - **Stop all**: stops all previews
-- **Match tempo**: time-stretches the previewed audio to match your Edit's tempo. Useful for auditioning loops at your Edit's BPM
+- **Match tempo**: time-stretches the previewed audio to match your Edit's tempo, so you hear loops at your Edit's BPM
 - **Match pitch**: pitch-shifts the preview to match your Edit's key
 - **Re-trigger on play**: restarts the preview when your Edit begins playback
 - **Sync to Edit**: synchronises preview playback with the Edit's transport position
@@ -176,25 +174,25 @@ Click the menu button (the three-line icon) in the preview area to access these 
 - **Loop**: loops the preview continuously. (Default: on)
 - **Preview all MIDI clips as drums**: forces all MIDI previews to use a drum sound, which is helpful when browsing MIDI patterns intended for drum kits
 
-> 💡 **Tip:** Keeping **Auto-play** and **Loop** on suits most workflows. It lets you audition content just by clicking through the results list, which is much faster than manually hitting **Play** each time.
+> 💡 **Tip:** Leaving **Auto-play** and **Loop** on suits most work: you can audition content by clicking through the results list, without pressing **Play** each time.
 
 #### Preset Preview
 
-When you select a plugin or track preset (rather than a raw audio file), the preview area switches to a different mode. It shows:
+When you select a plugin or track preset rather than an audio file, the preview area shows:
 
 - A text description of the preset
 - A visual thumbnail showing the plugin chain (each plugin displayed as a shaped block with its name)
-- A **Preview** button to enable live auditing through your audio inputs
+- A **Preview** button that turns on live preview of the selected preset, played from your inputs
 - An **Inputs** button to choose which MIDI inputs feed the preview
 - An **Outputs** button to select the audio output for preview playback
 
-Live preset preview lets you play a synth preset through your MIDI controller before committing to it.
+With live preset preview, you can play a synth preset from your MIDI controller before you decide to use it.
 
 > 📝 **Note:** For live preset preview to produce sound, at least one of your selected MIDI inputs must have input monitoring enabled. Only the first four selected inputs are used. If no inputs have monitoring on, or you have selected more than four, a warning icon appears.
 
 ## The Files Tab { #the-files-panel }
 
-Alongside the Search tab, the Browser has a separate **Files** tab. Where the Search tab organises your library by category and tags, the Files tab is a plain filesystem browser: a folder tree you navigate just like your operating system's file manager. It is the quickest way to pull in audio that is not part of your tagged library.
+The Browser also has a separate **Files** tab. Where the Search tab organises your library by category and tags, the Files tab is a plain file browser: a folder tree you navigate like your operating system's file manager. It is the quickest way to bring in audio that isn't part of your tagged library.
 
 ![](images/files_panel@2x.png)
 
@@ -208,28 +206,28 @@ The folder button at the top of the tab opens a menu of starting locations:
 - **Project folder**: the Project's folder on disk
 - **Drives**: the drives and volumes on your system, so you can browse anywhere
 - **Refresh**: re-scan the current folder to pick up files you have just added
-- **Bookmark current folder**: pin the folder you are viewing for one-click access later (and **Delete bookmark for current folder** to remove it again)
+- **Bookmark current folder**: bookmarks the folder you are viewing, so you can go back to it in one click (**Delete bookmark for current folder** removes it again)
 
 Use the up-arrow button to move up to the parent folder.
 
-> 💡 **Tip:** Bookmark the folders where you keep your loops and one-shots. A bookmarked folder is the fastest route to a sample library that has not been tagged into the Search tab.
+> 💡 **Tip:** Bookmark the folders where you keep your loops and one-shots. That's the fastest way to reach a sample library you haven't tagged for the Search tab.
 
 ### Auditioning and Inserting
 
-The Files tab lists audio files (plus SoundFont `.sf2` and `.sfz` files) and shares the same preview strip at the bottom as the Search tab, so you can audition a file before using it. Drag a file onto a track to place it, double-click to insert it at the cursor, and hold **Shift** while dragging to spread several files across consecutive tracks, exactly as in the Search tab.
+The Files tab lists audio files (plus SoundFont `.sf2` and `.sfz` files) and has the same preview strip at the bottom as the Search tab, so you can audition a file before you use it. As in the Search tab, drag a file onto a track to place it, double-click to insert it at the cursor, or hold **Shift** while dragging to spread several files across consecutive tracks.
 
 Right-click a file in the list for these options:
 
 - **Set tags...**: edit the tags of the selected files. Only available for files that are in your loop library.
 - **Open the folder containing this file...**: reveals the file in your system's file manager.
-- **Browse to folder containing this file**: switches the tab to the file's folder. Useful when you are viewing **Project files**, which gathers files from several folders.
+- **Browse to folder containing this file**: switches the tab to the file's folder. This helps when you are viewing **Project files**, which gathers files from several folders.
 - **Delete File**: moves the selected files to your system's trash, after asking you to confirm.
 
 > 📝 **Note:** The Files tab browses your filesystem directly, so it shows files whether or not they have been tagged or added to your library. Dragging a new file in from here does not add it to your loop library. Use the Search tab for tagged, searchable content.
 
 ## The Tracks Tab { #the-tracks-panel }
 
-The **Tracks** tab is a compact track list that lets you tag your tracks and then show only the ones you are working on. On a large arrangement (dozens of tracks across drums, vocals, synths and busses) it is an easy way to focus the timeline on, say, just the "Drums" tracks without manually hiding everything else. The tab is available in every edition.
+The **Tracks** tab is a compact track list where you can tag your tracks and then show only the ones you are working on. In a large arrangement, with dozens of tracks across drums, vocals, synths and busses, you can show only the "Drums" tracks, for example, without hiding everything else by hand. The tab is available in every edition.
 
 ![](images/tracks_panel_1@2x.png)
 
@@ -237,7 +235,7 @@ The **Tracks** tab is a compact track list that lets you tag your tracks and the
 
 ### Opening the Tracks Tab
 
-Click the **Tracks** tab at the top of the Browser. The tab lists every track in the Edit as a tree, with Folder tracks expandable. Each row shows the track's colour, icon and name, plus a **Hide** button and a **Disable** button on the right; clicking these mirrors the show/hide and enable/disable state in the track header. Selecting a row here selects the track in the Edit, and vice versa.
+Click the **Tracks** tab at the top of the Browser. The tab lists every track in the Edit as a tree, with Folder tracks expandable. Each row shows the track's colour, icon and name, with a **Hide** button and a **Disable** button on the right; these match the show/hide and enable/disable state in the track header. Selecting a row here selects the track in the Edit, and vice versa.
 
 ### Tagging Tracks
 
@@ -251,45 +249,39 @@ Only audio tracks, Folder tracks and automation tracks can be tagged.
 
 ### Filtering by Tag
 
-The tags bar in the middle of the tab lists every tag currently in use across your tracks. Click a tag to toggle it on; click more than one to combine them. With at least one tag enabled, turn on **Show Only Tagged Tracks** (the button at the bottom of the tab) and the timeline collapses to show only tracks carrying an enabled tag. Their tagged parent folders and tagged child tracks stay visible too, so folder structure is preserved. Turn the button off to bring every track back; the tag selection is remembered.
+The tags bar in the middle of the tab lists every tag in use on your tracks. Click a tag to turn it on, and click more than one to combine them. With at least one tag on, turn on **Show Only Tagged Tracks** (the button at the bottom of the tab) and the timeline shows only the tracks that carry an enabled tag. Their tagged parent folders and tagged child tracks stay visible too, so the folder structure is kept. Turn the button off to bring every track back; Waveform remembers the tag selection.
 
 ### Control Reference
 
-- **Track tree**: lists all tracks; selection is synced with the Edit. Each row has a **Hide** and a **Disable** button.
-- **Tags bar**: the in-use tags; click to enable/disable a tag for filtering.
+- The track tree lists all tracks, and its selection is synced with the Edit. Each row has a **Hide** and a **Disable** button.
+- The tags bar lists the tags in use. Click a tag to turn it on or off for filtering.
 - **Show Only Tagged Tracks**: toggle; when on, only tracks with an enabled tag (and their tagged folders/children) are shown in the arrangement. (Default: off)
 
-> 💡 **Tip:** Tag tracks by role ("Drums", "Vox") and by section ("Verse", "Chorus"), then enable a couple at once to zero in on exactly what you need.
-
-> 📝 **Note:** If no tags are enabled, or you have not tagged any tracks, the **Show Only Tagged Tracks** button has no effect: the filter only kicks in once at least one enabled tag exists.
+> 📝 **Note:** If no tags are enabled, or you haven't tagged any tracks, **Show Only Tagged Tracks** has no effect: the filter only works once at least one tag is enabled.
 
 ## The Groups Tab <span class="pro">PRO</span> { #the-groups-panel }
 
 > 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion. In other editions the Groups tab doesn't appear.
 
-The **Groups** tab is the Browser's home for [Edit Mix Groups](edit-mix-groups.md), the feature that links several audio tracks so that an action on one (a fader move, a mute, and so on) is mirrored on the rest. It gives you a single place to see every group in the Edit, create new ones, and switch them on and off.
+The **Groups** tab is where the Browser handles [Edit Mix Groups](edit-mix-groups.md), which link several audio tracks so that an action on one (a fader move, a mute and so on) is mirrored on the rest. Here you can see every group in the Edit, create new ones, and switch them on and off.
 
 ![](images/browser_groups@2x.png)
 
 *The Groups tab, listing the Edit's mix groups*
 
-The tab lists every group in the Edit. Each row shows the group's name drawn in that group's colour, and a small `*` appears next to any group that contains a track you currently have selected, so you can tell at a glance which groups your selection belongs to.
+Each row shows the group's name in the group's colour. A small `*` appears next to any group that contains a selected track, so you can see which groups your selection belongs to.
 
-- **Create New Group**: the button at the bottom of the tab makes a new group from the audio tracks you currently have selected (and selects the new group so you can name it and set its options straight away). See [Creating and Managing Groups](edit-mix-groups.md#creating-and-managing-groups) for the other ways to build a group.
-- **Disable**: each row has its own **Disable** button that bypasses just that group, leaving the others untouched. This is handy for nudging a single track without breaking it out of the group permanently.
-- **Open a group's properties**: double-click a row to open that group's property page, where you choose exactly which operations the group links (volume, mute, pan, solo, and so on). The full list is described in [What Gets Linked](edit-mix-groups.md#what-gets-linked).
-- **Select and delete**: single-click selects a group (Cmd-click / Ctrl-click to select several); press **Delete** to remove the selected group(s). Deleting a group never deletes its tracks.
+- **Create New Group**: the button at the bottom of the tab makes a new group from the selected audio tracks, and selects the new group so you can name it and set its options straight away. See [Creating and Managing Groups](edit-mix-groups.md#creating-and-managing-groups) for the other ways to build a group.
+- **Disable**: each row has its own **Disable** button, which bypasses that group only and leaves the others alone. Use it to adjust a single track without taking it out of the group for good.
+- Double-click a row to open that group's property page, where you choose which operations the group links (volume, mute, pan, solo and so on). The full list is in [What Gets Linked](edit-mix-groups.md#what-gets-linked).
+- Click a group to select it (Cmd-click / Ctrl-click to select several), and press **Delete** to remove the selected groups. Deleting a group never deletes its tracks.
 
 > 💡 **Tip:** A track can belong to more than one group at once. The coloured circle in the track header shows a slice for each group it is in. See [The Track Header Group Icon](edit-mix-groups.md#the-track-header-group-icon) for details.
 
 ## ⚡ Things to Watch Out For
 
-- **Large libraries can be slow.** If you have thousands of samples, the first time you open a category or type a search may take a moment while results load. The spinning search icon lets you know it is still working.
-
-- **Tags are shared across your library.** When you tag a sample or preset, that tag is stored globally. Removing a tag from one Browser view removes it everywhere.
-
-- **Preview volume is independent.** The preview volume control in the Browser is separate from your Edit's master volume. If you cannot hear previews, check this control first.
+- **Tags are shared across your library.** When you tag a sample or preset, the tag is stored globally, so removing a tag in one Browser view removes it everywhere.
 
 ## Moving On
 
-Next, you might want to explore how presets and racks work in more detail: see [Plugin Racks](racks.md) and [Using Plugins](using-plugins.md).
+For more on presets and racks, see [Plugin Racks](racks.md) and [Using Plugins](using-plugins.md).

@@ -7,32 +7,31 @@ naming and the render queue) is covered in [Rendering and Stems](rendering-and-s
 
 ## Master Processing
 
-Before you mix down, you might want to add some Master effects, so that
-the entire stereo mix is processed. Master plugins often include a
-compressor and a limiter to give the final mix a professional sound.
+Before you mix down, you might want to add some Master effects to
+process the entire stereo mix. Master plugins often include a compressor
+and a limiter to control the dynamics and level of the final mix.
 
-We won't get into the details about exactly what you'd apply there,
-although the Waveform Master Mix plugin (Waveform Pro and OEM) is a nice
-choice. It's a multi-band compressor, EQ, and limiter all in one. In Waveform
-Free, the [Compressor and Limiter](built-in-effects-plugins.md#dynamics-compressor-gate-and-limiter)
+What you apply there is up to you, but the Waveform Master Mix plugin
+(Waveform Pro and OEM) is a good place to start. It's a multi-band
+compressor, EQ, and limiter all in one. In Waveform Free, the [Compressor and Limiter](built-in-effects-plugins.md#dynamics-compressor-gate-and-limiter)
 plugins do a similar job.
 
 ![](images/36----01.png)
 
 *Waveform Master Mix*
 
-Make sure that the master metering is not going into the
-red before you export the mix. Exactly how you process the mix depends
-on what you plan to do with the file after it's mixed down.
+Make sure the master meters don't go into the red before you export
+the mix. Exactly how you process the mix depends on what you plan to do
+with the file after it's mixed down.
 
 ![](images/36----02.png)
 
 *The Waveform master*
 
-If you're having professional mastering done, then you probably don't
-want to put any plugins on there. However, if you are immediately going
-to upload to your website or SoundCloud, you will want to put some
-mastering effects on to make your mix into a finished product.
+If the mix is going to a mastering engineer, you'll usually leave the
+master plugins off. If you're uploading it straight to your website or
+SoundCloud, add some mastering effects to turn it into a finished
+product.
 
 > 💡 **Tip:** If you're aiming at a streaming platform, you don't need a loudness
 > plugin on the master to hit their target, because the Render dialog can normalise to
@@ -41,9 +40,9 @@ mastering effects on to make your mix into a finished product.
 
 ## Setting the Export Region
 
-The Render dialog can write the whole Edit, or just the marked region. If you
-want control over exactly where the file starts and ends, set the region before
-you open it:
+The Render dialog can write the whole Edit, or just the marked region. To
+control exactly where the file starts and ends, set the region before you
+open the dialog:
 
 1. Set the In marker exactly at the beginning of the song. Adjust its position
    to skip any extra bars or count-in at the start of the Edit.
@@ -61,7 +60,7 @@ in Simple mode, which shows just the settings a straightforward mixdown needs.
 For a stereo mixdown, set **Render** to **Whole Mix**, pick your format, check the
 folder and name, and click **Render**.
 
-That's the short version. [Rendering and Stems](rendering-and-stems.md) covers the rest: MP3
+[Rendering and Stems](rendering-and-stems.md) covers the rest: MP3
 and the other formats, rendering stems for each track or submix, tagging the
 files with title and artist, normalising to a loudness target, naming batches
 with patterns, saving presets, and rendering from the command line. Stems by
@@ -84,11 +83,9 @@ gave it a name of your own.
 
 *The Exported File on the Project Page Files List*
 
-To locate the file in Finder or File Explorer on your computer, select
-the exported file and look at properties. In the properties, click the **...**
-button to the right of **File** and choose **Open the folder containing
-this file**. That opens the folder on your system, giving you direct
-access to the file.
+To find the file in Finder or File Explorer, select it and look at its
+properties. Click the **...** button to the right of **File** and choose
+**Open the folder containing this file...**.
 
 ### Locating the Export in the Browser
 
@@ -101,7 +98,7 @@ select **Project folder**.
 
 Double-click the folder named *Exported* and you will see your file. To
 locate it in Finder or File Explorer, right-click and choose **Open the
-folder containing this file**.
+folder containing this file...**.
 
 ![](images/36----08.png)
 
@@ -113,4 +110,4 @@ folder containing this file**.
 ## Moving On
 
 For everything the Render dialog can do beyond a simple stereo mixdown, see
-[Rendering and Stems](rendering-and-stems.md). Have fun, and make a lot of music.
+[Rendering and Stems](rendering-and-stems.md).

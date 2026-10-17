@@ -1,15 +1,13 @@
 # Clip Layer Effects
 
-Clip Layer effects offer quick offline
-rendering of many common audio processes but arranged as layers. You can
-add or remove layers at will and the effects are rendered in quickly.
-You can even rearrange the layers. Effects are applied from the top down
-through the layers.
+Clip Layer effects give you quick offline rendering of many common audio
+processes, arranged as layers on the clip. You can add, remove and
+rearrange layers at will, and the effects render in quickly. Effects are
+applied from the top layer down.
 
-You may find Clip Layer effects to be most useful for things like
-applying clip based volume automation, conversion to mono, and
-normalising. However, those are just a few example of Clip Layer effects
-capabilities.
+Clip Layer effects are particularly useful for clip-based volume
+automation, converting to mono and normalising, though they can do much
+more.
 
 
 ![](images/41----01@2x.png)
@@ -25,17 +23,15 @@ same menu also has **Remove all clip effects** and **Show clip effects**.
 
 *Audio Clip Header FX Menu*
 
-From there, select from any of effects. More details on each of these
-options follows.
+Then choose an effect from the list. Each one is described below.
 
 
 ![](images/41----03.png)
 
 *FX Menu Add Effect Options*
 
-The Clip Layer will appear. As you hover your mouse over it, a set of
-controls appears to the right. The following diagram illustrates the
-available options.
+The Clip Layer appears on the clip. When you hover over it, a set of
+controls appears to the right, as shown in this diagram.
 
 
 ![](images/41----04@2x.png)
@@ -62,37 +58,32 @@ clip effects and tells you so.
 
 ## Volume - Volume
 
-Adding a volume layer is the Waveform way to do clip based volume
-automation. You may find yourself using this instead of track automation
-when it comes to automating volume.
+A volume layer is Waveform's way to do clip-based volume automation, and
+you may find yourself using it instead of track automation for volume.
 
 
 ![](images/41----05.png)
 
 *Volume Clip Layer*
 
-When you click the "gear" icon for a volume layer, you will see the
-Volume & Pan control values in the Actions panel.
+Click the gear icon on a volume layer to see its Volume & Pan control
+values in the Actions panel.
 
 
 ![](images/41----05b.png)
 
 *Volume Clip Layer settings in the Actions panel*
 
-While somewhat useful, you are probably more interested in working with
-the volume automation curve itself. To do so, click on the volume curve
-(which initially shows up as a line) and its settings appear in the
-Actions panel.
+To edit the volume automation curve itself, click the curve (at first it
+shows as a straight line) and its settings appear in the Actions panel.
 
-> 💡 **Tip:** See [Automation](automation.md) for more on editing the
-automation curve. Everything about editing automation curves for tracks
-applies to volume Clip Layers as well.
+> 💡 **Tip:** Everything about editing track automation curves applies to volume Clip Layers too. See [Automation](automation.md).
 
 ## Volume - Fade
 
-Fade-ins and fade-outs are also available as layers. After creating the
-fade layer, drag the left or right fade handles to create the fade in or
-fade out.
+Fade-ins and fade-outs are also available as layers. Once you've added
+the fade layer, drag the left or right fade handle to create the fade-in
+or fade-out.
 
 
 ![](images/41----06.png)
@@ -111,9 +102,10 @@ Add a step volume layer to rhythmically gate the clip.
 *Step Volume Layer*
 
 With the step Clip Layer in place, click the gear icon at the right of
-the layer and then work with its settings in the Actions panel to set
-the step size and divisions. You can then click on the steps to turn them on or for
-unlimited synced gating options.
+the layer and use its settings in the Actions panel to set the step size
+and divisions. Then edit the grid of steps: click a cell to switch it on
+or off, and drag across cells to set them the same way. Hold Shift as you
+click or drag to fill cells, or Cmd / Ctrl to clear them.
 
 
 ![](images/41----07b.png)
@@ -122,17 +114,17 @@ unlimited synced gating options.
 
 ## Time/Pitch - Pitch Shift
 
-Add a pitch shift Clip Layer to get access to an automation curve for
-pitch. Add points and automate like any other effect to apply anything
-from simple pitch offsets to dramatic pitch sweeps.
+Add a pitch shift Clip Layer to get an automation curve for pitch. Add
+points and automate it like any other effect, for anything from simple
+pitch offsets to dramatic pitch sweeps.
 
 
 ![](images/41----08.png)
 
 *Pitch Shift Layer*
 
-When you select the pitch curve on the clip, the Actions panel gives you
-access to the normal range of controls for automation curves.
+When you select the pitch curve on the clip, the Actions panel shows the
+usual controls for automation curves.
 
 
 ![](images/41----08b.png)
@@ -162,23 +154,23 @@ Right-click the fade handle to choose the shape for the curve.
 You can enable **Warp Time** on the clip itself (from the Actions panel or
 the [Detail Editor](detail-editor.md)), or add a warp time Clip Layer.
 
-The header area of the Clip Layer will appears shaded. Click anywhere in
-the shaded area to add a warp marker.
+The header area of the Clip Layer appears shaded. Click anywhere in the
+shaded area to add a warp marker.
 
 
 ![](images/41----10.png)
 
 *Warp Time Clip Layer - Click to Add Marker*
 
-Drag a warp points to time stetch audio between warp markers.
+Drag a warp marker to time-stretch the audio between warp markers.
 
 
 ![](images/41----10b.png)
 
 *Drag to Warp*
 
-If you want to remove a warp marker, right-click and remove it or all
-markers.
+To remove a warp marker, right-click it and choose to remove that marker
+or all markers.
 
 
 ![](images/41----10c.png)
@@ -191,38 +183,31 @@ in relation to the rest of the Edit.
 
 ## Effects - Plugin Layer
 
-A plugin Clip Layer allows you to add any plugin including 3rd-party
-effects to a layer.
+A plugin Clip Layer lets you put any plugin, including third-party
+effects, on a layer.
 
 
 ![](images/41----11.png)
 
 *Plugin Layer*
 
-You will be prompted to select a plugin as you add the layer. The name
-of the plugin appears on the Clip Layer at the lower right when the
-layer is selected.
+Waveform asks you to choose a plugin as you add the layer. When the
+layer is selected, the plugin's name appears at the lower right of the
+Clip Layer.
 
-Here are the key things to know when working with the plugin Clip
-Layers:
+The key things to know about plugin Clip Layers:
 
-1.  Click the gear icon at the right to open the plugin UI. When you
-    tweak parameters, a few second later the change is rendered in.
-2.  Click the **A** at the top right to show automation curves. Any exposed
-    automation parameter can be selected which makes its curves visible.
-    Use all your standard automation editing tools to draw in
-    appropriate automation.
+- Click the gear icon at the right to open the plugin UI. When you tweak
+  parameters, the change is rendered in after a few seconds.
+- Click the **A** at the top right to show automation curves. Select any
+  exposed parameter to make its curve visible, then draw in automation
+  with the standard automation editing tools.
 
-> 📝 **Note:** Because of the way rendering works, it is a bit hard to
-audition changes to plugin parameters. You may find plugin Clip Layers
-are best for applying known presets. If you want to do a lot of real
-time tweaking, then you will probably be better off to use a Clip effect
-or normal track plugin.
+> 📝 **Note:** Because of the way rendering works, changes to plugin parameters are hard to audition, so plugin Clip Layers suit applying known presets best. For a lot of real-time tweaking, put the plugin on the clip itself (see [Clip Effects](clip-effects.md)) or on the track instead.
 
 ## Effects - Reverse Clip Layer
 
-Using the reverse Clip Layer is really easy. Add the layer and the audio
-within the clip will now play backwards.
+Add the reverse Clip Layer and the audio in the clip plays backwards.
 
 
 ![](images/41----12.png)
@@ -231,9 +216,8 @@ within the clip will now play backwards.
 
 ## Mastering - Normalise Layer
 
-Normalise adjusts the gain of audio so that it use all of the available
-the bit depth. The concept is analogous to "zoom-to-fit" in image
-editing software.
+Normalise adjusts the gain of the audio so that it uses all of the
+available bit depth, much like "zoom to fit" in image editing software.
 
 To use it, first add a Normalise layer.
 
@@ -242,9 +226,8 @@ To use it, first add a Normalise layer.
 
 *Normalise Layer*
 
-Then set **Peak level** (-60 to 0 dB) to keep peaks where you want. In
-voiceover work, many customers request the audio to be normalised to
--3 dB.
+Then set **Peak level** (-60 to 0 dB) to put the peaks where you want
+them. In voiceover work, clients often ask for audio normalised to -3 dB.
 
 
 ![](images/41----13b.png)
@@ -253,8 +236,8 @@ voiceover work, many customers request the audio to be normalised to
 
 ## Mastering - Mono Layer
 
-To convert to mono, the mono Clip Layer is a greta feature. It is much
-more convenient to use this than other approaches in Waveform.
+The mono Clip Layer is the most convenient way to convert a clip to mono
+in Waveform.
 
 First add a mono Clip Layer:
 
@@ -272,14 +255,11 @@ only**.
 
 *Mono Options*
 
-> 📝 **Note:** Most of the time you will probably select **Use average of
-all channels**. This mixes the left and right channels to create a mono
-version.
+> 📝 **Note:** **Use average of all channels** is the usual choice. It mixes the left and right channels together to create a mono version.
 
 ## Mastering - Phase Invert Layer
 
-The phase invert Clip Layer is pretty straightforward. It flips the
-polarity of the wave.
+The phase invert Clip Layer flips the polarity of the waveform.
 
 
 ![](images/41----15.png)
@@ -288,7 +268,6 @@ polarity of the wave.
 
 ## Moving On
 
-We think you will enjoy exploring and working with Clip Layers. It is
-really only from experimenting with this approach that you will
-understand how it works. There are likely many new editing workflows
-that have yet to be discovered, that leverage the power of Clip Layers.
+To put plugins directly on individual Audio clips, see
+[Clip Effects](clip-effects.md). For more on stretching audio with warp
+markers, see [Warp Time](warp-time.md).

@@ -1,9 +1,9 @@
 # MIDI Effects
 
-Waveform offers several MIDI effects. These effects don't have any sound
-of their own. They modify the MIDI data coming from the MIDI clips on a
-track or from your MIDI controller hardware. As such you need to insert
-these before a virtual instrument to have any effect.
+Waveform includes several MIDI effects. They make no sound of their
+own: they change the MIDI data coming from the MIDI clips on a track or
+from your MIDI controller, so they only take effect when you insert them before a
+virtual instrument.
 
 ## Waveform Effects
 
@@ -61,8 +61,8 @@ can't be added to a clip).
 **Pattern section:**
 
 Switch the **Pattern** toggle on to replace the straight cycle with a
-step pattern of your own. The piano-roll style editor covers ±12
-semitones relative to the arpeggiated notes. Use **Pattern** to load a
+step pattern of your own. The piano-roll style editor covers -12 to
++12 semitones relative to the arpeggiated notes. Use **Pattern** to load a
 preset pattern, **Save** and **Clear** to manage your own, **Import**
 to import a pattern from a MIDI file, **Steps** to set the pattern
 length (1 to 32 steps), and **Grid** to set the step size (1 bar, 1/2,
@@ -124,7 +124,7 @@ defaults 0%).
 
 The MIDI Chord Player is a live single-note harmoniser: play one note
 and hear a full chord. Modifier keys let you switch chord types as you
-play. It is available in all editions of Waveform, and goes on a
+play. It's in every edition of Waveform, and goes on a
 track's plugin chain before the instrument (it can't be added to a
 clip).
 
@@ -139,8 +139,8 @@ clip).
     diminished, augmented, major 7th, minor 7th, dominant 7th,
     half-diminished 7th, minor-major 7th, augmented 7th, major 6th,
     minor 6th, and suspended 4th.
--   **Chords in key only**: A smart mode that follows the Edit's key
-    and only produces diatonic chords. Two modifier keys add 6th and
+-   **Chords in key only**: Follows the Edit's key and only produces
+    diatonic chords. Two modifier keys add 6th and
     7th variations.
 
 The modifier keys are shown coloured on the plugin's on-screen
@@ -198,8 +198,8 @@ before the instrument (it can't be added to a clip).
 
 **Timing section:**
 
--   **Length**: Gate length of each repeated note, 1% to 100%. (Note
-    the smaller range than the Arpeggiator's 25-400%.) (Default: 100%)
+-   **Length**: Gate length of each repeated note, 1% to 100%, a
+    smaller range than the Arpeggiator's 25-400%. (Default: 100%)
 -   **Swing**: 0% to 100%. (Default: 0%)
 -   **Rand Pos / Rand Len / Rand Vel**: Randomise position, length,
     and velocity, 0% to 100%. (Defaults: 0%)
@@ -284,11 +284,11 @@ MIDI CC sends MIDI continuous-controller (CC) messages. It has six
 knobs, **CC 1** to **CC 6** (0 to 127, default 0), each with a
 **Dest** button below it (**Dest 1** to **Dest 6**). Click it to choose
 the channel and CC number that knob sends to; it shows "---" (sending
-nothing) until you pick one, then the CC number. Each knob is an automatable parameter, so you can draw or
-record CC automation (modulation, expression, filter cutoff) and send
+nothing) until you pick one, then the CC number. Each knob is an automatable parameter, so
+you can draw or record CC automation (modulation, expression, filter cutoff) and send
 it on to a virtual instrument or external gear downstream.
 
 ### ReWire Device
 
-Use this to run any ReWire-compatible DAW as a plugin within Waveform.
-Windows and Intel Macs only.
+ReWire Device runs any ReWire-compatible DAW as a plugin within
+Waveform. It's available on Windows and Intel Macs only.

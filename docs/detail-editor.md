@@ -37,8 +37,7 @@ edit*.
 For an Audio clip the tab shows a waveform view of the clip, with the
 clip's loop settings (Auto-Tempo, Auto-Pitch, Stretch, Beats, Root Tempo,
 and Beat Points) on the right-hand side. The same loop settings are also
-available in the Actions panel, so you can adjust them from wherever is
-most convenient.
+in the Actions panel.
 
 Flags in the waveform view set the clip's start and end and,
 for a looping clip, its loop. A looping clip also shows a start flag that
@@ -71,7 +70,7 @@ For a Step clip the tab shows the Step clip editor. See
 
 The Plugins tab shows the whole of the selected track's plugin chain and
 its modifiers as a row of panels you can open individually, so you can
-work across several of them at once instead of one at a time. See
+work on several of them at once. See
 [The Plugins Detail Editor](plugins-detail-editor.md) for the full
 chapter.
 

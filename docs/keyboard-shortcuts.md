@@ -1,8 +1,8 @@
 # Keyboard Shortcuts
 
-In this chapter you will learn how to customise the keyboard shortcuts
-in Waveform. In [Introduction](introduction.md) we covered how to change the
-default keyboard mapping. In short, open *Settings > Keyboard Shortcuts*,
+This chapter shows you how to customise Waveform's keyboard shortcuts.
+To go back to the default mapping, as described in the
+[Introduction](introduction.md), open *Settings > Keyboard Shortcuts*,
 click **Reset to Defaults** near the bottom of the page, and choose
 **Restore default Waveform key mappings**.
 
@@ -12,17 +12,16 @@ click **Reset to Defaults** near the bottom of the page, and choose
 ## Keyboard Shortcuts Page
 
 The Keyboard Shortcuts page on the Settings tab shows all of the
-key-mappings. You can easily change those to your liking or match them
-to a DAW you are already comfortable with.
+key-mappings. You can change them to suit the way you work, or to match a
+DAW you already know.
 
 ![](images/14----01.jpg)
 
 *Keyboard Shortcuts Page on the Settings Tab*
 
-Waveform allows you to have more than one shortcut tied to a single
-action. This is really helpful if you want to have a way to do something
-on your laptop, but then take advantage of the extended keypad when
-you're working on a desktop computer.
+An action can have more than one shortcut. For example, you can use one
+key on a laptop and a keypad key when you're working at a desktop
+computer with an extended keyboard.
 
 ## Finding a Shortcut
 
@@ -46,23 +45,20 @@ to a file first (see below) if you might want them back.
 
 *Map Record to the Asterisk on the Keypad*
 
-Let's take a look at an example. To start recording you click the
-**Record** button in the transport bar or press keyboard shortcut R. When
-working on a computer that has a full size keyboard, you may prefer to
-start recording by hitting the asterisk (\*) key on the keypad. To do so on Mac (on Windows, the asterisk is already
-a default Record key):
+For example, to start recording you click the **Record** button in the
+transport bar or press R. On a full-size keyboard, you might prefer to
+start recording with the asterisk (\*) key on the keypad. To set this up
+on a Mac (on Windows, the asterisk is already a default Record key):
 
 ![](images/14----02@2x.png)
 
 *Setting a Keyboard Shortcut*
 
-1.  To the far right of each action there's a plus icon. To create or
-    add a keyboard shortcut to an action, click the corresponding plus
-    icon. The **New key-mapping** dialog opens up.
-2.  Type the key or key combination that you want to trigger this
-    action. The key or key combination will be identified in the
-    dialog and it will also show you if there's a conflict with an
-    existing mapping. For our example, press asterisk (\*) and then
+1.  Click the plus icon at the far right of the action. The **New
+    key-mapping** dialog opens.
+2.  Press the key or key combination that you want to trigger the
+    action. The dialog shows the key and warns you if it conflicts with
+    an existing mapping. For this example, press asterisk (\*), then
     click **OK**.
 
 Now, both R and the keypad asterisk (\*) are assigned to the Record
@@ -74,11 +70,10 @@ either R or asterisk (\*).
 
 ## Changing a Keyboard Shortcut
 
-To change an existing shortcut, click directly on the key-mapping at the
-far right of the action. Choose between **Change this key-mapping** and
-**Remove this key-mapping**. If you choose the **Remove** option, the
-key-mapping disappears. If you choose the **Change** option the **New
-key-mapping** dialog appears and you can enter a new assignment.
+To change an existing shortcut, click the key-mapping at the far right of
+the action. **Remove this key-mapping** deletes it, and **Change this
+key-mapping** opens the **New key-mapping** dialog so you can enter a new
+assignment.
 
 ![](images/14----04.jpg)
 
@@ -86,36 +81,33 @@ key-mapping** dialog appears and you can enter a new assignment.
 
 ## Saving Keyboard Shortcuts to a File
 
-Once you have your keyboard shortcuts set up the way you want, you can
-save the entire key-mapping to a file, a very good idea. If you run
-Waveform on a different computer, you can simply import the file, and
-will then have all your familiar assignments ready to go.
+Once your keyboard shortcuts are set up the way you want, save the whole
+key-mapping to a file. If you run Waveform on a different computer, you
+can then load the file to get all your assignments back.
 
 ![](images/14----08.jpg)
 
 *Save Key-Mappings Button*
 
-To save your shortcuts setup, click **Save Key-Mappings...** and Waveform
-presents a dialog requesting a file name and path. You can store
-the key-mapping file anywhere you like. Waveform key-mapping files have
-the `.tracktionkeys` extension.
+To save your shortcuts, click **Save Key-Mappings...** and choose a file
+name and location. You can store the file anywhere you like. Waveform
+key-mapping files have the `.tracktionkeys` extension.
 
 ![](images/14----05.png)
 
 *Save Key-Mappings Dialog Box*
 
-> 💡 **Tip:** You could create a 'settings' folder under your main Waveform
-> folder to hold such files, naming the key-mapping files with a version
-> number at the end. This gives you the ability to easily roll back to a
-> previous version if you ever change your mind about a new keyboard
-> layout.
+> 💡 **Tip:** Keep these files in a 'settings' folder inside your main
+> Waveform folder, with a version number at the end of each file name.
+> You can then go back to an earlier version if you change your mind
+> about a new keyboard layout.
 
 ## Loading Keyboard Shortcuts from a File
 
-If you're working on a new installation or move to a new computer you
-can load your custom key-mapping file. Open *Settings > Keyboard Shortcuts*
-and click **Load Key-Mappings...**. Find your exported
-key-mapping file then click **Open**. All your key-mappings are restored.
+On a new installation or a new computer, you can load your custom
+key-mapping file. Open *Settings > Keyboard Shortcuts* and click
+**Load Key-Mappings...**, find your saved key-mapping file, then click
+**Open**. All your key-mappings are restored.
 
 ![](images/14----06@2x.png)
 
@@ -123,11 +115,10 @@ key-mapping file then click **Open**. All your key-mappings are restored.
 
 ## Printing a List of Keyboard Shortcuts
 
-If you want to print a list of all your current keyboard shortcuts,
-click **View as HTML...** at the bottom of the Keyboard Shortcuts page. This
-loads a nicely formatted, searchable view of all the current
-key-mappings into your browser. From there you can search it or print it
-using normal web browser features.
+To print a list of your current keyboard shortcuts, click
+**View as HTML...** at the bottom of the Keyboard Shortcuts page. This
+opens a formatted list of all the current key-mappings in your web
+browser, where you can search or print it.
 
 ![](images/14----07@2x.png)
 

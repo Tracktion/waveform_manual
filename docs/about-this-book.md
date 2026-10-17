@@ -31,33 +31,24 @@ Release Log:
 
 ## Waveform User Guide - A Work in Progress
 
-The purpose of this user guide is to document and explain the DAW named
-Waveform. Check the release log above to see which version of Waveform
-this guide covers.
+This guide documents and explains Waveform. Check the release log above
+to see which version of Waveform it covers.
 
-Waveform is available in Free, OEM and Pro editions. The core operation
-of Waveform is the same in all of them. Features that aren't in Waveform
-Free carry a <span class="pro">PRO</span> badge. A badged heading has an
-**Edition** line under it naming the editions and expansions that include
-the feature. A badged control without a heading of its own names the
+Waveform is available in Free, OEM and Pro editions, and its core
+operation is the same in all of them. Features that aren't in Waveform Free carry a
+<span class="pro">PRO</span> badge. A badged heading has an **Edition**
+line under it naming the editions and expansions that include the
+feature. A badged control without a heading of its own names the
 editions in the sentence that describes it.
 
-**IMPORTANT NOTE!**
+> 📝 **Note:** This guide is a work in progress, and some updates and
+> features aren't covered yet. The free videos on the
+> [Tracktion YouTube channel](https://www.youtube.com/@TracktionSoftware)
+> and the Tracktion website fill in many of the gaps.
 
-This guide is in-progress. Many updates and features have not yet been
-included here. These are some of the things that are on the backlog but
-not yet explained here. There are free videos on the
-[Tracktion YouTube channel](https://www.youtube.com/@TracktionSoftware) and
-at the Tracktion website that fill in many of the gaps in this book.
-
--   Traditional Mixer Layout
--   CPU Usage Meter
-
-Some screenshots might be from earlier versions of the software.
+Some screenshots show earlier versions of Waveform.
 
 ## Suggestion: Don't Print
 
-We recommended using the PDF format of this user guide. This allows you
-to easily search the document for keywords and topic. If you decide to
-print this document out that's great however it will quickly become
-out-of-date.
+Use the online manual or the PDF (*Help > Get help > User guide PDF*).
+Both are searchable, while a printed copy goes out of date quickly.

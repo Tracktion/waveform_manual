@@ -2,7 +2,7 @@
 
 > 📝 **Edition:** Waveform Pro, or with the MIDI Producer Expansion or the DJ Mix Tools Expansion.
 
-Faceplates let you build custom control panels for your plugins and racks. Instead of using the default parameter list, you can design a visual layout with knobs, sliders, buttons, meters, and labels, arranged exactly the way you want.
+Faceplates let you build custom control panels for your plugins and racks. Instead of using the default parameter list, you can design a visual layout with knobs, sliders, buttons, meters, and labels, arranged the way you want.
 
 ![](images/Faceplate%201@2x.png)
 
@@ -12,7 +12,7 @@ Faceplates let you build custom control panels for your plugins and racks. Inste
 
 A faceplate is a custom graphical interface you create for any plugin or rack. It sits on top of the default plugin view and gives you direct, visual access to the parameters you care about most. You can design one from scratch or load a factory preset that ships with Waveform.
 
-Faceplates are especially useful when you want to focus on a handful of key parameters without wading through a plugin's full control set. They're also great for racks, where you might want a unified panel that exposes controls from several plugins at once.
+A faceplate helps when you want to focus on a handful of key parameters without wading through a plugin's full control set. On a rack, it can bring controls from several plugins together on one panel.
 
 ## Opening a Faceplate
 
@@ -37,7 +37,7 @@ To create your first faceplate:
 1. Click the **Padlock** button on the right toolbar to unlock edit mode.
 2. Click on any empty grid cell. A menu appears listing the available control types.
 3. Choose a control type (for example, **Slider** or **Parameter**).
-4. The new control appears on the grid. Right-click it or left-click it to assign a plugin parameter.
+4. Left-click or right-click the new control to assign a plugin parameter.
 
 Lock the padlock again when you're done, and your faceplate is ready to use.
 
@@ -57,11 +57,11 @@ The toolbar on the right side of the faceplate contains these buttons, from top 
 
 **Height Slider**: Sets the number of vertical grid rows. (Default: 4)
 
-**Assign**: Enters parameter assign mode. When active, this button pulses to indicate it's waiting for you to move a parameter. Tweak any parameter on your plugin, and it gets assigned to the currently selected control. This is the fastest way to connect controls.
+**Assign**: Enters parameter assign mode. When active, this button pulses to indicate it's waiting for you to move a parameter. Tweak any parameter on your plugin, and it gets assigned to the currently selected control.
 
-**Quick Assign**: When enabled alongside assign mode, the faceplate automatically advances to the next control after each successful assignment. This lets you rapidly assign a whole panel by just tweaking parameters one after another.
+**Quick Assign**: When enabled alongside assign mode, the faceplate automatically advances to the next control after each successful assignment. You can then assign a whole panel by tweaking parameters one after another.
 
-**Presets**: Opens a menu for saving, loading, and managing faceplate presets. More on this below.
+**Presets**: Opens a menu for saving, loading, and managing faceplate presets. See [Presets](#presets).
 
 > 💡 **Tip:** You can hide the edit toolbar by right-clicking the faceplate background and unchecking **Show edit menu**. Right-click again to bring it back. The same menu has **Lock**, which turns edit mode on and off like the padlock.
 
@@ -71,15 +71,15 @@ The toolbar on the right side of the faceplate contains these buttons, from top 
 
 *A faceplate in a plugin rack, with the faceplate grid shown below the rack.*
 
-Faceplates use a grid layout. Every control snaps to grid cells and can span multiple cells. The grid maximum size is 64 by 64, which gives you plenty of room for complex layouts.
+Faceplates use a grid layout. Every control snaps to grid cells and can span multiple cells. The grid can be up to 64 by 64 cells.
 
 To resize the grid, use the width and height sliders in the edit toolbar. If you need finer control over placement, right-click the faceplate background and select **Double grid resolution**. This doubles both the width and height of the grid and scales all existing controls to match, giving you twice the positioning precision without changing how anything looks.
 
-> 📝 **Note:** If you shrink the grid smaller than your current controls, Waveform automatically enlarges it to fit. You'll see a message letting you know.
+> 📝 **Note:** If you shrink the grid smaller than your current controls, Waveform automatically enlarges it to fit and shows a message saying so.
 
 ## Control Types
 
-Faceplates offer eight types of controls. Each one serves a different purpose.
+Faceplates offer eight types of control.
 
 ### Slider
 
@@ -94,11 +94,11 @@ A knob or fader that controls a single parameter. This is the most common contro
 
 **Snap to mouse position**: Found under the **Options** submenu. When enabled, clicking the slider jumps the value to wherever you click. When disabled, the slider uses relative dragging, which is gentler for fine adjustments. (Default: snap enabled)
 
-Sliders also support custom filmstrip images, rotary images (background + rotating thumb), and linear images (background + sliding thumb). See the Skins section below.
+Sliders also support custom filmstrip images, rotary images (background + rotating thumb), and linear images (background + sliding thumb). See [Skins](#skins).
 
 ### Parameter
 
-A combined control that shows a parameter name label at the top, a rotary knob in the middle, and the current value readout at the bottom. It's a slider, name, and value display all in one.
+A combined control that shows a parameter name label at the top, a rotary knob in the middle, and the current value readout at the bottom.
 
 **Style**: Same slider style options as above.
 
@@ -126,13 +126,13 @@ Right-click a label and choose **Set text** to edit what it says.
 
 ### Button
 
-A toggle button that switches a parameter between its minimum and maximum values. It's useful for on/off parameters like bypass switches or enabling features.
+A toggle button that switches a parameter between its minimum and maximum values. Use it for on/off parameters such as bypass or feature switches.
 
 Right-click and choose **Set button text** to customise the label. If you don't set custom text and a parameter is assigned, the button shows the parameter's name automatically. Buttons can also use filmstrip images for their on/off states.
 
 ### XY
 
-A two-dimensional pad that controls two parameters simultaneously: one for the X axis and one for the Y axis. Drag anywhere on the pad to adjust both values at once. This is great for effects like filter cutoff vs. resonance or delay time vs. feedback.
+A two-dimensional pad that controls two parameters simultaneously: one for the X axis and one for the Y axis. Drag anywhere on the pad to adjust both values at once. It suits pairs such as filter cutoff and resonance, or delay time and feedback.
 
 **Reset after moving**: When enabled, the pad snaps back to the default values when you release the mouse. Useful for performance effects where you want temporary parameter changes.
 
@@ -150,7 +150,7 @@ A level meter that displays the output of a Level Meter plugin. Unlike other con
 
 **Stretch to fit**: When enabled, the meter stretches to fill its grid cells. When disabled, it maintains the aspect ratio of its image.
 
-> 📝 **Note:** You must have a Level Meter plugin on the track or in the rack for the meter control to display any levels. Assign the meter to the plugin via its right-click menu.
+> 📝 **Note:** The meter control only shows levels when there's a Level Meter plugin on the track or in the rack. Assign the meter to the plugin via its right-click menu.
 
 ## Working with Controls
 
@@ -174,7 +174,7 @@ Drag the edge to grow or shrink the control.
 
 ### Copying Controls
 
-Hold any modifier key (Cmd on Mac, Ctrl on Windows) while dragging a control to create a duplicate. The copy is placed wherever you drop it.
+Hold any modifier key (Shift, Ctrl, Opt / Alt or Cmd) while you drag a control from its centre to duplicate it. The cursor changes to a copy cursor, and the copy is placed wherever you drop it.
 
 ### Removing Controls
 
@@ -188,7 +188,7 @@ Right-click a control and choose **Send to back** to push it behind overlapping 
 
 ## Assigning Parameters
 
-Every control (except Label and Meter) needs to be connected to a plugin parameter before it does anything useful. There are several ways to make assignments.
+Every control (except Label and Meter) needs a plugin parameter assigned before it does anything. There are several ways to make assignments.
 
 ### Left-Click Assignment
 
@@ -196,7 +196,7 @@ In edit mode, left-click a control. A menu appears listing all available paramet
 
 ### Right-Click Assignment
 
-Right-click a control and look for the **Assign parameter** submenu. It offers:
+Right-click a control and open the **Assign parameter** submenu. It offers:
 - **None**: Removes any current assignment.
 - **Macros**: Lists macro parameters.
 - **Modifiers**: Lists modifier parameters (for racks).
@@ -227,7 +227,7 @@ Right-click the background and choose **Remove all assignments** to clear every 
 
 ## Background Customisation
 
-Right-click the faceplate background (not on a control) and look under the **Background** submenu.
+Right-click the faceplate background (not a control) and open the **Background** submenu.
 
 **Set colour**: Opens a colour picker to set a solid background colour behind all your controls.
 
@@ -311,7 +311,7 @@ When you show the faceplate in a plugin's own window and that plugin doesn't hav
 
 ### Loading a Preset
 
-Click the **Presets** button (file icon) in the edit toolbar. You'll see:
+Click the **Presets** button (file icon) in the edit toolbar. The menu has:
 
 - **Load plugin preset**: Shows only presets that were saved for this specific plugin type. Loads silently without prompting.
 - **Load generic preset**: Shows all available presets. Opens a dialog where you can choose which elements to import.
@@ -322,7 +322,7 @@ When loading a generic preset, you can selectively import:
 - **Controls**: All the knobs, sliders, labels, and so on.
 - **Background**: Colours and images.
 - **Parameter mappings**: Which parameters are wired to which controls (if the plugin has matching parameters).
-- **Show assign parameters options when done**: Pops up the auto-assign dialog after loading, so you can quickly remap controls.
+- **Show assign parameters options when done**: Opens the auto-assign dialog after loading, so you can remap controls.
 
 ### Saving a Preset
 
@@ -338,9 +338,7 @@ To remove a faceplate from a plugin entirely, click the **Presets** button and c
 
 ## Faceplates on Racks
 
-Faceplates work on racks as well as individual plugins. When building a faceplate for a rack, the parameter assignment menus list controls from all plugins within the rack, grouped by plugin name. You can also assign macro parameters and modifier parameters that belong to the rack. To tell two copies of the same plugin apart, give one a **Plugin Alias** in its Actions panel; the menus show the alias in brackets after the plugin's name.
-
-This makes faceplates especially useful for racks: you can build a single unified control surface that exposes the most important parameters from multiple plugins, all in one place.
+Faceplates work on racks as well as individual plugins. When building a faceplate for a rack, the parameter assignment menus list the parameters of every plugin in the rack, grouped by plugin name. You can also assign macro parameters and modifier parameters that belong to the rack. To tell two copies of the same plugin apart, give one a **Plugin Alias** in its Actions panel; the menus show the alias in brackets after the plugin's name.
 
 ## ⚡ Things to Watch Out For
 
@@ -348,11 +346,11 @@ This makes faceplates especially useful for racks: you can build a single unifie
 
 - **Grid resolution is permanent.** Doubling the grid resolution can't be undone by halving it, since the controls have already been scaled. Plan your grid size before placing many controls.
 
-- **Filmstrip frame count matters.** If a custom slider image looks wrong, right-click it and check **Set number of frames** under the skin menu. The auto-detection works well for square frames but can miscount with non-standard aspect ratios.
+- **Filmstrip frame count matters.** If a custom slider image looks wrong, right-click it and check **Set number of frames** in its **Skin** menu. The auto-detection works well for square frames but can miscount with non-standard aspect ratios.
 
-- **Presets store images.** Background images and filmstrip graphics are embedded in both the plugin state and preset files. Using very large images will increase the size of your Edit file.
+- **Presets store images.** Background images and filmstrip graphics are embedded in both the plugin state and preset files. Very large images increase the size of your Edit file.
 
-- **Quick Assign order is spatial.** Auto-assign and Quick Assign both process controls left to right, top to bottom. If your layout doesn't follow that reading order, the assignments may not land where you expect. Rearrange controls on the grid or use manual assignment instead.
+- **Quick Assign order is spatial.** Auto-assign and Quick Assign both process controls left to right, top to bottom. If your layout doesn't follow that reading order, assignments may not land where you expect: rearrange the controls or assign them by hand.
 
 ## Moving On
 

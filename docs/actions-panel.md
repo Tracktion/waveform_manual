@@ -1,6 +1,6 @@
 # The Actions Panel
 
-The Actions panel gives you a single place to see and run the things you can do to whatever you currently have selected. Select a track, a clip, a plugin, or a parameter, and the panel updates to show the actions that apply to it. It's a fast way to reach commands without hunting through menus, and it's where you go to mark your favourite actions so they show up in the action menu in the transport bar.
+The Actions panel gives you a single place to see and run the things you can do to whatever you currently have selected. Select a track, a clip, a plugin, or a parameter, and the panel updates to show the actions that apply to it. It's also where you mark your favourite actions so they show up in the action menu in the transport bar.
 
 ![](images/Actions%20Panel%201@2x.png)
 
@@ -10,7 +10,7 @@ The Actions panel gives you a single place to see and run the things you can do 
 
 The Actions panel is contextual. It watches what you have selected and shows a list of actions relevant to that selection. Click an empty area of the arrangement and you'll see Edit-level actions; click a track and you'll see track actions; click a clip and the list changes again.
 
-Many actions are more than just buttons. Depending on the action, a row might contain a toggle, a slider, a text field, or a dropdown, so you can change a value right there in the panel.
+Many actions aren't plain buttons. Depending on the action, a row might contain a toggle, a slider, a text field, or a dropdown, so you can change a value right there in the panel.
 
 To run an action, click its row. For an action that holds a value, interact with its control directly: type into the text field, drag the slider, or pick from the dropdown.
 
@@ -28,7 +28,7 @@ You can also assign a keyboard shortcut to show and hide the panel. Look for the
 
 ## The Breadcrumb
 
-At the top of the panel is a breadcrumb that shows the path to your current selection (for example, the track, then the clip, then a parameter within it). The breadcrumb is more than a label: click any item in it to jump back up to that level and show the actions for it.
+At the top of the panel is a breadcrumb that shows the path to your current selection (for example, the track, then the clip, then a parameter within it). Click any item in it to jump back up to that level and show its actions.
 
 This is handy when you've drilled down into a parameter and want to get back to the actions for the parent track or clip without re-selecting it in the arrangement.
 
@@ -38,9 +38,9 @@ This is handy when you've drilled down into a parameter and want to get back to 
 
 ## Favourites and Display Modes
 
-Not every action is something you use every day, so the panel lets you curate what it shows. Three small icon buttons at the top of the panel switch between display modes:
+Three small icon buttons at the top of the panel switch between display modes, so you can trim the list down to the actions you use:
 
-**Favourites (filled star)**: Shows only the actions you've marked as favourites. This keeps the list short and focused on the commands you actually reach for.
+**Favourites (filled star)**: Shows only the actions you've marked as favourites, which keeps the list short.
 
 **All actions (outline star)**: Shows every available action for the current selection, except the ones you've hidden. (Default)
 
@@ -64,17 +64,17 @@ See [Macros](macros.md) for how to write and manage the scripts themselves.
 
 On the dedicated Actions panel at the right of the Edit tab (not the Browser's **Actions** tab), two extra controls appear at the top left:
 
-**Lock**: Locks the panel to its current contents so it stops following your selection. This is useful when you want to keep a particular set of actions on screen while you click around elsewhere. Click it again to unlock and resume tracking the selection. Shortcut: Opt + F11 / Alt + F11 (**Lock/Unlock Actions panel**).
+**Lock**: Locks the panel to its current contents so it stops following your selection. Use it to keep a particular set of actions on screen while you click elsewhere. Click it again to unlock and resume tracking the selection. Shortcut: Opt + F11 / Alt + F11 (**Lock/Unlock Actions panel**).
 
 **Dock / Undock**: Pops the panel out into a floating window, or docks it back again. A floating Actions panel stays on top so you can keep it beside whatever you're working on.
 
 ## The Action Menu in the Transport Bar
 
-You don't have to open the full panel to get at your actions. The transport bar at the bottom of the window has its own breadcrumb that opens the same context-sensitive actions as a pop-up **action menu**, right where you're working. Click the breadcrumb to open the menu for the current selection, pick an action, and it's gone again.
+The transport bar at the bottom of the window has its own breadcrumb, which opens the same context-sensitive actions as a pop-up action menu without opening the full panel. Click the breadcrumb to open the menu for the current selection, then pick an action and the menu closes.
 
 The transport breadcrumb carries the same favourites / all / hidden mode buttons as the panel, but it remembers its own setting independently, so the menu can show only your favourites while the docked panel shows everything. By default the menu shows your favourites only, which is why marking favourites in the Actions panel matters.
 
-Shift-click the breadcrumb to see all actions for that item, ignoring the menu's usual mode. It's a quick way to reach something you haven't favourited without changing your setting. When the menu is open, press Return or Escape to dismiss it, or just click elsewhere.
+Shift-click the breadcrumb to see all actions for that item, ignoring the menu's usual mode. Use it to reach an action you haven't favourited without changing the menu's mode. When the menu is open, press Return or Escape to dismiss it, or click elsewhere.
 
 > 📝 **Note:** If the menu opens empty in favourites mode, you'll see "No actions to show. Mark some actions as favourites." Mark a few favourites in the Actions panel, or Shift-click to see everything.
 
@@ -98,7 +98,7 @@ Each set of buttons is saved as a named set, so you can keep different layouts f
 
 ### The Quick Actions Bar (Above the Transport)
 
-The Quick Actions bar can sit directly above the transport bar, always in view. To show or hide it, click the eye button at the upper right, then the **Show/Hide the quick actions panel** toggle. You can also use the View menu's **Show Quick actions bar** item, or assign a keyboard shortcut to the **Show or hide the quick actions bar** command. Here the bar is limited to a handful of rows, enough for the commands you reach for constantly.
+The Quick Actions bar can sit directly above the transport bar, always in view. To show or hide it, click the eye button at the upper right, then the **Show/Hide the quick actions panel** toggle. You can also use the View menu's **Show Quick actions bar** item, or assign a keyboard shortcut to the **Show or hide the quick actions bar** command. In this position the bar is limited to a handful of rows, enough for the commands you use most.
 
 ### The Quick Actions Window
 
@@ -114,7 +114,7 @@ Down the left edge of the window are three toggles that control what it shows: a
 
 ## ⚡ Things to Watch Out For
 
-- **If the panel looks empty, check the display mode.** In Favourites mode, the panel only shows actions you've starred. A selection with no favourited actions will look blank, so switch to the all-actions (outline star) mode to see what's available.
+- **If the panel looks empty, check the display mode.** In Favourites mode, a selection with no starred actions shows a blank list. Switch to the all-actions (outline star) mode to see what's available.
 
 ## Moving On
 

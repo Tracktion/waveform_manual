@@ -3,8 +3,8 @@
 > 📝 **Edition:** Waveform Pro.
 
 The Arranger track gives you a bird's-eye view of your song's structure. You divide the Edit into
-named, coloured **sections** (Intro, Verse, Chorus, Bridge, Outro, and so on) and then rearrange
-the whole song by dragging those sections instead of carefully moving clips on every individual track.
+named, coloured sections (Intro, Verse, Chorus, Bridge, Outro, and so on) and then rearrange
+the whole song by dragging those sections instead of moving clips track by track.
 
 When you move or copy a section, Waveform moves the underlying audio and MIDI clips *plus* any tempo,
 time-signature, and pitch events in that range, all in lock-step across every track. The Arranger
@@ -23,22 +23,20 @@ the track. The button tooltip reads "Show/Hide arranger track". You can also use
 command **"Show or hide Arranger track"** or the *View > Global tracks > Show Arranger track* menu
 item. Arranger track visibility is saved with the Edit and as part of each [layout](layouts.md).
 
-> 💡 **Tip:** If you use [layouts](layouts.md) to switch between different working setups, you can
-> include or exclude the Arranger track in each layout. This is useful for keeping the screen tidy when you are focused
-> on mixing rather than arrangement.
+> 💡 **Tip:** If you use [layouts](layouts.md) to switch between working setups, you can include or
+> exclude the Arranger track in each one, for example to keep the screen tidy while you're mixing.
 
 
 ## Creating Sections
 
-To draw a new section, **hold Shift, Cmd / Ctrl or Opt / Alt and drag** across the Arranger track.
-Any of these modifier keys works. The cursor changes to a pencil while you drag, and the section snaps
-to the current snap grid.
+To draw a new section, hold Shift, Cmd / Ctrl or Opt / Alt and drag across the Arranger track.
+The cursor changes to a pencil while you drag, and the section snaps to the current snap grid.
 
 You can also select the Arranger track and press **G** (**Insert a new MIDI clip into the selected
 track**), which adds a section instead of a MIDI clip.
 
-> 💡 **Tip:** A plain drag on the Arranger track does *not* draw a section. You must hold a modifier
-> key first.
+> 💡 **Tip:** A plain drag on the Arranger track does *not* draw a section; you need to hold one of
+> those modifier keys.
 
 Once a section exists, click it to select it. You can rename and recolour it from the Actions panel
 (see [Section Properties](#section-properties) below).
@@ -57,8 +55,8 @@ Drag a section and drop it to rearrange your song. A menu appears when you relea
 **Move section** shifts the source content to the destination position. **Copy section** duplicates
 it. **Swap** exchanges the two sections' content; **Replace** overwrites the target with the source.
 
-> 📝 **Note:** **Swap** and **Replace** silently abort if the two sections overlap. No error message
-> is shown. Make sure the sections do not overlap before using these operations.
+> 📝 **Note:** **Swap** and **Replace** do nothing, and show no error, if the two sections overlap,
+> so make sure they don't overlap first.
 
 When you have tracks selected, a Copy or Move operation affects only those tracks. With no tracks
 selected, it affects all tracks (the Arranger track itself is always included). This lets you make

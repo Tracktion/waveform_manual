@@ -1,23 +1,21 @@
 # Quantising MIDI Notes
 
-The idea of quantising is to correct the timing your MIDI performances.
-At a basic level, quantising snaps each note to the nearest correct note
-on a virtual grid defined by the bars and beats of your song. Waveform
-gives you tools to define that grid in musical increments like quarter
-note, eighth note, but it does so using divisions of a beat.
+Quantising corrects the timing of your MIDI performances. At its
+simplest, it snaps each note to the nearest position on a grid defined by
+the bars and beats of your song. Waveform sets that grid in musical
+increments such as quarter notes and eighth notes, but expresses them as
+divisions of a beat.
 
-Waveform takes quantising further with groove templates. Groove
-templates allow you to quantise in a way that's not perfectly aligned to
-straight timing. An important use of this is to introduce musical swing
-to the timing. You have all the tools needed to impart the desired feel
-into your performance.
+Groove templates take quantising further. They quantise to timing that
+isn't perfectly straight, most often to add swing, so you can give a
+performance the feel you want.
 
 ## How to Quantise
 
-Within a MIDI clip, select all the notes you want to quantise. If you
-want to quantise all of them, you can use select all (Cmd + A / Ctrl +
-A). The quantise actions are available by clicking **Quantise** in the
-Actions panel or in the MIDI editor's toolbar.
+In a MIDI clip, select the notes you want to quantise. To quantise all
+of them, use select all (Cmd + A / Ctrl + A). Then click **Quantise** in
+the Actions panel or in the MIDI editor's toolbar to see the quantise
+actions.
 
 
 ![](images/26----01.png)
@@ -27,16 +25,14 @@ Actions panel or in the MIDI editor's toolbar.
 There are five quantise actions: **Quantise note start times**,
 **Quantise note lengths**, **Quantise note start and end times**, **Quantise
 note starts, leaving ends intact** and **Quantise note ends, leaving
-starts intact**. The most common option is the first one, **Quantise note
-start times**. To complete the action, you pick which beat division to
-use.
+starts intact**. The most common is the first, **Quantise note start
+times**. To complete the action, pick the beat division to use.
 
-The beat division selection can be a little confusing. Musical divisions
-in Waveform are represented as fractions of one beat. For example, if
-you want to quantise to eighth notes and you're in 4/4 time, then you
-select **To nearest 1/2 beat**. One half of one beat would be an eighth note.
-If you want to quantise to sixteenth notes, then select **To nearest 1/4
-beat** from this menu.
+The beat divisions can be a little confusing, because Waveform shows
+musical divisions as fractions of one beat. For example, to quantise to
+eighth notes in 4/4 time, select **To nearest 1/2 beat**, since half a
+beat is an eighth note. To quantise to sixteenth notes, select **To
+nearest 1/4 beat**.
 
 
 ![](images/26----02.png)
@@ -48,58 +44,47 @@ beat** from this menu.
 
 *MIDI Notes After Quantising Note Starts to Nearest 1/2 Beat*
 
-You'll notice right away that quantising perfectly tightens up
-the performance. It will snap the notes to the nearest increment of the
-division that you selected.
+Quantising tightens the performance straight away by snapping each note
+to the nearest increment of the division you chose.
 
-> 📝 **Note:** If you're playing was so far off that it actually snaps it to
-the wrong note, then you might need to do some MIDI editing to clean
-that up!
+> 📝 **Note:** If a note was played so far off that it snaps to the wrong position, fix it by hand in the MIDI editor.
 
-> 💡 **Tip:** Some styles of music are based on perfectly quantised timing
-while other styles aren't. To get a more natural feel but also fix
-timing errors, you can always edit timing note-by-note manually with
-**Snap** turned off. Groove quantising also gives you other options for
+> 💡 **Tip:** Some styles of music rely on perfectly quantised timing and others don't. To fix timing errors but keep a more natural feel, edit the timing note by note with **Snap** turned off. Groove quantising also gives you other options for
 "quantising with feel"; see [Quantising with Groove](#quantising-with-groove).
 
 ## Quantising Note Lengths
 
-If you choose the option to quantise the note lengths you'll see that
-the notes become the full length of that particular note value.
+When you quantise note lengths, each note becomes the full length of the
+chosen note value.
 
 
 ![](images/26----04.png)
 
 *Note Lengths Quantised to 1/2 beat*
 
-With something like a piano part, this can lead to a choppy, unnatural
-feel. You could try quantising the note lengths to 1/4 beat (sixteenth
-note) if the playing is that inconsistent.
+On a piano part, this can sound choppy and unnatural. If the
+playing is that inconsistent, try quantising the note lengths to 1/4 beat
+(a sixteenth note) instead.
 
-In most cases, it's not really important to quantise the note lengths.
-It can be useful for things like quantising the note lengths on drum
-parts, because it helps play out the full attack and decay of a drum
-hit.
+Quantising note lengths usually isn't necessary. It can help on drum
+parts, because it lets each drum hit play out its full attack and decay.
 
 ## Quantising with Groove
 
-Next let's look at how to quantise with groove. This feature can be as
-simple a choosing a preset, or as complex as finely programming a groove
-template. Groove can be applied to both MIDI clips and Step clips, which
-are covered in [Step Clips](step-clips.md).
+Quantising with groove can be as simple as choosing a preset or as
+detailed as programming your own groove template. You can apply groove to
+both MIDI clips and Step clips (see [Step Clips](step-clips.md)).
 
-First lets look at the basics:
-
-Select the notes to quantise and click **Apply Groove** in the Actions
-panel, or **Groove** in the MIDI editor's toolbar.
+To start with the basics, select the notes to quantise and click
+**Apply Groove** in the Actions panel, or **Groove** in the MIDI editor's toolbar.
 
 
 ![](images/26----18.png)
 
 *Apply Groove in the Actions panel*
 
-You will then get a menu of groove templates that apply fine
-adjustments to the timing. When you choose one, a **Groove strength**
+A menu of groove templates appears, each applying fine adjustments to
+the timing. When you choose one, a **Groove strength**
 window asks how strongly to apply it (0 to 100). Waveform remembers the
 last strength you used. The older templates with a fixed strength in
 their name (such as **Swing 1/2 60%**) are in the **Legacy groove
@@ -110,10 +95,9 @@ templates** submenu, and apply straight away.
 
 *Apply Groove Presets in Options*
 
-The most common scenario is to apply swing: Delaying the eighth notes
-that follow the four primary beats in a bar. To locate the groove
-template for standard swing, choose **Swing 1/2**. Swing 1/2 as in half
-beat. In normal musical terms, that's eighth note swing. To apply a nice
+The most common use is swing: delaying the eighth notes that follow the
+four main beats of a bar. For standard swing, choose **Swing 1/2**, where
+1/2 means half a beat, or eighth-note swing in musical terms. For a
 groovy swing, try **Swing 1/2** with a strength of 60.
 
 
@@ -135,9 +119,8 @@ how much delay, from subtle (low values) to dramatic (high values).
 
 *After Applying Groove: Swing 1/2 at 60% Strength*
 
-After you apply swing, you'll see it lays back all of the "and" notes to
-be a little late; groovy! Waveform will also adjust the note lengths
-appropriately as shown above.
+After you apply swing, all the "and" notes sit a little late. Waveform
+also adjusts the note lengths to match, as shown above.
 
 ## Clip Quantise and Groove
 
@@ -161,18 +144,16 @@ and the original timing comes back.
 
 ## Defining Groove Templates
 
-For more control, you can build grooves to your own
-definition using the Groove Template Editor. At the bottom of the **Apply
-Groove** menu, you'll find **Edit groove templates...**. You can also
-choose *View > Open Groove template editor* in the main menu.
+For more control, build your own grooves in the Groove Template Editor.
+Choose **Edit groove templates...** at the bottom of the **Apply Groove**
+menu, or *View > Open Groove template editor* in the main menu.
 
 
 ![](images/26----09.png)
 
 *View > Open Groove template editor*
 
-Select this to open the groove template editor. Click on any of the
-presets to see how the logic works.
+Click any of the presets in the editor to see how it's built.
 
 
 ![](images/26----10.png)
@@ -180,43 +161,40 @@ presets to see how the logic works.
 *Groove Template Editor*
 
 In the image above, the legacy **Swing 1/2 60%** template is selected,
-which matches the swing used for the examples in this chapter. A groove template consists of a
-pattern length, note subdivision, and the timing for each note. For each
-step of the pattern, you choose the amount that that note falls 'early'
-or 'late' relative to perfect timing.
+which matches the swing used for the examples in this chapter. A groove
+template consists of a pattern length, a note subdivision and the timing
+for each note. For each step of the pattern, you choose how far that note
+falls 'early' or 'late' relative to perfect timing.
 
 
 ![](images/26----11.png)
 
 *Swing 1/2 60% Template Example*
 
-The example in the figure shown above is the setup for a basic swing
-beat, with each 'and' eighth-note delayed. You can adjust the intensity
-of the swing feel by how much delay you put on the eighth notes.
+The figure above shows a basic swing beat, with each 'and' eighth note
+delayed. The more delay you put on those eighth notes, the stronger the
+swing feel.
 
 ## Complex Groove Templates
 
-Since you can create groove templates with as many steps as you want,
-you can dial in exactly the feel you want. For example if you want to
-vary the swing within the bar of music, you could create a template with
-eight notes with each swing element slightly different.
+A groove template can have as many steps as you like, so you can dial in
+exactly the feel you want. For example, to vary the swing within a bar,
+create a template with eight notes, each with a slightly different swing.
 
 
 ![](images/26----12.png)
 
 *Groove Template with Variable Swing*
 
-Alternatively, you can create a groove that pushes the timing over two
-bars, which will give excitement and tension like the **Fast Slow 2** template.
+You can also create a groove that pushes the timing over two bars to add
+excitement and tension, like the **Fast Slow 2** template.
 
 
 ![](images/26----13.png)
 
 *Fast Slow 2 Groove Template*
 
-> 💡 **Tip:** It can also be useful to create a 'No Groove' template to help
-you remove the effect of groove. This is particularly useful when
-applying groove templates to Step clips; see [Step Clips](step-clips.md).
+> 💡 **Tip:** A 'No Groove' template is a handy way to remove the effect of a groove, particularly on Step clips; see [Step Clips](step-clips.md).
 
 
 ![](images/26----14.png)
@@ -227,7 +205,7 @@ applying groove templates to Step clips; see [Step Clips](step-clips.md).
 
 The **Groove Templates** window has buttons to **Create a New Template...**,
 **Rename Template...**, **Import Template...** and **Export Template...**.
-Exported templates have the `.trkgroove` file extension, so you can share
+Exported templates have the `.trkgroove` file extension, and you can share
 them with other Waveform users or installations.
 
 
@@ -235,18 +213,16 @@ them with other Waveform users or installations.
 
 *Create, Rename, Import, or Export Groove Templates*
 
-While editing a groove template, you may reset it with **Reset
-Template...**. This removes the
-late/early timing for the pattern, but doesn't change the length or note
-division settings.
+While editing a groove template, you can reset it with **Reset
+Template...**. This removes the early and late timing from the pattern
+but leaves the length and note division settings as they are.
 
 
 ![](images/26----16.png)
 
 *Resetting a Groove Template*
 
-Any groove template that you don't need, you can delete using **Delete
-Template**.
+To delete a groove template you don't need, use **Delete Template**.
 
 
 ![](images/26----17.png)

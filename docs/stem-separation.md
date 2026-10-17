@@ -4,13 +4,12 @@
 > also needs the Stem Separation feature pack (see below).
 
 Stem separation splits a mixed Audio clip into its constituent parts
-(**drums**, **vocals**, **bass**, and **other**) using an on-device
-neural model. Reach for it when you want to isolate a vocal for a remix,
+(drums, vocals, bass and other) using an on-device neural model. Reach for it when you want to isolate a vocal for a remix,
 pull out a drum loop, or turn a finished mix into an instrumental, all
 without the original multitrack.
 
-The separation is powered by **Demucs**, Meta's open-source music source
-separation model. It runs **entirely on your own machine** as a bundled
+The separation is powered by Demucs, Meta's open-source music source
+separation model. It runs entirely on your own machine as a bundled
 background process. Nothing is uploaded and no internet connection is
 needed once the model is installed.
 
@@ -20,8 +19,7 @@ needed once the model is installed.
 
 ## What You Need
 
-Stem separation has two requirements, and both must be in place before
-the feature will run:
+Stem separation needs two things in place before it will run:
 
 1. **Waveform Pro or the DJ Mix Tools Expansion.** Either one switches
    the feature on. It isn't available in the Free or OEM editions
@@ -50,26 +48,25 @@ reference for details.
 
 ## Separating a Clip
 
-1. Right-click an Audio clip and choose **Split to stems**.
-2. The **Separate to Stems** dialog opens, warning that it "will separate
+1. Right-click an Audio clip and choose **Split to stems**. The
+   **Separate to Stems** dialog opens, warning that it "will separate
    the source file of `<clip>` to its constituent parts" and that "This
    may take a while depending on the length of the material."
-3. Pick a **Separation type** from the dropdown:
+2. Pick a **Separation type** from the dropdown:
    - **Four Stems (drums, vocals, bass, other)**: the default; produces
      all four stems.
    - **Two Stems (extract drums)** / **(extract bass)** / **(extract
      vocals)** / **(extract other)**: produces just the chosen stem plus
      its residual, e.g. "Vocals" and "No Vocals".
-4. Click **Separate**.
+3. Click **Separate**.
 
 If the clip's source isn't already a WAV, Waveform first converts it to a
 temporary WAV ("Preparing for Stem Separation"). It then runs the
 separation itself, in a window titled **Separating Stems** that reads
-"Extracting stems from: `<clip>`",
-showing a progress bar and a **Cancel** button throughout. The job auto-
-scales across your CPU cores.
+"Extracting stems from: `<clip>`", showing a progress bar and a **Cancel**
+button throughout. The job scales automatically across your CPU cores.
 
-When it finishes, Waveform inserts **one new audio track per stem**
+When it finishes, Waveform inserts one new audio track per stem
 directly after the original track, named after the clip with the stem in
 parentheses: `<clip> (Drums)`, `<clip> (Vocals)`, and so on. Each new
 track holds a copy of the original clip remapped to its stem file, so the
@@ -80,18 +77,19 @@ project's rendered-media folder.
 
 *Stem tracks inserted beneath the original clip*
 
-The **original clip and track are left untouched**. The stems are added
+The original clip and track are left untouched, and the stems are added
 alongside them. Mute or delete the original yourself once you're happy
 with the result.
 
 ## ⚡ Things to Watch Out For
 
-> ⚠️ **Warning:** Separation runs on the clip's **whole source file, not
-> just the trimmed clip**. If you separate a short clip taken from a long
-> recording, Demucs still processes the entire underlying file. Trim or
-> consolidate the clip down first if you only want part of it.
+> ⚠️ **Warning:** Separation runs on the clip's whole source file, not
+> just the trimmed clip. If you separate a short clip taken from a long
+> recording, Demucs still processes the entire underlying file. If you
+> only want part of it, trim the clip and then render it to a new file
+> first with *Render Clip > Flatten the selected clip* in the Actions panel.
 
-> 📝 **Note:** If you've selected several clips, only the **first** one is
+> 📝 **Note:** If you've selected several clips, only the *first* one is
 > separated. Run the command again for each clip you want to split.
 
 > 📝 **Note:** The stems are lossless WAVs, so they take up roughly the

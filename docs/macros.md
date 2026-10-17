@@ -1,39 +1,35 @@
 # Macros
 
-Waveform includes not only programmable shortcuts, but also a full macro
-programming environment. You can develop keyboard shortcuts that combine
-actions in new ways to streamline your workflow. If the standard
-keyboard shortcuts don't meet your needs, you can create custom macros
+As well as programmable keyboard shortcuts, Waveform has a full macro
+programming environment. If the standard keyboard shortcuts don't do
+what you need, you can write macros that combine actions in new ways,
 and assign keyboard shortcuts to them.
 
-While you might think of macros as keyboard macros, you don't have to
-assign them to keyboard shortcuts. You can always launch them from the
-main menu's **Actions** submenu. This approach can be useful
-because you don't have to remember the shortcut to macros you only use
-occasionally.
+Macros don't have to be assigned to keyboard shortcuts. You can always
+run them from the **Actions** menu in the main menu, which saves
+remembering shortcuts for macros you only use occasionally.
 
 ## Macro Editor
 
-To open the Macro Editor, open *Settings > Keyboard Shortcuts*. Click **Show Macro Editor** at the bottom right
-of the Keyboard Shortcuts page. The Macro Editor will open.
+To open the Macro Editor, open *Settings > Keyboard Shortcuts* and
+click **Show Macro Editor** at the bottom right of the page.
 
 ![](images/37----01.png)
 
 *The Macro Editor*
 
-You can resize the height of the Macro Editor by dragging the line that
-separates it from the keyboard shortcuts list. The Macro Editor is a
-basic text editor that you use to enter and edit macro scripts.
+Drag the line between the Macro Editor and the keyboard shortcuts list
+to change the editor's height. The Macro Editor is a basic text editor
+for entering and editing macro scripts.
 
 **Call on key up and down**: Normally a macro runs once, when its key is
 pressed. Turn this on to run it on both the key press and the key
 release; the script can check `Tracktion.isKeyDown` to tell the two
 apart. (Default: off)
 
-> 💡 **Tip:** With the Macro Editor open, try clicking on some of the
-existing keyboard shortcuts. The Macro Editor will show you the
-underlying code, you can use this to get familiar with the syntax of the
-actions triggered by each shortcut.
+> 💡 **Tip:** With the Macro Editor open, click some of the existing
+keyboard shortcuts. The Macro Editor shows the underlying code, which
+helps you learn the syntax of the actions each shortcut triggers.
 
 ## Creating a Macro
 
@@ -45,32 +41,28 @@ keyboard shortcuts list under the Macros section.
 
 *Adding a New Macro*
 
-As soon as the new macro is created, the name defaults to *Untitled
-Macro* and is selected. Start typing to give it a suitable name.
+The name is selected as soon as the macro is created, so start typing
+to give it a suitable name.
 
-In the body of the macro, you can type in a list of actions to create
-the script. The easiest way is to build your macros using the
-right-click menu; more on that in a bit! Actions are separated by
-semicolons.
+In the body of the macro, type a list of actions, separated by
+semicolons. The easiest way to build a macro is from the right-click
+menu, described in [Programming a Macro](#programming-a-macro).
 
 To show a macro in the Actions panel whenever you select a particular
 type of item, see [The Actions Panel > Adding Macros](actions-panel.md#adding-macros).
 
 ## Deleting a Macro
 
-While you can't delete the built-in keyboard shortcuts, you can delete
-any custom macros you create. To do so, select the macro to delete in
-the keyboard shortcuts list, and click **Delete** in the Macro
-Editor.
+You can't delete the built-in keyboard shortcuts, but you can delete
+any macro you create: select it in the keyboard shortcuts list and click
+**Delete** in the Macro Editor.
 
 ## Programming a Macro
 
 The simplest macro is made up of a single action. You can pick any
 available action by right-clicking the Macro Editor and navigating
 through the three collections of actions listed under its **Actions**
-heading. When you find an action you
-want to use, select it and the appropriate code will be inserted into
-the script.
+heading. Select an action and its code is inserted into the script.
 
 ![](images/37----03.png)
 
@@ -78,12 +70,11 @@ the script.
 
 -   **Keyboard shortcuts** includes all the built-in keyboard
     shortcuts shown on the Keyboard Shortcuts page.
--   **Basic actions** includes available actions that are not
-    necessarily available as pre-assigned shortcuts.
--   **Advanced actions** includes actions that allow you to
-    manipulate selected objects and even display messages on the screen.
-    Advanced actions are provided as tools for more advanced script
-    programming.
+-   **Basic actions** includes actions that don't necessarily have
+    pre-assigned shortcuts.
+-   **Advanced actions** includes actions that manipulate selected
+    objects and even display messages on the screen, for more advanced
+    scripts.
 
 Below these, the **User macros** and **Custom** submenus let you insert
 your own macros and the items from your Custom Menu.
@@ -92,23 +83,22 @@ your own macros and the items from your Custom Menu.
 
 There are several ways to run a macro:
 
-1.  Assign it to a keyboard shortcut. Keyboard shortcuts are assigned to
-    macros in the very same way as the built-in shortcuts. Find the
-    macro in the list and click the "+" to the far right and enter the
-    desired key combination.
-2.  Choose *Actions > User macros* from the Edit tab's main menu. All
-    your custom macros appear there automatically. Select the
-    one you want to run.
+1.  Assign it to a keyboard shortcut, in the same way as the built-in
+    shortcuts: find the macro in the list, click the "+" at the far
+    right and enter the key combination.
+2.  Choose *Actions > User macros* from the Edit tab's main menu, where
+    all your custom macros appear automatically, and select the one you
+    want to run.
 
 ![](images/37----09.png)
 
 *Running macros from Actions > User macros*
 
-3.  Add macros to the Custom Menu. At the bottom of the Keyboard
-    Shortcuts page, click **Show Custom Menu** to open the Custom Menu
-    Editor. Then drag your macros (or any built-in actions) into it.
-    Arrange it using drag and drop, add groups, and rename groups.
-    Access the Custom Menu from the Edit tab's main menu:
+3.  Add macros to the Custom Menu. Click **Show Custom Menu** at the
+    bottom of the Keyboard Shortcuts page to open the Custom Menu
+    Editor, then drag your macros (or any built-in actions) into it.
+    You can arrange the menu by drag and drop, and add and rename
+    groups. Open the Custom Menu from the Edit tab's main menu:
     *Actions > Custom*.
 
 ![](images/37----10.png)
@@ -117,19 +107,17 @@ There are several ways to run a macro:
 
 ## JavaScript Programming
 
-Beyond creating simple step-by-step lists of actions, you can write macros
-in JavaScript. The Macro
-Editor allows you to program loops and conditions using JavaScript
-syntax. It even provides colour coding for the elements of the script.
+As well as step-by-step lists of actions, you can write macros in
+JavaScript, with loops and conditions. The Macro Editor colour-codes the
+elements of the script.
 
 ![](images/37----04.png)
 
 *JavaScript Macro Example*
 
-> 📝 **Note:** Waveform actions are exposed as methods using 'dot' notation.
-By that, we mean that they start with the word Tracktion, then a dot,
-then the method. Following the method you can provide one or more
-parameter in parenthesis.
+> 📝 **Note:** Waveform actions are methods written in 'dot' notation:
+the word Tracktion, a dot, then the method, followed by one or more
+parameters in brackets.
 
 ![](images/37----05@2x.png)
 
@@ -157,29 +145,26 @@ all three objects in your web browser.
 
 ## Hover Tooltip
 
-If you hover over an action in the Macro Editor for a second or two,
-you will see a tooltip bubble explaining what parameters the action
-takes. If the action returns values, you will see the syntax of that.
-These tooltips give you key information when programming macros.
-Waveform's developers use this to give you meaningful clues about how
-each of the actions work.
+Hover over an action in the Macro Editor for a second or two to see a
+tooltip explaining which parameters it takes and, if it returns values,
+their syntax. These tooltips are the quickest guide to how each action
+works.
 
 ![](images/37----08.png)
 
 *Hover Over an Action for a Tooltip*
 
-In the above example, the tooltip shows that the zoom action takes
+In this example, the tooltip shows that the zoom action takes
 two double precision numeric parameters. The first is the x-proportion
 (the amount of horizontal zoom), and the second is the y-proportion (the
 amount of vertical zoom, the track height).
 
 ## RTZ Macro Example
 
-By default Waveform doesn't have a true return-to-zero (RTZ) keyboard
-shortcut. The built-in command stops first if it encounters the In marker,
-so you need to hit it twice to really get back to zero. However, you
-can create a macro that performs does the action twice, always returning
-the cursor to the start of the Edit.
+By default, Waveform has no true return-to-zero (RTZ) keyboard
+shortcut. The built-in command stops at the In marker first, so you need
+to press it twice to get back to zero. A macro that runs the action
+twice always returns the cursor to the start of the Edit.
 
 ![](images/37----06.png)
 
@@ -189,12 +174,12 @@ For example, you could assign the RTZ macro to the **Home** key.
 
 ## Merge Clips Macro Example
 
-Another feature that you may use often is merging clips. Normally you
-use this by selecting a few clips on a track that you want to combine to
-a single clip. Then you click **Render Clip** in the Actions panel and
-choose **Merge the selected clips**. If you do this frequently, assign a
-key to the built-in **Merge selected clips** command in *Settings > Keyboard
-Shortcuts*, or call `Tracktion.mergeSelectedClips();` as one step of
+Merging clips is another task you may do often. Normally you select the
+clips on a track that you want to combine into a single clip, click
+**Render Clip** in the Actions panel and choose **Merge the selected
+clips**. If you do this frequently, assign a key to the built-in
+**Merge selected clips** command in *Settings > Keyboard Shortcuts*, or
+call `Tracktion.mergeSelectedClips();` as one step of
 a longer macro. Pick a free key: Cmd + G / Ctrl + G is already used by
 **Group clips**.
 
@@ -204,11 +189,10 @@ a longer macro. Pick a free key: Cmd + G / Ctrl + G is already used by
 
 ## Importing and Exporting Macros
 
-Macros are actually just simple text. You can easily copy and paste the
-text directly in and out of the Macro Editor. In addition, Waveform has
-dedicated buttons to import and export macro scripts as XML files with a
-`.tracktionscript` extension. You can also drag script files straight
-onto the Keyboard Shortcuts page to import them.
+Macros are plain text, so you can copy and paste them in and out of the
+Macro Editor. Waveform also has buttons to import and export macro
+scripts as XML files with a `.tracktionscript` extension, and you can
+drag script files onto the Keyboard Shortcuts page to import them.
 
 ![](images/37----11.png)
 
@@ -216,8 +200,7 @@ onto the Keyboard Shortcuts page to import them.
 
 ## Example Scripts
 
-Waveform's engineers have supplied code samples of several macro scripts
-to get you started:
+These example scripts from Waveform's engineers will get you started:
 
 ```js
 // Rename Clips From Track
@@ -322,5 +305,6 @@ for (var i = 0; i < tracks.length; ++i)
 
 ## Moving On
 
-These are fairly simple examples. Waveform users are only just starting
-to explore what macro programming in Waveform can do.
+For every available action and object, click **Show API** in the Macro
+Editor. To run macros from the selection-aware Actions panel, see
+[The Actions Panel](actions-panel.md#adding-macros).

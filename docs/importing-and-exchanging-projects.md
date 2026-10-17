@@ -33,7 +33,7 @@ tab. It never merges into the Edit you're currently working on.
 
 To send your Edit to another DAW, select *File > Export Other > Export as
 DAWproject file...* and choose where to save the `.dawproject` file. The
-file is written immediately. Again, there are no options to configure.
+file is written immediately, and there are no options to set.
 
 By default the export is self-contained: the audio and your plugin state
 are embedded in the single `.dawproject` file, so you can hand off just
@@ -41,8 +41,8 @@ that one file.
 
 ### What Does and Doesn't Travel
 
-A DAWproject carries a lot, but not everything. Check the
-limits before you rely on it for an important hand-off.
+A DAWproject carries a lot, but not everything. Check the limits before
+you rely on it for an important hand-off.
 
 What comes across:
 
@@ -58,7 +58,8 @@ What comes across:
 What does *not* come across:
 
 - **Automation curves** on tracks and plugins (the biggest gap: volume,
-  pan, and plugin-parameter moves are not transferred)
+  pan, and plugin-parameter moves are not transferred, so bounce
+  automation-heavy tracks to audio first if you need them to translate)
 - Sends and bus routing
 - Step clips and Edit clips (these are Waveform-specific)
 - Clip pitch-shifting and time-stretch settings
@@ -101,9 +102,9 @@ when you copy the project across.
 ## Working With Project Archives
 
 A Waveform archive is a single `.zip` file that bundles an Edit together
-with all of the media it references. It's the right way to back up a
-finished project or send a complete session to someone else, because
-nothing gets left behind.
+with all of the media it references. It's the best way to back up a
+finished project or send a complete Edit to someone else, because nothing
+gets left behind.
 
 ### Importing an Archive
 
@@ -120,8 +121,8 @@ are merged into the target project.
 
 > 📝 **Note:** If the project is read-only you'll see "Can't import into
 this project, because it's read-only" and nothing happens. Importing into
-a folder-based project does nothing either, because archives merge into a normal
-Waveform project.
+a folder-based project does nothing either, because archives merge into a
+normal Waveform project.
 
 ### Creating an Archive
 
@@ -129,7 +130,7 @@ To create an archive, select *File > Create an archive of this edit...*. You
 can also choose **Share an archive of this Edit** from the media list's
 Share menu, click a project's **Create Archive...** button, or click an
 Edit's **Archive Edit** button on the Projects tab. The **Create Archive**
-dialog has just two controls.
+dialog has two controls.
 
 **Destination file**: Where the `.zip` is saved. Waveform suggests a name
 based on the Edit, ending in `Archive 1.zip`, and bumps the number
@@ -146,13 +147,6 @@ compression** is slowest and smallest. (Default: Normal compression
 When you confirm, Waveform consolidates every piece of referenced media
 into a standard `.zip`, showing a progress bar you can cancel. If a file
 of the same name already exists, you'll be asked before it's overwritten.
-
-## ⚡ Things to Watch Out For
-
-- **DAWproject doesn't carry your automation.** If your mix relies on
-  volume rides, pan moves, or plugin automation, those won't survive the
-  round-trip. Bounce automation-heavy tracks to audio first if you need
-  them to translate.
 
 ## Moving On
 

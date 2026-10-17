@@ -2,15 +2,15 @@
 
 > 📝 **Edition:** Waveform Pro, or with the Recording Engineer Expansion.
 
-An Edit Mix Group links two or more **audio tracks** together so that an action you perform on one
+An Edit Mix Group links two or more audio tracks together so that an action you perform on one
 member is mirrored on the others. Adjust the fader on a grouped vocal track and every other track in
 the group moves with it; mute one and they all mute. This is the classic mixing-console idea of a
-fader group, brought into Waveform's mixer.
+fader group, brought into Waveform's mixer. Only audio tracks can join a group.
 
-Exactly *which* actions are linked is up to you. A group is not all-or-nothing: it has **ten
-independent link toggles** plus a master **Enable** switch, so you might link only volume and mute on one group, while another group links
-panning, solo, and track colour as well. By default a new group links **volume and mute** (and is
-enabled); everything else is left switched off until you turn it on.
+Exactly *which* actions are linked is up to you. A group is not all-or-nothing: it has ten
+independent link toggles plus a master **Enable** switch, so you might link only volume and mute on
+one group, while another group links panning, solo and track colour as well. By default a new group
+is enabled and links volume and mute; everything else stays off until you turn it on.
 
 
 ![](images/mixgroups_1@2x.png)
@@ -20,15 +20,15 @@ enabled); everything else is left switched off until you turn it on.
 
 ## What Gets Linked
 
-Each group exposes the following toggles in the Actions panel. The **Enable** toggle is the
+Each group has the following toggles in the Actions panel. The **Enable** toggle is the
 master switch: when it is off, the group does nothing, regardless of the other settings. Hover over a
 toggle to see its tooltip (for example "Link volume operations").
 
 | Toggle | Default | What it links |
 |---|---|---|
-| **Enable** | **On** | Master switch: when off, nothing in the group propagates |
-| **Volume** | **On** | Fader moves, applied proportionally (relative balance is preserved) |
-| **Mute** | **On** | Mute state |
+| **Enable** | On | Master switch: when off, nothing in the group propagates |
+| **Volume** | On | Fader moves, applied proportionally (relative balance is preserved) |
+| **Mute** | On | Mute state |
 | **Editing** | Off | Clip take selection and comp edits for clips at the same timeline position |
 | **Pan** | Off | Pan, applied as an offset (relative pan positions are preserved) |
 | **Solo** | Off | Solo and solo-isolate |
@@ -38,17 +38,18 @@ toggle to see its tooltip (for example "Link volume operations").
 | **Track Height** | Off | Track height |
 | **Visiblity** | Off | Track visibility (show/hide). The label is spelt this way in the app. |
 
-> 📝 **Note:** Volume is linked **proportionally** and pan is linked **as an offset**, so grouped
-> tracks keep the relative balance and panning you set up. They do *not* all snap to the same value.
-> The reference positions used for this are captured at the moment the group is enabled or a track is
-> added to it.
+> 📝 **Note:** Volume is linked proportionally and pan is linked as an offset, so grouped tracks keep
+> the relative balance and panning you set up. They do *not* all snap to the same value. The reference
+> positions used for this are captured at the moment the group is enabled or a track is added to it.
+> Because the link is relative, a group sits on top of your existing mix balance: turning it off leaves
+> every track exactly where it was.
 
 
 ## The Group Property Panel
 
 Selecting a group (for example, by clicking its header icon, described below) shows its settings in
-the Actions panel. Double-clicking a group in the **Groups** tab of the Browser opens the same settings in an
-**Edit / Mix Group** pop-out window.
+the Actions panel. Double-clicking a group in the **Groups** tab of the Browser opens the same
+settings in an **Edit / Mix Group** pop-out window.
 
 | Control | Purpose |
 |---|---|
@@ -59,13 +60,10 @@ the Actions panel. Double-clicking a group in the **Groups** tab of the Browser 
 | **Delete** | Removes the group (shown as a red button). Deleting a group never deletes its tracks. |
 
 > 💡 **Tip:** A group with no name displays its position in the list (1, 2, 3...) so you can still tell
-> groups apart. Giving busy groups descriptive names such as "Drums" or "BG Vox" makes them much easier to
-> work with.
+> groups apart. Descriptive names such as "Drums" or "BG Vox" make busy groups easier to work with.
 
 
 ## Creating and Managing Groups
-
-There are several ways to work with groups, so you can use whichever fits your workflow.
 
 ### Create a Group
 
@@ -77,8 +75,8 @@ There are several ways to work with groups, so you can use whichever fits your w
 ### Add or Remove Tracks
 
 - Use the **Tracks** checklist in the group's settings.
-- Or, from a track's Actions panel, click the **Groups** button to add the track to a new group, set it to
-  **&lt;None&gt;**, or tick the existing groups it should belong to.
+- Or, from a track's Actions panel, click the **Groups** button to add the track to a new group, set
+  it to **&lt;None&gt;**, or tick the existing groups it should belong to.
 - To take tracks out of every group at once, select them and run **"Remove selected tracks from Edit
   Mix Groups"**. A group that becomes empty as a result is deleted automatically.
 
@@ -102,17 +100,9 @@ divided into one slice per group the track is in, using each group's colour, so 
 how a track is grouped. A group that is currently disabled is drawn as an outline rather than a filled
 slice. Clicking the icon selects and cycles through the track's groups.
 
-> 📝 **Note:** A single track can belong to **several groups at once**, which is why the header icon can
+> 📝 **Note:** A single track can belong to several groups at once, which is why the header icon can
 > show more than one slice. For example, a kick-drum track might be in both a "Drums" group and a
 > "Low End" group.
-
-
-## Things to Keep in Mind
-
-- Edit Mix Groups link **audio tracks only**.
-- Deleting a group only removes the grouping. It never deletes the tracks themselves.
-- Because volume and pan are linked relatively, a group is a non-destructive overlay on top of your
-  existing mix balance; turning the group off leaves every track exactly where it was.
 
 
 ## Related Features

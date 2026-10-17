@@ -1,18 +1,14 @@
 # Selecting and Snapping
 
-In this chapter, we start working with clips. The examples focus on
-Audio clips and MIDI clips. Keep in mind that most of these techniques
-also apply to Step clips, Edit clips, and markers.
-
-First, you'll learn how to select clips and groups of clips. Then, you
-will learn about the snap-to-grid functions. Snap-to-grid makes it easy
-to align clips to the bars and beats of your song. Let's get started
-with selecting clips.
+This chapter covers selecting clips and groups of clips, snapping them
+to the bars and beats of your song, and nudging them. The examples use
+Audio clips and MIDI clips, but most of the techniques also apply to Step
+clips, Edit clips and markers.
 
 ## Selecting a Clip
 
-To select a clip, simply click on the clip. The clip is highlighted and
-its properties appear in the Actions panel.
+To select a clip, click it. The clip is highlighted and its properties
+appear in the Actions panel.
 
 
 ![](images/11----01.png)
@@ -21,72 +17,63 @@ its properties appear in the Actions panel.
 
 ## Auditioning a Clip
 
-To audition a clip, double-click and you will hear it play back,
-starting at the spot where you have double-clicked. Click within the
-clip to jump to a new spot as playback continues. Click anywhere outside
-the clip and the auditioning will stop. Moving pointers above and below
-the clip indicate the playback position.
+To audition a clip, double-click it. Playback starts where you
+double-clicked. Click within the clip to jump to a new spot as playback
+continues, and click anywhere outside the clip to stop. Moving pointers
+above and below the clip show the playback position.
 
 
 ![](images/11----02.png)
 
 *Audio Clip Being Auditioned*
 
-Auditioning essentially solos the clip; everything else within the Edit
-is muted in this mode.
+Auditioning solos the clip: everything else in the Edit is muted while
+it plays.
 
 ## Selecting Multiple Clips
 
-To select more than one clip, hold down Cmd / Ctrl then click on each
-clip that you want to add to the selection.
+To select more than one clip, hold Cmd / Ctrl and click each clip you
+want to add to the selection.
 
 
 ![](images/11----03.png)
 
 *Multiple Clips Selection*
 
-Once you have multiple clips selected, you can perform operations on
-them as a group, such as moving them by dragging, duplicating, or
-deleting them. We'll cover more about clip editing operations in
-[Audio Clips and Editing Audio](audio-clips-and-editing-audio.md). To clear a multiple
-selection, simply press the Esc key.
+With several clips selected, you can work on them as a group, for
+example dragging, duplicating or deleting them. Clip editing is covered
+in [Audio Clips and Editing Audio](audio-clips-and-editing-audio.md). To
+clear a multiple selection, press Esc.
 
-Another way to make a multiple selection is to use the lasso tool.
-Here's how that works:
+You can also make a multiple selection with the lasso tool:
 
 
 ![](images/11----04.png)
 
 *Multiple Selection with Lasso*
 
-1.  Hold down Opt / Alt until you see a **plus** cursor.
-2.  Now as you drag, the cursor draws a yellow box.
-3.  Anything the yellow box touches gets selected.
+1.  Hold Opt / Alt until you see a plus cursor.
+2.  Drag to draw a yellow box. Anything the box touches is selected.
 
-> 💡 **Tip:** You can further customise a multiple selection by holding down
-Cmd / Ctrl then click any clip you want to de-select.
+> 💡 **Tip:** To refine a multiple selection, hold Cmd / Ctrl and click any clip you want to deselect.
 
 ## Shift Selecting Clips
 
-Waveform also supports Shift-select. This is a quick way to select a
-contiguous range of clips. Here's how:
+Shift-select is a quick way to select a run of adjacent clips:
 
 1.  Select the first clip.
-2.  Hold down Shift and select the last clip. This will select the first
-    clip, the last clip, and all the clips in between.
+2.  Hold Shift and click the last clip. This selects the first clip, the
+    last clip and all the clips in between.
 
-Shift-select works for clips on a single track, and even across multiple
-tracks.
+Shift-select works for clips on a single track and across several tracks.
 
-> 💡 **Tip:** Shift-select also works for many other kinds of Waveform
-objects including Browser lists and tracks.
+> 💡 **Tip:** Shift-select also works for many other kinds of Waveform object, including Browser lists and tracks.
 
 ## Deselecting Clips
 
-You can always press Esc to deselect everything.
+Press Esc at any time to deselect everything.
 
-> 💡 **Tip:** Pressing Esc also works to clear selections of other objects in
-Waveform like plugins and tracks.
+> 💡 **Tip:** Esc also clears selections of other objects, such as plugins and tracks.
 
 ## Working With a Marked Region
 
@@ -143,15 +130,14 @@ Step clips in the region are skipped.
 
 ## Using Snap-to-Grid
 
-Snap-to-grid makes aligning clips and notes to musical time accurate and
-efficient. Working with this feature is crucial to using
-Waveform for editing audio and MIDI.
+Snap-to-grid lines clips and notes up with musical time, so you can
+align them quickly and accurately.
 
 ### Enable/Disable Snap-to-Grid
 
-To toggle snap-to-grid on or off, click on the **Snap** button (Q) in the
-transport bar. When snap-to-grid is enabled the **Snap** button appears
-highlighted. Right-click the **Snap** button to open the Snap menu, with
+To turn snap-to-grid on or off, click the **Snap** button (Q) in the
+transport bar. The button is highlighted while snap-to-grid is on.
+Right-click the **Snap** button to open the Snap menu, with
 **Snap-to-grid**, **Snap clips to other clips** and **Snap cursor movement**.
 
 
@@ -159,71 +145,59 @@ highlighted. Right-click the **Snap** button to open the Snap menu, with
 
 *Snap button in the transport bar*
 
-Pressing Q also toggles **Snap** on and off. You can also control the
-snapping state from the main menu: *Snap > Snap-to-grid*.
+Pressing Q also toggles **Snap**, and so does *Snap > Snap-to-grid* in
+the main menu.
 
-> 💡 **Tip:** Remember the keyboard shortcut Q is short for quantise.
-Snap-to-grid is a form of quantising. If you don't like that shortcut,
-you can always remap it to another key.
+> 💡 **Tip:** The shortcut Q is short for quantise, since snap-to-grid is a form of quantising. You can remap it to another key if you like.
 
 ### About Snap Resolution
 
-The snap resolution is dependent on the zoom level. If you're zoomed way
-out, the snap resolution might be one bar. The more you zoom in, the
-snap resolution gets finer and finer.
+The snap resolution depends on the zoom level. Zoomed right out, it
+might be one bar, and the further you zoom in, the finer it gets.
 
 
 ![](images/11----05.png)
 
 *Hover Over Timeline to See Snap Resolution*
 
-> 💡 **Tip:** You can always see what your current snap resolution is by
-hovering the mouse pointer over the Timeline. A label appears showing,
-for example, **Snap resolution: Bar**, **Snap resolution: Beat**, or
+> 💡 **Tip:** To see the current snap resolution, hover the mouse pointer over the Timeline. A label appears showing, for example, **Snap resolution: Bar**, **Snap resolution: Beat**, or
 **Snap resolution: 1/2 beat**.
 
 ### Snapping Clips to the Grid
 
-As you drag a clip, it snaps to the grid increments. If you want to see
-exactly where it's snapping, look at the **Start** value in the
-Actions panel. Snap-to-grid makes it easy to align a clip to a bar or beat
-of the music.
+As you drag a clip, it snaps to the grid increments. To see exactly
+where it lands, watch the **Start** value in the Actions panel.
 
 
 ![](images/11----06.png)
 
 *The clip's Start value in the Actions panel*
 
-> 📝 **Note:** Snap-to-grid is an alignment of the beginning of a clip to a
-grid line. Notice that snapping also applies to editing functions like
-trimming.
+> 📝 **Note:** Snap-to-grid aligns the beginning of a clip with a grid line. Snapping also applies to editing operations such as trimming.
 
 ### Snapping the Cursor to the Grid
 
-Snapping may affect how the cursor is positioned depending on another
-setting. Turn on *Snap > Snap cursor movement* and the cursor
-position will snap to the grid. Remember that the snap resolution is
-determined by the zoom level.
+Snapping can also affect the cursor. Turn on *Snap > Snap cursor
+movement* and the cursor snaps to the grid, at the resolution set by the
+zoom level.
 
 
 ![](images/11----07.png)
 
 *Snap cursor movement in the Snap menu*
 
-To test this, zoom out so that the snap resolution is "Beat." Now move
-the cursor around and it will obviously snap to the nearest beat.
+To try it, zoom out until the snap resolution is "Beat", then move the
+cursor around. It snaps to the nearest beat.
 
-> 💡 **Tip:** To get clear indication of exactly where the cursor is, look at
-the time display in the transport bar.
+> 💡 **Tip:** To see exactly where the cursor is, look at the time display in the transport bar.
 
 ### Snapping Clips to Other Clips
 
-Another snap behaviour is **Snap clips to other clips**. With **Snap clips
-to other clips** off, clips snap to the grid normally. However, with
-*Snap > Snap clips to other clips* turned on, clips snap to other
-clips. It seems as if they are magnetically attracted to each other.
-This is useful for any editing where you want to arrange clips
-end-to-end, for example when editing voiceover tracks.
+**Snap clips to other clips** is another snap behaviour. With it off,
+clips snap to the grid as normal. With *Snap > Snap clips to other clips*
+turned on, clips snap to other clips, as if they were magnetically
+attracted to each other. This is useful whenever you want to arrange
+clips end to end, for example when editing voiceover tracks.
 
 
 ![](images/11----08.png)
@@ -232,51 +206,45 @@ end-to-end, for example when editing voiceover tracks.
 
 > 💡 **Tip:** **Snap clips to other clips** only works while snap-to-grid is
 on. To snap clips to other clips with snap-to-grid off, hold Opt / Alt
-while you drag the clip. Press it once the drag has started: holding it
-as you start the drag makes a copy of the clip. With snap-to-grid on, holding Opt / Alt or
-Shift during the drag does the opposite: the clip snaps to the grid but
-not to other clips. Here you hold the key while dragging a clip, unlike
-the Opt / Alt lasso, which starts on an empty part of a track.
+while you drag the clip. Press it after the drag has started, because
+holding it as you start the drag makes a copy of the clip. With
+snap-to-grid on, holding Opt / Alt or Shift during the drag does the
+opposite: the clip snaps to the grid but not to other clips. Here you
+hold the key while dragging a clip, unlike the Opt / Alt lasso, which starts on an empty part of a track.
 
 ### Overriding Snap-to-Grid
 
-Temporarily override snap-to-grid by holding down Cmd / Ctrl. Using this
-modifier, you can freely position clips without first turning off
-**Snap**.
+Hold Cmd / Ctrl while you drag to override snap-to-grid temporarily. You can then
+position clips freely without turning **Snap** off.
 
 ## Nudging Clips
 
-To move clips using the keyboard, select a clip then press Shift +
-Right Arrow or Shift + Left Arrow. The nudge action moves the clip by
-one grid increment. You can also move clips track to track using nudge.
-To nudge clips track to track, use Shift + Up Arrow and Shift + Down
-Arrow.
+To move clips with the keyboard, select them and press Shift + Right
+Arrow or Shift + Left Arrow. Each nudge moves the clips by one grid
+increment. To nudge clips from track to track, use Shift + Up Arrow and
+Shift + Down Arrow.
 
-You can use nudging when moving large selections of clips over, to add a
-song section or make room for an intro.
+Nudging is handy for moving large selections of clips over, for example
+to add a song section or make room for an intro.
 
-> 📝 **Note:** Nudging works the same whether snapping is on or off. The
-nudge move is by the grid increment.
+> 📝 **Note:** Nudging works the same whether snapping is on or off: it always moves by the grid increment.
 
 ## Nudging Notes
 
-Snapping is useful when working with Audio clips, but even more so when
-working with MIDI notes. We cover MIDI editing in [MIDI Editing](midi-editing.md). However, here is a preview while we are on the topic of
-nudging.
+Snapping is useful with Audio clips, and even more so with MIDI notes.
+MIDI editing has its own chapter, [MIDI Editing](midi-editing.md), but
+here is a preview of nudging notes.
 
 
 ![](images/11----09.png)
 
 *The Waveform MIDI Editor*
 
-Double-click on the header of a MIDI clip. It goes into the large view
-so you can see the MIDI editor. MIDI notes work much like clips, in that
-they respect the snap resolution. You can drag a note to snap by the
-current grid increment: bar, for example. You can nudge notes forward or
-backward in time by the grid increment as well. To do so, hold Shift
-while pressing the Left Arrow or Right Arrow.
-
-> 💡 **Tip:** Remember the keyboard shortcut Q to toggle **Snap** on and off.
+Double-click the header of a MIDI clip to open it in the MIDI editor in
+the [Detail Editor](detail-editor.md). MIDI notes respect the snap resolution
+just like clips: drag a note and it snaps by the current grid increment,
+for example a bar. To nudge notes earlier or later by the grid increment,
+hold Shift and press the Left Arrow or Right Arrow.
 
 ## Moving On
 

@@ -1,17 +1,13 @@
 # Demo Projects and Templates
 
-This chapter shows you how to get started with ready-made content. Demo
-projects and templates are very useful because they give you something to
-experiment with, as you learn the basics of the application.
+This chapter shows you how to start from ready-made content: demo songs
+and project templates.
 
 ## Establish a Waveform Projects Folder
 
-It's a good idea decide where you want to keep your Waveform projects on
-your system.
-
-One method would be to create a Waveform folder, under the Documents
-folder on your system. So, decide on a location and create your Waveform
-folder using the Finder (macOS) or File Explorer (Windows).
+Before you start, decide where to keep your Waveform projects. For
+example, create a Waveform folder inside your Documents folder, using
+Finder (macOS) or File Explorer (Windows).
 
 Waveform has no setting for a projects folder. Instead, you pick the folder
 in the **Location** field of the **New Project** dialog, and Waveform
@@ -37,7 +33,7 @@ opens the Projects tab), **Settings** and **About**.
 ## Starting From a Template
 
 The quickest way to get something playable is to start from one of the
-built-in templates. These include demo songs as well as ready-to-use
+built-in templates. They include demo songs as well as ready-to-use
 starting points for new projects.
 
 Open the **Welcome** tab and look at the **Project Templates** list. Each entry
@@ -52,10 +48,10 @@ chosen. Give the project a **Name**, pick a **Location** and click
 **Create Project**. The original template is left untouched, so you can
 reuse it as often as you like.
 
-> 💡 **Tip:** If you'd rather keep the template's track and plugin layout
-> but start with an empty arrangement, enable **Remove clips when loading
+> 💡 **Tip:** To keep the template's track and plugin layout but start
+> with an empty arrangement, turn on **Remove clips when loading
 > templates** (the toggle under the Project Templates list, also in the New
-> Project dialog) before you click. This opens the project with its routing
+> Project dialog) before you click. The project then opens with its routing
 > in place but no clips on the tracks.
 
 ![](images/template-new-project@2x.png)
@@ -65,11 +61,11 @@ reuse it as often as you like.
 ## Demo Songs in Your Projects
 
 Any demo songs bundled with your installation are added to your projects
-automatically the first time you run Waveform - there's nothing to
+automatically the first time you run Waveform, so there's nothing to
 download. They appear in the **Projects** tab alongside your own work.
 
-> 💡 **Tip:** We like to reorganise the demos into a folder to keep them
-> separate from our own projects.
+> 💡 **Tip:** You can move the demos into a folder in the Projects tab
+> to keep them apart from your own work.
 
 ![](images/demo-songs-folder@2x.png)
 
@@ -77,5 +73,5 @@ download. They appear in the **Projects** tab alongside your own work.
 
 ## Moving On
 
-With Waveform installed, and a few projects ready to play with, it's
-time to move on to configuring your audio interface.
+Next, set up your audio interface in
+[Audio Device Setup](audio-device-setup.md).

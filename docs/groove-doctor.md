@@ -5,20 +5,20 @@
 The Groove Doctor fixes the timing of *recorded audio*. It detects the
 beats (transients) in a performance, then cuts, snaps, and smooths the
 audio so it lines up with the grid, or with the feel of a groove
-template. It's the tool to reach for when a drum take is a little loose,
-a bass line drifts off the beat, or you want to lock a live performance
-to the click without re-recording it.
+template. Use it to tighten a loose drum take, pull a drifting bass
+line back onto the beat, or lock a live performance to the click,
+without re-recording it.
 
 ![](images/Groove%20Dr%201@2x.png)
 
 *The Groove Doctor window*
 
 This is an audio tool, not a MIDI one. To quantise MIDI notes, see
-[Quantising MIDI Notes](quantizing-midi-notes.md) instead. It's also separate from the
-Groove Template editor (opened from the View menu), which manages and
-imports the groove templates themselves. That said, the Groove Doctor's
-**Extract groove** operation can *create* a template that the Groove Template
-editor then looks after.
+[Quantising MIDI Notes](quantizing-midi-notes.md) instead. It's also
+separate from the Groove Template editor (opened from the View menu),
+which manages and imports the groove templates themselves. The Groove
+Doctor's **Extract groove** operation can, however, *create* a template
+that the Groove Template editor then manages.
 
 ## Opening the Groove Doctor
 
@@ -51,9 +51,9 @@ range and a set of tracks.
 - **Capture Selection**: Grabs both the time range and the tracks from
   your current selection in the Edit in one click. This is usually the
   fastest way to set up.
-- **Capture Time**: Sets just the time range, from a submenu: **From
+- **Capture Time**: Sets only the time range, from a submenu: **From
   selected range**, **From loop range**, or **From selected clips**.
-- **Capture Tracks**: Sets just the tracks, from a submenu: **From
+- **Capture Tracks**: Sets only the tracks, from a submenu: **From
   group**, **From selected range**, **From selected tracks**, or **From
   selected clips**.
 
@@ -96,9 +96,9 @@ each beat and snaps the pieces to the grid. Here's the full pass:
 
 > 💡 **Tip:** Each stage from Separate onward has a small camera
 > **snapshot** button in its title bar. Click it *before* you run that
-> stage to save a Track Snapshot you can roll back to. These edits are
-> destructive, so snapshotting first is cheap insurance. See [Track
-> Snapshots](track-snapshots.md) for how to restore one.
+> stage to save a Track Snapshot you can roll back to, because these
+> edits are destructive. See [Track Snapshots](track-snapshots.md) for
+> how to restore one.
 
 ![](images/Groove%20Dr%202@2x.png)
 
@@ -190,7 +190,7 @@ After smoothing, **Consolidate** flattens all the pieces into one clip. A
 reminder label, *"Check any edit points for spill,"* prompts you to listen
 across the joins before committing.
 
-For **Warp quantise/groove** this stage is just **Consolidate**: a single
+For **Warp quantise/groove** this stage is only **Consolidate**: a single
 button (plus its snapshot button) that flattens the warped result.
 
 A help bar along the bottom of the window shows a short description of
@@ -198,12 +198,12 @@ whichever control your mouse is hovering over.
 
 ## ⚡ Things to Watch Out For
 
-> ⚠️ **Warning:** **Extract tempo map** overwrites any existing tempo
-> changes within the captured range once you confirm the prompt.
-
 > ⚠️ **Warning:** **Warp quantise/groove** renders and consolidates the clips
 > before warping and suppresses the normal undo step, so you can't
 > press Undo to get back. Take a snapshot first.
+
+- **Extract tempo map** overwrites any existing tempo changes in the
+  captured range once you confirm the prompt.
 
 ## Moving On
 

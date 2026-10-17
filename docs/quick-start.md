@@ -1,10 +1,10 @@
 # Quick Start
 
-This chapter is the fast path from a fresh install to your first recording
-and a finished audio file. It is deliberately brief: each step gives you
-just enough to get going, then links to the full chapter when you want the
-detail. If you are brand new to Waveform, read it top to bottom. If you are
-returning, skim the headings and jump to whatever you need.
+This chapter takes you from a fresh install to your first recording and a
+finished audio file. Each step gives you just enough to get going, then
+links to the full chapter for the detail. If you're new to Waveform, read
+it top to bottom; if you're returning, skim the headings and jump to what
+you need.
 
 Waveform runs as a 64-bit application on macOS, Windows, and Linux, and is
 available in Free, OEM, and Pro editions.
@@ -55,7 +55,7 @@ clicks or dropouts.
 > or buffer size. This is the single most important setup step for accurate
 > recording.
 
-→ Full walk-through, including the Auto-Detect loopback procedure, is in
+→ The full walk-through, including the Auto-Detect loopback procedure, is in
 [Audio Device Setup](audio-device-setup.md) and
 [Reference: Settings > Audio Devices](reference-settings.md#audio-devices).
 
@@ -81,13 +81,13 @@ The quickest way to confirm everything works is to open a template and play it:
 
 An Edit is where you record, arrange, and mix. The window has four main areas:
 
-- The **main menu** along the top.
-- The **Browser** down one side (the right by default), which also hosts the **Actions panel**.
-- The **arrangement** (and the optional **Mixer**) in the centre.
-- The **transport bar** along the bottom, with playback controls, cursor
+- The main menu along the top.
+- The Browser down one side (the right by default), which also hosts the Actions panel.
+- The arrangement (and the optional Mixer) in the centre.
+- The transport bar along the bottom, with playback controls, cursor
   position, tempo, and the master controls.
 
-The **Actions panel** is central to Waveform: select anything (a clip, a
+The Actions panel is central to Waveform: select anything (a clip, a
 track, a plugin) and it shows the settings and actions for that selection.
 
 → See [The Edit Tab](edit-tab.md), [Basic Navigation](basic-navigation.md),
@@ -102,18 +102,18 @@ and click **Create Project**. Waveform opens a new Edit ready to work in.
 
 ## 8. Record Audio
 
-1. Click the **input** arrow beneath a track name and choose an audio input.
-2. Click the **record-arm** button (the red dot) on that input.
+1. Click the input arrow beneath a track name and choose an audio input.
+2. Click the record-arm button (the red dot) on that input.
 3. Check your levels, then press **Record** in the transport bar.
 
 → See [Recording Audio](recording-audio.md).
 
 ## 9. Record MIDI / Use an Instrument
 
-1. Drag the **Plugin object** onto a track's inline mixer and choose a virtual
+1. Drag the plugin object onto a track's inline mixer and choose a virtual
    instrument from the menu. Double-click the instrument to open its
    interface.
-2. Set the track's **input** to your MIDI device and record-arm it.
+2. Set the track's input to your MIDI device and record-arm it.
 3. Press **Record** and play.
 
 → See [MIDI Recording](midi-recording.md) and [Using Plugins](using-plugins.md).
@@ -121,8 +121,8 @@ and click **Create Project**. Waveform opens a new Edit ready to work in.
 ## 10. Add Effects and Mix
 
 Waveform's mixer is inline with each track and fully modular. Every track
-starts with a **Volume & Pan** and a **Level Meter** plugin. To add an effect,
-drag the **Plugin object** into the track's inline mixer and pick a plugin.
+starts with a Volume & Pan and a Level Meter plugin. To add an effect,
+drag the plugin object into the track's inline mixer and pick a plugin.
 You can drop it anywhere in the signal chain and reorder it later by dragging.
 
 → See [The Edit Tab](edit-tab.md), [Using Plugins](using-plugins.md), and
@@ -130,7 +130,7 @@ You can drop it anywhere in the signal chain and reorder it later by dragging.
 
 ## 11. Export Your Song
 
-1. Set the **In marker** at the start of the song and the **Out marker** at
+1. Set the In marker at the start of the song and the Out marker at
    the end to define the export range.
 2. Choose *File > Export: Render to a file...*.
 3. Set **Range** to **Marked Region**, pick a **Format** (such as WAV) and
@@ -141,15 +141,14 @@ You can drop it anywhere in the signal chain and reorder it later by dragging.
 
 ## 12. Where to Go Next
 
-You now have the essentials. Waveform has much more to explore. Here are some
-highlights, each covered in its own chapter. Items marked
+Here are some highlights, each covered in its own chapter. Items marked
 <span class="pro">PRO</span> need Waveform Pro or an expansion; each chapter
 says which.
 
 - [The AI Assistant](ai-assistant.md): an assistant (cloud or local
   model) that can carry out actions in your Edit.
 - [Clip Launcher](clip-launcher.md) <span class="pro">PRO</span>: trigger clips and scenes live.
-- [Comping](comping.md): build one perfect take from several passes.
+- [Comping](comping.md): build one take from the best parts of several passes.
 - [Warp Time](warp-time.md): bend and stretch audio in time.
 - [Clip Layer Effects](clip-layer-effects.md): non-destructive, layered
   audio manipulation.
