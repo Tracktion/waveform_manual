@@ -14,7 +14,7 @@ Project templates, plus the news feed and training videos.
 
 ![](images/05----02@2x.png)
 
-*The Projects tab and the Settings tab*
+*The Welcome, Projects and Settings tabs, and an open Edit tab*
 
 
 Waveform's main menu is at the top of the window (in the macOS menu bar

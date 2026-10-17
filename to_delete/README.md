@@ -105,3 +105,12 @@ These 102 images were in `docs/images/` but no chapter, `mkdocs.yml`, stylesheet
 - `images/settings_ai_custom_profile@2x.png`
 - `images/10----11.png` (old Marker track split mode; removed from using-markers.md in refactor Pass 2)
 - `images/10----25.png` (old Marker track split mode; removed from using-markers.md in refactor Pass 2)
+
+## Replaced by retakes
+
+Old images replaced by 2x retakes (October 2026). Safe to delete once the retakes are reviewed.
+- `images/08----03@2x.png` -> `docs/images/08----03@2x.png`
+- `images/05----02@2x.png` -> `docs/images/05----02@2x.png`
+- `images/04----00@2x.png` -> `docs/images/04----00@2x.png`
+- `images/rendering_1@2x.png` -> `docs/images/rendering_1@2x.png`
+- `images/08----21.png` -> `docs/images/08----21@2x.png`

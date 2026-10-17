@@ -24,7 +24,7 @@ as a vertical channel strip (*View > Show Mixer*, or M). See
 
 ![](images/08----03@2x.png)
 
-*Parts of the Edit tab: A, Browser. B, Arrangement. C, transport bar*
+*Parts of the Edit tab: A, Browser. B, Arrangement. C, transport bar. D, Actions panel*
 
 ## The Browser
 
@@ -440,9 +440,9 @@ cursor position information, the Transport, the master plugins, the
 master volume control, and a set of global control buttons.
 
 
-![](images/08----21.png)
+![](images/08----21@2x.png)
 
-*The transport bar*
+*The transport bar: A, left-hand buttons. B, transport bar buttons. C, the Transport. D, cursor position info. E, master plugins. F, Master level and meter*
 
 **Cursor Position Info**: At one end of the transport bar, a readout
 shows the tempo, time signature and key/scale at the cursor position,
