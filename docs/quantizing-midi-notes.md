@@ -18,7 +18,7 @@ the Actions panel or in the MIDI editor's toolbar to see the quantise
 actions.
 
 
-![](images/26----01.png)
+![](images/26----01@2x.png)
 
 *MIDI Quantise Actions*
 
@@ -35,12 +35,12 @@ beat is an eighth note. To quantise to sixteenth notes, select **To
 nearest 1/4 beat**.
 
 
-![](images/26----02.png)
+![](images/26----02@2x.png)
 
 *MIDI Notes Before Quantising*
 
 
-![](images/26----03.png)
+![](images/26----03@2x.png)
 
 *MIDI Notes After Quantising Note Starts to Nearest 1/2 Beat*
 
@@ -58,7 +58,7 @@ When you quantise note lengths, each note becomes the full length of the
 chosen note value.
 
 
-![](images/26----04.png)
+![](images/26----04@2x.png)
 
 *Note Lengths Quantised to 1/2 beat*
 
@@ -79,7 +79,7 @@ To start with the basics, select the notes to quantise and click
 **Apply Groove** in the Actions panel, or **Groove** in the MIDI editor's toolbar.
 
 
-![](images/26----18.png)
+![](images/26----18@2x.png)
 
 *Apply Groove in the Actions panel*
 
@@ -91,7 +91,7 @@ their name (such as **Swing 1/2 60%**) are in the **Legacy groove
 templates** submenu, and apply straight away.
 
 
-![](images/26----05.png)
+![](images/26----05@2x.png)
 
 *Apply Groove Presets in Options*
 
@@ -101,7 +101,7 @@ four main beats of a bar. For standard swing, choose **Swing 1/2**, where
 groovy swing, try **Swing 1/2** with a strength of 60.
 
 
-![](images/26----06.png)
+![](images/26----06@2x.png)
 
 *Groove Presets for Swing*
 
@@ -110,12 +110,12 @@ In swing timing, the "&" beats are delayed. The groove strength sets
 how much delay, from subtle (low values) to dramatic (high values).
 
 
-![](images/26----07.png)
+![](images/26----07@2x.png)
 
 *Before Applying Groove*
 
 
-![](images/26----08.png)
+![](images/26----08@2x.png)
 
 *After Applying Groove: Swing 1/2 at 60% Strength*
 
@@ -156,7 +156,7 @@ menu, or *View > Open Groove template editor* in the main menu.
 Click any of the presets in the editor to see how it's built.
 
 
-![](images/26----10.png)
+![](images/26----10@2x.png)
 
 *Groove Template Editor*
 
@@ -167,7 +167,7 @@ for each note. For each step of the pattern, you choose how far that note
 falls 'early' or 'late' relative to perfect timing.
 
 
-![](images/26----11.png)
+![](images/26----11@2x.png)
 
 *Swing 1/2 60% Template Example*
 
@@ -182,7 +182,7 @@ exactly the feel you want. For example, to vary the swing within a bar,
 create a template with eight notes, each with a slightly different swing.
 
 
-![](images/26----12.png)
+![](images/26----12@2x.png)
 
 *Groove Template with Variable Swing*
 
@@ -190,14 +190,14 @@ You can also create a groove that pushes the timing over two bars to add
 excitement and tension, like the **Fast Slow 2** template.
 
 
-![](images/26----13.png)
+![](images/26----13@2x.png)
 
 *Fast Slow 2 Groove Template*
 
 > 💡 **Tip:** A 'No Groove' template is a handy way to remove the effect of a groove, particularly on Step clips; see [Step Clips](step-clips.md).
 
 
-![](images/26----14.png)
+![](images/26----14@2x.png)
 
 *Creating a 'No Groove' Template*
 
@@ -209,7 +209,7 @@ Exported templates have the `.trkgroove` file extension, and you can share
 them with other Waveform users or installations.
 
 
-![](images/26----15.png)
+![](images/26----15@2x.png)
 
 *Create, Rename, Import, or Export Groove Templates*
 
@@ -218,14 +218,14 @@ Template...**. This removes the early and late timing from the pattern
 but leaves the length and note division settings as they are.
 
 
-![](images/26----16.png)
+![](images/26----16@2x.png)
 
 *Resetting a Groove Template*
 
 To delete a groove template you don't need, use **Delete Template**.
 
 
-![](images/26----17.png)
+![](images/26----17@2x.png)
 
 *Deleting a Groove Template*
 

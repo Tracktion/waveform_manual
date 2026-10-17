@@ -15,7 +15,7 @@ trim handles are the hollow arrows at the left and right of the MIDI
 clip header.
 
 
-![](images/25----01.png)
+![](images/25----01@2x.png)
 
 *Trim MIDI Clips by Dragging a Trim Handle*
 
@@ -31,7 +31,7 @@ area. Start the drag from blank space in the header, not from one of
 the icons.
 
 
-![](images/25----02.png)
+![](images/25----02@2x.png)
 
 *Moving a MIDI Clip*
 
@@ -49,7 +49,7 @@ header: drag it to slip the notes inside the clip, while the clip's
 start and end stay where they are.
 
 
-![](images/25----03.png)
+![](images/25----03@2x.png)
 
 *MIDI Clip Slip Handles*
 
@@ -69,7 +69,7 @@ To split a MIDI clip, select it, put the cursor where you want the
 split and press the slash key (/), the same as for Audio clips.
 
 
-![](images/25----04.png)
+![](images/25----04@2x.png)
 
 *Split MIDI Clips Using the Slash Key*
 
@@ -79,7 +79,7 @@ position**, **Split clips at mark-in point** and **Split clips at mark-out
 point**. Launcher clips can't be split, so the action isn't shown for them.
 
 
-![](images/25----05.png)
+![](images/25----05@2x.png)
 
 *The Split Clips Action in the Actions panel*
 
@@ -131,7 +131,7 @@ right-click the piano keyboard and choose **Show 1 octave**,
 **Show full scale**.
 
 
-![](images/25----07.png)
+![](images/25----07@2x.png)
 
 *Default MIDI Editor Vertical Scale Setting*
 
@@ -139,7 +139,7 @@ To fine-tune the vertical size of MIDI notes, drag the arrows above and
 below the piano graphic.
 
 
-![](images/25----08.png)
+![](images/25----08@2x.png)
 
 *Use Arrows to Adjust Vertical Size*
 
@@ -150,7 +150,7 @@ editor. During mixing you may want to turn this off so you don't
 scroll inside MIDI clips by accident.
 
 
-![](images/25----09.png)
+![](images/25----09@2x.png)
 
 *Mouse Wheel MIDI Scrolling Setting*
 
@@ -186,7 +186,7 @@ Opt + Cmd + T / Ctrl + Alt + T turns that on and off. From left to right:
 Most note edits work the same way: select the notes, then act on them.
 
 
-![](images/25----10.png)
+![](images/25----10@2x.png)
 
 *Select a Note and Drag Up or Down to Change Pitch*
 
@@ -201,7 +201,7 @@ appears above or below the note. There are three types: **Pitchbend**
 give you detailed control over performance and articulation.
 
 
-![](images/25----11.png)
+![](images/25----11@2x.png)
 
 *Drawing Note Expression*
 
@@ -210,7 +210,7 @@ To show the lane, select a single note and turn on
 full length of the note, showing Pressure, or the type you used last.
 
 
-![](images/25----17.png)
+![](images/25----17@2x.png)
 
 *Show Note Expression and Keep on Selected Note in the Actions panel*
 
@@ -225,7 +225,7 @@ With Smart snap the step size follows the zoom level, so zoom in to draw
 a more detailed curve.
 
 
-![](images/25----12.png)
+![](images/25----12@2x.png)
 
 *Choosing the Note Expression Type*
 
@@ -262,7 +262,7 @@ left edge, and dragging it left or right. Hold Cmd / Ctrl while you drag
 an edge to strum the selected notes instead.
 
 
-![](images/25----13.png)
+![](images/25----13@2x.png)
 
 *Trimming a MIDI Note*
 
@@ -285,7 +285,7 @@ the zoom level, so the grid gets finer as you zoom in. You can also pick
 a fixed resolution, and turn on **Triplet** for a triplet grid.
 
 
-![](images/25----14.png)
+![](images/25----14@2x.png)
 
 *Note editing snaps when Snap is on*
 
@@ -296,7 +296,7 @@ To copy a note, hold Cmd / Ctrl and drag it. You can also use the
 you want the copy and press D.
 
 
-![](images/25----15.png)
+![](images/25----15@2x.png)
 
 *Copying a Note*
 
@@ -306,7 +306,7 @@ You can also select a note and edit its **Pitch** and **Velocity**
 values directly in the Actions panel.
 
 
-![](images/25----16.png)
+![](images/25----16@2x.png)
 
 *Adjust Pitch and Velocity in the Actions panel*
 
@@ -316,7 +316,7 @@ For precise adjustments, edit the **Length**, **Start Time** and
 **End Time** values for the selected note in the Actions panel.
 
 
-![](images/25----18.png)
+![](images/25----18@2x.png)
 
 *Start, Length, & End Settings in the Actions panel*
 
@@ -357,7 +357,7 @@ Use the Pencil tool to draw notes: select it, then paint notes where
 you want them on the piano roll.
 
 
-![](images/25----19.png)
+![](images/25----19@2x.png)
 
 *Draw in New Notes with the Pencil Tool*
 
@@ -366,7 +366,7 @@ you want them on the piano roll.
 Swipe the Eraser tool over any notes you want to erase.
 
 
-![](images/25----20.png)
+![](images/25----20@2x.png)
 
 *The Eraser Tool*
 
@@ -376,7 +376,7 @@ The Line tool suits controller curves best, but it also draws notes:
 drag a line to create a stepped series of notes.
 
 
-![](images/25----21.png)
+![](images/25----21@2x.png)
 
 *Draw a Series of Notes with the Line Tool*
 
@@ -389,7 +389,7 @@ example, when programming drums you could give the snares, hi-hats and
 kick drum different colours.
 
 
-![](images/25----22.png)
+![](images/25----22@2x.png)
 
 *Note Colours*
 
@@ -399,7 +399,7 @@ To select several notes, drag a box around them with the Selection
 tool.
 
 
-![](images/25----23.png)
+![](images/25----23@2x.png)
 
 *Note Multiple Selection*
 
@@ -410,7 +410,7 @@ To select every note of one pitch, hold Cmd / Ctrl and click that
 note's key on the piano roll keyboard.
 
 
-![](images/25----24.png)
+![](images/25----24@2x.png)
 
 *Selecting a Row of Notes with Cmd / Ctrl*
 
@@ -428,7 +428,7 @@ for example "Vel: 96"). The menu offers 16 to
 selected notes and is also used for new notes.
 
 
-![](images/25----30.png)
+![](images/25----30@2x.png)
 
 *Quickly Set Note Velocity*
 
@@ -437,7 +437,7 @@ dialog lets you type any value from 0 to 127. Click
 **Set Velocity** to apply it.
 
 
-![](images/25----25.png)
+![](images/25----25@2x.png)
 
 *The Other... Velocity Dialog*
 
@@ -460,7 +460,7 @@ turn on **Use incoming velocities for MIDI step entry** in
 *Settings > General*, MIDI section.
 
 
-![](images/25----26.png)
+![](images/25----26@2x.png)
 
 *Step Entry Mode*
 
@@ -473,7 +473,7 @@ This is separate from the Note Preview tool, which also has a speaker
 icon.
 
 
-![](images/25----27.png)
+![](images/25----27@2x.png)
 
 *Enable Speaker Button to Trigger Notes During Editing*
 
@@ -486,7 +486,7 @@ selected note, drag its velocity stalk up or down. The note's
 **Velocity** value in the Actions panel follows as you drag.
 
 
-![](images/25----28.png)
+![](images/25----28@2x.png)
 
 *The Velocity Editor*
 
@@ -507,7 +507,7 @@ header has a **Menu** button to change its type and a **Close** button
 to remove it.
 
 
-![](images/25----29.png)
+![](images/25----29@2x.png)
 
 *Editing Other Controller Data*
 
