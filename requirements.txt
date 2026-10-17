@@ -5,3 +5,4 @@
 mkdocs-material
 mkdocs-literate-nav==0.6.2
 mike
+mkdocs-print-site-plugin

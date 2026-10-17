@@ -38,6 +38,11 @@ plugins:
   - search
   - literate-nav:
       nav_file: SUMMARY.md
+  # Keep print-site last (per its docs).
+  - print-site:
+      add_to_navigation: true
+      print_page_title: "Read as one page"
+      add_table_of_contents: true
 
 markdown_extensions:
   - admonition
