@@ -1,22 +1,28 @@
 name: Deploy manual to GitHub Pages
 
+# Versioned with mike: each deploy lands in its own subdirectory of gh-pages.
+#   push to main   -> "dev" (unreleased manual)
+#   push tag v*    -> that version (v14.1 -> "14.1"), and moves the "latest" alias to it
 on:
   push:
     branches: [main]
+    tags: ['v*']
   workflow_dispatch:
 
 permissions:
-  contents: write  # gh-deploy pushes the built site to the gh-pages branch
+  contents: write  # mike pushes to the gh-pages branch
 
 concurrency:
   group: pages-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0  # mike needs the gh-pages history
 
       - uses: actions/setup-python@v5
         with:
@@ -29,4 +35,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - run: mkdocs gh-deploy --force
+      - name: Deploy dev
+        if: github.ref == 'refs/heads/main'
+        run: mike deploy --push dev
+
+      - name: Deploy release
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          mike deploy --push --update-aliases "$VERSION" latest
+          mike set-default --push latest

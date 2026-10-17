@@ -4,3 +4,4 @@
 # without checking that dependency has been removed.
 mkdocs-material
 mkdocs-literate-nav==0.6.2
+mike

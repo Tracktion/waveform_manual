@@ -23,6 +23,11 @@ theme:
         icon: material/weather-sunny
         name: Switch to dark mode
 
+extra:
+  version:
+    provider: mike
+    default: latest
+
 extra_css:
   - stylesheets/extra.css
 
