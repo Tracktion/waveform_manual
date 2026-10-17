@@ -16,7 +16,7 @@ Waveform has four kinds of marker:
 
 ## In Marker and Out Marker
 
-![](images/10----01.png)
+![](images/10----01@2x.png)
 
 *In Marker and Out Marker*
 
@@ -28,7 +28,7 @@ when the **Loop** button in the transport bar is on. They also define the
 > 📝 **Note:** In Waveform, "marked region" means the part of an Edit
 between the In marker and the Out marker.
 
-![](images/10----19.png)
+![](images/10----19@2x.png)
 
 *The In Marker and Out Marker*
 
@@ -57,7 +57,7 @@ Markers](#navigating-by-markers)).
 When you have a marked region set, you can zoom in to it: right-click
 the Timeline and select **Zoom to fit marked region**, or press **F7**.
 
-![](images/10----07.png)
+![](images/10----07@2x.png)
 
 *Right-click the Timeline, Zoom to the In and Out Markers*
 
@@ -67,7 +67,7 @@ To repeat playback over a section of your song, set the In marker and
 Out marker around it and turn on the **Loop** button (**L**). Playback
 repeats that section until you stop it.
 
-![](images/10----06.png)
+![](images/10----06@2x.png)
 
 *Enabling Loop Playback*
 
@@ -90,7 +90,7 @@ To use Auto Punch:
 Even though the track is armed, nothing is recorded until the cursor
 reaches the In marker.
 
-![](images/10----08.png)
+![](images/10----08@2x.png)
 
 *Enabling Auto Punch Recording*
 
@@ -99,7 +99,7 @@ In marker and Out marker, and only while **Loop** is off.
 
 ## The Marker Track
 
-![](images/10----09.png)
+![](images/10----09@2x.png)
 
 *Marker Track*
 
@@ -107,7 +107,7 @@ Show or hide the Marker track with the **Marker** button in the eye
 button's panel (the eye button is at the top right of the window), with
 *View > Global tracks > Show Marker track*, or by pressing **F10**.
 
-![](images/10----10.png)
+![](images/10----10@2x.png)
 
 *Marker Track Show/Hide Button*
 
@@ -118,11 +118,11 @@ the song and let you jump quickly between its parts. They are clips on
 the Marker track, shown with a musical note icon, and appear as narrow
 pointers on the Timeline when the Marker track is closed.
 
-![](images/10----02.png)
+![](images/10----02@2x.png)
 
 *Bars & Beats Markers on the Marker Track*
 
-![](images/10----03.png)
+![](images/10----03@2x.png)
 
 *Bars & Beats Markers on the Timeline (with Marker track closed)*
 
@@ -152,7 +152,7 @@ markers the Marker track shows. **Combined** shows both types together,
 **Bars & Beats** and **Absolute** show only that type, and **Hidden** hides
 the Marker track. (Default: Combined)
 
-![](images/10----12.png)
+![](images/10----12@2x.png)
 
 *Marker Track Settings in the Actions Panel*
 

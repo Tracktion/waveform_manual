@@ -11,7 +11,7 @@ To select a clip, click it. The clip is highlighted and its properties
 appear in the Actions panel.
 
 
-![](images/11----01.png)
+![](images/11----01@2x.png)
 
 *A Selected Clip*
 
@@ -36,7 +36,7 @@ To select more than one clip, hold Cmd / Ctrl and click each clip you
 want to add to the selection.
 
 
-![](images/11----03.png)
+![](images/11----03@2x.png)
 
 *Multiple Clips Selection*
 
@@ -88,6 +88,10 @@ Ctrl-click a track within its time span to add or remove that track.
 Right-click inside the region to open its menu. Most commands act only on the
 clips that overlap the region on the tracks it covers. Delete Time and Insert
 Time change the whole Edit. Launcher clips are always left alone.
+
+![](images/selecting-and-snapping_marked_region_menu@2x.png)
+
+*The marked region menu*
 
 - **Cut** (Cmd + X / Ctrl + X): Copies the parts of clips inside the region to
   the clipboard and removes them, leaving a gap.
@@ -141,7 +145,7 @@ Right-click the **Snap** button to open the Snap menu, with
 **Snap-to-grid**, **Snap clips to other clips** and **Snap cursor movement**.
 
 
-![](images/11----10.png)
+![](images/11----10@2x.png)
 
 *Snap button in the transport bar*
 
@@ -169,7 +173,7 @@ As you drag a clip, it snaps to the grid increments. To see exactly
 where it lands, watch the **Start** value in the Actions panel.
 
 
-![](images/11----06.png)
+![](images/11----06@2x.png)
 
 *The clip's Start value in the Actions panel*
 
@@ -182,7 +186,7 @@ movement* and the cursor snaps to the grid, at the resolution set by the
 zoom level.
 
 
-![](images/11----07.png)
+![](images/11----07@2x.png)
 
 *Snap cursor movement in the Snap menu*
 
@@ -200,7 +204,7 @@ attracted to each other. This is useful whenever you want to arrange
 clips end to end, for example when editing voiceover tracks.
 
 
-![](images/11----08.png)
+![](images/11----08@2x.png)
 
 *Snap Clips to Other Clips Option*
 
@@ -236,7 +240,7 @@ MIDI editing has its own chapter, [MIDI Editing](midi-editing.md), but
 here is a preview of nudging notes.
 
 
-![](images/11----09.png)
+![](images/11----09@2x.png)
 
 *The Waveform MIDI Editor*
 

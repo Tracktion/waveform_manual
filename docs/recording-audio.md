@@ -480,7 +480,7 @@ You now have one stereo input in place of two mono ones, and it
 appears in the Edit when you choose a track's input.
 
 
-![](images/15----19.png)
+![](images/15----19@2x.png)
 
 *Making an Input Stereo*
 
@@ -517,7 +517,7 @@ stopped, the audio is placed at the cursor, and you need to line the
 clip up yourself.
 
 
-![](images/15----25.png)
+![](images/15----25@2x.png)
 
 *Click the Retrospective Record Button*
 

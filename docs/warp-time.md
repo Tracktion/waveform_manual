@@ -18,7 +18,7 @@ To switch on Warp Time mode:
     tab), enable the **Warp Time** option.
 
 
-![](images/18----01.png)
+![](images/18----01@2x.png)
 
 *Enable Warp Time Mode*
 
@@ -53,7 +53,7 @@ either side.
 > 💡 **Tip:** You can add a Warp point and drag it in one action: click the timeline, hold and start dragging. The waveform stretches until you stop dragging.
 
 
-![](images/18----03.png)
+![](images/18----03@2x.png)
 
 *Warp Point*
 
@@ -62,7 +62,7 @@ either side.
 Shift-click any existing Warp point to remove it. Right-click a Warp point and choose **Remove marker** or **Remove all markers**.
 
 
-![](images/18----04.png)
+![](images/18----04@2x.png)
 
 *Warp Point Right-click Menu*
 
@@ -83,7 +83,7 @@ beginning and end of the waveform.
 *Dragging a Warp Point to the Left*
 
 
-![](images/18----06.png)
+![](images/18----06@2x.png)
 
 *Dragging a Warp Point to the Right*
 
@@ -120,7 +120,7 @@ the other modes. There's little benefit in doing so, because Waveform
 does the stretching offline.
 
 
-![](images/18----08.png)
+![](images/18----08@2x.png)
 
 *Stretch Property Options*
 
@@ -132,7 +132,7 @@ or **Stereo Mode: M/S**, **Synchronize Timestretch / Pitchshift**, and
 from E2 / 86Hz to E8 / 5512Hz.
 
 
-![](images/18----09.png)
+![](images/18----09@2x.png)
 
 *Elastique Options*
 

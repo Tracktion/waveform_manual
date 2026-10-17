@@ -36,7 +36,7 @@ supported in builds that include the REX option.
 If you know the tempo of the loop, set your Edit to that tempo before
 you drag the loop in. That gives the most natural results.
 
-![](images/13----02.png)
+![](images/13----02@2x.png)
 
 *Changing the Tempo*
 
@@ -82,7 +82,7 @@ Audio clips have an L icon on the header. Click it to toggle looping
 mode for that clip. The clip immediately appears twice as long, because
 turning on looping gives you one repeat straight away.
 
-![](images/13----04.png)
+![](images/13----04@2x.png)
 
 *Audio Clip Loop Mode*
 
@@ -99,7 +99,7 @@ You can also turn on looping by selecting the clip and clicking **Loop
 this Clip** in the Actions panel. There you choose the number of times
 to loop, instead of dragging the right trim handle.
 
-![](images/13----05.png)
+![](images/13----05@2x.png)
 
 *Loop this Clip in the Actions panel*
 
@@ -116,7 +116,7 @@ You can also repeat a clip by duplicating it: select the clip and
 press **D**. Duplicate is the equivalent of copy followed by paste, and
 places the new clip immediately after the selected one.
 
-![](images/13----06.png)
+![](images/13----06@2x.png)
 
 *Duplicating a Clip*
 
@@ -130,7 +130,7 @@ Actions panel (and in the Detail Editor, **Clip** tab). These
 properties relate to the underlying wave file, and change how the Audio
 clip responds to tempo, pitch and time stretching. The main ones are:
 
-![](images/13----07.png)
+![](images/13----07@2x.png)
 
 *Loop properties in the Actions panel*
 
