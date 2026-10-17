@@ -1,3 +1,5 @@
+> Superseded: the up-to-date retake list is `tools/ai/user_manual_audit/SCREENSHOTS_TO_CAPTURE.md` (main repo). This file is kept for history.
+
 # Screenshot Re-take Checklist (Waveform 11 → current UI)
 
 These 452 screenshots still show the **old Waveform 11 interface** and need re-capturing in the current UI. They were identified by image resolution (every up-to-date screenshot is a 144&nbsp;dpi Retina @2x capture; these are the remaining 72&nbsp;dpi originals).
@@ -254,9 +256,9 @@ These 452 screenshots still show the **old Waveform 11 interface** and need re-c
 
 ## Demo Projects and Templates  ·  `installing-the-demo-projects.md`  (3)
 
-- [ ] `templates-list@2x.png` — The Templates List in the Welcome Tab
-- [ ] `template-new-project@2x.png` — A New Project Created From a Template
-- [ ] `demo-songs-folder@2x.png` — Demo Songs Collected in a Project Folder
+- [x] `templates-list@2x.png` — The Templates List in the Welcome Tab
+- [x] `template-new-project@2x.png` — A New Project Created From a Template
+- [x] `demo-songs-folder@2x.png` — Demo Songs Collected in a Project Folder
 
 ## Introduction  ·  `introduction.md`  (1)
 
