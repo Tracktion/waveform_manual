@@ -10,7 +10,7 @@ Drag the plugin object to the mixer to open the plugin picker, then choose
 folder also has *Instruments* and *Utility* subfolders.
 
 
-![](images/30----01.png)
+![](images/30----01@2x.png)
 
 *Built-in Plugin Effects in Waveform*
 
@@ -56,7 +56,7 @@ Panning works the same way: click the panner, then drag left or right to set
 the stereo position.
 
 
-![](images/30----03.png)
+![](images/30----03@2x.png)
 
 *Volume & Pan Plugin, Adjusting Panning*
 
@@ -71,7 +71,7 @@ Select a *Volume & Pan* plugin to show its values and actions in the
 Actions panel.
 
 
-![](images/30----04.png)
+![](images/30----04@2x.png)
 
 *Volume & Pan plugin in the Actions panel*
 
@@ -102,7 +102,7 @@ default. It's a stereo meter showing the left and right levels. To add another
 one, find it in *Waveform > Utility* in the plugin picker.
 
 
-![](images/30----05.png)
+![](images/30----05@2x.png)
 
 *Level Meter Plugin*
 
@@ -110,7 +110,7 @@ Select a *Level Meter* and the Actions panel shows a large horizontal
 version of the meter, with dB markings.
 
 
-![](images/30----07.png)
+![](images/30----07@2x.png)
 
 *Large Meter in the Actions panel*
 
@@ -125,7 +125,7 @@ change the mode, use the Actions panel or the right-click menu. The modes
 are:
 
 
-![](images/30----06.png)
+![](images/30----06@2x.png)
 
 *Meter Modes for the Level Meter Plugin*
 
@@ -150,7 +150,7 @@ meter also shows MIDI activity, which helps when you're working out why a
 virtual instrument isn't playing.
 
 
-![](images/30----08.png)
+![](images/30----08@2x.png)
 
 *Level Meter, Show MIDI Activity*
 
@@ -418,7 +418,7 @@ pitch. (Default: 0)
 **Pitch**: Opens a menu of exact shifts, from +2 octaves down to -2 octaves in
 semitone steps, with *Original pitch* in the middle.
 
-![](images/30----21.png)
+![](images/30----21@2x.png)
 
 *Pitch Shifter, Set Pitch*
 
@@ -492,7 +492,7 @@ Drag *Text* from *Waveform > Utility* in the plugin picker to a track, give it
 a **Name** and type a **Description**.
 
 
-![](images/30----09.png)
+![](images/30----09@2x.png)
 
 *Text Plugin Example*
 
@@ -585,6 +585,10 @@ window. It combines several mastering stages:
   metering.
 - A DC filter, switched on with the **DC** button, that removes any DC offset
   from the signal.
+
+![](images/built-in-effects-plugins_master_mix@2x.png)
+
+*The Master Mix window*
 
 The **PRESET** box recalls Master Mix's factory presets.
 

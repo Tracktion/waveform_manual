@@ -242,6 +242,10 @@ The Multi Sampler's **RECORD** page records audio straight into the sampler. You
 3. Drag the in and out flags to the part you want, and click **Play** to audition it. **Trim** cuts the recording down to the flags.
 4. Use the **Load / save** menu to keep it: **Create New Sound Layer...** adds it to the sampler, **Save to Scratchpad...** stores it on the Scratchpad, and **Save As...** saves a WAV file. **Load...** opens an audio file instead.
 
+![](images/samplers-and-instruments_multi_sampler_record@2x.png)
+
+*The Multi Sampler RECORD page with slices marked and the Input source menu open*
+
 **Retrospective Record** grabs the audio Waveform has been buffering from your inputs, even if you weren't recording. Every captured file is saved to the Scratchpad, which opens to show them, and the first file also opens on the page.
 
 > 📝 **Note:** On macOS, recording the System Output needs the Tracktion Virtual Device audio driver. If it isn't installed, Waveform offers to install it when you choose System Output. System Output isn't offered on Linux.
@@ -262,6 +266,10 @@ To slice a drum loop from the arrangement, select its Audio clip and use **Slice
 ### The Scratchpad
 
 The Scratchpad is temporary storage for samples, shared by the samplers. Click the **Scratchpad** button in the sampler's toolbar to show it down the right-hand side. Drag audio files onto it, or save recordings and slices to it, then drag them onto pads or the zone grid. Each row has play and edit buttons. Right-click a row to **Delete** it (it moves to the Trash or Recycle Bin) or, on macOS and Windows, **Show in Finder** / **Show in Explorer**. The Rompler and Micro Drum Sampler have no Scratchpad.
+
+![](images/samplers-and-instruments_scratchpad@2x.png)
+
+*The Scratchpad column down the right of the sampler*
 
 ### Presets
 
@@ -370,6 +378,10 @@ Subtractive ships with a library of factory presets. Click the browse button at 
 ## Attracktive
 
 **Attracktive** is a free instrument, in every edition, that plays Tracktion's Attracktive, BioTek, BioTek 2 and BioTek 3 sound packs. Each sound brings its own set of controls, background and colours, so the main panel changes with what you load. The bar along the top and the keyboard stay the same.
+
+![](images/samplers-and-instruments_attracktive@2x.png)
+
+*Attracktive with a factory sound loaded*
 
 ### Installing the Sounds
 

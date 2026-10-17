@@ -25,7 +25,7 @@ can download it from [Voxengo.com](https://www.voxengo.com/product/boogex/).
 
 2.  Create a new track, select the input, and arm it for recording.
 
-![](images/21----03.png)
+![](images/21----03@2x.png)
 
 *Select the Input and Arm It*
 
@@ -42,7 +42,7 @@ can download it from [Voxengo.com](https://www.voxengo.com/product/boogex/).
     Actions panel). You should now hear your dry, unprocessed guitar
     signal.
 
-![](images/21----05.png)
+![](images/21----05@2x.png)
 
 *Turn on Live Input Monitoring*
 
@@ -64,7 +64,7 @@ can download it from [Voxengo.com](https://www.voxengo.com/product/boogex/).
 **F**, which enables or disables any selected plugins. You can also use
 the **Enabled** row in the Actions panel.
 
-![](images/21----07.png)
+![](images/21----07@2x.png)
 
 *Amp Sim Plugin Shown Disabled*
 
@@ -118,7 +118,7 @@ To set the **Audio buffer size**, which determines the latency:
 3.  Enter an **Audio buffer size** value. Values around 256 or lower
     tend to work well, depending on what else is going on in the Edit.
 
-![](images/21----10.png)
+![](images/21----10@2x.png)
 
 *The Audio buffer size setting on the Audio Devices page*
 

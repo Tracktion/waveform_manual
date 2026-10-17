@@ -13,7 +13,7 @@ The inline mixer sits along the right side of the Edit and completes
 the left-to-right signal flow on each track. Open and close it with the
 open/close icon at the upper right, or press **V**.
 
-![](images/29----01.png)
+![](images/29----01@2x.png)
 
 *Button to Open or Close the Inline Mixer (V)*
 
@@ -21,7 +21,7 @@ Every new track has a Volume & Pan plugin and a Level Meter plugin
 inserted. These behave like any other plugin: you can change their
 order, remove them, or add more instances of them to the same track.
 
-![](images/29----02.png)
+![](images/29----02@2x.png)
 
 *Default Plugins Volume & Pan and Level Meter*
 
@@ -29,7 +29,7 @@ For example, you might want a level meter before and after a
 compressor. You can add any other plugins, built-in or third-party, to
 the inline mixer.
 
-![](images/29----03.png)
+![](images/29----03@2x.png)
 
 *Level Meter Before and After a 3rd Party Compressor*
 
@@ -93,7 +93,7 @@ Editor, which lays the whole track's chain out side by side so you can
 have several plugins' pages open at once. See
 [The Plugins Detail Editor](plugins-detail-editor.md).
 
-![](images/29----04.png)
+![](images/29----04@2x.png)
 
 *Select a Plugin to See its Settings*
 
@@ -103,7 +103,7 @@ To duplicate a plugin, select it and press **D**. This gives you a new
 instance of the plugin to drag to a different position or to another
 track.
 
-![](images/29----16.png)
+![](images/29----16@2x.png)
 
 *Duplicate Plugins by Pressing D*
 
@@ -134,7 +134,7 @@ To bypass a plugin, select it and turn off **Enabled** in the Actions
 panel, or press **F**. A bypassed plugin is shown darkened in the
 inline mixer.
 
-![](images/29----18.png)
+![](images/29----18@2x.png)
 
 *A Bypassed Plugin*
 
@@ -172,14 +172,14 @@ lets you tweak one parameter without going to the Actions panel or
 opening the plugin's window. For example, the mix control of a delay
 plugin makes a handy quick control.
 
-![](images/29----06.png)
+![](images/29----06@2x.png)
 
 *Delay Mix Set as a Quick Control Parameter*
 
 To set up a quick control parameter, right-click the plugin and choose
 **Set quick control parameter**, then choose which parameter to use.
 
-![](images/29----07.png)
+![](images/29----07@2x.png)
 
 *Right-click to Set the Quick Control Parameter*
 
@@ -202,7 +202,7 @@ mixer.
 change **Open plugin windows by** under Plugin Windows on the
 *Settings > General* page. (Default: Single-clicking)
 
-![](images/29----09.png)
+![](images/29----09@2x.png)
 
 *Setting to Open Plugins with a Single-click*
 
@@ -236,7 +236,7 @@ your Edit:
 3.  From the search results, drag the plugin from the Browser to the
     inline mixer.
 
-![](images/29----10.png)
+![](images/29----10@2x.png)
 
 *Searching for Plugins in the Search Tab of the Browser*
 
@@ -247,7 +247,7 @@ manufacturer. To set tags, see
 > 💡 **Tip:** When you're searching for a specific plugin, disable the
 **Loops** and **Presets** options for more targeted results.
 
-![](images/29----11.png)
+![](images/29----11@2x.png)
 
 *Limiting Search Filters to Plugins*
 
@@ -264,7 +264,7 @@ and choose **Master**, or choose *View > Global tracks > Show or hide Master
 track*. Plugins you add there and in the transport box are the same
 plugins.
 
-![](images/29----12.png)
+![](images/29----12@2x.png)
 
 *Master plugins area*
 
@@ -280,7 +280,7 @@ those functions in one plugin designed for use on a full mix.
 **Add new plugin** to open the plugin selector menu. This can be quicker
 than dragging the plugin object down there.
 
-![](images/29----14.png)
+![](images/29----14@2x.png)
 
 *Add new plugin from the master plugin box*
 
@@ -290,7 +290,7 @@ Plugins that support a sidechain input have a sidechain assignment list
 at the upper left in the plugin header. Pick which track you want
 to route to the sidechain.
 
-![](images/38----51.png)
+![](images/38----51@2x.png)
 
 *Selecting a Sidechain Input*
 

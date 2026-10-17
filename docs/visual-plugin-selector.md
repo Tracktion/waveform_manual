@@ -11,7 +11,7 @@ hold any modifier key while you click it. It shows each of your plugins
 as a thumbnail image with its name. A plain click opens whichever
 selector **Plugin selector** in *Settings > Plugins* is set to (see [Plugin View Options](reference-settings.md#plugin-view-options)).
 
-![](images/39----01.png)
+![](images/39----01@2x.png)
 
 *Right-click to Open the Visual Plugin Selector*
 
@@ -19,7 +19,7 @@ selector **Plugin selector** in *Settings > Plugins* is set to (see [Plugin View
 > been captured yet. See
 > [Scanning to Capture Thumbnails](#scanning-to-capture-thumbnails).
 
-![](images/39----02.png)
+![](images/39----02@2x.png)
 
 *Visual Plugin Selector*
 
@@ -30,7 +30,7 @@ plugin on a track in the normal way.
 The Visual Plugin selector has a few controls to help you find the right
 plugin:
 
-![](images/39----03.png)
+![](images/39----03@2x.png)
 
 *Visual Plugin Selector Controls*
 
@@ -76,7 +76,7 @@ take a snapshot of the plugin window and update the thumbnail image. For
 more interesting thumbnails, capture the plugin in action, with the
 meters moving or an interesting EQ curve.
 
-![](images/39----09.png)
+![](images/39----09@2x.png)
 
 *Customise a Plugin Thumbnail*
 
@@ -91,7 +91,7 @@ To fill in every thumbnail at once, open *Settings > Plugins*, find the
 **Create plugin thumbnail images** row and click its **Plugin thumbnail
 images** button.
 
-![](images/39----05.png)
+![](images/39----05@2x.png)
 
 *Capture Thumbnails Options*
 

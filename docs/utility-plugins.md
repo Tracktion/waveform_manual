@@ -147,6 +147,10 @@ measures. (Default: Stereo)
 **Mode** (Choices: Bins, Line): Draws the spectrum as separate frequency bins
 or as a continuous line. (Default: Line)
 
+![](images/utility-plugins_spectrum@2x.png)
+
+*The Spectrum plugin showing a live line graph*
+
 ## Loudness Meter <span class="pro">PRO</span> { #loudness-meter }
 
 > 📝 **Edition:** Waveform Pro.
@@ -157,6 +161,10 @@ stereo field. Like the Spectrum, it only reads the audio and doesn't change it.
 Put it last on the Master track (or on a submix) and play the song through to
 see whether the mix is ready for release. Offline renders don't disturb its
 readings.
+
+![](images/utility-plugins_loudness_meter@2x.png)
+
+*The Loudness Meter on the Master track during playback*
 
 The display has three sections:
 
