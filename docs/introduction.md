@@ -94,7 +94,7 @@ changed them, switch back to the defaults to follow along:
 2.  Click **Reset to Defaults** at the bottom of the page
 3.  Select **Restore default Waveform key mappings**
 
-![](images/01----01.png)
+![](images/01----01@2x.png)
 
 *Settings Tab: Set the Keyboard Shortcuts to Match this Book*
 

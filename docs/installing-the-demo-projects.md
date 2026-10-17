@@ -27,6 +27,10 @@ The **Welcome** tab is the first tab in the window. **Upon launch** in
 | **Colour Scheme** | Buttons for the dark scheme, the light scheme and the Colour Scheme Editor. |
 | **News Feed** / **Training Videos** | Tracktion news and tutorial videos. Click an item to open it in your web browser, or hover over it to read its full description. |
 
+![](images/installing-the-demo-projects_welcome_tab@2x.png)
+
+*The Welcome tab*
+
 Along the bottom are **New Project...**, **Browse all Projects** (which
 opens the Projects tab), **Settings** and **About**.
 

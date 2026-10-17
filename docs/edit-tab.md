@@ -39,7 +39,7 @@ Edit. Click the eye button at the top right of the window, then drag the
 Browser block in the pop-out to the left, right or top edge.
 
 
-![](images/08----01.png)
+![](images/08----01@2x.png)
 
 *Browser Open/Close Icon, A. Browser Tabs, B.*
 
@@ -119,7 +119,7 @@ options. The keyboard shortcuts are I to position the In marker, and O
 to position the Out marker.
 
 
-![](images/08----06.png)
+![](images/08----06@2x.png)
 
 *In marker and Out marker*
 
@@ -128,7 +128,7 @@ This is where you set the tempo and tempo changes. Press F9 to open or
 close it.
 
 
-![](images/08----07.png)
+![](images/08----07@2x.png)
 
 *Tempo Track*
 
@@ -140,7 +140,7 @@ through the combined, bars & beats, absolute and hidden views; it has no
 default key.
 
 
-![](images/08----08.png)
+![](images/08----08@2x.png)
 
 *Marker Track*
 
@@ -164,9 +164,9 @@ to add a bars and beats marker or an absolute timecode marker, or on the
 Chord or Arranger track to insert a Chord or Arranger clip.
 
 
-![](images/08----09.png)
+![](images/08----09@2x.png)
 
-*Clip Object and Plugin Object*
+*Clip Object, A. Plugin Object, B. Modifier Object, C*
 
 **The Plugin Object**: Drag the Plugin object to the inline mixer of any
 track to insert an audio effect plugin or virtual instrument. When you
@@ -197,9 +197,9 @@ those features. Right-click the eye button for the View menu, which has
 the same options. These are the default keyboard shortcuts:
 
 
-![](images/08----10.png)
+![](images/08----10@2x.png)
 
-*Show Hide Buttons. A, Show/Hide the Tempo track. B, Show/Hide the Inputs. C, Show/Hide the Mixer, D, Show/Hide the Actions panel, E, Show/Hide the Marker track*
+*Show Hide Buttons. A, Show/Hide the Tempo track. B, Show/Hide the Inputs. C, Show/Hide the inline mixer, D, Show/Hide the Actions panel, E, Show/Hide the Marker track*
 
 -   Show/Hide Tempo track (F9)
 -   Show/Hide Marker track (F10)
@@ -235,6 +235,10 @@ Selected Tracks**, **Show Selection In Edit**, **Group by Track**, and
 buttons change to **Unfreeze Edit** and **Unfreeze Tracks** once the
 tracks are frozen.
 
+![](images/edit-tab_cpu_meter@2x.png)
+
+*The CPU meter beside the eye button, and the CPU Usage window it opens*
+
 ### The Track Section
 
 Tracks appear as parallel lanes that contain and organise clips of
@@ -253,7 +257,7 @@ track, right-click the track header and choose **Rename track**. To
 reorder tracks, drag a track by its header to a new position.
 
 
-![](images/08----11.png)
+![](images/08----11@2x.png)
 
 *Track Headers*
 
@@ -263,7 +267,7 @@ up a track for recording. More input options are in the Actions panel.
 You can also drag an input to another track to continue recording.
 
 
-![](images/08----12.png)
+![](images/08----12@2x.png)
 
 *Inputs*
 
@@ -286,7 +290,7 @@ recorded notes. Clip Layer Effects add more ways to process Audio clips;
 see [Clip Layer Effects](clip-layer-effects.md).
 
 
-![](images/08----13.png)
+![](images/08----13@2x.png)
 
 *Audio Clip*
 
@@ -296,7 +300,7 @@ Audio clips. Expand MIDI clips vertically to see the full in-line piano
 roll MIDI editor, which has tools for entering and editing MIDI notes.
 
 
-![](images/08----14.png)
+![](images/08----14@2x.png)
 
 *MIDI Clip*
 
@@ -306,7 +310,7 @@ basslines, synth leads and other parts too. Some Waveform users program
 complete compositions entirely with Step clips.
 
 
-![](images/08----15.png)
+![](images/08----15@2x.png)
 
 *Step Clip*
 
@@ -345,9 +349,9 @@ you can remove, reorder or add more instances of them. By default every
 track has:
 
 
-![](images/08----18.png)
+![](images/08----18@2x.png)
 
-*Inline Mixer Default Setup: Volume & Pan Plugin, Level Meter Plugin, Solo Button, Mute Button*
+*Inline Mixer Default Setup: Volume & Pan Plugin, A. Level Meter Plugin, B. Mute Button, C. Solo Button, D*
 
 **Volume & Pan Plugin**: This acts like the channel fader and pan
 controls on a conventional mixer. Click either control for a larger
@@ -379,7 +383,7 @@ tracks**, or keep solo isolate and use **Reset all muted/soloed tracks**
 (Shift + Opt + M / Shift + Alt + M).
 
 
-![](images/08----23.png)
+![](images/08----23@2x.png)
 
 *Mute/Solo Right-Click Menu*
 
@@ -429,7 +433,7 @@ block in the eye button's pop-out. Opt + F11 / Alt + F11 locks it to the
 current selection.
 
 
-![](images/08----20.png)
+![](images/08----20@2x.png)
 
 *The Actions panel*
 
@@ -510,7 +514,7 @@ These buttons toggle some of Waveform's most used functions. Each
 description includes the button's shortcut.
 
 
-![](images/08----22.png)
+![](images/08----22@2x.png)
 
 *The transport bar buttons*
 

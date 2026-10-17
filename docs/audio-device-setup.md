@@ -74,7 +74,7 @@ interfaces, install the manufacturer's driver and use ASIO if you can.
     device is connected, it appears as an option for the **Output
     Device** property.
 
-    ![](images/04----01.png)
+    ![](images/04----01@2x.png)
 
     *macOS - Audio Device Output and Input Properties*
 
@@ -88,7 +88,7 @@ interfaces, install the manufacturer's driver and use ASIO if you can.
 separately, but select the same device for both where you can. This
 example uses a "USB iTwo", a simple 2 in / 2 out interface.
 
-![](images/04----02.png)
+![](images/04----02@2x.png)
 
 *Audio Device Test Button on Mac*
 
@@ -244,7 +244,7 @@ in the driver's control panel.
 The default sample rate is 44100 Hz, the sample rate of CDs. Use this or
 48000 Hz unless you have a specific reason to choose another rate.
 
-![](images/04----10.png)
+![](images/04----10@2x.png)
 
 *Setting the Sample Rate*
 
@@ -254,9 +254,9 @@ The default sample rate is 44100 Hz, the sample rate of CDs. Use this or
 Test playback to make sure you get sound and a complete stereo image.
 One way to do that:
 
-![](images/04----05.png)
+![](images/04----05@2x.png)
 
-*Loading the SubWays Demo*
+*The Project Templates list on the Welcome tab*
 
 
 1.  Open the Welcome tab and pick a song from the **Project Templates**
@@ -285,6 +285,11 @@ these controls:
   <span class="pro">PRO</span>, such as 5.1 and 7.1, need Waveform Pro
   or the Surround Expansion.
 - **Test**: on enabled outputs, plays a short test tone.
+
+
+![](images/audio-device-setup_channel_groups@2x.png)
+
+*Channel Layout Presets and the Input and Output Channel Groups*
 
 Click a row to select it and see its properties on the right. Inputs
 have the recording properties described in
@@ -382,14 +387,14 @@ To run the test:
 5.  In Waveform, go to *Settings > Audio Devices*.
 6.  In the **Input Channel Groups** list, click one of the inputs.
 
-    ![](images/04----11.png)
+    ![](images/04----11@2x.png)
 
     *Select an Input*
 
 7.  In the input's properties on the Settings page, click
     **Auto-Detect...**.
 
-    ![](images/04----12.png)
+    ![](images/04----12@2x.png)
 
     *Auto-Detect & Time Adjust Parameters*
 

@@ -15,7 +15,7 @@ The Keyboard Shortcuts page on the Settings tab shows all of the
 key-mappings. You can change them to suit the way you work, or to match a
 DAW you already know.
 
-![](images/14----01.jpg)
+![](images/14----01@2x.png)
 
 *Keyboard Shortcuts Page on the Settings Tab*
 
@@ -41,7 +41,7 @@ to a file first (see below) if you might want them back.
 
 ## Setting a Keyboard Shortcut
 
-![](images/14----03.jpg)
+![](images/14----03@2x.png)
 
 *Map Record to the Asterisk on the Keypad*
 
@@ -75,7 +75,7 @@ the action. **Remove this key-mapping** deletes it, and **Change this
 key-mapping** opens the **New key-mapping** dialog so you can enter a new
 assignment.
 
-![](images/14----04.jpg)
+![](images/14----04@2x.png)
 
 *Click to Change or Remove a Key-mapping*
 
@@ -85,7 +85,7 @@ Once your keyboard shortcuts are set up the way you want, save the whole
 key-mapping to a file. If you run Waveform on a different computer, you
 can then load the file to get all your assignments back.
 
-![](images/14----08.jpg)
+![](images/14----08@2x.png)
 
 *Save Key-Mappings Button*
 

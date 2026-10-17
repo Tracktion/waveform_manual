@@ -132,6 +132,10 @@ Share menu, click a project's **Create Archive...** button, or click an
 Edit's **Archive Edit** button on the Projects tab. The **Create Archive**
 dialog has two controls.
 
+![](images/importing-and-exchanging-projects_create_archive@2x.png)
+
+*The Create Archive dialog*
+
 **Destination file**: Where the `.zip` is saved. Waveform suggests a name
 based on the Edit, ending in `Archive 1.zip`, and bumps the number
 automatically if a file already exists. It remembers the last folder you

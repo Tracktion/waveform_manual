@@ -174,6 +174,10 @@ Outputs are listed the same way as inputs, with one addition.
 
 **Test**: Plays a short test tone through that output so you can confirm it's wired up and audible. This button only appears on enabled output rows.
 
+![](images/reference-settings_audio_output_selected@2x.png)
+
+*An output row selected, with its own settings on the right*
+
 ### Selected Device Settings
 
 When you select an input row, the settings pane on the right shows everything about that one input. These settings apply to recording from that input, and (while **Use the Same Properties for All Devices** is on) are shared across all your inputs. Selecting an output row shows that output's own settings in the same pane.
@@ -1281,6 +1285,10 @@ The key is a long string you get from the provider's own website; you paste the 
 #### Custom Profile Settings
 
 When a profile you added yourself is active, you get the full set of connection settings instead:
+
+![](images/reference-settings_ai_custom_profile@2x.png)
+
+*Settings > AI with a custom profile active*
 
 **Profile Name**: The display name for this profile. It's what appears in the **Active Profile** selector, and what prefixes this profile's models in the assistant's model selector.
 

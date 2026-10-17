@@ -50,7 +50,7 @@ The keyboard shortcut list is a good way to get to know Waveform. Open
 *Settings > Keyboard Shortcuts* to see every assignable action, grouped
 by category.
 
-![](images/07----03.png)
+![](images/07----03@2x.png)
 
 *View as HTML Button*
 
