@@ -14,7 +14,7 @@ take. Trim the beginning to keep the track silent until the part comes
 in, then trim the end to remove any noise after the song has finished.
 
 
-![](images/17----01.png)
+![](images/17----01@2x.png)
 
 *Trimming an Audio Clip*
 
@@ -30,7 +30,7 @@ clips.
 ## Correcting Small Timing Problems
 
 
-![](images/17----02.png)
+![](images/17----02@2x.png)
 
 *Bass Note Timing is Early*
 
@@ -45,7 +45,7 @@ out-of-time note into its own Audio clip, then move it slightly.
     fixing and press slash ( / ) to split the clip.
 
 
-![](images/17----03.png)
+![](images/17----03@2x.png)
 
 *Split the Beginning of the Note*
 
@@ -53,14 +53,14 @@ out-of-time note into its own Audio clip, then move it slightly.
     The bad note is now in its own Audio clip.
 
 
-![](images/17----04.png)
+![](images/17----04@2x.png)
 
 *Split After the Note*
 
 5.  Click the single note to select it, then trim the clip to shorten it a little.
 
 
-![](images/17----05.png)
+![](images/17----05@2x.png)
 
 *Trim the Clip*
 
@@ -68,14 +68,14 @@ out-of-time note into its own Audio clip, then move it slightly.
     Drag the note to line it up with the correct drum hit.
 
 
-![](images/17----06.png)
+![](images/17----06@2x.png)
 
 *Drag the Clip to the Correct Time*
 
 7.  Finish the edit by trimming and crossfading into the other notes.
 
 
-![](images/17----07.png)
+![](images/17----07@2x.png)
 
 *The Completed Correction*
 
@@ -94,7 +94,7 @@ put the first split exactly where you want the note to start.
     press slash ( / ) to split the clip.
 
 
-![](images/17----08.png)
+![](images/17----08@2x.png)
 
 *Split the Clip Where the Note Should Start*
 
@@ -102,7 +102,7 @@ put the first split exactly where you want the note to start.
     extra bit.
 
 
-![](images/17----09.png)
+![](images/17----09@2x.png)
 
 *Trim Back the Extra Bit From the Previous Clip*
 
@@ -110,7 +110,7 @@ put the first split exactly where you want the note to start.
     the clip again. The bad note now has its own Audio clip.
 
 
-![](images/17----10.jpg)
+![](images/17----10@2x.png)
 
 *Split After the Note*
 
@@ -138,7 +138,7 @@ To adjust the fade-out at the end of a take, drag the clip's fade handle
 to the left.
 
 
-![](images/17----13.png)
+![](images/17----13@2x.png)
 
 *Adjusting Fade-outs*
 
@@ -146,7 +146,7 @@ To change the shape of the fade-out, choose one of the four preset
 shapes in the Actions panel.
 
 
-![](images/17----14.png)
+![](images/17----14@2x.png)
 
 *Fade-out shapes in the Actions panel*
 
@@ -180,7 +180,7 @@ point where there's still some signal. A very short fade at the edge of
 the clip fixes it.
 
 
-![](images/17----17.png)
+![](images/17----17@2x.png)
 
 *Example of an Edge Fade*
 
@@ -191,14 +191,14 @@ end of every selected clip (fades already longer than that are left
 alone).
 
 
-![](images/17----18.png)
+![](images/17----18@2x.png)
 
 *Apply Edge Fades in the Actions panel*
 
 ## Rendering to a Single Audio Clip
 
 
-![](images/17----19.jpg)
+![](images/17----19@2x.png)
 
 *Chopped Up Audio Clip Following Editing*
 
@@ -217,7 +217,7 @@ render the clips back into a single clip:
     selected clips**.
 
 
-![](images/17----21.png)
+![](images/17----21@2x.png)
 
 *Render Clip > Merge the selected clips*
 

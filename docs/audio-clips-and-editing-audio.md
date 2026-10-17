@@ -10,16 +10,16 @@ An Audio clip has a header, which holds the trim and slip handles, and
 a body, which holds the waveform thumbnail and fade handles.
 
 
-![](images/12----01.png)
+![](images/12----01@2x.png)
 
-*Main Parts of an Audio Clip*
+*Main parts of an Audio clip: A header, B body, C clip effects*
 
 **Header**: Move Audio clips by dragging from the header. The header
 includes the trim handles (hollow), slip handles (solid), and other
 tools.
 
 
-![](images/12----02.png)
+![](images/12----02@2x.png)
 
 *Audio Clip Header*
 
@@ -27,7 +27,7 @@ tools.
 handles and the clip name.
 
 
-![](images/12----03.png)
+![](images/12----03@2x.png)
 
 *Audio Clip Body*
 
@@ -36,7 +36,7 @@ or more plugins on the clip body. See
 [Clip Effects](clip-effects.md).
 
 
-![](images/12----04.png)
+![](images/12----04@2x.png)
 
 *Audio Clip Effects*
 
@@ -44,7 +44,7 @@ or more plugins on the clip body. See
 many more properties and controls in the Actions panel.
 
 
-![](images/12----05.png)
+![](images/12----05@2x.png)
 
 *Audio Clip properties*
 
@@ -81,7 +81,7 @@ X / Ctrl + X) does the same, and so does the **Delete** button in the
 Actions panel.
 
 
-![](images/12----07.png)
+![](images/12----07@2x.png)
 
 *Audio Clip Properties Delete Button*
 
@@ -100,7 +100,7 @@ With **Snap** turned on, trimming snaps to the grid. To trim freely,
 hold down Cmd / Ctrl as you drag or turn **Snap** off.
 
 
-![](images/12----08.png)
+![](images/12----08@2x.png)
 
 *Audio Clip Trim Handles*
 
@@ -113,9 +113,9 @@ solid box-shaped handle left or right to slip edit. Hold Cmd / Ctrl to
 override snapping while you slip edit.
 
 
-![](images/12----09.png)
+![](images/12----09@2x.png)
 
-*Audio Clip Slip Handle*
+*Audio clip slip handle (A)*
 
 **Reframing**: Drag the hollow box-shaped handle left or right to
 reframe the clip: the clip moves but the waveform doesn't, so the audio
@@ -142,7 +142,7 @@ Splitting is one of the most common audio edits. The quickest way:
 3.  Press slash (/).
 
 
-![](images/12----10.png)
+![](images/12----10@2x.png)
 
 *Audio Clip, Right after Split*
 
@@ -155,7 +155,7 @@ split at the cursor, at the In marker or at the Out marker. These
 actions only affect the selected clips.
 
 
-![](images/12----11.png)
+![](images/12----11@2x.png)
 
 *Audio Clip properties, Split Clips actions*
 
@@ -174,7 +174,7 @@ looks like a tiny box with a diagonal line through it. Drag a fade
 handle inward to draw a fade-in or fade-out.
 
 
-![](images/12----12.png)
+![](images/12----12@2x.png)
 
 *Audio Clip Fades*
 
@@ -183,7 +183,7 @@ fade types. For more control, edit the **Fade In** and **Fade Out**
 values in the Actions panel directly.
 
 
-![](images/12----13.png)
+![](images/12----13@2x.png)
 
 *Audio Clip, Fade properties*
 
@@ -194,7 +194,7 @@ fade. A pitch fade gives a tape-stop or tape run-up effect, and its fade
 graphic is shaded darker than a volume fade's.
 
 
-![](images/12----14.png)
+![](images/12----14@2x.png)
 
 *Right-click Fade Handle, Pitch Fade Speed Up*
 
@@ -212,7 +212,7 @@ create one:
 2.  Press X.
 
 
-![](images/12----15.png)
+![](images/12----15@2x.png)
 
 *Crossfaded Audio Clips*
 
@@ -222,7 +222,7 @@ in the Actions panel. Adjust the fade shapes with the buttons in the
 Actions panel, as for any other fade.
 
 
-![](images/12----16.png)
+![](images/12----16@2x.png)
 
 *Fade-in/Fade-out Shape Buttons*
 
@@ -236,7 +236,7 @@ mode**, set to **Disabled** or **Enabled**. When it's **Enabled**,
 dragging a clip so that it overlaps another creates a crossfade.
 
 
-![](images/12----17.png)
+![](images/12----17@2x.png)
 
 *Settings Tab, General page, Default Auto Crossfade Mode*
 
@@ -253,7 +253,7 @@ pops, especially after splitting a clip in the middle of a note.
 Waveform calls these short fade-ins and fade-outs "edge fades."
 
 
-![](images/12----18.png)
+![](images/12----18@2x.png)
 
 *Apply Edge Fades*
 
@@ -279,7 +279,7 @@ note, and adjust its level. The Actions panel also has clip mute and
 pan.
 
 
-![](images/12----19.png)
+![](images/12----19@2x.png)
 
 *Audio Clip Gain, Mute, Pan and Channels*
 
@@ -315,7 +315,7 @@ Actions panel. The waveform thumbnail reverses, and the clip plays
 backwards.
 
 
-![](images/12----20.png)
+![](images/12----20@2x.png)
 
 *Reversing an Audio Clip*
 
@@ -334,7 +334,7 @@ single clip selected, the menu offers **Flatten the selected clip**
 instead.
 
 
-![](images/12----21.png)
+![](images/12----21@2x.png)
 
 *Render Clip > Merge the selected clips*
 
@@ -344,7 +344,7 @@ The other ways to render and export are covered in
 [Rendering and Stems](rendering-and-stems.md).
 
 
-![](images/12----22.png)
+![](images/12----22@2x.png)
 
 *Merge Clips, Before and After*
 
@@ -462,14 +462,14 @@ have to be next to each other, but they do need to be on the same
 track.
 
 
-![Select the clips to group](images/38----30.png)
+![Select the clips to group](images/38----30@2x.png)
 
 *Select the Clips to Group*
 
 Next, click **Create Group Clip** in the Actions panel.
 
 
-![](images/38----31.png)
+![](images/38----31@2x.png)
 
 *Create a Group Clip from the Actions panel*
 
@@ -485,7 +485,7 @@ To ungroup the clip back to its original state, select it and click
 **Ungroup** in the Actions panel.
 
 
-![](images/38----33.png)
+![](images/38----33@2x.png)
 
 *Ungroup from the Actions panel*
 
@@ -509,16 +509,16 @@ tooltip reads "Drag to create a linked copy of this clip"). What you
 drag is a copy that refers back to the source clip.
 
 
-![](images/38----35.png)
+![](images/38----35@2x.png)
 
-*Link Button in the Clip Header*
+*Link button in the clip header (A)*
 
 In the next image, a linked copy of an Audio clip has been dragged
 out. The lower left of each clip shows a "link" icon, marking it as a
 linked clip.
 
 
-![](images/38----36.png)
+![](images/38----36@2x.png)
 
 *Linked Audio Clips*
 
@@ -552,7 +552,7 @@ linked clip shows in all the copies, which helps with a beat you use in
 many places in a song: update one linked copy and they all change.
 
 
-![](images/38----39.png)
+![](images/38----39@2x.png)
 
 *Linked MIDI Clips on Separate Tracks*
 
@@ -561,7 +561,7 @@ repeats on a single track. Linked clips are separate clips and can even
 sit on different tracks.
 
 
-![](images/38----40.png)
+![](images/38----40@2x.png)
 
 *Linked Step Clips, Green Link Button*
 
