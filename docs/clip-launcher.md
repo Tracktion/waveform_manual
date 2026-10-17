@@ -100,6 +100,10 @@ settings in the Actions panel: its **Name** and **Colour**, plus
 **Insert Scene Before**, **Insert Scene After** and **Delete** (which
 deletes all the selected scenes).
 
+![](images/clip-launcher_scene_actions@2x.png)
+
+*Scene properties in the Actions panel*
+
 To play the clips on the arranger tracks, use the play-arranger
 buttons: the one on each track switches that track
 back to its arrangement clips, and the one on the Master track does this
@@ -128,7 +132,7 @@ By default, clips follow the global quantisation, but the clip's
 **Launch quantisation** property can override it.
 
 
-![](images/clip_launcher_playback_clip_properties.jpeg)
+![](images/clip_launcher_playback_clip_properties@2x.png)
 
 *Clip Properties*
 
@@ -239,7 +243,7 @@ algorithmically.
 Follow actions are in the Actions panel when a clip is selected.
 
 
-![](images/clip_launcher_sequencing_follow_actions_and_groups.jpeg)
+![](images/clip_launcher_sequencing_follow_actions_and_groups@2x.png)
 
 *Clip Follow Actions*
 
@@ -295,7 +299,7 @@ use the scene triggers to move through the sections of a song.
 ### Action Probabilities
 
 
-![](images/clip_launcher_sequencing_follow_actions_multiple.jpeg)
+![](images/clip_launcher_sequencing_follow_actions_multiple@2x.png)
 
 *Clip Follow Action Probabilities*
 
@@ -328,7 +332,7 @@ as in the arrangement.
 ### Configuration
 
 
-![](images/clip_launcher_controllers_midi_settings.jpeg)
+![](images/clip_launcher_controllers_midi_settings@2x.png)
 
 *Controller MIDI Settings*
 
@@ -337,7 +341,7 @@ press the **Refresh Devices** button. Once it's visible, make sure all
 its input and output devices are set to **Enabled** in the list.
 
 
-![](images/clip_launcher_controllers_control_surface_settings.jpeg)
+![](images/clip_launcher_controllers_control_surface_settings@2x.png)
 
 *Control Surface Settings*
 

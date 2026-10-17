@@ -21,7 +21,7 @@ By the end of the chapter, the Edit has these tracks:
 1.  Set the tempo: click the tempo (e.g. 77 BPM) in the transport bar,
     then edit the **BPM** value in the Actions panel.
 
-![](images/16----01.png)
+![](images/16----01@2x.png)
 
 *Click BPM to Edit Tempo*
 
@@ -29,7 +29,7 @@ By the end of the chapter, the Edit has these tracks:
     creates an Audio clip. The example uses Track 1 for the loop,
     renamed to "DrumLoop".
 
-![](images/16----02.png)
+![](images/16----02@2x.png)
 
 *Start With a 2-Bar Drum Loop*
 
@@ -40,7 +40,7 @@ and drag the right trim arrow until it does.
     then drag the right trim handle to roll out as many copies of the
     loop as you want.
 
-![](images/16----03.png)
+![](images/16----03@2x.png)
 
 *Roll Out Repeats of the Drum Loop*
 
@@ -50,7 +50,7 @@ and drag the right trim arrow until it does.
     track, and the second track records the acoustic guitar rhythm part
     from **Input 1**, where the mic is connected.
 
-![](images/16----04.png)
+![](images/16----04@2x.png)
 
 *Configure the Input*
 
@@ -102,7 +102,7 @@ plugin can help it balance with your live mic.
 
 3.  Rewind, then click **Record** in the transport bar.
 
-![](images/16----06.png)
+![](images/16----06@2x.png)
 
 *Recording the Second Guitar Part*
 
@@ -111,7 +111,7 @@ plugin can help it balance with your live mic.
     tracks to opposite sides with the **Pan** slider in the Volume & Pan
     plugin.
 
-![](images/16----07.png)
+![](images/16----07@2x.png)
 
 *Panning Guitar Parts Left and Right*
 
@@ -141,7 +141,7 @@ Your bass or electric guitar sounds better with hi-z mode on.
 4.  Rewind and press **Record**. If the take doesn't go well, stop, press
     **Undo** and try again.
 
-![](images/16----09.png)
+![](images/16----09@2x.png)
 
 *Overdubbed Bass Line*
 
@@ -155,7 +155,7 @@ first take might turn out to be the best.
 As you record overdubs, name your tracks to stay organised. Click the
 track name, then edit the **Name** property.
 
-![](images/16----10.png)
+![](images/16----10@2x.png)
 
 *Renaming a Track*
 
@@ -196,7 +196,7 @@ You can now adjust the levels of all the recorded tracks, or carry on
 overdubbing vocals, keyboards or other instruments. As you add tracks,
 reduce the level of each to avoid overloading the master level.
 
-![](images/16----12.png)
+![](images/16----12@2x.png)
 
 *Adjust the Mix*
 

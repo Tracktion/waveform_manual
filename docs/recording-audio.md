@@ -20,7 +20,7 @@ The input section sits at the far left of every track. Each track has
 an input object that looks like a rectangular arrow pointing right.
 
 
-![](images/15----01.png)
+![](images/15----01@2x.png)
 
 *Track Input Object*
 
@@ -29,16 +29,16 @@ shows and hides the track inputs (Shift + F12), at the top right corner
 of the Edit tab.
 
 
-![](images/15----02.png)
+![](images/15----02@2x.png)
 
-*Show/Hide Inputs Button*
+*Show/Hide Inputs button (A) in the panel visibility menu*
 
 Click an input object for a menu of options, and choose which hardware
 input this track records from. You can choose **No input** or any input
 on your audio interface. In the picture it's set to **Input 1**.
 
 
-![](images/15----03.png)
+![](images/15----03@2x.png)
 
 *Input Menu*
 
@@ -136,7 +136,7 @@ MIDI clips. Set the input you need and insert the right kind of
 plugins.
 
 
-![](images/15----06.png)
+![](images/15----06@2x.png)
 
 *MIDI Devices on the Inputs Menu*
 
@@ -152,7 +152,7 @@ for multi-track recording in one step, which helps when you record a
 live performance through a digital mixer with a lot of inputs.
 
 
-![](images/15----07.png)
+![](images/15----07@2x.png)
 
 *Assign All Inputs from the Input Menu*
 
@@ -186,7 +186,7 @@ To enable (arm) a track for recording, click **R** on the input
 object. The R lights up to show that the track is armed.
 
 
-![](images/15----09.png)
+![](images/15----09@2x.png)
 
 *Input Armed for Recording*
 

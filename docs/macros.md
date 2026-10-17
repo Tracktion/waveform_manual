@@ -14,7 +14,7 @@ remembering shortcuts for macros you only use occasionally.
 To open the Macro Editor, open *Settings > Keyboard Shortcuts* and
 click **Show Macro Editor** at the bottom right of the page.
 
-![](images/37----01.png)
+![](images/37----01@2x.png)
 
 *The Macro Editor*
 
@@ -37,7 +37,7 @@ To create a new macro, click **Add a new macro** on the Macro Editor.
 This adds a new macro named "Untitled Macro" to the bottom of the
 keyboard shortcuts list under the Macros section.
 
-![](images/37----02.png)
+![](images/37----02@2x.png)
 
 *Adding a New Macro*
 
@@ -64,7 +64,7 @@ available action by right-clicking the Macro Editor and navigating
 through the three collections of actions listed under its **Actions**
 heading. Select an action and its code is inserted into the script.
 
-![](images/37----03.png)
+![](images/37----03@2x.png)
 
 *Selecting Actions from the Macro Editor Right-click Menu*
 
@@ -101,7 +101,7 @@ There are several ways to run a macro:
     groups. Open the Custom Menu from the Edit tab's main menu:
     *Actions > Custom*.
 
-![](images/37----10.png)
+![](images/37----10@2x.png)
 
 *The Custom Menu Editor*
 
@@ -111,7 +111,7 @@ As well as step-by-step lists of actions, you can write macros in
 JavaScript, with loops and conditions. The Macro Editor colour-codes the
 elements of the script.
 
-![](images/37----04.png)
+![](images/37----04@2x.png)
 
 *JavaScript Macro Example*
 
@@ -166,7 +166,7 @@ shortcut. The built-in command stops at the In marker first, so you need
 to press it twice to get back to zero. A macro that runs the action
 twice always returns the cursor to the start of the Edit.
 
-![](images/37----06.png)
+![](images/37----06@2x.png)
 
 *True Return-to-Zero Macro Example*
 
@@ -183,7 +183,7 @@ call `Tracktion.mergeSelectedClips();` as one step of
 a longer macro. Pick a free key: Cmd + G / Ctrl + G is already used by
 **Group clips**.
 
-![](images/37----07.png)
+![](images/37----07@2x.png)
 
 *Merge Clips Macro Assigned*
 
@@ -194,7 +194,7 @@ Macro Editor. Waveform also has buttons to import and export macro
 scripts as XML files with a `.tracktionscript` extension, and you can
 drag script files onto the Keyboard Shortcuts page to import them.
 
-![](images/37----11.png)
+![](images/37----11@2x.png)
 
 *Script Import and Export Buttons*
 
