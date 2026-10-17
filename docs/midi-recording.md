@@ -13,7 +13,7 @@ one, and set its input to your MIDI controller. Play a few notes on the
 controller to check that there's MIDI activity.
 
 
-![](images/23----01.png)
+![](images/23----01@2x.png)
 
 *A Track Set Up for MIDI Recording*
 
@@ -36,7 +36,7 @@ Recording MIDI is very much like recording audio:
     input.
 
 
-![](images/23----02.png)
+![](images/23----02@2x.png)
 
 *Enable Recording*
 
@@ -44,7 +44,7 @@ Recording MIDI is very much like recording audio:
     recording, or press R.
 
 
-![](images/23----03.png)
+![](images/23----03@2x.png)
 
 *Start Recording*
 
@@ -69,7 +69,7 @@ clip switches to MIDI editor mode, where you can edit the notes (see
 [MIDI Editing](midi-editing.md)).
 
 
-![](images/23----05.png)
+![](images/23----05@2x.png)
 
 *MIDI Clip Following Recording*
 
@@ -86,7 +86,7 @@ Waveform's MIDI editor is what's commonly called a piano roll view (PRV):
 it shows the notes next to a vertical piano keyboard on the left.
 
 
-![](images/23----06.png)
+![](images/23----06@2x.png)
 
 *Track Expanded to the MIDI Editor*
 
@@ -103,7 +103,7 @@ Select a MIDI input and find **Action** in the Actions panel. Its
 dropdown offers several record modes.
 
 
-![](images/23----07.png)
+![](images/23----07@2x.png)
 
 *MIDI Record Modes*
 
@@ -156,7 +156,7 @@ quantise your input to the nearest eighth note, choose **1/2 beat**, not
 time).
 
 
-![](images/23----08.png)
+![](images/23----08@2x.png)
 
 *Input Quantise Options*
 

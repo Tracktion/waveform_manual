@@ -235,6 +235,11 @@ time, the message type (controllers show as "CC"), the channel and the
 raw bytes. Above the list, **Active Notes** shows the notes currently
 held. Drag the window's corner to make it bigger.
 
+
+![](images/midi-effects_midi_monitor@2x.png)
+
+*The MIDI Monitor*
+
 **Reset**: Clears the held-note state, which is useful if a note-off
 went missing and **Active Notes** shows a stuck note.
 
@@ -248,6 +253,11 @@ per line.
 MIDI Patch Bay remaps MIDI channels. Its window shows one dropdown for
 each of the 16 incoming channels. Pick the channel you want that input
 sent out on, or choose **Block channel** to stop it passing through.
+
+
+![](images/midi-effects_midi_patch_bay@2x.png)
+
+*The MIDI Patch Bay with Channel 1 Sent Out on Channel 5 and Channel 3 Blocked*
 
 **Reset All**: Resets every mapping so no channels are changed.
 
@@ -287,6 +297,11 @@ the channel and CC number that knob sends to; it shows "---" (sending
 nothing) until you pick one, then the CC number. Each knob is an automatable parameter, so
 you can draw or record CC automation (modulation, expression, filter cutoff) and send
 it on to a virtual instrument or external gear downstream.
+
+
+![](images/midi-effects_midi_cc@2x.png)
+
+*MIDI CC with Dest 1 Set to CC 1*
 
 ### ReWire Device
 

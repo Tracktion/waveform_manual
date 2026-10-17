@@ -21,7 +21,7 @@ output connected to your system; this example has four. Click the
 toggle next to each entry to switch it between **Enabled** and
 **Disabled**.
 
-![](images/22----01.png)
+![](images/22----01@2x.png)
 
 *Click to Enable/Disable MIDI Inputs and Outputs*
 
@@ -48,7 +48,7 @@ connections for older controllers that don't support USB. If you don't
 plan to use them, leave them disabled. In this example the interface's
 MIDI ports are disabled.
 
-![](images/22----02.png)
+![](images/22----02@2x.png)
 
 *Disable Unused MIDI I/O*
 
@@ -61,7 +61,7 @@ Back in your Edit, choose a blank track or create a new one.
 1.  Click an input and select the MIDI input that matches the
     controller you just configured.
 
-![](images/22----03.png)
+![](images/22----03@2x.png)
 
 *Select the MIDI Input Device*
 
@@ -76,7 +76,7 @@ Back in your Edit, choose a blank track or create a new one.
     Auto) in the Actions panel. You can also right-click the input and
     use the **Live Input Monitoring** submenu.
 
-![](images/22----05.png)
+![](images/22----05@2x.png)
 
 *Enable MIDI Input Monitoring*
 
@@ -89,7 +89,7 @@ To hear what you play, insert a virtual instrument. Use the Search tab
 of the Browser to find a synth plugin. This example uses 4OSC, found
 under *Waveform > Instruments*.
 
-![](images/22----06.png)
+![](images/22----06@2x.png)
 
 *Search for a Synth Plugin*
 
@@ -97,7 +97,7 @@ under *Waveform > Instruments*.
     signal path. In this example, 4OSC is dropped to the left of
     Volume & Pan.
 
-![](images/22----07.png)
+![](images/22----07@2x.png)
 
 *4OSC installed in the mixer*
 
@@ -126,7 +126,7 @@ notes into that input, as if they came from the device itself.
 > Alt + F11). The lock is on the dedicated Actions panel, not the Browser's
 > **Actions** tab.
 
-![](images/22----11.png)
+![](images/22----11@2x.png)
 
 *Lock the Actions panel while you play*
 
@@ -137,14 +137,14 @@ them.
 1.  Go to *Settings > MIDI Devices*.
 2.  Click **Create New Virtual MIDI Input...**
 
-![](images/22----08.png)
+![](images/22----08@2x.png)
 
 *Create New Virtual MIDI Input*
 
 3.  Enter a name into the **Virtual MIDI device** dialog box and click
     **Create**.
 
-![](images/22----09.png)
+![](images/22----09@2x.png)
 
 *Name the Virtual MIDI Device*
 
@@ -152,7 +152,7 @@ them.
     **Select MIDI Inputs** in its Actions panel to choose which devices
     it receives from.
 
-![](images/22----10.png)
+![](images/22----10@2x.png)
 
 *Select the Virtual Device as the Input*
 

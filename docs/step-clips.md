@@ -64,7 +64,7 @@ sections. Each pattern section is assigned a variation.
 variation number appears on the footer of each pattern section.
 
 
-![](images/27----02.png)
+![](images/27----02@2x.png)
 
 *A Step Clip with Four Pattern Sections*
 
@@ -317,7 +317,7 @@ Length** and **Number of Steps** for one-bar or two-bar variations.
 ## Step Clip Variation Actions
 
 
-![](images/27----13.png)
+![](images/27----13@2x.png)
 
 *Variation Actions*
 
@@ -345,7 +345,7 @@ These options are in the Actions panel when a Step clip footer is
 selected. Some are also in the footer's right-click menu.
 
 
-![](images/27----14.png)
+![](images/27----14@2x.png)
 
 *Step Clip Section Actions*
 
@@ -359,7 +359,7 @@ with a copy of the variation.
 Click the footer and select a variation.
 
 
-![](images/27----16.png)
+![](images/27----16@2x.png)
 
 *Choosing a Variation for a Pattern Section*
 
@@ -429,7 +429,7 @@ These actions are in the Actions panel when a Step clip row is selected.
 The main ones are also in the row header's right-click menu.
 
 
-![](images/27----18.png)
+![](images/27----18@2x.png)
 
 *Step Clip Row Actions*
 
@@ -472,7 +472,7 @@ Select any row in your Step clip and click **Delete Row** to remove the
 whole row. The rows below are renumbered to keep them in order.
 
 
-![](images/27----19.png)
+![](images/27----19@2x.png)
 
 *Delete Row in the Actions Panel*
 
@@ -521,7 +521,7 @@ To use it:
     you drag to change only the velocity, so you don't catch a bar's
     gate edge by accident.
 
-    ![](images/27----22.png)
+    ![](images/27----22@2x.png)
 
     *Adjusting a Series of Velocities with Shift Drag*
 
@@ -529,7 +529,7 @@ To use it:
     the note's gate. Hold Opt / Alt to change only the gate. Use this
     for gated, glitchy notes, or to tighten up the hits.
 
-    ![](images/27----23.png)
+    ![](images/27----23@2x.png)
 
     *Adjusting Note Gating in the Velocity and Gate Editor*
 
@@ -561,6 +561,11 @@ Click **View** below the row names to choose which rows the clip shows:
 **Show all notes**, **Show notes in key**, **Show notes in use** or
 **Show named notes**.
 
+
+![](images/step-clips_view_menu@2x.png)
+
+*The View Menu*
+
 ## Looping Step Clips
 
 Step clips are always in loop mode. Drag the right trim handle at any
@@ -569,7 +574,7 @@ Audio clips, by contrast, have a loop mode that you can switch on to
 roll out repetitions with the right trim handle.
 
 
-![](images/27----27.png)
+![](images/27----27@2x.png)
 
 *Looping a Step Clip*
 
@@ -577,7 +582,7 @@ If your Step clip loops only the last pattern section, enable **Repeat
 Whole Sequence** in the Actions panel.
 
 
-![](images/27----28.png)
+![](images/27----28@2x.png)
 
 *Enable Repeat Whole Sequence*
 
@@ -588,7 +593,7 @@ the MIDI editor. Right-click the Step clip header and choose **Convert
 to MIDI clip**. A MIDI clip replaces the Step clip.
 
 
-![](images/27----26.png)
+![](images/27----26@2x.png)
 
 *Convert a Step Clip to a MIDI Clip*
 
@@ -604,7 +609,7 @@ for later productions. A preset also works as a template that holds
 your usual row assignments and names.
 
 
-![](images/27----25.png)
+![](images/27----25@2x.png)
 
 *Create Preset in the Actions Panel*
 
