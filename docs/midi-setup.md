@@ -95,8 +95,10 @@ under *Waveform > Instruments*.
 *Search for a Synth Plugin*
 
 1.  Insert your synth plugin ahead of the Volume & Pan plugin in the
-    signal path. In this example, 4OSC is dropped to the left of
-    Volume & Pan.
+    signal path. In this example, 4OSC is dropped just before
+    Volume & Pan. When a track's plugins don't fit on one line, the
+    inline mixer wraps the earlier ones onto a row above, so 4OSC shows
+    above Volume & Pan here.
 
 ![](images/22----07@2x.png)
 

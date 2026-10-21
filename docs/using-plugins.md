@@ -31,7 +31,7 @@ the inline mixer.
 
 ![](images/29----03@2x.png)
 
-*Level Meter Before and After a 3rd Party Compressor*
+*Level Meter Before and After the Built-in Compressor*
 
 > 💡 **Tip:** Each inline mixer channel is stereo. Even if the track
 contains mono clips, you'll usually want stereo versions of plugins in
@@ -256,7 +256,7 @@ results.
 
 To apply processing to the full stereo mix, add plugins to the Master
 track or to the master plugin box in the transport bar. When the box is
-empty it shows a power icon; drag plugins into it to add them to the
+empty it shows a plug icon; drag plugins into it to add them to the
 master output plugin chain. It holds up to four plugins.
 
 The Master track shows the same master plugin chain as a track in the

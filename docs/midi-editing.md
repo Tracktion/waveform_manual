@@ -171,7 +171,7 @@ Opt + Cmd + T / Ctrl + Alt + T turns that on and off. From left to right:
 | --- | --- |
 | **View** <span class="pro">PRO</span> | **Drum grid** for the selected tracks, and which note rows to show: **Show all notes**, **Show notes in key**, **Show notes in use** or **Show named notes**. |
 | **Func** <span class="pro">PRO</span> | **Duplicate MIDI Notes**, **Duplicate MIDI Notes (Last Bar)**, and **Lock CC data to notes**, which moves controller data along with the notes you drag. |
-| **Velocity**, **Controllers**, **+** | Show the velocity lane and the controller lanes, and add a controller lane. See [The Velocity Editor](#the-velocity-editor) and [Editing Other Controller Data](#editing-other-controller-data). |
+| **Velocity**, **Controllers**, **...** | Show the velocity lane and the controller lanes, and add a controller lane. See [The Velocity Editor](#the-velocity-editor) and [Editing Other Controller Data](#editing-other-controller-data). |
 | Tool buttons | The editing tools. See [The Editing Tools](#the-editing-tools). |
 | Colour swatches | The note colour. See [Note Colours](#note-colors). |
 | **Vel**, **Len** | The velocity and length for new notes. See [Editing the Note Velocity](#editing-the-note-velocity) and [Note Length](#note-length). |
@@ -499,7 +499,7 @@ key to select the row, then drag any one stalk.
 ## Editing Other Controller Data
 
 You can use a view similar to the velocity editor with any kind of
-controller. Click **+** next to the **Controllers** button in the MIDI
+controller. Click the **...** button next to the **Controllers** button in the MIDI
 editor toolbar to choose one: the **Control Changes** submenu lists the
 CC numbers, followed by **Program Change**, **Aftertouch**,
 **Channel Pressure**, **Pitch Wheel** and **SysEx Events**. Each choice
@@ -562,7 +562,7 @@ often used to recall a hardware synth patch or send a device-specific
 command. Waveform shows them on a dedicated controller lane in the MIDI
 editor, where each SysEx event appears as a **diamond** on a timeline.
 
-Open the lane by clicking **+** next to **Controllers** and choosing
+Open the lane by clicking the **...** button next to **Controllers** and choosing
 **SysEx Events** (or choose it from an existing lane's **Menu**). The
 lane header has a **Close** button and a **Menu**.
 Use the Selection, Pencil, and Eraser tools to place, move, and delete

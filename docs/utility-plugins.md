@@ -141,11 +141,13 @@ through, so you can *see* where the energy sits in a mix. Insert it anywhere in
 a chain, for example after a high-pass filter to check it's doing what you
 expect.
 
-**Channel** (Choices: Stereo, Left, Right): Which channels the analyser
-measures. (Default: Stereo)
+**Channel** (Choices: L + R, L, R): Which channels the analyser measures.
+The Actions panel lists the same choices as Stereo, Left and Right.
+(Default: L + R)
 
-**Mode** (Choices: Bins, Line): Draws the spectrum as separate frequency bins
-or as a continuous line. (Default: Line)
+**Bins** (Choices: On, Off): Draws the spectrum as separate frequency bins when on, or
+as a continuous line when off. The Actions panel shows this as **Mode**, with
+the choices Bins and Line. (Default: Off)
 
 ![](images/utility-plugins_spectrum@2x.png)
 

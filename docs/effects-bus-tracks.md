@@ -35,7 +35,7 @@ Waveform's Reverb.
 
 *Insert the Reverb Plugin*
 
-Check that the **Dry Level** fader is all the way down and **Wet Level** is
+Check that the **Dry** knob is all the way down and the **Wet** knob is
 up, so only the wet signal goes through Reverb. You can tweak the other
 parameters later, once you have some sound going through it.
 
@@ -185,14 +185,14 @@ and recall them in later Edits. Right-click the track name and select
 
 *Saving an Effects Track Preset*
 
-In the **Preset Details** dialog, give the preset a name such as "Master
+In the **Create Track Preset** dialog, give the preset a name such as "Master
 Reverb". The tags area already contains the tag "Track", and you can add
 another, such as "Effects Bus".
 
 
 ![](images/31----15@2x.png)
 
-*Preset Details Dialog Box*
+*Create Track Preset Dialog Box*
 
 Separate tags with a comma, then click **OK**. The next time you want a
 similar effects bus track, pick the **Presets** category in the Search tab

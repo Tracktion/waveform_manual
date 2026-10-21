@@ -336,7 +336,7 @@ they can't be split, merged or flattened.
 ## Merging Clips to One Clip
 
 After editing, you might want to combine several clips back into a
-single clip. Select all the clips with Shift-click or lasso selection. Then choose *Render Clip > Merge the selected clips* in the
+single clip. Select all the clips with Shift-click or lasso selection. Then choose *Render Clips > Merge the selected clips* in the
 Actions panel. If the clips are on several tracks, **Merge the selected
 clips from each track** merges the clips on each track separately. With a
 single clip selected, the menu offers **Flatten the selected clip**
@@ -345,7 +345,7 @@ instead.
 
 ![](images/12----21@2x.png)
 
-*Render Clip > Merge the selected clips*
+*Render Clips > Merge the selected clips*
 
 After a few moments, Waveform combines them into a single continuous
 clip.

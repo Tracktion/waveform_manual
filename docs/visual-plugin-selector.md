@@ -88,8 +88,7 @@ thumbnail the first time you open it, so the thumbnails fill in over
 time.
 
 To fill in every thumbnail at once, open *Settings > Plugins*, find the
-**Create plugin thumbnail images** row and click its **Plugin thumbnail
-images** button.
+**Plugin thumbnail images** row and click its **Create** button.
 
 ![](images/39----05@2x.png)
 

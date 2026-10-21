@@ -338,7 +338,7 @@ as in the arrangement.
 *Controller MIDI Settings*
 
 First, go to *Settings > MIDI Devices*. If your device isn't shown,
-press the **Refresh Devices** button. Once it's visible, make sure all
+click **Scan for new MIDI devices now**. Once it's visible, make sure all
 its input and output devices are set to **Enabled** in the list.
 
 

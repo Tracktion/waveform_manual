@@ -539,7 +539,8 @@ mode but keeps its Destination row.
 
 ## Rendering Clips
 
-The **Render Clip** button in the Actions panel opens a menu of render
+The **Render Clip** button in the Actions panel (**Render Clips** when
+several clips are selected) opens a menu of render
 entries: render the selected clips, render only their marked region, either of
 those *and replace* the clips, and, for MIDI clips, the same four under *Render
 MIDI*. Each entry opens the Render dialog set up for it, so you can check or

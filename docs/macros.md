@@ -176,7 +176,7 @@ For example, you could assign the RTZ macro to the **Home** key.
 
 Merging clips is another task you may do often. Normally you select the
 clips on a track that you want to combine into a single clip, click
-**Render Clip** in the Actions panel and choose **Merge the selected
+**Render Clips** in the Actions panel and choose **Merge the selected
 clips**. If you do this frequently, assign a key to the built-in
 **Merge selected clips** command in *Settings > Keyboard Shortcuts*, or
 call `Tracktion.mergeSelectedClips();` as one step of

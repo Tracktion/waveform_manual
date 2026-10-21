@@ -85,8 +85,8 @@ interfaces, install the manufacturer's driver and use ASIO if you can.
 3.  Select an **Input Device**.
 
 > 💡 **Tip:** macOS lets you choose the input and output devices
-separately, but select the same device for both where you can. This
-example uses a "USB iTwo", a simple 2 in / 2 out interface.
+separately, but select the same device for both where you can, for
+example your audio interface.
 
 ![](images/04----02@2x.png)
 

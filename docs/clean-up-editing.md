@@ -214,13 +214,13 @@ render the clips back into a single clip:
 
 *Selected Clips before Rendering*
 
-2.  In the Actions panel, click **Render Clip** and choose **Merge the
+2.  In the Actions panel, click **Render Clips** and choose **Merge the
     selected clips**.
 
 
 ![](images/17----21@2x.png)
 
-*Render Clip > Merge the selected clips*
+*Render Clips > Merge the selected clips*
 
 
 ![](images/17----22@2x.png)
@@ -234,7 +234,7 @@ clips into one clip on that track. With a single clip selected, the
 same entry is called **Flatten the selected clip**. Launcher clips can't be
 rendered or merged.
 
-> 📝 **Note:** The other entries in the **Render Clip** menu open the Render
+> 📝 **Note:** The other entries in the **Render Clips** menu open the Render
 dialog set up for the clips, with **Include Tails** off and the result going
 onto the clips' track or in place of them. See
 [Rendering Clips](rendering-and-stems.md#rendering-clips).

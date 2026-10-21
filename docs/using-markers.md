@@ -56,7 +56,7 @@ Markers](#navigating-by-markers)).
 ## Zooming to the In and Out Markers
 
 When you have a marked region set, you can zoom in to it: right-click
-the Timeline and select **Zoom to fit marked region**, or press **F7**.
+the Timeline and choose *Zoom > Zoom to fit marked region*, or press **F7**.
 
 ![](images/10----07@2x.png)
 
