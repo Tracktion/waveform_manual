@@ -230,8 +230,9 @@ file reading) with each one's track, CPU time, CPU percentage and
 latency, and whether its track is monitoring a live input. The buttons
 are **Low Latency Monitoring** (disables the highest-latency plugins on
 tracks with live inputs), **Freeze Edit to Lower CPU**, **Freeze
-Selected Tracks**, **Show Selection In Edit**, **Group by Track**, and
-**Disable Selected Plugins** / **Enable Selected Plugins**. The freeze
+Selected Tracks** (shown when **Group by Track** is on), **Show Selection
+In Edit**, **Group by Track**, and **Disable Selected Plugins** /
+**Enable Selected Plugins**. The freeze
 buttons change to **Unfreeze Edit** and **Unfreeze Tracks** once the
 tracks are frozen.
 
