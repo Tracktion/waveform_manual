@@ -198,8 +198,8 @@ Folder tracks. [Automation](automation.md) covers automation in more
 detail. To create a fade-out:
 
 1.  Drag the small "A" icon (the track's automation icon) and drop it on
-    the VCA fader. The automation curve for the VCA fader appears on the
-    Folder track.
+    the VCA fader, then choose **VCA** from the menu that appears. The
+    automation curve for the VCA fader appears on the Folder track.
 
 ![](images/33----12@2x.png)
 

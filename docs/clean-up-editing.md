@@ -115,7 +115,7 @@ put the first split exactly where you want the note to start.
 *Split After the Note*
 
 6.  Select only the note you want to adjust, then drag the slip handle
-    (the solid box). The waveform slips within the Audio clip. Line it up
+    (the double arrow in the centre of the clip header). The waveform slips within the Audio clip. Line it up
     so it starts just after the leading edge of the clip.
 
 

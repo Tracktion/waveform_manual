@@ -244,7 +244,7 @@ First add a mono Clip Layer:
 
 ![](images/41----14@2x.png)
 
-*Mono Layer*
+*A stereo Normalise layer above a Mono layer*
 
 Then set **Method** to choose how to render to mono from stereo: **Use
 average of all channels**, **Use left channel only** or **Use right channel
