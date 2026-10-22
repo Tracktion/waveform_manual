@@ -2,7 +2,7 @@ name: Deploy manual to GitHub Pages
 
 # Versioned with mike: each tag deploys to its own subdirectory of gh-pages.
 #   tag v14.1.20       -> "14.1.20", and moves the "latest" alias to it
-#   tag v14.1.20-beta  -> "14.1.20-beta" only; "latest" is left alone
+#   tag v14.1.20-beta  -> "14.1.20-beta" only, titled "14.1.20-beta (Public Beta)"; "latest" is left alone
 # Pushes to main do not deploy.
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
 
       - name: Deploy beta
         if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref_name, '-')
-        run: mike deploy --push "${GITHUB_REF_NAME#v}"
+        run: mike deploy --push --title "${GITHUB_REF_NAME#v} (Public Beta)" "${GITHUB_REF_NAME#v}"
 
       - name: Deploy release
         if: startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')

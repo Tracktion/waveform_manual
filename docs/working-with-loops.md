@@ -1,32 +1,31 @@
 # Working With Loops
 
-In this chapter we introduce the looping capabilities of Waveform. You
+Loops let you build up a part from short, repeating audio files. You
 can drag in files from your loop library as Audio clips, repeat them
 with the Duplicate (D) action, or switch any Audio clip into looping
-mode and roll out repetitions over as many bars as you want. This makes
-it easy, for example, to extend a short loop into a beat to play over
-the full length of a song. An audio clip's loop settings appear in the
-Actions panel and in the [Detail editor](detail-editor.md) (Clip tab),
-which we will explore in this chapter as well.
+mode and roll out repetitions over as many bars as you want: for
+example, to extend a short loop into a beat that plays over the full
+length of a song. An Audio clip's loop settings appear in the
+Actions panel and in the [Detail Editor](detail-editor.md) (**Clip** tab),
+as described in [Loop Properties](#loop-properties).
 
 ## Getting Loops Into Waveform
 
 There are four ways to copy loops into an Edit.
 
-1.  Use the Browser Files tab and navigate to wherever you have audio
-    files and loops on your system. Drag loops you find there to tracks
-    in the Edit. As you drag in loops they appear as an outline until
-    you drop them.
-2.  Use the Browser Search tab and search for loops and then drag them
-    into your Edit. The Browser also gives you the ability to preview
-    loops to help you select the right one for the song.
-3.  Simply drag them from you computer desktop drop them onto tracks .
-4.  From the menu section, select *Import > Import an audio or MIDI
-    file*. Navigate to a file on your system and click open. The *Select
-    a file to import* dialog box even includes a basic file audition
-    function with *Auto-play*.
+1.  Use the **Files** tab of the Browser to navigate to the audio files
+    and loops on your system, then drag them to tracks in the Edit. A
+    loop appears as an outline while you drag it, until you drop it.
+2.  Use the Search tab of the Browser to search for loops, then drag
+    them into your Edit. You can preview loops in the Browser to help
+    you pick the right one for the song.
+3.  Drag them from your computer's desktop and drop them onto tracks.
+4.  From the main menu, choose *File > Import an audio or MIDI
+    file...*, navigate to a file on your system and click **Open**. The
+    **Select a file to import** dialog box includes a basic audition
+    function with **Auto-play**.
 
-> 📝 **Note:** Beyond the common formats — WAV, AIFF, FLAC, Ogg, and MP3 —
+> 📝 **Note:** Beyond the common formats (WAV, AIFF, FLAC, Ogg, and MP3),
 Waveform also imports `.w64`, `.caf`, `.au`, and `.voc` files. On macOS it
 additionally reads Apple-format files such as `.m4a` and `.m4b`; on Windows
 it reads Windows Media Audio. REX loop files (`.rx2`, `.rcy`, `.rex`) are
@@ -34,50 +33,44 @@ supported in builds that include the REX option.
 
 ## Setting the Edit Tempo
 
-If you know the tempo of the loop, you might want to set the tempo of
-your Edit to that tempo before dragging the loop in. That will give you
-the most natural results.
+If you know the tempo of the loop, set your Edit to that tempo before
+you drag the loop in. That gives the most natural results.
 
-
-![](images/13----02.png)
+![](images/13----02@2x.png)
 
 *Changing the Tempo*
 
-Here is how to change the tempo:
+To change the tempo:
 
-1.  Click on the BPM setting in the transport bar. The Actions panel will
-    show the *BPM* value.
-2.  Click on the *BPM* value and type in the new tempo.
+1.  Click the BPM setting in the transport bar. The Actions panel shows
+    the **BPM** value.
+2.  Click the **BPM** value and type the new tempo.
 
 ## Dragging Loops to a Track
 
-As you drag a file to to a track, you'll see an outline of the Audio
-clip before you drop it. Position the beginning of the clip right where
-you want it on the track, then just drop it.If it's not in the right
-place, grab the Audio clip from the header and drag it into place.
+As you drag a file to a track, you see an outline of the Audio clip
+before you drop it. Position the start of the clip where you want it on
+the track, then drop it. If it's not in the right place, drag the Audio
+clip by its header into place.
 
-After dropping a loop, notice that the cursor jumps to the end of the
-loop. This is to position the cursor to drop in the next one, as you
-build up a track.
+After you drop a loop, the cursor jumps to the end of it, ready for you
+to drop in the next one as you build up a track.
 
-> 💡 **Tip:** If you don't like having the cursor jump to the end when
-dropping in loops, hold down Opt / Alt as you drag. This prevents the
-cursor from jumping to the end.
+> 💡 **Tip:** To stop the cursor jumping to the end when you drop in
+loops, hold down Opt / Alt as you drag.
 
-If *Snap* is on, loops you drag in will snap to the grid.
+If **Snap** is on, loops you drag in will snap to the grid.
 
 ## Dragging in Multiple Clips from the Browser
 
 To drag in several clips at once, make a multiple selection in the
-Browser and drag the selected loops to a track. They will be arranged on
-the track end-to-end.
+Browser and drag the selected loops to a track. They're arranged
+end-to-end on the track.
 
 > 💡 **Tip:** To drop a selection of clips to parallel tracks, hold down Cmd
 / Ctrl as you drag and Waveform asks if you want to put them on one
-track or separate tracks. This is great when working with multitrack
-drum loops. It even creates additional tracks if there aren't enough
-available.
-
+track or separate tracks. This is useful for multitrack drum loops,
+and Waveform creates extra tracks if there aren't enough.
 
 ![](images/13----01.png)
 
@@ -85,150 +78,127 @@ available.
 
 ## Looping the Loop
 
-Audio clips have an L icon on the header. Click the L to toggle looping
-mode for that clip. Once the clip is in looping mode it will immediately
-appear to be twice as long. Enabling looping gives you one repeat right
-away.
+Audio clips have a loop button (two arrows chasing each other) on the
+header. Click it to toggle looping mode for that clip. The clip immediately appears twice as long, because
+turning on looping gives you one repeat straight away.
 
-
-![](images/13----04.png)
+![](images/13----04@2x.png)
 
 *Audio Clip Loop Mode*
 
 To repeat the clip, drag the right trim handle and roll out as many
-repeats as you want. You will see a white repeat divider at the start of
-each repetition. The underlying audio wave file is not duplicated, it is
-just being replayed over and over. All other editing operations work the
-same as any other loop.
+repeats as you want. A white repeat divider marks the start of each
+repetition. The underlying wave file isn't duplicated; it's replayed
+over and over. All other editing operations work the same as on any
+other clip.
 
-To stop looping, click the L icon gain to toggle looping off. That
-returns the clip to a single cycle.
+To stop looping, click the loop button again. The clip returns to a single
+cycle.
 
-There is another way to activate clip looping. Select the clip then
-click *Loop this Clip* in properties. From there you can select the
-number of times to loop. This is an alternative to dragging the right
-trim handle to roll out repetitions.
+You can also turn on looping by selecting the clip and clicking **Loop
+this Clip** in the Actions panel. There you choose the number of times
+to loop, instead of dragging the right trim handle. On a looping clip
+the same row reads **Disable Looping**.
 
+![](images/13----05@2x.png)
 
-![](images/13----05.png)
+*Loop this Clip in the Actions panel*
 
-**Loop this Clip* in properties*
-
-The nice thing about looping is it doesn't take up any additional space
-in the project. You can loop just about any clip. You could take a four
-bar drum loop and separate out one or two bars of the main groove then
-loop it. That can give you the starting point for a song. Roll it out
-across the entire song, and you've got something more inspiring than a
-simple click track to play against.
+Looping doesn't take up any additional space in the project, and you
+can loop almost any clip. For example, take a four-bar drum loop,
+separate out one or two bars of the main groove and loop that as the
+starting point for a song. Roll it out across the entire song, and
+you've got something more inspiring than a click track to play
+against.
 
 ## Duplicating Clips
 
-Another way to repeat a clip is to duplicate it. To do so, select a clip
-and press D. Duplicate is the equivalent of copy followed by paste. The
-duplicate clip is placed immediately after the selected clip.
+You can also repeat a clip by duplicating it: select the clip and
+press **D**. Duplicate is the equivalent of copy followed by paste, and
+places the new clip immediately after the selected one.
 
-
-![](images/13----06.png)
+![](images/13----06@2x.png)
 
 *Duplicating a Clip*
 
-This is the best approach if you plan to edit the audio in a unique way
-for that section of the song.
+Duplicate rather than loop when you plan to edit the audio differently
+in that section of the song.
 
-## Loop properties
+## Loop Properties
 
-When you select an Audio clip, its *loop properties* appear in the
-Actions panel (and in the Detail editor, Clip tab). These properties are
-related to the underlying wave file. Tweaks to these properties affect
-how the Audio clip will respond to tempo, pitch, and time stretching.
-Here is a description of the most essential loop properties:
+When you select an Audio clip, its loop properties appear in the
+Actions panel (and in the Detail Editor, **Clip** tab). These
+properties relate to the underlying wave file, and change how the Audio
+clip responds to tempo, pitch and time stretching. The main ones are:
 
-
-![](images/13----07.png)
+![](images/13----07@2x.png)
 
 *Loop properties in the Actions panel*
 
-Auto-Pitch
-- With *Auto-Pitch* enabled, Waveform will change the pitch of the
-    clip appropriately to match key change events in the Tempo track.
-    This only works if you have a *Root Note* set for the file; more on
-    that in a moment.
+**Auto-Pitch**: When enabled, Waveform changes the pitch of the clip
+to match key change events in the Tempo track. This only works if you
+have a **Root Note** set for the file.
 
-Auto-Tempo
-- With *Auto-Tempo* ticked, the Audio clip will be automatically
-    stretched to match the song tempo and tempo changes in the Tempo
-    track. For *Auto-Tempo* to work, you need to make sure you have the
-    *Root Tempo* set for the file and *Stretch* set to an appropriate
-    algorithm.
+**Auto-Tempo**: When ticked, the Audio clip is automatically stretched
+to match the song tempo and tempo changes in the Tempo track. For this
+to work, the file needs a **Root Tempo**, and **Stretch** must be set to
+an appropriate algorithm.
 
-Warp Time
-- With *Warp Time* enabled the waveform view to the right becomes a
-    Warp Time editor. You can add warp points and do fine timing
-    adjustments. This powerful feature is covered in detail in [Warp Time](warp-time.md).
+**Warp Time**: When enabled, the waveform view to the right becomes a
+Warp Time editor, where you can add warp points and make fine timing
+adjustments. See [Warp Time](warp-time.md).
 
-Time Signature
-- Edit *Time Signature* values to set the time signature of the file.
+**Time Signature**: Sets the time signature of the file.
 
-Root Tempo
-- *Root Tempo* is the original tempo of the loop file. Waveform uses
-    this to know how much to stretch the file to sync it to the Edit
-    tempo. If *Root Tempo* is not recorded along with the loop file, you
-    can set it here. Files created within Waveform will automatically
-    have the *Root Tempo* set to match the Edit tempo.
+**Root Tempo**: The original tempo of the loop file. Waveform uses this
+to work out how much to stretch the file to sync it to the Edit tempo.
+If the loop file doesn't carry its root tempo, you can set it here.
+Files created within Waveform automatically have the **Root Tempo** set
+to match the Edit tempo.
 
-Beats
-- The *Beats* parameter is the number of beats in the file. Using
-    *Beats* and *Root Tempo* Waveform calculates the length of the loop
-    file in musical terms.
+**Root Note**: The key of the loop, chosen from the 12 note names.
+**Auto-Pitch** uses it to work out how far to shift the clip when the
+key changes. Choosing **&lt;None&gt;** also turns **Auto-Pitch** off.
 
-Pitch Offset
-- If you just want to pitch the file up or down, enter an offset value
-    for *Pitch Offset*.
+**Beats**: The number of beats in the file. Using **Beats** and **Root
+Tempo**, Waveform calculates the length of the loop file in musical
+terms.
 
-Stretch
-- *Stretch* sets time stretching algorithm used for this loop file.
-    Usually you will want to use Elastique (Monophonic) for lead vocals
-    and solo instruments. Use Elastique Pro for everything else.
-    Melodyne is typical selected used for pitch correction.
+**Pitch Offset**: Pitches the file up or down by the offset you enter.
 
-Waveform View
-- The waveform view, found in the Detail editor (Clip tab), lets you
-    play the file. You can also adjust the in and out loop points by
-    dragging the purple lines inward. There is a convenient level
-    control here as well. This view is replaced by the zoomable Warp
-    Time editor when *Warp Time* is enabled.
+**Stretch**: Sets the time stretching algorithm used for this loop file.
+Elastique (Monophonic) usually suits lead vocals and solo instruments;
+use Elastique Pro for everything else. Melodyne is typically used for
+pitch correction.
 
-Loop Start/End
-- This button contains a few quick tools to set the start and end loop
-    points of the underlying wave files to match the current Audio clip
-    start and end points.
+**Waveform view**: The waveform view, found in the Detail Editor
+(**Clip** tab), lets you play the file. You can also adjust the in and
+out loop points by dragging the purple lines inward, and set the level
+with its level control. This view is replaced by the
+zoomable Warp Time editor when **Warp Time** is enabled.
 
-Beat Points
-- *Beat Points* are a type of marker that shows where the transients
-    are to assist with time stretching. This concept is very similar to
-    how acidized files work. With the latest Elastique Pro stretching
-    algorithms manually manipulating the beat points is not necessary.
+**Loop Start/End**: This button has a few quick tools to set the
+start and end loop points of the underlying wave files to match the
+current Audio clip start and end points.
 
-Add to Library
-- If you create an Audio clip loop and might want to reuse it in other
-    projects, click *Add to Library* then give it a name and tags.
+**Beat Points**: A type of marker that shows where the transients are,
+to help with time stretching, much as in acidized files. With the
+latest Elastique Pro stretching algorithms, you don't need to move the
+beat points by hand.
 
-> 📝 **Note:** When you use *Add to Library*, the loop file will be saved to
-the *User Loops Path* folder as designated on the Loop Database page of
-the Settings tab.
+**Add to Library**: To reuse an Audio clip loop in other projects,
+click **Add to Library**, then give it a name and tags.
 
-> 💡 **Tip:** If you want more control when adding loops to your library, try
-*Export > Render to a File*. If you choose, *Only Render Selected
-Clips* you get much more control over its properties and where to put
-the resulting file.
+> 📝 **Note:** When you use **Add to Library**, the loop file is saved to
+the **User Loops Path** folder, set under Loop Database on the
+*Settings > File Locations* page.
+
+> 💡 **Tip:** For more control when adding loops to your library, use
+*File > Export: Render to a file...* and set **Range** to **Selected
+Clips Range**. You can then choose the file's properties and where to
+save it (see [Rendering and Stems](rendering-and-stems.md)).
 
 ## Moving On
 
-There's a lot more you can do with clip looping, loop files, and loop
-libraries in Waveform, but those are the fundamentals.
-
-
-
-
-
-
+To adjust the timing inside a loop, see [Warp Time](warp-time.md). To
+find and preview loops in your library, see [The Browser](browser.md).

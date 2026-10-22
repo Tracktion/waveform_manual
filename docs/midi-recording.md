@@ -1,206 +1,177 @@
 # MIDI Recording
 
-In this chapter you'll learn how to record a MIDI performance from your
-controller. Your controller could be a keyboard or any other sort of
-instrument that you can use to generate MIDI note data. We covered how
-to set up a MIDI controller in the previous chapter.
-
-In this chapter, we'll go further and cover the details of how to record
-your MIDI performance. You will also learn about the various MIDI
-recording modes. The MIDI implementation in Waveform is fairly
-comprehensive while also being quite easy to use. Let's get started.
+This chapter covers recording a MIDI performance from your controller,
+which could be a keyboard or any other instrument that sends MIDI note
+data, and explains the MIDI recording modes. Setting up a MIDI controller
+is covered in [MIDI Setup](midi-setup.md).
 
 ## Setting up a Track
 
-There isn't a special type of MIDI track in Waveform. Any track can be
-used for audio, MIDI, or Step Clips. To record MIDI, pick any unused
-track or create a new track. On the track, set up the input by selecting
-your MIDI controller. Play a few notes on your MIDI controller to see if
-you have MIDI activity.
+Waveform has no special type of MIDI track: any track can hold Audio,
+MIDI or Step clips. To record MIDI, pick an unused track or create a new
+one, and set its input to your MIDI controller. Play a few notes on the
+controller to check that there's MIDI activity.
 
 
-![](images/23----01.png)
+![](images/23----01@2x.png)
 
 *A Track Set Up for MIDI Recording*
 
-To hear any sound, you'll need to insert a virtual instrument. Do so by
-dragging the plugin object to the mixer section, or search for the synth
-plugin in the Search tab on the Browser. When you find it, drag it over
-to the mixer section of your track. We usually recommend dropping it to
-the left of the *Volume & Pan* plugin. As soon as you drop it, the user
-interface will open up for the instrument plugin. Choose a suitable
-preset for the part.
+To hear any sound, insert a virtual instrument. Drag the plugin object
+to the inline mixer, or find the synth in the Search tab of the Browser
+and drag it to your track's inline mixer. Dropping it to the left of the
+Volume & Pan plugin suits most setups. As soon as you drop it, the
+instrument's interface opens, so you can choose a suitable preset for the
+part.
 
-We covered all of this in the previous chapter. If when you play notes
-on your controller you don't hear anything, go back to [MIDI Setup](midi-setup.md) and make sure the MIDI input is set up correctly.
+If you don't hear anything when you play your controller, go back to
+[MIDI Setup](midi-setup.md) and check that the MIDI input is set up
+correctly.
 
 ## Recording a MIDI Performance
 
 Recording MIDI is very much like recording audio:
 
 1.  Enable the track for recording by clicking the red R on the track
-    input
+    input.
 
 
-![](images/23----02.png)
+![](images/23----02@2x.png)
 
 *Enable Recording*
 
-1.  In the Transport, click the red *Record* button to start recording.
-    You can also do this using the keyboard shortcut R.
+2.  In the transport bar, click the red **Record** button to start
+    recording, or press R.
 
 
-![](images/23----03.png)
+![](images/23----03@2x.png)
 
 *Start Recording*
 
-1.  Record your MIDI performance
+3.  Play your MIDI performance.
 
 
 ![](images/23----04.png)
 
 *MIDI Recording in Process*
 
-1.  To stop, either press R again or just hit the space bar.
+4.  Press R again or the Space bar to stop.
 
 > 💡 **Tip:** To record your MIDI performance with a metronome click,
-configure and enable *Click* using the procedure outlined in [MIDI
-Editing](midi-editing.md).
+configure and enable **Click** as described in [Working
+with the Click](recording-audio.md#working-with-the-click).
 
 ## Playing Back a MIDI Performance
 
-If everything went according to plan, you'll have created a MIDI clip.
-Notice, the MIDI notes on the clip. If you zoom the track vertically,
-the MIDI clip will, at one point, flip to the MIDI editor mode. In this
-mode, you can edit MIDI notes, which we cover in [MIDI
-Editing](midi-editing.md).
+If everything went to plan, you now have a MIDI clip showing the notes
+you played. Zoom the track vertically and, at a certain height, the MIDI
+clip switches to MIDI editor mode, where you can edit the notes (see
+[MIDI Editing](midi-editing.md)).
 
 
-![](images/23----05.png)
+![](images/23----05@2x.png)
 
 *MIDI Clip Following Recording*
 
-Position the cursor before the newly recorded MIDI clip, the press the
-spacebar again to playback. You should be able to hear the exact
-performance.
+Place the cursor before the new MIDI clip and press the Space bar to
+play it back. You hear the performance exactly as you played it.
 
-> 💡 **Tip:** If you don't like what you recorded, simply select the MIDI
-clip and press backspace to delete it.
+> 💡 **Tip:** If you don't like what you recorded, select the MIDI clip and press Backspace to delete it.
 
 ## Piano Roll View
 
-As I mentioned above, as you expand the track vertically, you'll notice
-that at a certain point MIDI clips will switch to edit mode. The
-Waveform MIDI editor is what is commonly called a piano roll view (PRV).
-In this view, you can clearly see the notes along with a vertical piano
-graphic located along the left.
+As described in [Playing Back a MIDI Performance](#playing-back-a-midi-performance),
+MIDI clips switch to edit mode once you expand the track far enough.
+Waveform's MIDI editor is what's commonly called a piano roll view (PRV):
+it shows the notes next to a vertical piano keyboard on the left.
 
 
-![](images/23----06.png)
+![](images/23----06@2x.png)
 
 *Track Expanded to the MIDI Editor*
 
-> 📝 **Note:** The PRV in Waveform allows you to see the timing of notes as
-they relate to the timeline, and the pitch of notes as they relate to a
-piano keyboard. The graphic length of a note represents how long that
-note is held in musical time.
+> 📝 **Note:** The PRV shows the timing of notes against the timeline and their pitch against a piano keyboard. The length of each note shows how long it's held in musical time.
 
-The MIDI editor PRV includes everything you need to edit MIDI data. You
-can add notes, delete notes, copy notes, and duplicate them. You can
-also work with velocity and other controller values. We'll get into the
-details later when we go deeper into [MIDI editing].
+The MIDI editor has everything you need to edit MIDI data. You can add,
+delete, copy and duplicate notes, and work with velocity and other
+controller values. [MIDI Editing](midi-editing.md) goes into the
+details.
 
-## MIDI Record Modes - The *Action* Property
+## MIDI Record Modes: The Action Property
 
-Select a MIDI input and look in properties at the item labeled *Action*.
-The drop down menu for *Action* gives you a variety of record modes.
+Select a MIDI input and find **Action** in the Actions panel. Its
+dropdown offers several record modes.
 
 
-![](images/23----07.png)
+![](images/23----07@2x.png)
 
 *MIDI Record Modes*
 
-## Merge Mode
+### Merge Mode
 
-By default, *Action* is set to *Merge newly recorded MIDI into any
-existing clips*. If you rewind and record in some more notes, you will
-find that they're merged into the MIDI clip that you created in the
-first pass. It doesn't replace notes that you recorded before; it just
-adds new notes and and merges them with the original MIDI clip.
+By default, **Action** is set to **Merge newly recorded MIDI into any
+existing clips**. If you rewind and record some more notes, they're
+merged into the MIDI clip from the first pass. Nothing you recorded
+before is replaced; the new notes are added to the original MIDI clip.
 
-If you mess up an otherwise good performance in merge mode, undo the new
-notes by pressing Cmd + Z / Ctrl + Z.
+If you spoil an otherwise good performance in merge mode, press
+Cmd + Z / Ctrl + Z to undo the new notes.
 
-> 💡 **Tip:** Merge mode can be very helpful if you're building up a part
-pass by pass, particularly when layering a drum part and adding
-additional drum hits in each pass.
+> 💡 **Tip:** Merge mode helps when you build up a part pass by pass, particularly a drum part where you add more hits on each pass.
 
-## Replace Mode
+### Replace Mode
 
-If you wanted to replace what you played previously, change *Action* in
-properties for the input to *Replace existing clips with newly recorded
-MIDI clips*. Now when you start to record, the new recording will create
-an entirely new MIDI clip and it will gradually overwrite what you had
-before. It doesn't exactly erase the original clip. If any portion of
-the clip is still visible, you can trim the edges of it and expose the
-original data. Of course, *Undo* will get you back to where you started
-from if things don't go well.
+To replace what you played before, change the input's **Action** in the
+Actions panel to **Replace existing clips with newly recorded MIDI
+clips**. When you record, the new recording creates a new MIDI clip that
+overwrites what you had as it goes. The original clip isn't actually
+erased: if any part of it is still visible, you can trim its edges to
+expose the original data. **Undo** also takes you back to where you
+started if things don't go well.
 
-> 📝 **Note:** You can envision replace mode as being similar to tape
-recording. As you record something new onto tape, you are erasing the
-section you are recording over.
+> 📝 **Note:** Replace mode is like recording onto tape: recording something new erases the section you record over.
 
-## Overlay Mode
+### Overlay Mode
 
-In overlay mode, as you record you'll get a new MIDI clip stacked on top
-of the original clip. After you have recorded this way, you'll hear the
-output from both clips mixed together.
+Set **Action** to **Overlay new clips, containing newly recorded MIDI**.
+As you record, a new MIDI clip is stacked on top of the original clip,
+and on playback you hear both clips mixed together.
 
-During playback, you will hear the overlapping MIDI clips merged
-together.
+### Monitor Only
 
-## MIDI Input Quantize
+With **Action** set to **Monitor live input from this device, but don't
+actually record**, you still hear the input play through the track, but
+nothing from this device is recorded when you press Record. Use it for a
+controller you want to play along on without adding its notes to the
+take.
 
-To find MIDI Input Quantize, click on the input and locate the
-*Quantize* property. The drop down menu for *Quantize* offers a wide
-variety of beat subdivisions.
+## MIDI Input Quantise { #midi-input-quantize }
 
-Notice how this works; you are selecting a subdivision of the beat (not
-the bar). For example, if you want to quantize your input to the nearest
-eighth note, you don't select *1/8 beat* from this list, you select *1/2
-beat*, because an eighth note is half of a quarter note (when working in
-4/4 time).
+To find MIDI input quantise, click the input and find the **Quantise**
+property. Its dropdown offers a wide range of beat subdivisions.
+
+You're choosing a subdivision of the beat, not the bar. For example, to
+quantise your input to the nearest eighth note, choose **1/2 beat**, not
+**1/8 beat**, because an eighth note is half a quarter note (in 4/4
+time).
 
 
-![](images/23----08.png)
+![](images/23----08@2x.png)
 
-*Input Quantize Options*
+*Input Quantise Options*
 
-As you record, you're going to hear the notes however you play them, but
-on playback all of your notes will be snapped to the value you set in
-*Quantize*.
+Input quantising doesn't happen in real time. While you record, you hear
+the notes exactly as you play them, but on playback they're all snapped
+to the **Quantise** value.
 
-Note that the results of quantizing can sound somewhat unnatural,
-because this approach quantizes both the note start and the note ending.
-Notes get stretched out and tend to sound mechanical. In general, input
-quantize is more useful for drum programming than playing something like
-a piano part.
+The results can sound unnatural, because input quantise moves both the
+start and the end of each note. Notes get stretched out and tend to sound
+mechanical, so input quantise suits drum programming better than a piano
+part.
 
-> 📝 **Note:** Input quantizing does not happen in real time. You hear the
-result during playback.
-
-There are other ways (Apply Groove) to quantize after the fact. We'll be
-getting into that in [Quantizing MIDI Notes](quantizing-midi-notes.md).
+To quantise after recording, for example with Apply Groove, see
+[Quantising MIDI Notes](quantizing-midi-notes.md).
 
 ## Moving On
 
-That's an introduction to MIDI recording. You learned the essential
-options to set up a MIDI input. You learned about the MIDI record modes.
-We also took a quick look at input quantizing. Next up, loop recording
-with MIDI!
-
-
-
-
-
-
+To record MIDI in a loop, see [MIDI Loop Recording](midi-loop-recording.md).

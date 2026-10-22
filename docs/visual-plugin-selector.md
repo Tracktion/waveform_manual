@@ -1,50 +1,47 @@
 # Visual Plugin Selector
 
-Waveform's Plugin object has useful option when working with plugins:
-Right-click it to open the Visual Plugin selector. This chapter walks
-through a full explanation on how to use the Visual Plugin selector.
+The Visual Plugin selector shows your plugins as thumbnail images, so you
+can pick one by how it looks. It opens from the Plugin object on each
+track, the button with the tooltip **Add new plugin**.
 
 ## Using the Visual Plugin Selector
 
-To open the window into the Visual Plugin selector, right-click on the
-Plugin object. You will see all your plugins represented by thumbnail
-images along with the name.
+To open the Visual Plugin selector, right-click the Plugin object, or
+hold any modifier key while you click it. It shows each of your plugins
+as a thumbnail image with its name. A plain click opens whichever
+selector **Plugin selector** in *Settings > Plugins* is set to (see [Plugin View Options](reference-settings.md#plugin-view-options)).
 
-
-![](images/39----01.png)
+![](images/39----01@2x.png)
 
 *Right-click to Open the Visual Plugin Selector*
 
-> 📝 **Note:** If all you see are a lot of question marks, then read on; we
-will explain how to scan your plugins to capture thumbnails in a bit.
+> 📝 **Note:** If you see mostly question marks, the thumbnails haven't
+> been captured yet. See
+> [Scanning to Capture Thumbnails](#scanning-to-capture-thumbnails).
 
-
-![](images/39----02.png)
+![](images/39----02@2x.png)
 
 *Visual Plugin Selector*
 
-From here you can scroll through all your plugins. When you find one you
-want to use, drag it and the window will close but continue dragging.
-Now drop it on a track in the normal way.
+Scroll through your plugins, and when you find the one you want, drag
+it. The window closes while you keep dragging, so you can drop the
+plugin on a track in the normal way.
 
-The Visual Plugin selector window offers just few controls to make
-finding the right plugin more simple.
+The Visual Plugin selector has a few controls to help you find the right
+plugin:
 
-
-![](images/39----03.png)
+![](images/39----03@2x.png)
 
 *Visual Plugin Selector Controls*
 
-1.  After opening the Visual Plugin selector, start typing in search
-    characters to filter the list.
+1.  Start typing to filter the list.
 2.  Adjust the size of the thumbnail images using the slider at the
     right.
-3.  If you decide not to pick a plugin, click the *X* at the upper left
-    or press *ESC* to close the window.
-4.  As you drag a plugin, the window will close and you'll be dragging a
-    transparent image of the plugin which you can drop wherever you want
+3.  If you decide not to pick a plugin, click the **X** at the upper left
+    or press **Esc** to close the window.
+4.  Drag a plugin out of the window. The window closes and you drag a
+    transparent image of the plugin, which you can drop wherever you want
     to use it.
-
 
 ![](images/39----04.png)
 
@@ -52,63 +49,55 @@ finding the right plugin more simple.
 
 ## Determining Plugin Technology
 
-As you over the mouse pointer over a thumbnail, an icon will appear in
-the upper left corner. This indicates which interface technology is used
-by that plugin: AU, VST, or VST3. This helps you pick from plugin
-thumbnails that otherwise look the same.
-
+When you hover the pointer over a thumbnail, an icon appears in its
+upper left corner showing the plugin's format: AU, VST, or VST3. This
+helps you tell apart thumbnails that otherwise look the same.
 
 ![](images/39----10.png)
 
 *Audio Units Icon*
 
-
 ![](images/39----11.png)
 
 *VST Icon*
-
 
 ![](images/39----12.png)
 
 *VST3 Icon*
 
-These are the same icons are used in the Browser Search tab to
-differentiate the plugin technology.
+The Browser's **Search** tab uses the same icons to show the plugin
+format.
 
-## Customizing the Thumbnail Image
+## Customising the Thumbnail Image
 
-Open any plugin in Waveform and notice the new camera icon in the upper
-right corner. Click that camera to take a snapshot of the plugin window
-and update the thumbnail image. If you want more interesting thumbnails,
-use this to capture the plugin in action with the meters moving or with
-an interesting EQ curve.
+Each plugin window in Waveform has a camera icon (*Save thumbnail image
+of plugin UI*) in the upper right corner (macOS and Windows). Click it to
+take a snapshot of the plugin window and update the thumbnail image. For
+more interesting thumbnails, capture the plugin in action, with the
+meters moving or an interesting EQ curve.
 
+![](images/39----09@2x.png)
 
-![](images/39----09.png)
-
-*Customize a Plugin Thumbnail*
+*Customise a Plugin Thumbnail*
 
 ## Scanning to Capture Thumbnails
 
 When you first start using Waveform, the Visual Plugin selector
-thumbnails appear as blank question marks. When you open a plugin for
-the first time, Waveform grabs the thumbnail image. Over time, the
-thumbnails will begin to fill in.
+thumbnails appear as blank question marks. Waveform captures a plugin's
+thumbnail the first time you open it, so the thumbnails fill in over
+time.
 
-If you are you want all of them populated with images right away, you
-can! Locate the *Scan for plugin thumbnails* options on the *Settings
-tab, Plugins page*.
+To fill in every thumbnail at once, open *Settings > Plugins*, find the
+**Plugin thumbnail images** row and click its **Create** button.
 
-
-![](images/39----05.png)
+![](images/39----05@2x.png)
 
 *Capture Thumbnails Options*
 
-There are three options: You can *scan all plugins*, *scan for new
-plugins* (those without thumbnails), or *scan from a selection* in the
-list of installed plugins. When you first start with a new Waveform
-installation you probably want to use *Scan for all plugins*.
-
+The menu has three options: **For all plugins**, **For plugins without
+thumbnails**, or **For selected plugins** (the ones selected in the list of
+installed plugins). On a new Waveform installation, **For all plugins**
+is usually the one to use.
 
 ![](images/39----06.png)
 
@@ -116,28 +105,22 @@ installation you probably want to use *Scan for all plugins*.
 
 ## Opening Visual Plugin Selector with a Shortcut
 
-There is a new macro action to open the Visual Plugin selector. To use
-it create a new macro then right-click on the script editor on the
-Settings tab, Keyboard Shortcuts page. Navigate to *Advanced Actions >
+A macro action opens the Visual Plugin selector. To use it, create a
+new macro, right-click in the script editor in
+*Settings > Keyboard Shortcuts*, and choose *Advanced actions >
 Plugins > Show or hide the plugin selector page*.
-
 
 ![](images/39----07.png)
 
 *Action to Open the Selector*
 
-That adds the necessary code to the macro.
-
+This adds the code to the macro.
 
 ![](images/39----08.png)
 
 *The Completed Macro*
 
-Assign a keyboard combination that makes sense. In this example, we have
-used Option + F11 / Alt + F11.
-
-
-
-
-
-
+Then assign the macro a keyboard shortcut. This example uses
+Opt + F11 / Alt + F11, which is the default shortcut for
+**Lock/Unlock Actions panel**, so pick a free key combination instead if
+you want to keep that shortcut.

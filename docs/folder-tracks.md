@@ -1,250 +1,233 @@
 # Folder Tracks
 
-With the Folder Tracks feature, you collect a group of tracks into a
-folder, allowing to you work with them together as unit. The obvious
-advantage is to collapse the view so that related tracks, like your drum
-tracks, can be viewed as a single entity.
+A Folder track collects a group of tracks so you can work with them as
+a unit. The most obvious use is to collapse related tracks, such as your
+drum tracks, so they take up a single row.
 
-Folder Tracks also give you a convenient way to apply volume automation,
-so that you can do a fade across a number of tracks at the same time.
-Folder Tracks allow you to solo every track that is contained within it
-with a single click. You can also do basic editing across the included.
-Let's take a closer look.
+Folder tracks also make it easy to apply volume automation, so you can
+fade a number of tracks at the same time. You can solo every track in a
+folder with a single click, and do basic editing across the included
+tracks.
 
 ## Creating a Folder Track
 
-To create a Folder Track, right-click the track name for any existing
-track and select *Create a new Folder Track*. The Folder Track appears
+To create a Folder track, right-click the track name of any existing
+track and select **Add Folder track**. The Folder track appears
 below the original track.
 
-
-![](images/33----01.png)
+![](images/33----01@2x.png)
 
 *New Empty Folder Track*
 
-Alternatively, right click on the background of the Track section and
-choose *Create a new Folder Track*.
+Alternatively, right-click the background of the Track section and
+choose **Create a new folder track**, or use *Track > Add folder track*
+from the main menu.
 
-Either of these methods will create a new empty Folder Track. There are
-easy ways to create a Folder Track containing existing tracks, which we
-will cover that shortly.
+Each of these methods creates an empty Folder track. To create one that
+already contains tracks, see [Creating a Folder Track with Existing
+Tracks](#creating-a-folder-track-with-existing-tracks).
 
 ## Working with Folder Tracks
 
-Putting Tracks into a Folder Track
-- To put a track into a Folder Track, simply grab the track by the
-    track name, drag it, and drop it on the folder. Just before you drop
-    it, the Folder Track will glow, usually with a red color, indicating
-    it's ready to receive your track.
+### Putting Tracks into a Folder Track
 
+To put a track into a Folder track, drag the track by its name and drop
+it on the folder. Just before you drop it, the Folder track glows red
+to show it's ready to receive your track.
 
-![](images/33----02.png)
+![](images/33----02@2x.png)
 
 *Folder Track after Dropping in One Track*
 
-If you already have some tracks in the folder you can drag it over the
-folder and then downward; You'll notice a red glowing insertion point,
-where you can put your track between other tracks to get the order you
-would like.
+If the folder already has tracks in it, drag over the folder and then
+downward. A red glowing insertion point shows where your track will go
+between the other tracks, so you can get the order you want.
 
-Naming a Folder Track
-- Naming a Folder Track works exactly like any other track. Click on
-    the header part of the track where the name is, and then edit *Name*
-    in properties. By default, it will have a name similar to *Folder 1*
-    or *Folder 2*.
+### Naming a Folder Track
 
+You name a Folder track in the same way as any other track. Click the
+name area of the track header, then edit **Name** in the Actions panel.
+The default names are *Folder 1*, *Folder 2* and so on.
 
-![](images/33----03.png)
+![](images/33----03@2x.png)
 
 *Naming a Folder Track*
 
-> 💡 **Tip:** One of the most common uses of Folder Tracks is to organize all
-of your drum parts into a single folder. In this case, you might want to
-name it 'Drums' or 'Drums Folder.'
+> 💡 **Tip:** A common use of Folder tracks is to organise all of your
+drum parts into a single folder, named *Drums*, for example.
 
-Reorder Tracks within a Folder Track
-- To reorder the tracks within your Folder Track, grab any track and
-    drag it to the correct position. The red insertion line shows the
-    target, so you know exactly where the track is going to go. When you
-    drag a track directly onto the Folder Track and drop it, that track
-    goes to the topmost position.
+### Reordering Tracks within a Folder Track
 
+To reorder the tracks within a Folder track, drag any track to its new
+position. The red insertion line shows exactly where the track will go.
+If you drop a track directly onto the Folder track, it goes to the top
+position.
 
 ![](images/33----04.png)
 
 *Reordering Tracks within a Folder*
 
-Collapsing and Expanding a Folder Track
-- Click the small triangle to the left of the Folder Track name to
-    expand or collapse the folder. When the folder is collapsed it
-    doesn't affect playback. All the tracks that are contained within
-    the folder still play and respond as normal.
+### Removing Tracks from a Folder Track
 
+To take a track out of its folder, select it and click **Unfolder** in
+the Actions panel ("Removes this track from its parent folder"). To take
+several out at once, select them, right-click one of their track headers
+and choose **Unpack selected tracks from folder**.
 
-![](images/33----05.png)
+### Collapsing and Expanding a Folder Track
+
+Click the small triangle to the left of the Folder track name to expand
+or collapse the folder. Collapsing a folder doesn't affect playback: all
+the tracks in it still play and respond as normal.
+
+![](images/33----05@2x.png)
 
 *Expand/Collapse a Folder by Clicking the Triangle*
 
-Soloing/Muting a Folder Track
-- Folder Tracks have *Solo* and *Mute* buttons, just like any other
-    track. However, they operate on all of the tracks that are contained
-    in the folder. So if you have a Folder Track set up for your drums
-    and you click *Solo*, you will solo all of your drum tracks.
-    Likewise, *Mute* mutes all the tracks with in the folder
+### Soloing/Muting a Folder Track
 
+Folder tracks have **Solo** and **Mute** buttons like any other track,
+but they act on all the tracks in the folder. Click **Solo** on a Folder
+track that holds your drums, and all your drum tracks are soloed.
+**Mute** likewise mutes all the tracks in the folder.
 
-![](images/33----06.png)
+![](images/33----06@2x.png)
 
 *Folder Track Solo*
 
-> 📝 **Note:** When you solo a Folder Track, the tracks contained in it are
-soloed with a blinking *Solo* button. This indicates that the track is
-being soloed by the Folder Track and not directly. If you click the
-blinking *Solo* it will change to the standard solo state with a steady
-indicator.
+> 📝 **Note:** When you solo a Folder track, the tracks in it show a
+blinking **Solo** button, which means they're soloed by the Folder track
+rather than directly. Click a blinking **Solo** to change it to the
+standard solo state with a steady indicator.
 
-The *Solo* and *Mute* functions are really good reasons to set up Folder
-Tracks for the different instrument types. You can set up Folder Tracks
-for drums, for guitars, for keyboards, and another for vocals.
+Solo and mute alone make it worth setting up a Folder track for each
+instrument type, such as drums, guitars, keyboards and vocals.
 
 ## The Folder Track VCA
 
-VCA stands for "voltage controlled amplifier." For those of you with
-experience with analog gear, that name relates to a similar feature on
-automated mixing consoles. In essence, the VCA on the Folder Track
-remotely controls the level of all the included tracks proportionally.
-This gives you level control for the everything in the folder.
-
+VCA stands for "voltage controlled amplifier", after a similar feature
+on automated analogue mixing consoles. The VCA on a Folder track
+controls the level of all the included tracks proportionally, giving you
+one level control for everything in the folder.
 
 ![](images/33----07@2x.png)
 
 *Folder Track VCA*
 
-Keep in mind that no audio passes through the Folder Track itself. The
-VCA acts as a remote control, proportionally controlling the volume of
-all of the individual *Volume & Pan* plugins of the tracks contained
-within the Folder Track. It's a very convenient way to add high-level
-mixing to your groups of instruments, without going through the
-complexity of adding numerous additional bus.
+No audio passes through the Folder track itself. The VCA acts as a
+remote control, proportionally adjusting the Volume & Pan plugins of
+all the tracks in the folder. This lets you balance whole groups of
+instruments without adding extra buses.
 
-> 📝 **Note:** You can't insert plugins on Folder Tracks, since no audio
-actually passes through the track. To do so you would need to create a
-Submix Track, which we'll cover in the next chapter. \# Creating a
-Folder Track with Existing Tracks
+> 📝 **Note:** To keep one track out of the VCA's control, select that
+track's Volume & Pan plugin and turn on **Ignore VCA** in the Actions
+panel. The option only appears for tracks inside a folder. If a folder
+has no VCA, right-click its track header and choose **Insert VCA
+plugin...** to add one.
 
-With multi-track drums, you often have 10 tracks or more that you need
-to put into a Folder Track. Rather than drag each track individually,
-there is a quick way to pack all of them into a Folder Track at once:
+> 📝 **Note:** Adding an effect plugin to a Folder track turns it into a
+Submix track, so audio then passes through it. Submix tracks are covered
+in the next chapter, [Submix Tracks](submix-tracks.md).
 
+## Creating a Folder Track with Existing Tracks
 
-![](images/33----08.png)
+Multitrack drums often have 10 or more tracks to put into a Folder
+track. Rather than drag each track in individually, you can pack them
+all into a Folder track at once:
 
-*Create a Folder Track Contain Existing Tracks*
+![](images/33----08@2x.png)
 
-1.  Select the first track by clicking on the track name. Hold down
-    Shift and click on the last track. All of the drum tracks will then
-    be highlighted.
-2.  Next, right-click on the track name for any of the tracks and choose
-    the option *Create new folder track containing*. This instantly
-    creates a Folder Track containing all of your drum tracks.
-3.  Finally, select on the Folder Track and give it a descriptive name
-    in properties.
+*Create a Folder Track Containing Existing Tracks*
 
-> 💡 **Tip:** This isn't limited to drum tracks. *Create new folder track
-containing* is a great way to create Folder Tracks for any related
-selection of instruments or vocals.
+1.  Click the name of the first track, then hold down Shift and click
+    the last track. All the drum tracks are highlighted.
+2.  Right-click the track name of any of the selected tracks and choose
+    **Pack selected tracks to a Folder track** (also in the **Track**
+    menu, or use **Create Folder Containing** in the Actions panel). This creates a Folder track containing all of your
+    drum tracks.
+3.  Select the Folder track and give it a descriptive name in the
+    Actions panel.
+
+> 💡 **Tip:** **Pack selected tracks to a Folder track** works for any
+related selection of instruments or vocals, not only drums.
 
 ## Editing With Folder Tracks
 
-Folder Tracks get even cooler when you discover the editing
-possibilities. Here is a rundown of what's possible:
+Folder tracks also let you edit the clips on all of their tracks at once.
 
-Splitting Contained Clips
-- To split clips across all of the contained tracks by simply
-    selecting the Folder Track clip, position the cursor, then press
-    Slash.
+### Splitting Contained Clips
 
+To split clips across all of the contained tracks, select the Folder
+track clip (the collection clip: the summary clip on the Folder track),
+position the cursor, then press **/**.
 
-![](images/33----09.png)
+![](images/33----09@2x.png)
 
 *Split All Clips Within a Folder Track*
 
-Rearranging
-- After splitting the Folder Track clip, you can rearrange everything
-    within the folder by dragging the Folder Track clips to any order.
-    You can use this rearrange a song or just swap verse 1 and verse 2.
-    If you put all your tracks in to a Folder Track you can use this for
-    block arranging of the song.
+### Rearranging
 
+After splitting the Folder track clip, drag the Folder track clips into
+any order to rearrange everything in the folder, for example to swap
+verse 1 and verse 2. With all your tracks in one Folder track, you can
+block-arrange the whole song this way.
 
-![](images/33----10.png)
+![](images/33----10@2x.png)
 
 *Rearranging Clips within a Folder Track*
 
-Trimming
-- The beginnings and the endings of the Folder Track clips have trim
-    handles. Drag to trim all the included clips.
+### Trimming
 
+The Folder track clips have trim handles at each end. Drag them to trim
+all the included clips.
 
-![](images/33----11.png)
+![](images/33----11@2x.png)
 
 *Trimming Using the Folder Track Clip*
 
-Deleting
-- In addition to moving and splitting clips, you can delete entire
-    sections of the contained tracks by separating out a section,
-    selecting it, and pressing Delete or Backspace.
+### Deleting
+
+As well as moving and splitting clips, you can delete whole sections of
+the contained tracks: separate out a section, select it, and press
+**Delete** or **Backspace**.
 
 ## Automating a Fade within a Folder Track
 
-You can automate the VCA fader to create fade-outs or fade-ins on Folder
-Tracks. We'll get into more detail about automation in a later chapter,
-but here is a step by step recipe for creating fade-outs:
+You can automate the VCA fader to create fade-outs or fade-ins on
+Folder tracks. [Automation](automation.md) covers automation in more
+detail. To create a fade-out:
 
-1.  Grab the little "A" icon. That is the automation icon for the track.
-    Drag it and drop it on the VCA fader. A red line appears on the
-    Folder Track. That is the automation curve for the VCA fader.
+1.  Drag the small "A" icon (the track's automation icon) and drop it on
+    the VCA fader, then choose **VCA** from the menu that appears. The
+    automation curve for the VCA fader appears on the Folder track.
 
-
-![](images/33----12.png)
+![](images/33----12@2x.png)
 
 *Activate Automation for the VCA*
 
-1.  Double-click on automation curve add points. Add two points: one
-    before and one after the section you would like to fade.
+2.  Double-click the automation curve to add two points: one before and
+    one after the section you want to fade.
 
-
-![](images/33----13.png)
+![](images/33----13@2x.png)
 
 *Add Automation Points to the VCA Curve*
 
-1.  Drag the last point all the way down to the bottom of the clip to
-    draw in your fade-out.
-2.  Between the two points you added, notice an additional point was
-    automatically added. This is a curvature point. Drag the curvature
-    point to adjust the shape of the fade.
+3.  Drag the last point all the way down to the bottom of the clip to
+    draw your fade-out.
+4.  Drag the curvature point, which appears automatically between the
+    two points you added, to adjust the shape of the fade.
 
+![](images/33----14@2x.png)
 
-![](images/33----14.png)
+*Customising the Fade with Curvature*
 
-*Customizing the Fade with *Curvature**
+Drag the points further to adjust the speed of the fade until it
+sounds right. The automation points snap to the current snap increment;
+turn **Snap** off for finer adjustment.
 
-You can further adjust the speed of the fade by dragging all these
-points until it sounds like what you want. The automation points snap to
-the current snap increment. Turn *Snap* off for finer adjustment.
-
-This technique is really a time-saver because you don't have to go in
-and edit each individual clip in order to do a fade-out.
+This saves you editing each individual clip to create a fade-out.
 
 ## Moving On
 
-Folder Tracks are a powerful feature in Waveform. You may have seen this
-concept in other digital audio workstations. Once you get the hang of
-how it works in Waveform, you will be amazed at the creative things you
-can do with Folder Tracks.
-
-
-
-
-
-
+For a folder that audio passes through, so you can add effects to the
+whole group, see [Submix Tracks](submix-tracks.md).

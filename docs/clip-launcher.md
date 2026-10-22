@@ -1,143 +1,175 @@
-# Clip Launcher
+# Clip Launcher <span class="pro">PRO</span> { #clip-launcher }
+
+> 📝 **Edition:** Waveform Pro, or with the Launcher Expansion.
+
+The clip launcher lets you trigger clips to play and stop, rather than
+having their start and end times fixed on the arrange timeline.
 
 ## Playback
 
 > 🎥 [Video explaining clip launcher playback](https://youtu.be/19Wd7HAWzlA)
 
-New in Waveform 13 (Pro and Launcher expansion) is the clip launcher.
-This allows triggering clips to play and stop rather than having their
-start/end times predefined on the arrange timeline.
+The clip launcher is in the Mixer, which you can bring into view with
+**M**. Show the clip launcher with the **C** (Show clip launcher)
+button at the top of the Mixer. **Tab** switches between the Mixer
+and the arrangement.
 
-The clip launcher can be found in the mixer panel which can be bought
-into view with the M key. You can then enable the clip launcher with the
-grid button. The mixer and arrange panels can also be toggled between
-using the tab key.
+You can drag clips into slots in the same ways as into the arranger:
+from the Finder or Windows Explorer, or from the Browser. You can also
+copy, paste and drag clips between the clip launcher and the arranger.
 
-Clips can be dragged into slots in the same ways as the arranger, i.e.
-from the Finder/Windows Explorer or one of the browsers. You can also
-copy/paste and drag clips between the clip launcher and arranger.
+The Mixer's **L** (Toggle track height) button switches the slots
+between standard and larger row views.
 
-The clip sizes can be toggled between standard and larger row views with
-the mixer view button.
-
-By default audio thumbnails only appear in the larger row view but you
-can also make these appear on standard row heights from the Settings >
-Appearance page.
+By default, audio thumbnails only appear in the larger row view. To show
+them on standard row heights too, set **Clip launcher style** to **Show
+thumbnail** in *Settings > Appearance > Clips*.
 
 
-![](images/clip_launcher_playback.jpeg)
+![](images/clip_launcher_playback@2x.png)
 
 *Clip Launcher Playback*
 
-## Playing and stopping clips
+## Playing and Stopping Clips
 
-Once you have a clip in a slot, you can trigger it by pressing its play
-button. This will also start play back in the arranger.
+To trigger a clip in a slot, press its play button. This also starts
+playback in the arranger.
 
-If the project is already playing, the clip will be triggered but won't
-start playing until the next launch quantization point. By default this
-is set to 1 bar but can be changed from the master track.
+If the Edit is already playing, the clip waits for the next launch
+quantisation point before it starts. This is 1 bar by default, and you
+can change it with **Global launch quantisation** in the Master track's
+Actions panel.
 
-An already playing clip can be re-triggered which will start it from the
+Re-triggering a clip that is already playing starts it again from the
 beginning.
 
-You can stop a clip by pressing the track's stop button below the slots,
-this is also quantised.
+To stop a clip, press the track's stop button below the slots. Stopping
+is quantised too. The stop button on a Folder track stops every
+clip in slots inside the folder, and the one on the Master track stops
+every clip in the Edit.
 
-The clip launcher supports all types of clips so you can play back MIDI,
-step and Edit clips as well as audio. Just make sure you add instruments
-to the relevant tracks for MIDI and Step Clips.
+Right-click an empty slot to **Insert MIDI Clip**, **Insert Step Clip**
+or **Paste** into it.
+
+> 📝 **Note:** Disabled clips, and clips whose audio file is missing,
+show a greyed-out play button and can't be launched.
+
+The clip launcher supports every clip type, so you can play MIDI, Step
+and Edit clips as well as Audio clips. Make sure the tracks holding MIDI
+and Step clips have instruments on them.
 
 
 ## Scenes
 
 A row of slots across multiple tracks is called a scene. You can trigger
-all clips in a scene with the scene buttons on the master track. They'll
-all be triggered to start at the same time.
+all clips in a scene with the scene buttons on the Master track. They
+all start together, quantised from the same point. If launch
+quantisation is off, clips start from their beginning as soon as you
+launch them.
 
 
-![](images/clip_launcher_playback_scenes.jpeg)
+![](images/clip_launcher_playback_scenes@2x.png)
 
 *Clip Launcher Scenes*
 
-If you have content in multiple scenes, triggering clips in another
-scene will stop the playing clip. With this, you can move through
-sections of your song keeping everything in sync.
+When you have content in several scenes, triggering clips in another
+scene stops the clip that was playing. This lets you move through the
+sections of your song and keep everything in sync.
 
 Launching clips also plays back the arranger transport. To keep launched
-clips in sync with the arranger, changing the transport position whilst
-playing back is now delayed until an appropriate time.
+clips in sync with the arranger, moving the cursor during playback
+waits for the next launch quantisation point. This is the **Quantise
+transport position changes** option on the Options menu and the
+Timeline's right-click menu (on by default). It only works with a Bars
+& Beats timeline. Turn it off to move the cursor straight away. Jumps
+to markers wait in the same way (see [Navigating by
+Markers](using-markers.md#navigating-by-markers)).
 
-This time is also determined by the global quantisation. Shorter
-quantisation times will cause quicker jumps but your bar positions may
-become out of sync.
+The wait follows the global quantisation too. Shorter quantisation
+times give quicker jumps, but your bar positions may drift out of sync.
 
-If you have clips on the arranger tracks, you can play these by using
-the "back to arranger" buttons. Launching a clip will disable the
-arranger track's clips again.
+When the cursor moves, or the arrangement loop wraps round, launched
+clips carry on from where they were rather than jumping to a different
+point in the clip.
 
-## Clip/Slot properties
+### Managing Scenes
 
-Clips in the launcher have most of the same properties as arranger
-clips. You can't however adjust their start, or lengths if they're
-looping, as this is determined by when and how long they are launched
-for.
+Click the add button below the scene buttons (tooltip *Adds a new scene*) to add a scene,
+and drag scenes up or down to reorder them. Select a scene to see its
+settings in the Actions panel: its **Name** and **Colour**, plus
+**Duplicate** (D), **Insert Scene Before**, **Insert Scene After** and
+**Delete** (which
+deletes all the selected scenes).
 
-Changing the offset property will determine what position in the
-launched clip playback starts from.
+![](images/clip-launcher_scene_actions@2x.png)
+
+*Scene properties in the Actions panel*
+
+To play the clips on the arranger tracks, use the play-arranger
+buttons: the one on each track switches that track
+back to its arrangement clips, and the one on the Master track does this
+for all tracks. The same switch is the **Playback arranger** property in
+a track's Actions panel. Launching a clip turns the track's
+arrangement clips off again.
+
+## Clip/Slot Properties
+
+Launcher clips have most of the same properties as arranger clips.
+However, you can't adjust their start, or their length if they're
+looping, because that depends on when and for how long they are
+launched.
+
+The offset property sets where in the launched clip playback starts.
 
 You can adjust the loop start/end points using the Actions panel or the
-[Detail editor](detail-editor.md) (Clip tab).
+[Detail Editor](detail-editor.md) (Clip tab).
 
-By default, clips follow the global quantisation but this can be
-overridden so a clip has its own launch quantisation.
+In the Detail Editor, a looping Audio clip shows a start flag, which sets
+where playback starts within the loop, and has no Length property. An
+unlooped Audio clip can be longer than its audio file: drag its end flag
+past the end of the file, and the editor shows the extra length.
+
+By default, clips follow the global quantisation, but the clip's
+**Launch quantisation** property can override it.
 
 
-![](images/clip_launcher_playback_clip_properties.jpeg)
+![](images/clip_launcher_playback_clip_properties@2x.png)
 
-*Clip properties*
+*Clip Properties*
 
 ### Legato and Nudge
 
-- **Legato:**
+**Legato**: When Legato is on for a slot, playing that slot takes over the previously playing clip's position. Use it when you have several variations of the same clip and want to switch between them without losing position.
 
-  If a legator is enabled for a slot, playing that slot will take over the previous playing clip's position. This can be useful if you have several variations of the same clip and want to seamlessly switch between them.
+**Nudge**: Moves a clip's play position forwards/backwards by the global quantisation amount.
 
-- **Nudge:**
-  
-  Moves a clip's playhead forwards/backwards by the global quantisation amount.
+![Legato and Nudge](images/clip_launcher_4_2_1@2x.png)
 
-  ![Legato and Nudge](images/clip_launcher_4_2_1@2x.png)
+*Legato and Nudge*
 
 ### Launch Modes
 
-- **Trigger:**
+Set these with the clip's **Launch Mode** property.
 
-  Default mode. Launches a clip on the mouse/controller down press, lifting is ignored.
+**Trigger**: The default mode. Launches the clip when you press the mouse button or controller pad, and ignores the release.
 
-- **Gate:**
+**Gate**: Launches the clip on the press and stops it on the release. Often used for sound effects or one-shot samples.
 
-  Launches a clip on the mouse/controller down press, stopping it again when lifting. Often used for sound effects or single-shot samples.
+**Toggle**: Launches the clip on the press, and the next press stops it. The release is ignored.
 
-- **Toggle:**
+**Repeat**: Holding down the mouse button or controller pad launches the clip repeatedly at the global quantisation period.
 
-  Launches a clip on the mouse/controller down press, and the next down press stops it. Lifting is ignored.
+![Launch modes](images/clip_launcher_4_2_2@2x.png)
 
-- **Repeat:**
+*Launch Modes*
 
-  Holding down the mouse/controller repeatedly launches the clip at the global quantisation period.
+### Slot Properties
 
-  ![Launch modes](images/clip_launcher_4_2_2@2x.png)
-
-
-### Slot properties
-
-Slots have a "has stop/rec button" property. Disabling this means that
-when a scene is launched, if a track is already playing a clip but
-doesn't have a clip in the newly launched scene and that slot doesn't
-have a stop button, the already playing clip in that track will
-continue. This can be useful if you have a longer clip or a loop that
-repeats through a whole song.
+Slots have a **Has stop/rec button** property. Turn it off to remove
+the slot's stop button. Then, when that slot's scene is launched, a
+track that is already playing a clip and has no clip in the new scene
+keeps playing it instead of stopping. This is useful for a longer clip
+or a loop that repeats through a whole song.
 
 ## Recording
 
@@ -148,28 +180,26 @@ repeats through a whole song.
 
 *Clip Launcher Recording*
 
-Recording into empty slots works in much the same way as playback. First
-however, you need to assign an input to a track and arm it. This can be
-done in the arranger or mixer panels. The stop buttons will change to
-record buttons to indicate they are armed.
+Recording into empty slots works much like playback, but first you need
+to assign an input to a track and arm it, in either the arrangement or
+the Mixer. The stop buttons change to record buttons to show the track
+is armed.
 
-Now to record to a slot, simply press its record button. It will be
-quantised the same way as triggering playback and you'll also hear any
-count-in you have set globally. Once the clip appears you can play the
-input to record it. You'll see a preview of the content as you play.
+To record to a slot, press its record button. Recording is quantised the
+same way as triggering playback, and you'll hear any count-in you have
+set globally. Once the clip appears, play the input to record it. You'll
+see a preview of the content as you play.
 
-Once you're done, you can either press the track's stop button to stop
-recording or the recording clip's play button to have it launched.
-Recorded clips will be quantised so they play back in time with the
-song.
+When you're done, press the track's stop button to stop recording, or
+the recording clip's play button to launch it. Recorded clips are
+quantised so they play back in time with the song.
 
-Recording to a new scene in a track will stop the previous one so you
-can use this to create multiple takes or versions across different
-scenes.
+Recording to a new scene on a track stops the previous one, so you can
+record multiple takes or versions across different scenes.
 
 ### Record Length
 
-If you select an empty slot, you can enable the "Limit record length" property to set the length of recorded material. Then, when recording to that slot, recording will automatically stop after the elapsed duration. This allows you to quickly record loops in to an arrangement.
+Select an empty slot and turn on its **Limit record length** property to set how long recordings into that slot are. Recording then stops automatically after that length, which makes it quick to record loops into an arrangement.
 
 ![](images/clip_launcher_5_2_1@2x.png)
 
@@ -184,157 +214,146 @@ If you select an empty slot, you can enable the "Limit record length" property t
 
 *Clip Launcher Performance Recording*
 
-The clip launcher can be used in a live setting to create rich
-performances. Sometimes though, you want to capture this live
-performance in a way that enables you to edit it later. This is called
-performance recording. To record a performance, simply enable the global
-record button. Launched clips will now be copied to the arranger as they
-play.
+The clip launcher works well for live performance. Sometimes, though,
+you want to capture a performance so you can edit it later. This is
+called performance recording. To record a performance, turn on the
+global record button. Launched clips are then copied to the arranger as
+they play.
 
-When you stop the launched clip, the recording arranger clip also stops.
-This newly added clip won't be active at the moment as playback is still
-in the launcher. Press the "play arranger" button to hear the newly
-recorded clip.
+When you stop the launched clip, the arranger clip being recorded stops
+too. The new clip isn't active yet, because playback is still in the
+launcher. Press the track's play-arranger button to hear it.
 
-This will sound the same as if you launched the clip as you did
-previously. The clip's start/end/offset and loop boundaries are all
-maintained.
+It sounds the same as the clip did when you launched it: its start, end,
+offset and loop boundaries are all kept.
 
-Multiple tracks can be recorded at the same time and launching different
-clips or scenes will also be reflected.
+You can record several tracks at once, and the recording captures every
+clip or scene you launch.
 
-These arrange clips can then be fine tuned or the session can be
-rendered out.
+You can then fine-tune these arranger clips or render the Edit.
 
 ## Sequencing (Follow Actions)
 
 > 🎥 [Video explaining clip launcher sequencing and follow actions](https://youtu.be/JYDDkxRHXtM)
 
-In the above section we've seen how to manually trigger slots and scenes
-but it's also possible to automate this with Follow Actions. These
-enable you to specify which clips to launch and when allowing for
-algorithmic sequence creation.
+The [Playback](#playback) and [Scenes](#scenes) sections show how to
+trigger slots and scenes by hand. Follow Actions automate this: they
+set which clips launch next and when, so you can build sequences
+algorithmically.
 
-The follow actions can be found in the Actions panel once you have a
-clip selected.
+Follow actions are in the Actions panel when a clip is selected.
 
 
-![](images/clip_launcher_sequencing_follow_actions_and_groups.jpeg)
+![](images/clip_launcher_sequencing_follow_actions_and_groups@2x.png)
 
 *Clip Follow Actions*
 
-The first property determines if the action should be performed after a
-duration of beats or a number of loops have been played. If the clip
-isn't looping, this second option will just trigger at the clip's end.
+The first property, **Sync follow action to** (**Beats** or **Num loops**),
+sets whether the action happens after a number of beats or a number of
+loops. Set the number with the **After** property below it. If the clip
+isn't looping, the loops option triggers at the clip's end.
 
-## Global Actions
+### Global Actions
 
-The row below shows the action to be performed and clicking on the
-button shows the actions menu. At the top there is ***Stop***, ***Return
-to arrangement***, and ***Play again***. These enable you automatically
-stop a clip, play back the arranger track or start the clip from the
-beginning.
+The row below shows the action to perform. Click its button for the
+actions menu. At the top are **Stop**, **Return to arrangement** and
+**Play again**, which stop the clip, play back the arranger track or
+start the clip again from the beginning.
 
-Next there is a list of clip navigation in various scopes.
+Below them are clip navigation actions in several scopes.
 
-## Track Scope
+### Track Scope
 
 The "track" scope means all launcher clips on the track are considered
 for the action.
 
-Then there is the choice of the previous or next slot, the first or last
-slots in the track, any random slot in the track, any random slot in the
-track other than the currently playing slot or round-robin (which is the
-same as next except it will loop round to the first slot once it reaches
-the end).
+The track scope's actions pick the previous or next slot, the first or last slot
+in the track, any random slot in the track, any random slot other than
+the one playing, or round-robin (the same as next, except that it loops
+round to the first slot after the last).
 
-The follow actions for multiple clips can be set at the same time by
-selecting them all.
+To set the follow actions for several clips at once, select them all.
 
-If the action results in a slot that has no clip being selected, the
-currently playing clip will just stop. In the image above, after the
+If the action lands on a slot with no clip, the playing clip stops. In the image above, after the
 last clip is played, playback on that track will stop. To loop back
-round to the first clip, select round-robin.
+round to the first clip, select **Round-robin**.
 
-## Other Scopes
+### Other Scopes
 
 The other scopes reduce the number of possible clips to choose from. A
-group is any number of consecutive clips in the track. For example,
-there are three groups in the above image.
+group is any number of consecutive clips in the track. The image above
+has three groups.
 
-Changing the action to "Group: Round-robin" for all these clips will
-mean starting playback in any of them will loop round the clips in that
-group. For example, playing the last clip in the first group will play
-the first clip in the first group next and so on.
+If you set all these clips to **Group: Round-robin**, starting any of
+them loops round the clips in its group. For example, after the last
+clip in the first group plays, the first clip in that group plays next,
+and so on.
 
-You can see now how the other group scopes work. ***"Previous/next
-groups"*** pick clips in adjacent groups and ***"Other group"***
-randomly selects from a different group to the currently playing one.
+The other group scopes work the same way. The actions under
+**Previous Group** and **Next Group** pick clips in adjacent groups, and
+those under **Other Group** pick from a different group to the currently
+playing one.
 
-By grouping together related clips, for example, variations of a chorus
-bar, you can use the scene triggers to move through sections of a song.
+By grouping related clips, such as variations of a chorus bar, you can
+use the scene triggers to move through the sections of a song.
 
-## Action Probabilities
+### Action Probabilities
 
 
-![](images/clip_launcher_sequencing_follow_actions_multiple.jpeg)
+![](images/clip_launcher_sequencing_follow_actions_multiple@2x.png)
 
 *Clip Follow Action Probabilities*
 
-In the above image you can see two actions have been added to the clip.
-The slider next to each action is the "weight" or probability that each
-action will be performed.
+The clip in the image above has two actions. The slider next to each
+action is its "weight", the probability that it will be performed.
 
-An action can be added using the ***"Add action"*** button. Changing the
-slider will change the probability that action will be triggered. All
-the probabilities for actions will always add up to 100% so changing
-one's probability will also change the others. If you want to remove an
-action, press the ***"delete"*** trash can button.
+Add an action with the **Add action...** button, and move its slider to
+change the probability that it's triggered. The probabilities always add
+up to 100%, so changing one changes the others. To remove an action,
+press its trash can (delete) button.
 
-By using different actions with different probabilities you can set up
-interesting musical progressions. For example, a random walk can be
+Combining actions with different probabilities gives you varied musical
+progressions. For example, a random walk can be
 configured by setting the last three clips to have a 70% chance of
-performing the ***"round-robin"*** action and a 30% chance of the
-***"previous"*** action. If the first clip is played subsequent clips
-are likely to play but sometimes play moves backwards a scene.
+performing the **Round-robin** action and a 30% chance of the
+**Previous** action. Play the first clip, and the following clips
+usually play in turn, but sometimes playback moves back a scene.
 
 These clip changes can be recorded to the arranger using the global
-record button as explained above. This enables you to replay the clips
-without worrying about the randomness.
+record button (see [Performance Recording](#performance-recording)). You can then replay the result
+without the randomness.
 
 ## External Controllers
 
 > 🎥 [Video explaining using the clip launcher with external controllers](https://youtu.be/hW3aw1sACdc)
 
-External controllers can be used to control the launching of clips in
-much the same way the arranger section.
+You can use external controllers to launch clips in much the same way
+as in the arrangement.
 
-## Configuration
+### Configuration
 
 
-![](images/clip_launcher_controllers_midi_settings.jpeg)
+![](images/clip_launcher_controllers_midi_settings@2x.png)
 
 *Controller MIDI Settings*
 
-First, go to the ***\"MIDI Devices\"*** settings page and if your device
-is not shown, press the ***\"Refresh Devices\"*** button. Once visible,
-ensure all the input and output devices are set to ***\"Enabled\"***
-from the list.
+First, go to *Settings > MIDI Devices*. If your device isn't shown,
+click **Scan for new MIDI devices now**. Once it's visible, make sure all
+its input and output devices are set to **Enabled** in the list.
 
 
-![](images/clip_launcher_controllers_control_surface_settings.jpeg)
+![](images/clip_launcher_controllers_control_surface_settings@2x.png)
 
 *Control Surface Settings*
 
-Next go to the ***\"Control Surfaces\"*** settings page and select your
-device. Ensure the correct ***\"Input Device\"*** and ***\"Output
-Device\"*** are selected from the control surface properties.
+Next, go to *Settings > Control Surfaces* and select your device. Make
+sure the correct **Input Device** and **Output Device** are selected in
+the control surface properties.
 
-Here you can also select the highlight colour to indicate the controlled
-clips in the launcher panel. Select a colour and enable the ***\"Colour
-Clip Slot Selection\"*** option to enable this.
+You can also pick a highlight colour to mark the controlled clips in the
+launcher: select a colour and turn on **Colour Clip Slot Selection**.
 
-## Playback and Recording
+### Playback and Recording
 
 
 ![](images/clip_launcher_controllers_control_surface_edit.jpeg)
@@ -342,25 +361,35 @@ Clip Slot Selection\"*** option to enable this.
 *Control Surface Buttons*
 
 Control surfaces vary by model but most have buttons to launch clips,
-launch scenes and navigate around the session.
+launch scenes and navigate around the clip launcher.
 
 Pressing an empty button on a track will stop playing clips on that
 track.
 
 If the track is armed for recording, pressing the button corresponding
-to an empty slot will start recording in to that slot.
+to an empty slot starts recording into that slot.
 
-Most controllers can also be used as MIDI input devices. Pressing the
-***\"Note\"*** button at the top will change the device to MIDI input
-mode. The cells can then be used to record MIDI notes in to the
-recording slot. Pressing the ***\"Custom\"*** button can change the
+Most controllers can also be used as MIDI input devices. Press the
+**Note** button at the top to switch the device to MIDI input mode. The
+cells can then record MIDI notes into the recording slot. Pressing the **Custom** button can change the
 layout to a drum grid.
 
-## Mixer Control
+### Mixer Control
 
-Some devices have a ***\"Mixer Mode\"*** which, when enabled lets you
-adjust track and plugin parameters in your session. Please refer to your
-hardware device user manual for specific capabilities.
+Some devices have a **Mixer Mode** that lets you adjust track and
+plugin parameters in your Edit. See your device's user manual for what
+it can do.
 
+The Launcher Expansion also unlocks Ableton Link, for syncing tempo with
+other apps and devices. See [Ableton Link](reference-settings.md#ableton-link).
 
----
+## ⚡ Things to Watch Out For
+
+- Clip operations that only make sense in the arrangement aren't offered
+  for launcher clips: split, crop, heal, consolidate, reverse, insert
+  silence, **Convert to Step Clip**, **Merge**, **Remove Silence** and fades.
+- Launcher clips can't be rendered in place or flattened, and Flatten
+  leaves them alone.
+- A track that is playing its clip launcher renders as silence. The
+  Render dialog warns you when this applies. Switch those tracks back to
+  **Playback arranger** to render their arrangement.

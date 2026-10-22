@@ -1,39 +1,26 @@
 # Audio Device Setup
 
-To use Waveform, it is essential to configure it to work with your audio
-interface. It doesn't matter wether you want to use the internal audio
-unit built into your computer, or an external audio interface connected
-to it. Of importance is only to communicate with it in the right way. 
-Waveform supports the following communication protocols:
+Waveform talks to your audio interface, whether that's the sound built
+into your computer or an external interface, through a device type
+(driver). The choices are:
 
-- Windows: ASIO (recommended), and Windows Sound
+- Windows: ASIO (recommended), Windows Audio (three modes), and DirectSound
 - macOS:   Core Audio
-- Linux:   JACK (recommended), and ALSA or PulsAudio/ALSA
+- Linux:   JACK (recommended), and ALSA or PulseAudio/ALSA
 
 ![](images/04----00@2x.png)
 
 *Audio Device Page*
 
-
-> ⚠️ **Warning:** To configure Waveform for recording, you must use the
-Auto-Detect feature along with a hardware loopback. If you don't, then
-your overdubbed tracks will not be in alignment with existing tracks.
-While this is not difficult, it is essential to do this manual step
-anytime you change the Audio Device Setup. The procedure to do this is
-covered in this chapter.
-
-This chapter covers the essential steps to get your audio interface
-configured as an audio device in Waveform.
-
 ## Audio Device Setup in Windows
 
-If you haven't already, navigate to *Settings tab > Audio Devices page.*
+Open *Settings > Audio Devices*.
 
-Audio Device Type:
- Waveform gives Windows users four choices for audio device type.
+Waveform gives Windows users five choices for **Device type**:
 
 -   Windows Audio
--   Windows Audio (Exclusive)
+-   Windows Audio (Exclusive Mode)
+-   Windows Audio (Low Latency Mode)
 -   DirectSound
 -   ASIO
 
@@ -42,145 +29,149 @@ Audio Device Type:
 *Windows Audio Device Types*
 
 
-Any of the above four options might work with your computer, but there
-are definite differences, and best choices:
+Any of these five might work on your computer, but they differ, and
+some are better choices than others:
 
-**ASIO**
-- This is the best choice if you are using an external audio
-    interface. The first step is to install the manufacturer's driver.
-    Using ASIO will usually give you the best low latency performance
-    for recording and playback. Many modern audio interfaces include a
-    mixer app to control low latency mixing within the unit. When using
-    ASIO, you simply choose the device and it is set for both inputs and
-    outputs.
+**ASIO**: The best choice if you use an external audio interface.
+Install the manufacturer's driver first. ASIO usually gives the best
+low-latency performance for recording and playback. Many modern audio
+interfaces include a mixer app to control low-latency mixing within the
+unit. With ASIO, you choose one device and it is used for both inputs
+and outputs.
 
-**Windows Audio**
-- Use this if you are running Windows 10 and are using the internal
-    sound on your machine. This solution is great for using a laptop
-    directly while traveling. This device type uses WASAPI (Windows
-    Audio Session API) which offers nicely optimized access from
-    applications software to audio I/O. Windows Audio will also function
-    with USB Audio Class 1 interfaces.
+**Windows Audio**: Use this if you run Windows 10 or 11 and use your
+computer's internal sound, for example on a laptop while travelling.
+This device type uses WASAPI (Windows Audio Session API), which gives
+applications well-optimised access to audio I/O. Windows Audio also
+works with USB Audio Class 1 interfaces.
 
-**Windows Audio (Exclusive Mode)**
-- This is the same as Windows Audio, but Waveform will not allow any
-    other application to use the audio interface while running. For the
-    lowest latency and most critical applications, choose this option
-    when using your internal sound.
+**Windows Audio (Exclusive Mode)**: The same as Windows Audio, but while
+Waveform is running no other application can use the audio interface.
+For the lowest latency with your internal sound, choose this option.
 
-**DirectSound**
-- This is technology is deprecated in Windows 10 and there is no good
-    reason to choose this option. Back in the day, this was the best
-    choice when using Windows XP with your internal sound.
-Tip: Stay away from the DirectSound device type.
+**Windows Audio (Low Latency Mode)**: Shared like Windows Audio, so
+other applications can still play sound, but Waveform asks Windows for
+smaller buffers to get lower latency. Try it if you want lower latency
+from your internal sound without locking out other applications.
 
-> 📝 **Note:** Windows versions earlier than Win 10 are end of life and officially no more supported. While you might
-be able to run Waveform on older Windows 64-bit systems, the Waveform development and support team run their Win tests on versions 10 and 11.
-    
-> 📝 **Note:** Starting with release 1703, Windows 10 supports USB Audio
-Class 2 devices natively. For simple 2 x 2 interfaces or built-in audio
-this is a workable alternative to using ASIO. For the full feature set
-for most audio interfaces it is still recommended that you install and use
-manufacturer's drivers and use ASIO if possible.
+**DirectSound**: This technology is deprecated in Windows 10 and 11, and
+there is no good reason to choose it.
+
+> 📝 **Note:** Windows versions earlier than Windows 10 have reached end
+of life and are no longer officially supported. You might be able to
+run Waveform on older 64-bit Windows systems, but the Waveform
+development and support team test on Windows 10 and 11.
+
+> 📝 **Note:** Windows 10 and 11 support USB Audio Class 2 devices
+natively. For a simple 2 x 2 interface or built-in audio, this is a
+workable alternative to ASIO. To get the full feature set of most audio
+interfaces, install the manufacturer's driver and use ASIO if you can.
 
 ## Audio Device Setup on macOS
 
-1.  Click on the Settings tab, then select the Audio Devices page.
-2.  Select an output Device. Assuming you have the necessary drivers
-    installed and the device hooked up, it should appear as an option
-    for the *Output:* property.
+1.  Open *Settings > Audio Devices*.
+2.  Select an output device. If the drivers are installed and the
+    device is connected, it appears as an option for the **Output
+    Device** property.
 
-![](images/04----01.png)
+    ![](images/04----01@2x.png)
 
-*OS X - Audio Device Output and Input Properties*
+    *macOS - Audio Device Output and Input Properties*
 
+    > 📝 **Note:** On macOS, USB audio interfaces that follow USB Audio
+    Class 1 (1998) or USB Audio Class 2 (2009) work without any extra
+    driver. Product specs often list such devices as "class compliant."
 
-> 📝 **Note:** With macOS, USB audio interfaces that follow USB Audio Class 1
-(1998) or USB Audio Class 2 (2009) will function without installing any
-additional driver. In the product specs for such devices they are often
-listed as "class compliant."
+3.  Select an **Input Device**.
 
-1.  Select an Input device
+> 💡 **Tip:** macOS lets you choose the input and output devices
+separately, but select the same device for both where you can, for
+example your audio interface.
 
-> 💡 **Tip:** We strongly suggest that you select the same device for the
-output and the input. In this example, we are using a "USB iTwo" which
-is a simple 2 in / 2 out interface.
+![](images/04----02@2x.png)
 
-> 📝 **Note:** On OS X, you can select the input device and output device
-separately.
+*Audio Device Test Button on Mac*
 
-![](images/04----02.png)
-
-*Audio Device **Test** Button on Mac*
-
-Test Button
-- There is a convenient *Test* button next to the audio device
-    parameter. Click it to send a short test tone to the audio device's
-    output. If you hear the tone, you know your device has been
-    configured correctly.
+**Test** button: Further down the Audio Devices page, each enabled
+output in the **Output Channel Groups** list has its own **Test**
+button. Click it to send a short test tone to that output. If you hear
+the tone, your device is set up correctly.
 
 ## Audio Device Setup on Linux
 
-Waveform can connect to the Linux audio system by JACK or ALSA.
+Waveform can connect to the Linux audio system through JACK or ALSA.
+JACK is the recommended choice, because it gives a low-latency signal
+path and more routing options.
 
-The usual requirement for low latency signal pathways and the extended
-routing options recommend to configure Waveform for JACK usage, though.
+In *Settings > Audio Devices*, set **Device type** to **JACK**.
 
-**Settings tab > Audio Devices page > Audio Device Type = JACK**
+Setting up Waveform itself is easy. Preparing the Linux system, and
+finding an audio device that works with Linux, takes more care.
 
-While the configuration of Waveform is obviously quite easy, the
-preparation of the Linux system itself and finding an audio device
-being compatible with Linux requires some attention.
+The Waveform development and support team can't promise anything about
+the Linux compatibility of your audio interface, but here is what to
+expect in general:
 
-Concerning the audio interface: It is out of the scope for the Waveform development and support team to promise you anything about the Linux compatibility of your audio device. We do share some experience to give you an idea about the situation, though. Internal audio chips built into the motherboard of the computer, as in Laptops, are mostly supported by Linux. External audio devices connecting via USB, but only if said to be "USB" or "iOS" compliant, are usually also supported, at least in regard to accessing their basic input and output channels. If these USB devices would come with management software, then this is usually not supported in Linux and functionality only available through the management software stays hidden to Linux users. For internal cards, or audio interfaces connecting by other means (Firewire, for instance), generalized statements cannot be made at all. Independent of your audio device being integrated, or connected by USB, or whatever, we highly encourage you to contact your hardware vendor for clarification, or to consult the relevant Linux user communities about their experience with the hardware of interest. One of the possible addresses would be the following internet forum: https://linuxmusicians.com/viewforum.php?f=6
+- Audio chips built into the computer's motherboard, as in laptops,
+  are mostly supported by Linux.
+- External USB audio devices are usually supported if they are sold as
+  "USB class compliant" or "iOS compliant", at least for their basic input and output channels. If a
+  USB device comes with management software, that software usually
+  doesn't run on Linux, and any features that only the management
+  software can reach stay out of reach.
+- For internal cards, and for interfaces that connect in other ways
+  (FireWire, for instance), no general statement is possible.
 
+Whatever your device, contact your hardware vendor, or ask the relevant
+Linux user communities about their experience with it. One place to ask
+is this forum: https://linuxmusicians.com/viewforum.php?f=6
 
-Concerning the Linux setup:
-PipeWire is nowadays found to be the by default configured internal audio data (and video data) transportation mechanism in mayor Linux distributions.
-Hence, instructions are in the following given with regard to PipeWire. The Ubuntu LTS (24.04) distribution of Linux is taken as for a test run.
+PipeWire is now the default audio (and video) transport in the major
+Linux distributions, so the setup instructions below are for PipeWire.
+They were tested on Ubuntu LTS (24.04).
 
-Some background information: PipeWire was developed as a low latency capable replacement for the proven, but expandability and integration limited JACK, ALSA, PulseAudio and GStreamer protocols.
-It provides the necessary compatibility layers for staying interoperable with applications programmed to connect to those software interfaces. Regarding ALSA it is noteworthy to mention,
-that its user space features are intended to be replaced, while the ALSA parts providing the hardware drivers remain untouched.
+PipeWire was developed as a low-latency replacement for JACK, ALSA,
+PulseAudio and GStreamer, which are proven but limited in how far they
+can be extended and integrated. It provides compatibility layers so
+that applications written for those interfaces keep working. For ALSA,
+only the user-space features are replaced; the ALSA parts that provide
+the hardware drivers stay as they are.
 
-
-Out of the box, Ubuntu (or a flavor of it like Kubuntu) comes with the
-audio system being based on PipeWire, being provided by the preinstalled packages
-*pipewire* and *pipewire-pulse*.
-Basically, the following audio signal pathway is then usually in use:
+Out of the box, Ubuntu (and flavours of it such as Kubuntu) bases its
+audio system on PipeWire, through the preinstalled packages *pipewire*
+and *pipewire-pulse*. The usual audio signal path is then:
 
 **App** (Multimedia Player) **--> pipewire-pulse --> basic management layer --> pipewire --> ALSA --> audio device**
 
 
-The user just runs the app of interest. All the rest stays hidden to the
-user and is cared for by the Linux operating system.
+You run the app, and the operating system takes care of the rest.
 
-However, for running **Waveform** in Ubuntu, the compatibility
-layers for interfacing the **JACK** or **ALSA** protocols have to be added to
-the PipeWire environment, after they are not found to be preinstalled
-in Ubuntu. The required packages are:
+To run Waveform on Ubuntu, though, you need to add the compatibility
+layers for the JACK or ALSA interfaces to PipeWire, because they
+aren't preinstalled. The packages you need are:
 
 - *pipewire-jack*
 - *pipewire-alsa*
 - *wireplumber*
 
-The *pipewire-jack* and *pipewire-alsa* packages are obviously providing the compatibility
-layers. WirePlumber replaces the basic, not being sufficient
-anymore management layer found initially in service in the basic
-PipeWire setup of Ubuntu, providing some under the hood
-required more sophisticated management capabilities.
+The *pipewire-jack* and *pipewire-alsa* packages provide the
+compatibility layers. WirePlumber replaces the basic management layer
+of Ubuntu's default PipeWire setup, which is no longer enough, with the
+more capable management that these layers need.
 
-Up to here things are pretty much the same in all Linux derivatives which are somehow building on top of the Debian distribution, like SparkyLinux, Ubuntu, LinuxMint, etc. .
-However, the additional to the package installation necessary configuration steps may vary.
+So far, this is much the same on all Linux distributions built on
+Debian, such as SparkyLinux, Ubuntu and Linux Mint. The configuration
+steps needed after installing the packages may vary.
 
-
-The easiest way to get Ubuntu ready for advanced audio works and to connect to Waveform is to simply install the following package:
+The easiest way to get Ubuntu ready for audio work with Waveform is to
+install this package:
 
 - *ubuntustudio-pipewire-config*
 
-This package in Ubuntu draws in all above mentioned packages and also puts all necessary configurations into place.
-Now restarting the Linux system eliminates having to hassle with any further configuration steps.
-In principal, after the reboot, you are ready to go, and the following signal pathways are now usable:
+On Ubuntu, this package pulls in all the packages above and puts the
+necessary configuration in place. Restart the computer, and there is no
+further configuration to do. After the reboot, these signal paths are
+available:
 
 **App** (Multimedia Player) **--> pipewire-pulse --> wireplumber --> pipewire --> ALSA --> audio device**
 
@@ -188,134 +179,192 @@ In principal, after the reboot, you are ready to go, and the following signal pa
 
 **App** (Waveform) **--> pipewire-jack --> wireplumber --> pipewire --> ALSA --> audio device**
 
-They can be used in parallel, and each of them with its particular feature set.
-For instance, JACK interfacing applications can have signal routing in-between JACK capable apps, allowing to build up sophisticated audio app networks. As a graphical patch bay for a JACK based audio network, i.e. *qpwgraph* could help with the audio network administration.
-Or, to give another example, several applications interfacing to PulseAudio, and several interfacing to JACK, can be in use in parallel, also all of them streaming in parallel to the same audio interface. PipeWire will mix the streams with almost zero latency.
-Using the ALSA pathway for Waveform is the same possible as in the past. However, after setting up JACK for PipeWire is nowadays so easy and straight forward, contrary to the configuration hassles in the past, and as JACK allows for a lower latency signal pathway, configuring Waveform to use the JACK pathway is highly recommended.
+You can use them side by side, each with its own features. For
+instance, JACK applications can route signals between each other, so
+you can build up networks of audio apps. A graphical patch bay such as
+*qpwgraph* helps you manage a JACK-based audio network.
 
-For convenience, the apps **Ubuntu Studio Audio Configuration** and **Ubuntu Studio Installer** could be installed from package:
+As another example, several applications using PulseAudio and several
+using JACK can run at the same time, all streaming to the same audio
+interface. PipeWire mixes the streams with almost zero latency.
+
+You can still use the ALSA path for Waveform, as before. But setting up
+JACK on PipeWire is now easy, without the configuration hassles of the
+past, and JACK gives a lower-latency signal path, so set Waveform to use
+JACK.
+
+For convenience, you can also install the Ubuntu Studio Audio
+Configuration and Ubuntu Studio Installer apps from this package:
 
 - *ubuntustudio-installer*
 
-The app Ubuntu Studio Audio Configuration aids in the configuration of the principal audio system options. It is especially useful for easily changing the so called PipeWire Quantum, which cares to balance latency and system load depending on the parameter set of buffer size and sample rate. The default parameter set is "1024 48000". For changing it system wide and immediately, simply run the tool and enter the wished values.
-The app Ubuntu Studio Installer would allow to proceed much more specialized configurations. For instance, it allows by the tip of a finger to install a low latency kernel and to proceed with all related configurations automatically. This app could also install curated bundles of software to the system, not only targeting creatives working with audio (bundle *ubuntustudio-audio*) but also targeting the topics of video and photography. Offerings by the Ubuntu Studio Installer are for many users and modern computers not essential. Of mayor interest is the Ubuntu Studio Audio Configuration tool, though.
+Ubuntu Studio Audio Configuration helps you set the main audio system
+options. It is especially useful for changing the PipeWire Quantum,
+which balances latency against system load through its buffer size and
+sample rate. The default is "1024 48000". To change it system-wide
+straight away, run the tool and enter the values you want.
+
+Ubuntu Studio Installer handles more specialised configuration. For
+instance, it can install a low-latency kernel and make all the related
+settings automatically with a single click. It can also install curated
+software bundles, not only for audio (the *ubuntustudio-audio* bundle)
+but also for video and photography. Many users with modern computers
+don't need the Installer; the Audio Configuration tool is the more
+useful of the two.
 
 ## Choosing the Audio Interface
 
-With the audio device type set, you can choose any audio interface
-connected to your computer or the internal sound. Select your device if
-it's not already shown for the *Device:* property.
+With the device type set, you can choose any audio interface connected
+to your computer, or the internal sound. Select your device for the
+**Output Device** property if it isn't already shown. With ASIO there
+is a single device for both inputs and outputs.
 
 ![](images/04----04@2x.png)
 
 *ASIO Device Setup on Windows*
 
 
-Control Panel
-- On some but not all audio interfaces, clicking the *Control Panel*
-    button will open the manufacturer's driver control panel to set the
-    buffer size. Many audio interfaces don't allow you to set the buffer
-    size or the sample rate through host software. If that is the case,
-    locate the control panel software on your system, and open it. Set
-    the *Sample Rate* and *Audio buffer* size there. In some cases, you
-    will need to restart Waveform for the change to take effect.
+**Control Panel**: On some audio interfaces, clicking **Control Panel**
+opens the manufacturer's driver control panel, where you can set the
+buffer size. Many audio interfaces don't let host software set the
+buffer size or sample rate. In that case, find the interface's control
+panel software on your system, open it, and set the sample rate and
+buffer size there. Sometimes you need to restart Waveform for the
+change to take effect.
+
+**Reset Device**: Shown next to **Control Panel**. It closes the current
+audio device and opens it again, which can help after changing settings
+in the driver's control panel.
+
+**Clip audio output to 0dB**: When on, Waveform limits its output to
+0 dB so that overs never reach your interface. (Default: on)
 
 ## Setting the Sample Rate
 
-The default for the sample rate is 44100 Hz, which matches the sample
-rate for CDs. We suggest choosing this sample rate or 48000 Hz unless
-you have a specific reason to choose a different sample rate.
+The default sample rate is 44100 Hz, the sample rate of CDs. Use this or
+48000 Hz unless you have a specific reason to choose another rate.
 
-![](images/04----10.png)
+![](images/04----10@2x.png)
 
 *Setting the Sample Rate*
 
 
 ## Testing for Audio Playback
 
-It is a good idea to test playback to make sure you get sound as well as
-a complete stereo image. Here is one way to do that:
+Test playback to make sure you get sound and a complete stereo image.
+One way to do that:
 
-![](images/04----05.png)
+![](images/04----05@2x.png)
 
-*Loading the SubWays Demo*
+*The Project Templates list on the Welcome tab*
 
 
-1.  Go back to the Projects tab and select one of the demo tunes -
-    Subways is a good choice.
-2.  Locate the Edit on the right (SubWays T4) and double-click to open
-    it.
-3.  Click *Play* (spacebar) and you should hear music!
+1.  Open the Welcome tab and pick a song from the **Project Templates**
+    list to open it as a new Edit. Or open any demo song from the
+    Projects tab (see [Demo Projects and
+    Templates](installing-the-demo-projects.md)).
+2.  Click **Play** (Space bar). You should hear music.
 
 ![](images/04----06@2x.png)
 
 *Successful Play Back*
 
 
+## Channel Groups
+
+The lower part of the Audio Devices page lists your interface's inputs
+under **Input Channel Groups** and its outputs under **Output Channel
+Groups**. Each row is one input or output as Waveform sees it, and has
+these controls:
+
+- **Enabled / Disabled**: switches the input or output on or off.
+- **Default / (Make default)**: shows which input or output is the
+  default, or makes this one the default.
+- **Channels**: sets whether this input or output is **Mono** or
+  **Stereo**. Layouts with more than two channels
+  <span class="pro">PRO</span>, such as 5.1 and 7.1, need Waveform Pro
+  or the Surround Expansion.
+- **Test**: on enabled outputs, plays a short test tone.
+
+
+![](images/audio-device-setup_channel_groups@2x.png)
+
+*Channel Layout Presets and the Input and Output Channel Groups*
+
+Click a row to select it and see its properties on the right. Inputs
+have the recording properties described in
+[Input Properties](recording-audio.md#input-properties). Outputs have
+**Channels**, **Dithering Enabled**, **Left/Right Reversed** and **Device
+Alias**.
+
+### Channel Layout Presets
+
+If you switch between setups, for example a stereo mix and a set of
+mono mic inputs, you can save the arrangement of channel groups as a
+preset. Click **Save Current Layout as New Preset** under **Channel Layout
+Presets** and give it a name. Saved presets are listed above the button:
+
+- Click a preset to apply it. Waveform asks you to confirm before it
+  replaces the current layout.
+- Click its update button to replace the preset with the current layout.
+- Click its delete button to remove it.
+
 ## About Latency
 
-The process of mixing your tracks together, calculating digital effects,
-and triggering instrument samples takes time in any DAW. It is
-impossible for digital mixing to happen instantly. The amount of time
-your computer needs to compute, process, mix and playback from input to
-output is called 'latency.' Latency is the amount of time you allow the
-computer think and is normally measured in milliseconds - from just a
-few to several hundred milliseconds.
+Mixing your tracks, calculating digital effects and triggering
+instrument samples all take time in any DAW; digital mixing can't
+happen instantly. The time your computer needs to compute, process, mix
+and play back from input to output is called 'latency.' It is the time
+you give the computer to think, and is measured in milliseconds, from a
+few to several hundred.
 
-During playback, latency is detected only as a delay between hitting
-play and hearing playback. This results in a barely detectible lag in
-the transport functions, and doesn't cause much trouble.
+During playback, latency only shows as a delay between pressing play
+and hearing sound. The transport responds with a barely detectable lag,
+which doesn't cause much trouble.
 
-Latency during overdubbing is more of an issue. If you are hearing
-playback of existing tracks a bit late, then what you are recording is
-not going to line up correctly because your timing reference is shifted,
-either late or early. Even a few milliseconds will effect feel. At 30 or
-60 milliseconds, the timing will be off. This can have an impact on the
-feel of the recording or even make the timing seem completely off.
+Latency matters more when you overdub. If you hear the existing tracks
+a little late, what you record won't line up, because your timing
+reference has shifted. Even a few milliseconds affect the feel. At 30
+or 60 milliseconds, the timing of the recording can seem completely
+off.
 
-For these reasons, all DAWs include a "latency compensation" feature.
-Following recording, the audio tracks are essentially shifted to
-compensate for latency in the A/D process, mixing, and plugin DSP
-processing.
+That's why all DAWs include "latency compensation": after recording,
+the audio is shifted to make up for the latency of the A/D conversion,
+mixing and plugin processing.
 
 ## Managing Latency
 
-*Audio buffer size* by default is 512 samples (11.6 ms) on macOS, 256
+**Audio buffer size** by default is 512 samples (11.6 ms) on macOS, 256
 samples (5.8 ms) on Windows, and 1024 on Linux (21.3 ms).
 On modern computers, you can usually run with the buffer size set to
 256 or even lower.
 
-> 📝 **Note:** The choice of available buffer size options varies. It depends
-on what what audio interface, connection type, and driver technology you
-have access to.
+> 📝 **Note:** The buffer sizes on offer depend on your audio
+interface, connection type and driver.
 
-Let's consider a latency of 11 ms. In reality, 11 ms is a very short
-period of time. In the real world if you are playing a MIDI controller
-into a virtual instrument, there will be an 11 ms lag between when you
-play a note and when you hear the note. It's the same thing if you're
-working with a virtual guitar amp or amp simulator. When you play a note
-the guitar you hear the sound 11 ms later. Sound travels through air at
-the rate of approximately one foot (0.34 meters) per millisecond. So
-this latency is like playing with your guitar amp or keyboard monitor 11
-feet (3.4 meters) away. There is a delay but you might get by. At 6 ms
-delay, usually the delay is barely noticeable.
+Take a latency of 11 ms. That's a very short time. If you play a MIDI
+controller into a virtual instrument, you hear each note 11 ms after you
+play it. The same goes for a virtual guitar amp or amp simulator: you
+play a note on the guitar and hear it 11 ms later. Sound travels through
+air at roughly one foot (0.34 metres) per millisecond, so this latency
+is like playing with your guitar amp or keyboard monitor 11 feet (3.4
+metres) away. There is a delay, but you might get by. At 6 ms the delay
+is usually barely noticeable.
 
-With computer recording, we alway aim to strike a balance between
-noticeable latency and getting clean playback. Why not just lower it all
-the way down? Because, the computer needs time to 'think' and produce
-the sounds and process effects. If we get too aggressive with lowering
-the buffer, the computer starts to complain in the form of pops, clicks,
-dropouts, and the like. So during recording you might keep this lower,
-during editing and mixing you can increase it.
+With computer recording, you're always balancing noticeable latency
+against clean playback. You can't lower the buffer all the way, because
+the computer needs time to produce the sounds and process effects. Set
+the buffer too low and you get pops, clicks and dropouts. Keep it lower
+while you record, and raise it while you edit and mix.
 
-> 💡 **Tip:** Try 256 samples when you get started. While your songs are
-simple, this should work fine on most modern systems. If you feel there
-is too much delay when playing virtual instruments, try a lower buffer
-value. If the audio starts to break up, try higher settings.
+> 💡 **Tip:** Start with 256 samples. While your songs are simple, this
+works on most modern systems. If virtual instruments feel too delayed,
+try a lower buffer size. If the audio starts to break up, try a higher
+one.
 
-> 📝 **Note:** When using Melodyne Essential for editing audio, you will need
-to increase the buffer size to at least 1024 samples, in order to
-prevent getting a warning message and to have clean playback.
+> 📝 **Note:** If you use Melodyne Essential to edit audio, increase the
+buffer size to at least 1024 samples to avoid a warning message and get
+clean playback.
 
 ## Calibrating Input Latency Compensation
 
@@ -323,104 +372,96 @@ If you use Waveform for any overdubbing, **this is possibly the most
 important lesson in this book. Waveform requires you to run
 Auto-Detect** using a loopback connection on your audio interface.
 
-> ⚠️ **Warning:** This test sets up up a deliberate feedback loop. Switch
-your speakers off during this test.You will be connecting an output to
-an input using a patch cord, so be careful.
+> ⚠️ **Warning:** This test sets up a deliberate feedback loop. Switch
+your speakers off during this test. You will be connecting an output to
+an input with a patch cord, so be careful.
 
-Here are the steps:
+To run the test:
 
-1.  Turn off your monitor speakers!
-2.  Make sure any input monitoring knobs, buttons, or mixers or off or
+1.  Turn off your monitor speakers.
+2.  Make sure any input monitoring knobs, buttons or mixers are off or
     turned down.
-3.  Connect one output back to one of the inputs. To make it simple,
+3.  Connect one output back to one of the inputs. To keep it simple,
     connect the left output to input one.
-4.  Turn the gain up about half way on the input.
-5.  In Waveform go to *Settings > Audio Devices.*
-6.  In the Channels list click on one of the Inputs
+4.  Turn the gain on that input up about halfway.
+5.  In Waveform, go to *Settings > Audio Devices*.
+6.  In the **Input Channel Groups** list, click one of the inputs.
 
-![](images/04----11.png)
+    ![](images/04----11@2x.png)
 
-*Select an Input*
+    *Select an Input*
 
+7.  In the input's properties on the Settings page, click
+    **Auto-Detect...**.
 
-1.  In the Actions panel click *Auto-Detect.*
+    ![](images/04----12@2x.png)
 
-![](images/04----12.png)
+    *Auto-Detect & Time Adjust Parameters*
 
-*Auto-Detect & Time Adjust Parameters*
+8.  Click **Run Test**. Waveform sends a short test signal from the
+    output to the input and calculates the delay between them.
 
+    ![](images/04----13@2x.png)
 
-1.  Click *Run Test.* Waveform will send a short test signal from the
-    output to the input. It will calculate the delay between output and
-    input.
+    *Recording Synch Test Dialog Box*
 
-![](images/04----13@2x.png)
+9.  Click **Apply** to copy the delay value to the **Time Adjust**
+    property.
 
-*Recording Synch Test Dialog Box*
+    ![](images/04----14@2x.png)
 
-
-1.  Click *Apply* and Waveform will copy the delay value to the Time
-    Adjust property.
-
-![](images/04----14@2x.png)
-
-*Applying the Auto-Detect Result to *Time Adjust**
+    *Applying the Auto-Detect Result to Time Adjust*
 
 
-For recordings to be aligned during overdubs, you must repeat this every
-time you make a change to the *Sample rate* or *Audio buffer size.* If
-you don't, your recordings will be several milliseconds out of alignment
-with existing tracks.
+For recordings to line up during overdubs, repeat this every time you
+change the **Sample rate** or **Audio buffer size**. If you don't, your
+recordings will be several milliseconds out of line with existing
+tracks.
 
-> 📝 **Note:** Instead of a loopback cable, you could connect a microphone to
-the input and point it at one of your speakers to run Auto-Detect. This
-will work just fine however make sure that Live Input Monitoring is off
-AND that direct input monitoring on your audio interface is also off. If
-you leave either on it will cause feedback potentially damaging your
-speakers if not your ears!
+> 📝 **Note:** Instead of a loopback cable, you can connect a microphone
+to the input and point it at one of your speakers to run Auto-Detect.
+This works, but make sure that Live Input Monitoring is off AND that
+direct input monitoring on your audio interface is off. If either is on,
+the feedback could damage your speakers, if not your ears.
 
-> 💡 **Tip:** You can keep a note of the *Time Adjust* values at different
-settings an enter it manually for the settings you commonly use.
+> 💡 **Tip:** Note down the **Time Adjust** values for the settings you
+use most, and enter them manually when you switch.
 
 > ⚠️ **Warning:** To configure Waveform for recording, you must use the
-Auto-Detect feature along with a hardware loopback. If you don't then
-your overdubbed tracks will not be in alignment with existing tracks.
-While this is not difficult, it is essential to do this manual step
-anytime you change the Audio Device Setup.
+Auto-Detect feature along with a hardware loopback. If you don't, your
+overdubbed tracks will not line up with existing tracks. It isn't
+difficult, but you need to repeat this manual step whenever you change
+the audio device setup.
 
 ## Resetting to the Defaults
 
-If at any point you want to reset these settings to the defaults, click
-either of these two options:
+To reset these settings to the defaults, click either of these:
 
-Reset Input Devices
-- Resets *Input gain*, *Trigger level*, *Time adjust*, and recording
-    options.
+**Reset Input Device Properties**: Resets **Input Gain**, **Trigger
+Level**, **Time Adjust**, and recording options.
 
-Reset Output Devices
-- Resets *Treat as stereo pair*, *Dithering Enabled*, *Left/Right
-    Reversed* and *Alias* parameters.
+**Reset Output Device Properties**: Resets the **Dithering Enabled** and
+**Left/Right Reversed** parameters.
 
 ## Advanced Audio Device Settings
 
 There are additional options for Low Latency Mode and audio performance
-on the Advance page of the Settings tab. Refer to [Reference: Settings > Advanced](reference-settings.md#advanced).
+on the *Settings > Advanced* page. See the Advanced section of
+[Reference: Settings](reference-settings.md#advanced).
 
 ## First Run Setup
 
-When you run Waveform for the first time, you will see the *First Run
-Setup Progress* panel over on the left. As you click each item, it takes
-you directly to the page and feature on the Setup tab needed to complete
-the task. The tasks are designed to streamline setup and get new users
-configured and running quickly.
+When you run Waveform for the first time, the First Run Setup Progress
+panel appears on the left. Click an item to go straight to the page and
+feature in the Settings tab that completes that task.
 
 
 ![](images/38----52.png)
 
 *First Run Setup Progress Panel*
 
-If you close the panel and wonder how to get it back, navigate to *Help
-> Show First Run Setup*.
+If you close the panel and want it back, choose *Help > Show the First
+Run Setup panel*.
 
 
 ![](images/38----53.png)
@@ -429,12 +470,5 @@ If you close the panel and wonder how to get it back, navigate to *Help
 
 ## Moving On
 
-Audio device setup is straightforward, apart from running the
-Auto-Detect loopback test. Follow the guidelines in this chapter and you
-will be ready to move on.
-
-
-
-
-
-
+With your audio device set up and calibrated, go on to
+[Recording Audio](recording-audio.md).

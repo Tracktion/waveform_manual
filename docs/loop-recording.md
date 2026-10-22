@@ -1,100 +1,81 @@
 # Loop Recording
 
-Loop recording is a really cool way to quickly record multiple takes of
-a part onto a single track. Following loop recording, you can easily
-pick the best take and make it active, so that it is the one you hear
-during playback.
+Loop recording is a quick way to record several takes of a part onto a
+single track. Afterwards, you pick the best take and make it active, so
+it's the one you hear during playback.
 
-Loop recording also sets you up to use the track comping tools that are
-built into Waveform. Comping allows you to go phrase by phrase through
-the different takes and choose the best parts and create a composite
-best take. We cover comping in detail in [Comping](comping.md).
+Loop recording also sets you up for Waveform's comping tools. With
+comping, you go phrase by phrase through the takes, choose the best parts
+and build a composite take. See [Comping](comping.md).
 
 ## Getting into Loop Recording Mode
 
-Getting into loop recording in Waveform is simple - enable *Loop* (L) in
-the Transport. Now when you click *Record*, recording will only occur
-between the In-marker and Out-marker. The transport will "loop" between
-the In-marker and Out-marker allowing you to automatically record take
-after take, until you hit *Stop*.
+To loop record, turn on **Loop** (L) in the transport bar. When you then
+click **Record**, Waveform records only between the In marker and Out
+marker. The transport loops between the two markers, recording take
+after take until you click **Stop**.
 
+![](images/19----01@2x.png)
 
-![](images/19----01.png)
-
-*Turn on __Loop__ for loop recording mode*
+*Turn on Loop for Loop Recording Mode*
 
 ## Loop Recording Step-by-Step
 
-1.  Set the In-marker and the Out-marker over the range that you would
-    like to do the loop recording. To set the In-marker, position the
-    cursor and press I. To set the Out-marker, position the cursor at
-    the end of the loop and press O.
+1.  Set the In marker and the Out marker over the range you want to loop
+    record. To set the In marker, position the cursor and press I. To
+    set the Out marker, position the cursor at the end of the loop and
+    press O.
 
+    ![](images/19----02@2x.png)
 
-![](images/19----02.png)
+    *Set the In Marker and Out Marker*
 
-*Set the In-marker & Out-marker*
+    > 📝 **Note:** The count-in from the **Click** menu works for loop
+    > recording. For a running start before the first take, set
+    > *Click > Count-in* to **1 bar** or **2 bars**. The count-in plays
+    > once, not before every pass of the loop.
 
-> 📝 **Note:** The *Click* count-in works for loop recording. If you want a
-running start for each take, set *Click Track > Pre-record count-in
-length* to one or two bars.
+2.  Configure the input and check your levels, as for
+    [standard recording](recording-audio.md).
 
-2.  Configure the input and check your levels just like we did for
-    standard recording.
+    ![](images/19----03@2x.png)
 
+    *Configure the Input for Recording*
 
-![](images/19----03.png)
+3.  Click **Record** (R) on the transport bar to start recording.
 
-*Configure the Input for Recording*
-
-3.  Click *Record* (R) on the transport to start recording.
-
-While recording when the cursor hits the Out-marker, Waveform will
-automatically loop back for the next take. You can do as many takes as
-you like.
+When the cursor reaches the Out marker, Waveform loops back for the next
+take. You can record as many takes as you like.
 
 ## Selecting the Best Take
 
-After loop recording, you will have a number of takes stacked within the
-Audio clip. The very last take you recorded is what you will hear during
-playback. That is called the "active take." To select a different take
-for the active take, click the plus (+) sign in the lower right corner
-of the clip. You will see a list of all takes there. Pick the one you
-want to promote to the active take. You can audition all the takes and
-make your favorite one the active take.
+After loop recording, the takes are stacked within the Audio clip. The
+last take you recorded is the one you hear during playback, called the
+"active take". To make a different take active, click the plus (+) sign
+in the lower right corner of the clip and pick it from the list of takes.
+You can audition each take this way and keep your favourite.
 
-
-![](images/19----04.png)
+![](images/19----04@2x.png)
 
 *Choosing the Active Take*
 
-> 💡 **Tip:** With your takes recorded this way, it is perfectly set up for
-comping, which we will cover in the [next chapter].
+> 💡 **Tip:** Takes recorded this way are ready for
+> [Comping](comping.md).
 
 ## Unpacking Takes to Tracks
 
-If you want to work with your loop recorded takes as separate audio
-tracks, it is easy to unpack the takes to tracks. To do so, click the
-plus (+) sign and then select *Unpack to new tracks.*
+To work with your loop-recorded takes as separate audio tracks, click
+the plus (+) sign and select **Unpack to new tracks**.
 
-
-![](images/19----05.png)
+![](images/19----05@2x.png)
 
 *Unpack Takes to Tracks*
 
-That instantly coverts an Audio clip full of takes to a series of tracks
-containing separate Audio clips. Now you can use normal audio editing to
-move them around, chop them up, or arrange them into a song.
+This converts an Audio clip full of takes into a series of tracks, each
+with its own Audio clip. You can then use normal audio editing to move
+them around, chop them up, or arrange them into a song.
 
-## Moving on
+## Moving On
 
-The secret to loop recording is to set the In-marker and Out-marker over
-the section you want to record, make sure *Loop* is turned on, and then
-record like you normally would. Loop recording also sets you up for
-comping, which is covered in the next chapter.
-
-
-
-
-
-
+Next, [Comping](comping.md) shows how to build a composite take from
+your loop-recorded takes.
