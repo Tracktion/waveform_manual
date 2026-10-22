@@ -1,0 +1,3373 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/14.1.22-beta/automation/">
+      
+      
+        <link rel="prev" href="../track-snapshots/">
+      
+      
+        <link rel="next" href="../mixing-down/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Automation - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#automation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Automation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins-detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugins Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantising MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#activating-automation-on-a-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activating Automation on a Track
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activating Automation on a Track">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pinning-the-shown-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pinning the Shown Curve
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-what-to-automate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing What to Automate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing What to Automate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-a-button-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The A Button Menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-points-to-the-automation-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Points to the Automation Curve
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Points to the Automation Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-ramp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a Ramp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shaping-with-curvature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shaping with Curvature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-an-automation-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drawing an Automation Step
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editing-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automating-fade-ins-and-fade-outs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automating Fade-ins and Fade-outs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#converting-a-clip-fade-in-or-fade-out-to-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Converting a Clip Fade-in or Fade-out to Automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading Automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-curve-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Curve Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-find-out-what-automation-is-active-for-a-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Find Out What Automation Is Active for a Track
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remap-on-tempo-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remap on Tempo Change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-automation-on-the-fly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing Automation on the Fly
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing Automation on the Fly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automation-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Lock
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clip-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clip Automation PRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clip Automation PRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-clip-automation-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Clip Automation Editor
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Clip Automation Editor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linkedunlinked-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linked/Unlinked Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curve-types-absoluterelativescale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Curve Types (Absolute/Relative/Scale)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curve-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Curve Editing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-ramps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Ramps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rendering-and-stems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendering and Stems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Read as one page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#activating-automation-on-a-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activating Automation on a Track
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activating Automation on a Track">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pinning-the-shown-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pinning the Shown Curve
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-what-to-automate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing What to Automate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing What to Automate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-a-button-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The A Button Menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-points-to-the-automation-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Points to the Automation Curve
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Points to the Automation Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-ramp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a Ramp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shaping-with-curvature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shaping with Curvature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-an-automation-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drawing an Automation Step
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editing-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automating-fade-ins-and-fade-outs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automating Fade-ins and Fade-outs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#converting-a-clip-fade-in-or-fade-out-to-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Converting a Clip Fade-in or Fade-out to Automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading Automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-curve-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Curve Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-find-out-what-automation-is-active-for-a-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Find Out What Automation Is Active for a Track
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remap-on-tempo-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remap on Tempo Change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-automation-on-the-fly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing Automation on the Fly
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing Automation on the Fly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automation-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Lock
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clip-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clip Automation PRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clip Automation PRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-clip-automation-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Clip Automation Editor
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Clip Automation Editor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linkedunlinked-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linked/Unlinked Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curve-types-absoluterelativescale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Curve Types (Absolute/Relative/Scale)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curve-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Curve Editing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-ramps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation Ramps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="automation">Automation<a class="headerlink" href="#automation" title="Permanent link">&para;</a></h1>
+<p>Automation lets you program changes to the parameters on a track over time:
+volume, pan and the controls of any plugin. You can record it from hardware
+controllers with knobs and faders, or draw it by adding points to the
+automation curve, the line that appears on or below the track.</p>
+<p>To keep automation organised, you can add automation tracks that nest under
+a track, open them while you work on the automation, and close them again
+when you move on to other parts of the Edit.</p>
+<p>The examples here use Volume &amp; Pan automation; the same steps work for the
+parameters of any other plugin.</p>
+<h2 id="activating-automation-on-a-track">Activating Automation on a Track<a class="headerlink" href="#activating-automation-on-a-track" title="Permanent link">&para;</a></h2>
+<p>Automation starts from the A icon and the plus icon at the far right of each
+track.</p>
+<p><img alt="" src="../images/automation_0_1%402x.png" /></p>
+<p><em>The A and Plus Automation Icons</em></p>
+<p>Click the plus icon to open a menu:</p>
+<ul>
+<li><em>Add a new automation track with this parameter: X</em> adds an automation
+  track showing X, the parameter the track is currently showing.</li>
+<li><em>Add an empty automation track</em> adds an automation track with no parameter
+  chosen yet.</li>
+<li><em>Add automation tracks for each active parameter on this track</em> adds one
+  automation track for every parameter on the track that already has
+  automation.</li>
+<li><em>Active parameter curves for this track</em> lists the parameters that have
+  automation. Pick one to add an automation track showing it.</li>
+</ul>
+<p>Shift-click the plus icon to add an empty automation track straight away. The
+new automation track appears below your original track, with minus, A and plus
+icons of its own.</p>
+<p><img alt="" src="../images/automation_0_2%402x.png" /></p>
+<p><em>Track with One Automation Track</em></p>
+<p>The minus icon removes the automation track, the A icon chooses what it
+shows, and the plus icon adds another automation track below this one.</p>
+<p>To colour an automation track, right-click its header and pick a colour from
+the colour strip in the menu.</p>
+<h3 id="pinning-the-shown-curve">Pinning the Shown Curve<a class="headerlink" href="#pinning-the-shown-curve" title="Permanent link">&para;</a></h3>
+<p>When an audio track (not an automation track) is showing automation, there's a pin button next to its A button. While the pin is off, the curve shown on the track changes whenever you move a plugin parameter. That's a quick way to find a curve: unpin, move the parameter in the plugin's window, and its curve appears. To keep the current curve on screen, pin it, or click the A button and move it to its own automation track.</p>
+<p><img alt="Automation curve pin unpinned" src="../images/automation_1_1%402x.png" /></p>
+<p><em>Unpinned</em></p>
+<p><img alt="Automation curve pin pinned" src="../images/automation_1_2%402x.png" /></p>
+<p><em>Pinned</em></p>
+<h2 id="choosing-what-to-automate">Choosing What to Automate<a class="headerlink" href="#choosing-what-to-automate" title="Permanent link">&para;</a></h2>
+<p>To automate the track's volume, click the A icon and choose <em>Automatable
+parameters for this track &gt; Volume &amp; Pan Plugin &gt; Volume</em>.</p>
+<p><img alt="" src="../images/35----03%402x.png" /></p>
+<p><em>Select the Parameter to Automate</em></p>
+<p>An automation line appears, with a label at the top right naming the track,
+plugin and parameter it controls. This line is the automation curve. It's
+flat until you add points to it, and from there you can draw curves, steps and
+ramps.</p>
+<p><img alt="" src="../images/35----04%402x.png" /></p>
+<p><em>The Automation Curve Line</em></p>
+<p>Click the curve to select it, and the Actions panel shows the curve's
+name and its actions. Those make more sense once you have some automation
+points on the curve.</p>
+<p><img alt="Automation curve properties" src="../images/automation_2_1%402x.png" /></p>
+<p><em>The automation curve in the Actions panel</em></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> A faster way to choose the parameter is to drag the A icon onto
+the plugin you want to automate, then pick the parameter from the list. To
+automate panning, for example, drop the A on the Volume &amp; Pan plugin and
+choose <em>Pan</em>. This works for third-party plugins too.</p>
+</blockquote>
+<h3 id="the-a-button-menu">The A Button Menu<a class="headerlink" href="#the-a-button-menu" title="Permanent link">&para;</a></h3>
+<p>Clicking the A icon opens a menu of everything the track can show:</p>
+<table>
+<thead>
+<tr>
+<th>Entry</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Show automation curves on this track</em></td>
+<td>Shows the track's volume curve again when no curve is shown</td>
+</tr>
+<tr>
+<td><em>Hide automation curves on this track</em></td>
+<td>Hides the curve the track is showing</td>
+</tr>
+<tr>
+<td><em>Select the plugin that contains this parameter</em></td>
+<td>Selects the plugin that owns the shown curve, so its controls appear in the Actions panel</td>
+</tr>
+<tr>
+<td><em>Automation mode</em></td>
+<td>Sets the track's automation mode (see <a href="#automation-modes">Automation Modes</a> below)</td>
+</tr>
+<tr>
+<td><em>Automatable parameters for this track</em></td>
+<td>Every parameter on the track, grouped by plugin, plus the track's <em>Macros</em> and <em>Modifiers</em> submenus</td>
+</tr>
+<tr>
+<td><em>Rack plugins</em></td>
+<td>Each rack in the Edit, with its <em>Macros</em>, <em>Modifiers</em> and <em>Faceplate</em> controls and the plugins inside it</td>
+</tr>
+<tr>
+<td><em>Master parameters</em></td>
+<td>The master volume and pan, the master plugins and the Edit's macros</td>
+</tr>
+<tr>
+<td><em>Active parameter curves in Edit</em></td>
+<td>Every parameter in the Edit that already has automation</td>
+</tr>
+<tr>
+<td><em>Active parameter curves for this track</em></td>
+<td>The parameters on this track that already have automation</td>
+</tr>
+</tbody>
+</table>
+<p>Choosing a parameter shows its curve on the track. For the parameters these
+submenus lead to, see <a href="../racks/#macro-parameters">Macro Parameters</a>,
+<a href="../modifiers/">Modifiers</a> and <a href="../faceplates/">Faceplates</a>.</p>
+<h2 id="adding-points-to-the-automation-curve">Adding Points to the Automation Curve<a class="headerlink" href="#adding-points-to-the-automation-curve" title="Permanent link">&para;</a></h2>
+<p>To give the automation curve some shape, add points to it: double-click the
+curve, or Opt-click / Alt-click it.</p>
+<h3 id="creating-a-ramp">Creating a Ramp<a class="headerlink" href="#creating-a-ramp" title="Permanent link">&para;</a></h3>
+<p>To draw a ramp, add two points and then drag one of them up or down. This
+adjusts the steepness of the ramp. Drag the points left or right to adjust
+the start and end of the ramp.</p>
+<p><img alt="" src="../images/35----06%402x.png" /></p>
+<p><em>Drawing an Automation Ramp</em></p>
+<h3 id="shaping-with-curvature">Shaping with Curvature<a class="headerlink" href="#shaping-with-curvature" title="Permanent link">&para;</a></h3>
+<p>To shape the line segment between two points, use its curvature point.
+Waveform puts one midway between every pair of automation points. Drag it up
+or down to bend the segment.</p>
+<p><img alt="" src="../images/35----07%402x.png" /></p>
+<p><em>Adjusting a Curvature Point</em></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> You can also set a selected point with the <strong>Value</strong> slider in
+the Actions panel, alongside a <strong>Curvature</strong> slider.</p>
+</blockquote>
+<p><img alt="" src="../images/35----08%402x.png" /></p>
+<p><em>Value and Curvature in the Actions panel</em></p>
+<h3 id="drawing-an-automation-step">Drawing an Automation Step<a class="headerlink" href="#drawing-an-automation-step" title="Permanent link">&para;</a></h3>
+<p>Add two points to mark where the step starts and ends. Hold Cmd / Ctrl and
+drag the line segment between them up or down. The segment moves on its own,
+separately from the rest of the curve, which draws a step. Without
+Cmd / Ctrl, dragging a line segment moves its two end points, pulling the
+neighbouring segments with them.</p>
+<p><img alt="" src="../images/35----09%402x.png" /></p>
+<p><em>Hold Cmd / Ctrl to Draw a Step</em></p>
+<h3 id="editing-points">Editing Points<a class="headerlink" href="#editing-points" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Delete a point</strong>: double-click it, or Opt-click / Alt-click it.</li>
+<li><strong>Move a point and every point after it</strong>: Cmd + Shift-drag / Ctrl +
+  Shift-drag the point left or right. This slides the rest of the curve in
+  time without changing any values.</li>
+<li><strong>Move a point along one axis only</strong>: hold Shift while you drag it, and the
+  point keeps either its time or its value, whichever you moved less.</li>
+<li><strong>Select a run of points</strong>: select one point, then Shift-click another to
+  select every point between them.</li>
+<li><strong>Add or remove a point from the selection</strong>: Cmd-click / Ctrl-click it.</li>
+</ul>
+<h2 id="editing-automation">Editing Automation<a class="headerlink" href="#editing-automation" title="Permanent link">&para;</a></h2>
+<p>Select a range on a track that's showing automation and the automation edit handles appear. They only change the points inside the range: the top handles scale them and the bottom handles shift them up or down. The centre handles change every point in the range equally, while a corner handle tapers the change so it's strongest at that corner's end of the range and fades to nothing at the other. Use them to adjust many points at once, or to add musical effects such as ramps.</p>
+<p><img alt="Automation edit handles" src="../images/automation_3_1%402x.png" /></p>
+<p><em>Automation edit handles</em></p>
+<p>With a range selected you can also right-click and choose <em>Insert automation shape</em> to fill the range with a shape. After picking the shape, choose how it repeats: a set number of times to fit the range, or once every musical period.</p>
+<p><img alt="Automation insert shape" src="../images/automation_3_2%402x.png" /></p>
+<p><em>Inserting an automation shape</em></p>
+<p>Combine an inserted shape with the edit handles to build rhythmic patterns.</p>
+<p><img alt="Automation insert shape" src="../images/automation_3_3%402x.png" /></p>
+<p><em>An inserted shape adjusted with the edit handles</em></p>
+<h2 id="automating-fade-ins-and-fade-outs">Automating Fade-ins and Fade-outs<a class="headerlink" href="#automating-fade-ins-and-fade-outs" title="Permanent link">&para;</a></h2>
+<p>To draw a fade with automation, add a point where you want the fade to start
+and another where you want it to end, then drag the second point all the way
+down until the value reads zero. To change the shape of the fade, drag the
+curvature point between them. Dragging it down makes the level drop quickly
+at the start of the fade and then tail off; dragging it up holds the level
+for longer and drops it towards the end. You can also set the point's value
+and curvature in the Actions panel.</p>
+<p>If you automate a Folder track's VCA fader, the fade applies to every track
+inside it. See
+<a href="../folder-tracks/#automating-a-fade-within-a-folder-track">Automating a Fade within a Folder Track</a>.</p>
+<h2 id="converting-a-clip-fade-in-or-fade-out-to-automation">Converting a Clip Fade-in or Fade-out to Automation<a class="headerlink" href="#converting-a-clip-fade-in-or-fade-out-to-automation" title="Permanent link">&para;</a></h2>
+<p>You can fade Audio clips in and out with the fade handles in the clip's upper
+left and right corners (see
+<a href="../audio-clips-and-editing-audio/#fade-infade-out">Fade-in/Fade-out</a>). For
+more control over the fade's shape, convert the clip fade to an automation
+curve.</p>
+<p><img alt="" src="../images/35----10%402x.png" /></p>
+<p><em>Clip Fade</em></p>
+<p>To convert it, select the clip, then click
+<strong>Fade to Automation</strong> in the Actions panel and choose <em>Transfer Fade-in to
+Automation</em> or <em>Transfer Fade-out to Automation</em>.</p>
+<p><img alt="" src="../images/35----11%402x.png" /></p>
+<p><em>Fade to Automation</em></p>
+<p>Waveform redraws the automation curve in the shape of the fade and removes
+the fade from the clip. You can then add points and reshape it with the
+automation tools.</p>
+<p><img alt="" src="../images/35----12%402x.png" /></p>
+<p><em>Result of Fade to Automation</em></p>
+<h2 id="reading-automation">Reading Automation<a class="headerlink" href="#reading-automation" title="Permanent link">&para;</a></h2>
+<p>Waveform plays back the automation you've drawn as long as the <strong>Read</strong>
+button in the transport bar is on.</p>
+<p><img alt="Automation read enabled" src="../images/automation_1_3%402x.png" /></p>
+<p><em>Read Enabled</em></p>
+<p>During playback, the controls move in real time as the cursor passes
+through the Edit.</p>
+<h2 id="automation-curve-actions">Automation Curve Actions<a class="headerlink" href="#automation-curve-actions" title="Permanent link">&para;</a></h2>
+<p>The automation curve has its own controls. Click the curve to select it, and
+they appear in the Actions panel.</p>
+<p><img alt="Automation curve properties" src="../images/automation_2_1%402x.png" /></p>
+<p><em>The automation curve in the Actions panel</em></p>
+<p><strong>Curve</strong>: The name shown above the automation curve, made up of the track
+name, the plugin name and the parameter. It's for reference only, and you
+can't change it here.</p>
+<p><strong>Curve Enabled</strong>: Turns the curve on or off. A disabled curve has no effect
+on the parameter and shows greyed out on the track, so turning it off is a
+quick way to hear what the automation is doing. Writing automation in touch or
+latch mode turns the curve back on.</p>
+<p><img alt="Disabled automation" src="../images/automation_2_2%402x.png" /></p>
+<p><em>A disabled automation curve</em></p>
+<p><strong>Displace Curve</strong>: Moves the whole curve, with all its points, down when you
+drag left and up when you drag right. Use it for small mix changes after the
+automation is in place.</p>
+<p><strong>Scale Curve</strong>: Works like an intensity control. Dragging left lowers every
+point on the curve in proportion, squashing its shape; dragging right expands
+the curve, scaling it upwards.</p>
+<p><strong>Only Displace/Scale the Marked Region</strong>: Works with <strong>Displace Curve</strong> and
+<strong>Scale Curve</strong>. When it's on, they only affect the curve between the In
+marker and the Out marker.</p>
+<p><strong>Simplify</strong>: Thins out the points on a busy curve. Choose <em>Simplify the
+entire curve</em>, then <em>Light</em>, <em>Medium</em> or <em>Strong</em>: <em>Light</em> removes the fewest
+points and <em>Strong</em> the most. This helps most with automation recorded from a
+hardware controller, which can add hundreds of points.</p>
+<p><img alt="" src="../images/35----15%402x.png" /></p>
+<p><em>Automation Curve Simplify</em></p>
+<p><em>Simplify only in marked region</em> does the same for the part of the curve
+between the In and Out markers, so you can thin out a section recorded from
+hardware and leave the rest of the curve as it is.</p>
+<p><strong>Delete Points from Curve</strong>: Options for clearing points from the curve.
+Deleting all of them takes the curve back to a flat line, which can leave the
+value very low, so you may need to drag the line back to a sensible starting
+level. <em>Delete points within the marked region</em> deletes the points between
+the In marker and the Out marker, and the "close the gap" version also removes
+the time inside the marked region.</p>
+<p><strong>Copy Marked Region to Clipboard</strong>: Copies the part of the curve between the
+In marker and the Out marker. Move the cursor to where you want it and choose
+<strong>Paste from Clipboard</strong> &gt; <em>Paste curves at cursor position</em>. Use it to repeat
+a pattern of automation, or to reuse an effect later in the song.</p>
+<p><strong>Paste from Clipboard</strong>: Has two options. <em>Paste curves at cursor position</em>
+is the usual choice, and Cmd + V / Ctrl + V does the same.
+<em>Paste curves to fit between in/out markers</em> fits the pasted curve inside the
+marked region.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> You don't need to copy automation by hand when you move or
+duplicate clips on a track. Turn on <strong>Auto Lock</strong> in the transport bar and
+the automation goes with the clips.</p>
+</blockquote>
+<h2 id="how-to-find-out-what-automation-is-active-for-a-track">How to Find Out What Automation Is Active for a Track<a class="headerlink" href="#how-to-find-out-what-automation-is-active-for-a-track" title="Permanent link">&para;</a></h2>
+<p>Once a track has a lot of automation, not every curve will be on screen. To
+see them all, click the A icon and choose <em>Active parameter curves for this
+track</em>. The submenu lists every automated parameter on the track, and you can
+pick the one to show.</p>
+<p><img alt="" src="../images/35----16%402x.png" /></p>
+<p><em>Active Parameters for a Track</em></p>
+<p>This helps most when the parameters aren't each on their own automation
+track.</p>
+<h2 id="remap-on-tempo-change">Remap on Tempo Change<a class="headerlink" href="#remap-on-tempo-change" title="Permanent link">&para;</a></h2>
+<p>Each plugin has a <strong>Remap on Tempo Change</strong> setting. For third-party plugins,
+racks and some built-in plugins (such as Volume &amp; Pan) it's a toggle in the
+plugin's Actions panel; for the other built-in plugins it's an item in the
+menu on the plugin window's title bar. With it enabled, the plugin's
+automation follows tempo changes: it gets shorter if you speed up the tempo
+and longer if you slow it down, so it stays lined up with the clips in your
+Edit. It's off by default, so you turn it on for each plugin.</p>
+<p><img alt="" src="../images/35----17%402x.png" /></p>
+<p><em>Remap on Tempo Change</em></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> To turn <strong>Remap on Tempo Change</strong> on for all new Edits, go to
+<em>Settings &gt; General</em>, click <strong>Set defaults</strong> on the <strong>Tempo change
+remapping</strong> row and enable <em>Remap plugin automation</em>.</p>
+</blockquote>
+<p><img alt="" src="../images/35----18%402x.png" /></p>
+<p><em>Make Remap the Default</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> <em>Remap plugin automation</em> is not turned on by default, to
+maintain compatibility with older projects.</p>
+</blockquote>
+<h2 id="writing-automation-on-the-fly">Writing Automation on the Fly<a class="headerlink" href="#writing-automation-on-the-fly" title="Permanent link">&para;</a></h2>
+<p>During playback, you can move a parameter and have Waveform record the
+movement as automation, either from a MIDI controller or by moving the plugin's
+controls on screen. Set up your automation track, then turn on the <strong>Write</strong>
+button in the transport bar.</p>
+<p><img alt="Automation write enabled" src="../images/automation_1_4%402x.png" /></p>
+<p><em>Write Enabled</em></p>
+<p>With <strong>Write</strong> on, Waveform records any changes you make to the parameter
+during playback.</p>
+<p><img alt="" src="../images/35----20.png" /></p>
+<p><em>Automation from Write Mode</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> You don't need to be recording to write automation. Turning on
+<strong>Write</strong> and playing is enough.</p>
+<p>💡 <strong>Tip:</strong> Waveform already simplifies newly written automation
+(<em>Settings &gt; Advanced &gt; Automation &gt; Simplify newly-recorded automation</em>, on by
+default; see <a href="../reference-settings/#automation">Reference: Settings</a>). Use
+<strong>Simplify</strong> again if you want it thinner; <em>Medium</em> is a good starting point.
+The <strong>Glide</strong> setting on the same page sets how long newly written automation
+takes to cross-fade into the curve that was already there.</p>
+</blockquote>
+<p><img alt="" src="../images/35----21%402x.png" /></p>
+<p><em>Automation with Medium Simplification</em></p>
+<h3 id="automation-modes">Automation Modes<a class="headerlink" href="#automation-modes" title="Permanent link">&para;</a></h3>
+<p>Each track has an automation mode, which you set from the A button's <em>Automation mode</em> submenu. The A button changes colour to show the current mode.</p>
+<p><img alt="Automation mode menu" src="../images/automation_1_5%402x.png" /></p>
+<p><em>The Automation mode submenu</em></p>
+<p><strong>Read</strong>: Automation is only played back, never written. The <strong>Read</strong> button in the transport bar must also be on; if it isn't, the A button is greyed out to show the automation won't be read.</p>
+<p><img alt="Automation read mode" src="../images/automation_1_6%402x.png" /></p>
+<p><em>Read mode</em></p>
+<p><strong>Touch</strong>: Automation is written only while you're moving the parameter, which usually means while the mouse button is held down on a control or you're touching a control on an external controller.</p>
+<p><img alt="Automation touch mode" src="../images/automation_1_7%402x.png" /></p>
+<p><em>Touch mode</em></p>
+<p><strong>Latch</strong>: Automation is written from the moment you first change the parameter. After you let go, the last value written keeps overwriting the points on the curve until playback stops.</p>
+<p><img alt="Automation latch mode" src="../images/automation_1_8%402x.png" /></p>
+<p><em>Latch mode</em></p>
+<p><strong>Write</strong>: Automation is written the whole time. Take care with this mode: as soon as you start playback, the parameters' current values overwrite the existing automation. Touch or Latch is usually the better choice.</p>
+<p><img alt="Automation write mode" src="../images/automation_1_9%402x.png" /></p>
+<p><em>Write mode</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> In the writing modes (Touch, Latch and Write), the <strong>Write</strong> button in the transport bar must also be on. If it isn't, the A buttons are greyed out to show automation won't be written.</p>
+<p>💡 <strong>Tip:</strong> While a parameter on a track is being written, the track's A button and the <strong>Write</strong> button in the transport bar flash.</p>
+</blockquote>
+<h2 id="automation-lock">Automation Lock<a class="headerlink" href="#automation-lock" title="Permanent link">&para;</a></h2>
+<p>The transport bar has an <strong>Auto Lock</strong> button, which is off by default. While
+it's off, moving a clip on a track leaves the automation where it was.</p>
+<p><img alt="" src="../images/35----22%402x.png" /></p>
+<p><em>Automation Lock Engaged</em></p>
+<p>With <strong>Auto Lock</strong> on, the automation moves with the clip when you drag it to
+a different place in time. Turn it off when you want to move clips without
+disturbing the automation.</p>
+<h2 id="clip-automation">Clip Automation <span class="pro">PRO</span><a class="headerlink" href="#clip-automation" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Waveform Pro, or with the Recording Engineer Expansion, the
+MIDI Producer Expansion or the Launcher Expansion.</p>
+</blockquote>
+<p>You can also add automation curves to individual clips. They can control parameters of the clip's own plugins, its track's plugins or the master plugins, but not a plugin on a different track.</p>
+<p>Clip automation differs from track automation in two ways. It always plays back relative to the clip, so it moves with the clip, and each parameter has three separate curves: absolute, relative and scale.</p>
+<p>Combining these curves with different timing settings lets you build complex, rhythmic patterns from very few points.</p>
+<h3 id="the-clip-automation-editor">The Clip Automation Editor<a class="headerlink" href="#the-clip-automation-editor" title="Permanent link">&para;</a></h3>
+<p>The clip automation editor is part of the clip's view in the
+<a href="../detail-editor/">Detail Editor</a>. Open it with <em>View &gt; Show Content Editor</em>,
+the eye button, or by double-clicking the clip. If you don't see the clip
+automation properties above the <strong>Background Audio Clip</strong> property, increase
+the height of the panel.</p>
+<p><img alt="" src="../images/clip_automation_1_1%402x.png" /></p>
+<p><em>Clip automation in the Detail Editor</em></p>
+<p>With the clip selected, the editor shows its contents against the Edit's timeline. (Clip launcher clips are always shown relative to time 0.) Turn on the eye button in the clip automation controls to show the automation editor; the clip's contents dim.</p>
+<p>Next, choose the plugin and parameter to automate from the box next to that eye button. If the curve has no automation yet, a dashed line shows the parameter's current value.</p>
+<p><img alt="" src="../images/clip_automation_1_2%402x.png" /></p>
+<p><em>Choosing the parameter to automate</em></p>
+<p>With the <strong>Absolute</strong> curve selected and the <strong>Unlinked</strong> button off, add points to the curve to set the parameter's value. If the clip is looped, the looped region appears under the time bar, along with the clip's start and end points on the timeline.</p>
+<p>Draw a simple ramp, for example, and the automation line ramps down and stays low, while the shaded area in the looped region shows the automation's value each time the clip loops.</p>
+<p><img alt="" src="../images/clip_automation_1_3%402x.png" /></p>
+<p><em>A ramp in a looped clip</em></p>
+<p>The cursor here shows the position in the automation that's being read, rather than the position on the overall timeline, which helps you work out which points play when.</p>
+<p>To remove all automation curves from this clip for the parameter being shown, click the trash can button to the right of the parameter selector button.</p>
+<h4 id="linkedunlinked-mode">Linked/Unlinked Mode<a class="headerlink" href="#linkedunlinked-mode" title="Permanent link">&para;</a></h4>
+<p>In linked mode (<strong>Unlinked</strong> button off), the curve's start, length, loop start and loop length are tied to the clip. They're shown under the time bar, but you can't edit them, and the properties to the right of the curve editor are greyed out.</p>
+<p>In unlinked mode, these properties are separate from the clip. Turn on <strong>Unlinked</strong> to edit the start and length with the timecode properties, or by dragging the start and end flags below the timeline.</p>
+<p>The <strong>Loop</strong> setting is also separate from the clip's own loop setting. Turn it on to edit the loop start and end properties and drag the loop in and out flags on the timeline. There's no end flag in looped mode, because the automation carries on until the clip ends.</p>
+<p>Each curve type has its own <strong>Unlinked</strong> setting and properties.</p>
+<h4 id="curve-types-absoluterelativescale">Curve Types (Absolute/Relative/Scale)<a class="headerlink" href="#curve-types-absoluterelativescale" title="Permanent link">&para;</a></h4>
+<p>There are three types of curve:</p>
+<ul>
+<li><strong>Absolute</strong>: Controls the base value of the parameter, overriding any track automation that might be present.</li>
+<li><strong>Relative</strong>: Modifies the base value of the parameter by shifting it up or down 50%.</li>
+<li><strong>Scale</strong>: Modifies the base value of the parameter by scaling 0-100%.</li>
+</ul>
+<p>Because each curve has its own timing, a few points go a long way. For example, a single absolute point creates a straight line:</p>
+<p><img alt="" src="../images/clip_automation_2_1%402x.png" /></p>
+<p><em>A single Absolute point</em></p>
+<p>A short relative loop creates a repeating ramp:</p>
+<p><img alt="" src="../images/clip_automation_2_2%402x.png" /></p>
+<p><em>A short Relative loop</em></p>
+<p>A longer scale ramp controls the peak of each relative loop:</p>
+<p><img alt="" src="../images/clip_automation_2_3%402x.png" /></p>
+<p><em>A longer Scale ramp</em></p>
+<p>The result is the repeating one-beat ramp in the filled section of the editor.</p>
+<h4 id="curve-editing">Curve Editing<a class="headerlink" href="#curve-editing" title="Permanent link">&para;</a></h4>
+<p>You edit clip automation curves the same way as track automation curves.
+Select a range to show the curve edit handles in its corners, and drag them to shift or skew the points in the range.</p>
+<p><img alt="Curve edit handles" src="../images/clip_automation_3_1%402x.png" /></p>
+<p><em>Curve edit handles</em></p>
+<p>Right-click the curve for a menu to delete, copy or paste points. What it offers depends on whether a range is selected.</p>
+<p>The same menu's <em>Insert automation shape</em> adds a ready-made shape such as a sine, saw or square, repeated a set number of times or at a musical interval.</p>
+<p><img alt="Curve editor right-click menu" src="../images/clip_automation_3_2%402x.png" /></p>
+<p><em>The curve's right-click menu</em></p>
+<h2 id="automation-patterns">Automation Patterns<a class="headerlink" href="#automation-patterns" title="Permanent link">&para;</a></h2>
+<p>You can fill the range between the In marker and the Out marker with a
+repeating automation pattern.</p>
+<ol>
+<li>Create an automation curve for the parameter you want to modulate. This
+    example uses a simple volume curve.</li>
+<li>
+<p>Set the In marker and Out marker over the range you want the pattern to
+    fill.</p>
+<p><img alt="" src="../images/38----41%402x.png" /></p>
+<p><em>Volume Automation Between In Marker and Out Marker</em></p>
+</li>
+<li>
+<p>Select the automation curve, then in the Actions panel click <strong>Create
+    Pattern Between the Marked Region</strong>.</p>
+<p><img alt="" src="../images/38----42%402x.png" /></p>
+<p><em>Create Pattern Between the Marked Region</em></p>
+</li>
+<li>
+<p>Choose a pattern shape. This example uses <em>Triangle</em>.</p>
+<p><img alt="" src="../images/38----43%402x.png" /></p>
+<p><em>Select the Pattern Shape</em></p>
+</li>
+<li>
+<p>Choose a note division or a number of repeats. Here, <em>1/2 beat</em> repeats
+    the pattern every 1/8th note.</p>
+<p><img alt="" src="../images/38----44%402x.png" /></p>
+<p><em>Select Beat Division or Repetitions</em></p>
+<p>The result looks like this:</p>
+<p><img alt="" src="../images/38----45%402x.png" /></p>
+<p><em>Repeating Triangle Automation</em></p>
+</li>
+<li>
+<p>Adjust the curve with the <strong>Displace Curve</strong> and <strong>Scale Curve</strong> drag
+    controls, or edit the automation points in the usual way.</p>
+</li>
+</ol>
+<p><img alt="" src="../images/38----50%402x.png" /></p>
+<p><em>Displace and Scale Curve Controls</em></p>
+<p>The other pattern shapes look like this:</p>
+<p><img alt="" src="../images/38----46%402x.png" /></p>
+<p><em>Sine Wave</em></p>
+<p><img alt="" src="../images/38----47%402x.png" /></p>
+<p><em>Square Wave</em></p>
+<p><img alt="" src="../images/38----48%402x.png" /></p>
+<p><em>Ramp Up</em></p>
+<p><img alt="" src="../images/38----49%402x.png" /></p>
+<p><em>Ramp Down</em></p>
+<h2 id="automation-ramps">Automation Ramps<a class="headerlink" href="#automation-ramps" title="Permanent link">&para;</a></h2>
+<p>Automation ramps go hand in hand with patterns: they let you raise or lower
+a pattern's intensity over time. The two <strong>Ramp</strong> options change how the
+<strong>Displace Curve</strong> and <strong>Scale Curve</strong> controls work across the marked region.</p>
+<p>To ramp a pattern in:</p>
+<ol>
+<li>
+<p>Set the In marker and Out marker over the part of the automation you want
+    to ramp in.</p>
+<p><img alt="" src="../images/38----59%402x.png" /></p>
+<p><em>Selected Region of an Automation Pattern</em></p>
+</li>
+<li>
+<p>Click the automation curve to select it.</p>
+</li>
+<li>
+<p>In the Actions panel, click <strong>Ramp from the start of the Marked Region</strong>
+    to turn the ramp on.</p>
+<p><img alt="" src="../images/38----60%402x.png" /></p>
+<p><em>Enable Ramp from the start of the Marked Region</em></p>
+</li>
+<li>
+<p>Drag the <strong>Displace Curve</strong> and <strong>Scale Curve</strong> sliders in the Actions
+    panel. They now affect the left side of the curve, so you can fade the
+    pattern in.</p>
+</li>
+</ol>
+<p><img alt="" src="../images/38----61%402x.png" /></p>
+<p><em>Taper the Curve Using the Displace Curve and Scale Curve Sliders</em></p>
+<p><strong>Ramp from the end of the Marked Region</strong> works the other way round, so you
+can taper the automation down.</p>
+<p><img alt="" src="../images/38----62%402x.png" /></p>
+<p><em>Ramp from the end of the Marked Region</em></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> The automation ramps also work with the Volume &amp; Pan Clip Layer
+effect. See <a href="../clip-layer-effects/">Clip Layer Effects</a>.</p>
+</blockquote>
+<p><strong>Video Clip:</strong> This <a href="https://youtu.be/koDUoO3XD-0">video clip</a> demonstrates
+the automation ramps.</p>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>You can automate almost any parameter, including sends and the master
+plugins: click the A button and choose from <em>Master parameters</em>, or drag the A
+onto a plugin on the Master track. For parameters that move on their own
+without drawn automation, see <a href="../modifiers/">Modifiers</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

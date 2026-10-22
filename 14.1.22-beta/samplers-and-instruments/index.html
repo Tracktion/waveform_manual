@@ -1,0 +1,3388 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/14.1.22-beta/samplers-and-instruments/">
+      
+      
+        <link rel="prev" href="../wavetable/">
+      
+      
+        <link rel="next" href="../legacy-plugins/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Samplers and Instruments - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#samplers-and-instruments" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Samplers and Instruments
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins-detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugins Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantising MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-sampler-family-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Sampler Family at a Glance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pad-based-samplers-drum-sampler-and-micro-drum-sampler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pad-Based Samplers: Drum Sampler and Micro Drum Sampler
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pad-Based Samplers: Drum Sampler and Micro Drum Sampler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pads-and-banks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pads and Banks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micro-drum-sampler-vs-drum-sampler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Micro Drum Sampler vs Drum Sampler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note-repeat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note Repeat PRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pad-layouts-and-pad-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pad Layouts and Pad Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboard-samplers-multi-sampler-micro-sampler-and-rompler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keyboard Samplers: Multi Sampler, Micro Sampler, and Rompler
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keyboard Samplers: Multi Sampler, Micro Sampler, and Rompler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-zone-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Zone Grid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-and-zone-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer and Zone Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-sample-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Sample Formats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-layer-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-Layer Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-per-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter (Per Layer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envelope-per-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envelope (Per Layer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lfos-per-layer-multi-sampler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LFOs (Per Layer, Multi Sampler) PRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effects-insert-fx1-fx2-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effects (INSERT, FX1, FX2, MASTER)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recording-a-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recording a Sample PRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slicing-a-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slicing a Sample PRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-scratchpad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Scratchpad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micro-sampler-vs-multi-sampler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Micro Sampler vs Multi Sampler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rompler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rompler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subtractive-synthesizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subtractive Synthesiser PRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subtractive Synthesiser PRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oscillators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oscillators
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filters-drive-and-eq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filters, Drive and EQ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envelopes-and-lfos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envelopes and LFOs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arpeggiator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arpeggiator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preset-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preset Browser
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bass-osc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bass Osc PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attracktive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attracktive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attracktive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-sounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing the Sounds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-and-saving-sounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading and Saving Sounds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rendering-and-stems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendering and Stems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Read as one page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-sampler-family-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Sampler Family at a Glance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pad-based-samplers-drum-sampler-and-micro-drum-sampler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pad-Based Samplers: Drum Sampler and Micro Drum Sampler
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pad-Based Samplers: Drum Sampler and Micro Drum Sampler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pads-and-banks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pads and Banks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micro-drum-sampler-vs-drum-sampler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Micro Drum Sampler vs Drum Sampler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note-repeat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note Repeat PRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pad-layouts-and-pad-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pad Layouts and Pad Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboard-samplers-multi-sampler-micro-sampler-and-rompler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keyboard Samplers: Multi Sampler, Micro Sampler, and Rompler
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keyboard Samplers: Multi Sampler, Micro Sampler, and Rompler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-zone-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Zone Grid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-and-zone-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer and Zone Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-sample-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Sample Formats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-layer-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-Layer Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-per-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter (Per Layer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envelope-per-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envelope (Per Layer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lfos-per-layer-multi-sampler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LFOs (Per Layer, Multi Sampler) PRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effects-insert-fx1-fx2-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effects (INSERT, FX1, FX2, MASTER)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recording-a-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recording a Sample PRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slicing-a-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slicing a Sample PRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-scratchpad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Scratchpad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micro-sampler-vs-multi-sampler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Micro Sampler vs Multi Sampler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rompler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rompler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subtractive-synthesizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subtractive Synthesiser PRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subtractive Synthesiser PRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oscillators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oscillators
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filters-drive-and-eq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filters, Drive and EQ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envelopes-and-lfos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envelopes and LFOs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arpeggiator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arpeggiator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preset-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preset Browser
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bass-osc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bass Osc PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attracktive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attracktive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attracktive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-sounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing the Sounds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-and-saving-sounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading and Saving Sounds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="samplers-and-instruments">Samplers and Instruments<a class="headerlink" href="#samplers-and-instruments" title="Permanent link">&para;</a></h1>
+<p>Waveform has a family of built-in samplers, from the Micro Drum Sampler (in every edition) to a full multi-layer keyboard sampler. Alongside them are the <strong>Subtractive</strong> and <strong>Bass Osc</strong> synthesisers and <strong>Attracktive</strong>, a free player for Tracktion's sound packs. All of these are in the <em>Waveform &gt; Instruments</em> folder of the plugin picker.</p>
+<h2 id="the-sampler-family-at-a-glance">The Sampler Family at a Glance<a class="headerlink" href="#the-sampler-family-at-a-glance" title="Permanent link">&para;</a></h2>
+<p>There are five built-in samplers:</p>
+<table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>What it is</th>
+<th>Available in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Micro Drum Sampler</strong></td>
+<td>Pad-based, one-shot only, 64 pads</td>
+<td>All editions (Free, OEM, Pro)</td>
+</tr>
+<tr>
+<td><strong>Micro Sampler</strong></td>
+<td>Keyboard sampler, note zones, WAV/AIFF</td>
+<td>All editions</td>
+</tr>
+<tr>
+<td><strong>Rompler</strong></td>
+<td>Factory preset playback, keyboard-style</td>
+<td>All editions</td>
+</tr>
+<tr>
+<td><strong>Drum Sampler</strong></td>
+<td>Full pad sampler with velocity layers and note repeat</td>
+<td>Waveform Pro, or the MIDI Producer Expansion or the Synth Pack Expansion</td>
+</tr>
+<tr>
+<td><strong>Multi Sampler</strong></td>
+<td>Full keyboard sampler, up to 32 layers, SFZ/SF2</td>
+<td>Waveform Pro, or the MIDI Producer Expansion or the Synth Pack Expansion</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>legacy Sampler</strong> (the original simple sampler) is a separate, older plugin. It's described in <a href="../legacy-plugins/">Legacy Plugins</a>.</p>
+<hr />
+<h2 id="pad-based-samplers-drum-sampler-and-micro-drum-sampler">Pad-Based Samplers: Drum Sampler and Micro Drum Sampler<a class="headerlink" href="#pad-based-samplers-drum-sampler-and-micro-drum-sampler" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../images/Instruments/Drum%20Sampler%402x.png" /></p>
+<p><em>The Drum Sampler showing the 4×4 pad grid with bank selector and per-pad controls.</em></p>
+<p>The <strong>Drum Sampler</strong> and <strong>Micro Drum Sampler</strong> are built around a 4×4 pad grid. They work like a hardware drum machine: each pad holds a sample, and you trigger pads with MIDI notes or by clicking them.</p>
+<h3 id="pads-and-banks">Pads and Banks<a class="headerlink" href="#pads-and-banks" title="Permanent link">&para;</a></h3>
+<p>Each sampler has <strong>four banks</strong> (A, B, C, D), each containing 16 pads (64 pads total). Switch banks with the bank selector buttons. Pads in different banks map to different MIDI notes, so you can spread a full kit across all four banks if you need more than 16 sounds.</p>
+<p>To load a sample onto a pad, drag an audio file from the Browser onto the pad. You can also click a pad to select it and choose a sample with the file browser.</p>
+<p>Each pad has a <strong>Solo</strong> and <strong>Mute</strong> button for quick auditioning.</p>
+<h3 id="micro-drum-sampler-vs-drum-sampler">Micro Drum Sampler vs Drum Sampler<a class="headerlink" href="#micro-drum-sampler-vs-drum-sampler" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../images/Instruments/Micro%20Drum%20Sampler%402x.png" /></p>
+<p><em>The Micro Drum Sampler, a cut-down one-shot version of the Drum Sampler.</em></p>
+<p>The <strong>Micro Drum Sampler</strong> is a cut-down version and is available in all editions of Waveform. It supports one-shot playback only: the sample plays through to the end whenever the pad is triggered, however long you hold the note.</p>
+<p>The <strong>Drum Sampler</strong> <span class="pro">PRO</span> (Waveform Pro, or the MIDI Producer Expansion or the Synth Pack Expansion) adds:</p>
+<ul>
+<li><strong>Velocity layers</strong>: assign different samples to play at different velocity ranges on the same pad, for more expressive drum sounds</li>
+<li><strong>Note Repeat</strong>: re-triggers a held pad automatically at a tempo-synced rate (see <a href="#note-repeat">Note Repeat</a>)</li>
+</ul>
+<p>On both drum samplers, the <strong>Toggle MIDI learn</strong> button in the pad header assigns a pad to an incoming MIDI note. Right-clicking a pad opens its menu instead: <strong>Drum Icon</strong>, <strong>Colour</strong> and <strong>Clear</strong>. On the Micro Drum Sampler, the menu button on the pad's sound row has <strong>Drum Icon</strong>, <strong>Colour</strong>, <strong>Choke group</strong> and <strong>Delete</strong>.</p>
+<h3 id="note-repeat">Note Repeat <span class="pro">PRO</span><a class="headerlink" href="#note-repeat" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Waveform Pro, or with the MIDI Producer Expansion or the Synth Pack Expansion.</p>
+</blockquote>
+<p>Note Repeat is on the Drum Sampler. When it's on, holding a pad triggers it repeatedly at a tempo-synced rate for as long as the note is held. Use the <strong>Repeat Rate</strong> control to set the subdivision (for example 1/8 or 1/16). This is useful for rolls and fills: hold a snare pad and sweep the rate for a build-up.</p>
+<h3 id="pad-layouts-and-pad-settings">Pad Layouts and Pad Settings<a class="headerlink" href="#pad-layouts-and-pad-settings" title="Permanent link">&para;</a></h3>
+<p>The <strong>Load / Save pad layout preset</strong> button, next to <strong>Toggle MIDI learn</strong>, opens a menu:</p>
+<ul>
+<li><strong>Load Pad Layout...</strong>: loads a saved <code>.padpreset</code> file onto the pads.</li>
+<li><strong>Save Pad Layout...</strong>: saves the current pads. Choose what to store: <strong>MIDI Note</strong> (ticked by default), <strong>Name</strong>, <strong>Icon</strong> and <strong>Colour</strong>.</li>
+<li><strong>Default Pad Layout</strong>: picks a saved layout to apply whenever the sampler sets up its default pads, or <strong>None</strong>.</li>
+</ul>
+<p>On the Drum Sampler and the Multi Sampler's PADS page, the top row of the list to the right of the pads holds the selected pad's sound settings, plus:</p>
+<p><strong>Spread Zones</strong>: Divides the velocity range evenly between the pad's sound layers, so each layer plays for its own slice of velocities.</p>
+<p><strong>Choke</strong>: Puts the pad in a choke group (Group 1 to Group 16, or <strong>None</strong>). Triggering a pad silences the other pads in the same group, for example a closed hi-hat cutting off an open one.</p>
+<p><strong>Stereo Out</strong>: Sends the pad to one of the sampler's 16 stereo outputs, so you can process it on its own.</p>
+<p>The Multi Sampler also has a <strong>PADS</strong> page. Whenever you open it with no pads set up, Waveform offers to set up default pads (<strong>Setup Pads</strong>).</p>
+<hr />
+<h2 id="keyboard-samplers-multi-sampler-micro-sampler-and-rompler">Keyboard Samplers: Multi Sampler, Micro Sampler, and Rompler<a class="headerlink" href="#keyboard-samplers-multi-sampler-micro-sampler-and-rompler" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../images/Instruments/Multi%20Sampler%402x.png" /></p>
+<p><em>The Multi Sampler zone grid showing multiple layers mapped to note and velocity ranges.</em></p>
+<p>The keyboard-style samplers let you map samples across the note and velocity range of your keyboard. Each sample assignment is called a <strong>layer</strong>, and each layer covers a note range and a velocity range.</p>
+<h3 id="the-zone-grid">The Zone Grid<a class="headerlink" href="#the-zone-grid" title="Permanent link">&para;</a></h3>
+<p>The zone grid is the central view in the Multi Sampler and Micro Sampler. It shows a grid with:</p>
+<ul>
+<li><strong>Horizontal axis</strong>: note range (low to high pitch)</li>
+<li><strong>Vertical axis</strong>: velocity range (soft to hard)</li>
+</ul>
+<p>Each layer appears as a rectangle on the grid. You define the rectangle by setting a <strong>low note</strong>, <strong>high note</strong>, <strong>low velocity</strong>, and <strong>high velocity</strong> for that layer. If a played note falls inside a layer's rectangle, that layer's sample plays. In the Micro Sampler, layers only have a note range.</p>
+<p>You can have <strong>up to 32 layers</strong> in the Multi Sampler. Layers can overlap. By default, if multiple layers match a played note, all of them sound. The play mode in the Options menu (see <a href="#layer-and-zone-tools">Layer and Zone Tools</a>) can change that to Round Robin or Random.</p>
+<p>To add a layer, drag an audio file onto the zone grid. Waveform creates a new layer where you drop it.</p>
+<h3 id="layer-and-zone-tools">Layer and Zone Tools<a class="headerlink" href="#layer-and-zone-tools" title="Permanent link">&para;</a></h3>
+<p>Right-click a sound layer, in the zone grid or the layer list, for these options:</p>
+<ul>
+<li><strong>Remove</strong>, <strong>Rename</strong> and <strong>Duplicate</strong>.</li>
+<li><strong>Duplicate: Pitch shifted up</strong> / <strong>Duplicate: Pitch shifted down</strong>: for a layer mapped to a single note, makes 1x to 12x copies on the notes above or below, each pitched to its note.</li>
+<li><strong>Quick Zones</strong>: maps the layer to a single drum note: <strong>Kick</strong>, <strong>Snare</strong>, <strong>Hi Hat Closed</strong>, <strong>Hi Hat Open</strong>, <strong>Clap</strong>, <strong>Low Tom</strong>, <strong>Hi Tom</strong> or <strong>Ride</strong>.</li>
+</ul>
+<p>The menu button in the sampler's title bar opens the Options menu:</p>
+<p><strong>MPE</strong>: Turns on MPE (MIDI Polyphonic Expression) input, for MPE controllers.</p>
+<p><strong>Voice Stealing</strong>: Lets a new note take over a playing voice when every voice is in use.</p>
+<p><strong>Mono</strong>: Plays one note at a time.</p>
+<p><strong>Select sound layer on note on</strong>: Selects the layer you play, so its settings show as you play.</p>
+<p><strong>All</strong> / <strong>Round Robin</strong> / <strong>Random</strong>: What happens when several layers match a note. <strong>All</strong> plays every one of them, <strong>Round Robin</strong> takes turns, and <strong>Random</strong> picks one at random. (Default: All; Round Robin on the Drum Sampler)</p>
+<p><strong>Panic</strong>: Stops every sounding note.</p>
+<p>The Micro Drum Sampler's Options menu only has <strong>Voice Stealing</strong> and <strong>Panic</strong>.</p>
+<h3 id="supported-sample-formats">Supported Sample Formats<a class="headerlink" href="#supported-sample-formats" title="Permanent link">&para;</a></h3>
+<p>As well as standard audio files (WAV, AIFF), the Multi Sampler can load complete multi-sample instruments:</p>
+<ul>
+<li><strong>SFZ</strong>: open-format text-based sample maps</li>
+<li><strong>SF2</strong> (SoundFont 2): widely used bank format</li>
+<li><strong>ZIP</strong>: a packaged collection of samples with a map</li>
+</ul>
+<p>Drag any of these formats onto the sampler to load the full instrument in one step.</p>
+<h3 id="per-layer-controls">Per-Layer Controls<a class="headerlink" href="#per-layer-controls" title="Permanent link">&para;</a></h3>
+<p>Select a layer to fine-tune how it plays:</p>
+<p><strong>Root Note</strong>: the note at which the sample plays at its original pitch. Notes above or below it pitch the sample up or down.</p>
+<p><strong>Gain</strong>: volume of this layer. (Default: 0 dB)</p>
+<p><strong>Pan</strong>: stereo position. (Default: centre)</p>
+<p><strong>Fine Tune</strong>: pitch offset in cents. Use it to correct slightly out-of-tune samples. (Default: 0)</p>
+<p><strong>Sample In / Out</strong>: sets the start and end point within the audio file. Drag the waveform display's handles to trim the sample. (Default: full file)</p>
+<p><strong>Loop In / Out</strong>: sets the loop region within the sample. Only applies when looping is on.</p>
+<p><strong>Loop</strong> (Choices: Loop: None, Loop: Until Release, Loop: Until End): turns looping on. <strong>Until Release</strong> loops while the note is held, then plays on to the end. <strong>Until End</strong> keeps looping until the note's release has finished.</p>
+<p><strong>Key tracking mode</strong> (Choices: Fixed Pitch, Resample, Pitch Shift): how the layer follows the notes you play. <strong>Fixed Pitch</strong> plays the sample at its own pitch on every note, which suits drums. <strong>Resample</strong> speeds the sample up or slows it down, like a tape machine. <strong>Pitch Shift</strong> changes the pitch without changing the length.</p>
+<p><strong>Reverse</strong>: plays the sample backwards.</p>
+<p><strong>Offline pitch shift</strong> and <strong>Offline timestretch</strong>: process the sample itself, shifting its pitch in semitones or changing its length. The Micro Sampler doesn't have these two.</p>
+<p><strong>Choke Group</strong>: assign a choke group number so that triggering one layer silences others in the same group (for example, a closed hi-hat cutting off an open one). (Default: none)</p>
+<h3 id="filter-per-layer">Filter (Per Layer)<a class="headerlink" href="#filter-per-layer" title="Permanent link">&para;</a></h3>
+<p>Each layer has an optional filter, off by default. Turn it on with the filter toggle, then set:</p>
+<p><strong>Filter Mode</strong>: choose between lowpass, highpass, bandpass, and other types.</p>
+<p><strong>Cutoff</strong>: the filter's cutoff frequency. (Default: 20 kHz)</p>
+<p><strong>Q</strong>: resonance. Higher values create a sharper peak at the cutoff. (Default: 0.001)</p>
+<h3 id="envelope-per-layer">Envelope (Per Layer)<a class="headerlink" href="#envelope-per-layer" title="Permanent link">&para;</a></h3>
+<p>Each layer has an amplitude envelope with adjustable curve shapes:</p>
+<p><strong>Attack</strong>: time to reach full volume. (Default: 1 ms)</p>
+<p><strong>Attack Shape</strong>: curve shape of the attack ramp (linear to logarithmic).</p>
+<p><strong>Decay</strong>: time to fall from peak to sustain. (Default: 285 ms)</p>
+<p><strong>Decay Shape</strong>: curve shape of the decay.</p>
+<p><strong>Sustain</strong>: the volume while the note is held. (Default: 100%)</p>
+<p><strong>Release</strong>: time to fall to silence after the note is released. (Default: 1 ms)</p>
+<p><strong>Release Shape</strong>: curve shape of the release.</p>
+<h3 id="lfos-per-layer-multi-sampler">LFOs (Per Layer, Multi Sampler) <span class="pro">PRO</span><a class="headerlink" href="#lfos-per-layer-multi-sampler" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Waveform Pro, or with the MIDI Producer Expansion or the Synth Pack Expansion.</p>
+</blockquote>
+<p>The <strong>Multi Sampler</strong> gives each layer <strong>two LFOs</strong> for modulation. Each LFO has:</p>
+<p><strong>Shape</strong>: waveform type (sine, triangle, saw, square, etc.)</p>
+<p><strong>Sync</strong>: switches the rate between a free rate in Hz and a tempo-synced rate.</p>
+<p><strong>Rate</strong>: speed of the LFO, in Hz or as a tempo division depending on Sync. (Default: 1 Hz)</p>
+<p><strong>Depth</strong>: depth of the modulation, from -1 to +1. (Default: 1.0)</p>
+<p><strong>Phase</strong>: starting phase. (Default: 0)</p>
+<p><strong>Symmetry</strong>: skews the shape of the waveform within each cycle. (Default: 50%)</p>
+<p><strong>Delay</strong>: time before the LFO starts after note-on, for delayed vibrato. (Default: 0)</p>
+<p><strong>Fade</strong>: time for the LFO to fade in after its delay. (Default: 0)</p>
+<p>Each layer also has two modulation envelopes, <strong>ENV1</strong> and <strong>ENV2</strong>, with the same controls as the amplitude envelope.</p>
+<h3 id="effects-insert-fx1-fx2-master">Effects (INSERT, FX1, FX2, MASTER)<a class="headerlink" href="#effects-insert-fx1-fx2-master" title="Permanent link">&para;</a></h3>
+<p>Every sampler except the Micro Sampler has built-in effects, on these pages:</p>
+<ul>
+<li><strong>INSERT</strong>: an effects chain on the selected layer.</li>
+<li><strong>FX1</strong> and <strong>FX2</strong>: two send buses. Each layer has <strong>Dry</strong>, <strong>FX1</strong> and <strong>FX2</strong> knobs that set how much of it goes to each.</li>
+<li><strong>MASTER</strong>: an effects chain on the sampler's whole output.</li>
+</ul>
+<p>The Rompler has the FX1, FX2 and MASTER pages, but no INSERT page.</p>
+<p>Each chain can hold these effects:</p>
+<ul>
+<li><strong>Reverb</strong>: Natural, Non-linear, or Plate types. Controls: pre-delay, size, decay, diffusion, low/high cut, low/high damping, pan, mix.</li>
+<li><strong>Distortion</strong>: Drive, post gain, tone, emphasis, mix.</li>
+<li><strong>Chorus</strong>: Delay, depth, rate, mix.</li>
+<li><strong>Compressor</strong>: Threshold, ratio, attack, release, knee, output.</li>
+<li><strong>Delay</strong>: Low cut, high cut, feedback, delay time, mix.</li>
+<li><strong>EQ</strong>: Three-band (low/mid/high) with per-band frequency and gain.</li>
+<li><strong>Filter</strong>: Shape, slope, frequency, gain, Q.</li>
+<li><strong>Gain</strong>: Level.</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Because the INSERT chain works on one layer, you can put reverb on one sound and a compressor on the kick inside a single sampler instance.</p>
+</blockquote>
+<h3 id="recording-a-sample">Recording a Sample <span class="pro">PRO</span><a class="headerlink" href="#recording-a-sample" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Waveform Pro, or with the MIDI Producer Expansion or the Synth Pack Expansion.</p>
+</blockquote>
+<p>The Multi Sampler's <strong>RECORD</strong> page records audio straight into the sampler. You can also drag an audio file onto the page to edit it the same way.</p>
+<ol>
+<li>Choose what to record with the <strong>Input source</strong> menu: <strong>System Input (Mono)</strong> or <strong>System Input (Stereo)</strong> (pick the channels from <strong>Channels</strong>), <strong>Sampler Input</strong> (the audio coming into the plugin on its track), <strong>Sampler Output</strong> (the sampler itself) or <strong>System Output</strong> (everything your computer plays). Turn on <strong>Live Input Monitoring</strong> in the same menu to hear an input while you record.</li>
+<li>Click <strong>Record</strong> to start, and again to stop.</li>
+<li>Drag the in and out flags to the part you want, and click <strong>Play</strong> to audition it. <strong>Trim</strong> cuts the recording down to the flags.</li>
+<li>Use the <strong>Load / save</strong> menu to keep it: <strong>Create New Sound Layer...</strong> adds it to the sampler, <strong>Save to Scratchpad...</strong> stores it on the Scratchpad, and <strong>Save As...</strong> saves a WAV file. <strong>Load...</strong> opens an audio file instead.</li>
+</ol>
+<p><img alt="" src="../images/samplers-and-instruments_multi_sampler_record%402x.png" /></p>
+<p><em>The Multi Sampler RECORD page with slices marked and the Input source menu open</em></p>
+<p><strong>Retrospective Record</strong> grabs the audio Waveform has been buffering from your inputs, even if you weren't recording. Every captured file is saved to the Scratchpad, which opens to show them, and the first file also opens on the page.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> On macOS, recording the System Output needs the Tracktion Virtual Device audio driver. If it isn't installed, Waveform offers to install it when you choose System Output. System Output isn't offered on Linux.</p>
+</blockquote>
+<h3 id="slicing-a-sample">Slicing a Sample <span class="pro">PRO</span><a class="headerlink" href="#slicing-a-sample" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Waveform Pro, or with the MIDI Producer Expansion or the Synth Pack Expansion.</p>
+</blockquote>
+<p>On the RECORD page, drag across the waveform to mark a slice. The slice button (its tooltip reads <em>Crop</em>) opens a menu with more options:</p>
+<ul>
+<li><strong>Automatically create slices on beat</strong>: finds the hits in the sample and marks a slice on each. The unlabelled Beat Sensitivity slider in the same menu sets how many hits it finds, and re-marks the slices as you move it.</li>
+<li><strong>Clear all slices</strong>.</li>
+<li><strong>Save each slice to scratchpad...</strong>: saves every slice as its own file.</li>
+<li><strong>Create sound layer with each slice...</strong>: asks for a name, then makes one layer per slice, each on its own note starting from the bottom of the note range, with Fixed Pitch key tracking.</li>
+</ul>
+<p>To slice a drum loop from the arrangement, select its Audio clip and use <strong>Slice drum loop and open in sampler</strong> in the Actions panel. Choose <strong>Slice drum loop</strong> to put each hit on its own note, or <strong>Beat replace drum loop</strong> to play one sound in the loop's rhythm. Waveform adds a Multi Sampler to the track and marks the slices. Adjust them, then click <strong>Create MIDI</strong> to replace the Audio clip with a MIDI clip that plays the slices.</p>
+<h3 id="the-scratchpad">The Scratchpad<a class="headerlink" href="#the-scratchpad" title="Permanent link">&para;</a></h3>
+<p>The Scratchpad is temporary storage for samples, shared by the samplers. Click the <strong>Scratchpad</strong> button in the sampler's toolbar to show it down the right-hand side. Drag audio files onto it, or save recordings and slices to it, then drag them onto pads or the zone grid. Each row has play and edit buttons. Right-click a row to <strong>Delete</strong> it (it moves to the Trash or Recycle Bin) or, on macOS and Windows, <strong>Show in Finder</strong> / <strong>Show in Explorer</strong>. The Rompler and Micro Drum Sampler have no Scratchpad.</p>
+<p><img alt="" src="../images/samplers-and-instruments_scratchpad%402x.png" /></p>
+<p><em>The Scratchpad column down the right of the sampler</em></p>
+<h3 id="presets">Presets<a class="headerlink" href="#presets" title="Permanent link">&para;</a></h3>
+<p>The preset name in the sampler's title bar opens the preset menu: pick a preset, or use <strong>Save</strong>, <strong>Save as...</strong>, <strong>Delete</strong>, <strong>Copy samples into Edit</strong> (when any layer uses a sample file that isn't stored in the Edit) or <strong>Reset to default</strong>.</p>
+<p><strong>Save as...</strong> opens <strong>Create Sampler Preset</strong>, with a name, an optional description, tags and <strong>Save audio preview</strong> (on by default). With the preview option on, a <strong>Preset Preview</strong> window then asks you to <em>Play one or more notes to record a preset preview</em>. Click <strong>Use As Preview</strong> to keep it, or <strong>Discard</strong>. The Multi Sampler, Drum Sampler and Rompler also have a <strong>PRESETS</strong> page for browsing them.</p>
+<h3 id="micro-sampler-vs-multi-sampler">Micro Sampler vs Multi Sampler<a class="headerlink" href="#micro-sampler-vs-multi-sampler" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../images/Instruments/Micro%20Sampler%402x.png" /></p>
+<p><em>The Micro Sampler, a simpler keyboard sampler with SOUND and ZONES pages.</em></p>
+<p>The <strong>Micro Sampler</strong> is a simpler keyboard sampler available in all editions. It has SOUND and ZONES pages and can hold several sound layers, each mapped to a note range, but you can't set velocity ranges. It only loads WAV and AIFF files (no SFZ or SF2) and has no PRESETS or effects pages, though the preset menu in the title bar still works. It suits loading a few samples and playing them across the keyboard when you don't need the full Multi Sampler.</p>
+<h3 id="rompler">Rompler<a class="headerlink" href="#rompler" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../images/Instruments/Rompler%402x.png" /></p>
+<p><em>The Rompler, a preset-based keyboard instrument.</em></p>
+<p>The <strong>Rompler</strong> is a preset-based instrument: it plays back factory sample banks without letting you edit the zone grid directly. It's designed for loading and playing pre-built instruments quickly. It has the same keyboard layout view as the other samplers, but you can't drag new samples onto it: pick a preset and play.</p>
+<hr />
+<h2 id="subtractive-synthesizer">Subtractive Synthesiser <span class="pro">PRO</span><a class="headerlink" href="#subtractive-synthesizer" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Waveform Pro, or with the MIDI Producer Expansion or the Synth Pack Expansion.</p>
+</blockquote>
+<p><img alt="" src="../images/Instruments/Subtractive%402x.png" /></p>
+<p><em>The Subtractive synthesiser showing the Oscillators page and the LFOs.</em></p>
+<p><strong>Subtractive</strong> is a four-oscillator subtractive synthesiser. Each voice runs through a fixed chain: the oscillators feed <strong>Filter 1</strong>, then <strong>Drive</strong>, then <strong>Filter 2</strong>, a four-band <strong>EQ</strong> and the <strong>Amp</strong>. The mixed voices then go through up to four effects.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Collective is a separate Tracktion product with its own manual, so it isn't covered here.</p>
+</blockquote>
+<h3 id="pages">Pages<a class="headerlink" href="#pages" title="Permanent link">&para;</a></h3>
+<p>The two buttons at the left of Subtractive's top bar switch between the preset browser and the edit view. The edit view has three page tabs, <strong>Oscillators</strong>, <strong>Filter - Amp - Arp</strong> and <strong>Effects</strong>, and a modulation area along the bottom with its own tabs: <strong>LFO</strong>, <strong>Env 1-2</strong> and <strong>Env 3-4</strong>.</p>
+<p>Many sections have a small modulation box (for example <strong>Pitch Mod</strong>, <strong>Cutoff Mod</strong> or <strong>Vol Mod</strong>). Each knob in it sets how much of one fixed source reaches that control, such as LFO 3, Env 3, the mod wheel (<strong>MW</strong>), pitch bend or key tracking.</p>
+<h3 id="oscillators">Oscillators<a class="headerlink" href="#oscillators" title="Permanent link">&para;</a></h3>
+<p>Each of the four oscillators has a power button and a type menu: <strong>Triangle</strong>, <strong>Pulse</strong>, <strong>Saw</strong>, <strong>White Noise</strong>, <strong>Pink Noise</strong> or <strong>Spinal Saw</strong> (a stacked, detuned saw). There is no Sine type in Subtractive.</p>
+<p>Every oscillator has <strong>Octave</strong>, <strong>Semitone</strong>, <strong>Detune</strong>, <strong>Level</strong> and a start <strong>Phase</strong>. The pitched types add <strong>Sync Pitch</strong> for hard-sync sounds, Pulse adds <strong>Pulsewidth</strong>, and Spinal Saw adds <strong>Cluster</strong> and <strong>Detune</strong> for its stack. Oscillator 1 also has a <strong>Ring Mod</strong> knob.</p>
+<p>The <strong>Common</strong> section sets the overall <strong>Octave</strong>, <strong>Semitone</strong> and <strong>Detune</strong>, the number of <strong>Voices</strong>, <strong>Mono</strong> mode and <strong>Master Tune</strong>.</p>
+<h3 id="unison">Unison<a class="headerlink" href="#unison" title="Permanent link">&para;</a></h3>
+<p><strong>Unison</strong> stacks several voices per note for a thicker, wider sound. <strong>Count</strong> sets how many (1 to 16), <strong>Detune</strong> spreads their pitch and <strong>Spread</strong> spreads them across the stereo field. The <strong>Unison Transpose</strong> slots shift individual unison voices in pitch. More voices use more CPU, so reduce them if you're running many instances.</p>
+<h3 id="filters-drive-and-eq">Filters, Drive and EQ<a class="headerlink" href="#filters-drive-and-eq" title="Permanent link">&para;</a></h3>
+<p>These are on the <strong>Filter - Amp - Arp</strong> page. <strong>Filter 1</strong> and <strong>Filter 2</strong> each have a power button, a type menu, <strong>Cutoff</strong>, <strong>Resonance</strong> and <strong>FM</strong>. The types are LP 6, HP 6, LP, BP, HP and BS (band stop) at 12 or 24 dB, Comb, Redux, Ladder LP 6, 12, 18 and 24, and Sallen-Key LP. In each filter's cutoff modulation box, the <strong>Env 3</strong> knob sets the envelope amount and <strong>Keytrack</strong> makes the cutoff follow the notes you play.</p>
+<p><strong>Drive</strong> sits between the two filters and adds saturation, with a <strong>Drive</strong> amount and a <strong>Type</strong>: Light, Medium, Hard, Clip, Tube or Fuzz.</p>
+<p>The <strong>EQ</strong> has four bands, <strong>Low</strong>, <strong>Mid 1</strong>, <strong>Mid 2</strong> and <strong>High</strong>, each with <strong>Freq</strong>, <strong>Q</strong> and <strong>Gain</strong>. The low band can be a Low Shelf, Bell or Low Cut, and the high band a High Shelf, Bell or High Cut.</p>
+<p>The <strong>Amp</strong> section sets <strong>Volume</strong>, <strong>Pan</strong> and <strong>Effects</strong> (how much of the sound goes through the effects).</p>
+<h3 id="envelopes-and-lfos">Envelopes and LFOs<a class="headerlink" href="#envelopes-and-lfos" title="Permanent link">&para;</a></h3>
+<p>Subtractive has <strong>four envelopes</strong>, two on each of the <strong>Env 1-2</strong> and <strong>Env 3-4</strong> tabs. Each is a multi-stage envelope that you shape in its graph: set how many <strong>Stages</strong> it has and which stage is the <strong>Sustain</strong> point, and turn on a loop to repeat part of it while the note is held or after release. <strong>Env 4</strong> shapes the volume of each note, and <strong>Env 3</strong> is the one wired to the filter cutoffs.</p>
+<p>The <strong>LFO</strong> tab shows all <strong>four LFOs</strong>. Each has a shape menu (Sine, Triangle, Pulse, Pulse +, Saw Up, Saw Dn, 4 and 8 step shapes, S &amp; H and Noise), a <strong>Rate</strong> in Hz or, with <strong>Clock</strong> on, a tempo-synced rate, plus <strong>Level</strong>, <strong>Delay</strong>, <strong>Fade</strong>, <strong>Symmetry</strong> and <strong>Phase</strong>. <strong>Mono</strong> runs one LFO for all voices instead of one per voice. LFO 1 is wired to oscillator pitch, LFO 2 to sync pitch and pulse width, LFO 3 to the filter cutoffs and LFO 4 to volume and pan.</p>
+<h3 id="arpeggiator">Arpeggiator<a class="headerlink" href="#arpeggiator" title="Permanent link">&para;</a></h3>
+<p>The built-in <strong>arpeggiator</strong> is also on the <strong>Filter - Amp - Arp</strong> page. It takes the notes you hold and re-plays them in a pattern. Turn it on with its power button, then set:</p>
+<p><strong>Direction</strong> (Choices: Up, Down, Cascade, Alt 1, Alt 2, Random, Chord 1 Oct, Chord All Oct): the order the notes play in.</p>
+<p><strong>Clock</strong>, <strong>Length</strong> and <strong>Octaves</strong>: the step rate, how long each note lasts, and how many octaves the pattern covers.</p>
+<p><strong>Latch</strong>: when on, the arpeggio keeps playing after you release the keys. <strong>Freeze</strong> holds the current arpeggio notes so you can play them at a different transposition.</p>
+<p><strong>Input</strong>: the order held notes are sorted in (As Played, Ascending or Descending), a fixed velocity (<strong>Fix</strong>), <strong>Max Notes</strong>, how notes outside the <strong>Key Limits</strong> are handled, and the low and high key limits.</p>
+<p><strong>Pattern</strong> and <strong>Timing</strong>: the <strong>Step Count</strong>, a <strong>Load</strong> menu of stored patterns, and <strong>Swing</strong>, <strong>Rand Pos</strong>, <strong>Rand Len</strong> and <strong>Rand Vel</strong> for a looser feel.</p>
+<p><strong>External</strong> syncs the arpeggiator to the Edit's tempo. With External off, it follows its own tempo setting.</p>
+<h3 id="effects">Effects<a class="headerlink" href="#effects" title="Permanent link">&para;</a></h3>
+<p>The <strong>Effects</strong> page has four effect slots, each with a power button and a type menu: Distortion, Chorus, Phaser, Compressor, Filter, Delay, Reverb Natural, Reverb Plate or Reverb Non-Linear. The controls below each slot change with the type you pick.</p>
+<h3 id="preset-browser">Preset Browser<a class="headerlink" href="#preset-browser" title="Permanent link">&para;</a></h3>
+<p>Subtractive ships with a library of factory presets. Click the browse button at the left of the top bar to open the preset browser, and use the arrows in the top bar to step through presets. The macro knobs under the browser give quick access to the filter and amp envelopes, the filter <strong>Cutoff</strong>, <strong>Resonance</strong> and <strong>Env</strong> amount, the pitch, and the master <strong>Volume</strong> and <strong>Effect Mix</strong>. Use the save button in the top bar to store your own patches alongside the factory library.</p>
+<h2 id="bass-osc">Bass Osc <span class="pro">PRO</span><a class="headerlink" href="#bass-osc" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Waveform Pro, or with the MIDI Producer Expansion or the Synth Pack Expansion.</p>
+</blockquote>
+<p><img alt="" src="../images/Instruments/Bass%20Osc%402x.png" /></p>
+<p><em>The Bass Osc, a compact single-oscillator bass synthesiser.</em></p>
+<p><strong>Bass Osc</strong> is a small single-oscillator synth built for bass sounds. A single <strong>Wave</strong> control morphs the oscillator shape, and <strong>Tune</strong> and <strong>Detune</strong> set its pitch. The signal passes through one resonant filter with <strong>Cutoff</strong>, <strong>Res</strong> and <strong>Drive</strong> controls, and decay-based amp and filter envelopes (each with a velocity amount) shape the sound over time. A <strong>Glide</strong> control slides the pitch between notes for classic bass lines. Bass Osc ships with a set of factory presets.</p>
+<h2 id="attracktive">Attracktive<a class="headerlink" href="#attracktive" title="Permanent link">&para;</a></h2>
+<p><strong>Attracktive</strong> is a free instrument, in every edition, that plays Tracktion's Attracktive, BioTek, BioTek 2 and BioTek 3 sound packs. Each sound brings its own set of controls, background and colours, so the main panel changes with what you load. The bar along the top and the keyboard stay the same.</p>
+<p><img alt="" src="../images/samplers-and-instruments_attracktive%402x.png" /></p>
+<p><em>Attracktive with a factory sound loaded</em></p>
+<h3 id="installing-the-sounds">Installing the Sounds<a class="headerlink" href="#installing-the-sounds" title="Permanent link">&para;</a></h3>
+<p>Attracktive doesn't include its sounds. Install the factory content from the Download Manager: open <em>Settings &gt; Downloads</em>, click <strong>Launch Download Manager</strong> and install the Attracktive content (see <a href="../reference-settings/#downloads">Downloads</a>). Attracktive installs and lists new packs while its window is open and Waveform is in the foreground, showing an <em>Installing Content Pack</em> overlay while it works. Click the <strong>Refresh</strong> button in Attracktive's <strong>Browser</strong> if a pack doesn't appear.</p>
+<p>Until content is installed, Attracktive's <strong>Browser</strong> shows a <strong>Missing Content</strong> page. It lists the <strong>Preset Instruments</strong> and <strong>Preset Samples</strong> folders it looks in, with <strong>Select</strong>, clear (x) and <strong>Reveal</strong> buttons, and an <strong>Install Content Pack</strong> button for a pack you have downloaded from the website.</p>
+<h3 id="loading-and-saving-sounds">Loading and Saving Sounds<a class="headerlink" href="#loading-and-saving-sounds" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Click the arrows beside the instrument name to step through the instruments.</li>
+<li>Click the Browse button (a list with a magnifying glass) to open Attracktive's <strong>Browser</strong>. Filter by author, pack, category, style or character, or search by name or tag, then double-click an instrument to load it. Click the star on the selected instrument to make it a favourite, and tick <strong>Show only favourites</strong> to list just those.</li>
+<li>Click the Save button, beside the instrument name, to store your changes. It opens a <strong>Save Instrument</strong> dialog in your User Instruments folder.</li>
+</ul>
+<h3 id="common-controls">Common Controls<a class="headerlink" href="#common-controls" title="Permanent link">&para;</a></h3>
+<p><strong>Voices</strong>: The most notes Attracktive plays at once. Lower it to save CPU. (Range: 1 to 256, Default: 40)</p>
+<p><strong>Tune</strong>: The tuning reference for A, in Hz. (Range: 400 to 500 Hz, Default: 440 Hz)</p>
+<p><strong>Effect Mix</strong> and <strong>Volume</strong>: Every sound has these two in the top-right of the main panel. Effect Mix balances the dry sound against the effects.</p>
+<p><strong>External</strong>, <strong>Tempo</strong>, <strong>Arp</strong> and <strong>Latch</strong>: Beside the keyboard. External syncs the arpeggiator and other timed parameters to the Edit's tempo. With External off, they follow <strong>Tempo</strong> instead (Range: 30 to 300 BPM, Default: 120 BPM). Arp and Latch are greyed out unless the sound uses the arpeggiator (and, for Latch, arpeggiator latching).</p>
+<p>The settings button at the right of the top bar opens the <strong>Global</strong> panel, with <strong>Author</strong>, <strong>Zoom</strong> (75%, 100% or 150%), <strong>Control Behaviour</strong>, <strong>MPE</strong> and <strong>Multiple Cores</strong>, <strong>Sample Streaming</strong> (<strong>Prefer Streaming</strong> and <strong>Streaming Buffer Size</strong>), <strong>Install Content Pack</strong> and the content <strong>Locations</strong> (<strong>Preset Instruments</strong>, <strong>Preset Samples</strong> and <strong>User Instruments</strong>).</p>
+<hr />
+<h2 id="things-to-watch-out-for">⚡ Things to Watch Out For<a class="headerlink" href="#things-to-watch-out-for" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Edition gating.</strong> The Drum Sampler and Multi Sampler need Waveform Pro, or the MIDI Producer Expansion or the Synth Pack Expansion. If you open an Edit that uses them in Waveform Free or Waveform OEM, the plugins stay in the chain but make no sound. Check the plugin's status indicator if a sampler seems silent.</p>
+</li>
+<li>
+<p><strong>SFZ/SF2 imports may be large.</strong> A full SFZ or SF2 instrument bank can bring in a large number of audio files at once, so on older or slower drives the first load may take a moment.</p>
+</li>
+<li>
+<p><strong>The legacy "Sampler" plugin is different.</strong> An older plugin named "Sampler" is still in the Legacy category, with a different interface. For the samplers in this chapter, choose from the <strong>Instruments</strong> category in the plugin picker.</p>
+</li>
+</ul>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>For step-sequenced drum patterns, see <a href="../step-clips/">Step Clips</a>, which has tips on programming beats with Step clips and the Drum Sampler. The <a href="../4osc/">4OSC Synthesiser</a> and <a href="../wavetable/">Wavetable Synthesiser</a> chapters cover the other built-in synths.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

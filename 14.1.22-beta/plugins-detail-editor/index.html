@@ -1,0 +1,2782 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/14.1.22-beta/plugins-detail-editor/">
+      
+      
+        <link rel="prev" href="../detail-editor/">
+      
+      
+        <link rel="next" href="../browser/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>The Plugins Detail Editor - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-plugins-detail-editor" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Plugins Detail Editor
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugins Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugins Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opening-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening It
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opening It">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#which-track-is-shown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which Track Is Shown
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-modifiers-and-plugins-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Modifiers and Plugins Buttons
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-modifiers-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Modifiers Section
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Modifiers Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-modifier-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Modifier Panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-and-reordering-modifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding and Reordering Modifiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-plugins-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Plugins Section
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Plugins Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-plugin-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Plugin Panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-reordering-and-removing-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding, Reordering and Removing Plugins
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assigning-a-modifier-to-a-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assigning a Modifier to a Plugin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantising MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rendering-and-stems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendering and Stems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Read as one page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opening-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening It
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opening It">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#which-track-is-shown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which Track Is Shown
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-modifiers-and-plugins-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Modifiers and Plugins Buttons
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-modifiers-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Modifiers Section
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Modifiers Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-modifier-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Modifier Panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-and-reordering-modifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding and Reordering Modifiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-plugins-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Plugins Section
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Plugins Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-plugin-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Plugin Panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-reordering-and-removing-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding, Reordering and Removing Plugins
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assigning-a-modifier-to-a-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assigning a Modifier to a Plugin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="the-plugins-detail-editor">The Plugins Detail Editor<a class="headerlink" href="#the-plugins-detail-editor" title="Permanent link">&para;</a></h1>
+<p>The <strong>Plugins</strong> tab of the Detail Editor lays out a whole track's modifiers and plugins side by side, in signal order, as one scrolling row of panels you can open and close individually. Each panel holds the same pages you can pop out from the Actions panel and the modifier editor window (the Parameters list, the Faceplate, the Macro Parameters, the MIDI Controller Mappings), docked into the Detail Editor instead of floating above the arrangement.</p>
+<p><img alt="" src="../images/PluginsDetailEditor/plugins_detail_overview%402x.png" /></p>
+<p><em>The Plugins tab, with the Modifiers section on the left and the track's plugin chain on the right, most panels showing their Parameters page</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The Plugins tab is available in all editions.</p>
+</blockquote>
+<h2 id="opening-it">Opening It<a class="headerlink" href="#opening-it" title="Permanent link">&para;</a></h2>
+<p>The Detail Editor has a strip of mode buttons down its left-hand edge. <strong>Plugins</strong> is the third, below <strong>Track</strong> and <strong>Clip</strong>.</p>
+<p>Which tab you last had open is saved with the Edit, so the Detail Editor comes back on the Plugins tab next time you open the Edit.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Which sections are shown, which pages you left open, whether each Parameters page's assignments were expanded, and how far the row was scrolled are all remembered for the rest of the session, but they are not saved into the Edit. Reopen the Edit and the tab starts with both sections shown and every panel collapsed. The tab you were last on <em>is</em> saved.</p>
+</blockquote>
+<p>If you float the Detail Editor out into its own window, the Plugins tab comes with it and works the same way.</p>
+<h3 id="which-track-is-shown">Which Track Is Shown<a class="headerlink" href="#which-track-is-shown" title="Permanent link">&para;</a></h3>
+<p>The tab follows the selection and resolves it to a track:</p>
+<ul>
+<li>Select a <strong>track</strong> and you get that track.</li>
+<li>Select a <strong>clip</strong> and you get the track it sits on.</li>
+<li>Select a <strong>plugin</strong> and you get the track that owns it. Plugins inside a rack are the exception: a rack's contents don't belong to a single track, so selecting one leaves the panel where it is. Select the Rack Instance or the track to show that track's chain.</li>
+<li>Select a <strong>modifier</strong> and you get the track it belongs to.</li>
+</ul>
+<p>If your new selection doesn't resolve to a track at all (for example, when you click an empty part of the arrangement), the panel keeps showing the track it was already on rather than emptying out.</p>
+<p>Until something resolves for the first time, a dimmed overlay reads <em>Select a track, clip or plugin to edit</em>.</p>
+<p>Selecting a plugin or a modifier anywhere else in the app (in the mixer, or the arranger's plugin chain) scrolls its panel into view here.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> The row only ever scrolls sideways; every panel is as tall as the Detail Editor itself. Drag the Detail Editor's top edge upwards to give the open pages more height.</p>
+</blockquote>
+<h2 id="the-modifiers-and-plugins-buttons">The Modifiers and Plugins Buttons<a class="headerlink" href="#the-modifiers-and-plugins-buttons" title="Permanent link">&para;</a></h2>
+<p>Two pill buttons sit at the top left of the tab: <strong>Modifiers (n)</strong> and <strong>Plugins (n)</strong>, where <em>n</em> counts the panels in that section. A pill dims when its count is zero, so you can see at a glance that a track has no modifiers without switching anything on.</p>
+<p>The two buttons are <strong>not</strong> mutually exclusive. Either, both, or neither section can be shown, and hiding one gives the other the full width. Hide both and the tab reads <em>Both sections are hidden - use the Modifiers and Plugins buttons above</em>.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Turn the <strong>Modifiers</strong> pill off when you are only working on the plugin chain. The Plugins section then gets the full width, which helps when a plugin's Editor page is wide.</p>
+</blockquote>
+<h2 id="the-modifiers-section">The Modifiers Section<a class="headerlink" href="#the-modifiers-section" title="Permanent link">&para;</a></h2>
+<p>A strip in the track's own colour runs across the top of this section, from the Track Parameters card to the last modifier panel, so it stays clear which track you are editing.</p>
+<p>If the track has no modifiers yet, the section reads <em>No modifiers on this track</em>.</p>
+<h3 id="track-parameters">Track Parameters<a class="headerlink" href="#track-parameters" title="Permanent link">&para;</a></h3>
+<p>The first card in the section is <strong>Track Parameters</strong>: every automatable parameter on every plugin in the track, with a search box at the top to find one quickly. This is the same list that appears down the right-hand side of a modifier's editor window, and it works the same way: it is the target you click when you have put a modifier into assignment mode, and each entry has its own knob setting how far that modifier moves the parameter. See <a href="../modifiers/#assigning-to-parameters">Assigning to Parameters</a> in the Modifiers chapter.</p>
+<p>Here it is shown <strong>once for the whole track</strong>, at the start of the section, instead of inside every modifier's settings page. That leaves the modifier panels themselves narrower and lets several of them share the screen.</p>
+<p>Use the arrow button in its top-left corner (<em>Show or hide the track parameters list</em>) to collapse the card down to a narrow strip with its title rotated into it, freeing up the width when you don't need it.</p>
+<p>On the Master track the list covers the master plugins plus the master volume plugin.</p>
+<h3 id="a-modifier-panel">A Modifier Panel<a class="headerlink" href="#a-modifier-panel" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../images/PluginsDetailEditor/plugins_detail_modifier%402x.png" /></p>
+<p><em>An LFO modifier panel with its Modifier Settings and Parameters pages open, next to the Track Parameters list</em></p>
+<p>Each modifier on the track gets its own panel. Down the left-hand strip, from top to bottom:</p>
+<ul>
+<li>The small <strong>modifier tile</strong>: the same object you see above the plugins in the track's mixer area.</li>
+<li>The <strong>enable / bypass</strong> power button (<em>Enable or bypass this modifier</em>).</li>
+<li>The <strong>options</strong> gear button (<em>Modifier options</em>), which opens the same <a href="../modifiers/#the-options-menu">Options menu</a> described in the Modifiers chapter: <strong>Colour</strong>, <strong>Remap on Tempo Change</strong>, <strong>Highlight Controlled Plugins</strong> and <strong>Select Plugins</strong>.</li>
+<li>The modifier's name, rotated to run up the strip.</li>
+<li>Three page toggles at the bottom: <strong>Modifier Settings</strong>, <strong>Parameters</strong> and <strong>Assignments</strong>.</li>
+</ul>
+<p>Switch a toggle on and that page opens to the right of the strip; switch it off and the panel shrinks back. Several pages can be open at once, each one widening the panel.</p>
+<p>The tile behaves as it does in the mixer: click it to select the modifier, double-click to open the modifier's own editor window, and drag it to make an assignment.</p>
+<p>Right-clicking <strong>anywhere</strong> on the panel (not just the tile) gives the modifier's usual menu: <strong>Enable</strong> / <strong>Disable</strong>, <strong>Delete</strong>, and a <strong>Remove assignment</strong> section listing every parameter this modifier currently drives, so you can unhook them one at a time.</p>
+<p>The selected modifier's panel is drawn with a white outline, the same highlight used for a selected plugin in the mixer.</p>
+<h3 id="adding-and-reordering-modifiers">Adding and Reordering Modifiers<a class="headerlink" href="#adding-and-reordering-modifiers" title="Permanent link">&para;</a></h3>
+<p>The <strong>+</strong> button at the end of the section adds a modifier to the track. The LFO is offered in every edition. The Breakpoint, Step, Envelope follower, Random and MIDI Tracker modifiers need Waveform Pro or the MIDI Producer Expansion.</p>
+<p>To reorder them, drag a modifier panel sideways. A coloured insert line shows where it will land. Reordering works within the one track only: you can't drag a modifier in from a different track or out of a rack this way.</p>
+<p>To delete one, right-click its panel and choose <strong>Delete</strong>.</p>
+<h2 id="the-plugins-section">The Plugins Section<a class="headerlink" href="#the-plugins-section" title="Permanent link">&para;</a></h2>
+<h3 id="a-plugin-panel">A Plugin Panel<a class="headerlink" href="#a-plugin-panel" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../images/PluginsDetailEditor/plugins_detail_plugin%402x.png" /></p>
+<p><em>The 8-Band Equaliser and Compressor panels with their Editor pages open, beside a collapsed VCA panel showing just its strip</em></p>
+<p>There is one panel per plugin in the track's chain, in signal order. Unlike the mixer, nothing is hidden: the built-in Volume &amp; Pan and Level Meter plugins that sit at the end of every track get panels here too.</p>
+<p>Down the left-hand strip, from top to bottom:</p>
+<ul>
+<li>The <strong>show / hide plugin window</strong> button (<em>Show or hide the plugin's window</em>), which opens the plugin's own floating window and closes it again.</li>
+<li>The <strong>enable / bypass</strong> button (<em>Enable or bypass this plugin</em>).</li>
+<li>The plugin's name, rotated to run up the strip.</li>
+<li>A toggle for each page the plugin has, at the bottom.</li>
+</ul>
+<p>The <strong>name strip</strong> does more than label the panel:</p>
+<ul>
+<li><strong>Click</strong> it to select the plugin, which also shows it in the Actions panel.</li>
+<li><strong>Double-click</strong> it to rename the plugin. A <strong>Rename Plugin</strong> dialog appears; leave the box empty to go back to the plugin's own name.</li>
+<li><strong>Drag</strong> it to move the plugin, either to another position in this row, or straight out to the mixer or the arranger's plugin chain. Hold a modifier key while you drag to copy the plugin instead of moving it.</li>
+</ul>
+<p>Right-clicking a plugin panel gives the plugin's full standard menu, the same one you get on its mixer or arranger slot, with <strong>Enabled</strong>, <strong>Add plugin to left</strong>, <strong>Delete plugin</strong>, <strong>Replace this plugin</strong>, the preset and rack items, and the rest. See <a href="../using-plugins/#working-with-plugins">Working with Plugins</a>.</p>
+<p>A <strong>Level Meter</strong> plugin has no pages at all, so its strip shows a live output meter in the space the page toggles would have taken.</p>
+<h3 id="the-pages">The Pages<a class="headerlink" href="#the-pages" title="Permanent link">&para;</a></h3>
+<p>Only the pages a plugin has get a toggle, so a simple utility plugin may show one and a big instrument several.</p>
+<p><strong>Editor</strong>: the plugin's own interface, embedded inline in the panel. This is offered for Waveform's <strong>built-in</strong> plugins only: third-party VST and AU plugins always use their own window. Two more conditions apply: the plugin must have parameters, and its editor must be short enough to sit sensibly in the Detail Editor. Tall editors such as 4OSC and the Guitar amp's IR loader stay window-only, and you reach them with the show/hide window button in the strip. Editors that can resize, like the 8-Band Equaliser, stretch to fill the height you have given the Detail Editor.</p>
+<p><strong>Parameters</strong> and <strong>MIDI Controller Mappings</strong>: the same pages you can pop out from the plugin's Actions panel.</p>
+<p><strong>Faceplate</strong> <span class="pro">PRO</span>: the plugin's <a href="../faceplates/">faceplate</a>. Needs Waveform Pro, or the MIDI Producer Expansion or the DJ Mix Tools Expansion.</p>
+<p><strong>Macro Parameters</strong> <span class="pro">PRO</span>: the plugin's macro parameters. Needs Waveform Pro or the MIDI Producer Expansion.</p>
+<p>On the <strong>Parameters</strong> page the assignments half starts <strong>collapsed</strong> in this embedded view, which keeps the page narrow. Click the expander down its edge to open the assignments out; the page widens to make room, and closes back to its narrow width when you collapse it again.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Open the <strong>Parameters</strong> page on a modifier and the <strong>Editor</strong> page on the plugin it drives, side by side, and you can watch the plugin's controls move as you change the modifier's depth or rate.</p>
+</blockquote>
+<h3 id="adding-reordering-and-removing-plugins">Adding, Reordering and Removing Plugins<a class="headerlink" href="#adding-reordering-and-removing-plugins" title="Permanent link">&para;</a></h3>
+<p>A <strong>+</strong> button sits in the gap between every pair of panels (<em>Insert a plugin here</em>) and one more at the end of the row (<em>Add a plugin to this track</em>). Either opens the plugin selector, and the new plugin lands at that point in the chain.</p>
+<p>You can also drag plugins in from the mixer or from the arranger's plugin chain, and drag them out of here to either. A vertical line shows where the drop will land.</p>
+<p>To remove a plugin, right-click its panel and choose <strong>Delete plugin</strong>, or select it and press <strong>Delete</strong>.</p>
+<h2 id="assigning-a-modifier-to-a-plugin">Assigning a Modifier to a Plugin<a class="headerlink" href="#assigning-a-modifier-to-a-plugin" title="Permanent link">&para;</a></h2>
+<p>Because both sections are on screen at once, you can assign a modifier to a plugin parameter by dragging straight from one to the other.</p>
+<p>Drag the <strong>modifier tile</strong> out of a modifier panel and across to the Plugins section. Any plugin panel you pass over is drawn with a white outline to show it will take the drop.</p>
+<p>Drop it and the plugin's <strong>parameter menu</strong> opens: its macros in a submenu at the top, then all of its parameters. Pick one and the modifier is assigned to it, as if you had dropped the modifier onto that plugin in the mixer.</p>
+<p>The whole panel is the drop zone, including any pages you have open, so you don't have to aim for the narrow strip.</p>
+<p>Plugins with no parameters of their own (such as the Level Meter) never highlight and never accept the drop.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Individual parameter rows inside an open <strong>Parameters</strong> page are not separate drop targets. To assign to one specific parameter, either use the drop menu above, or put the modifier into assignment mode and click the parameter in the <strong>Track Parameters</strong> list. See <a href="../modifiers/#assigning-to-parameters">Assigning to Parameters</a>.</p>
+</blockquote>
+<h2 id="controls">Controls<a class="headerlink" href="#controls" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plugins</td>
+<td>Mode button</td>
+<td>The third button in the Detail Editor's left-hand strip, below Track and Clip. Switches the Detail Editor to this tab.</td>
+</tr>
+<tr>
+<td>Modifiers (n)</td>
+<td>Toggle pill</td>
+<td>Shows or hides the Modifiers section. <em>n</em> is the number of modifier panels; the pill dims when it is zero.</td>
+</tr>
+<tr>
+<td>Plugins (n)</td>
+<td>Toggle pill</td>
+<td>Shows or hides the Plugins section, with the same count and dimming.</td>
+</tr>
+<tr>
+<td>Show or hide the track parameters list</td>
+<td>Arrow button</td>
+<td>Collapses the Track Parameters card to a narrow strip, or opens it again.</td>
+</tr>
+<tr>
+<td>Enable or bypass this modifier</td>
+<td>Power button</td>
+<td>Turns an individual modifier on or off without deleting it or its assignments.</td>
+</tr>
+<tr>
+<td>Modifier options</td>
+<td>Gear button</td>
+<td>Opens the modifier's Options menu (Colour, Remap on Tempo Change, Highlight Controlled Plugins, Select Plugins).</td>
+</tr>
+<tr>
+<td>Modifier Settings / Parameters / Assignments</td>
+<td>Page toggles</td>
+<td>Open and close a modifier's three pages beside its strip.</td>
+</tr>
+<tr>
+<td>Add a modifier to this track</td>
+<td>+ button</td>
+<td>Adds a modifier at the end of the section.</td>
+</tr>
+<tr>
+<td>Show or hide the plugin's window</td>
+<td>Toggle button</td>
+<td>Opens the plugin's own floating window, or closes it.</td>
+</tr>
+<tr>
+<td>Enable or bypass this plugin</td>
+<td>Power button</td>
+<td>Bypasses the plugin, leaving it in the chain.</td>
+</tr>
+<tr>
+<td>Plugin name strip</td>
+<td>Rotated label</td>
+<td>Click to select, double-click to rename, drag to move or copy the plugin.</td>
+</tr>
+<tr>
+<td>Page toggles</td>
+<td>Icon buttons</td>
+<td>Open and close the plugin's Editor, Parameters, Macro Parameters, Faceplate and MIDI Controller Mappings pages.</td>
+</tr>
+<tr>
+<td>Insert a plugin here</td>
+<td>+ button</td>
+<td>Inserts a plugin at that point in the chain.</td>
+</tr>
+<tr>
+<td>Add a plugin to this track</td>
+<td>+ button</td>
+<td>Adds a plugin at the end of the chain.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="things-to-watch-out-for">⚡ Things to Watch Out For<a class="headerlink" href="#things-to-watch-out-for" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Dragging the name strip moves the plugin.</strong> A drag of a few pixels picks the plugin up, and dropping it on the mixer or another track's chain moves it there. Click without moving the mouse when you only want to select it.</li>
+</ul>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>For the modifiers themselves (what each type does and the controls they share), see <a href="../modifiers/">Modifiers</a>. For plugins in the mixer and the arranger's plugin chain, see <a href="../using-plugins/">Using Plugins</a>, and for the other two tabs of this panel see <a href="../detail-editor/">The Detail Editor</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

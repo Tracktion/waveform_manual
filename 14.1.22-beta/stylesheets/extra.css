@@ -1,0 +1,57 @@
+/* Custom theme colours — edit these to change the site's appearance.
+   primary = header, sidebar highlights; accent = links, hover states. */
+
+:root {
+    --md-primary-fg-color:        #202229;
+    --md-primary-fg-color--light: #78909c;
+    --md-primary-fg-color--dark:  #37474f;
+    --md-accent-fg-color:         #483B83;
+}
+
+[data-md-color-scheme="default"] {
+    --md-typeset-a-color:         #5F49B7;   /* light-mode links */
+}
+
+/* Dark mode overrides (slate scheme) */
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color:        #202229;
+    --md-accent-fg-color:         #0DB79B;
+    --md-typeset-a-color:         #17C4A9;
+}
+
+.md-typeset a:hover {
+    color: var(--md-accent-fg-color);    /* recolour on hover */
+}
+
+
+/* Stop tall/vertical screenshots from dominating the page.
+   Caps image height while preserving aspect ratio. Override an
+   individual image with attr_list, e.g. ![](x.png){ width="320" }. */
+.md-typeset img {
+    display: block;
+    /* max-height: 70vh; */
+    width: auto;
+}
+
+/* @2x captures are sized to half their pixels by javascripts/retina.js.
+   Let their explicit width govern so the aspect ratio is preserved. */
+.md-typeset img[src*="@2x"],
+.md-typeset img[src*="%402x"] {
+    max-height: none;
+    height: auto;
+}
+
+/* "PRO" badge for features not in the Free edition (see STYLE.md),
+   e.g. ## Faceplates <span class="pro">PRO</span> */
+.md-typeset .pro {
+    display: inline-block;
+    margin-left: 0.4em;
+    padding: 0.1em 0.45em;
+    border-radius: 0.25em;
+    font-size: 0.55em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    vertical-align: middle;
+    color: var(--md-accent-bg-color);
+    background-color: var(--md-accent-fg-color);
+}

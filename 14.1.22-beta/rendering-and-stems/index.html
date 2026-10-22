@@ -1,0 +1,3325 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/14.1.22-beta/rendering-and-stems/">
+      
+      
+        <link rel="prev" href="../mixing-down/">
+      
+      
+        <link rel="next" href="../working-with-video/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Rendering and Stems - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rendering-and-stems" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Rendering and Stems
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins-detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugins Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantising MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step-clips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendering and Stems
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendering and Stems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opening-the-render-dialog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening the Render Dialog
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-and-advanced-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple and Advanced Modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-the-whole-mix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering the Whole Mix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-source-zone-choosing-what-to-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Source Zone: Choosing What to Render
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Source Zone: Choosing What to Render">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rendering-stems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering Stems
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-file-format-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The File Format Zone
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The File Format Zone">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rendering-a-midi-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering a MIDI File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audio-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normalising-and-loudness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normalising and Loudness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-output-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Output Zone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-render-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Render Queue
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Presets PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Track
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-from-the-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering From the Command Line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-from-the-ai-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering From the AI Assistant
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Read as one page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opening-the-render-dialog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening the Render Dialog
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-and-advanced-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple and Advanced Modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-the-whole-mix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering the Whole Mix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-source-zone-choosing-what-to-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Source Zone: Choosing What to Render
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Source Zone: Choosing What to Render">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rendering-stems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering Stems
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-file-format-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The File Format Zone
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The File Format Zone">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rendering-a-midi-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering a MIDI File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audio-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normalising-and-loudness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normalising and Loudness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-output-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Output Zone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-render-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Render Queue
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Presets PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Track
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-from-the-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering From the Command Line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-from-the-ai-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering From the AI Assistant
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="rendering-and-stems">Rendering and Stems<a class="headerlink" href="#rendering-and-stems" title="Permanent link">&para;</a></h1>
+<p>The Render dialog is where you write files out of an Edit: one stereo mixdown,
+a folder of stems for someone else's session, a MIDI file of your arrangement,
+or a batch of loops cut at your markers. This chapter also covers the render
+queue, file name patterns, render presets, loudness normalising, rendering
+tracks and clips back into the Edit, and rendering from the command line
+without opening Waveform at all.</p>
+<p><a href="../mixing-down/">Mixing Down</a> covers what to do <em>before</em> you get here (master
+processing, checking your levels) and how to find your files afterwards. This
+chapter is about the dialog itself.</p>
+<p><img alt="" src="../images/rendering_1%402x.png" /></p>
+<p><em>The Render dialog: Source, File Format and Output zones, with the render queue
+underneath</em></p>
+<h2 id="opening-the-render-dialog">Opening the Render Dialog<a class="headerlink" href="#opening-the-render-dialog" title="Permanent link">&para;</a></h2>
+<p>Choose <em>File &gt; Export: Render to a file...</em>. Opening the dialog stops playback,
+and any plugin windows you had open are hidden while it's up. The <strong>Render
+Track</strong> action and the <strong>Render Clip</strong> menu in the Actions panel open the same
+dialog, set up for their job (see <a href="#render-track">Render Track</a> and
+<a href="#rendering-clips">Rendering Clips</a> below).</p>
+<p>The dialog is laid out in three zones, side by side:</p>
+<ul>
+<li><strong>Source</strong>: what gets rendered, and how much of the Edit each file covers.</li>
+<li><strong>File Format</strong>: what kind of file gets written, and how it's processed on
+  the way out.</li>
+<li><strong>Output</strong>: where the files go, what they're called, and what happens once
+  they're written.</li>
+</ul>
+<p>Underneath those sits the <strong>render queue</strong>, which fills up as you add renders.</p>
+<p>Everything you set is remembered with the Edit, so the dialog opens next time
+exactly as you left it. Some of the choices depend on what you had selected in
+the arrangement <em>when you opened the dialog</em>, so select your tracks or clips
+first, then open it.</p>
+<h2 id="simple-and-advanced-modes">Simple and Advanced Modes<a class="headerlink" href="#simple-and-advanced-modes" title="Permanent link">&para;</a></h2>
+<p>The dialog has two views. <strong>Simple</strong> shows the settings a straightforward
+mixdown needs, and <strong>Advanced</strong> shows every render option. Everyone starts in
+Simple.</p>
+<p><strong>Mode</strong> <span class="pro">PRO</span> (Choices: Simple, Advanced): The row at
+the top of the Source zone that switches between the two views. The choice is
+remembered for the whole application rather than per Edit, so the dialog opens
+in the mode you last used. Switching back to Simple doesn't clear your Advanced
+settings: they're hidden, and not used, until you switch back.
+(Default: Simple)</p>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Advanced mode is in Waveform Pro. In the other editions the
+Mode row isn't shown and the dialog is always in Simple mode.</p>
+</blockquote>
+<p>Simple mode renders the whole mix, every track, or the selected tracks, over the
+whole Edit, the marked region or the selected clips. It has every File Format
+option except <strong>Wrap Remainder Into Loop</strong>, plus the folder, name, file list and
+<strong>Add to Library</strong>. Everything else in this chapter marked
+<span class="pro">PRO</span>, apart from the surround channel layouts, needs
+Advanced mode: the Submixes, Groups, Tags and Outputs scopes and the track
+list, <strong>Include Source Tracks</strong>, the per-section ranges, <strong>Wrap Remainder Into
+Loop</strong>, render presets, the Destination row for ordinary renders, and loudness
+measurement.</p>
+<h2 id="rendering-the-whole-mix">Rendering the Whole Mix<a class="headerlink" href="#rendering-the-whole-mix" title="Permanent link">&para;</a></h2>
+<p>The default setup renders the whole Edit to a single file, which is what you
+want most of the time.</p>
+<ol>
+<li>Set <strong>Render</strong> (in the Source zone) to <em>Whole Mix</em>.</li>
+<li>Set <strong>Range</strong> to <em>Whole Edit</em>, or to <em>Marked Region</em> if you've set the In
+   and Out markers around the part you want to bounce.</li>
+<li>Pick your <strong>Format</strong>, <strong>Sample Rate</strong> and <strong>Sample Size</strong> in the File Format
+   zone.</li>
+<li>Check the <strong>Folder</strong> and the <strong>Name</strong> in the Output zone. The list underneath
+   shows you exactly what's about to be written.</li>
+<li>Click <strong>Render</strong> (in Advanced mode the button reads <strong>Add to Queue and
+   Start</strong>).</li>
+</ol>
+<p>The render appears as a row in the queue with a progress percentage and a
+waveform that draws itself as the audio is written. When it finishes, the row
+shows <em>Complete</em> and a folder button that reveals the file on your computer.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> The list under the Name row is the fastest way to catch a mistake.
+If it says <em>Nothing to render</em>, or names three files when you expected
+twenty-two, fix it there rather than after a ten-minute render.</p>
+</blockquote>
+<h2 id="the-source-zone-choosing-what-to-render">The Source Zone: Choosing What to Render<a class="headerlink" href="#the-source-zone-choosing-what-to-render" title="Permanent link">&para;</a></h2>
+<p><strong>Render</strong> (Choices: Whole Mix, Tracks, Selected Tracks, Submixes, Groups, Tags,
+Outputs): What gets rendered. <em>Whole Mix</em> writes one file for the whole Edit.
+Every other choice writes one file per item. (Default: Whole Mix)</p>
+<ul>
+<li><strong>Tracks</strong>: every audio track in the Edit, each to its own file. In Simple
+  mode that's every track; in Advanced mode they're listed for you to tick.</li>
+<li><strong>Selected Tracks</strong>: the tracks that were selected in the arrangement when
+  you opened the dialog. There's no list to tick for this one: selecting a clip
+  counts as selecting its track, a submix renders as itself, and a plain folder
+  stands for the audio tracks inside it.</li>
+<li><strong>Submixes</strong> <span class="pro">PRO</span>: every submix folder track.</li>
+<li><strong>Groups</strong> <span class="pro">PRO</span>: every Edit Mix Group. See
+  <a href="../edit-mix-groups/">Edit Mix Groups</a>.</li>
+<li><strong>Tags</strong> <span class="pro">PRO</span>: every tag used on a track, so a tag
+  acts as an ad-hoc stem group. Tag three tracks <em>Drums</em> and you get one <em>Drums</em>
+  stem containing all three. Tags live on the tracks themselves and are saved
+  with the Edit.</li>
+<li><strong>Outputs</strong> <span class="pro">PRO</span>: the audio output devices the Edit
+  plays to, with each one rendering the tracks routed to it.</li>
+</ul>
+<p>In Advanced mode, choosing anything other than <em>Whole Mix</em> or <em>Selected Tracks</em>
+adds a checklist of the items in that category. Its header tells you how many
+are ticked, and the <strong>All</strong> and <strong>None</strong> buttons tick or untick everything
+currently shown. Once the list is long enough to scroll, a filter box appears
+above it. Type into it to narrow the list, then use <strong>All</strong> to tick only that
+subset. Items covering a track you had selected in the arrangement are marked
+with a coloured tab down their left edge, so you can find them quickly in a
+long list.</p>
+<p><img alt="" src="../images/rendering_2%402x.png" /></p>
+<p><em>The Tracks scope, with all 6 tracks ticked and the file list showing what the
+batch will write</em></p>
+<p>If a category has nothing in it, the list says so and tells you what you'd have
+to make first, for example <em>No tracks are tagged. Add tags to a track's
+properties and each tag renders as its own stem.</em></p>
+<p><strong>Range</strong> (Choices: Whole Edit, Marked Region, Selected Clips Range, Selected
+Clips in Marked Region, Each Selected Clip Range, Each Marker Region, Each
+Arranger Clip Region): How much of the Edit each rendered file covers.
+(Default: Whole Edit)</p>
+<ul>
+<li><strong>Whole Edit</strong>: start to end.</li>
+<li><strong>Marked Region</strong>: the range between the In and Out markers.</li>
+<li><strong>Selected Clips Range</strong>: renders the clips you had selected, and nothing
+  else, into one file spanning from the first to the last. Only offered when
+  clips were selected.</li>
+<li><strong>Selected Clips in Marked Region</strong>: the same, cut down to the part of the
+  clips inside the marked region. Only offered when clips were selected.</li>
+<li><strong>Each Selected Clip Range</strong> <span class="pro">PRO</span>: renders each
+  selected clip to its own file, named after the clip. This is how you turn a
+  handful of clips into a set of samples in one pass. Only offered when clips
+  were selected.</li>
+<li><strong>Each Marker Region</strong> <span class="pro">PRO</span>: one file per marker
+  clip, named after the marker.</li>
+<li><strong>Each Arranger Clip Region</strong> <span class="pro">PRO</span>: one file per
+  arranger clip, named after the clip, so an arrangement built on the Arranger
+  track exports section by section. Only offered where the Arranger track is
+  available. See <a href="../arranger-track/">The Arranger Track</a>.</li>
+</ul>
+<blockquote>
+<p>📝 <strong>Note:</strong> The clip ranges render the clips themselves (nothing else on
+those tracks sounds, even if it overlaps), so they ignore the <strong>Render</strong> choice
+entirely. Only arrangement clips on audio tracks count; clips in Launcher slots
+and on the global tracks are left out.</p>
+</blockquote>
+<p><strong>Render Items to a Single File</strong>: Mixes everything you've ticked into one file
+instead of writing one file per item. Use it to bounce a handful of chosen
+tracks down to a single stem. In Simple mode it's only offered for <em>Selected
+Tracks</em>, where it chooses between one file for the selection and one file per
+track. (Default: off)</p>
+<p><strong>Include Source Tracks</strong> <span class="pro">PRO</span>: Also processes the
+tracks that feed the chosen items' sidechains, aux buses and racks, keeping them
+silent in the output. This is what makes a stem sound the way it does in the
+full mix: the kick still ducks the bass through the sidechain compressor even
+though the kick isn't in the bass stem. Leaving this on suits most renders, and
+Simple mode always leaves it on. (Default: on)</p>
+<h3 id="rendering-stems">Rendering Stems<a class="headerlink" href="#rendering-stems" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Stems by <em>Tracks</em> and <em>Selected Tracks</em> work in every
+edition. The Submixes, Groups, Tags and Outputs groupings need Waveform Pro.</p>
+</blockquote>
+<p>Most of this zone exists for rendering stems. In Simple mode, <em>Tracks</em> and
+<em>Selected Tracks</em> already give you a file per track; Advanced mode adds the
+groupings. Pick the one that matches how you want the stems to arrive:</p>
+<ul>
+<li>For someone mixing in another DAW, use <strong>Tracks</strong>, so they get every track
+  as its own file, all starting at the same point on the timeline.</li>
+<li>For a mastering engineer or a stem-mastering service, use
+  <strong>Submixes</strong> <span class="pro">PRO</span> or <strong>Tags</strong> <span class="pro">PRO</span>,
+  so you hand over six or eight musical groups rather than sixty tracks.</li>
+<li>For a live backing-track set, use <strong>Groups</strong> <span class="pro">PRO</span> or
+  <strong>Tags</strong> <span class="pro">PRO</span> for the parts you want on separate
+  faders on the night.</li>
+<li>If you only need the four tracks you're looking at, select them in the
+  arrangement before you open the dialog and use <strong>Selected Tracks</strong>.</li>
+</ul>
+<p>The dialog warns you about the one thing that catches people out. If you include
+tracks that live inside a submix, it says <em>Tracks inside a submix render without
+their submix's plugins - tick the submix itself to render its bus output</em>. A
+track inside a submix, rendered on its own, skips whatever compression or EQ is
+on the submix bus, so those stems won't add back up to your mix. Render the
+submix instead when that matters.</p>
+<p>Tracks with nothing to play are skipped rather than queued as jobs that fail, so
+an Edit full of empty placeholder tracks doesn't produce a queue full of red
+rows. For a MIDI render, "nothing to play" means no MIDI clips, so audio tracks
+drop out of a MIDI stem batch automatically.</p>
+<h2 id="the-file-format-zone">The File Format Zone<a class="headerlink" href="#the-file-format-zone" title="Permanent link">&para;</a></h2>
+<p><strong>Format</strong> (Choices: WAV, AIFF, FLAC, Ogg Vorbis, MP3, MIDI): The file format
+the render is written in. Changing it keeps your sample rate, bit depth and
+quality valid for the new format and swaps the file extension for you.
+(Default: WAV)</p>
+<h3 id="rendering-a-midi-file">Rendering a MIDI File<a class="headerlink" href="#rendering-a-midi-file" title="Permanent link">&para;</a></h3>
+<p>Choosing <strong>MIDI</strong> writes the notes rather than audio, so every audio setting
+below disappears: sample rate, bit depth, normalising, dithering and the rest
+mean nothing to a MIDI file. In their place you get one choice:</p>
+<p><strong>MIDI Source</strong> (Choices: Clips, After MIDI Plugins): Which MIDI is written.
+<em>Clips</em> writes the notes as they sit in your MIDI clips. <em>After MIDI Plugins</em>
+writes the MIDI leaving each track's plugin chain instead, which bakes in
+arpeggiators, chord players and other MIDI effects. (Default: Clips)</p>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> <em>After MIDI Plugins</em> is lost if an instrument doesn't pass MIDI
+through, and many don't. If your exported MIDI file comes out empty, switch back
+to <em>Clips</em>.</p>
+</blockquote>
+<p><img alt="" src="../images/rendering_3%402x.png" /></p>
+<p><em>With MIDI chosen, the audio settings give way to a single MIDI Source choice,
+and the 6 ticked tracks resolve to the 1 that actually holds MIDI</em></p>
+<p>Everything else works the same for MIDI as for audio: scopes, ranges, name
+patterns, the queue and presets. The queue draws a small piano roll of the notes
+that were written instead of a waveform. <strong>Add to Library</strong> and <strong>Measure
+Loudness</strong> are hidden, since neither means anything for a MIDI file.</p>
+<h3 id="audio-settings">Audio Settings<a class="headerlink" href="#audio-settings" title="Permanent link">&para;</a></h3>
+<p><strong>Channel Layout</strong> (Choices: Auto, Mono, Stereo, 5.1, 7.1): How many channels
+each file has. <em>Auto</em> follows the source, so leave it there unless you
+specifically need to force mono or a surround layout. The 5.1 and 7.1 choices
+<span class="pro">PRO</span> only appear in Waveform Pro, or with the Surround
+Expansion. (Default: Auto)</p>
+<p><strong>Sample Rate</strong>: The rate the files are written at, which doesn't have to match
+the Edit's. The list is whatever the chosen format supports. (Default: 44100)</p>
+<p><strong>Sample Size</strong>: Bits per sample. 32-bit float can't clip and needs no
+dithering, which makes it the safe choice for files that are going on to be
+processed further; 16-bit is the CD standard. (Default: 16-bit)</p>
+<p><strong>Quality</strong>: Only shown for compressed formats. Trades file size against
+quality. (Default: the format's own default)</p>
+<p><strong>Remove Silence at Start/End</strong>: Trims silence from both ends of each file, so
+it starts where the audio does. (Default: off)</p>
+<p><strong>Dithering Enabled</strong>: Allows the output to be dithered when it's less than 32
+bits. If you don't know what dithering is, turning this on is the safe choice
+for 16-bit and 24-bit files. (Default: off)</p>
+<p><strong>Include Tails</strong>: Keeps rendering past the end of the range, for up to 10
+seconds, so reverb and delay tails aren't cut off. It stops as soon as the
+output falls silent, never runs into the next clip on the tracks being
+rendered, and adds nothing if a clip is still playing across the end of the
+range. Turn it off when a file has to end exactly at the end of the range, such
+as a loop or a section that has to line up with others. Hidden while <strong>Wrap
+Remainder Into Loop</strong> is ticked, since that handles the tail itself.
+(Default: on; off for clip renders and the selected-clips ranges, so the file
+ends where the clips do)</p>
+<p><strong>Render at 1x Play-Speed</strong>: Renders in real time, taking as long as the song
+does. You need this if you're mixing through outboard gear with the Insert
+plugin, or if a plugin misbehaves when pushed faster than real time. Otherwise
+leave it off. (Default: off)</p>
+<p><strong>Add ACID Tempo/Note Info</strong>: WAV only. Writes the tempo and root note into the
+file so loop browsers and other DAWs can match it to their project.
+(Default: off)</p>
+<p><strong>Wrap Remainder Into Loop</strong> <span class="pro">PRO</span>: Renders the plugin
+tail that runs past the end of the range and mixes it back onto the start of
+the file, so the file loops cleanly. This is the setting that turns a
+reverb-tailed bar into a usable loop instead of one that stutters at the loop
+point. It forces <strong>Remove Silence at Start/End</strong> off, since trimming would undo
+the effect. (Default: off)</p>
+<h3 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h3>
+<p>Tags are the track information a music player shows: title, artist, album and so
+on. Waveform can write them into your rendered files, so a mixdown arrives
+already labelled rather than as <em>Untitled</em> by <em>Unknown Artist</em>.</p>
+<p><strong>Add Tags</strong>: Writes this Edit's tags into the rendered files. It's ticked
+automatically when the Edit already has tags, and unticking it renders without
+them. (Default: on when the Edit has tags)</p>
+<p><strong>Edit Tags</strong>: Opens the tag editor. It sits at the right-hand end of the
+<strong>Add Tags</strong> row.</p>
+<p>The row only appears for formats that can carry tags: <strong>WAV</strong> (in a
+RIFF INFO chunk), <strong>Ogg Vorbis</strong> (Vorbis comments) and <strong>MP3</strong> (ID3). AIFF and
+FLAC have no tag support in their writers, and a MIDI file has nowhere to put
+them, so it's hidden for those.</p>
+<p><img alt="" src="../images/rendering_7%402x.png" /></p>
+<p><em>The tag editor, reached from the Render dialog or the Edit's Actions panel</em></p>
+<p>The tag editor holds seven fields:</p>
+<ul>
+<li><strong>Title</strong>: The track title.</li>
+<li><strong>Artist</strong>: The artist.</li>
+<li><strong>Album</strong>: The album the track belongs to.</li>
+<li><strong>Year</strong>: The year. Leave it at 0 and no year is written. (Default: 0)</li>
+<li><strong>Track number</strong>: The track's position on the album, 0 to 255. Leave it at 0
+  and no track number is written. (Default: 0)</li>
+<li><strong>Genre</strong>: Chosen from the standard genre list.</li>
+<li><strong>Comment</strong>: A free-text comment.</li>
+</ul>
+<blockquote>
+<p>📝 <strong>Note:</strong> The tags belong to the <strong>Edit</strong>, not to one render, so they're
+saved with your project and reused by every render you do from it. You can
+also reach the same editor without opening the Render dialog: click an empty
+part of the arrangement and choose <strong>Edit Tags...</strong> in the Actions panel.</p>
+</blockquote>
+<p>Entering tags for the first time ticks <strong>Add Tags</strong> for you, and clearing them
+all again unticks it, so the checkbox follows what you've filled in.</p>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> The <strong>Genre</strong> here is the tag written into the file. It is not
+the Edit's own <em>Genre</em> property, which describes your project to the AI
+assistant. They're separate settings that happen to share a name.</p>
+</blockquote>
+<h3 id="normalising-and-loudness">Normalising and Loudness<a class="headerlink" href="#normalising-and-loudness" title="Permanent link">&para;</a></h3>
+<p><strong>Normalise</strong> (Choices: None, Peak, RMS, LUFS): Scales the finished file's
+level to a target. (Default: None)</p>
+<ul>
+<li><strong>Peak</strong> shows a <strong>Peak Level</strong> field (−30 to 0 dB, default 0 dB) and scales
+  the file so its loudest peak lands there.</li>
+<li><strong>RMS</strong> shows an <strong>RMS Level</strong> field (−30 to 0 dB, default −12 dB) and scales
+  the file so its average level lands there.</li>
+<li><strong>LUFS</strong> shows a <strong>Target Loudness</strong> field (−30 to 0 LUFS, default −14 LUFS)
+  and scales the file so its <em>integrated loudness</em>, measured to the BS.1770-4
+  standard, lands there. This is the number streaming platforms care about.</li>
+</ul>
+<p>The three modes share one level field, so a level you chose yourself carries
+across when you switch modes; a level still sitting at the old mode's default is
+replaced with the new mode's.</p>
+<p>In LUFS mode you also get:</p>
+<p><strong>Limit True Peak</strong>: Holds the gain back so the true peak stays under the
+ceiling, even if that leaves the file quieter than the loudness target. This is
+the behaviour you want for anything going to a streaming platform, where an
+over-the-ceiling file gets clipped by their encoder. (Default: on)</p>
+<p><strong>Ceiling</strong>: The true peak the file is kept under, from −3 to 0 dBTP.
+(Default: −1.0 dBTP)</p>
+<p><img alt="" src="../images/rendering_4%402x.png" /></p>
+<p><em>LUFS mode, with a −14 LUFS target held under a −1 dBTP ceiling</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> With <strong>Limit True Peak</strong> on, a loud target can land quieter than you
+asked for. That's the ceiling doing its job. When it happens, the queue row
+says <em>Limited</em> rather than <em>Complete</em>, and its tooltip explains why. The
+measured figures next to it tell you where the file actually ended up.</p>
+</blockquote>
+<h2 id="the-output-zone">The Output Zone<a class="headerlink" href="#the-output-zone" title="Permanent link">&para;</a></h2>
+<p><strong>Preset</strong> <span class="pro">PRO</span>: Applies a saved render preset, or
+saves, renames and deletes them. The row always tells you where you stand: it
+shows the name of the preset your current settings match, or <strong>Custom</strong> when
+they match none. See <a href="#render-presets">Render Presets</a> below.</p>
+<p><strong>Destination</strong> <span class="pro">PRO</span> (Choices: File, New Track, plus
+Replace Source Tracks or This Track and Replace Clips where they apply): Where
+the finished files go. <em>File</em> only writes them to the folder below. The other
+choices also bring each file back into the Edit, on a new track after its
+source, or in place of the source tracks or clips. See
+<a href="#render-track">Render Track</a> and <a href="#rendering-clips">Rendering Clips</a> below for
+what each does. The row only appears for an Edit that belongs to a project.
+(Default: File)</p>
+<p>When the Destination brings the render back into the Edit, the Folder and Name
+rows, the file list, <strong>Add to Library</strong> and <strong>Measure Loudness</strong> are hidden,
+except that a selected-clips render keeps its Name row (see
+<a href="#rendering-clips">Rendering Clips</a>). The file goes to the project's
+<strong>Rendered</strong> folder, named after the Edit and the first track being rendered,
+for example <em>My Song Bass Render 1</em>.</p>
+<p><strong>Folder</strong>: The folder the rendered files are written to. Type a path, or use
+the folder button's menu: <em>Browse...</em> picks a folder, and <em>Reset to Default</em>
+goes back to the default. This row sets the <em>folder</em> only; the file name comes
+from the row below. By default it's your project's <strong>Exported</strong> folder; an Edit
+with no project falls back to the folder the Edit file is in.</p>
+<p><strong>Recent</strong>: The button beside the folder lists the last 10 folders renders went
+to, from any Edit. Pick one to render there again.</p>
+<p>Wherever the folder is, each finished file is added to the project as an
+<em>Exported</em> item, so it turns up on the Projects tab alongside your other
+exports.</p>
+<p><strong>Name</strong>: What the rendered files are called. How this behaves depends on how
+many files you're writing:</p>
+<ul>
+<li>Rendering the <strong>whole mix</strong> writes one file, so plain text here is that
+  file's name.</li>
+<li>Every other scope writes a file per item, so the text is treated as a
+  <em>pattern</em> and expanded once per file.</li>
+</ul>
+<p>Text containing a token is always treated as a pattern, in either mode and for
+any scope.</p>
+<p>Leave it empty and Waveform names the files after the Edit and the items being
+rendered.</p>
+<p>The <strong>Insert</strong> button beside the field lists the tokens a pattern understands
+and appends the one you pick:</p>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Expands to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$edit</code></td>
+<td>The Edit's name</td>
+</tr>
+<tr>
+<td><code>$track</code></td>
+<td>The track being rendered</td>
+</tr>
+<tr>
+<td><code>$group</code></td>
+<td>The submix, group, tag or output being rendered</td>
+</tr>
+<tr>
+<td><code>$marker</code></td>
+<td>The marker, arranger clip or clip naming the rendered section</td>
+</tr>
+<tr>
+<td><code>$type</code></td>
+<td>master, track, stem, submix, group, output, clip or clips</td>
+</tr>
+<tr>
+<td><code>$samplerate</code></td>
+<td>The sample rate (dropped from a MIDI render's name)</td>
+</tr>
+<tr>
+<td><code>$bitdepth</code></td>
+<td>The bit depth (dropped from a MIDI render's name)</td>
+</tr>
+<tr>
+<td><code>$date</code></td>
+<td>Today's date, e.g. 29Jul2026</td>
+</tr>
+<tr>
+<td><code>$time</code></td>
+<td>The time of the render, e.g. 140233</td>
+</tr>
+<tr>
+<td><code>$index</code></td>
+<td>The file's position in the batch</td>
+</tr>
+</tbody>
+</table>
+<p>So a pattern of <code>$edit - $track</code> gives <em>My Song - Bass.wav</em>, <em>My Song -
+Drums.wav</em> and so on. A token with nothing to fill it also swallows the
+separator next to it, so the same pattern used for a whole-mix render gives just
+<em>My Song.wav</em> rather than <em>My Song - .wav</em>.</p>
+<p>The spellings used for recorded file names, <code>%edit%</code>, <code>%track%</code> and <code>%date%</code>,
+work too, as aliases for <code>$edit</code>, <code>$track</code> and <code>$date</code>.</p>
+<p>Under the Name row is the list of files the render will write, headed <em>Will
+write one file:</em> or <em>Will write 22 files:</em>. It updates as you change anything
+above it.</p>
+<p><strong>Add to Library</strong>: Adds each finished file to your loop library so you can
+search for it and use it in other projects. Audio formats only. (Default: off)</p>
+<p><strong>Measure Loudness of Rendered Files</strong> <span class="pro">PRO</span>: Reads
+each finished file back and shows its integrated loudness and true peak on its
+queue row. The measuring happens on a background thread, one file at a time, so it doesn't compete with the render
+itself, and it never affects the audio that was written. Audio formats only.
+(Default: on)</p>
+<h2 id="the-render-queue">The Render Queue<a class="headerlink" href="#the-render-queue" title="Permanent link">&para;</a></h2>
+<p>Renders don't block the dialog. The queue panel at the bottom holds a row per
+render job, and you can keep changing settings and adding more while earlier
+ones are still running.</p>
+<p>In Advanced mode the action button changes to match: it reads <strong>Add to Queue
+and Start</strong> when nothing is running, and <strong>Add to Queue</strong> when a batch is
+already going. In Simple mode it always reads <strong>Render</strong>, and pressing it while
+a render is running adds the new one to the queue.</p>
+<p>Jobs run strictly one at a time, in order, so a 22-stem batch doesn't fight
+itself for CPU.</p>
+<p><img alt="" src="../images/rendering_5%402x.png" /></p>
+<p><em>A batch part-way through: two done, one at 85%, the rest waiting</em></p>
+<p>Each row shows:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>What it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>The track, stem or mix being rendered</td>
+</tr>
+<tr>
+<td>Status</td>
+<td><em>Waiting...</em>, a live percentage, then <em>Complete</em>, <em>Limited</em>, <em>Failed</em> or <em>Cancelled</em>. A render brought back into the Edit shows <em>Added</em>, <em>Replaced</em> or <em>Not added</em> instead of <em>Complete</em></td>
+</tr>
+<tr>
+<td>Preview</td>
+<td>A waveform that draws in as the file is written (or a piano roll of the notes for a MIDI render), so you can see at a glance that something actually landed. Once the job is done it shows the finished file, after any trimming and normalising. A failed job shows its error here instead</td>
+</tr>
+<tr>
+<td>Loudness</td>
+<td>The measured integrated loudness and true peak of the finished file, e.g. <em>-14.2 LUFS   -1.0 dBTP</em>. Only filled in when <strong>Measure Loudness of Rendered Files</strong> is on in Advanced mode</td>
+</tr>
+<tr>
+<td>Button</td>
+<td>Cancels a job that's waiting or running; reveals the file once it's done</td>
+</tr>
+</tbody>
+</table>
+<p>The header line above the rows answers "how much is left" without scrolling:
+<em>Rendering 4 of 22</em> while it runs, then <em>22 renders complete</em>, with <em>, 1 did not
+finish</em> appended if anything failed or was cancelled. A progress bar and a
+<strong>Cancel All</strong> button sit beside it while the queue is running.</p>
+<p><img alt="" src="../images/rendering_6%402x.png" /></p>
+<p><em>Finished renders, measured: the Synth stem is Complete at -14.0 LUFS, while the louder stems show Limited</em></p>
+<h2 id="render-presets">Render Presets <span class="pro">PRO</span><a class="headerlink" href="#render-presets" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Waveform Pro (Advanced mode).</p>
+</blockquote>
+<p>Presets are global: they're saved with the application rather than with an
+Edit, so a preset you make in one project is there in all of them.</p>
+<p>To save one, set the dialog up how you want it, open the <strong>Preset</strong> dropdown and
+choose <em>Save preset...</em>, then give it a name. The same dropdown gains <em>Rename
+preset</em> and <em>Delete preset</em> entries once a preset is active.</p>
+<p>The Preset row keeps itself honest: change any setting and it switches to
+<strong>Custom</strong>, and set things back to what a preset holds and its name reappears.
+The destination folder takes no part in that comparison, so working in a
+different project doesn't stop a preset from matching.</p>
+<p>Applying a preset restores everything except the destination folder, which stays
+as it is. The folder is specific to the machine and the project you're working
+on, and a preset shouldn't drag your files somewhere else. If a preset was saved
+from a different Edit and names tracks or submixes that don't exist here,
+Waveform drops the ones it can't find rather than failing.</p>
+<p>Good candidates for presets: <em>Streaming master</em> (WAV, 24-bit, LUFS −14 with a
+−1 dBTP ceiling), <em>Stems for mixing</em> (Tracks, all ticked, Include Source Tracks
+on, 24-bit), <em>MP3 reference</em> (MP3 320, whole mix), <em>MIDI for the arranger</em> (MIDI,
+Tracks, source <em>Clips</em>).</p>
+<h2 id="render-track">Render Track<a class="headerlink" href="#render-track" title="Permanent link">&para;</a></h2>
+<p>The <strong>Render Track</strong> action in the Actions panel opens the Render dialog set up
+to mix the selected tracks into one file and bring it back into the Edit.
+It's set to <em>Selected Tracks</em> with <strong>Render Items to a Single File</strong> ticked.</p>
+<p><strong>Destination</strong> (Choices: File, New Track, Replace Source Tracks): What happens
+to the rendered file. <em>New Track</em> puts it on a new track after the source
+tracks. <em>Replace Source Tracks</em> puts it in place of them, and asks you to
+confirm before the render starts. <em>File</em> only writes the file.
+(Default: New Track)</p>
+<p>To render the tracks' MIDI instead of audio, set <strong>Format</strong> to <em>MIDI</em> and choose
+the <strong>MIDI Source</strong> as usual.</p>
+<p>Render Track remembers its own settings from one render to the next, separately
+from the settings the Edit uses for ordinary renders, so setting it up doesn't
+change your mixdown settings. In Waveform Pro it opens in Advanced mode, without
+changing the mode your ordinary renders use. In Waveform Free it opens in Simple
+mode but keeps its Destination row.</p>
+<h2 id="rendering-clips">Rendering Clips<a class="headerlink" href="#rendering-clips" title="Permanent link">&para;</a></h2>
+<p>The <strong>Render Clip</strong> button in the Actions panel (<strong>Render Clips</strong> when
+several clips are selected) opens a menu of render
+entries: render the selected clips, render only their marked region, either of
+those <em>and replace</em> the clips, and, for MIDI clips, the same four under <em>Render
+MIDI</em>. Each entry opens the Render dialog set up for it, so you can check or
+change the options before rendering.</p>
+<p>The Range is set to <em>Selected Clips Range</em>, or <em>Selected Clips in Marked Region</em>
+for the marked-region entries, and <strong>Include Tails</strong> starts off so the file ends
+where the clips do.</p>
+<p><strong>Destination</strong> (Choices: File, New Track, This Track, Replace Clips): Where the
+render ends up. <em>This Track</em> puts it on the track of the last selected clip and
+leaves the clips where they are. <em>Replace Clips</em> puts it in place of the clips,
+and asks you to confirm before the render starts. <em>New Track</em> puts it on a new
+track, and <em>File</em> only writes the file. (Default: This Track, or Replace Clips
+for the <em>and replace</em> entries)</p>
+<p><strong>Name</strong>: The one Output row a clip render keeps when it goes onto a track
+(any Destination but <em>File</em>). It names both the rendered file and the new clip,
+and starts as the clips' name when the selected clips all share one; otherwise
+it's left empty and the render is named after the Edit and the track, for
+example <em>My Song Bass Render 1</em>. The file is saved in the project's
+<strong>Rendered</strong> folder.</p>
+<p><img alt="" src="../images/rendering-and-stems_render_clip_dialog%402x.png" /></p>
+<p><em>The clip render dialog, with Destination set to This Track and Name filled in from the clip</em></p>
+<p>The clips render through their own tracks and the track each one outputs
+into, and nothing else on those tracks sounds. The new clip takes the colour
+of the clips it came from. Like Render Track, the clip entries remember their
+own settings, open in Advanced mode in Waveform Pro, and open in Simple mode in
+Waveform Free with the clip range and destinations kept.</p>
+<p>Only arrangement clips can be rendered this way. With a Launcher clip selected,
+<strong>Render Clip</strong> shows <em>Launcher clips can't be rendered or flattened</em> instead of
+its menu.</p>
+<p><em>Flatten the selected clip</em>, <em>Merge the selected clips</em> and the Chord Player's
+render don't open the dialog. They bounce with fixed settings behind a progress
+bar and replace the clips.</p>
+<h2 id="rendering-from-the-command-line">Rendering From the Command Line<a class="headerlink" href="#rendering-from-the-command-line" title="Permanent link">&para;</a></h2>
+<p>Waveform can render without opening its interface at all, which is useful for
+batch jobs, overnight renders and build servers. Run the Waveform application
+with <code>render</code> and an Edit file:</p>
+<pre><code>Waveform render MySong.tracktionedit --output /tmp/mixes --format wav --bit-depth 24
+</code></pre>
+<p>There are three commands:</p>
+<ul>
+<li><strong>render</strong>: renders the Edit using the settings you give it.</li>
+<li><strong>list-items</strong>: prints the renderable items (tracks, submixes, groups, tags,
+  outputs) and the markers, so you know what you can ask for. In Waveform Free
+  it lists only tracks.</li>
+<li><strong>validate-config</strong>: checks the settings and renders nothing.</li>
+</ul>
+<p>The options mirror the dialog: <code>--format</code> (including <code>midi</code>), <code>--sample-rate</code>,
+<code>--bit-depth</code>, <code>--channels</code>, <code>--midi-after-plugins</code>, <code>--normalise</code>,
+<code>--normalise-rms</code>, <code>--normalise-lufs</code>, <code>--normalise-level</code>,
+<code>--true-peak-ceiling</code>, <code>--no-true-peak-limit</code>, <code>--trim-silence</code>, <code>--dither</code>,
+<code>--real-time</code>, <code>--no-tails</code>, <code>--wrap-remainder</code>, <code>--add-acid</code>,
+<code>--separate-files</code>, <code>--category</code>, <code>--items</code>, <code>--together</code>, <code>--marker-clips</code>,
+<code>--start</code>, <code>--end</code>, <code>--name-pattern</code> and <code>--force</code>. <code>--quality</code> sets the
+format's quality index for compressed formats, <code>--add-tags</code> and <code>--no-add-tags</code>
+turn writing the Edit's tags on or off, and <code>--no-plugins</code> and
+<code>--no-master-plugins</code> render without the track plugins or the master plugin
+chain. Add <code>--json</code> for machine-readable output, <code>--help</code> for the full list and
+<code>--version</code> for the version number.</p>
+<p><code>--no-tails</code> turns off <strong>Include Tails</strong>, so each file ends exactly at the end of
+its range. In a config file, and in the scripting API's <code>render.renderToFile</code>,
+the same setting is the <code>includeTails</code> key, which defaults to true.</p>
+<p>In Waveform Free, <code>--category</code> only accepts <code>tracks</code>, and <code>--together</code>,
+<code>--marker-clips</code> and <code>--wrap-remainder</code> need Waveform Pro: a render that asks
+for them is refused with an error naming the option, rather than rendering
+something different.</p>
+<p>Settings are layered, with later layers winning per setting: built-in defaults,
+then <code>WAVEFORM_RENDER_*</code> environment variables, then any <code>--preset</code> you name,
+then each <code>--config</code> JSON file in order, then individual flags. Because config
+files use the same format the dialog saves in, a preset you made in the dialog
+can be handed straight to the command line.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> <code>validate-config</code> is the cheap way to check a long batch before you
+start it. It resolves everything and reports problems without rendering a
+single sample.</p>
+</blockquote>
+<h2 id="rendering-from-the-ai-assistant">Rendering From the AI Assistant<a class="headerlink" href="#rendering-from-the-ai-assistant" title="Permanent link">&para;</a></h2>
+<p>The assistant can render for you, and can measure what it rendered. Ask it for
+"a 24-bit WAV of the whole mix", "stems for each submix" or "a MIDI file of the
+drum track" and it uses the same render engine this dialog does. It can also
+analyse a finished file and report its loudness, true peak, loudness range,
+clipped samples and frequency balance, useful for a quick "is this loud enough
+for Spotify?" check.</p>
+<p>It can also measure your project directly, without you rendering anything:
+the whole mix, a time range, or each track as a separate stem. Measuring by
+submix, group, tag or output needs Waveform Pro. It renders to a temporary
+file, measures loudness, dynamics, spectrum and stereo field, and deletes the
+file. Type <strong><code>/mixcheck</code></strong> in the assistant for a one-step release check against
+streaming targets, or <code>/mixcheck</code> followed by a platform name for a specific
+one. See <a href="../ai-assistant/#checking-your-mix">Checking your mix</a> in The AI
+Assistant chapter, and the <a href="../utility-plugins/#loudness-meter">Loudness Meter</a>
+in Utility Plugins for the same readings live.</p>
+<p>While the assistant (or a script you run) is rendering, the Edit is covered by
+a <em>Rendering...</em> progress display with a <strong>Cancel</strong> button, and you can't change
+the Edit until the render finishes or you cancel it. The assistant panel and the
+main menu still work. Closing the Edit, or quitting, while one of these renders
+is running asks whether to stop it: <em>Stop Render</em> cancels it and carries on
+closing, and <em>Keep Rendering</em> leaves it running.</p>
+<h2 id="things-to-watch-out-for">⚡ Things to Watch Out For<a class="headerlink" href="#things-to-watch-out-for" title="Permanent link">&para;</a></h2>
+<p><strong>Selections are read when the dialog opens.</strong> <em>Selected Tracks</em> and the
+selected-clip ranges all use what was selected at that moment.
+Changing the selection behind the dialog does nothing. If you picked <em>Selected
+Tracks</em> with nothing selected, it tells you: <em>No tracks were selected when this
+window opened - select some and reopen it</em>.</p>
+<p><strong>"Each Marker Region" and "Each Arranger Clip Region" need a scope other than
+Whole Mix.</strong> Pick one of the item categories first, or the dialog will tell you
+it can't do it.</p>
+<p><strong>Simple mode renders what it shows, not what Advanced mode was set to.</strong> If
+you set up a Submixes, Groups, Tags or Outputs render in Advanced mode and then
+switch to Simple, the render falls back to the whole mix. <em>Tracks</em> renders every
+track, whatever was ticked in Advanced mode's list.</p>
+<p><strong>Muted or un-soloed tracks render silent.</strong> A track that is muted, or that
+can't be heard because another track is soloed, renders as silence. In Advanced
+mode, and for clip renders, the dialog warns you before you start; for a MIDI
+render the warning says no file will be created, since there's no MIDI to
+write. For an audio render, choosing <em>Replace Source Tracks</em> also warns in its
+confirmation that those tracks will be replaced with silence.</p>
+<p><strong>Tracks playing their Launcher render silent.</strong> A track that is playing its
+clip launcher renders with nothing launched, and the dialog warns you. Press
+the track's play-arranger button (or use <strong>Playback arranger</strong> in its
+Actions panel) to render its arrangement. See
+<a href="../clip-launcher/">Clip Launcher</a>.</p>
+<p><strong>Marked Region with no marked region renders everything.</strong> If you choose
+<em>Marked Region</em> without having set one, the dialog warns you that the whole Edit
+will be rendered instead.</p>
+<p><strong>Generated names never overwrite; a name you chose might.</strong> Names built from a
+pattern are made unique against each other and against what's already on disk,
+so a second batch lands beside the first rather than on top of it. A file name
+you typed yourself can collide, and when it does you get an <em>Overwrite Files?</em>
+confirmation listing exactly which files would be replaced.</p>
+<p><img alt="" src="../images/rendering_8%402x.png" /></p>
+<p><em>The confirmation names the files a render would replace</em></p>
+<p><strong>Closing the dialog cancels renders that are still going.</strong> If anything is
+still queued or running, you're asked to confirm, with <em>Stop and Close</em> and
+<em>Keep Rendering</em> to choose between.</p>
+<p><strong>A cancelled or failed render leaves no half-file behind.</strong> Partial files are
+cleaned up rather than left on disk to be mistaken for finished ones.</p>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>See <a href="../mixing-down/">Mixing Down</a> for the master-processing side of getting a
+mix ready to render, <a href="../edit-mix-groups/">Edit Mix Groups</a> and
+<a href="../submix-tracks/">Submix Tracks</a> for setting up the groupings the stem
+categories use, <a href="../using-markers/">Using Markers</a> and
+<a href="../arranger-track/">The Arranger Track</a> for defining the regions the per-region
+ranges render, and <a href="../working-with-loops/">Working With Loops</a> for what
+<strong>Add to Library</strong> does with your renders.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>

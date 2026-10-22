@@ -1,0 +1,3093 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracktion.github.io/waveform_manual/14.1.22-beta/step-clips/">
+      
+      
+        <link rel="prev" href="../quantizing-midi-notes/">
+      
+      
+        <link rel="next" href="../chord-track/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Step Clips - Waveform User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#step-clips" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waveform User Manual" class="md-header__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waveform User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Step Clips
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waveform User Manual" class="md-nav__button md-logo" aria-label="Waveform User Manual" data-md-component="logo">
+      
+  <img src="../images/icon.svg" alt="logo">
+
+    </a>
+    Waveform User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../front-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Front Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-this-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whats-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What's New
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-demo-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Projects and Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-device-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Device Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-tab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Edit Tab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins-detail-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugins Detail Editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actions-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Actions Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-markers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Markers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecting-and-snapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting and Snapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-clips-and-editing-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Clips and Editing Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stem-separation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stem Separation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recording-overdubs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recording Overdubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-up-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean-up Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Warp Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groove-doctor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Groove Doctor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-an-amp-simulator-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using an Amp Simulator Plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-loop-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Loop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-editing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pattern Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantizing-midi-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantising MIDI Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step Clips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-clips-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clips Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inserting-a-step-clip-into-the-edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inserting a Step Clip Into the Edit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming-a-drum-beat-with-a-step-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programming a Drum Beat with a Step Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-step-clip-footer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Step Clip Footer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variation-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variation Options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-variation-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Variation Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-pattern-section-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Pattern Section Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-row-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Row Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-row-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Row Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-a-row" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting a Row
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velocity-and-gate-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Velocity and Gate Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probability-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probability Editor PRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Probability Editor PRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-which-rows-to-show" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing Which Rows to Show
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looping-step-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Looping Step Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convert-a-step-clip-to-a-midi-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert a Step Clip to a MIDI Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chord-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Chord Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-side-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Plugin Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-effects-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Built-in Effects Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4OSC Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wavetable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wavetable Synthesiser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samplers-and-instruments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samplers and Instruments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legacy-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Racks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faceplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faceplates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects-bus-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects Bus Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folder-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submix-tracks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submix Tracks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-mix-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit Mix Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-snapshots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track Snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixing-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixing Down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rendering-and-stems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendering and Stems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working With Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-and-exchanging-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing and Exchanging Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-plugin-selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Plugin Selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-layer-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Layer Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-effects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arranger-track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Arranger Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-launcher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clip Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference: Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Read as one page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-clips-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clips Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inserting-a-step-clip-into-the-edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inserting a Step Clip Into the Edit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming-a-drum-beat-with-a-step-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programming a Drum Beat with a Step Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-step-clip-footer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Step Clip Footer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variation-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variation Options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-variation-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Variation Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-pattern-section-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Pattern Section Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-row-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Row Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-row-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Row Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-a-row" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting a Row
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velocity-and-gate-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Velocity and Gate Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probability-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probability Editor PRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Probability Editor PRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-which-rows-to-show" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing Which Rows to Show
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looping-step-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Looping Step Clips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convert-a-step-clip-to-a-midi-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert a Step Clip to a MIDI Clip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-clip-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Clip Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving On
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="step-clips">Step Clips<a class="headerlink" href="#step-clips" title="Permanent link">&para;</a></h1>
+<p>At first sight, a Step clip is a MIDI step sequencer: you click cells to
+turn notes on and off. Step clips go further than that, and you can use
+them to build drumbeats, synth lines and bass lines.</p>
+<p>This tutorial is a good introduction to working with Step clips:</p>
+<p><a href="https://youtu.be/pB1GfjwHAgQ">Video: Explaining Step Clips</a></p>
+<h2 id="step-clips-overview">Step Clips Overview<a class="headerlink" href="#step-clips-overview" title="Permanent link">&para;</a></h2>
+<p>Step clips work like a special type of MIDI clip, but the notes sit on a
+grid where each column is a 'step', a fixed musical increment. By
+default there are 16 steps, as on many drum machines and step
+sequencers, so in 4/4 there are four steps per beat. You can change
+this, but it's a good starting point.</p>
+<p>These are the key parts of a Step clip:</p>
+<p><img alt="" src="../images/27----01%402x.png" /></p>
+<p><em>Parts of a Step Clip</em></p>
+<p><strong>Step clip</strong>: You can add, delete and copy Step clips just like MIDI
+clips. They are always in loop mode, so you can drag the right trim
+handle to roll out repetitions. Like MIDI clips, they need a synth
+plugin to make sound.</p>
+<p><strong>Header</strong>: Click the Step clip header to select the clip and show its
+settings in the Actions panel. Drag the header to move the clip earlier
+or later in time, or to another track. Right-click the header for a
+menu of the most used options.</p>
+<p><strong>Footer</strong>: Click the Step clip footer for a menu, and for more options
+in the Actions panel. These options are for working with variations and
+pattern sections.</p>
+<p><strong>Variation</strong>: A variation is a table of rows and columns (steps). It
+looks like a small spreadsheet: click a cell to trigger a note at that
+step, and click an active cell again to turn it off. A Step clip can
+hold any number of variations.</p>
+<p><strong>Step</strong>: A step is one column of the grid that makes up a variation. A
+variation is defined by how many steps it has and what each step
+represents musically. By default a new variation has 16 steps with a
+step length of 1/4 beat.</p>
+<p><strong>Row</strong>: Each row plays a single MIDI note. Rows belong to the whole
+Step clip, so the row assignments are the same for every variation in
+the clip. You can send rows within one Step clip to different MIDI
+channels or virtual instruments (see
+<a href="#step-clip-row-actions">Step Clip Row Actions</a>).</p>
+<p><strong>Note</strong>: A note is the cell where a step and a row cross. You program
+a variation by clicking notes to toggle them on or off.</p>
+<p><strong>Section</strong>: By default, a Step clip has a single pattern section, which
+holds one variation. To make a longer Step clip, add more pattern
+sections. Each pattern section is assigned a variation.</p>
+<p><strong>Variation number</strong>: Variations are numbered within each Step clip. The
+variation number appears on the footer of each pattern section.</p>
+<p><img alt="" src="../images/27----02%402x.png" /></p>
+<p><em>A Step Clip with Four Pattern Sections</em></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Think of a Step clip as a sequence of pattern sections,
+each assigned to a variation. You can assign the same variation to more
+than one pattern section.</p>
+<p>📝 <strong>Note:</strong> A Step clip can contain variations that aren't assigned to
+any pattern section.</p>
+</blockquote>
+<h2 id="inserting-a-step-clip-into-the-edit">Inserting a Step Clip Into the Edit<a class="headerlink" href="#inserting-a-step-clip-into-the-edit" title="Permanent link">&para;</a></h2>
+<p>There are several ways to put a Step clip on a track.</p>
+<p>As with every other kind of clip, you can drag the Clip object to a
+track and choose <strong>Insert Step Clip</strong> from the menu.</p>
+<p><img alt="" src="../images/27----03%402x.png" /></p>
+<p><em>Insert by Dragging the Clip Object</em></p>
+<p>You can also right-click the track at the point where you want the clip
+and choose <strong>Insert Step Clip</strong> from the right-click menu.</p>
+<p>Or select the track, place the cursor where you want the clip to start,
+then right-click the track header and choose <strong>Insert Step Clip</strong>.</p>
+<p><img alt="" src="../images/27----04%402x.png" /></p>
+<p><em>Right-click Track Header</em></p>
+<p>From the track's actions: select the track by clicking its name, then
+in the Actions panel click <em>Insert a New Clip &gt; Insert Step Clip</em>. The
+Edit's actions also have an <strong>Insert new Step clip</strong> row, which adds a
+Step clip to the selected track.</p>
+<p><img alt="" src="../images/27----05%402x.png" /></p>
+<p><em>Insert new Step clip in the Edit's actions</em></p>
+<p>Finally, you can drag in a Step clip preset as a starting point. Step
+clip presets are clip presets, so in the Search tab of the
+<a href="../browser/">Browser</a> choose <strong>Clips</strong> under <strong>Categories</strong>, or search
+for "Step Clip".</p>
+<p><img alt="" src="../images/27----06%402x.png" /></p>
+<p><em>Use a Step Clip Preset from the Browser</em></p>
+<p>Waveform comes with a wide range of Step clip presets.</p>
+<h2 id="programming-a-drum-beat-with-a-step-clip">Programming a Drum Beat with a Step Clip<a class="headerlink" href="#programming-a-drum-beat-with-a-step-clip" title="Permanent link">&para;</a></h2>
+<p>When you insert a new Step clip, its rows are already assigned to
+General MIDI drum notes, so you can start programming beats straight
+away.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Use one of the Waveform drum instruments: Micro Drum Sampler
+(every edition), or Drum Sampler or Multi Sampler (Waveform Pro, or with
+the MIDI Producer Expansion or the Synth Pack Expansion). Add the
+instrument first and load a preset drum kit, then insert a blank Step
+clip. The row names will match the pad names of the preset.</p>
+</blockquote>
+<p><img alt="" src="../images/27----07%402x.png" /></p>
+<p><em>Default Step Clip</em></p>
+<p>To program a drum beat with a Step clip:</p>
+<ol>
+<li>Insert a drum instrument on a track and select a preset.</li>
+<li>Insert a Step clip on the track.</li>
+<li>Set the In marker and Out marker around the Step clip and turn
+    <strong>Loop</strong> on.</li>
+<li>Start playback, and click the note cells to turn notes on and off.</li>
+</ol>
+<p><img alt="" src="../images/27----08%402x.png" /></p>
+<p><em>Programming a Step Clip</em></p>
+<p>Click a cell to flip it on or off, or drag across cells to paint
+several. Hold Shift while you click or drag to turn cells on, or hold
+Cmd / Ctrl to turn them off. Right-click a cell for the pattern
+section's menu.</p>
+<p>Double-click a Step clip to open it in the <a href="../detail-editor/">Detail Editor</a>
+at the bottom of the window. If <strong>Double-click MIDI clip header</strong> in
+<em>Settings &gt; General</em> is set to <strong>Expands for in-line editing</strong>, a
+double-click makes the track taller instead, so you can edit the clip in
+place.</p>
+<p>You hear each change as you toggle notes, so you can build the
+variation while it plays.</p>
+<p><strong>Video Clip:</strong> This video overview shows how all of this works.</p>
+<p><a href="https://w-edstrom.wistia.com/medias/pjf2cdmm4t">Step Clips Overview</a></p>
+<h2 id="step-clip-actions">Step Clip Actions<a class="headerlink" href="#step-clip-actions" title="Permanent link">&para;</a></h2>
+<p>A Step clip has a header like those of MIDI clips and Audio clips.
+Click the header to show all the clip's actions and settings in the
+Actions panel. These are the most important ones for Step clips:</p>
+<p><img alt="" src="../images/27----09%402x.png" /></p>
+<p><em>Click the Header for Step Clip Actions</em></p>
+<p><strong>Name</strong>: Give your Step clip a descriptive name. The name is used as
+the basis for preset names, so it helps when you save the clip as a
+preset.</p>
+<p><strong>Colour</strong>: Gives your Step clip its own colour.</p>
+<p><strong>Clear All Variations</strong>: Clears all the notes from all variations in
+this Step clip.</p>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> <strong>Clear All Variations</strong> clears every variation, whether
+you can see it or not. If you change your mind straight away, press
+<strong>Undo</strong> (Cmd + Z / Ctrl + Z).</p>
+</blockquote>
+<p><strong>Remove Unused Variations</strong>: A Step clip can string together a series
+of pattern sections, each assigned to a variation. <strong>Remove Unused
+Variations</strong> removes any variation that no pattern section uses.</p>
+<p><strong>Add a row</strong>: Adds a new row at the bottom of the Step clip. You can
+also insert a row from the right-click menu of the Step clip header or
+of a row header.</p>
+<p><strong>Apply Common Groove</strong>: Applies a groove template to every row in the
+Step clip, usually to add swing. The basic swing templates are the most
+common choice. You can also set the groove for each row separately (see
+<a href="#step-clip-row-properties">Step Clip Row Properties</a>). Older templates
+are in the <strong>Legacy groove templates</strong> submenu, and <strong>Edit groove
+templates...</strong> opens the groove template editor (see
+<a href="../quantizing-midi-notes/">Quantising MIDI Notes</a>).</p>
+<p><strong>Apply common groove amount</strong>: At the minimum, the groove template
+chosen in <strong>Apply Common Groove</strong> has no effect. Raise it for a stronger
+feel.</p>
+<p><strong>Speed</strong> and <strong>Reset Ratio</strong>: <strong>Speed</strong> stretches the patterns and
+their notes by a ratio, so the clip plays faster or slower than its
+steps suggest. <strong>Reset Ratio</strong> puts it back to the default.</p>
+<p><strong>MIDI Channel</strong>, <strong>Velocity</strong> and <strong>Mute</strong>: <strong>MIDI Channel</strong> sets the
+MIDI channel for every row in the clip. <strong>Velocity</strong> scales the
+velocities of all the notes the clip plays (0-100, where 100 leaves them
+unchanged). <strong>Mute</strong> silences the clip.</p>
+<p><strong>Add Rows from Instrument</strong>: Appears when the track's instrument has
+named notes, such as a loaded drum kit. It adds a row for each named
+note.</p>
+<p><strong>Render Clip</strong>: Use any of the <strong>Render Clip</strong> options to convert a
+Step clip to an Audio clip. Each option opens the Render dialog, which
+puts the result on this track or in place of the clip. See
+<a href="../rendering-and-stems/#rendering-clips">Rendering Clips</a>.</p>
+<p>The Actions panel also has the clip operations that every kind of clip
+shares: <strong>Select Clips</strong>, <strong>Set Edit Tempo</strong>, <strong>Split Clips</strong> and
+<strong>Move Clip</strong>.</p>
+<p><strong>Convert to MIDI Clip</strong>: Converts the selected Step clips to MIDI
+clips, so you can carry on editing in the MIDI editor's piano roll.</p>
+<p><strong>Create Preset</strong>: Saves the Step clip (its rows, variations and notes)
+as a preset. You can find presets by searching in the Browser.</p>
+<p><strong>Load Preset</strong>: Shows a menu of your Step clip presets. Choose one to
+apply it to the selected Step clip.</p>
+<p><strong>Delete</strong>: Deletes the selected Step clip. You can also select the
+Step clip and press Delete, Backspace or Cmd + X / Ctrl + X.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Like any other clip, Step clips can be copied (Cmd + C /
+Ctrl + C), pasted (Cmd + V / Ctrl + V) or duplicated (D).</p>
+</blockquote>
+<p>Right-click the Step clip header for a menu of the most used actions.</p>
+<p><img alt="" src="../images/27----09b%402x.png" /></p>
+<p><em>Step Clip Header Right-click Menu</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> A Step clip in a <a href="../clip-launcher/">clip launcher</a> slot
+shows launcher actions (launch quantisation, looping, follow and
+trigger actions) in place of the start, length and end times. The clip
+launcher needs Waveform Pro, or the Launcher Expansion.</p>
+</blockquote>
+<h2 id="the-step-clip-footer">The Step Clip Footer<a class="headerlink" href="#the-step-clip-footer" title="Permanent link">&para;</a></h2>
+<p>Clicking the Step clip footer selects that pattern section and its
+variation. The footer shows the active variation number.</p>
+<p><img alt="" src="../images/27----11%402x.png" /></p>
+<p><em>Section Footer Right-click Menu</em></p>
+<p>If a Step clip has more than one pattern section, click a section's
+footer to select it. Right-click a footer (or click it when the clip is
+already selected) to open its menu. All of the actions also appear in
+the Actions panel.</p>
+<p><img alt="" src="../images/27----10%402x.png" /></p>
+<p><em>Step Clip Footer Shows Variation &amp; Pattern Section Options</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> When a footer is selected, the title line of the Actions
+panel reads "Edit &gt; Pattern", and the <strong>Variation</strong> row shows which
+variation that pattern section uses.</p>
+</blockquote>
+<h2 id="variation-options">Variation Options<a class="headerlink" href="#variation-options" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../images/27----12%402x.png" /></p>
+<p><em>Variation Options in the Actions Panel</em></p>
+<p><strong>Variation</strong>: Sets which variation this pattern section uses. It shows
+the current one, for example "Variation 2". You can also set this from
+the footer's right-click menu.</p>
+<p><strong>Variation name</strong>: An optional name for this variation. The name
+appears in the variation menus.</p>
+<p><strong>Step Length</strong>: By default, the step length is a quarter of a beat, so
+each beat is divided into four steps, giving a 16-step sequencer.
+Changing it affects this variation only, not the whole Step clip.</p>
+<p><strong>Number of Steps</strong>: The number of steps in the variation. The default
+is 16. With a step length of a quarter beat and <strong>Number of Steps</strong> set
+to 16, each beat in 4/4 is divided into four steps and the variation is
+one bar long. This is the most common step sequencer setup.</p>
+<p><strong>Select a common setup</strong>: Offers preset combinations of <strong>Step
+Length</strong> and <strong>Number of Steps</strong> for one-bar or two-bar variations.</p>
+<p><img alt="" src="../images/27----29%402x.png" /></p>
+<p><em>Select a Common Setup in the Actions Panel</em></p>
+<h2 id="step-clip-variation-actions">Step Clip Variation Actions<a class="headerlink" href="#step-clip-variation-actions" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../images/27----13%402x.png" /></p>
+<p><em>Variation Actions</em></p>
+<p><strong>Clear All Steps</strong>: Turns off every note in the variation, so you can
+start again.</p>
+<p><strong>Randomise Each Step</strong>: Randomly turns notes on and off at each step of
+the variation, which can be a quick source of ideas.</p>
+<p><strong>New Variation</strong>: Copies the current variation to a new one. The
+variation number is assigned automatically.</p>
+<p><strong>New Blank Variation</strong>: Creates a new blank variation and makes it
+active. The variation number is assigned automatically.</p>
+<p><strong>Video Clip:</strong> <a href="https://w-edstrom.wistia.com/medias/ztgsqpw2y5">Step Clips Randomise Each
+Step</a></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> You can also randomise a single row of notes (see
+<a href="#step-clip-row-actions">Step Clip Row Actions</a>).</p>
+</blockquote>
+<h2 id="step-clip-pattern-section-actions">Step Clip Pattern Section Actions<a class="headerlink" href="#step-clip-pattern-section-actions" title="Permanent link">&para;</a></h2>
+<p>These options are in the Actions panel when a Step clip footer is
+selected. Some are also in the footer's right-click menu.</p>
+<p><img alt="" src="../images/27----14%402x.png" /></p>
+<p><em>Step Clip Section Actions</em></p>
+<p><strong>Add Pattern Section Here</strong>: Inserts a new pattern section with a copy
+of the variation, and pushes any later pattern sections to the right.</p>
+<p><strong>Add Pattern Section at End</strong>: Adds a new pattern section at the end,
+with a copy of the variation.</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> You choose which variation each pattern section uses.
+Click the footer and select a variation.</p>
+</blockquote>
+<p><img alt="" src="../images/27----16%402x.png" /></p>
+<p><em>Choosing a Variation for a Pattern Section</em></p>
+<p><strong>Remove this Pattern Section</strong>: Select a pattern section by clicking
+its footer, then choose <strong>Remove this Pattern Section</strong> from the menu or
+the Actions panel. This doesn't remove any variations: they're still
+there and can be assigned to other pattern sections.</p>
+<h2 id="step-clip-row-properties">Step Clip Row Properties<a class="headerlink" href="#step-clip-row-properties" title="Permanent link">&para;</a></h2>
+<p>Each row of a Step clip has a name, and a set of actions that change the
+notes on that row across all the pattern sections. You can send
+individual rows to separate MIDI channels, or route them to different
+virtual instruments with <strong>Set Destination</strong> (see
+<a href="#step-clip-row-actions">Step Clip Row Actions</a>).</p>
+<p><img alt="" src="../images/27----17%402x.png" /></p>
+<p><em>Step Clip Row Properties</em></p>
+<p>These are the properties of a Step clip row:</p>
+<p><strong>Note</strong>: Sets the row's MIDI note. If you know the note value, enter it
+here. You can also drag the yellow arrow along the virtual keyboard in
+the Actions panel to the note you want, and hear each note as you drag.</p>
+<p><strong>Velocity</strong>: Sets the maximum MIDI velocity for the row. In the Step
+clip's <a href="#velocity-and-gate-editor">velocity and gate editor</a>, you can
+set each note to a percentage of this value. The default <strong>Velocity</strong> is
+96.</p>
+<p><strong>Test Note</strong>: Click <strong>Test Note</strong> to hear the row's note on the track's
+instrument. Clicking the row's name in the clip does the same.</p>
+<p><strong>MIDI Channel</strong>: Sets the output MIDI channel. With a multi-timbral
+virtual instrument, this chooses which of its instruments the row
+plays.</p>
+<p><strong>Note on Every</strong>: <strong>Note on Every</strong> is followed by a series of buttons
+that complete the sentence "Note on every (blank) steps." For example,
+click <strong>2</strong> for "Note on every 2 steps."</p>
+<p><strong>Groove</strong>: You can set the groove for a whole Step clip with <strong>Apply
+Common Groove</strong> (see <a href="#step-clip-actions">Step Clip Actions</a>), or for a
+single row with <strong>Groove</strong>. Groove is actually stored per row: applying
+a common groove sets every row to the same template, and that template
+then shows here.</p>
+<p><strong>Groove Amount</strong>: Appears when the row's groove template supports it.
+At 0 the groove has no effect; raise it for a stronger feel.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> Groove is most often used to add swing. Choose <strong>Basic 8th
+Swing</strong> or <strong>Basic 16th Swing</strong> to get started.</p>
+</blockquote>
+<p><strong>Video Clip:</strong> <a href="https://w-edstrom.wistia.com/medias/ad5zrq9oux">Step Clip
+Groove</a></p>
+<p><strong>Name</strong>: The row's name. Row names appear along the left of a Step clip
+when you hover over it. To rename a row, select it and edit <strong>Name</strong> in
+the Actions panel, or right-click the row and choose <strong>Rename row</strong>.
+Rows are often named after drum sounds such as "Kick" or "Snare".</p>
+<h2 id="step-clip-row-actions">Step Clip Row Actions<a class="headerlink" href="#step-clip-row-actions" title="Permanent link">&para;</a></h2>
+<p>These actions are in the Actions panel when a Step clip row is selected.
+The main ones are also in the row header's right-click menu.</p>
+<p><img alt="" src="../images/27----18%402x.png" /></p>
+<p><em>Step Clip Row Actions</em></p>
+<p>Right-click a row's name in the clip for a menu with <strong>Clear row</strong>,
+<strong>Randomize row</strong>, <strong>Rename row</strong>, <strong>Note on every</strong>, <strong>Shift left</strong>,
+<strong>Shift right</strong>, <strong>Delete row</strong> and <strong>Insert row</strong>. Each works like the
+matching action below, across all the pattern sections.</p>
+<p>In Waveform Pro, or with the MIDI Producer Expansion, you can also drag
+a row's name up or down to reorder the rows <span class="pro">PRO</span>.</p>
+<p><strong>Insert Row</strong>: Select a row and click <strong>Insert Row</strong> to add a new row
+straight after it. Rows are numbered from the top down, so the rows
+below are renumbered.</p>
+<p><strong>Clear Row</strong>: Erases all the notes on that row.</p>
+<p><strong>Randomise Row</strong>: Randomly turns each step in the row on or off, in the
+variations of all the pattern sections.</p>
+<p><strong>Shift Notes</strong>: The left and right arrow buttons after <strong>Shift Notes</strong>
+move the row's notes one step left or right per click.</p>
+<p><strong>Set Destination</strong>: Routes the selected row to a different virtual
+instrument (its tooltip reads "Automatically route this channel to a
+plugin"). For example, your bass drum could be played by EZdrummer
+while your hi-hat is played by Drum Sampler, and a hand clap by another
+instrument again.</p>
+<blockquote>
+<p>📝 <strong>Note:</strong> To make this work, Waveform wraps the virtual instruments
+in a plugin rack. It handles the details for you when you apply <strong>Set
+Destination</strong>.</p>
+</blockquote>
+<p><strong>Video Clip:</strong> <a href="https://w-edstrom.wistia.com/medias/vncjr2ilh9">Route Step Clips to Different Synths
+Video</a></p>
+<h2 id="deleting-a-row">Deleting a Row<a class="headerlink" href="#deleting-a-row" title="Permanent link">&para;</a></h2>
+<p>Select any row in your Step clip and click <strong>Delete Row</strong> to remove the
+whole row. The rows below are renumbered to keep them in order.</p>
+<p><img alt="" src="../images/27----19%402x.png" /></p>
+<p><em>Delete Row in the Actions Panel</em></p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> If you aren't using all eight default rows, use <strong>Delete
+Row</strong> to remove the spare ones and save space on screen. You can add a
+row again at any time with <strong>Insert Row</strong>.</p>
+</blockquote>
+<h2 id="velocity-and-gate-editor">Velocity and Gate Editor<a class="headerlink" href="#velocity-and-gate-editor" title="Permanent link">&para;</a></h2>
+<p>The velocity and gate editor adds dynamics and feel to your Step clips.
+Click the <strong>V</strong> button in the upper left corner of any Step clip and the
+editor appears below the patterns, showing the velocity of each note on
+the selected row.</p>
+<p>In Waveform Pro, or with the MIDI Producer Expansion, two more buttons
+sit next to it: <strong>P</strong> <span class="pro">PRO</span> toggles the
+<a href="#probability-editor">probability editor</a>, and <strong>View</strong>
+<span class="pro">PRO</span> (below the row names) chooses which rows to
+show.</p>
+<p><img alt="" src="../images/27----20%402x.png" /></p>
+<p><em>Step Clip Velocity Gate Editor</em></p>
+<p>To use it:</p>
+<ol>
+<li>Click <strong>V</strong> at the upper corner of the Step clip to toggle the
+    editor. If you don't see it, make the track a little taller until it
+    appears.</li>
+<li>
+<p>Select one of the rows in your Step clip by clicking its name. The
+    editor shows the velocity of each note as a bar graph. Click or drag
+    within a velocity bar to adjust its percentage.</p>
+<p><img alt="" src="../images/27----21.png" /></p>
+<p><em>Adjusting a Velocity Bar in the Velocity and Gate Editor</em></p>
+<blockquote>
+<p>📝 <strong>Note:</strong> The bar height is a percentage of the row's
+<strong>Velocity</strong> in the Actions panel. It starts at 100%. To make the
+notes hit harder, raise the row's <strong>Velocity</strong> and then adjust the
+percentages to taste.</p>
+</blockquote>
+</li>
+<li>
+<p>Drag across the bars to paint velocities for a whole run of notes.
+    This helps on busy rows such as hi-hats or snares. Hold Shift while
+    you drag to change only the velocity, so you don't catch a bar's
+    gate edge by accident.</p>
+<p><img alt="" src="../images/27----22%402x.png" /></p>
+<p><em>Adjusting a Series of Velocities with Shift Drag</em></p>
+</li>
+<li>
+<p>Drag the right side of any velocity bar to narrow it and shorten
+    the note's gate. Hold Opt / Alt to change only the gate. Use this
+    for gated, glitchy notes, or to tighten up the hits.</p>
+<p><img alt="" src="../images/27----23%402x.png" /></p>
+<p><em>Adjusting Note Gating in the Velocity and Gate Editor</em></p>
+</li>
+</ol>
+<p>Hold Cmd / Ctrl while you click or drag to set a velocity on a step
+that has no note yet, which turns that note on.</p>
+<p><strong>Video Clip:</strong> <a href="https://w-edstrom.wistia.com/medias/mz2dg3v98s">Step Clip
+Velocity/Gate</a></p>
+<h2 id="probability-editor">Probability Editor <span class="pro">PRO</span><a class="headerlink" href="#probability-editor" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>📝 <strong>Edition:</strong> Waveform Pro, or with the MIDI Producer Expansion.</p>
+</blockquote>
+<p>The probability editor sets the chance that each note plays, so a
+pattern can vary every time it loops.</p>
+<ol>
+<li>Click <strong>P</strong> in the upper left corner of the Step clip. It replaces
+    the velocity and gate editor below the patterns.</li>
+<li>Select a row by clicking its name.</li>
+<li>Click or drag the bars to set each note's chance of playing. A
+    bubble shows the value, for example "Probability: 75%".</li>
+</ol>
+<p>Hold Cmd / Ctrl while you click or drag to set a probability on a
+step that has no note yet, which turns that note on.</p>
+<h3 id="choosing-which-rows-to-show">Choosing Which Rows to Show<a class="headerlink" href="#choosing-which-rows-to-show" title="Permanent link">&para;</a></h3>
+<p>Click <strong>View</strong> below the row names to choose which rows the clip shows:
+<strong>Show all notes</strong>, <strong>Show notes in key</strong>, <strong>Show notes in use</strong> or
+<strong>Show named notes</strong>.</p>
+<p><img alt="" src="../images/step-clips_view_menu%402x.png" /></p>
+<p><em>The View Menu</em></p>
+<h2 id="looping-step-clips">Looping Step Clips<a class="headerlink" href="#looping-step-clips" title="Permanent link">&para;</a></h2>
+<p>Step clips are always in loop mode. Drag the right trim handle at any
+time to loop the clip over part or all of your song. MIDI clips and
+Audio clips, by contrast, have a loop mode that you can switch on to
+roll out repetitions with the right trim handle.</p>
+<p><img alt="" src="../images/27----27%402x.png" /></p>
+<p><em>Looping a Step Clip</em></p>
+<p>If your Step clip loops only the last pattern section, enable <strong>Repeat
+Whole Sequence</strong> in the Actions panel.</p>
+<p><img alt="" src="../images/27----28%402x.png" /></p>
+<p><em>Enable Repeat Whole Sequence</em></p>
+<h2 id="convert-a-step-clip-to-a-midi-clip">Convert a Step Clip to a MIDI Clip<a class="headerlink" href="#convert-a-step-clip-to-a-midi-clip" title="Permanent link">&para;</a></h2>
+<p>For more detailed editing, convert your Step clip to a MIDI clip and use
+the MIDI editor. Right-click the Step clip header and choose <strong>Convert
+to MIDI clip</strong>. A MIDI clip replaces the Step clip.</p>
+<p><img alt="" src="../images/27----26%402x.png" /></p>
+<p><em>Convert a Step Clip to a MIDI Clip</em></p>
+<p>To go the other way, select a MIDI clip and choose <strong>Convert to Step
+Clip</strong> in the Actions panel (or <strong>Convert to Step clip</strong> in its
+right-click menu), then pick the step size from the menu (for example
+<strong>Quantise to 1/4 beat</strong>). This isn't offered for clips in the clip launcher.</p>
+<h2 id="step-clip-presets">Step Clip Presets<a class="headerlink" href="#step-clip-presets" title="Permanent link">&para;</a></h2>
+<p>You can save your Step clips as presets to build a library of sequences
+for later productions. A preset also works as a template that holds
+your usual row assignments and names.</p>
+<p><img alt="" src="../images/27----25%402x.png" /></p>
+<p><em>Create Preset in the Actions Panel</em></p>
+<p>To save a preset, select the Step clip by clicking its header, then
+click <strong>Create Preset</strong> in the Actions panel. This saves the whole clip:
+its rows, variations and notes. The preset is named "Step Clip: "
+followed by the clip name, and is tagged "Step Clips". You can change
+the name and tags in the dialog.</p>
+<p><img alt="" src="../images/27----24.png" /></p>
+<p><em>Preset Details Dialog Box for a Step Clip</em></p>
+<p>To use a preset later, select a Step clip and click <strong>Load Preset</strong>,
+then choose the preset from the menu. You can also find it in the
+Search tab of the <a href="../browser/">Browser</a> under <em>Categories &gt; Clips</em>, or
+search for "Step Clip", and drag it onto a track.</p>
+<h2 id="moving-on">Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>For detailed note editing, see <a href="../midi-editing/">MIDI Editing</a>. To have
+Waveform generate MIDI patterns for you, see <a href="../pattern-generator/">Pattern Generator</a>.</p>
+<p><strong>Video Clips:</strong> This tutorial series covers Step clips in more depth:</p>
+<p><a href="https://w-edstrom.wistia.com/medias/pjf2cdmm4t">Step Clips Overview</a></p>
+<p><a href="https://w-edstrom.wistia.com/medias/mz2dg3v98s">Step Clips
+Velocity/Gate</a></p>
+<p><a href="https://w-edstrom.wistia.com/medias/ztgsqpw2y5">Step Clips Randomise Each
+Step</a></p>
+<p><a href="https://w-edstrom.wistia.com/medias/ad5zrq9oux">Step Clips Groove</a></p>
+<p><a href="https://w-edstrom.wistia.com/medias/vncjr2ilh9">Step Clips Route Channels to Different
+Synths</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../javascripts/retina.js"></script>
+      
+    
+  </body>
+</html>
