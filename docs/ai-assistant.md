@@ -157,7 +157,7 @@ A custom UI fills the plugin window and scales with it. If a custom UI can't loa
 
 The assistant can look at the plugin views it builds when the model reads images. On a profile you have added yourself, such as a local model, turn on **Model Reads Images** in *Settings > AI* only if the model is a vision model; a model that can't read images rejects them.
 
-Once a patch exists you can open and use it like any other Cmajor patch. See [Cmajor Patches](using-plugins.md#cmajor-patches).
+Once a patch exists you can open and use it like any other Cmajor patch. It is listed in the **Project Cmajor Patches** folder of the plugin selector and the Browser, so you can add it to other tracks in the Project. See [Cmajor Patches](using-plugins.md#cmajor-patches).
 
 ## What the Assistant Can See
 

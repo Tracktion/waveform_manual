@@ -51,7 +51,7 @@ When you select a favourite tag, the results area shows all content tagged with 
 
 The **Categories** section lets you filter by content type. The available categories are:
 
-- **Plugins**: all installed audio plugins (VST, AU, etc.)
+- **Plugins**: all installed audio plugins (VST, AU, etc.), plus the current Project's Cmajor patches
 - **Presets**: plugin presets
 - **Racks**: rack presets
 - **Samples**: audio and MIDI files in your libraries

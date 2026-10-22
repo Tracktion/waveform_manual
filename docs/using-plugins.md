@@ -220,6 +220,15 @@ the Cmajor format. If a patch contains an error, the message
 is shown on the plugin slot so you can fix it. A built-in Pro54 example synth
 is installed automatically the first time you run Waveform.
 
+Patches saved in the `cmajor-patches` folder inside your Project folder,
+such as the ones the AI Assistant builds, don't need a scan. They appear in a
+**Project Cmajor Patches** folder in the plugin selector, after **Plugin
+Racks**, and under **Plugins** in the Browser's Search tab, where you can drag
+one onto a track or double-click it to insert it. The folder only appears
+when the Project has patches, and menus that add effects leave out instrument
+patches. The Browser refreshes its list when the assistant creates or changes
+a patch.
+
 > 📝 **Note:** Cmajor support is available on Apple Silicon macOS and Windows. It
 is not available on Linux or on Intel-only Macs. There is no edition restriction
 for hosting patches. Having the AI Assistant build patches for you
